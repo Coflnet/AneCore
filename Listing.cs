@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using MessagePack;
+using Newtonsoft.Json;
 using KeyAttribute = MessagePack.KeyAttribute;
 
 namespace Coflnet.Ane;
@@ -85,5 +86,7 @@ public class Listing
     /// Extra metadata for the listing, aggregations from other listings etc.
     /// </summary>
     [Key(24)]
+    [JsonIgnore]
+    [System.Text.Json.Serialization.JsonIgnore]
     public Dictionary<string, string>? Metadata { get; set; }
 }
