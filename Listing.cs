@@ -81,4 +81,9 @@ public class Listing
     /// </summary>
     [Key(23)]
     public bool? Commercial { get; set; }
+    /// <summary>
+    /// Extra metadata for the listing, aggregations from other listings etc.
+    /// </summary>
+    [Key(24)]
+    public Dictionary<string, string>? Metadata { get; set; }
 }
