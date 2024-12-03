@@ -5,7 +5,7 @@ public enum Platform
     Unknown,
     Ebay,
     Kleinanzeigen,
-    Facebook,
+    Marktplaats,
     Willhaben,
     Shpock,
     MarktDe

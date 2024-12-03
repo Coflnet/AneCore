@@ -89,4 +89,6 @@ public class Listing
     [JsonIgnore]
     [System.Text.Json.Serialization.JsonIgnore]
     public Dictionary<string, string>? Metadata { get; set; }
+    [Key(25)]
+    public Platform Platform { get; set; }
 }
