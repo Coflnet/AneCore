@@ -8,5 +8,10 @@ public enum Platform
     Marktplaats,
     Willhaben,
     Shpock,
-    MarktDe
+    MarktDe,
+    Vinted,
+    Facebook,
+    Poshmark,
+    Mercari,
+    Depop,
 }
