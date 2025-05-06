@@ -14,4 +14,9 @@ public enum Platform
     Poshmark,
     Mercari,
     Depop,
+    Mobile,
+    AutoScout24, // https://www.autoscout24.de/smyle/details/{id}
+    WirKaufenDeinAuto,
+    AutoDe,
+    Gebrauchtwagen12
 }
