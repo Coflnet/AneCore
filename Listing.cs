@@ -39,7 +39,7 @@ public class Listing
     public string[]? ImageUrls { get; set; }
 
     [Key(10)]
-    public double Price { get; set; }
+    public double? Price { get; set; }
 
     [Key(11)]
     public string? Currency { get; set; }
@@ -47,15 +47,14 @@ public class Listing
     [Key(12)]
     public string? Contact { get; set; }
 
-    [Required]
     [Key(13)]
-    public string UserId { get; set; } = null!;
+    public string? UserId { get; set; } = null;
 
     [Key(14)]
-    public float Latitude { get; set; }
+    public float? Latitude { get; set; }
 
     [Key(15)]
-    public float Longitude { get; set; }
+    public float? Longitude { get; set; }
 
     [Key(16)]
     public string? Shipping { get; set; }
