@@ -15,7 +15,7 @@ public enum Platform
     Mercari,
     Depop,
     Mobile,
-    AutoScout24, // https://www.autoscout24.de/smyle/details/{id}
+    AutoScout24, // https://www.autoscout24.de/angebote/{id}
     WirKaufenDeinAuto,
     AutoDe,
     Gebrauchtwagen12
