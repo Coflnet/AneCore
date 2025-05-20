@@ -120,12 +120,12 @@ public class Listing
         Shipping = other.Shipping;
         ReturnPolicy = other.ReturnPolicy;
         PriceKind = other.PriceKind;
-        Attributes = new Dictionary<string, string>(other.Attributes);
+        Attributes = other.Attributes == null ? null : new Dictionary<string, string>(other.Attributes);
         FoundAt = DateTime.UtcNow;
         CreatedAt = other.CreatedAt;
         SoldBefore = other.SoldBefore;
         Commercial = other.Commercial;
-        Metadata = new Dictionary<string, string>(other.Metadata);
+        Metadata = other.Metadata == null ? null : new Dictionary<string, string>(other.Metadata);
         Platform = other.Platform;        
     }
 }
