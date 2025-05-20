@@ -63,7 +63,7 @@ public class Listing
     public string? ReturnPolicy { get; set; }
 
     [Key(18)]
-    public PriceKind PriceKind { get; set; }
+    public virtual PriceKind PriceKind { get; set; }
 
     [Key(19)]
     public Dictionary<string, string>? Attributes { get; set; }
@@ -90,4 +90,42 @@ public class Listing
     public Dictionary<string, string>? Metadata { get; set; }
     [Key(25)]
     public Platform Platform { get; set; }
+
+    public Listing()
+    {
+        Id = Guid.NewGuid().ToString();
+        PriceKind = PriceKind.Unknown;
+        Attributes = new Dictionary<string, string>();
+        Metadata = new Dictionary<string, string>();
+    }
+
+    public Listing(Listing other)
+    {
+        Id = other.Id;
+        Title = other.Title;
+        DescriptionShort = other.DescriptionShort;
+        Description = other.Description;
+        Category = other.Category;
+        Street = other.Street;
+        Locality = other.Locality;
+        Region = other.Region;
+        Country = other.Country;
+        ImageUrls = other.ImageUrls;
+        Price = other.Price;
+        Currency = other.Currency;
+        Contact = other.Contact;
+        UserId = other.UserId;
+        Latitude = other.Latitude;
+        Longitude = other.Longitude;
+        Shipping = other.Shipping;
+        ReturnPolicy = other.ReturnPolicy;
+        PriceKind = other.PriceKind;
+        Attributes = new Dictionary<string, string>(other.Attributes);
+        FoundAt = DateTime.UtcNow;
+        CreatedAt = other.CreatedAt;
+        SoldBefore = other.SoldBefore;
+        Commercial = other.Commercial;
+        Metadata = new Dictionary<string, string>(other.Metadata);
+        Platform = other.Platform;        
+    }
 }
