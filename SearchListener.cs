@@ -11,4 +11,6 @@ public class SearchListener
     public long Id { get; set; }
     [Key(2)]
     public List<FilterInfo> Filters { get; set; }
+    [Key(3)]
+    public Platform Platform { get; set; }
 }
