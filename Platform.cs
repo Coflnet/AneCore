@@ -18,5 +18,18 @@ public enum Platform
     AutoScout24, // https://www.autoscout24.de/angebote/{id}
     WirKaufenDeinAuto,
     AutoDe,
-    Gebrauchtwagen12
+    Gebrauchtwagen12,
+    Craigslist,
+    OfferUp,
+    OLX,
+    Oodle,
+    Gumtree,
+    Kijiji,
+    Carousell,
+    Carvana,
+    Autotrader,
+    CarsGuide,
+    Nextdoor,
+    Lebecoin,
+    Wallapop
 }
