@@ -22,7 +22,7 @@ public enum Platform
     Craigslist,
     OfferUp,
     OLX,
-    Oodle,
+    Quoka,
     Gumtree,
     Kijiji,
     Carousell,
