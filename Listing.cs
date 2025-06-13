@@ -121,7 +121,7 @@ public class Listing
         ReturnPolicy = other.ReturnPolicy;
         PriceKind = other.PriceKind;
         Attributes = other.Attributes == null ? null : new Dictionary<string, string>(other.Attributes);
-        FoundAt = DateTime.UtcNow;
+        FoundAt = other.FoundAt;
         CreatedAt = other.CreatedAt;
         SoldBefore = other.SoldBefore;
         Commercial = other.Commercial;
