@@ -126,6 +126,51 @@ public class Listing
         SoldBefore = other.SoldBefore;
         Commercial = other.Commercial;
         Metadata = other.Metadata == null ? null : new Dictionary<string, string>(other.Metadata);
-        Platform = other.Platform;        
+        Platform = other.Platform;
+    }
+
+    public static string GetUrlForListing(string locale, Platform platform, string id)
+    {
+        var localDomain = locale switch
+        {
+            "de-DE" => "de",
+            "de-AT" => "at",
+            "de-CH" => "ch",
+            "nl-NL" => "nl",
+            "nl-BE" => "be",
+            "pl-PL" => "pl",
+            "it-IT" => "it",
+            "pt-PT" => "pt",
+            "pt-BR" => "br",
+            "da-DK" => "dk",
+            "sv-SE" => "se",
+            "no-NO" => "no",
+            "fi-FI" => "fi",
+            "en-GB" => "co.uk",
+            "en-US" => "com",
+            "fr-FR" => "fr",
+            "es-ES" => "es",
+            _ => "com"
+        };
+        if (platform == Platform.Ebay)
+            return $"https://ebay.{localDomain}/itm/{id}";
+        if (platform == Platform.Kleinanzeigen)
+            return $"https://www.kleinanzeigen.de/s-anzeige/copy/{id}-1-1";
+        if (platform == Platform.Craigslist)
+            return "https://" + id; // craiglist has multiple domains
+        if (platform == Platform.Facebook)
+            return $"https://www.facebook.com/marketplace/item/{id}";
+        if (platform == Platform.Willhaben)
+            return $"https://www.willhaben.at/iad/{id.TrimStart('/')}";
+        if (platform == Platform.Gumtree)
+            return $"https://www.gumtree.com/p/redirect/redirect/{id}";
+        if (platform == Platform.Shpock)
+            return $"https://www.shpock.com/{locale}/i/{id}";
+        if (platform == Platform.Marktplaats)
+            if (id.Contains('/'))
+                return $"https://www.marktplaats.nl{id}";
+            else
+                return $"https://www.marktplaats.nl/v/redirect/redirect/{id}-test";
+        return "https://ane.deals/auctions?platform=" + platform.ToString().ToLower() + "&id=" + Uri.EscapeDataString(id);
     }
 }
