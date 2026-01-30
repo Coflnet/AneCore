@@ -12,7 +12,7 @@ public class OpenSearch(IConfiguration configuration, ILogger<OpenSearch> logger
 {
     public Uri OpenSearchUrl()
     {
-        var openSearchUrl = configuration.GetValue<string>("OPENSEARCH_URL");
+        var openSearchUrl = configuration.GetValue<string>("OPENSEARCH:URL");
         if (string.IsNullOrEmpty(openSearchUrl))
             throw new InvalidOperationException("OpenSearch URL is not configured.");
         return new Uri(openSearchUrl);
@@ -20,7 +20,7 @@ public class OpenSearch(IConfiguration configuration, ILogger<OpenSearch> logger
 
     public string OpenSearchUsername()
     {
-        var username = configuration.GetValue<string>("OPENSEARCH_USERNAME");
+        var username = configuration.GetValue<string>("OPENSEARCH:USERNAME");
         return string.IsNullOrEmpty(username)
             ? throw new InvalidOperationException("OpenSearch username is not configured.")
             : username;
@@ -28,7 +28,7 @@ public class OpenSearch(IConfiguration configuration, ILogger<OpenSearch> logger
 
     public string OpenSearchPassword()
     {
-        var password = configuration.GetValue<string>("OPENSEARCH_PASSWORD");
+        var password = configuration.GetValue<string>("OPENSEARCH:PASSWORD");
         return string.IsNullOrEmpty(password)
             ? throw new InvalidOperationException("OpenSearch password is not configured.")
             : password;
