@@ -65,7 +65,7 @@ public record ProductDocument(
     string? NormalizedName,
     string? Brand,
     string? Model,
-    string IdentifierType,
+    string? IdentifierType,
     string? Condition,
     double? AveragePrice,
     double? MedianPrice,
