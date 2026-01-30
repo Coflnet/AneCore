@@ -130,12 +130,12 @@ public record ListingDocument(
     GeoLocation? Location,
     string? Shipping,
     List<string> PriceFlags,
-    Dictionary<string, string>? Attributes,
+    List<ListingAttribute> Attributes,
     DateTime FoundAt,
     DateTime? CreatedAt,
     DateTime? SoldBefore,
     bool? Commercial,
-    Dictionary<string, string> Metadata,
+    List<ListingMetadata> Metadata,
     string Platform
 );
 
