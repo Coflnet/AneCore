@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Coflnet.Core" Version="0.5.1" />
+    <PackageReference Include="OpenSearch.Client" Version="1.8.0"/>
   </ItemGroup>
 
 </Project>
