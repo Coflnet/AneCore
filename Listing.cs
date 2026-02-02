@@ -90,6 +90,13 @@ public class Listing
     public Dictionary<string, string>? Metadata { get; set; }
     [Key(25)]
     public Platform Platform { get; set; }
+    /// <summary>
+    /// SEO Id used for product indexing
+    /// </summary>
+    [Key(26)]
+    public string SeoId { get; set; }
+    [Key(27)]
+    public string[]? Categories { get; set; }
 
     public Listing()
     {

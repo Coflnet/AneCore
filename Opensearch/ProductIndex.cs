@@ -33,7 +33,7 @@ public class ProductIndex(
             .Map<ProductDocument>(m => m
                 .Properties(p => p
                     .Keyword(k => k.Name(n => n.SeoId))
-                    .Keyword(k => k.Name(n => n.Category))
+                    .Keyword(k => k.Name(n => n.Categories))
                     .Text(t => t.Name(n => n.Name))
                     .Text(k => k.Name(n => n.NormalizedName))
                     .Keyword(k => k.Name(n => n.Brand))
@@ -47,6 +47,9 @@ public class ProductIndex(
                     .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
                     .Date(d => d.Name(n => n.CreatedAt))
                     .Date(d => d.Name(n => n.LastUpdated))
+                    .Object<Dictionary<string, string>>(o => o
+                        .Name(n => n.Attributes)
+                    )
                     .Text(t => t.Name(n => n.SampleTitles))
                     .Keyword(k => k.Name(n => n.ImageUrl))
                     .Keyword(k => k.Name(n => n.CanonicalSeoId))
@@ -60,7 +63,7 @@ public class ProductIndex(
 
 public record ProductDocument(
     string? SeoId,
-    string? Category,
+    string[]? Categories,
     string? Name,
     string? NormalizedName,
     string? Brand,
@@ -74,6 +77,7 @@ public record ProductDocument(
     int? ListingCount,
     DateTime CreatedAt,
     DateTime LastUpdated,
+    Dictionary<string, string>? Attributes,
     List<string> SampleTitles,
     string? ImageUrl,
     string? CanonicalSeoId,
