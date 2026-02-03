@@ -47,8 +47,12 @@ public class ProductIndex(
                     .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
                     .Date(d => d.Name(n => n.CreatedAt))
                     .Date(d => d.Name(n => n.LastUpdated))
-                    .Object<Dictionary<string, string>>(o => o
-                        .Name(n => n.Attributes)
+                    .Object<ProductAttribute>(o => o
+                        .Name(n2 => n2.Attributes)
+                        .Properties(p2 => p2
+                            .Keyword(k2 => k2.Name(n2 => n2.Key))
+                            .Keyword(k2 => k2.Name(n2 => n2.Value))
+                        )
                     )
                     .Text(t => t.Name(n => n.SampleTitles))
                     .Keyword(k => k.Name(n => n.ImageUrl))
@@ -63,7 +67,7 @@ public class ProductIndex(
 
 public record ProductDocument(
     string? SeoId,
-    string[]? Categories,
+    List<string>? Categories,
     string? Name,
     string? NormalizedName,
     string? Brand,
@@ -77,9 +81,14 @@ public record ProductDocument(
     int? ListingCount,
     DateTime CreatedAt,
     DateTime LastUpdated,
-    Dictionary<string, string>? Attributes,
+    List<ProductAttribute> Attributes,
     List<string> SampleTitles,
     string? ImageUrl,
     string? CanonicalSeoId,
     List<string> RelatedSeoIds
+);
+
+public record ProductAttribute(
+    string Key,
+    string Value
 );

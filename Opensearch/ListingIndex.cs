@@ -15,7 +15,7 @@ public class ListingIndex(
 
     protected override string RetentionPolicyId() => "ane_listing_retention_policy";
 
-    protected override string IndexTemplateName() => "ane-listing_index_template";
+    protected override string IndexTemplateName() => "ane_listing_index_template";
 
     protected override string BootstrapIndexName() => "ane-listings-000001";
 
@@ -24,6 +24,7 @@ public class ListingIndex(
     protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
         t => t
             .Settings(s => s
+                .Setting("plugins.index_state_management.rollover_alias", IndexName())
                 .NumberOfShards(3)
                 .NumberOfReplicas(0)
                 .RefreshInterval(TimeSpan.FromSeconds(10))
