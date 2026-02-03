@@ -63,7 +63,7 @@ public class ProductIndex(
 
 public record ProductDocument(
     string? SeoId,
-    string[]? Categories,
+    List<string>? Categories,
     string? Name,
     string? NormalizedName,
     string? Brand,
