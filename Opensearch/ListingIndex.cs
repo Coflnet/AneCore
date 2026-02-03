@@ -15,7 +15,7 @@ public class ListingIndex(
 
     protected override string RetentionPolicyId() => "ane_listing_retention_policy";
 
-    protected override string IndexTemplateName() => "ane-listing_index_template";
+    protected override string IndexTemplateName() => "ane_listing_index_template";
 
     protected override string BootstrapIndexName() => "ane-listings-000001";
 
