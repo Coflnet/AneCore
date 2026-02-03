@@ -24,6 +24,7 @@ public class ListingIndex(
     protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
         t => t
             .Settings(s => s
+                .Setting("plugins.index_state_management.rollover_alias", IndexName())
                 .NumberOfShards(3)
                 .NumberOfReplicas(0)
                 .RefreshInterval(TimeSpan.FromSeconds(10))
