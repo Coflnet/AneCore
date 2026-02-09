@@ -10,31 +10,34 @@ public class ProductIndex(
     OpenSearch opBaseClient)
     : OpenSearchIndexBase(opBaseClient, logger)
 {
-    public override string IndexName() => "ane_products";
+    public override string IndexName() => "ane_products_index";
 
-    protected override string RetentionPolicyId() => "ane_product_retention_policy";
+    protected override string RetentionPolicyId() => "ane_products_retention_policy";
 
-    protected override string IndexTemplateName() => "ane_product_index_template";
+    protected override string IndexTemplateName() => "ane_products_index_template";
 
-    protected override string BootstrapIndexName() => "ane-products-000001";
+    protected override string BootstrapIndexName() => "ane-products-index-000001";
 
-    protected override bool IsRolloverIndex() => false;
-
-    protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
-        throw new NotImplementedException();
+    protected override bool IsRolloverIndex() => true;
 
     protected override Func<CreateIndexDescriptor, ICreateIndexRequest> IndexFunc() =>
+        throw new NotImplementedException();
+
+    protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
+
         t => t
             .Settings(s => s
-                .NumberOfShards(3)
-                .NumberOfReplicas(0)
+                .NumberOfShards(1)
+                .NumberOfReplicas(1)
                 .RefreshInterval(TimeSpan.FromSeconds(10))
+                .Setting("plugins.index_state_management.rollover_alias", IndexName())
+                .Setting("index.knn", true)
             )
             .Map<ProductDocument>(m => m
                 .Properties(p => p
                     .Keyword(k => k.Name(n => n.SeoId))
                     .Keyword(k => k.Name(n => n.Categories))
-                    .Text(t => t.Name(n => n.Name))
+                    .Text(k => k.Name(n => n.Name))
                     .Text(k => k.Name(n => n.NormalizedName))
                     .Keyword(k => k.Name(n => n.Brand))
                     .Keyword(k => k.Name(n => n.Model))
@@ -54,7 +57,7 @@ public class ProductIndex(
                             .Keyword(k2 => k2.Name(n2 => n2.Value))
                         )
                     )
-                    .Text(t => t.Name(n => n.SampleTitles))
+                    .Text(k => k.Name(n => n.SampleTitles))
                     .Keyword(k => k.Name(n => n.ImageUrl))
                     .Keyword(k => k.Name(n => n.CanonicalSeoId))
                     .Keyword(k => k.Name(n => n.RelatedSeoIds))
@@ -62,7 +65,54 @@ public class ProductIndex(
             );
 
     protected override PostData RetentionPolicy() =>
-        throw new NotImplementedException();
+        PostData.Serializable(new
+        {
+            policy = new
+            {
+                description = "Product index retention policy",
+                default_state = "hot",
+                states = new object[]
+                {
+                    new
+                    {
+                        name = "hot",
+                        actions = new[]
+                        {
+                            new
+                            {
+                                rollover = new
+                                {
+                                    min_size = "20gb",
+                                }
+                            }
+                        },
+                        transitions = new[]
+                        {
+                            new
+                            {
+                                state_name = "warm",
+                                conditions = new { min_rollover_age = "7d" }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        name = "warm",
+                        transitions = Array.Empty<object>(),
+                        actions = new object[]
+                        {
+                            new { read_only = new { } },
+                            new { force_merge = new { max_num_segments = 1 } }
+                        }
+                    }
+                },
+                ism_template = new
+                {
+                    index_patterns = new[] { IndexPattern() },
+                    priority = 100
+                }
+            }
+        });
 }
 
 public record ProductDocument(
