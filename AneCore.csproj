@@ -11,4 +11,8 @@
     <PackageReference Include="OpenSearch.Client" Version="1.8.0"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Categories\UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

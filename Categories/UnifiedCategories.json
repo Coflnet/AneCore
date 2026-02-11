@@ -1,0 +1,842 @@
+{
+  "version": "1.0",
+  "defaultLanguage": "de",
+  "categories": [
+    {
+      "slug": "elektronik",
+      "label": "Elektronik",
+      "subCategories": [
+        {
+          "slug": "notebooks",
+          "label": "Notebooks & Laptops",
+          "attributeExtractionPrompt": "Extract from listing: screen_size (in Zoll/inches as number), cpu_brand (Intel/AMD/Apple), cpu_model, ram_size (in GB as number), storage_type (HDD/SSD/NVMe), storage_size (in GB/TB as number), battery_capacity (in Wh as number if mentioned), gpu (dedicated graphics card if mentioned), condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "screen_size": "15.6 inch",
+            "cpu_brand": "Intel",
+            "cpu_model": "i7-10750H",
+            "ram_size": "16 GB",
+            "storage_type": "SSD",
+            "storage_size": "512 GB",
+            "gpu": "RTX 2060",
+            "condition": "neuwertig"
+          }
+        },
+        {
+          "slug": "pcs",
+          "label": "PCs & Desktop-Computer",
+          "attributeExtractionPrompt": "Extract from listing: cpu_brand (Intel/AMD), cpu_model, cpu_cores (number), ram_size (in GB as number), ram_type (DDR3/DDR4/DDR5), storage_type (HDD/SSD/NVMe), storage_size (in GB/TB as number), gpu (graphics card model), psu_wattage (power supply in Watt if mentioned), case_type (Tower/Mini/Desktop), condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "cpu_brand": "AMD",
+            "cpu_model": "Ryzen 5 5600X",
+            "cpu_cores": "6",
+            "ram_size": "32 GB",
+            "ram_type": "DDR4",
+            "storage_type": "SSD",
+            "storage_size": "1 TB",
+            "gpu": "RTX 3070",
+            "psu_wattage": "750 W",
+            "case_type": "Tower",
+            "condition": "gebraucht"
+          }
+        },
+        {
+          "slug": "tablets",
+          "label": "Tablets & E-Reader",
+          "attributeExtractionPrompt": "Extract from listing: screen_size (in Zoll/inches as number), brand (Apple/Samsung/etc), model, storage_size (in GB as number), cellular (yes/no for mobile data), condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "screen_size": "10.9 inch",
+            "brand": "Apple",
+            "model": "iPad Pro",
+            "storage_size": "256 GB",
+            "cellular": "no",
+            "condition": "neuwertig"
+          }
+        },
+        {
+          "slug": "handys",
+          "label": "Handys & Smartphones",
+          "attributeExtractionPrompt": "Extract from listing: brand (Apple/Samsung/etc), model, storage_size (in GB as number), color, battery_health (in % if mentioned), condition (neu/neuwertig/gebraucht/defekt), simlock (ja/nein)",
+          "attributes": {
+            "brand": "Samsung",
+            "model": "Galaxy S21",
+            "storage_size": "128 GB",
+            "color": "Black",
+            "battery_health": "95%",
+            "condition": "gebraucht",
+            "simlock": "nein"
+          }
+        },
+        {
+          "slug": "huellen",
+          "label": "Handyhüllen & Schutzfolien",
+          "attributeExtractionPrompt": "Extract from listing: phone_model (compatible phone), material (Silikon/Leder/Kunststoff/etc), type (Hülle/Schutzfolie/Flipcase/etc), brand, condition",
+          "attributes": {
+            "phone_model": "iPhone 13",
+            "material": "Silikon",
+            "type": "Hülle",
+            "brand": "Spigen",
+            "condition": "neu"
+          }
+        },
+        {
+          "slug": "kopfhoerer",
+          "label": "Kopfhörer & Headsets",
+          "attributeExtractionPrompt": "Extract from listing: type (In-Ear/Over-Ear/On-Ear), wireless (ja/nein), brand, model, noise_cancelling (ja/nein), condition",
+          "attributes": {
+            "type": "Over-Ear",
+            "wireless": "ja",
+            "brand": "Sony",
+            "model": "WH-1000XM4",
+            "noise_cancelling": "ja",
+            "condition": "neuwertig"
+          }
+        },
+        {
+          "slug": "konsolen",
+          "label": "Spielkonsolen",
+          "attributeExtractionPrompt": "Extract from listing: console_name (PlayStation/Xbox/Nintendo Switch/Wii/etc), storage_size (in GB/TB as number if mentioned), color, bundle_games (list of included games if any), controller_count (number of controllers if mentioned), condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "console_name": "PlayStation 5",
+            "storage_size": "825 GB",
+            "color": "White",
+            "bundle_games": "2 games",
+            "controller_count": "2",
+            "condition": "neuwertig"
+          }
+        },
+        {
+          "slug": "videospiele",
+          "label": "Videospiele",
+          "attributeExtractionPrompt": "Extract from listing: game_name (exact game title without console), console_name (PlayStation/PS4/PS5/Xbox/Nintendo Switch/Wii/PC/etc), is_console (false - this is a game not a console), publisher (EA/Nintendo/Sony/etc if mentioned), condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "game_name": "God of War",
+            "console_name": "PS5",
+            "publisher": "Sony",
+            "condition": "neuwertig"
+          }
+        },
+        {
+          "slug": "audio",
+          "label": "Audio & HiFi"
+        },
+        {
+          "slug": "tv-video",
+          "label": "TV & Video"
+        },
+        {
+          "slug": "foto-kameras",
+          "label": "Foto & Kameras",
+          "attributeExtractionPrompt": "Extract from listing: camera_type (Spiegelreflex/Systemkamera/Kompaktkamera/etc), brand, model, megapixels (as number), lens_included (yes/no), sensor_size (Vollformat/APS-C/etc if mentioned), condition",
+          "attributes": {
+            "camera_type": "Spiegelreflex",
+            "brand": "Canon",
+            "model": "EOS 5D Mark IV",
+            "megapixels": "30",
+            "lens_included": "ja",
+            "sensor_size": "Vollformat",
+            "condition": "gebraucht"
+          },
+          "subCategories": [
+            {
+              "slug": "kameras",
+              "label": "Kameras",
+              "attributeExtractionPrompt": "Extract: camera_type (DSLR/Mirrorless/Compact), brand, model, megapixels, sensor_size, video_resolution (4K/etc if mentioned), condition",
+              "attributes": {
+                "camera_type": "Mirrorless",
+                "brand": "Sony",
+                "model": "A7III",
+                "megapixels": "24",
+                "sensor_size": "Vollformat",
+                "video_resolution": "4K",
+                "condition": "gebraucht"
+              }
+            },
+            {
+              "slug": "objektive",
+              "label": "Objektive",
+              "attributeExtractionPrompt": "Extract: mount_type (Canon EF/Nikon F/Sony E/etc), focal_length (in mm), aperture (f/number), brand, condition",
+              "attributes": {
+                "mount_type": "Canon EF",
+                "focal_length": "24-70 mm",
+                "aperture": "f/2.8",
+                "brand": "Tamron",
+                "condition": "neuwertig"
+              }
+            },
+            {
+              "slug": "zubehoer",
+              "label": "Kamerazubehör",
+              "attributeExtractionPrompt": "Extract: accessory_type (Stativ/Tasche/Blitz/Filter/etc), brand, compatible_with, condition",
+              "attributes": {
+                "accessory_type": "Stativ",
+                "brand": "Manfrotto",
+                "compatible_with": "universal",
+                "condition": "neuwertig"
+              }
+            }
+          ]
+        },
+        {
+          "slug": "pc-zubehoer",
+          "label": "PC-Zubehör & Peripherie",
+          "attributeExtractionPrompt": "Extract from listing: product_type (Maus/Tastatur/Monitor/Kabel/etc), brand, model, condition (neu/neuwertig/gebraucht/defekt)",
+          "attributes": {
+            "product_type": "Monitor",
+            "brand": "ASUS",
+            "model": "VP28UQG",
+            "condition": "neuwertig"
+          },
+          "subCategories": [
+            {
+              "slug": "monitore",
+              "label": "Monitore",
+              "attributeExtractionPrompt": "Extract: screen_size (in Zoll as number), resolution (e.g., 1920x1080), panel_type (IPS/VA/TN), refresh_rate (in Hz as number), response_time (in ms if mentioned), condition",
+              "attributes": {
+                "screen_size": "27 inch",
+                "resolution": "2560x1440",
+                "panel_type": "IPS",
+                "refresh_rate": "144 Hz",
+                "response_time": "1 ms",
+                "condition": "gebraucht"
+              }
+            },
+            {
+              "slug": "tastaturen-maeuse",
+              "label": "Tastaturen & Mäuse",
+              "attributeExtractionPrompt": "Extract: product_type (Tastatur/Maus/Set), connection_type (kabelgebunden/kabellos/Bluetooth), brand, mechanical (yes/no for keyboards), condition",
+              "attributes": {
+                "product_type": "Tastatur",
+                "connection_type": "kabellos",
+                "brand": "Logitech",
+                "mechanical": "ja",
+                "condition": "neuwertig"
+              }
+            },
+            {
+              "slug": "kabel-adapter",
+              "label": "Kabel & Adapter",
+              "attributeExtractionPrompt": "Extract: cable_type (HDMI/USB/DisplayPort/etc), length (in m if mentioned), connector_types, condition",
+              "attributes": {
+                "cable_type": "HDMI",
+                "length": "2 m",
+                "connector_types": "HDMI 2.1",
+                "condition": "neu"
+              }
+            },
+            {
+              "slug": "sonstiges",
+              "label": "Sonstiges Zubehör"
+            }
+          ]
+        },
+        {
+          "slug": "software",
+          "label": "Software"
+        },
+        {
+          "slug": "netzwerk",
+          "label": "Netzwerk & Internet"
+        },
+        {
+          "slug": "speicher",
+          "label": "Speichermedien"
+        },
+        {
+          "slug": "drucker",
+          "label": "Drucker & Scanner"
+        },
+        {
+          "slug": "haushaltsgeraete",
+          "label": "Haushaltsgeräte"
+        },
+        {
+          "slug": "smartwatch",
+          "label": "Smartwatches & Wearables"
+        },
+        {
+          "slug": "sonstige-elektronik",
+          "label": "Sonstige Elektronik"
+        }
+      ]
+    },
+    {
+      "slug": "fahrzeuge",
+      "label": "Fahrzeuge",
+      "subCategories": [
+        {
+          "slug": "autos",
+          "label": "Autos",
+          "attributeExtractionPrompt": "Extract from listing: brand (Hersteller), model, year (Erstzulassung Jahr as number), mileage (Kilometerstand in km as number), fuel_type (Benzin/Diesel/Elektro/Hybrid), transmission (Schaltgetriebe/Automatik), power (PS as number), price (in Euro), condition, tuv_expiry (TÜV bis when if mentioned)",
+          "attributes": {
+            "brand": "BMW",
+            "model": "320d",
+            "year": "2018",
+            "mileage": "85000 km",
+            "fuel_type": "Diesel",
+            "transmission": "Automatik",
+            "power": "190 PS",
+            "condition": "gebraucht",
+            "tuv_expiry": "2026"
+          }
+        },
+        {
+          "slug": "motorraeder",
+          "label": "Motorräder & Roller"
+        },
+        {
+          "slug": "fahrraeder",
+          "label": "Fahrräder"
+        },
+        {
+          "slug": "boote",
+          "label": "Boote & Wassersport"
+        },
+        {
+          "slug": "wohnmobile",
+          "label": "Wohnmobile & Wohnwagen"
+        },
+        {
+          "slug": "nutzfahrzeuge",
+          "label": "Nutzfahrzeuge & Anhänger"
+        },
+        {
+          "slug": "autoteile",
+          "label": "Autoteile & Reifen"
+        },
+        {
+          "slug": "motorradteile",
+          "label": "Motorradteile & Zubehör"
+        },
+        {
+          "slug": "fahrradzubehoer",
+          "label": "Fahrradzubehör"
+        },
+        {
+          "slug": "sonstige-fahrzeuge",
+          "label": "Sonstige Fahrzeuge"
+        }
+      ]
+    },
+    {
+      "slug": "immobilien",
+      "label": "Immobilien",
+      "subCategories": [
+        {
+          "slug": "wohnungen-miete",
+          "label": "Mietwohnungen"
+        },
+        {
+          "slug": "wohnungen-kauf",
+          "label": "Eigentumswohnungen"
+        },
+        {
+          "slug": "haeuser-miete",
+          "label": "Häuser zur Miete"
+        },
+        {
+          "slug": "haeuser-kauf",
+          "label": "Häuser zum Kauf"
+        },
+        {
+          "slug": "grundstuecke",
+          "label": "Grundstücke"
+        },
+        {
+          "slug": "gewerbe",
+          "label": "Gewerbeimmobilien"
+        },
+        {
+          "slug": "wg-zimmer",
+          "label": "WG-Zimmer"
+        },
+        {
+          "slug": "ferienwohnungen",
+          "label": "Ferienwohnungen"
+        },
+        {
+          "slug": "garagen",
+          "label": "Garagen & Stellplätze"
+        },
+        {
+          "slug": "sonstige-immobilien",
+          "label": "Sonstige Immobilien"
+        }
+      ]
+    },
+    {
+      "slug": "mode",
+      "label": "Mode & Kleidung",
+      "subCategories": [
+        {
+          "slug": "damenkleidung",
+          "label": "Damenkleidung"
+        },
+        {
+          "slug": "herrenkleidung",
+          "label": "Herrenkleidung"
+        },
+        {
+          "slug": "damenschuhe",
+          "label": "Damenschuhe"
+        },
+        {
+          "slug": "herrenschuhe",
+          "label": "Herrenschuhe"
+        },
+        {
+          "slug": "taschen",
+          "label": "Taschen & Accessoires"
+        },
+        {
+          "slug": "schmuck",
+          "label": "Schmuck"
+        },
+        {
+          "slug": "uhren",
+          "label": "Uhren"
+        },
+        {
+          "slug": "beauty",
+          "label": "Beauty & Gesundheit"
+        },
+        {
+          "slug": "sonstige-mode",
+          "label": "Sonstige Mode"
+        }
+      ]
+    },
+    {
+      "slug": "haus-garten",
+      "label": "Haus & Garten",
+      "subCategories": [
+        {
+          "slug": "moebel",
+          "label": "Möbel"
+        },
+        {
+          "slug": "dekoration",
+          "label": "Dekoration"
+        },
+        {
+          "slug": "kuechenzubehoer",
+          "label": "Küchenzubehör"
+        },
+        {
+          "slug": "badezimmer",
+          "label": "Badezimmer"
+        },
+        {
+          "slug": "beleuchtung",
+          "label": "Beleuchtung"
+        },
+        {
+          "slug": "heimtextilien",
+          "label": "Heimtextilien"
+        },
+        {
+          "slug": "garten",
+          "label": "Garten & Pflanzen"
+        },
+        {
+          "slug": "werkzeug",
+          "label": "Werkzeug"
+        },
+        {
+          "slug": "heimwerken",
+          "label": "Heimwerken & Renovieren"
+        },
+        {
+          "slug": "sonstige-haus-garten",
+          "label": "Sonstiges Haus & Garten"
+        }
+      ]
+    },
+    {
+      "slug": "familie-kind",
+      "label": "Familie, Kind & Baby",
+      "subCategories": [
+        {
+          "slug": "babykleidung",
+          "label": "Babykleidung"
+        },
+        {
+          "slug": "kinderkleidung",
+          "label": "Kinderkleidung"
+        },
+        {
+          "slug": "kinderschuhe",
+          "label": "Kinderschuhe"
+        },
+        {
+          "slug": "spielzeug",
+          "label": "Spielzeug"
+        },
+        {
+          "slug": "kinderwagen",
+          "label": "Kinderwagen & Buggys"
+        },
+        {
+          "slug": "kindersitze",
+          "label": "Babyschalen & Kindersitze"
+        },
+        {
+          "slug": "kindermoebel",
+          "label": "Kindermöbel"
+        },
+        {
+          "slug": "babyausstattung",
+          "label": "Babyausstattung"
+        },
+        {
+          "slug": "sonstige-familie",
+          "label": "Sonstiges Familie & Kind"
+        }
+      ]
+    },
+    {
+      "slug": "freizeit-hobby",
+      "label": "Freizeit & Hobby",
+      "subCategories": [
+        {
+          "slug": "sport",
+          "label": "Sport & Fitness"
+        },
+        {
+          "slug": "musikinstrumente",
+          "label": "Musikinstrumente",
+          "attributeExtractionPrompt": "Extract from listing: instrument_type (guitar/piano/drums/etc), brand (Fender/Gibson/Yamaha/etc), model (exact model name/number), condition (neu/neuwertig/gebraucht/defekt), year (manufacturing year if mentioned), material (wood type/metal for instruments), included_accessories (case/bag/stand/etc if mentioned)",
+          "attributes": {
+            "instrument_type": "guitar",
+            "brand": "Fender",
+            "model": "Stratocaster",
+            "condition": "neuwertig",
+            "year": "2020",
+            "material": "Alder",
+            "included_accessories": "case"
+          },
+          "subCategories": [
+            {
+              "slug": "gitarren",
+              "label": "Gitarren & Bässe",
+              "attributeExtractionPrompt": "Extract from listing: guitar_type (electric/acoustic/bass/classical), brand, model, num_strings (6/7/8/4 for bass), pickup_type (humbucker/single-coil/p-bass/j-bass), condition, year, case_included (yes/no)",
+              "attributes": {
+                "guitar_type": "electric",
+                "brand": "Gibson",
+                "model": "Les Paul",
+                "num_strings": "6",
+                "pickup_type": "humbucker",
+                "condition": "gebraucht",
+                "year": "2015",
+                "case_included": "ja"
+              }
+            },
+            {
+              "slug": "keyboards",
+              "label": "Keyboards & Pianos",
+              "attributeExtractionPrompt": "Extract from listing: keyboard_type (piano/synthesizer/midi-controller/organ), brand, model, num_keys (49/61/76/88), weighted_keys (yes/no), condition, year",
+              "attributes": {
+                "keyboard_type": "piano",
+                "brand": "Yamaha",
+                "model": "P-125",
+                "num_keys": "88",
+                "weighted_keys": "ja",
+                "condition": "neuwertig",
+                "year": "2021"
+              }
+            },
+            {
+              "slug": "drums",
+              "label": "Schlagzeug & Percussion",
+              "attributeExtractionPrompt": "Extract from listing: drum_type (acoustic/electronic), brand, model, num_pieces (number of drums and cymbals), condition, cymbals_included (yes/no)",
+              "attributes": {
+                "drum_type": "acoustic",
+                "brand": "Ludwig",
+                "model": "Classic Maple",
+                "num_pieces": "5",
+                "condition": "neuwertig",
+                "cymbals_included": "ja"
+              }
+            },
+            {
+              "slug": "blasinstrumente",
+              "label": "Blasinstrumente",
+              "attributeExtractionPrompt": "Extract from listing: instrument_type (trumpet/saxophone/flute/clarinet/etc), brand, model, material (brass/silver/wood), condition, year",
+              "attributes": {
+                "instrument_type": "trumpet",
+                "brand": "Yamaha",
+                "model": "YTR-4335GII",
+                "material": "brass",
+                "condition": "neuwertig",
+                "year": "2020"
+              }
+            }
+          ]
+        },
+        {
+          "slug": "sammeln",
+          "label": "Sammeln"
+        },
+        {
+          "slug": "buecher",
+          "label": "Bücher",
+          "attributeExtractionPrompt": "Extract from listing: book_type (roman/sachbuch/comic/kinderbuch/etc), title (exact book title), author (author name), publisher (Verlag), isbn (ISBN-10 or ISBN-13 if mentioned), year (publication year), language (deutsch/englisch/etc), condition (neu/neuwertig/gebraucht/akzeptabel), edition (Auflage if mentioned), series (book series name if part of one), volume_number (Band number if part of series)",
+          "attributes": {
+            "book_type": "roman",
+            "title": "Der Herr der Ringe",
+            "author": "J.R.R. Tolkien",
+            "publisher": "Klett-Cotta",
+            "isbn": "978-3608960051",
+            "year": "1954",
+            "language": "deutsch",
+            "condition": "neuwertig",
+            "edition": "1",
+            "series": "Der Herr der Ringe",
+            "volume_number": "1"
+          },
+          "subCategories": [
+            {
+              "slug": "romane",
+              "label": "Romane & Erzählungen",
+              "attributeExtractionPrompt": "Extract from listing: title, author, genre (krimi/thriller/fantasy/romance/etc), publisher, year, condition, language, isbn",
+              "attributes": {
+                "title": "The Hobbit",
+                "author": "J.R.R. Tolkien",
+                "genre": "fantasy",
+                "publisher": "Allen & Unwin",
+                "year": "1937",
+                "condition": "gebraucht",
+                "language": "englisch",
+                "isbn": "978-0547928227"
+              }
+            },
+            {
+              "slug": "sachbuecher",
+              "label": "Sachbücher",
+              "attributeExtractionPrompt": "Extract from listing: title, author, topic (biography/history/science/cooking/etc), publisher, year, condition, language, isbn",
+              "attributes": {
+                "title": "Eine kurze Geschichte der Zeit",
+                "author": "Stephen Hawking",
+                "topic": "science",
+                "publisher": "Droemer Knaur",
+                "year": "1988",
+                "condition": "neuwertig",
+                "language": "deutsch",
+                "isbn": "978-3426043577"
+              }
+            },
+            {
+              "slug": "comics",
+              "label": "Comics & Manga",
+              "attributeExtractionPrompt": "Extract from listing: title, series (series name like 'Lustiges Taschenbuch'), volume_number (Band number), publisher (Egmont/Carlsen/etc), year, condition, language, comic_type (comic/manga/graphic-novel)",
+              "attributes": {
+                "title": "Lustiges Taschenbuch",
+                "series": "Lustiges Taschenbuch",
+                "volume_number": "542",
+                "publisher": "Egmont",
+                "year": "2022",
+                "condition": "neuwertig",
+                "language": "deutsch",
+                "comic_type": "comic"
+              }
+            },
+            {
+              "slug": "kinderbuecher",
+              "label": "Kinderbücher",
+              "attributeExtractionPrompt": "Extract from listing: title, author, age_range (suitable age like 3-6/6-10/10+ Jahre), publisher, year, condition, language, illustrated (yes/no)",
+              "attributes": {
+                "title": "Die kleine Raupe Nimmersatt",
+                "author": "Eric Carle",
+                "age_range": "3-6 Jahre",
+                "publisher": "Gerstenberg",
+                "year": "1969",
+                "condition": "gebraucht",
+                "language": "deutsch",
+                "illustrated": "ja"
+              }
+            }
+          ]
+        },
+        {
+          "slug": "filme",
+          "label": "Filme & DVDs"
+        },
+        {
+          "slug": "musik-cds",
+          "label": "Musik & CDs"
+        },
+        {
+          "slug": "kunst",
+          "label": "Kunst & Antiquitäten"
+        },
+        {
+          "slug": "modellbau",
+          "label": "Modellbau"
+        },
+        {
+          "slug": "reisen",
+          "label": "Reisen & Urlaub"
+        },
+        {
+          "slug": "sonstige-freizeit",
+          "label": "Sonstige Freizeit"
+        }
+      ]
+    },
+    {
+      "slug": "tiere",
+      "label": "Tiere & Tierbedarf",
+      "subCategories": [
+        {
+          "slug": "hunde",
+          "label": "Hunde"
+        },
+        {
+          "slug": "katzen",
+          "label": "Katzen"
+        },
+        {
+          "slug": "voegel",
+          "label": "Vögel"
+        },
+        {
+          "slug": "fische",
+          "label": "Fische & Aquaristik"
+        },
+        {
+          "slug": "nagetiere",
+          "label": "Nagetiere"
+        },
+        {
+          "slug": "pferde",
+          "label": "Pferde"
+        },
+        {
+          "slug": "tierbedarf",
+          "label": "Tierbedarf & Zubehör"
+        },
+        {
+          "slug": "sonstige-tiere",
+          "label": "Sonstige Tiere"
+        }
+      ]
+    },
+    {
+      "slug": "jobs",
+      "label": "Jobs & Karriere",
+      "subCategories": [
+        {
+          "slug": "vollzeit",
+          "label": "Vollzeitstellen"
+        },
+        {
+          "slug": "teilzeit",
+          "label": "Teilzeitstellen"
+        },
+        {
+          "slug": "minijobs",
+          "label": "Minijobs"
+        },
+        {
+          "slug": "ausbildung",
+          "label": "Ausbildung"
+        },
+        {
+          "slug": "praktikum",
+          "label": "Praktika"
+        },
+        {
+          "slug": "sonstige-jobs",
+          "label": "Sonstige Jobs"
+        }
+      ]
+    },
+    {
+      "slug": "dienstleistungen",
+      "label": "Dienstleistungen",
+      "subCategories": [
+        {
+          "slug": "handwerk",
+          "label": "Handwerker & Reparaturen"
+        },
+        {
+          "slug": "umzug",
+          "label": "Umzug & Transport"
+        },
+        {
+          "slug": "unterricht",
+          "label": "Unterricht & Kurse"
+        },
+        {
+          "slug": "kinderbetreuung",
+          "label": "Kinderbetreuung"
+        },
+        {
+          "slug": "tierbetreuung",
+          "label": "Tierbetreuung"
+        },
+        {
+          "slug": "veranstaltungen",
+          "label": "Events & Veranstaltungen"
+        },
+        {
+          "slug": "sonstige-dienstleistungen",
+          "label": "Sonstige Dienstleistungen"
+        }
+      ]
+    },
+    {
+      "slug": "tickets",
+      "label": "Tickets & Eintrittskarten",
+      "subCategories": [
+        {
+          "slug": "konzert-tickets",
+          "label": "Konzerte"
+        },
+        {
+          "slug": "sport-tickets",
+          "label": "Sportveranstaltungen"
+        },
+        {
+          "slug": "theater-tickets",
+          "label": "Theater & Musical"
+        },
+        {
+          "slug": "reise-tickets",
+          "label": "Bahn & Reisen"
+        },
+        {
+          "slug": "sonstige-tickets",
+          "label": "Sonstige Tickets"
+        }
+      ]
+    },
+    {
+      "slug": "verschenken",
+      "label": "Verschenken & Tauschen",
+      "subCategories": [
+        {
+          "slug": "zu-verschenken",
+          "label": "Zu verschenken"
+        },
+        {
+          "slug": "tauschen",
+          "label": "Tauschen"
+        },
+        {
+          "slug": "leihen",
+          "label": "Leihen"
+        }
+      ]
+    },
+    {
+      "slug": "sonstiges",
+      "label": "Sonstiges",
+      "subCategories": [
+        {
+          "slug": "diverses",
+          "label": "Diverses"
+        }
+      ]
+    }
+  ]
+}
