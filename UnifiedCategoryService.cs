@@ -38,17 +38,8 @@ public class UnifiedCategoryService
     /// </summary>
     public UnifiedCategoryService()
     {
-        var basePath = AppDomain.CurrentDomain.BaseDirectory;
+        var unifiedPath = FindUnifiedCategoriesFile();
         
-        // Try to find the file in the Categories directory (AneCore path)
-        var unifiedPath = Path.Combine(basePath, "Categories", "UnifiedCategories.json");
-        
-        // Fallback to current directory structure for development
-        if (!File.Exists(unifiedPath))
-        {
-            unifiedPath = Path.Combine(Directory.GetCurrentDirectory(), "Categories", "UnifiedCategories.json");
-        }
-
         var options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
@@ -60,6 +51,59 @@ public class UnifiedCategoryService
             ?? throw new InvalidOperationException("Failed to load unified categories");
 
         _categoryLookup = BuildCategoryLookup();
+    }
+
+    /// <summary>
+    /// Finds the UnifiedCategories.json file by searching multiple possible locations
+    /// </summary>
+    private static string FindUnifiedCategoriesFile()
+    {
+        var fileName = "UnifiedCategories.json";
+        var categoryDirName = "Categories";
+        
+        // Get the directory where this assembly is located
+        var assemblyLocation = System.Reflection.Assembly.GetAssembly(typeof(UnifiedCategoryService))?.Location;
+        if (!string.IsNullOrEmpty(assemblyLocation))
+        {
+            var assemblyDir = Path.GetDirectoryName(assemblyLocation);
+            if (!string.IsNullOrEmpty(assemblyDir))
+            {
+                // Try {assemblyDir}/Categories/UnifiedCategories.json
+                var path1 = Path.Combine(assemblyDir, categoryDirName, fileName);
+                if (File.Exists(path1)) return path1;
+
+                // Try {assemblyDir}/../AneCore/Categories/UnifiedCategories.json (when referenced from other projects)
+                var path2 = Path.Combine(assemblyDir, "..", "AneCore", categoryDirName, fileName);
+                if (File.Exists(path2)) return Path.GetFullPath(path2);
+            }
+        }
+
+        var basePath = AppDomain.CurrentDomain.BaseDirectory;
+        
+        // Try to find the file in the Categories directory (relative to app base)
+        var unifiedPath = Path.Combine(basePath, categoryDirName, fileName);
+        if (File.Exists(unifiedPath)) return unifiedPath;
+
+        // Fallback to current directory structure for development
+        unifiedPath = Path.Combine(Directory.GetCurrentDirectory(), categoryDirName, fileName);
+        if (File.Exists(unifiedPath)) return unifiedPath;
+
+        // Try searching up the directory tree from the current directory
+        var currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
+        while (currentDir != null && currentDir.Parent != null)
+        {
+            var searchPath = Path.Combine(currentDir.FullName, "AneCore", categoryDirName, fileName);
+            if (File.Exists(searchPath)) return searchPath;
+
+            // Also try in current directory
+            var searchPath2 = Path.Combine(currentDir.FullName, categoryDirName, fileName);
+            if (File.Exists(searchPath2)) return searchPath2;
+
+            currentDir = currentDir.Parent;
+        }
+
+        throw new FileNotFoundException($"Could not find {categoryDirName}/{fileName} in any expected location. " +
+            $"Searched from assembly location and working directory: {Directory.GetCurrentDirectory()}");
     }
 
     private Dictionary<string, UnifiedCategory> BuildCategoryLookup()
