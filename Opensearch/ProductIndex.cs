@@ -50,7 +50,7 @@ public class ProductIndex(
                     .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
                     .Date(d => d.Name(n => n.CreatedAt))
                     .Date(d => d.Name(n => n.LastUpdated))
-                    .Object<ProductAttribute>(o => o
+                    .Nested<ProductAttribute>(o => o
                         .Name(n2 => n2.Attributes)
                         .Properties(p2 => p2
                             .Keyword(k2 => k2.Name(n2 => n2.Key))
