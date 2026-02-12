@@ -26,6 +26,7 @@ public class ProductIndex(
     protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
 
         t => t
+            .IndexPatterns(IndexPattern())
             .Settings(s => s
                 .NumberOfShards(1)
                 .NumberOfReplicas(1)
