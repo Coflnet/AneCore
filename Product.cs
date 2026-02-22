@@ -33,4 +33,38 @@ public class Product
     public string? CanonicalSeoId { get; set; }
     // All SEO IDs grouped together (includes self) - stored on canonical product only
     public List<string> RelatedSeoIds { get; set; } = new();
+
+    public static string NormalizeCondition(string condition)
+    {
+        if (string.IsNullOrWhiteSpace(condition)) return "unknown";
+        var cond = condition.Trim().ToLowerInvariant();
+        return ConditionValueNormalization.TryGetValue(cond, out var normalized) ? normalized : cond;
+    }
+
+    private static readonly Dictionary<string, string> ConditionValueNormalization = new(StringComparer.OrdinalIgnoreCase)
+    {
+        // New
+        { "neu", "new" }, { "new", "new" }, { "neuf", "new" }, { "nuevo", "new" },
+        { "nuovo", "new" }, { "nieuw", "new" }, { "ny", "new" }, { "nový", "new" },
+        { "nowy", "new" }, { "novo", "new" },
+        // Like new
+        { "wie neu", "like_new" }, { "like new", "like_new" }, { "comme neuf", "like_new" },
+        { "como nuevo", "like_new" }, { "come nuovo", "like_new" }, { "als nieuw", "like_new" },
+        { "som ny", "like_new" }, { "jako nový", "like_new" }, { "like_new", "like_new" },
+        // Good
+        { "gut", "good" }, { "good", "good" }, { "bon", "good" }, { "bueno", "good" },
+        { "buono", "good" }, { "goed", "good" }, { "bra", "good" }, { "dobrý", "good" },
+        // Acceptable
+        { "akzeptabel", "acceptable" }, { "acceptable", "acceptable" },
+        { "aceptable", "acceptable" }, { "accettabile", "acceptable" },
+        { "acceptabel", "acceptable" }, { "redelijk", "acceptable" },
+        // Used
+        { "gebraucht", "used" }, { "used", "used" }, { "occasion", "used" },
+        { "usado", "used" }, { "usato", "used" }, { "gebruikt", "used" },
+        { "begagnad", "used" }, { "použitý", "used" },
+        // Broken / Defect
+        { "defekt", "broken" }, { "broken", "broken" }, { "défectueux", "broken" },
+        { "defectuoso", "broken" }, { "difettoso", "broken" }, { "defect", "broken" },
+        { "trasig", "broken" }, { "kapot", "broken" },
+    };
 }
