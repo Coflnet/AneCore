@@ -106,25 +106,22 @@ public class Product
         // New
         { "neu", "new" }, { "new", "new" }, { "neuf", "new" }, { "nuevo", "new" },
         { "nuovo", "new" }, { "nieuw", "new" }, { "ny", "new" }, { "nový", "new" },
-        { "nowy", "new" }, { "novo", "new" },
-        // Like new
-        { "wie neu", "like_new" }, { "like new", "like_new" }, { "comme neuf", "like_new" },
-        { "como nuevo", "like_new" }, { "come nuovo", "like_new" }, { "als nieuw", "like_new" },
-        { "som ny", "like_new" }, { "jako nový", "like_new" }, { "like_new", "like_new" },
-        // Good
-        { "gut", "good" }, { "good", "good" }, { "bon", "good" }, { "bueno", "good" },
-        { "buono", "good" }, { "goed", "good" }, { "bra", "good" }, { "dobrý", "good" },
-        // Acceptable
-        { "akzeptabel", "acceptable" }, { "acceptable", "acceptable" },
-        { "aceptable", "acceptable" }, { "accettabile", "acceptable" },
-        { "acceptabel", "acceptable" }, { "redelijk", "acceptable" },
-        // Used
+        { "nowy", "new" }, { "novo", "new" }, { "nie benutzt", "new" },
+        // Used (includes like new, good, acceptable, used)
+        { "wie neu", "used" }, { "like new", "used" }, { "comme neuf", "used" },
+        { "como nuevo", "used" }, { "come nuovo", "used" }, { "als nieuw", "used" },
+        { "som ny", "used" }, { "jako nový", "used" }, { "like_new", "used" },
+        { "gut", "used" }, { "good", "used" }, { "bon", "used" }, { "bueno", "used" },
+        { "buono", "used" }, { "goed", "used" }, { "bra", "used" }, { "dobrý", "used" },
+        { "akzeptabel", "used" }, { "acceptable", "used" },
+        { "aceptable", "used" }, { "accettabile", "used" },
+        { "acceptabel", "used" }, { "redelijk", "used" },
         { "gebraucht", "used" }, { "used", "used" }, { "occasion", "used" },
         { "usado", "used" }, { "usato", "used" }, { "gebruikt", "used" },
         { "begagnad", "used" }, { "použitý", "used" },
         // Broken / Defect
         { "defekt", "broken" }, { "broken", "broken" }, { "défectueux", "broken" },
         { "defectuoso", "broken" }, { "difettoso", "broken" }, { "defect", "broken" },
-        { "trasig", "broken" }, { "kapot", "broken" },
+        { "trasig", "broken" }, { "kapot", "broken" }, { "for parts", "broken" }, { "for_parts", "broken" }
     };
 }
