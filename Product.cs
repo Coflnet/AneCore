@@ -38,7 +38,50 @@ public class Product
     {
         if (string.IsNullOrWhiteSpace(condition)) return "unknown";
         var cond = condition.Trim().ToLowerInvariant();
-        return ConditionValueNormalization.TryGetValue(cond, out var normalized) ? normalized : cond;
+        if (ConditionValueNormalization.TryGetValue(cond, out var normalized))
+            return normalized;
+        // Check if any known condition keyword is contained in the value  
+        // (handles cases like "1x vorhanden, gebraucht" containing "gebraucht")
+        foreach (var kvp in ConditionValueNormalization)
+        {
+            if (cond.Contains(kvp.Key) && kvp.Key.Length >= 3) // min 3 chars to avoid false positives
+                return kvp.Value;
+        }
+        // If the value is too long or doesn't match any known condition, treat as unknown
+        // This filters out garbage like "25 eur", "nur abholung", "frisch gewaschen"
+        if (cond.Length > 30 || !IsLikelyConditionValue(cond))
+            return "unknown";
+        return cond;
+    }
+
+    /// <summary>
+    /// Checks whether a string looks like it could be a condition value rather than garbage data.
+    /// </summary>
+    private static bool IsLikelyConditionValue(string value)
+    {
+        // Known condition-related patterns (partial matches)
+        var conditionPatterns = new[] {
+            "new", "neu", "neuf", "nuevo", "nuovo", "nieuw",
+            "used", "gebraucht", "occasion", "usado", "usato", "gebruikt",
+            "broken", "defekt", "kaputt", "kapot", "trasig",
+            "good", "gut", "bon", "bueno", "buono", "goed",
+            "fair", "ok", "okay", "akzeptabel",
+            "like new", "wie neu", "mint", "excellent", "sehr gut",
+            "refurbished", "generalüberholt",
+            "funktionsfähig", "funktioniert", "working", "functional"
+        };
+        return conditionPatterns.Any(p => value.Contains(p));
+    }
+
+    /// <summary>
+    /// Checks whether a given color string is a recognized color name.
+    /// Returns true if the value maps to a known color.
+    /// </summary>
+    public static bool IsKnownColor(string color)
+    {
+        if (string.IsNullOrWhiteSpace(color)) return false;
+        var col = color.Trim().ToLowerInvariant();
+        return ColorValueNormalization.ContainsKey(col);
     }
 
     public static string NormalizeColor(string color)
