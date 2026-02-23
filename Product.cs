@@ -67,8 +67,9 @@ public class Product
             "good", "gut", "bon", "bueno", "buono", "goed",
             "fair", "ok", "okay", "akzeptabel",
             "like new", "wie neu", "mint", "excellent", "sehr gut",
-            "refurbished", "generalüberholt",
-            "funktionsfähig", "funktioniert", "working", "functional"
+            "refurbished", "generalüberholt", "gereviseerd",
+            "funktionsfähig", "funktioniert", "working", "functional",
+            "funktionstüchtig", "funktionsfaehig"
         };
         return conditionPatterns.Any(p => value.Contains(p));
     }
@@ -150,6 +151,10 @@ public class Product
         { "neu", "new" }, { "new", "new" }, { "neuf", "new" }, { "nuevo", "new" },
         { "nuovo", "new" }, { "nieuw", "new" }, { "ny", "new" }, { "nový", "new" },
         { "nowy", "new" }, { "novo", "new" }, { "nie benutzt", "new" },
+        { "unbenutzt", "new" }, { "originalverpackt", "new" }, { "ovp", "new" },
+        { "sealed", "new" }, { "neuwertig", "new" }, { "nagelneu", "new" },
+        { "brandneu", "new" }, { "brand new", "new" }, { "mint", "new" },
+        { "near mint", "new" }, { "mint condition", "new" },
         // Used (includes like new, good, acceptable, used)
         { "wie neu", "used" }, { "like new", "used" }, { "comme neuf", "used" },
         { "como nuevo", "used" }, { "come nuovo", "used" }, { "als nieuw", "used" },
@@ -162,9 +167,37 @@ public class Product
         { "gebraucht", "used" }, { "used", "used" }, { "occasion", "used" },
         { "usado", "used" }, { "usato", "used" }, { "gebruikt", "used" },
         { "begagnad", "used" }, { "použitý", "used" },
+        { "sehr gut", "used" }, { "very good", "used" }, { "très bon", "used" },
+        { "sehr gut erhalten", "used" }, { "gut erhalten", "used" },
+        { "sehr guter zustand", "used" }, { "guter zustand", "used" },
+        { "top zustand", "used" }, { "top", "used" },
+        { "super zustand", "used" }, { "einwandfrei", "used" },
+        { "gepflegt", "used" }, { "gepflegter", "used" },
+        { "voll funktionsfähig", "used" }, { "funktionsfähig", "used" },
+        { "funktioniert", "used" }, { "working", "used" }, { "functional", "used" },
+        { "alles funktioniert", "used" }, { "voll funktionsfähiger", "used" },
+        { "funktionsfaehig", "used" }, { "funktionstüchtig", "used" },
+        { "voll funktionstüchtig", "used" },
+        { "kaum getragen", "used" }, { "wenig benutzt", "used" },
+        { "excellent", "used" }, { "refurbished", "used" },
+        { "generalüberholt", "used" }, { "generalüberholtes", "used" },
+        { "vollständig", "used" },
+        { "komplett", "used" }, { "trocken", "used" },
+        { "aus erster hand", "used" }, { "second hand", "used" },
+        { "benutzt", "used" }, { "gebrauchsspuren", "used" },
+        { "selten getragen", "used" }, { "kaum genutzt", "used" },
+        { "kaum gebraucht", "used" }, { "ungetragen", "new" },
+        { "ok", "used" }, { "okay", "used" }, { "ganz okay", "used" },
+        { "okka", "used" }, { "oke", "used" }, { "gereviseerd", "refurbished" },
+        { "gut erhaltene", "used" }, { "sehr gut erhaltene", "used" },
+        { "wenig getragen", "used" }, { "kaum benutzt", "used" },
+        { "sehr wenig getragen", "used" }, { "sehr wenig benutzt", "used" },
         // Broken / Defect
         { "defekt", "broken" }, { "broken", "broken" }, { "défectueux", "broken" },
         { "defectuoso", "broken" }, { "difettoso", "broken" }, { "defect", "broken" },
-        { "trasig", "broken" }, { "kapot", "broken" }, { "for parts", "broken" }, { "for_parts", "broken" }
+        { "trasig", "broken" }, { "kapot", "broken" }, { "for parts", "broken" }, { "for_parts", "broken" },
+        { "bastler", "broken" }, { "bastler/export", "broken" },
+        { "beschädigt", "broken" }, { "kaputt", "broken" },
+        { "unfallfahrzeug", "broken" }, { "beschädigt, unfallfahrzeug", "broken" }
     };
 }
