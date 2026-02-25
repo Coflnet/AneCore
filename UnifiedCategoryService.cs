@@ -137,13 +137,15 @@ public class UnifiedCategoryService
     {
         if (categoryPath.Count == 0) return null;
 
-        // Navigate through the category tree
+        // Navigate through the category tree, matching by slug or label
         UnifiedCategory? current = null;
         List<UnifiedCategory> searchIn = _unifiedCategories.Categories;
 
-        foreach (var slug in categoryPath)
+        foreach (var segment in categoryPath)
         {
-            current = searchIn.FirstOrDefault(c => c.Slug.Equals(slug, StringComparison.OrdinalIgnoreCase));
+            current = searchIn.FirstOrDefault(c =>
+                c.Slug.Equals(segment, StringComparison.OrdinalIgnoreCase) ||
+                c.Label.Equals(segment, StringComparison.OrdinalIgnoreCase));
             if (current == null) return null;
             
             if (current.SubCategories != null)
@@ -163,13 +165,15 @@ public class UnifiedCategoryService
     {
         if (categoryPath.Count == 0) return null;
 
-        // Navigate through the category tree
+        // Navigate through the category tree, matching by slug or label
         UnifiedCategory? current = null;
         List<UnifiedCategory> searchIn = _unifiedCategories.Categories;
 
-        foreach (var slug in categoryPath)
+        foreach (var segment in categoryPath)
         {
-            current = searchIn.FirstOrDefault(c => c.Slug.Equals(slug, StringComparison.OrdinalIgnoreCase));
+            current = searchIn.FirstOrDefault(c =>
+                c.Slug.Equals(segment, StringComparison.OrdinalIgnoreCase) ||
+                c.Label.Equals(segment, StringComparison.OrdinalIgnoreCase));
             if (current == null) return null;
             
             if (current.SubCategories != null)
