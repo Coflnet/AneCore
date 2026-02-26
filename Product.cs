@@ -69,7 +69,10 @@ public class Product
             "like new", "wie neu", "mint", "excellent", "sehr gut",
             "refurbished", "generalüberholt", "gereviseerd",
             "funktionsfähig", "funktioniert", "working", "functional",
-            "funktionstüchtig", "funktionsfaehig"
+            "funktionstüchtig", "funktionsfaehig",
+            "einsatzbereit", "secondhand", "second-hand",
+            "unbenutzt", "ungetragen", "fahrtüchtig",
+            "mängel", "zustand", "erhalten", "gepflegt"
         };
         return conditionPatterns.Any(p => value.Contains(p));
     }
@@ -198,6 +201,17 @@ public class Product
         { "trasig", "broken" }, { "kapot", "broken" }, { "for parts", "broken" }, { "for_parts", "broken" },
         { "bastler", "broken" }, { "bastler/export", "broken" },
         { "beschädigt", "broken" }, { "kaputt", "broken" },
-        { "unfallfahrzeug", "broken" }, { "beschädigt, unfallfahrzeug", "broken" }
+        { "unfallfahrzeug", "broken" }, { "beschädigt, unfallfahrzeug", "broken" },
+        { "nicht fahrtüchtig", "broken" }, { "nicht funktionsfähig", "broken" },
+        // Additional German marketplace conditions
+        { "einsatzbereit", "used" }, { "secondhand", "used" }, { "second-hand", "used" },
+        { "neu und unbenutzt", "new" }, { "neu und originalverpackt", "new" },
+        { "sehr gut erhaltenes", "used" },
+        { "top- und frischem zustand", "used" },
+        { "unfallfrei", "used" }, { "keine mängel", "used" },
+        { "voll funktionsfähig, keine mängel", "used" },
+        { "unfallfrei und hat keinerlei mängel", "used" },
+        { "least used", "used" }, { "wenig gefahren", "used" },
+        { "wenig gelaufen", "used" }, { "kaum gelaufen", "used" },
     };
 }
