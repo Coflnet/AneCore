@@ -160,10 +160,13 @@ public class UnifiedCategoryService
     /// <summary>
     /// Gets structured attributes to extract for a category path.
     /// Returns a dictionary of attribute_name -> sample_value for the LLM.
+    /// Merges attributes from all categories in the path (parent attributes are inherited).
     /// </summary>
     public Dictionary<string, string>? GetAttributesToExtract(List<string> categoryPath)
     {
         if (categoryPath.Count == 0) return null;
+
+        var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
         // Navigate through the category tree, matching by slug or label
         UnifiedCategory? current = null;
@@ -174,15 +177,27 @@ public class UnifiedCategoryService
             current = searchIn.FirstOrDefault(c =>
                 c.Slug.Equals(segment, StringComparison.OrdinalIgnoreCase) ||
                 c.Label.Equals(segment, StringComparison.OrdinalIgnoreCase));
-            if (current == null) return null;
+            if (current == null) break;
             
+            if (current.Attributes != null)
+            {
+                foreach (var kvp in current.Attributes)
+                {
+                    result[kvp.Key] = kvp.Value;
+                }
+            }
+
             if (current.SubCategories != null)
             {
                 searchIn = current.SubCategories;
             }
+            else
+            {
+                break;
+            }
         }
 
-        return current?.Attributes;
+        return result.Count > 0 ? result : null;
     }
 
     /// <summary>

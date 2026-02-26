@@ -381,6 +381,12 @@
     {
       "slug": "166",
       "label": "Bekleidung & Accessoires",
+      "attributes": {
+        "size": "",
+        "color": "",
+        "material": "",
+        "gender": ""
+      },
       "subCategories": [
         {
           "slug": "1604",
@@ -1325,10 +1331,17 @@
         {
           "slug": "188",
           "label": "Schmuck",
+          "attributes": {
+            "material": "e.g. Gold, Silber, Edelstahl"
+          },
           "subCategories": [
             {
               "slug": "201",
-              "label": "Armbanduhren & Taschenuhren"
+              "label": "Armbanduhren & Taschenuhren",
+              "attributes": {
+                "case_size": "e.g. 42mm",
+                "movement": "e.g. Automatik, Quarz"
+              }
             },
             {
               "slug": "191",
@@ -2143,6 +2156,9 @@
     {
       "slug": "222",
       "label": "Elektronik",
+      "attributes": {
+        "color": ""
+      },
       "subCategories": [
         {
           "slug": "223",
@@ -2443,6 +2459,13 @@
         {
           "slug": "278",
           "label": "Computer",
+          "attributes": {
+            "storage_size": "",
+            "ram_size": "",
+            "gpu_brand": "",
+            "cpu_brand": "",
+            "screen_size": ""
+          },
           "subCategories": [
             {
               "slug": "5254",
@@ -3563,6 +3586,11 @@
                 {
                   "slug": "267",
                   "label": "Mobiltelefone",
+                  "attributes": {
+                    "storage_size": "",
+                    "ram_size": "",
+                    "screen_size": ""
+                  },
                   "subCategories": [
                     {
                       "slug": "543514",
@@ -3952,7 +3980,11 @@
         },
         {
           "slug": "1294",
-          "label": "Videospielkonsolen"
+          "label": "Videospielkonsolen",
+          "attributes": {
+            "storage_size": "",
+            "color": ""
+          }
         },
         {
           "slug": "1270",
@@ -3973,6 +4005,13 @@
     {
       "slug": "888",
       "label": "Fahrzeuge & Teile",
+      "attributes": {
+        "mileage": "",
+        "year": "",
+        "fuel": "",
+        "transmission": "",
+        "color": ""
+      },
       "subCategories": [
         {
           "slug": "5614",
@@ -8107,6 +8146,10 @@
         {
           "slug": "604",
           "label": "Haushaltsgeräte",
+          "attributes": {
+            "energy_class": "e.g. A+++, A++, A+",
+            "color": ""
+          },
           "subCategories": [
             {
               "slug": "235920",
@@ -13635,6 +13678,9 @@
         {
           "slug": "142",
           "label": "Kameras",
+          "attributes": {
+            "storage_size": ""
+          },
           "subCategories": [
             {
               "slug": "154",
@@ -14489,6 +14535,9 @@
             {
               "slug": "54",
               "label": "Musikinstrumente",
+              "attributes": {
+                "instrument_type": ""
+              },
               "subCategories": [
                 {
                   "slug": "4983",
@@ -14784,11 +14833,18 @@
                 },
                 {
                   "slug": "219",
-                  "label": "Briefmarken"
+                  "label": "Briefmarken",
+                  "attributes": {
+                    "year": "",
+                    "country": ""
+                  }
                 },
                 {
                   "slug": "37",
-                  "label": "Maßstabsmodelle"
+                  "label": "Maßstabsmodelle",
+                  "attributes": {
+                    "scale": "e.g. 1:18, 1:43, 1:64"
+                  }
                 },
                 {
                   "slug": "6000",
@@ -14797,6 +14853,11 @@
                 {
                   "slug": "217",
                   "label": "Münzen & Währungen",
+                  "attributes": {
+                    "year": "",
+                    "denomination": "e.g. 2 Euro, 1 Mark",
+                    "country": ""
+                  },
                   "subCategories": [
                     {
                       "slug": "543607",
@@ -14814,7 +14875,12 @@
                 },
                 {
                   "slug": "6997",
-                  "label": "Sammelkarten"
+                  "label": "Sammelkarten",
+                  "attributes": {
+                    "game": "e.g. Pokémon, Yu-Gi-Oh!, Magic: The Gathering",
+                    "set_name": "",
+                    "rarity": ""
+                  }
                 },
                 {
                   "slug": "220",
@@ -15885,6 +15951,9 @@
     {
       "slug": "783",
       "label": "Medien",
+      "attributes": {
+        "year": ""
+      },
       "subCategories": [
         {
           "slug": "499995",
@@ -15893,6 +15962,11 @@
         {
           "slug": "784",
           "label": "Bücher",
+          "attributes": {
+            "author": "",
+            "language": "",
+            "issue_number": "extract number for series like Lustiges Taschenbuch 428 -> 428"
+          },
           "subCategories": [
             {
               "slug": "543541",
@@ -15929,6 +16003,11 @@
         {
           "slug": "855",
           "label": "Musik & Tonaufnahmen",
+          "attributes": {
+            "artist": "",
+            "genre": "",
+            "format": "e.g. Vinyl/LP, CD, Kassette, Digital"
+          },
           "subCategories": [
             {
               "slug": "543526",
@@ -16017,6 +16096,10 @@
     {
       "slug": "436",
       "label": "Möbel",
+      "attributes": {
+        "material": "",
+        "color": ""
+      },
       "subCategories": [
         {
           "slug": "554",
@@ -18276,13 +18359,19 @@
         },
         {
           "slug": "1279",
-          "label": "PC- & Videospiele"
+          "label": "PC- & Videospiele",
+          "attributes": {
+            "platform": "e.g. PS5, Xbox, Nintendo Switch, PC"
+          }
         }
       ]
     },
     {
       "slug": "1239",
       "label": "Spielzeuge & Spiele",
+      "attributes": {
+        "age_range": ""
+      },
       "subCategories": [
         {
           "slug": "3867",
@@ -18477,6 +18566,9 @@
             {
               "slug": "1254",
               "label": "Bausteine & Bauspielzeug",
+              "attributes": {
+                "set_number": "extract set number, e.g. LEGO 42115 -> 42115"
+              },
               "subCategories": [
                 {
                   "slug": "3805",
@@ -19037,6 +19129,10 @@
     {
       "slug": "988",
       "label": "Sportartikel",
+      "attributes": {
+        "size": "",
+        "color": ""
+      },
       "subCategories": [
         {
           "slug": "499713",
@@ -22042,7 +22138,9 @@
                   "slug": "1026",
                   "label": "Fahrräder",
                   "attributes": {
-                    "size": "S, M, L, XL or 54cm, 56cm, etc."
+                    "size": "S, M, L, XL or 54cm, 56cm, etc.",
+                    "frame_material": "e.g. Carbon, Aluminium, Stahl",
+                    "wheel_size": "e.g. 26, 27.5, 28, 29 Zoll"
                   }
                 }
               ]
