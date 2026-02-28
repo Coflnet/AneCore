@@ -108,6 +108,76 @@ public class Product
         return result.Distinct().ToList();
     }
 
+
+    /// <summary>
+    /// Intelligently parses size attribute values and attempts to classify them as 
+    /// specific attribute keys (like storage, ram, battery, screen_size) 
+    /// and standardizes their formatting.
+    /// </summary>
+    public static (string NormalizedKey, string NormalizedValue) NormalizeAttributeClassification(string key, string value)
+    {
+        if (string.IsNullOrWhiteSpace(value) || string.IsNullOrWhiteSpace(key)) return (key, value ?? string.Empty);
+        
+        var v = value.Trim().ToLowerInvariant();
+        var k = key.Trim().ToLowerInvariant();
+
+        if (k == "color")
+            return (k, NormalizeColor(value));
+
+        // Apply some generic cleanups that apply to many numeric values
+        var numOnlyValue = new string(System.Linq.Enumerable.Where(v, c => char.IsDigit(c) || c == '.').ToArray());
+
+        // Group storage variations
+        if (k == "storage" || k == "storage_size" || k == "ram" || k == "ram_size")
+        {
+            v = v.Replace(" ", "").Replace("gigabyte", "gb").Replace("terabyte", "tb");
+            if (System.Linq.Enumerable.All(v, char.IsDigit) && !string.IsNullOrEmpty(v)) v += "gb"; // "64" -> "64gb"
+            return (k.Replace("_size", ""), v.ToUpperInvariant());
+        }
+
+        if (k == "size" || k == "größe" || k == "groeße")
+        {
+            v = v.Replace(" ", "").Replace("gigabyte", "gb").Replace("terabyte", "tb");
+            
+            // Try to rescue bike sizes early
+            if ((v.EndsWith("cm") && numOnlyValue.Length == 2) || (v.Length <= 3 && v.ToUpperInvariant() is "XS" or "S" or "M" or "L" or "XL" or "XXL"))
+            {
+                 return ("size", value.Trim());
+            }
+
+            // Battery
+            if (v.EndsWith("mah") || v.EndsWith("mahakku")) 
+                return ("battery", v.Replace("akku", "").ToUpperInvariant().Replace("MAH", "mAh"));
+                
+            // Storage or RAM
+            if (v.EndsWith("gb") || v.EndsWith("tb") || (System.Linq.Enumerable.All(v, char.IsDigit) && v.Length <= 4))
+            {
+                var numStr = new string(System.Linq.Enumerable.ToArray(System.Linq.Enumerable.TakeWhile(v, char.IsDigit)));
+                if (int.TryParse(numStr, out int num))
+                {
+                    // Many realme limit ram to 16, others 24. Standard is usually 2,3,4,6,8,12,16
+                    if ((num <= 16 || num == 24) && v.EndsWith("gb")) return ("ram", num + "GB");
+                    if (num == 32 || num == 64 || num == 128 || num == 256 || num == 512 || num == 1000 || num == 1024) 
+                        return ("storage", (num == 1000 || num == 1024 ? 1 : num) + (num >= 1000 || v.EndsWith("tb") ? "TB" : "GB"));
+                    
+                    // fallback
+                    return ("storage", num + (v.EndsWith("tb") ? "TB" : "GB"));
+                }
+            }
+            
+            // Screen size
+            if (v.Contains("\"") || v.Contains("zoll") || v.Contains("inches")) 
+            {
+                return ("screen_size", v.Replace("zoll", "\"").Replace("inches", "\"").Replace("inch", "\"").Replace("''", "\"").Replace(" ", "") + (!v.Contains("\"") && !v.Contains("zoll") ? "\"" : ""));
+            }
+                
+            // Otherwise keep as size
+            return ("size", value.Trim());
+        }
+
+        return (k, value.Trim());
+    }
+
     private static readonly Dictionary<string, string> ColorValueNormalization = new(StringComparer.OrdinalIgnoreCase)
     {
         // Black
@@ -215,3 +285,4 @@ public class Product
         { "wenig gelaufen", "used" }, { "kaum gelaufen", "used" },
     };
 }
+
