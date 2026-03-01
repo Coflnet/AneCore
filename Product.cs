@@ -135,6 +135,15 @@ public class Product
             return (k.Replace("_size", ""), v.ToUpperInvariant());
         }
 
+        if (k == "material")
+        {
+            if (v.Length > 0)
+            {
+                var upperFirst = char.ToUpperInvariant(v[0]) + v.Substring(1);
+                return ("material", upperFirst);
+            }
+        }
+
         if (k == "size" || k == "größe" || k == "groeße")
         {
             v = v.Replace(" ", "").Replace("gigabyte", "gb").Replace("terabyte", "tb");
@@ -215,7 +224,9 @@ public class Product
         // Clear/Transparent
         { "transparent", "Clear" }, { "clear", "Clear" }, { "transparente", "Clear" }, { "trasparente", "Clear" }, { "genomskinlig", "Clear" }, { "průhledná", "Clear" },
         // Multi-color
-        { "mehrfarbig", "Multicolor" }, { "multicolor", "Multicolor" }, { "multicolore", "Multicolor" }, { "multicolor/mehrfarbig", "Multicolor" }, { "flerfärgad", "Multicolor" }, { "vícebarevná", "Multicolor" }
+        { "mehrfarbig", "Multicolor" }, { "multicolor", "Multicolor" }, { "multicolore", "Multicolor" }, { "multicolor/mehrfarbig", "Multicolor" }, { "flerfärgad", "Multicolor" }, { "vícebarevná", "Multicolor" },
+        // Unknown
+        { "unknown", "Unknown" }, { "unbekannt", "Unknown" }, { "not specified", "Unknown" }, { "keine angabe", "Unknown" }, { "n/a", "Unknown" }
     };
 
     private static readonly Dictionary<string, string> ConditionValueNormalization = new(StringComparer.OrdinalIgnoreCase)
@@ -265,6 +276,7 @@ public class Product
         { "gut erhaltene", "used" }, { "sehr gut erhaltene", "used" },
         { "wenig getragen", "used" }, { "kaum benutzt", "used" },
         { "sehr wenig getragen", "used" }, { "sehr wenig benutzt", "used" },
+        { "gut erhaltener", "used" }, { "keine löcher, wenig rost", "used" },
         // Broken / Defect
         { "defekt", "broken" }, { "broken", "broken" }, { "défectueux", "broken" },
         { "defectuoso", "broken" }, { "difettoso", "broken" }, { "defect", "broken" },
