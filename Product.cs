@@ -22,6 +22,8 @@ public class Product
     public double MedianPrice { get; set; }
     public double MinPrice { get; set; }
     public double MaxPrice { get; set; }
+    public double? EstimatedValue { get; set; }
+    public int? SoldCount { get; set; }
     public int ListingCount { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime LastUpdated { get; set; }

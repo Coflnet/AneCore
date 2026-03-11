@@ -44,6 +44,8 @@ public class ProductTableService
                 .Column(p => p.MedianPrice, cm => cm.WithName("median_price"))
                 .Column(p => p.MinPrice, cm => cm.WithName("min_price"))
                 .Column(p => p.MaxPrice, cm => cm.WithName("max_price"))
+                .Column(p => p.EstimatedValue, cm => cm.WithName("estimated_value"))
+                .Column(p => p.SoldCount, cm => cm.WithName("sold_count"))
                 .Column(p => p.ListingCount, cm => cm.WithName("listing_count"))
                 .Column(p => p.LastUpdated, cm => cm.WithName("last_updated"))
                 .Column(p => p.CreatedAt, cm => cm.WithName("created_at"))
