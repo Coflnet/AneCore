@@ -146,6 +146,23 @@ public class Product
             }
         }
 
+        // Screen size normalization: unify "6.1 Zoll", "6.1 inches", "6.1''", "6,1 Zoll" → "6.1\""
+        if (k == "screen_size" || k == "bildschirmgröße" || k == "displaygröße" || k == "bildschirmgroesse")
+        {
+            var sv = v.Replace(',', '.').Replace(" ", "");
+            sv = System.Text.RegularExpressions.Regex.Replace(sv, @"(?i)zoll$", "\"");
+            sv = System.Text.RegularExpressions.Regex.Replace(sv, @"(?i)inches$", "\"");
+            sv = System.Text.RegularExpressions.Regex.Replace(sv, @"(?i)inch$", "\"");
+            sv = sv.Replace("''", "\"");
+            if (!sv.EndsWith("\""))
+            {
+                // If it's numeric only (e.g. "6.1"), add the inches symbol
+                if (double.TryParse(sv, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out _))
+                    sv += "\"";
+            }
+            return ("screen_size", sv);
+        }
+
         if (k == "size" || k == "größe" || k == "groeße")
         {
             v = v.Replace(" ", "").Replace("gigabyte", "gb").Replace("terabyte", "tb");
