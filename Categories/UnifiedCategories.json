@@ -6762,6 +6762,10 @@
         {
           "slug": "594",
           "label": "Beleuchtung",
+          "attributes": {
+            "color": "",
+            "material": ""
+          },
           "subCategories": [
             {
               "slug": "2370",
