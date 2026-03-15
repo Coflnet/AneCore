@@ -242,6 +242,9 @@ public class Product
         { "titan", "Titanium" }, { "titanium", "Titanium" }, { "titane", "Titanium" }, { "titanio", "Titanium" },
         // Clear/Transparent
         { "transparent", "Clear" }, { "clear", "Clear" }, { "transparente", "Clear" }, { "trasparente", "Clear" }, { "genomskinlig", "Clear" }, { "průhledná", "Clear" },
+        // Black and White
+        { "schwarzweiss", "Black and White" }, { "schwarz-weiß", "Black and White" }, { "schwarz-weisse", "Black and White" }, { "schwarz/weiß", "Black and White" },
+        { "schwarz weiß", "Black and White" }, { "black and white", "Black and White" }, { "black/white", "Black and White" },
         // Multi-color
         { "mehrfarbig", "Multicolor" }, { "multicolor", "Multicolor" }, { "multicolore", "Multicolor" }, { "multicolor/mehrfarbig", "Multicolor" }, { "flerfärgad", "Multicolor" }, { "vícebarevná", "Multicolor" },
         // Unknown
