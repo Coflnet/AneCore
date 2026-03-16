@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Categories\UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Update="Categories/UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
