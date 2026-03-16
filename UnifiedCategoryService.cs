@@ -78,31 +78,25 @@ public class UnifiedCategoryService
             }
         }
 
-        var basePath = AppDomain.CurrentDomain.BaseDirectory;
         
-        // Try to find the file in the Categories directory (relative to app base)
-        var unifiedPath = Path.Combine(basePath, categoryDirName, fileName);
-        if (File.Exists(unifiedPath)) return unifiedPath;
-
-        // Fallback to current directory structure for development
-        unifiedPath = Path.Combine(Directory.GetCurrentDirectory(), categoryDirName, fileName);
-        if (File.Exists(unifiedPath)) return unifiedPath;
-
-        // Try searching up the directory tree from the current directory
-        var currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
-        while (currentDir != null && currentDir.Parent != null)
+        var basePath = AppDomain.CurrentDomain.BaseDirectory;
+        var pathsToTry = new List<string>();
+        
+        pathsToTry.Add(Path.Combine(basePath, categoryDirName, fileName));
+        pathsToTry.Add(Path.Combine(Directory.GetCurrentDirectory(), categoryDirName, fileName));
+        
+        var currentDir2 = new DirectoryInfo(Directory.GetCurrentDirectory());
+        while (currentDir2 != null && currentDir2.Parent != null)
         {
-            var searchPath = Path.Combine(currentDir.FullName, "AneCore", categoryDirName, fileName);
-            if (File.Exists(searchPath)) return searchPath;
-
-            // Also try in current directory
-            var searchPath2 = Path.Combine(currentDir.FullName, categoryDirName, fileName);
-            if (File.Exists(searchPath2)) return searchPath2;
-
-            currentDir = currentDir.Parent;
+            pathsToTry.Add(Path.Combine(currentDir2.FullName, "AneCore", categoryDirName, fileName));
+            pathsToTry.Add(Path.Combine(currentDir2.FullName, categoryDirName, fileName));
+            currentDir2 = currentDir2.Parent;
         }
 
-        throw new FileNotFoundException($"Could not find {categoryDirName}/{fileName} in any expected location. " +
+        foreach (var p in pathsToTry) {
+            if (File.Exists(p)) return p;
+        }
+throw new FileNotFoundException($"Could not find {categoryDirName}/{fileName} in any expected location. " +
             $"Searched from assembly location and working directory: {Directory.GetCurrentDirectory()}");
     }
 
