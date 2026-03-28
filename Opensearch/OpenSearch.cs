@@ -76,29 +76,41 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             $"creating a new opensearch client for index {IndexName()} at {openSearch.OpenSearchUrl()}");
 
 
-        _client = OpenSearch.NewClient(settings);
+        var client = OpenSearch.NewClient(settings);
+        _client = client;
 
         // send a test ping to ensure we can connect
         logger.LogInformation($"Sending first ping to OpenSearch at {openSearch.OpenSearchUrl()}");
-        var pingResp = await _client.PingAsync(ct: stoppingToken);
+        var pingResp = await client.PingAsync(ct: stoppingToken);
         if (!pingResp.IsValid)
+        {
+            _client = null;
             throw new InvalidOperationException($"Failed to connect to OpenSearch: {pingResp.DebugInformation}");
+        }
 
         logger.LogInformation("Received valid ping response from OpenSearch");
 
         // create the retention policy, index template, and bootstrap index if they don't exist
-        if (IsRolloverIndex())
+        try
         {
-            await CreateRetentionPolicy(stoppingToken);
-            await CreateIndexTemplateIfNotExists(stoppingToken);
-            await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
+            if (IsRolloverIndex())
+            {
+                await CreateRetentionPolicy(stoppingToken);
+                await CreateIndexTemplateIfNotExists(stoppingToken);
+                await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
+            }
+            else
+            {
+                await CreateRegularIndexIfNotExists(stoppingToken);
+            }
         }
-        else
+        catch
         {
-            await CreateRegularIndexIfNotExists(stoppingToken);
+            _client = null;
+            throw;
         }
 
-        return _client;
+        return client;
     }
     
     protected string IndexPattern()
@@ -190,6 +202,16 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         {
             logger.LogInformation($"Rollover alias '{IndexName()}' already exists. Bootstrap index is not needed.");
             return;
+        }
+
+        // If a plain index with the same name as our alias exists, delete it to make way for the rollover alias.
+        var indexExistsResponse = await client.Indices.ExistsAsync(IndexName(), ct: stoppingToken);
+        if (indexExistsResponse.Exists)
+        {
+            logger.LogWarning($"Found conflicting plain index '{IndexName()}' where rollover alias should be. Deleting it.");
+            var deleteResponse = await client.Indices.DeleteAsync(IndexName(), ct: stoppingToken);
+            if (!deleteResponse.IsValid)
+                throw new InvalidOperationException($"Failed to delete conflicting index '{IndexName()}': {deleteResponse.DebugInformation}");
         }
 
         logger.LogInformation(

@@ -21,8 +21,60 @@ public class ListingIndex(
 
     protected override bool IsRolloverIndex() => true;
 
+    public async Task<IReadOnlyCollection<ListingDocument>> SearchListings(
+        string query,
+        double? minPrice = null,
+        double? maxPrice = null,
+        double? latitude = null,
+        double? longitude = null,
+        string? distance = null,
+        int limit = 10,
+        List<Platform>? platforms = null,
+        CancellationToken cancellationToken = default)
+    {
+        var client = await Client(cancellationToken);
+
+        List<Func<QueryContainerDescriptor<ListingDocument>, QueryContainer>> matchQuery =
+        [
+            m => m.Match(t => t.Field(f => f.Title).Query(query).Operator(Operator.And))
+        ];
+
+        minPrice ??= 0;
+        if (maxPrice != null)
+            matchQuery.Add(m => m.Range(t => t.Field(f => f.Price)
+                .GreaterThanOrEquals(minPrice)
+                .LessThanOrEquals(maxPrice)));
+
+        if (platforms is { Count: > 0 })
+        {
+            var platformStrings = platforms.Select(p => p.ToString()).ToList();
+            matchQuery.Add(m => m.Terms(t => t.Field(f => f.Platform).Terms(platformStrings)));
+        }
+
+        Func<QueryContainerDescriptor<ListingDocument>, QueryContainer> locationQuery =
+            f => latitude == null || longitude == null
+                ? f.MatchAll()
+                : f.GeoDistance(g => g
+                    .Field(f => f.Location)
+                    .DistanceType(GeoDistanceType.Arc)
+                    .Location(latitude.Value, longitude.Value)
+                    .Distance(distance));
+
+        var searchResponse = await client.SearchAsync<ListingDocument>(s =>
+                s.Query(q => q
+                        .Bool(b => b
+                            .Must(matchQuery)
+                            .Filter(locationQuery)))
+                    .Size(limit)
+                    .Sort(s => s.Descending(d => d.FoundAt)),
+            cancellationToken);
+
+        return searchResponse.Documents;
+    }
+
     protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
         t => t
+            .IndexPatterns(IndexPattern())
             .Settings(s => s
                 .Setting("plugins.index_state_management.rollover_alias", IndexName())
                 .NumberOfShards(2)
