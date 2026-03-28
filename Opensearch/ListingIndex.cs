@@ -33,10 +33,8 @@ public class ListingIndex(
                 .Properties(p => p
                     .Keyword(k => k.Name(n => n.Id))
                     .Text(t => t.Name(n => n.Title))
-                    .Text(t => t.Name(n => n.Description))
                     .Text(t => t.Name(n => n.DescriptionShort))
                     .Number(k => k.Name(n => n.Price).Type(NumberType.Double))
-                    .Keyword(k => k.Name(n => n.ImageUrls))
                     .Keyword(k => k.Name(n => n.Currency))
                     .Keyword(k => k.Name(n => n.Contact))
                     .Keyword(k => k.Name(n => n.UserId))
@@ -54,13 +52,6 @@ public class ListingIndex(
                     .Date(d => d.Name(n => n.CreatedAt))
                     .Date(d => d.Name(n => n.SoldBefore))
                     .Boolean(b => b.Name(n => n.Commercial))
-                    .Object<ListingMetadata>(n => n
-                        .Name(n => n.Metadata)
-                        .Properties(p2 => p2
-                            .Keyword(k2 => k2.Name(n2 => n2.Name))
-                            .Keyword(k2 => k2.Name(n2 => n2.Value))
-                        )
-                    )
                     .Keyword(k => k.Name(n => n.Platform))
                 )
             );
@@ -122,8 +113,6 @@ public record ListingDocument(
     string Id,
     string? Title,
     string? DescriptionShort,
-    string? Description,
-    List<string>? ImageUrls,
     double? Price,
     string? Currency,
     string? Contact,
@@ -136,7 +125,6 @@ public record ListingDocument(
     DateTime? CreatedAt,
     DateTime? SoldBefore,
     bool? Commercial,
-    List<ListingMetadata> Metadata,
     string Platform
 );
 
@@ -145,7 +133,3 @@ public record ListingAttribute(
     string Value
 );
 
-public record ListingMetadata(
-    string Name,
-    string Value
-);
