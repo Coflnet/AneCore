@@ -16,7 +16,6 @@ public class ProductTableService
     private readonly Table<ProductListing> productListings;
     private readonly Table<PricePoint> priceHistory;
     private readonly Table<Listing> listings;
-    private readonly IMapper mapper;
     private static bool tablesInitialized = false;
     private static readonly object initLock = new object();
 
@@ -100,7 +99,6 @@ public class ProductTableService
         productListings = new Table<ProductListing>(session, mapping);
         priceHistory = new Table<PricePoint>(session, mapping);
         listings = new Table<Listing>(session, mapping);
-        mapper = new Mapper(session, mapping);
     }
 
     /// <summary>
@@ -224,6 +222,6 @@ public class ProductTableService
     /// </summary>
     public async Task<Listing?> GetListingAsync(string id, Platform platform)
     {
-        return await mapper.FirstOrDefaultAsync<Listing>("SELECT * FROM listings WHERE id = ? AND platform = ?", id, (int)platform);
+        return await listings.FirstOrDefault(l => l.Id == id && l.Platform == platform).ExecuteAsync();
     }
 }
