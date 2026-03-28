@@ -25,9 +25,10 @@ public class ListingIndex(
         t => t
             .Settings(s => s
                 .Setting("plugins.index_state_management.rollover_alias", IndexName())
-                .NumberOfShards(3)
+                .NumberOfShards(2)
                 .NumberOfReplicas(0)
-                .RefreshInterval(TimeSpan.FromSeconds(10))
+                .RefreshInterval(TimeSpan.FromSeconds(20))
+                .Setting("index.codec", "best_compression")
             )
             .Map<ListingDocument>(m => m
                 .Properties(p => p
@@ -86,7 +87,7 @@ public class ListingIndex(
                             new
                             {
                                 state_name = "delete",
-                                conditions = new { min_rollover_age = "7d" }
+                                conditions = new { min_rollover_age = "14d" }
                             }
                         }
                     },
