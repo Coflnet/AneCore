@@ -18365,7 +18365,8 @@
           "slug": "1279",
           "label": "PC- & Videospiele",
           "attributes": {
-            "platform": "e.g. PS5, Xbox, Nintendo Switch, PC"
+            "platform": "e.g. PS5, Xbox, Nintendo Switch, PC, Nintendo Wii",
+            "game_title": "e.g. FIFA 25, Lego Star Wars, Mario Kart"
           }
         }
       ]
