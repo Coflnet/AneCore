@@ -16,6 +16,7 @@ public class ProductTableService
     private readonly Table<ProductListing> productListings;
     private readonly Table<PricePoint> priceHistory;
     private readonly Table<Listing> listings;
+    private readonly Table<FlipReport> flipReports;
     private static bool tablesInitialized = false;
     private static readonly object initLock = new object();
 
@@ -93,12 +94,35 @@ public class ProductTableService
                 .ClusteringKey(pe => pe.Platform)
                 .Column(pe => pe.Platform, cm => cm.WithDbType<int>())
                 .Column(pe => pe.PriceKind, cm => cm.WithDbType<int>())
+            )
+            .Define(new Map<FlipReport>()
+                .TableName("flip_reports")
+                .PartitionKey(r => r.Status)
+                .ClusteringKey(r => r.CreatedAt, SortOrder.Descending)
+                .ClusteringKey(r => r.ReportId)
+                .Column(r => r.ReportId, cm => cm.WithName("report_id"))
+                .Column(r => r.CreatedAt, cm => cm.WithName("created_at"))
+                .Column(r => r.ReportedBy, cm => cm.WithName("reported_by"))
+                .Column(r => r.ListingId, cm => cm.WithName("listing_id"))
+                .Column(r => r.ListingTitle, cm => cm.WithName("listing_title"))
+                .Column(r => r.Platform, cm => cm.WithName("platform"))
+                .Column(r => r.Category, cm => cm.WithName("category"))
+                .Column(r => r.Price, cm => cm.WithName("price"))
+                .Column(r => r.ListingJson, cm => cm.WithName("listing_json"))
+                .Column(r => r.Profit, cm => cm.WithName("profit"))
+                .Column(r => r.MedianPrice, cm => cm.WithName("median_price"))
+                .Column(r => r.RecentSellsJson, cm => cm.WithName("recent_sells_json"))
+                .Column(r => r.Reason, cm => cm.WithName("reason"))
+                .Column(r => r.CurrentSlug, cm => cm.WithName("current_slug"))
+                .Column(r => r.SuggestedSlug, cm => cm.WithName("suggested_slug"))
+                .Column(r => r.Status, cm => cm.WithName("status"))
             );
 
         products = new Table<Product>(session, mapping);
         productListings = new Table<ProductListing>(session, mapping);
         priceHistory = new Table<PricePoint>(session, mapping);
         listings = new Table<Listing>(session, mapping);
+        flipReports = new Table<FlipReport>(session, mapping);
     }
 
     /// <summary>
@@ -118,6 +142,7 @@ public class ProductTableService
         await productListings.CreateIfNotExistsAsync();
         await priceHistory.CreateIfNotExistsAsync();
         await listings.CreateIfNotExistsAsync();
+        await flipReports.CreateIfNotExistsAsync();
     }
 
     /// <summary>
@@ -223,5 +248,31 @@ public class ProductTableService
     public async Task<Listing?> GetListingAsync(string id, Platform platform)
     {
         return await listings.FirstOrDefault(l => l.Id == id && l.Platform == platform).ExecuteAsync();
+    }
+
+    /// <summary>
+    /// Access to the flip reports table
+    /// </summary>
+    public Table<FlipReport> FlipReports => flipReports;
+
+    /// <summary>
+    /// Insert a flip report
+    /// </summary>
+    public async Task InsertFlipReportAsync(FlipReport report)
+    {
+        await flipReports.Insert(report).ExecuteAsync();
+    }
+
+    /// <summary>
+    /// Get flip reports by status
+    /// </summary>
+    public async Task<List<FlipReport>> GetFlipReportsAsync(string status = "pending", int limit = 100)
+    {
+        var query = flipReports
+            .Where(r => r.Status == status)
+            .OrderByDescending(r => r.CreatedAt)
+            .Take(limit);
+        var result = await query.ExecuteAsync();
+        return result.ToList();
     }
 }
