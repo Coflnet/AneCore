@@ -17,6 +17,7 @@ public class ProductTableService
     private readonly Table<PricePoint> priceHistory;
     private readonly Table<Listing> listings;
     private readonly Table<FlipReport> flipReports;
+    private readonly Table<SiteData> siteData;
     private static bool tablesInitialized = false;
     private static readonly object initLock = new object();
 
@@ -116,6 +117,13 @@ public class ProductTableService
                 .Column(r => r.CurrentSlug, cm => cm.WithName("current_slug"))
                 .Column(r => r.SuggestedSlug, cm => cm.WithName("suggested_slug"))
                 .Column(r => r.Status, cm => cm.WithName("status"))
+            )
+            .Define(new Map<SiteData>()
+                .TableName("site_data")
+                .PartitionKey(s => s.Key)
+                .Column(s => s.Key, cm => cm.WithName("key"))
+                .Column(s => s.Value, cm => cm.WithName("value"))
+                .Column(s => s.UpdatedAt, cm => cm.WithName("updated_at"))
             );
 
         products = new Table<Product>(session, mapping);
@@ -123,6 +131,7 @@ public class ProductTableService
         priceHistory = new Table<PricePoint>(session, mapping);
         listings = new Table<Listing>(session, mapping);
         flipReports = new Table<FlipReport>(session, mapping);
+        siteData = new Table<SiteData>(session, mapping);
     }
 
     /// <summary>
@@ -143,6 +152,7 @@ public class ProductTableService
         await priceHistory.CreateIfNotExistsAsync();
         await listings.CreateIfNotExistsAsync();
         await flipReports.CreateIfNotExistsAsync();
+        await siteData.CreateIfNotExistsAsync();
     }
 
     /// <summary>
@@ -164,6 +174,11 @@ public class ProductTableService
     /// Access to the listings table
     /// </summary>
     public Table<Listing> Listings => listings;
+
+    /// <summary>
+    /// Access to the site data table
+    /// </summary>
+    public Table<SiteData> SiteData => siteData;
 
     /// <summary>
     /// Get a product by SEO ID
