@@ -16,8 +16,8 @@ public class ProductTableService
     private readonly Table<ProductListing> productListings;
     private readonly Table<PricePoint> priceHistory;
     private readonly Table<Listing> listings;
+    private readonly Table<SitemapEntry> sitemapEntries;
     private readonly Table<FlipReport> flipReports;
-    private readonly Table<SiteData> siteData;
     private static bool tablesInitialized = false;
     private static readonly object initLock = new object();
 
@@ -96,6 +96,15 @@ public class ProductTableService
                 .Column(pe => pe.Platform, cm => cm.WithDbType<int>())
                 .Column(pe => pe.PriceKind, cm => cm.WithDbType<int>())
             )
+            .Define(new Map<SitemapEntry>()
+                .TableName("sitemap_entries")
+                .PartitionKey(e => e.Partition)
+                .ClusteringKey(e => e.EntryIndex)
+                .Column(e => e.Partition, cm => cm.WithName("partition_id"))
+                .Column(e => e.EntryIndex, cm => cm.WithName("entry_index"))
+                .Column(e => e.SeoId, cm => cm.WithName("seo_id"))
+                .Column(e => e.LastUpdated, cm => cm.WithName("last_updated"))
+            )
             .Define(new Map<FlipReport>()
                 .TableName("flip_reports")
                 .PartitionKey(r => r.Status)
@@ -117,21 +126,14 @@ public class ProductTableService
                 .Column(r => r.CurrentSlug, cm => cm.WithName("current_slug"))
                 .Column(r => r.SuggestedSlug, cm => cm.WithName("suggested_slug"))
                 .Column(r => r.Status, cm => cm.WithName("status"))
-            )
-            .Define(new Map<SiteData>()
-                .TableName("site_data")
-                .PartitionKey(s => s.Key)
-                .Column(s => s.Key, cm => cm.WithName("key"))
-                .Column(s => s.Value, cm => cm.WithName("value"))
-                .Column(s => s.UpdatedAt, cm => cm.WithName("updated_at"))
             );
 
         products = new Table<Product>(session, mapping);
         productListings = new Table<ProductListing>(session, mapping);
         priceHistory = new Table<PricePoint>(session, mapping);
         listings = new Table<Listing>(session, mapping);
+        sitemapEntries = new Table<SitemapEntry>(session, mapping);
         flipReports = new Table<FlipReport>(session, mapping);
-        siteData = new Table<SiteData>(session, mapping);
     }
 
     /// <summary>
@@ -151,8 +153,8 @@ public class ProductTableService
         await productListings.CreateIfNotExistsAsync();
         await priceHistory.CreateIfNotExistsAsync();
         await listings.CreateIfNotExistsAsync();
+        await sitemapEntries.CreateIfNotExistsAsync();
         await flipReports.CreateIfNotExistsAsync();
-        await siteData.CreateIfNotExistsAsync();
     }
 
     /// <summary>
@@ -175,10 +177,9 @@ public class ProductTableService
     /// </summary>
     public Table<Listing> Listings => listings;
 
-    /// <summary>
-    /// Access to the site data table
-    /// </summary>
-    public Table<SiteData> SiteData => siteData;
+    public Table<SitemapEntry> SitemapEntries => sitemapEntries;
+
+    public Table<FlipReport> FlipReports => flipReports;
 
     /// <summary>
     /// Get a product by SEO ID
@@ -265,29 +266,17 @@ public class ProductTableService
         return await listings.FirstOrDefault(l => l.Id == id && l.Platform == platform).ExecuteAsync();
     }
 
-    /// <summary>
-    /// Access to the flip reports table
-    /// </summary>
-    public Table<FlipReport> FlipReports => flipReports;
-
-    /// <summary>
-    /// Insert a flip report
-    /// </summary>
     public async Task InsertFlipReportAsync(FlipReport report)
     {
         await flipReports.Insert(report).ExecuteAsync();
     }
 
-    /// <summary>
-    /// Get flip reports by status
-    /// </summary>
-    public async Task<List<FlipReport>> GetFlipReportsAsync(string status = "pending", int limit = 100)
+    public async Task<List<FlipReport>> GetFlipReportsAsync(string status, int limit = 100)
     {
-        var query = flipReports
+        var result = await flipReports
             .Where(r => r.Status == status)
-            .OrderByDescending(r => r.CreatedAt)
-            .Take(limit);
-        var result = await query.ExecuteAsync();
+            .Take(limit)
+            .ExecuteAsync();
         return result.ToList();
     }
 }
