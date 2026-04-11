@@ -4008,8 +4008,11 @@
       "attributes": {
         "mileage": "",
         "year": "",
+        "registration_year": "",
         "fuel": "",
         "transmission": "",
+        "horsepower": "",
+        "body_type": "",
         "color": ""
       },
       "subCategories": [
