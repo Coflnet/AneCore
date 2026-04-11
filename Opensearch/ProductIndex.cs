@@ -61,6 +61,7 @@ public class ProductIndex(
                     .Text(k => k.Name(n => n.SampleTitles))
                     .Keyword(k => k.Name(n => n.ImageUrl))
                     .GeoPoint(g => g.Name(n => n.Locations))
+                    .Keyword(k => k.Name(n => n.Countries))
                     .Keyword(k => k.Name(n => n.CanonicalSeoId))
                     .Keyword(k => k.Name(n => n.RelatedSeoIds))
                 )
@@ -137,6 +138,7 @@ public record ProductDocument(
     List<string> SampleTitles,
     string? ImageUrl,
     List<GeoLocation>? Locations,
+    List<string>? Countries,
     string? CanonicalSeoId,
     List<string> RelatedSeoIds
 );
