@@ -304,7 +304,9 @@ public class Product
         { "defectuoso", "broken" }, { "difettoso", "broken" }, { "defect", "broken" },
         { "trasig", "broken" }, { "kapot", "broken" }, { "for parts", "broken" }, { "for_parts", "broken" },
         { "bastler", "broken" }, { "bastler/export", "broken" },
-        { "beschädigt", "broken" }, { "kaputt", "broken" },
+        { "beschädigt", "broken" }, { "damaged", "broken" },
+        { "mit mängeln", "broken" }, { "kratzer", "broken" },
+        { "kaputt", "broken" },
         { "unfallfahrzeug", "broken" }, { "beschädigt, unfallfahrzeug", "broken" },
         { "nicht fahrtüchtig", "broken" }, { "nicht funktionsfähig", "broken" },
         // Additional German marketplace conditions
