@@ -69,6 +69,7 @@ public class Product
             "good", "gut", "bon", "bueno", "buono", "goed",
             "fair", "ok", "okay", "akzeptabel",
             "like new", "wie neu", "mint", "excellent", "sehr gut",
+            "psa", "bgs", "cgc", "ace", "sgc", "graded", "gem mint",
             "refurbished", "generalüberholt", "gereviseerd",
             "funktionsfähig", "funktioniert", "working", "functional",
             "funktionstüchtig", "funktionsfaehig",
