@@ -19,7 +19,7 @@ public class ProductTableService
     private readonly Table<SitemapEntry> sitemapEntries;
     private readonly Table<FlipReport> flipReports;
     private static bool tablesInitialized = false;
-    private static readonly object initLock = new object();
+    private static readonly SemaphoreSlim initSemaphore = new(1, 1);
 
     /// <summary>
     /// Exposes the Cassandra session for direct queries when needed
@@ -143,18 +143,24 @@ public class ProductTableService
     {
         if (tablesInitialized) return;
 
-        lock (initLock)
+        await initSemaphore.WaitAsync();
+        try
         {
             if (tablesInitialized) return;
+
+            await products.CreateIfNotExistsAsync();
+            await productListings.CreateIfNotExistsAsync();
+            await priceHistory.CreateIfNotExistsAsync();
+            await listings.CreateIfNotExistsAsync();
+            await sitemapEntries.CreateIfNotExistsAsync();
+            await flipReports.CreateIfNotExistsAsync();
+
             tablesInitialized = true;
         }
-
-        await products.CreateIfNotExistsAsync();
-        await productListings.CreateIfNotExistsAsync();
-        await priceHistory.CreateIfNotExistsAsync();
-        await listings.CreateIfNotExistsAsync();
-        await sitemapEntries.CreateIfNotExistsAsync();
-        await flipReports.CreateIfNotExistsAsync();
+        finally
+        {
+            initSemaphore.Release();
+        }
     }
 
     /// <summary>
