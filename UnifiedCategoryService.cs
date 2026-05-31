@@ -299,7 +299,7 @@ throw new FileNotFoundException($"Could not find {categoryDirName}/{fileName} in
     /// </summary>
     public virtual IEnumerable<string> GetSupportedMarketplaceKeys()
     {
-        return new[] { "kleinanzeigen.de", "willhaben.at", "marktplaats.nl", "leboncoin.fr" };
+        return new[] { "kleinanzeigen.de", "willhaben.at", "marktplaats.nl", "leboncoin.fr", "vinted.de", "ebay.de" };
     }
 
     /// <summary>
