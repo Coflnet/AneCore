@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Net.Security;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
@@ -78,12 +79,22 @@ public class OpenSearch(IConfiguration configuration, ILogger<OpenSearch> logger
         return validationChain.Build(serverCertificate);
     }
 
+    /// <summary>
+    /// Base connection settings for an index client. Virtual so tests can plug in an in-memory connection.
+    /// </summary>
+    public virtual ConnectionSettings CreateConnectionSettings() => new(OpenSearchUrl());
+
     public static OpenSearchClient NewClient(ConnectionSettings settings) =>
         new(settings);
 }
 
+/// <summary>Outcome of <see cref="OpenSearchIndexBase.EnforceRetentionAsync"/>.</summary>
+public sealed record IndexRetentionResult(bool RolledOver, long DeletedDocuments, IReadOnlyList<string> DeletedIndices);
+
 public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSearchIndexBase> logger)
 {
+    private static readonly ConcurrentDictionary<string, byte> PermissionWarnings = new();
+    private static readonly TimeSpan RetentionRequestTimeout = TimeSpan.FromMinutes(10);
     private OpenSearchClient? _client;
 
     // ReSharper disable once MemberCanBeProtected.Global
@@ -112,7 +123,7 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
     private async Task<OpenSearchClient> Initialize(CancellationToken stoppingToken = default)
     {
         // setup the inital connection settings
-        var settings = new ConnectionSettings(openSearch.OpenSearchUrl())
+        var settings = openSearch.CreateConnectionSettings()
             .DefaultIndex(IndexName())
             .BasicAuthentication(openSearch.OpenSearchUsername(), openSearch.OpenSearchPassword());
         settings = openSearch.ConfigureTls(settings);
@@ -143,6 +154,7 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
                 await CreateIndexTemplateIfNotExists(stoppingToken);
                 await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
                 await UpdateExistingIndexMappings(client, stoppingToken);
+                await UpdateExistingIndexSettings(client, stoppingToken);
             }
             else
             {
@@ -162,6 +174,142 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         OpenSearchClient client,
         CancellationToken stoppingToken) =>
         Task.CompletedTask;
+
+    /// <summary>
+    /// Refresh interval applied to new and (as a dynamic setting) existing backing indices. Null keeps the server default.
+    /// </summary>
+    protected virtual Time? RefreshInterval => null;
+
+    /// <summary>Settings and mappings for a bootstrap index created without relying on the index template.</summary>
+    protected virtual CreateIndexDescriptor ConfigureNewIndex(CreateIndexDescriptor descriptor) => descriptor;
+
+    /// <summary>Settings and mappings for the index created by <see cref="EnforceRetentionAsync"/>'s rollover.</summary>
+    protected virtual RolloverIndexDescriptor ConfigureRollover(RolloverIndexDescriptor descriptor) => descriptor;
+
+    /// <summary>
+    /// True when the call failed because the OpenSearch user lacks the privilege (401/403).
+    /// Setup calls that need cluster level rights (ISM policies, templates) are optional for index usage.
+    /// </summary>
+    public static bool IsPermissionDenied(int? httpStatusCode) => httpStatusCode is 401 or 403;
+
+    protected static bool IsPermissionDenied(IResponse response) =>
+        IsPermissionDenied(response.ApiCall?.HttpStatusCode);
+
+    /// <summary>Logs a missing-privilege warning once per index type and operation.</summary>
+    protected void WarnMissingPermissionOnce(string operation, string? details)
+    {
+        if (!PermissionWarnings.TryAdd($"{GetType().FullName}|{operation}", 0))
+            return;
+        logger.LogWarning(
+            "OpenSearch user lacks the privilege for {Operation} on {Index}; continuing without it. " +
+            "An admin has to apply it out of band (see AneNotifier/INDEX-STORAGE.md). {Details}",
+            operation, IndexName(), details);
+    }
+
+    private async Task UpdateExistingIndexSettings(OpenSearchClient client, CancellationToken stoppingToken)
+    {
+        if (RefreshInterval == null)
+            return;
+        var response = await client.Indices.UpdateSettingsAsync(IndexPattern(), u => u
+            .IndexSettings(s => s.RefreshInterval(RefreshInterval)), stoppingToken);
+        if (response.IsValid)
+            return;
+        if (IsPermissionDenied(response))
+            WarnMissingPermissionOnce("update index settings", response.ServerError?.Error?.Reason);
+        else
+            logger.LogWarning("Could not update refresh interval of {Pattern}: {Error}", IndexPattern(), response.DebugInformation);
+    }
+
+    /// <summary>
+    /// Enforces document retention without relying on ISM (which needs cluster admin rights):
+    /// rolls the write index over once it is older than <paramref name="rolloverMaxAge"/> (new index gets the
+    /// current settings/mappings), deletes backing indices without documents newer than <paramref name="cutoff"/>
+    /// and removes the remaining expired documents with delete-by-query.
+    /// Missing privileges for rollover/index deletion are logged once and skipped; delete-by-query failures throw.
+    /// </summary>
+    /// <param name="dateField">Date field that decides the age (e.g. foundAt)</param>
+    public async Task<IndexRetentionResult> EnforceRetentionAsync(
+        string dateField,
+        DateTime cutoff,
+        string? rolloverMaxAge,
+        CancellationToken stoppingToken = default)
+    {
+        var client = await Client(stoppingToken);
+        var rolledOver = false;
+        var deletedIndices = new List<string>();
+        if (IsRolloverIndex())
+        {
+            if (rolloverMaxAge != null)
+                rolledOver = await TryRolloverAsync(client, rolloverMaxAge, stoppingToken);
+            deletedIndices.AddRange(await DeleteExpiredBackingIndicesAsync(client, dateField, cutoff, stoppingToken));
+        }
+
+        var response = await client.DeleteByQueryAsync<object>(d => d
+                .Index(IndexName())
+                .Conflicts(Conflicts.Proceed)
+                .RequestConfiguration(r => r.RequestTimeout(RetentionRequestTimeout))
+                .Query(q => q.DateRange(r => r.Field(dateField).LessThan(cutoff))),
+            stoppingToken);
+        if (!response.IsValid)
+            throw new InvalidOperationException(
+                $"Retention delete-by-query on {IndexName()} failed: {response.ServerError?.Error?.Reason ?? response.DebugInformation}");
+        return new IndexRetentionResult(rolledOver, response.Deleted, deletedIndices);
+    }
+
+    private async Task<bool> TryRolloverAsync(OpenSearchClient client, string maxAge, CancellationToken stoppingToken)
+    {
+        var response = await client.Indices.RolloverAsync(IndexName(), r => ConfigureRollover(r
+            .Conditions(c => c.MaxAge(maxAge))), stoppingToken);
+        if (response.IsValid)
+        {
+            if (response.RolledOver)
+                logger.LogInformation("Rolled {Alias} over from {Old} to {New}", IndexName(), response.OldIndex, response.NewIndex);
+            return response.RolledOver;
+        }
+        if (IsPermissionDenied(response))
+            WarnMissingPermissionOnce("rollover", response.ServerError?.Error?.Reason);
+        else
+            logger.LogWarning("Rollover of {Alias} failed: {Error}", IndexName(), response.DebugInformation);
+        return false;
+    }
+
+    private async Task<IReadOnlyList<string>> DeleteExpiredBackingIndicesAsync(
+        OpenSearchClient client, string dateField, DateTime cutoff, CancellationToken stoppingToken)
+    {
+        var aliases = await client.Indices.GetAliasAsync(IndexPattern(), a => a.Name(IndexName()), stoppingToken);
+        if (!aliases.IsValid)
+        {
+            if (IsPermissionDenied(aliases))
+                WarnMissingPermissionOnce("get alias", aliases.ServerError?.Error?.Reason);
+            else
+                logger.LogWarning("Could not list backing indices of {Alias}: {Error}", IndexName(), aliases.DebugInformation);
+            return Array.Empty<string>();
+        }
+
+        var deleted = new List<string>();
+        foreach (var (index, state) in aliases.Indices)
+        {
+            var isWriteIndex = state.Aliases.TryGetValue(IndexName(), out var alias) && alias.IsWriteIndex == true;
+            if (isWriteIndex || aliases.Indices.Count < 2)
+                continue;
+            var remaining = await client.CountAsync<object>(c => c
+                .Index(index)
+                .Query(q => q.DateRange(r => r.Field(dateField).GreaterThanOrEquals(cutoff))), stoppingToken);
+            if (!remaining.IsValid || remaining.Count > 0)
+                continue;
+            var delete = await client.Indices.DeleteAsync(index, ct: stoppingToken);
+            if (delete.IsValid)
+            {
+                logger.LogInformation("Deleted expired backing index {Index} of {Alias}", index.Name, IndexName());
+                deleted.Add(index.Name);
+            }
+            else if (IsPermissionDenied(delete))
+                WarnMissingPermissionOnce("delete index", delete.ServerError?.Error?.Reason);
+            else
+                logger.LogWarning("Could not delete expired index {Index}: {Error}", index.Name, delete.DebugInformation);
+        }
+        return deleted;
+    }
     
     protected string IndexPattern()
     {
@@ -179,6 +327,13 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
                 stoppingToken);
 
         var policyPath = $"_plugins/_ism/policies/{RetentionPolicyId()}";
+        if (IsPermissionDenied(policyExists.HttpStatusCode))
+        {
+            // The service user usually has no cluster:admin/opendistro/ism rights; retention is then enforced by
+            // EnforceRetentionAsync (notifier workers) and the policy can be applied by an admin.
+            WarnMissingPermissionOnce("read ISM policy", policyExists.Body);
+            return;
+        }
         if (policyExists.HttpStatusCode == 200)
         {
             using var existing = JsonDocument.Parse(policyExists.Body);
@@ -189,6 +344,11 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
                 $"{policyPath}?if_seq_no={sequenceNumber}&if_primary_term={primaryTerm}",
                 stoppingToken,
                 RetentionPolicy());
+            if (IsPermissionDenied(update.HttpStatusCode))
+            {
+                WarnMissingPermissionOnce("update ISM policy", update.Body);
+                return;
+            }
             if (!update.Success)
                 throw new InvalidOperationException(
                     $"Failed to update retention policy: {update.DebugInformation}");
@@ -205,6 +365,11 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             policyPath,
             stoppingToken, RetentionPolicy());
 
+        if (IsPermissionDenied(res.HttpStatusCode))
+        {
+            WarnMissingPermissionOnce("create ISM policy", res.Body);
+            return;
+        }
         if (!res.Success)
             throw new InvalidOperationException($"Failed to create retention policy: {res.DebugInformation}");
     }
@@ -218,6 +383,13 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
 
         var templateResponse =
             await client.Indices.PutTemplateAsync(IndexTemplateName(), IndexTemplateFunc(), stoppingToken);
+        if (!templateResponse.IsValid && IsPermissionDenied(templateResponse))
+        {
+            // New indices still get their settings/mappings: bootstrap and rollover pass them explicitly.
+            WarnMissingPermissionOnce("put index template", templateResponse.ServerError?.Error?.Reason);
+            return;
+        }
+
         if (!templateResponse.IsValid)
         {
             throw new InvalidOperationException(
@@ -284,12 +456,12 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             $"Rollover alias '{IndexName()}' not found. Creating bootstrap index '{BootstrapIndexName()}'...");
 
         // The alias doesn't exist, so we create the very first index and assign the alias to it.
-        var createIndexResponse = await client.Indices.CreateAsync(BootstrapIndexName(), c => c
+        var createIndexResponse = await client.Indices.CreateAsync(BootstrapIndexName(), c => ConfigureNewIndex(c
             .Aliases(a => a
                 .Alias(IndexName(), al => al
                     .IsWriteIndex()
                 )
-            ), stoppingToken);
+            )), stoppingToken);
 
         if (!createIndexResponse.IsValid &&
             createIndexResponse.ServerError?.Error?.Type != "resource_already_exists_exception")
@@ -310,5 +482,6 @@ public static class OpenSearchExtension
         services.AddSingleton<OpenSearch>();
         services.AddSingleton<ProductIndex>();
         services.AddSingleton<ListingIndex>();
+        services.AddSingleton<ListingSampleIndex>();
     }
 }
