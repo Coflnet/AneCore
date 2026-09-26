@@ -174,6 +174,9 @@ public class ProductTableService
             $"ALTER TABLE product_listings WITH default_time_to_live = {ProductDataRetention.ActiveProductListingTtlSeconds}"));
         await session.ExecuteAsync(new SimpleStatement(
             $"ALTER TABLE price_history WITH default_time_to_live = {ProductDataRetention.PriceHistoryTtlSeconds}"));
+        // Raw listing snapshots: writers set a shorter explicit TTL, the table default caps anything else at 14 days.
+        await session.ExecuteAsync(new SimpleStatement(
+            $"ALTER TABLE listings WITH default_time_to_live = {ListingRetention.TableDefaultTtlSeconds}"));
     }
 
     private async Task EnsureSellerHashLineageSchemaAsync()

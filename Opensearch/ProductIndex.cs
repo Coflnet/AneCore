@@ -23,49 +23,66 @@ public class ProductIndex(
     protected override Func<CreateIndexDescriptor, ICreateIndexRequest> IndexFunc() =>
         throw new NotImplementedException();
 
-    protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
+    protected override Time RefreshInterval => "30s";
 
+    /// <summary>
+    /// Fields that are indexed for search/filter/sort but never read back from <c>_source</c> by AneApi
+    /// (ProductService maps name, brand, model, categories, condition, attributes, prices, image, dates).
+    /// Only applies to indices created from the current template (see AneNotifier/INDEX-STORAGE.md).
+    /// </summary>
+    public static readonly string[] SourceExcludes = ["sampleTitles", "locations", "countries", "normalizedName", "relatedSeoIds"];
+
+    private IPromise<IIndexSettings> IndexSettings(IndexSettingsDescriptor s) => s
+        .NumberOfShards(1)
+        .NumberOfReplicas(1)
+        .RefreshInterval(RefreshInterval)
+        .Setting("plugins.index_state_management.rollover_alias", IndexName())
+        .Setting("index.knn", true);
+
+    public static ITypeMapping Mapping(TypeMappingDescriptor<ProductDocument> m) => m
+        .SourceField(s => s.Excludes(SourceExcludes))
+        .Properties(p => p
+            .Keyword(k => k.Name(n => n.SeoId))
+            .Keyword(k => k.Name(n => n.Categories))
+            .Text(k => k.Name(n => n.Name))
+            .Text(k => k.Name(n => n.NormalizedName))
+            .Keyword(k => k.Name(n => n.Brand))
+            .Keyword(k => k.Name(n => n.Model))
+            .Keyword(k => k.Name(n => n.IdentifierType))
+            .Keyword(k => k.Name(n => n.Condition))
+            .Number(k => k.Name(n => n.AveragePrice).Type(NumberType.Double))
+            .Number(k => k.Name(n => n.MedianPrice).Type(NumberType.Double))
+            .Number(k => k.Name(n => n.MinPrice).Type(NumberType.Double))
+            .Number(k => k.Name(n => n.MaxPrice).Type(NumberType.Double))
+            .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
+            .Date(d => d.Name(n => n.CreatedAt))
+            .Date(d => d.Name(n => n.LastUpdated))
+            .Nested<ProductAttribute>(o => o
+                .Name(n2 => n2.Attributes)
+                .Properties(p2 => p2
+                    .Keyword(k2 => k2.Name(n2 => n2.Key))
+                    .Keyword(k2 => k2.Name(n2 => n2.Value))
+                )
+            )
+            .Text(k => k.Name(n => n.SampleTitles).Norms(false))
+            .Keyword(k => k.Name(n => n.ImageUrl))
+            .GeoPoint(g => g.Name(n => n.Locations))
+            .Keyword(k => k.Name(n => n.Countries))
+            .Keyword(k => k.Name(n => n.CanonicalSeoId))
+            .Keyword(k => k.Name(n => n.RelatedSeoIds))
+        );
+
+    protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
         t => t
             .IndexPatterns(IndexPattern())
-            .Settings(s => s
-                .NumberOfShards(1)
-                .NumberOfReplicas(1)
-                .RefreshInterval(TimeSpan.FromSeconds(10))
-                .Setting("plugins.index_state_management.rollover_alias", IndexName())
-                .Setting("index.knn", true)
-            )
-            .Map<ProductDocument>(m => m
-                .Properties(p => p
-                    .Keyword(k => k.Name(n => n.SeoId))
-                    .Keyword(k => k.Name(n => n.Categories))
-                    .Text(k => k.Name(n => n.Name))
-                    .Text(k => k.Name(n => n.NormalizedName))
-                    .Keyword(k => k.Name(n => n.Brand))
-                    .Keyword(k => k.Name(n => n.Model))
-                    .Keyword(k => k.Name(n => n.IdentifierType))
-                    .Keyword(k => k.Name(n => n.Condition))
-                    .Number(k => k.Name(n => n.AveragePrice).Type(NumberType.Double))
-                    .Number(k => k.Name(n => n.MedianPrice).Type(NumberType.Double))
-                    .Number(k => k.Name(n => n.MinPrice).Type(NumberType.Double))
-                    .Number(k => k.Name(n => n.MaxPrice).Type(NumberType.Double))
-                    .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
-                    .Date(d => d.Name(n => n.CreatedAt))
-                    .Date(d => d.Name(n => n.LastUpdated))
-                    .Nested<ProductAttribute>(o => o
-                        .Name(n2 => n2.Attributes)
-                        .Properties(p2 => p2
-                            .Keyword(k2 => k2.Name(n2 => n2.Key))
-                            .Keyword(k2 => k2.Name(n2 => n2.Value))
-                        )
-                    )
-                    .Text(k => k.Name(n => n.SampleTitles))
-                    .Keyword(k => k.Name(n => n.ImageUrl))
-                    .GeoPoint(g => g.Name(n => n.Locations))
-                    .Keyword(k => k.Name(n => n.Countries))
-                    .Keyword(k => k.Name(n => n.CanonicalSeoId))
-                    .Keyword(k => k.Name(n => n.RelatedSeoIds))
-                )
-            );
+            .Settings(IndexSettings)
+            .Map<ProductDocument>(Mapping);
+
+    protected override CreateIndexDescriptor ConfigureNewIndex(CreateIndexDescriptor descriptor) =>
+        descriptor.Settings(IndexSettings).Map<ProductDocument>(Mapping);
+
+    protected override RolloverIndexDescriptor ConfigureRollover(RolloverIndexDescriptor descriptor) =>
+        descriptor.Settings(IndexSettings).Map<ProductDocument>(Mapping);
 
     protected override PostData RetentionPolicy() =>
         PostData.Serializable(new
