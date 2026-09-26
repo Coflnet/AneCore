@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using OpenSearch.Client;
 using OpenSearch.Net;
+using OpenSearch.Net.Specification.HttpApi;
 using static OpenSearch.Net.HttpMethod;
 
 // ReSharper disable once CheckNamespace
@@ -150,11 +151,13 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         {
             if (IsRolloverIndex())
             {
-                await CreateRetentionPolicy(stoppingToken);
-                await CreateIndexTemplateIfNotExists(stoppingToken);
+                // ISM policy, template and settings are housekeeping: they must never block index reads/writes.
+                await RunOptionalSetupStep("create retention policy", CreateRetentionPolicy, stoppingToken);
+                await RunOptionalSetupStep("create index template", CreateIndexTemplateIfNotExists, stoppingToken);
                 await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
                 await UpdateExistingIndexMappings(client, stoppingToken);
-                await UpdateExistingIndexSettings(client, stoppingToken);
+                await RunOptionalSetupStep("update index settings",
+                    ct => UpdateExistingIndexSettings(client, ct), stoppingToken);
             }
             else
             {
@@ -168,6 +171,27 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         }
 
         return client;
+    }
+
+    /// <summary>Runs a setup step that is not required for index usage; any failure is logged and ignored.</summary>
+    private async Task RunOptionalSetupStep(
+        string operation,
+        Func<CancellationToken, Task> step,
+        CancellationToken stoppingToken)
+    {
+        try
+        {
+            await step(stoppingToken);
+        }
+        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        {
+            throw;
+        }
+        catch (Exception e)
+        {
+            logger.LogWarning(e, "Optional OpenSearch setup step {Operation} for {Index} failed; continuing without it",
+                operation, IndexName());
+        }
     }
 
     protected virtual Task UpdateExistingIndexMappings(
@@ -339,11 +363,16 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             using var existing = JsonDocument.Parse(policyExists.Body);
             var sequenceNumber = existing.RootElement.GetProperty("_seq_no").GetInt64();
             var primaryTerm = existing.RootElement.GetProperty("_primary_term").GetInt64();
+            // The path must not contain a query string (OpenSearch.Net throws ArgumentException), pass it as parameters.
+            var concurrency = new HttpPutRequestParameters();
+            concurrency.SetQueryString("if_seq_no", sequenceNumber);
+            concurrency.SetQueryString("if_primary_term", primaryTerm);
             var update = await client.LowLevel.DoRequestAsync<StringResponse>(
                 PUT,
-                $"{policyPath}?if_seq_no={sequenceNumber}&if_primary_term={primaryTerm}",
+                policyPath,
                 stoppingToken,
-                RetentionPolicy());
+                RetentionPolicy(),
+                concurrency);
             if (IsPermissionDenied(update.HttpStatusCode))
             {
                 WarnMissingPermissionOnce("update ISM policy", update.Body);
