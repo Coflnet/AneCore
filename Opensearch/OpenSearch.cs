@@ -1,3 +1,7 @@
+using System.Net.Security;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -32,6 +36,46 @@ public class OpenSearch(IConfiguration configuration, ILogger<OpenSearch> logger
         return string.IsNullOrEmpty(password)
             ? throw new InvalidOperationException("OpenSearch password is not configured.")
             : password;
+    }
+
+    public ConnectionSettings ConfigureTls(ConnectionSettings settings)
+    {
+        var caCertPath = configuration.GetValue<string>("OPENSEARCH:CA_CERT_PATH");
+        if (string.IsNullOrWhiteSpace(caCertPath))
+            return settings;
+        if (!string.Equals(OpenSearchUrl().Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException("An OpenSearch CA certificate requires an HTTPS URL.");
+
+        var trustedRoots = new X509Certificate2Collection();
+        trustedRoots.ImportFromPemFile(caCertPath);
+        if (trustedRoots.Count == 0 || trustedRoots.Cast<X509Certificate2>().Any(certificate =>
+                certificate.Extensions.OfType<X509BasicConstraintsExtension>()
+                    .All(constraints => !constraints.CertificateAuthority)))
+            throw new InvalidOperationException("The OpenSearch CA certificate file must contain CA certificates only.");
+
+        return settings.ServerCertificateValidationCallback((_, certificate, _, errors) =>
+            ValidateServerCertificate(certificate, errors, trustedRoots));
+    }
+
+    internal static bool ValidateServerCertificate(
+        X509Certificate? certificate,
+        SslPolicyErrors errors,
+        X509Certificate2Collection trustedRoots)
+    {
+        if (certificate == null ||
+            (errors & (SslPolicyErrors.RemoteCertificateNameMismatch |
+                       SslPolicyErrors.RemoteCertificateNotAvailable)) != 0)
+            return false;
+
+        using var serverCertificate =
+            X509CertificateLoader.LoadCertificate(certificate.GetRawCertData());
+        using var validationChain = new X509Chain();
+        validationChain.ChainPolicy.TrustMode = X509ChainTrustMode.CustomRootTrust;
+        validationChain.ChainPolicy.CustomTrustStore.AddRange(trustedRoots);
+        validationChain.ChainPolicy.RevocationMode = X509RevocationMode.NoCheck;
+        validationChain.ChainPolicy.VerificationFlags = X509VerificationFlags.NoFlag;
+        validationChain.ChainPolicy.ApplicationPolicy.Add(new Oid("1.3.6.1.5.5.7.3.1"));
+        return validationChain.Build(serverCertificate);
     }
 
     public static OpenSearchClient NewClient(ConnectionSettings settings) =>
@@ -70,8 +114,8 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         // setup the inital connection settings
         var settings = new ConnectionSettings(openSearch.OpenSearchUrl())
             .DefaultIndex(IndexName())
-            .BasicAuthentication(openSearch.OpenSearchUsername(), openSearch.OpenSearchPassword())
-            .ServerCertificateValidationCallback((_, _, _, _) => true);
+            .BasicAuthentication(openSearch.OpenSearchUsername(), openSearch.OpenSearchPassword());
+        settings = openSearch.ConfigureTls(settings);
         logger.LogInformation(
             $"creating a new opensearch client for index {IndexName()} at {openSearch.OpenSearchUrl()}");
 
@@ -98,6 +142,7 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
                 await CreateRetentionPolicy(stoppingToken);
                 await CreateIndexTemplateIfNotExists(stoppingToken);
                 await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
+                await UpdateExistingIndexMappings(client, stoppingToken);
             }
             else
             {
@@ -112,6 +157,11 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
 
         return client;
     }
+
+    protected virtual Task UpdateExistingIndexMappings(
+        OpenSearchClient client,
+        CancellationToken stoppingToken) =>
+        Task.CompletedTask;
     
     protected string IndexPattern()
     {
@@ -128,15 +178,31 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             await client.LowLevel.DoRequestAsync<StringResponse>(GET, $"_plugins/_ism/policies/{RetentionPolicyId()}",
                 stoppingToken);
 
+        var policyPath = $"_plugins/_ism/policies/{RetentionPolicyId()}";
         if (policyExists.HttpStatusCode == 200)
         {
-            logger.LogInformation($"Retention policy {RetentionPolicyId()} already exists, skipping creation.");
+            using var existing = JsonDocument.Parse(policyExists.Body);
+            var sequenceNumber = existing.RootElement.GetProperty("_seq_no").GetInt64();
+            var primaryTerm = existing.RootElement.GetProperty("_primary_term").GetInt64();
+            var update = await client.LowLevel.DoRequestAsync<StringResponse>(
+                PUT,
+                $"{policyPath}?if_seq_no={sequenceNumber}&if_primary_term={primaryTerm}",
+                stoppingToken,
+                RetentionPolicy());
+            if (!update.Success)
+                throw new InvalidOperationException(
+                    $"Failed to update retention policy: {update.DebugInformation}");
+
+            logger.LogInformation($"Updated retention policy {RetentionPolicyId()}.");
             return;
         }
+        if (policyExists.HttpStatusCode != 404)
+            throw new InvalidOperationException(
+                $"Failed to read retention policy: {policyExists.DebugInformation}");
 
         logger.LogInformation($"Creating retention policy {RetentionPolicyId()}");
         var res = await client.LowLevel.DoRequestAsync<StringResponse>(PUT,
-            $"_plugins/_ism/policies/{RetentionPolicyId()}",
+            policyPath,
             stoppingToken, RetentionPolicy());
 
         if (!res.Success)
