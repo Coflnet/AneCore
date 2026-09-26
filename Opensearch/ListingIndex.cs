@@ -91,6 +91,7 @@ public class ListingIndex(
                     .Keyword(k => k.Name(n => n.Currency))
                     .Keyword(k => k.Name(n => n.Contact))
                     .Keyword(k => k.Name(n => n.UserId))
+                    .Keyword(k => k.Name(n => n.SellerHash))
                     .GeoPoint(g => g.Name(n => n.Location))
                     .Keyword(k => k.Name(n => n.Shipping))
                     .Keyword(k => k.Name(n => n.PriceFlags))
@@ -111,6 +112,20 @@ public class ListingIndex(
 
     protected override Func<CreateIndexDescriptor, ICreateIndexRequest> IndexFunc() =>
         throw new NotImplementedException();
+
+    protected override async Task UpdateExistingIndexMappings(
+        OpenSearchClient client,
+        CancellationToken stoppingToken)
+    {
+        var response = await client.Indices.PutMappingAsync<ListingDocument>(m => m
+            .Index(IndexPattern())
+            .Properties(p => p
+                .Keyword(k => k.Name(n => n.SellerHash))),
+            stoppingToken);
+        if (!response.IsValid)
+            throw new InvalidOperationException(
+                $"Failed to add seller hash mapping to existing listing indices: {response.DebugInformation}");
+    }
 
     protected override PostData RetentionPolicy() =>
         PostData.Serializable(new
@@ -170,6 +185,7 @@ public record ListingDocument(
     string? Currency,
     string? Contact,
     string? UserId,
+    string? SellerHash,
     GeoLocation? Location,
     string? Shipping,
     List<string> PriceFlags,
@@ -185,4 +201,3 @@ public record ListingAttribute(
     string Name,
     string Value
 );
-

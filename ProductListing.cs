@@ -20,5 +20,6 @@ public class ProductListing
     public string? Url { get; set; }
     public bool IsActive { get; set; } = true;
     public DateTime? InactiveSince { get; set; }
+    public string? SellerHash { get; set; }
     public List<string> Categories { get; set; } = new(); // All applicable categories (for ambiguous mappings)
 }

@@ -102,11 +102,9 @@ public class ProductIndex(
                     {
                         name = "warm",
                         transitions = Array.Empty<object>(),
-                        actions = new object[]
-                        {
-                            new { read_only = new { } },
-                            new { force_merge = new { max_num_segments = 1 } }
-                        }
+                        // Product documents are removed by LastUpdated, not by whole-index age.
+                        // Keep rolled indices writable so delete-by-query can enforce that limit.
+                        actions = Array.Empty<object>()
                     }
                 },
                 ism_template = new

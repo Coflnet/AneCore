@@ -76,6 +76,7 @@ public class ProductTableService
                 .Column(pl => pl.Url, cm => cm.WithName("url"))
                 .Column(pl => pl.IsActive, cm => cm.WithName("is_active"))
                 .Column(pl => pl.InactiveSince, cm => cm.WithName("inactive_since"))
+                .Column(pl => pl.SellerHash, cm => cm.WithName("seller_hash").WithSecondaryIndex())
             )
             .Define(new Map<PricePoint>()
                 .TableName("price_history")
@@ -154,6 +155,8 @@ public class ProductTableService
             await listings.CreateIfNotExistsAsync();
             await sitemapEntries.CreateIfNotExistsAsync();
             await flipReports.CreateIfNotExistsAsync();
+            await EnsureRetentionDefaultsAsync();
+            await EnsureSellerHashLineageSchemaAsync();
 
             tablesInitialized = true;
         }
@@ -161,6 +164,31 @@ public class ProductTableService
         {
             initSemaphore.Release();
         }
+    }
+
+    private async Task EnsureRetentionDefaultsAsync()
+    {
+        await session.ExecuteAsync(new SimpleStatement(
+            $"ALTER TABLE products WITH default_time_to_live = {ProductDataRetention.ProductTtlSeconds}"));
+        await session.ExecuteAsync(new SimpleStatement(
+            $"ALTER TABLE product_listings WITH default_time_to_live = {ProductDataRetention.ActiveProductListingTtlSeconds}"));
+        await session.ExecuteAsync(new SimpleStatement(
+            $"ALTER TABLE price_history WITH default_time_to_live = {ProductDataRetention.PriceHistoryTtlSeconds}"));
+    }
+
+    private async Task EnsureSellerHashLineageSchemaAsync()
+    {
+        var columns = await session.ExecuteAsync(new SimpleStatement(
+            "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+            session.Keyspace,
+            "product_listings",
+            "seller_hash"));
+        if (!columns.Any())
+            await session.ExecuteAsync(new SimpleStatement(
+                "ALTER TABLE product_listings ADD seller_hash text"));
+
+        await session.ExecuteAsync(new SimpleStatement(
+            "CREATE INDEX IF NOT EXISTS product_listings_seller_hash_idx ON product_listings (seller_hash)"));
     }
 
     /// <summary>
@@ -200,7 +228,10 @@ public class ProductTableService
     /// </summary>
     public async Task UpsertProductAsync(Product product)
     {
-        await products.Insert(product).ExecuteAsync();
+        product.LastUpdated = DateTime.UtcNow;
+        await products.Insert(product)
+            .SetTTL(ProductDataRetention.ProductTtlSeconds)
+            .ExecuteAsync();
     }
 
     /// <summary>
@@ -239,7 +270,9 @@ public class ProductTableService
     /// </summary>
     public async Task InsertProductListingAsync(ProductListing listing)
     {
-        await productListings.Insert(listing).ExecuteAsync();
+        await productListings.Insert(listing)
+            .SetTTL(ProductDataRetention.GetProductListingTtlSeconds(listing))
+            .ExecuteAsync();
     }
 
     /// <summary>
@@ -261,7 +294,9 @@ public class ProductTableService
     /// </summary>
     public async Task InsertPricePointAsync(PricePoint pricePoint)
     {
-        await priceHistory.Insert(pricePoint).ExecuteAsync();
+        await priceHistory.Insert(pricePoint)
+            .SetTTL(ProductDataRetention.GetPriceHistoryTtlSeconds(pricePoint))
+            .ExecuteAsync();
     }
 
     /// <summary>
