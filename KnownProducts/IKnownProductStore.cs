@@ -3,6 +3,9 @@ namespace Coflnet.Ane.KnownProducts;
 /// <summary>Persistence for the known-products catalog. Implemented by Cassandra (production) and in-memory (tests).</summary>
 public interface IKnownProductStore
 {
+    /// <summary>Creates backing storage if needed. Safe to call repeatedly; no-op for in-memory stores.</summary>
+    Task InitializeAsync();
+
     Task<IReadOnlyList<KnownProduct>> GetAllAsync();
 
     Task<KnownProduct?> GetAsync(string id);
@@ -31,6 +34,8 @@ public class InMemoryKnownProductStore : IKnownProductStore
         foreach (var product in seed)
             products[product.Id] = product;
     }
+
+    public Task InitializeAsync() => Task.CompletedTask;
 
     public Task<IReadOnlyList<KnownProduct>> GetAllAsync() =>
         Task.FromResult<IReadOnlyList<KnownProduct>>(products.Values.ToList());
