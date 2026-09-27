@@ -18,6 +18,7 @@ public class ProductTableService
     private readonly Table<Listing> listings;
     private readonly Table<SitemapEntry> sitemapEntries;
     private readonly Table<FlipReport> flipReports;
+    private readonly Table<MigrationRun> migrationRuns;
     private static bool tablesInitialized = false;
     private static readonly SemaphoreSlim initSemaphore = new(1, 1);
 
@@ -127,6 +128,18 @@ public class ProductTableService
                 .Column(r => r.CurrentSlug, cm => cm.WithName("current_slug"))
                 .Column(r => r.SuggestedSlug, cm => cm.WithName("suggested_slug"))
                 .Column(r => r.Status, cm => cm.WithName("status"))
+            )
+            .Define(new Map<MigrationRun>()
+                .TableName("migration_runs")
+                .PartitionKey(r => r.RunId)
+                .ClusteringKey(r => r.Mode)
+                .Column(r => r.RunId, cm => cm.WithName("run_id"))
+                .Column(r => r.Mode, cm => cm.WithName("mode"))
+                .Column(r => r.StartedAt, cm => cm.WithName("started_at"))
+                .Column(r => r.FinishedAt, cm => cm.WithName("finished_at"))
+                .Column(r => r.Status, cm => cm.WithName("status"))
+                .Column(r => r.Counters, cm => cm.WithName("counters").WithDbType<Dictionary<string, long>>())
+                .Column(r => r.Checkpoint, cm => cm.WithName("checkpoint"))
             );
 
         products = new Table<Product>(session, mapping);
@@ -135,6 +148,7 @@ public class ProductTableService
         listings = new Table<Listing>(session, mapping);
         sitemapEntries = new Table<SitemapEntry>(session, mapping);
         flipReports = new Table<FlipReport>(session, mapping);
+        migrationRuns = new Table<MigrationRun>(session, mapping);
     }
 
     /// <summary>
@@ -155,6 +169,7 @@ public class ProductTableService
             await listings.CreateIfNotExistsAsync();
             await sitemapEntries.CreateIfNotExistsAsync();
             await flipReports.CreateIfNotExistsAsync();
+            await migrationRuns.CreateIfNotExistsAsync();
             await EnsureRetentionDefaultsAsync();
             await EnsureSellerHashLineageSchemaAsync();
 
@@ -217,6 +232,24 @@ public class ProductTableService
     public Table<SitemapEntry> SitemapEntries => sitemapEntries;
 
     public Table<FlipReport> FlipReports => flipReports;
+
+    /// <summary>Tracks one-time background migration/regroup runs (see AneNotifier's RegroupRunService).</summary>
+    public Table<MigrationRun> MigrationRuns => migrationRuns;
+
+    /// <summary>Loads a migration run row, or null when this run_id+mode has never been started.</summary>
+    public async Task<MigrationRun?> GetMigrationRunAsync(string runId, string mode)
+    {
+        return await migrationRuns
+            .Where(r => r.RunId == runId && r.Mode == mode)
+            .FirstOrDefault()
+            .ExecuteAsync();
+    }
+
+    /// <summary>Upserts a migration run row (no TTL - these are small, operator-relevant audit rows).</summary>
+    public async Task UpsertMigrationRunAsync(MigrationRun run)
+    {
+        await migrationRuns.Insert(run).ExecuteAsync();
+    }
 
     /// <summary>
     /// Get a product by SEO ID
