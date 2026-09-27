@@ -143,12 +143,35 @@ public class KnownProductMatcher
     /// Lowercases, strips diacritics, unifies separators to spaces and splits letter/digit joins
     /// ("iPhone14" / "iphone14pro" -&gt; "iphone 14 pro") so alias matching works on plain tokens.
     /// </summary>
+    /// <summary>
+    /// string.Normalize throws on lone surrogates (truncated emoji in scraped titles); replace them
+    /// with a space so a broken character never drops the listing. Valid pairs are kept.
+    /// </summary>
+    internal static string ReplaceLoneSurrogates(string input)
+    {
+        StringBuilder? sb = null;
+        for (var i = 0; i < input.Length; i++)
+        {
+            var c = input[i];
+            if (!char.IsSurrogate(c))
+                continue;
+            if (char.IsHighSurrogate(c) && i + 1 < input.Length && char.IsLowSurrogate(input[i + 1]))
+            {
+                i++;
+                continue;
+            }
+            sb ??= new StringBuilder(input);
+            sb[i] = ' ';
+        }
+        return sb?.ToString() ?? input;
+    }
+
     public static string Normalize(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
             return "";
 
-        var decomposed = input.ToLowerInvariant().Normalize(NormalizationForm.FormD);
+        var decomposed = ReplaceLoneSurrogates(input.ToLowerInvariant()).Normalize(NormalizationForm.FormD);
         var sb = new StringBuilder(decomposed.Length);
         foreach (var c in decomposed)
         {
