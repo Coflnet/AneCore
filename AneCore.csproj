@@ -18,6 +18,7 @@
   <ItemGroup>
     <Content Update="Categories/UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
     <EmbeddedResource Include="Categories/CategoryScope.json" LogicalName="Coflnet.Ane.Categories.CategoryScope.json" />
+    <EmbeddedResource Include="KnownProducts/Seed/apple-iphones.json" LogicalName="Coflnet.Ane.KnownProducts.Seed.apple-iphones.json" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,349 @@
+{
+  "products": [
+    {
+      "id": "apple-iphone-11",
+      "brand": "Apple",
+      "model": "iPhone 11",
+      "name": "Apple iPhone 11",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 11", "iphone11"],
+      "possibleAttributes": {
+        "storage_size": ["64GB", "128GB", "256GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["pro"]
+    },
+    {
+      "id": "apple-iphone-11-pro",
+      "brand": "Apple",
+      "model": "iPhone 11 Pro",
+      "name": "Apple iPhone 11 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 11 pro"],
+      "possibleAttributes": {
+        "storage_size": ["64GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-11-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 11 Pro Max",
+      "name": "Apple iPhone 11 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 11 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["64GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-12-mini",
+      "brand": "Apple",
+      "model": "iPhone 12 mini",
+      "name": "Apple iPhone 12 mini",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 12 mini"],
+      "possibleAttributes": {
+        "storage_size": ["64GB", "128GB", "256GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-12",
+      "brand": "Apple",
+      "model": "iPhone 12",
+      "name": "Apple iPhone 12",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 12", "iphone12"],
+      "possibleAttributes": {
+        "storage_size": ["64GB", "128GB", "256GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["mini", "pro"]
+    },
+    {
+      "id": "apple-iphone-12-pro",
+      "brand": "Apple",
+      "model": "iPhone 12 Pro",
+      "name": "Apple iPhone 12 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 12 pro"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-12-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 12 Pro Max",
+      "name": "Apple iPhone 12 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 12 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-13-mini",
+      "brand": "Apple",
+      "model": "iPhone 13 mini",
+      "name": "Apple iPhone 13 mini",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 13 mini"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-13",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "name": "Apple iPhone 13",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 13", "iphone13"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["mini", "pro"]
+    },
+    {
+      "id": "apple-iphone-13-pro",
+      "brand": "Apple",
+      "model": "iPhone 13 Pro",
+      "name": "Apple iPhone 13 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 13 pro"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-13-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 13 Pro Max",
+      "name": "Apple iPhone 13 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 13 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-14",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "name": "Apple iPhone 14",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 14", "iphone14"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["plus", "pro"]
+    },
+    {
+      "id": "apple-iphone-14-plus",
+      "brand": "Apple",
+      "model": "iPhone 14 Plus",
+      "name": "Apple iPhone 14 Plus",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 14 plus"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-14-pro",
+      "brand": "Apple",
+      "model": "iPhone 14 Pro",
+      "name": "Apple iPhone 14 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 14 pro"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-14-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 14 Pro Max",
+      "name": "Apple iPhone 14 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 14 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-15",
+      "brand": "Apple",
+      "model": "iPhone 15",
+      "name": "Apple iPhone 15",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 15", "iphone15"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["plus", "pro"]
+    },
+    {
+      "id": "apple-iphone-15-plus",
+      "brand": "Apple",
+      "model": "iPhone 15 Plus",
+      "name": "Apple iPhone 15 Plus",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 15 plus"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-15-pro",
+      "brand": "Apple",
+      "model": "iPhone 15 Pro",
+      "name": "Apple iPhone 15 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 15 pro"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-15-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "name": "Apple iPhone 15 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 15 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-16",
+      "brand": "Apple",
+      "model": "iPhone 16",
+      "name": "Apple iPhone 16",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 16", "iphone16"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["plus", "pro"]
+    },
+    {
+      "id": "apple-iphone-16-plus",
+      "brand": "Apple",
+      "model": "iPhone 16 Plus",
+      "name": "Apple iPhone 16 Plus",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 16 plus"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    },
+    {
+      "id": "apple-iphone-16-pro",
+      "brand": "Apple",
+      "model": "iPhone 16 Pro",
+      "name": "Apple iPhone 16 Pro",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 16 pro"],
+      "possibleAttributes": {
+        "storage_size": ["128GB", "256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": ["max"]
+    },
+    {
+      "id": "apple-iphone-16-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 16 Pro Max",
+      "name": "Apple iPhone 16 Pro Max",
+      "categories": ["Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone"],
+      "vertical": "electronics",
+      "aliases": ["iphone 16 pro max"],
+      "possibleAttributes": {
+        "storage_size": ["256GB", "512GB", "1TB"],
+        "os": ["ios"],
+        "color": []
+      },
+      "excludeTerms": []
+    }
+  ]
+}
