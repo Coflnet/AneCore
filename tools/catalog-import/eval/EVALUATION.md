@@ -94,3 +94,47 @@ KnownProductMatcherRealCatalogTests.cs`).
 cd tools/catalog-import/eval && python3 fetch_titles.py   # refreshes titles.json (rate-limited, ~4 min)
 cd ../../eval-runner && dotnet run -- ../catalog-import/eval   # writes results.json, prints the numbers above
 ```
+
+## 2026-09-28 update: everyday-alias recall pass
+
+Re-ran the matcher over the same stored `titles.json` (unchanged, 1,286 titles) after adding everyday
+aliases for MacBook/ThinkPad/iPad/Apple Watch/cameras/consoles, spelling-variant normalization, and the
+Samsung Galaxy A-series (see `tools/catalog-import/README.md`'s "Everyday-alias recall pass" section for
+what changed and why). Catalogue grew from 897 to 959 products (the 62 new Galaxy A-series entries;
+existing entries kept their aliases, not their product count, changed).
+
+**Method**: diffed the new `results.json` against the previous pass's (saved before re-running) row by
+row (same title+term pairs, matched in the exact same order). **Zero previously-matched titles were lost
+or changed to a different product** - every alias addition was purely additive. All 31 newly-matched
+titles were read by hand (the entire new set, not a subsample).
+
+Two real false positives were found in the new matches and fixed before this final run (not shipped
+silently):
+
+1. `"Samsung Galaxy A 54 5G Schutzglas"` → matched the new `samsung-galaxy-a54` entry. "Schutzglas"
+   (German: tempered-glass screen protector) was missing from `KnownProductMatcher.AccessoryWords` -
+   "panzerglas"/"displayglas" covered other German spellings of the same concept but not this one. Fixed
+   by adding it; regression test `Accessory_GalaxyA54Schutzglas_ReturnsNull`.
+2. `"Aple Watch SE Gen 2. 40mm - 2 Jahre alt"` → matched `apple-watch-se` (1st generation) instead of
+   `apple-watch-se-2nd-generation`, since only the formal "(2nd generation)" parenthetical existed as an
+   alias and "Gen 2" wasn't recognized. Fixed by generating "Gen N" forms for every Apple "(Nth
+   generation)" name (`build_apple_watch`, mirroring `build_ipad`'s existing generation-alias handling);
+   regression test `Sibling_AppleWatchSE_DoesNotMatchSe2ndGeneration`.
+
+**Results**:
+
+| | Before | After |
+| --- | --- | --- |
+| Titles matched | 79 / 1,286 (6.1%) | 110 / 1,286 (8.6%) |
+| Precision (manual review of every match) | 74/79 = 93.7% | 105/110 = **95.5%** |
+| Matcher index build (steady-state/warm) | 36-40ms | 13-24ms |
+| Match time | 45.2ms total, 0.035ms/title | 47-92ms total, 0.037-0.07ms/title |
+| 10,000 `Match` calls | 58.5-61.2ms | 65-180ms |
+
+Precision = (74 previously-verified-correct matches, unchanged since nothing was lost/changed) + (31
+newly-matched titles, all manually verified correct after the two fixes above) ÷ 110 total matches.
+Recall rose (+39% relative, 31 more titles matched) and precision did not drop below the previous 93.7% -
+both task requirements met. The match-time/10k-call numbers above have wider ranges than the original
+pass because this re-run's dev machine was under heavy concurrent load (see
+`tools/catalog-import/README.md`'s "Performance" section) - all measurements still land inside the task's
+targets (per-title well under 0.2ms, 10k calls well under 2s, warm index build within 10-40ms).

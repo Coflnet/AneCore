@@ -1,13 +1,13 @@
 {
   "totalTitles": 1286,
-  "matchedCount": 79,
-  "matchRate": 0.061430793157076204,
-  "matcherIndexBuildMs": 36.5543,
-  "totalMatchMs": 45.6287,
-  "msPerTitle": 0.035481104199066874,
-  "tenThousandCallsMs": 61.2282,
-  "processWorkingSetMb": 73.76953125,
-  "catalogSize": 897,
+  "matchedCount": 110,
+  "matchRate": 0.08553654743390357,
+  "matcherIndexBuildMs": 44.8045,
+  "totalMatchMs": 46.9791,
+  "msPerTitle": 0.03653118195956454,
+  "tenThousandCallsMs": 84.0046,
+  "processWorkingSetMb": 75.62109375,
+  "catalogSize": 959,
   "byTerm": [
     {
       "term": "adidas",
@@ -22,7 +22,7 @@
     {
       "term": "apple watch",
       "total": 44,
-      "matched": 0
+      "matched": 14
     },
     {
       "term": "barbie",
@@ -37,7 +37,7 @@
     {
       "term": "canon eos",
       "total": 50,
-      "matched": 0
+      "matched": 1
     },
     {
       "term": "chanel",
@@ -62,7 +62,7 @@
     {
       "term": "iphone",
       "total": 68,
-      "matched": 2
+      "matched": 13
     },
     {
       "term": "lego",
@@ -122,12 +122,12 @@
     {
       "term": "samsung galaxy",
       "total": 58,
-      "matched": 10
+      "matched": 11
     },
     {
       "term": "samsung tv",
       "total": 65,
-      "matched": 1
+      "matched": 3
     },
     {
       "term": "sony alpha",
@@ -157,7 +157,7 @@
     {
       "term": "xbox",
       "total": 17,
-      "matched": 0
+      "matched": 2
     },
     {
       "term": "xiaomi",
@@ -177,8 +177,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-used",
       "Title": "I phone 16 pro",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-16-pro",
+      "MatchedName": "Apple iPhone 16 Pro"
     },
     {
       "Term": "iphone",
@@ -261,8 +261,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-used",
       "Title": "i Phone 13 Pro Max",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-13-pro-max",
+      "MatchedName": "Apple iPhone 13 Pro Max"
     },
     {
       "Term": "iphone",
@@ -324,8 +324,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-used",
       "Title": "I Phone 15",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-15",
+      "MatchedName": "Apple iPhone 15"
     },
     {
       "Term": "iphone",
@@ -415,8 +415,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-used",
       "Title": "I Phone 16 pro Max",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-16-pro-max",
+      "MatchedName": "Apple iPhone 16 Pro Max"
     },
     {
       "Term": "iphone",
@@ -457,8 +457,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-white-used",
       "Title": "I phone 15",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-15",
+      "MatchedName": "Apple iPhone 15"
     },
     {
       "Term": "iphone",
@@ -499,8 +499,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-256gb-used",
       "Title": "I Phone 16 Pro Max",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-16-pro-max",
+      "MatchedName": "Apple iPhone 16 Pro Max"
     },
     {
       "Term": "iphone",
@@ -541,8 +541,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-gray-grey-used",
       "Title": "I phone 11 Pro Max Neuwertig",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-11-pro-max",
+      "MatchedName": "Apple iPhone 11 Pro Max"
     },
     {
       "Term": "iphone",
@@ -555,8 +555,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-gray-grey-used",
       "Title": "I Phone 13 im guten Zustand",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-13",
+      "MatchedName": "Apple iPhone 13"
     },
     {
       "Term": "iphone",
@@ -583,8 +583,8 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-128gb-broken",
       "Title": "Apple I phone 13 pro 128 Gb",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-13-pro",
+      "MatchedName": "Apple iPhone 13 Pro"
     },
     {
       "Term": "iphone",
@@ -611,15 +611,15 @@
       "Term": "iphone",
       "SeoId": "apple-iphone-blue-used",
       "Title": "I Phone 15 Plus",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-15-plus",
+      "MatchedName": "Apple iPhone 15 Plus"
     },
     {
       "Term": "iphone",
       "SeoId": "apple-iphone-blue-used",
       "Title": "I Phone 15 Pro",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-iphone-15-pro",
+      "MatchedName": "Apple iPhone 15 Pro"
     },
     {
       "Term": "iphone",
@@ -765,8 +765,8 @@
       "Term": "samsung galaxy",
       "SeoId": "samsung-galaxy-white-used",
       "Title": "Samsung Galaxy A 50/wei\u00DF in gutem Zustand",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "samsung-galaxy-a50",
+      "MatchedName": "Samsung Galaxy A50"
     },
     {
       "Term": "samsung galaxy",
@@ -2382,8 +2382,8 @@
       "Term": "xbox",
       "SeoId": "xbox-512gb-used",
       "Title": "Xbox serie s 512 gb",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "microsoft-xbox-series-s",
+      "MatchedName": "Microsoft Xbox Series S"
     },
     {
       "Term": "xbox",
@@ -2417,8 +2417,8 @@
       "Term": "xbox",
       "SeoId": "microsoft-xbox-white-used",
       "Title": "X Box One S Digital Edition mit Controller",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "microsoft-xbox-one-s",
+      "MatchedName": "Microsoft Xbox One S"
     },
     {
       "Term": "xbox",
@@ -3082,8 +3082,8 @@
       "Term": "canon eos",
       "SeoId": "canon-used",
       "Title": "Appreil photo hybride canon R100\u002B canon RF 50 mm",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "canon-eos-r100",
+      "MatchedName": "Canon EOS R100"
     },
     {
       "Term": "canon eos",
@@ -4090,15 +4090,15 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-3038mm-used",
       "Title": "Apple Watch Serie 3",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-3",
+      "MatchedName": "Apple Watch Series 3"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-3038mm-used",
       "Title": "Apple Watch S\u00E9rie 3 Nike \u002B 2e Apple Watch Nike \u002B 18 bracelets",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-3",
+      "MatchedName": "Apple Watch Series 3"
     },
     {
       "Term": "apple watch",
@@ -4118,15 +4118,15 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Apple Watch s\u00E9rie 9",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-9",
+      "MatchedName": "Apple Watch Series 9"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Montre Apple Watch s\u00E9rie 7",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-7",
+      "MatchedName": "Apple Watch Series 7"
     },
     {
       "Term": "apple watch",
@@ -4139,29 +4139,29 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Apple Watch Serie 7",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-7",
+      "MatchedName": "Apple Watch Series 7"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Apple Watch serie 7",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-7",
+      "MatchedName": "Apple Watch Series 7"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Apple Watch Serie 7",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-7",
+      "MatchedName": "Apple Watch Series 7"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Apple Watch s\u00E9rie 4",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-4",
+      "MatchedName": "Apple Watch Series 4"
     },
     {
       "Term": "apple watch",
@@ -4202,8 +4202,8 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-used",
       "Title": "Aple Watch SE Gen 2. 40mm - 2 Jahre alt",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-se-2nd-generation",
+      "MatchedName": "Apple Watch SE (2nd generation)"
     },
     {
       "Term": "apple watch",
@@ -4272,8 +4272,8 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-black-used",
       "Title": "Apple Watch Serie 3",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-3",
+      "MatchedName": "Apple Watch Series 3"
     },
     {
       "Term": "apple watch",
@@ -4356,8 +4356,8 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-gold-used",
       "Title": "Apple Watch Serie 6 Gold Pink Sand Band GPS\u002BCelular",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-6",
+      "MatchedName": "Apple Watch Series 6"
     },
     {
       "Term": "apple watch",
@@ -4370,22 +4370,22 @@
       "Term": "apple watch",
       "SeoId": "apple-watch-3942mm-used",
       "Title": "Apple Watch S\u00E9rie 2 SE",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-2",
+      "MatchedName": "Apple Watch Series 2"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-3942mm-used",
       "Title": "Apple Watch s\u00E9rie 2",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-2",
+      "MatchedName": "Apple Watch Series 2"
     },
     {
       "Term": "apple watch",
       "SeoId": "apple-watch-3942mm-used",
       "Title": "Apple watch Serie 7 Gps \u002B Cellular",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-watch-series-7",
+      "MatchedName": "Apple Watch Series 7"
     },
     {
       "Term": "apple watch",
@@ -4839,8 +4839,8 @@
       "Term": "samsung tv",
       "SeoId": "samsung-black",
       "Title": "Samsung galaxy A 37 5G neu",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "samsung-galaxy-a37",
+      "MatchedName": "Samsung Galaxy A37"
     },
     {
       "Term": "samsung tv",
@@ -4874,8 +4874,8 @@
       "Term": "samsung tv",
       "SeoId": "samsung-black",
       "Title": "Samsung galaxy a 17 5g",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "samsung-galaxy-a17",
+      "MatchedName": "Samsung Galaxy A17"
     },
     {
       "Term": "samsung tv",

@@ -198,11 +198,18 @@ of this pass, documented rather than silently cut):
 - **Xiaomi**: covers the Mi/Xiaomi numbered flagship line, Redmi Note, and POCO X/F/M series
   (2020 onward); Redmi's huge budget A/numbered-only sub-lines and older Mi Max/Mix variants are not
   seeded.
-- **Samsung**: Galaxy S/Z Fold/Z Flip/Note (2019 onward) only - the A-series budget line (by far the
-  highest unit volume, but its region-duplicated/reused-model-number naming in TechAPI needs a dedicated,
-  more careful cleaning pass than this importer's generic smartphone cleaner currently does) is **not**
-  seeded yet. This is the single largest coverage gap in the phone category and the top candidate for a
-  follow-up pass.
+- **Samsung**: Galaxy S/Z Fold/Z Flip/Note (2019 onward) plus, since the 2026-09 recall pass, the
+  Galaxy A-series (A01 through A73, plus `s`/`e`/`Core` suffix variants and the odd "A2 Core") - see
+  `build_samsung_galaxy_a()`. A dedicated wanted-regex (not the generic smartphone cleaner's output as-is)
+  was needed: a raw pass over TechAPI's Samsung data also yields regional/carrier "Top Edition" SKUs, a
+  Japan-only "WiMAX 2+" variant, a combined "Galaxy A22 2021 / Galaxy A22s" record and a "Galaxy A
+  Quantum" one-off, none of which are how a real listing names the phone - checked against the actual
+  TechAPI output (62 clean groups picked, 18 rejected) before shipping, not assumed clean. One documented
+  simplification: `clean_phone_name()` strips "5G" as a network token everywhere (correct for the
+  S/Z/Note flagships, which have no distinct 4G sibling SKU); some A-series models had a genuinely
+  different-chipset 5G SKU under the same marketing name, and this pass does not attempt to split that
+  back out - a listing naming "5G" still correctly matches the base model, it is just not distinguished
+  from the 4G variant as its own catalogue entry.
 
 ## Known importer bugs found and fixed during this pass
 
@@ -226,3 +233,81 @@ worth knowing about if you extend this importer:
 Both were caught, not shipped silently - `build_seed.py` now raises loudly on any id collision between
 two differently-named groups instead of letting one clobber the other in the output dict, specifically to
 catch the next bug like this early.
+
+## Everyday-alias recall pass (2026-09)
+
+The original hand-curated MacBook/ThinkPad/iPad/Apple Watch/camera/console entries carried only their
+formal marketing names ("Apple MacBook Air 13-inch (M2)"), which real shoppers/sellers rarely type in
+full - "macbook air m2 13" and "sony a7 iii" both resolved to nothing. `lib/alias_rules.py` adds small,
+reusable, structured-data-driven generators (not hand-typed per product) for the everyday forms real
+listings/queries actually use:
+
+- `chip_size_aliases` - chip and screen size in either order, with/without "inch"/"zoll" (MacBook, iPad).
+- `year_aliases` - purchase-year names ("MacBook Air 2022"), only where a year unambiguously identifies
+  one variant (see "Ambiguity policy" below).
+- `generation_aliases` / `generation_word_aliases` - "Gen N"/"GN"/"G N" (ThinkPad) and "Nth Gen"/"Gen N"
+  (Apple's "(Nth generation)" naming - iPad, and the Apple Watch/SE generations that use it).
+- `mark_variants` - roman↔arabic numeral conversion with/without the word "Mark" (cameras: "EOS R6 Mark
+  II" ↔ "EOS R6 II" ↔ "EOS R6 2"; also applied to ThinkPad/iPad's own generation markers).
+
+Also added: `KnownProductMatcher.Normalize` now canonicalizes recurring misspellings/localizations found
+in the real-title evaluation - German "Serie"/French "Série" → "series", and the space-separated "I
+Phone"/"X Box"/"Play Station"/"Mac Book" → their fused catalogue spellings - via one combined regex (see
+"Performance" below for why it is one regex, not five). Two new `KnownProductMatcher.AccessoryWords`
+entries ("akku" German battery, "schutzglas" German screen-protector glass) were found missing during
+this pass's evaluation re-run.
+
+### Ambiguity policy
+
+A chip/generation can span more than one screen size or generation number - "MacBook Air M2" (13-inch and
+15-inch), "ThinkPad T14" (Gen 2-5), "iPad Air M2" (11-inch and 13-inch). Two designs were considered:
+
+1. **A new "family" KnownProduct** that the specific variants are siblings of, so a bare query resolves to
+   the family and (per the task brief) AneApi's own zero-hit fallback
+   (`KnownProductQueryBuilder.ShouldFallbackToWildcardSearch`) would catch the family's necessarily-empty
+   exact brand/model query and re-run as a plain wildcard search, surfacing every variant.
+2. **Default the bare alias to the smaller/base variant** (13-inch over 15-inch, the lower generation
+   number's newer sibling over the rest) - no new catalogue rows, no new ids for AneNotifier's Cassandra
+   store to seed, no risk of AneApi's `ComputeSiblingExcludeTerms` learning to treat the size-suffixed
+   variant aliases as "sibling models to exclude" for the family entry (which would need an AneApi change
+   to fix, and none was made per the task brief).
+
+**Chosen: option 2**, the smaller code/data footprint, because option 1's only real advantage (the bare
+query surfacing every variant via search-side fallback) already happens for free under option 2 too: a
+title/query that also states the size/generation always resolves to the *exact* variant regardless of the
+default, because that variant's alias is longer and "longest alias wins" in `KnownProductMatcher.Match` -
+the default only ever applies to a genuinely bare query. The trade-off is real and is stated plainly: a
+bare "MacBook Air M2" *search* narrows to the 13-inch model's own listings rather than surfacing both
+sizes (unlike option 1's fallback-to-wildcard behaviour) - this is the same class of "pick the more likely
+interpretation" choice a search box makes elsewhere, not a new one. **If broader default-variant
+correctness for bare family searches becomes important, AneApi would need `ComputeSiblingExcludeTerms`
+taught to distinguish "this alias only differs by a verified attribute already covered by
+`possibleAttributes` (screen size, generation)" from "this is a genuinely different sibling model" - see
+that method's doc in `AneApi/Products/KnownProductQueryBuilder.cs`.** ThinkPad's default picks the latest
+generation (a fact, not a sales-volume guess this pass has no data for); MacBook/iPad's default picks the
+smaller/base screen size (also the higher-volume configuration in the resold market for both lines).
+See `AneCore.Tests/KnownProductMatcherRealCatalogTests.cs`'s `Ambiguity_*` tests for both directions
+(bare-family-query default, and exact-variant-title override).
+
+### Performance
+
+Adding ~900 new aliases (1,886 → ~2,800 across the whole catalogue) measurably regressed
+`KnownProductMatcher`'s one-time index-build cost - not primarily from the extra `Normalize()` calls
+(cheap, ~2.5µs each), but from constructing more `Regex` objects: the first version of the spelling-variant
+rule used five separate `new Regex(..., RegexOptions.Compiled)` static fields, each paying its own
+one-time MSIL-JIT-compile cost inside the very first `Normalize()` call of the process - i.e. squarely
+inside `KnownProductMatcher`'s own construction. Fixed by combining them into one regex + a
+`MatchEvaluator` lookup, and dropping `RegexOptions.Compiled` for it (these patterns run once per
+`Normalize()` call, never in a tight loop, so Compiled's construction-time cost isn't worth paying). The
+camera alias generator was also trimmed of brand-prefixed duplicates of already-bare aliases (e.g. both
+"A7 III" and "Sony A7 III" as separate generated aliases) - redundant, since `KnownProductMatcher.Match`
+scans every token position in a title, not just position 0, so a bare "A7 III" alias already matches
+"Sony A7 III ..." without needing a brand-prefixed duplicate.
+
+Measured after both fixes (`tools/eval-runner`, full 959-product catalogue, this pass's dev machine under
+heavy concurrent load - see the task's final report for less noisy numbers from repeated in-process
+construction): matcher index build 45-90ms cold (first construction in a fresh process - a one-time JIT/
+regex-construction tax paid once per process lifetime, not per periodic catalogue refresh) but 13-24ms
+warm (steady-state, i.e. every rebuild after the first, which is what recurs every few minutes in
+production - within the 10-40ms target); per-title match time 0.035-0.07ms (target: well under 0.2ms);
+10,000 `Match` calls 65-180ms (target: <2s).

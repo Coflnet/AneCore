@@ -11,8 +11,12 @@ the open datasets below. Retrieval date for all sources: **2026-09-28**.
 
 - Source: https://github.com/GetTechAPI/TechAPI (branch `develop`)
 - Licence: **CC-BY-SA 4.0** (per the repository's `LICENSE` file)
-- Used for: `samsung-galaxy.json`, `google-pixel.json`, `xiaomi.json` (smartphone specs, grouped
-  from region/carrier/storage variant records; only `verified: true` records were used)
+- Used for: `samsung-galaxy.json` (Galaxy S/Z Fold/Z Flip/Note **and, since the 2026-09 recall
+  pass, the Galaxy A-series**), `google-pixel.json`, `xiaomi.json` (smartphone specs, grouped
+  from region/carrier/storage variant records; only `verified: true` records were used). The
+  A-series needed its own wanted-regex (see `build_seed.py`'s `build_samsung_galaxy_a` for why -
+  TechAPI's raw A-series names include regional/carrier "Top Edition" and similar noise the S/Z/
+  Note line doesn't have) rather than reusing `build_samsung`'s pattern.
 - **Attribution required**: "Smartphone specification data from the TechAPI project
   (https://github.com/GetTechAPI/TechAPI), licensed CC-BY-SA 4.0."
 - **Share-alike**: CC-BY-SA 4.0 is a share-alike licence. Any redistribution of this derived
