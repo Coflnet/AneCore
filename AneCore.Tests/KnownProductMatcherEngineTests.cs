@@ -79,6 +79,31 @@ public class KnownProductMatcherEngineTests
         Assert.That(KnownProductMatcher.Normalize(input), Is.EqualTo(expected));
     }
 
+    [TestCase("Apple Watch Serie 3", "apple watch series 3")]
+    [TestCase("Apple Watch Série 3", "apple watch series 3")]
+    [TestCase("Xbox serie s", "xbox series s")]
+    [TestCase("I Phone 13", "iphone 13")]
+    [TestCase("X Box One S", "xbox one s")]
+    [TestCase("Play Station 5", "playstation 5")]
+    [TestCase("Mac Book Air", "macbook air")]
+    public void Normalize_SpellingVariants_CanonicalizeToCatalogueSpelling(string input, string expected)
+    {
+        // Regression: recall gaps found in the real-title evaluation (tools/catalog-import/eval/
+        // EVALUATION.md "Language/spelling variants") - German "Serie"/French "Série" (no "s"), and
+        // "I Phone"/"X Box"/"Play Station"/"Mac Book" (space-separated) don't match the catalogue's
+        // "Series"/"iPhone"/"Xbox"/"PlayStation"/"MacBook" aliases without this canonicalization step.
+        Assert.That(KnownProductMatcher.Normalize(input), Is.EqualTo(expected));
+    }
+
+    [TestCase("series")]
+    [TestCase("mysteries")]
+    public void Normalize_SpellingVariants_DoNotMatchInsideUnrelatedWords(string input)
+    {
+        // Guard against the "serie" -> "series" rule loosening into a substring match - it must only fire
+        // on the standalone token "serie", never as a prefix inside "series"/"mysteries".
+        Assert.That(KnownProductMatcher.Normalize(input), Is.EqualTo(input));
+    }
+
     [Test]
     public void SiblingExclusion_GalaxyS21_DoesNotMatchS21Plus()
     {
