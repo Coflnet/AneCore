@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+from collections import defaultdict
 from datetime import date
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "lib"))
@@ -23,6 +24,7 @@ import normalize as nz  # noqa: E402
 import techapi  # noqa: E402
 import docyx  # noqa: E402
 import ios_devices  # noqa: E402
+import alias_rules as ar  # noqa: E402
 
 THIS_MONTH = date.today().strftime("%Y-%m")
 SEED_DIR = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "KnownProducts", "Seed"))
@@ -77,6 +79,37 @@ def build_samsung(repo_root):
     groups = techapi.group_smartphones(repo_root, "samsung", min_year=2019)
     wanted = re.compile(r"^Galaxy (S\d{2}\+?( Ultra| Edge| FE)?|Z (Fold|Flip)\d+( FE)?|Note (10|20)\+?( Ultra| Lite)?)$", re.I)
     picked = {k: v for k, v in groups.items() if wanted.match(k.strip())}
+    return _build_phone_family(picked, brand="Samsung", vertical="electronics", source="techapi")
+
+
+def build_samsung_galaxy_a(repo_root):
+    # The A-series was flagged as "not seeded yet - the single largest coverage gap in the phone
+    # category" (see README) because TechAPI's raw names for it are noisier than the S/Z/Note lines: a
+    # bare Galaxy.group_smartphones()/clean_phone_name() pass over data/smartphone/samsung also yields
+    # regional/carrier "Top Edition" SKUs ("Galaxy A16 2024 Top Edition"), a "WiMAX" Japan-carrier variant,
+    # a combined "Galaxy A22 2021 / Galaxy A22s" record, an "A21 Simple" carrier variant and a "Galaxy A
+    # Quantum" one-off - none of which are how a real listing names the phone. This wanted-regex (checked
+    # against the actual TechAPI output before shipping, not assumed) picks only the plain "A<number>"
+    # line with its real "e"/"s"/"Core" suffix variants, the same "verified-shape, not free text" discipline
+    # build_samsung/build_xiaomi already use - so it IS the "dedicated, more careful cleaning pass" the gap
+    # called for, not a reuse of the generic cleaner's output as-is.
+    #
+    # One deliberate simplification, not a bug: clean_phone_name() strips "5G" as a network token (right,
+    # for the S/Z/Note flagships, which are 5G-only with no distinct SKU) - for the A-series, Samsung did
+    # sell some genuinely different-chipset "5G" SKUs alongside their 4G sibling under the same marketing
+    # name. This pass does not attempt to split those back apart (that needs a chipset-level signal
+    # clean_phone_name() does not carry) - a listing naming the "5G" word still correctly matches the base
+    # model (e.g. "Galaxy A51 5G" -> "Galaxy A51"), it is just not distinguished from the 4G variant as a
+    # separate catalogue entry. Documented here rather than silently merged without comment.
+    groups = techapi.group_smartphones(repo_root, "samsung", min_year=2019)
+    wanted = re.compile(r"^Galaxy A(\d{1,3})(e|s|\s+Core)?$", re.I)
+    picked = {}
+    for name, g in groups.items():
+        n = name.strip()
+        m = wanted.match(n)
+        if not m or not (1 <= int(m.group(1)) <= 79):
+            continue
+        picked[name] = g
     return _build_phone_family(picked, brand="Samsung", vertical="electronics", source="techapi")
 
 
@@ -144,25 +177,48 @@ def build_ipad(ios_dir):
     watch_colors = ios_devices.group_by_generation(ios_devices.load(os.path.join(ios_dir, "ios-ipad.json")))
     # Known-good official storage options per generation (Apple tech specs, 2026-09). Colour is left an
     # open/free value (empty set) except where ios-device-list gives a verified matrix.
+    # (name, storage, base line, generation number or None, chip or None, screen size or None,
+    #  bespoke alias kept from the original hand-curated seed)
     lineup = [
-        ("iPad (9th generation)", ["64GB", "256GB"], "ipad 9th generation"),
-        ("iPad (10th generation)", ["64GB", "256GB"], "ipad 10th generation"),
-        ("iPad Air (4th generation)", ["64GB", "256GB"], "ipad air 4th generation"),
-        ("iPad Air (5th generation)", ["64GB", "256GB"], "ipad air 5th generation"),
-        ("iPad Air 11-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "ipad air m2 11"),
-        ("iPad Air 13-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "ipad air m2 13"),
-        ("iPad mini (6th generation)", ["64GB", "256GB"], "ipad mini 6th generation"),
-        ("iPad mini (7th generation)", ["128GB", "256GB", "512GB"], "ipad mini 7th generation"),
-        ("iPad Pro 11-inch (3rd generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "ipad pro 11 3rd generation"),
-        ("iPad Pro 12.9-inch (5th generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "ipad pro 12.9 5th generation"),
-        ("iPad Pro 11-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "ipad pro m4 11"),
-        ("iPad Pro 13-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "ipad pro m4 13"),
-        ("iPad (A16)", ["128GB", "256GB"], "ipad a16"),
+        ("iPad (9th generation)", ["64GB", "256GB"], "iPad", 9, None, None, "ipad 9th generation"),
+        ("iPad (10th generation)", ["64GB", "256GB"], "iPad", 10, None, None, "ipad 10th generation"),
+        ("iPad Air (4th generation)", ["64GB", "256GB"], "iPad Air", 4, None, None, "ipad air 4th generation"),
+        ("iPad Air (5th generation)", ["64GB", "256GB"], "iPad Air", 5, None, None, "ipad air 5th generation"),
+        ("iPad Air 11-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "11", "ipad air m2 11"),
+        ("iPad Air 13-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "13", "ipad air m2 13"),
+        ("iPad mini (6th generation)", ["64GB", "256GB"], "iPad mini", 6, None, None, "ipad mini 6th generation"),
+        ("iPad mini (7th generation)", ["128GB", "256GB", "512GB"], "iPad mini", 7, None, None, "ipad mini 7th generation"),
+        ("iPad Pro 11-inch (3rd generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 3, None, "11", "ipad pro 11 3rd generation"),
+        ("iPad Pro 12.9-inch (5th generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 5, None, "12.9", "ipad pro 12.9 5th generation"),
+        ("iPad Pro 11-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "11", "ipad pro m4 11"),
+        ("iPad Pro 13-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "13", "ipad pro m4 13"),
+        ("iPad (A16)", ["128GB", "256GB"], "iPad", None, "A16", None, "ipad a16"),
     ]
+
+    # Ambiguity policy (same "default to the smaller/base screen size" rule as build_macbook - see that
+    # function's comment): the M2 Air and M4 Pro chips each ship in two screen sizes, so a bare
+    # "iPad Air M2"/"iPad Pro M4" query is genuinely ambiguous; the 11-inch (base) size gets the bare
+    # chip-only alias, the 13-inch keeps only its size-qualified aliases, and a query naming the size still
+    # resolves to the exact variant via "longest alias wins" regardless of this default.
+    chip_group_names = defaultdict(list)
+    for name, storage, base, gen, chip, size, alias_extra in lineup:
+        if chip:
+            chip_group_names[(base, chip)].append((name, size))
+    default_variant_for_chip = {
+        min(entries, key=lambda e: float(e[1]))[0]: True
+        for entries in chip_group_names.values() if len(entries) > 1
+    }
+
     products = []
-    for name, storage, alias_extra in lineup:
+    for name, storage, base, gen, chip, size, alias_extra in lineup:
         pid = nz.slugify("apple", name)
         aliases = {f"Apple {name}", name, alias_extra}
+        if gen is not None:
+            aliases |= ar.generation_word_aliases(base, gen)
+        if chip is not None and size is not None:
+            aliases |= ar.chip_size_aliases(base, chip, size)
+            if len(chip_group_names[(base, chip)]) == 1 or default_variant_for_chip.get(name):
+                aliases.add(f"{base} {chip}")
         colors = watch_colors.get(name, {}).get("colors", set())
         products.append(make_product(
             pid, "Apple", name, f"Apple {name}", CAT_TABLET, "electronics", aliases, "ios-device-list+apple-specs",
@@ -175,31 +231,86 @@ def build_ipad(ios_dir):
 
 
 def build_macbook():
+    # (name, screen_size, storage, chip spoken forms, launch year)
+    # "chip spoken forms" lists every way real listings name the chip - the M1/M2/M3/M4 "Pro/Max" tier
+    # combines two different chip SKUs into one screen-size product (Apple's lineup does not split
+    # storefront SKUs by Pro vs Max), so both "M1 Pro"/"M1 Max" etc. are listed and alias to the same
+    # product - see the module-level ambiguity-policy note above build_thinkpad() for the equivalent
+    # "which variant does a bare query resolve to" reasoning, applied here to screen size instead of
+    # generation.
     lineup = [
-        ("MacBook Air (M1, 2020)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 13-inch (M2)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 15-inch (M2)", "15", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 13-inch (M3)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 15-inch (M3)", "15", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 13-inch (M4)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Air 15-inch (M4)", "15", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Pro 13-inch (M1, 2020)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Pro 14-inch (M1 Pro/Max, 2021)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 16-inch (M1 Pro/Max, 2021)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 13-inch (M2, 2022)", "13", ["256GB", "512GB", "1TB", "2TB"]),
-        ("MacBook Pro 14-inch (M2 Pro/Max, 2023)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 16-inch (M2 Pro/Max, 2023)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 14-inch (M3, 2023)", "14", ["512GB", "1TB"]),
-        ("MacBook Pro 14-inch (M3 Pro/Max, 2023)", "14", ["512GB", "1TB", "2TB", "4TB"]),
-        ("MacBook Pro 16-inch (M3 Pro/Max, 2023)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 14-inch (M4, 2024)", "14", ["512GB", "1TB"]),
-        ("MacBook Pro 14-inch (M4 Pro/Max, 2024)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
-        ("MacBook Pro 16-inch (M4 Pro/Max, 2024)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
+        ("MacBook Air (M1, 2020)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M1"], 2020),
+        ("MacBook Air 13-inch (M2)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M2"], 2022),
+        ("MacBook Air 15-inch (M2)", "15", ["256GB", "512GB", "1TB", "2TB"], ["M2"], 2023),
+        ("MacBook Air 13-inch (M3)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M3"], 2024),
+        ("MacBook Air 15-inch (M3)", "15", ["256GB", "512GB", "1TB", "2TB"], ["M3"], 2024),
+        ("MacBook Air 13-inch (M4)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M4"], 2025),
+        ("MacBook Air 15-inch (M4)", "15", ["256GB", "512GB", "1TB", "2TB"], ["M4"], 2025),
+        ("MacBook Pro 13-inch (M1, 2020)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M1"], 2020),
+        ("MacBook Pro 14-inch (M1 Pro/Max, 2021)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M1 Pro", "M1 Max"], 2021),
+        ("MacBook Pro 16-inch (M1 Pro/Max, 2021)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M1 Pro", "M1 Max"], 2021),
+        ("MacBook Pro 13-inch (M2, 2022)", "13", ["256GB", "512GB", "1TB", "2TB"], ["M2"], 2022),
+        ("MacBook Pro 14-inch (M2 Pro/Max, 2023)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M2 Pro", "M2 Max"], 2023),
+        ("MacBook Pro 16-inch (M2 Pro/Max, 2023)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M2 Pro", "M2 Max"], 2023),
+        ("MacBook Pro 14-inch (M3, 2023)", "14", ["512GB", "1TB"], ["M3"], 2023),
+        ("MacBook Pro 14-inch (M3 Pro/Max, 2023)", "14", ["512GB", "1TB", "2TB", "4TB"], ["M3 Pro", "M3 Max"], 2023),
+        ("MacBook Pro 16-inch (M3 Pro/Max, 2023)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M3 Pro", "M3 Max"], 2023),
+        ("MacBook Pro 14-inch (M4, 2024)", "14", ["512GB", "1TB"], ["M4"], 2024),
+        ("MacBook Pro 14-inch (M4 Pro/Max, 2024)", "14", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M4 Pro", "M4 Max"], 2024),
+        ("MacBook Pro 16-inch (M4 Pro/Max, 2024)", "16", ["512GB", "1TB", "2TB", "4TB", "8TB"], ["M4 Pro", "M4 Max"], 2024),
     ]
+
+    def family_of(name):
+        return "MacBook Air" if name.startswith("MacBook Air") else "MacBook Pro"
+
+    screen_by_name = {name: screen for name, screen, *_ in lineup}
+
+    # Ambiguity policy (task requirement 2): a bare "family + chip" query with no screen size ("MacBook
+    # Air M2") is genuinely ambiguous when the chip shipped in more than one screen size. Rather than add
+    # a whole new "family" KnownProduct (more catalogue/id surface, and AneApi's sibling-exclude-term
+    # computation would then need to special-case that the size-suffixed variant aliases are NOT a
+    # "longer sibling model" to exclude - see report), the bare chip-only alias is added to exactly one
+    # variant: the smaller/base screen size, which is also the higher-volume configuration in the resold
+    # market for both the Air and the Pro/Max line. A title/query that also names the size still resolves
+    # to the exact variant regardless of this default, because the size-qualified alias on that variant is
+    # longer and "longest alias wins" in KnownProductMatcher.Match - see
+    # AneCore.Tests/KnownProductMatcherRealCatalogTests.cs's MacBook ambiguity tests for both directions.
+    by_chip_group = defaultdict(list)
+    for name, screen, storage, chips, year in lineup:
+        by_chip_group[(family_of(name), tuple(chips))].append(name)
+    default_variant_for_chip = {
+        min(names, key=lambda n: float(screen_by_name[n])): True
+        for names in by_chip_group.values() if len(names) > 1
+    }
+
+    # Same "smallest sound solution" reasoning for the year-based alias ("macbook air 2022"): only added
+    # when a year uniquely identifies one MacBook Air variant OR, when two sizes share a launch year (M3
+    # 2024, M4 2025 - both sizes launched the same day), only on the default/base size. Scoped to Air only
+    # (task example), not Pro - the Pro line's many chip tiers sharing a calendar year would make a "most
+    # common" pick more of a guess than a fact, unlike the Air's simple one-chip-per-generation lineup.
+    by_year_group = defaultdict(list)
+    for name, screen, storage, chips, year in lineup:
+        if family_of(name) == "MacBook Air":
+            by_year_group[year].append(name)
+    default_variant_for_year = {
+        min(names, key=lambda n: float(screen_by_name[n])): True
+        for names in by_year_group.values() if len(names) > 1
+    }
+
     products = []
-    for name, screen, storage in lineup:
-        pid = nz.slugify("apple", name)
+    for name, screen, storage, chips, year in lineup:
+        family = family_of(name)
+        chip_group_size = len(by_chip_group[(family, tuple(chips))])
         aliases = {f"Apple {name}", name}
+        for chip in chips:
+            aliases |= ar.chip_size_aliases(family, chip, screen)
+            if chip_group_size == 1 or default_variant_for_chip.get(name):
+                aliases.add(f"{family} {chip}")
+        if family == "MacBook Air":
+            year_group_size = len(by_year_group[year])
+            if year_group_size == 1 or default_variant_for_year.get(name):
+                aliases |= ar.year_aliases(family, year)
+        pid = nz.slugify("apple", name)
         products.append(make_product(
             pid, "Apple", name, f"Apple {name}", CAT_LAPTOP, "electronics", aliases, "apple-specs",
             {"storage_size": storage, "screen_size": [f'{screen}"'], "os": ["macos"], "color": []},
@@ -214,24 +325,51 @@ def build_thinkpad():
     # TechAPI's Lenovo laptop coverage is 6 verified files total (see module docstring above) - not
     # enough to group mechanically. ThinkPad's T/X/L/P naming is stable and well documented; storage/RAM
     # are configure-to-order on business laptops, so left as free values (empty set) rather than guessed.
-    models = [
-        "ThinkPad T14 Gen 2", "ThinkPad T14 Gen 3", "ThinkPad T14 Gen 4", "ThinkPad T14 Gen 5",
-        "ThinkPad T16 Gen 1", "ThinkPad T16 Gen 2",
-        "ThinkPad X13 Gen 2", "ThinkPad X13 Gen 3", "ThinkPad X13 Gen 4",
-        "ThinkPad X1 Carbon Gen 9", "ThinkPad X1 Carbon Gen 10", "ThinkPad X1 Carbon Gen 11", "ThinkPad X1 Carbon Gen 12",
-        "ThinkPad X1 Yoga Gen 6", "ThinkPad X1 Yoga Gen 7",
-        "ThinkPad L14 Gen 2", "ThinkPad L14 Gen 3", "ThinkPad L14 Gen 4",
-        "ThinkPad P14s Gen 2", "ThinkPad P14s Gen 3", "ThinkPad P14s Gen 4",
-        "ThinkPad E14 Gen 4", "ThinkPad E14 Gen 5",
-        "ThinkPad T480", "ThinkPad T490", "ThinkPad T14s",
+    # (model_line, generation) - model_line is what a shopper says instead of the full "ThinkPad T14"
+    # ("T14"), generation is the plain integer.
+    generational_lineup = [
+        ("T14", 2), ("T14", 3), ("T14", 4), ("T14", 5),
+        ("T16", 1), ("T16", 2),
+        ("X13", 2), ("X13", 3), ("X13", 4),
+        ("X1 Carbon", 9), ("X1 Carbon", 10), ("X1 Carbon", 11), ("X1 Carbon", 12),
+        ("X1 Yoga", 6), ("X1 Yoga", 7),
+        ("L14", 2), ("L14", 3), ("L14", 4),
+        ("P14s", 2), ("P14s", 3), ("P14s", 4),
+        ("E14", 4), ("E14", 5),
     ]
+    # Models with no "Gen N" scheme at all - already unambiguous, no generation-ambiguity policy needed.
+    ungenerationed_models = ["T480", "T490", "T14s"]
+
+    # Ambiguity policy (same reasoning as build_macbook's screen-size case, applied to generation number):
+    # a bare "ThinkPad T14" query with no generation is genuinely ambiguous among Gen 2-5. The bare
+    # model-line alias (no "Gen N") is added to exactly one generation per line - the latest/most recent
+    # one, since a used-market listing that omits the generation is more likely to be describing current
+    # stock than a 5+ year old one, and "latest" is a fact (not a sales-volume guess this pass has no data
+    # for, unlike the MacBook screen-size default). A query that also names the generation still resolves
+    # to the exact generation regardless of this default, via "longest alias wins" - see
+    # AneCore.Tests/KnownProductMatcherRealCatalogTests.cs's ThinkPad ambiguity tests for both directions.
+    latest_gen = {}
+    for model_line, gen in generational_lineup:
+        latest_gen[model_line] = max(latest_gen.get(model_line, gen), gen)
+
     products = []
-    for model in models:
+    for model_line, gen in generational_lineup:
+        model = f"ThinkPad {model_line} Gen {gen}"
+        aliases = {f"Lenovo {model}", model} | ar.generation_aliases("ThinkPad", model_line, gen)
+        if gen == latest_gen[model_line]:
+            aliases.add(f"ThinkPad {model_line}")
         pid = nz.slugify("lenovo", model)
-        aliases = {f"Lenovo {model}", model}
         products.append(make_product(
             pid, "Lenovo", model, f"Lenovo {model}", CAT_LAPTOP, "electronics", aliases, "hand-curated",
             {"os": ["windows"], "color": []},
+        ))
+    for model_suffix in ungenerationed_models:
+        full_model = f"ThinkPad {model_suffix}"
+        pid = nz.slugify("lenovo", full_model)
+        aliases = {f"Lenovo {full_model}", full_model}
+        products.append(make_product(
+            pid, "Lenovo", full_model, f"Lenovo {full_model}", CAT_LAPTOP, "electronics", aliases,
+            "hand-curated", {"os": ["windows"], "color": []},
         ))
     excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
     for p in products:
@@ -252,6 +390,24 @@ def build_apple_watch(ios_dir):
         sizes = groups.get(name, {}).get("sizes", set())
         pid = nz.slugify(name)  # `name` already starts with "Apple Watch" - don't double the brand prefix
         aliases = {name}
+        # Everyday forms: real listings/queries often drop "Apple" ("Watch Series 7") or use the common
+        # colloquial misnomer "iWatch" (never Apple's own branding, but a very common way non-Apple-users
+        # search for one) - "Serie"/"Série" (German/French spelling) is handled once for every product by
+        # KnownProductMatcher.Normalize's spelling-variant rule, not per-alias here.
+        if name.startswith("Apple Watch "):
+            rest = name[len("Apple Watch "):]
+            aliases |= {f"Watch {rest}", f"iWatch {rest}", f"Apple iWatch {rest}"}
+        # "(Nth generation)" models (the base Watch's 1st gen, SE's 2nd gen) also get the everyday "Gen N"
+        # forms (see alias_rules.generation_word_aliases, already used by build_ipad for the same "(Nth
+        # generation)" naming) - found missing via this pass's real-title evaluation: "Aple Watch SE Gen
+        # 2. 40mm" matched the plain (1st-gen) SE instead of the 2nd-gen one, since only the formal
+        # "(2nd generation)" parenthetical existed as an alias.
+        gen_match = re.match(r"^(.*?)\s*\((\d+)(?:st|nd|rd|th) generation\)$", name, re.I)
+        if gen_match:
+            gen_base, gen_num = gen_match.group(1), int(gen_match.group(2))
+            aliases |= ar.generation_word_aliases(gen_base, gen_num)
+            if gen_base.startswith("Apple Watch"):
+                aliases |= ar.generation_word_aliases("Watch" + gen_base[len("Apple Watch"):], gen_num)
         products.append(make_product(
             pid, "Apple", name, name, CAT_WATCH, "electronics", aliases, "ios-device-list+apple-specs",
             {"screen_size": sorted(sizes) if sizes else [], "os": ["watchos"], "color": sorted(colors) if colors else []},
@@ -495,6 +651,23 @@ def build_cameras(raw_dir):
         "Sony": re.compile(r"^(Alpha|ILCE)", re.I),
         "Nikon": re.compile(r"^Z\w*\s|^Z\d", re.I),
     }
+    # Well-known official Sony body codes for the current/recent full-frame/APS-C Alpha mirrorless line -
+    # hand-curated against Sony's own published specifications (the CameraDatabase CSV carries no
+    # model-code column at all - its "Also known as" field is empty for every row checked), the same
+    # "certain knowledge" latitude the README documents for the Apple/console entries elsewhere in this
+    # importer. Keyed by the CSV's own "Model" text so a future source-data rename simply stops matching
+    # (fails safe) instead of mislabeling a different body.
+    sony_model_codes = {
+        "Alpha A7 III": "ILCE-7M3",
+        "Alpha a7R III": "ILCE-7RM3",
+        "Alpha 7R II": "ILCE-7RM2",
+        "Alpha 7S II": "ILCE-7SM2",
+        "Alpha a9": "ILCE-9",
+        "Alpha a9 II": "ILCE-9M2",
+        "Alpha a6300": "ILCE-6300",
+        "Alpha a6400": "ILCE-6400",
+        "Alpha a6500": "ILCE-6500",
+    }
     products = []
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -508,7 +681,51 @@ def build_cameras(raw_dir):
                 continue
             name = f"{brand} {model}"
             pid = nz.slugify(brand, model)
-            aliases = {name, model}
+            # Roman<->arabic "Mark N"/"N" everyday forms on the full model text (covers "EOS R6 Mark II"
+            # -> "EOS R6 Mark 2" etc. for every brand) - see alias_rules.mark_variants. Deliberately NOT
+            # also re-prefixed with the brand ("Sony {v}", "Canon {v}", ...) below: KnownProductMatcher.
+            # Match scans every token position in the title, not just position 0, so a bare alias like
+            # "A7 III" already matches "Sony A7 III ..." (it just starts matching one token later) without
+            # needing a brand-prefixed duplicate - adding one anyway only bloats the alias index (a real
+            # perf regression found while measuring this task's "10-40ms index build" target) for zero
+            # matching benefit. The one exception this function keeps is a single brand+short-form alias
+            # (e.g. "Sony A7 III", "Canon R6 Mark II") for readability/discoverability in the seed file,
+            # not because matching needs it.
+            aliases = {name, model} | ar.mark_variants(model)
+
+            if brand == "Sony":
+                # "Alpha A7 III" -> "A7 III" (marketing short form real listings use instead of the
+                # brand's own catalogue string) plus its own roman/arabic Mark variants ("A7 3", "a7iii"
+                # is covered for free - KnownProductMatcher.Normalize splits the "A7" letter/digit join
+                # the same way for both the alias and a query, so "A7 III" and "a7iii" already normalize
+                # identically without a dedicated compact alias).
+                core = re.sub(r"^Alpha\s+", "", model, flags=re.I)
+                aliases.add(f"Sony {core}")
+                aliases |= ar.mark_variants(core)
+                # "Alpha 7 III" (space-separated, no letter fused to the model number) - Sony's own
+                # marketing uses both the fused "A7"/"a7" and the spaced "Alpha 7" forms interchangeably;
+                # this is the one form Normalize's automatic letter/digit split does NOT already cover,
+                # since it requires a bare leading digit token with no letter to split off in the first
+                # place. Only fires for the "<single letter><digits>..." shape (a7, a7R, a9, a6400, ...),
+                # never for Sony's other naming schemes (SLT-A68, NEX-5T, DSLR-A580) - see the module's
+                # regression test for why those must not be touched by this rule. Kept brand-anchored
+                # ("Sony Alpha 7 III"/"Alpha 7 III", not a bare "7 III") - an all-digit alias with no
+                # letter at all is too generic to risk as a standalone match.
+                delettered = re.sub(r"^([A-Za-z])(\d)", r"\2", core)
+                if delettered != core:
+                    aliases.add(f"Sony Alpha {delettered}")
+                    aliases.add(f"Alpha {delettered}")
+                code = sony_model_codes.get(model)
+                if code:
+                    aliases.add(code)
+
+            if brand == "Canon":
+                # "EOS R6 Mark II" -> "R6 Mark II" (drop "EOS", the way "r6 ii" is actually typed).
+                short = re.sub(r"^EOS\s+", "", model, flags=re.I)
+                if short != model:
+                    aliases.add(f"Canon {short}")
+                    aliases |= ar.mark_variants(short)
+
             products.append(make_product(
                 pid, brand, model, name, CAT_CAMERA, "electronics", aliases, "cameradatabase",
             ))
@@ -587,7 +804,9 @@ def main():
     args = ap.parse_args()
 
     categories = {
-        "samsung-galaxy": lambda: build_samsung(args.techapi_repo),
+        "samsung-galaxy": lambda: sorted(
+            build_samsung(args.techapi_repo) + build_samsung_galaxy_a(args.techapi_repo), key=lambda p: p["id"]
+        ),
         "google-pixel": lambda: build_pixel(args.techapi_repo),
         "xiaomi": lambda: build_xiaomi(args.techapi_repo),
         "apple-ipad": lambda: build_ipad(args.raw_dir),
