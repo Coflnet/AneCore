@@ -1238,6 +1238,29 @@
       "source": "seed:cameradatabase-2026-09"
     },
     {
+      "id": "sony-alpha-a1",
+      "brand": "Sony",
+      "model": "Alpha A1",
+      "name": "Sony Alpha A1",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha 1",
+        "Alpha A1",
+        "ILCE-1",
+        "Sony A1",
+        "Sony Alpha 1",
+        "Sony Alpha A1"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
       "id": "sony-alpha-a6300",
       "brand": "Sony",
       "model": "Alpha a6300",
@@ -1337,6 +1360,36 @@
       "source": "seed:cameradatabase-2026-09"
     },
     {
+      "id": "sony-alpha-a7-iv",
+      "brand": "Sony",
+      "model": "Alpha A7 IV",
+      "name": "Sony Alpha A7 IV",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "A7 4",
+        "A7 IV",
+        "A7 Mark 4",
+        "A7 Mark IV",
+        "Alpha 7 IV",
+        "Alpha A7 4",
+        "Alpha A7 IV",
+        "Alpha A7 Mark 4",
+        "Alpha A7 Mark IV",
+        "ILCE-7M4",
+        "Sony A7 IV",
+        "Sony Alpha 7 IV",
+        "Sony Alpha A7 IV"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
       "id": "sony-alpha-a7r-iii",
       "brand": "Sony",
       "model": "Alpha a7R III",
@@ -1365,6 +1418,36 @@
       "possibleAttributes": {},
       "excludeTerms": [],
       "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a7r-v",
+      "brand": "Sony",
+      "model": "Alpha A7R V",
+      "name": "Sony Alpha A7R V",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "A7R 5",
+        "A7R Mark 5",
+        "A7R Mark V",
+        "A7R V",
+        "Alpha 7R V",
+        "Alpha A7R 5",
+        "Alpha A7R Mark 5",
+        "Alpha A7R Mark V",
+        "Alpha A7R V",
+        "ILCE-7RM5",
+        "Sony A7R V",
+        "Sony Alpha 7R V",
+        "Sony Alpha A7R V"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
     },
     {
       "id": "sony-alpha-a9",
@@ -1423,6 +1506,36 @@
       "possibleAttributes": {},
       "excludeTerms": [],
       "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a9-iii",
+      "brand": "Sony",
+      "model": "Alpha A9 III",
+      "name": "Sony Alpha A9 III",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "A9 3",
+        "A9 III",
+        "A9 Mark 3",
+        "A9 Mark III",
+        "Alpha 9 III",
+        "Alpha A9 3",
+        "Alpha A9 III",
+        "Alpha A9 Mark 3",
+        "Alpha A9 Mark III",
+        "ILCE-9M3",
+        "Sony A9 III",
+        "Sony Alpha 9 III",
+        "Sony Alpha A9 III"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
     },
     {
       "id": "sony-alpha-a99-ii",
