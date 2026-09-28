@@ -1,0 +1,220 @@
+{
+  "products": [
+    {
+      "id": "microsoft-surface-book-3",
+      "brand": "Microsoft",
+      "model": "Surface Book 3",
+      "name": "Microsoft Surface Book 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Book 3",
+        "Surface Book 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-go-3",
+      "brand": "Microsoft",
+      "model": "Surface Go 3",
+      "name": "Microsoft Surface Go 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Go 3",
+        "Surface Go 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-go-4",
+      "brand": "Microsoft",
+      "model": "Surface Go 4",
+      "name": "Microsoft Surface Go 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Go 4",
+        "Surface Go 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-laptop-5",
+      "brand": "Microsoft",
+      "model": "Surface Laptop 5",
+      "name": "Microsoft Surface Laptop 5",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Laptop 5",
+        "Surface Laptop 5"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-laptop-6",
+      "brand": "Microsoft",
+      "model": "Surface Laptop 6",
+      "name": "Microsoft Surface Laptop 6",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Laptop 6",
+        "Surface Laptop 6"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-laptop-7",
+      "brand": "Microsoft",
+      "model": "Surface Laptop 7",
+      "name": "Microsoft Surface Laptop 7",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Laptop 7",
+        "Surface Laptop 7"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-pro-10",
+      "brand": "Microsoft",
+      "model": "Surface Pro 10",
+      "name": "Microsoft Surface Pro 10",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Pro 10",
+        "Surface Pro 10"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-pro-11",
+      "brand": "Microsoft",
+      "model": "Surface Pro 11",
+      "name": "Microsoft Surface Pro 11",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Pro 11",
+        "Surface Pro 11"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-surface-pro-9",
+      "brand": "Microsoft",
+      "model": "Surface Pro 9",
+      "name": "Microsoft Surface Pro 9",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Surface Pro 9",
+        "Surface Pro 9"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    }
+  ]
+}
