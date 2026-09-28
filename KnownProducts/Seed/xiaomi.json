@@ -2542,6 +2542,124 @@
       "source": "seed:techapi-2026-09"
     },
     {
+      "id": "xiaomi-redmi-7",
+      "brand": "Xiaomi",
+      "model": "Redmi 7",
+      "name": "Xiaomi Redmi 7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 7",
+        "Xiaomi Redmi 7"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-7a",
+      "brand": "Xiaomi",
+      "model": "Redmi 7A",
+      "name": "Xiaomi Redmi 7A",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 7A",
+        "Xiaomi Redmi 7A"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-8",
+      "brand": "Xiaomi",
+      "model": "Redmi 8",
+      "name": "Xiaomi Redmi 8",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 8",
+        "Xiaomi Redmi 8"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-8a",
+      "brand": "Xiaomi",
+      "model": "Redmi 8A",
+      "name": "Xiaomi Redmi 8A",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 8A",
+        "Xiaomi Redmi 8A"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
       "id": "xiaomi-redmi-8a-pro",
       "brand": "Xiaomi",
       "model": "Redmi 8A Pro",
@@ -3086,6 +3204,64 @@
       "source": "seed:techapi-2026-09"
     },
     {
+      "id": "xiaomi-redmi-note-7",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 7",
+      "name": "Xiaomi Redmi Note 7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 7",
+        "Xiaomi Redmi Note 7"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-7-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 7 Pro",
+      "name": "Xiaomi Redmi Note 7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 7 Pro",
+        "Xiaomi Redmi Note 7 Pro"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
       "id": "xiaomi-redmi-note-8",
       "brand": "Xiaomi",
       "model": "Redmi Note 8",
@@ -3104,6 +3280,41 @@
       "possibleAttributes": {
         "ram_size": [
           "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-8-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 8 Pro",
+      "name": "Xiaomi Redmi Note 8 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 8 Pro",
+        "Xiaomi Redmi Note 8 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
         ],
         "os": [
           "android"
