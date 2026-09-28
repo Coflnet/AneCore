@@ -1,13 +1,13 @@
 {
   "totalTitles": 1286,
-  "matchedCount": 110,
-  "matchRate": 0.08553654743390357,
-  "matcherIndexBuildMs": 44.8045,
-  "totalMatchMs": 46.9791,
-  "msPerTitle": 0.03653118195956454,
-  "tenThousandCallsMs": 84.0046,
-  "processWorkingSetMb": 75.62109375,
-  "catalogSize": 959,
+  "matchedCount": 135,
+  "matchRate": 0.10497667185069985,
+  "matcherIndexBuildMs": 50.432,
+  "totalMatchMs": 54.6341,
+  "msPerTitle": 0.04248374805598756,
+  "tenThousandCallsMs": 103.8722,
+  "processWorkingSetMb": 81.22265625,
+  "catalogSize": 1072,
   "byTerm": [
     {
       "term": "adidas",
@@ -17,7 +17,7 @@
     {
       "term": "airpods",
       "total": 64,
-      "matched": 2
+      "matched": 21
     },
     {
       "term": "apple watch",
@@ -32,7 +32,7 @@
     {
       "term": "bose",
       "total": 48,
-      "matched": 0
+      "matched": 1
     },
     {
       "term": "canon eos",
@@ -57,7 +57,7 @@
     {
       "term": "ipad",
       "total": 54,
-      "matched": 2
+      "matched": 3
     },
     {
       "term": "iphone",
@@ -92,7 +92,7 @@
     {
       "term": "nvidia",
       "total": 8,
-      "matched": 2
+      "matched": 4
     },
     {
       "term": "pixel",
@@ -132,12 +132,12 @@
     {
       "term": "sony alpha",
       "total": 3,
-      "matched": 0
+      "matched": 1
     },
     {
       "term": "ssd",
       "total": 8,
-      "matched": 0
+      "matched": 1
     },
     {
       "term": "switch",
@@ -1521,8 +1521,8 @@
       "Term": "ipad",
       "SeoId": "apple-ipad-64gb-used",
       "Title": "iPad (10. Generation)",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-ipad-10th-generation",
+      "MatchedName": "Apple iPad (10th generation)"
     },
     {
       "Term": "ipad",
@@ -3299,8 +3299,8 @@
       "Term": "sony alpha",
       "SeoId": "sony-broken",
       "Title": "Sony WH-1000XM5 \u2013 voll funktionsf\u00E4hig \u2013 Scharnier gebrochen",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "sony-wh-1000xm5",
+      "MatchedName": "Sony WH-1000XM5"
     },
     {
       "Term": "airpods",
@@ -3348,8 +3348,8 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-used",
       "Title": "AirPods Generation 4",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-4th-generation",
+      "MatchedName": "Apple AirPods (4th generation)"
     },
     {
       "Term": "airpods",
@@ -3488,8 +3488,8 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-used",
       "Title": "Apple AirPods (2. Generation)",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3509,8 +3509,8 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-used",
       "Title": "Airpods (Gen2)",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3600,8 +3600,8 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple AirPods 2. Generation \u2013 Batterie 100% \u2013 Originalverpackung",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3614,15 +3614,15 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple Airpods 2. Generation",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple Airpods 2. Generation",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3642,15 +3642,15 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2 \u2013 einwandfreie Funktion",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Bo\u00EEte de AirPods 2 avec c\u00E2ble",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3663,22 +3663,22 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2 zu verkaufen",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2 Generation",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3691,29 +3691,29 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2 bo\u00EEtier \u002B \u00E9couteurs droit",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2. Generation aus 2019",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple AirPods 2. Generation (2019) \u2013 TOP Zustand | Rechnung | OVP",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple Airpods 2. Generation",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
@@ -3726,29 +3726,29 @@
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "AirPods 2. Gen.",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Airpods 2. gen",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple Airpods 2. Generation mit Lightning",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "airpods",
       "SeoId": "apple-airpods-2-used",
       "Title": "Apple airpods 2",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "apple-airpods-2nd-generation",
+      "MatchedName": "Apple AirPods (2nd generation)"
     },
     {
       "Term": "bose",
@@ -3789,8 +3789,8 @@
       "Term": "bose",
       "SeoId": "bose-black-used",
       "Title": "Bose QuietComfort 45 (QC45) Over-Ear-Kopfh\u00F6rer Schwarz",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "bose-quietcomfort-45",
+      "MatchedName": "Bose QuietComfort 45"
     },
     {
       "Term": "bose",
@@ -4475,8 +4475,8 @@
       "Term": "ssd",
       "SeoId": "gaming-pc-ram-ssdhdd-16gb-120gb",
       "Title": "Gaming PC AMD Ryzen 5 2600X, GTX 1060, 16GB RAM, SSD\u002BHDD",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "nvidia-gtx-1060",
+      "MatchedName": "Nvidia GTX 1060"
     },
     {
       "Term": "ssd",
@@ -4545,8 +4545,8 @@
       "Term": "nvidia",
       "SeoId": "pc-nvidia-geforce-gtx1060-6gb-used",
       "Title": "NVIDIA GeForce GTX1060 6GB",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "nvidia-gtx-1060",
+      "MatchedName": "Nvidia GTX 1060"
     },
     {
       "Term": "nvidia",
@@ -4559,8 +4559,8 @@
       "Term": "nvidia",
       "SeoId": "pc-nvidia-geforce-gtx-1060-3gb-used",
       "Title": "NVIDIA GeForce GTX 1060 3GB",
-      "MatchedId": null,
-      "MatchedName": null
+      "MatchedId": "nvidia-gtx-1060",
+      "MatchedName": "Nvidia GTX 1060"
     },
     {
       "Term": "intel core",

@@ -13,10 +13,11 @@ the open datasets below. Retrieval date for all sources: **2026-09-28**.
 - Licence: **CC-BY-SA 4.0** (per the repository's `LICENSE` file)
 - Used for: `samsung-galaxy.json` (Galaxy S/Z Fold/Z Flip/Note **and, since the 2026-09 recall
   pass, the Galaxy A-series**), `google-pixel.json`, `xiaomi.json` (smartphone specs, grouped
-  from region/carrier/storage variant records; only `verified: true` records were used). The
-  A-series needed its own wanted-regex (see `build_seed.py`'s `build_samsung_galaxy_a` for why -
-  TechAPI's raw A-series names include regional/carrier "Top Edition" and similar noise the S/Z/
-  Note line doesn't have) rather than reusing `build_samsung`'s pattern.
+  from region/carrier/storage variant records; only `verified: true` records were used), and,
+  since the second follow-up pass, `oneplus.json`. The A-series and OnePlus each needed their own
+  wanted-regex (see `build_seed.py`'s `build_samsung_galaxy_a`/`build_oneplus`) rather than reusing
+  `build_samsung`'s pattern - TechAPI's raw names for both include regional/carrier/edition noise
+  the S/Z/Note line doesn't have.
 - **Attribution required**: "Smartphone specification data from the TechAPI project
   (https://github.com/GetTechAPI/TechAPI), licensed CC-BY-SA 4.0."
 - **Share-alike**: CC-BY-SA 4.0 is a share-alike licence. Any redistribution of this derived
@@ -96,6 +97,24 @@ the open datasets below. Retrieval date for all sources: **2026-09-28**.
   LCD/OLED) are hand-curated against public manufacturer specifications and cross-checked
   against Wikidata's individual console pages, per the task's explicit allowance to hand-verify
   this category rather than force an inadequate mechanical pipeline.
+
+## 7. Second-pass hand-curated entries and live spec verification (2026-09-28)
+
+- `apple-desktops.json` (iMac/Mac mini), `meta-quest.json`, `microsoft-surface.json`, `dell.json`, the
+  newer Sony bodies added to `cameras.json`, and the Sony/Bose entries added to `headphones.json` are
+  hand-authored against the manufacturers' own published specifications - the same "certain knowledge"
+  latitude documented for the Apple laptop/tablet/watch entries above and the console entries in section
+  6, applied here because no open dataset in this importer's sanctioned source list covers desktops, VR
+  headsets, or Microsoft/Dell laptops with adequate `verified: true` coverage (Microsoft's own TechAPI
+  coverage is good but its per-SKU-coded names need a cleaning pass this importer does not yet have - see
+  `build_surface`'s own comment).
+- `apple-iphones-additional.json`'s iPhone 18 Pro/Pro Max storage tiers (256GB/512GB/1TB/2TB) and colours
+  (Black, Silver, Glacier, Burgundy) were verified live via WebSearch and WebFetch against
+  https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/ (Apple's own
+  press release), since that model launched during this pass's own working date. No other new entry's
+  colour was set without either this kind of live verification or an existing verified source above -
+  colour is left as a free value (empty set) everywhere else in this pass's additions, per the task's
+  explicit "leave the list empty rather than guessing" instruction.
 
 ## Summary of obligations for the product owner
 

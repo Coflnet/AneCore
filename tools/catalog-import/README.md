@@ -191,13 +191,15 @@ of this pass, documented rather than silently cut):
 - **Headphones**: 40 entries across Bose QuietComfort/SoundLink, Sony WH-/WF-series, Sennheiser
   Momentum/HD, JBL Tune/Live/Quantum, Beats Studio/Solo/Fit - the brands/lines most likely to appear in
   German second-hand listings; not exhaustive.
-- **Cameras**: Canon EOS, Sony Alpha and Nikon Z bodies from 2015 onward (69 total before the 2015 cutoff
-  trimmed a handful of very old EOS models) - CameraDatabase's Sony coverage stops around 2019, so recent
-  Alpha 7 IV/7R V-class bodies are not present; a gap to fill in a follow-up pass if Sony camera listings
-  turn out to need it.
-- **Xiaomi**: covers the Mi/Xiaomi numbered flagship line, Redmi Note, and POCO X/F/M series
-  (2020 onward); Redmi's huge budget A/numbered-only sub-lines and older Mi Max/Mix variants are not
-  seeded.
+- **Cameras**: Canon EOS, Sony Alpha and Nikon Z bodies from 2015 onward, CameraDatabase-sourced (69
+  total before the 2015 cutoff trimmed a handful of very old EOS models) plus 4 hand-curated newer Sony
+  bodies (`build_cameras_additional_sony` - A7 IV, A7R V, A9 III, A1) added in the second pass since
+  CameraDatabase's own Sony coverage stops around 2019; still not exhaustive (e.g. no Nikon/Canon bodies
+  past CameraDatabase's own cutoff have been hand-added).
+- **Xiaomi**: covers the Mi/Xiaomi numbered flagship line, Redmi Note (from 2019, widened from 2020 in
+  the second pass to include Redmi Note 7/7 Pro/8 Pro and Redmi 7/7A/8/8A - found missing via a live
+  truncation), and POCO X/F/M series; Redmi's huge budget A/numbered-only sub-lines and older Mi Max/Mix
+  variants are still not seeded.
 - **Samsung**: Galaxy S/Z Fold/Z Flip/Note (2019 onward) plus, since the 2026-09 recall pass, the
   Galaxy A-series (A01 through A73, plus `s`/`e`/`Core` suffix variants and the odd "A2 Core") - see
   `build_samsung_galaxy_a()`. A dedicated wanted-regex (not the generic smartphone cleaner's output as-is)
@@ -311,3 +313,49 @@ regex-construction tax paid once per process lifetime, not per periodic catalogu
 warm (steady-state, i.e. every rebuild after the first, which is what recurs every few minutes in
 production - within the 10-40ms target); per-title match time 0.035-0.07ms (target: well under 0.2ms);
 10,000 `Match` calls 65-180ms (target: <2s).
+
+## Second pass (live-listing audit follow-up)
+
+A follow-up audit of live listings found more missing families and two remaining recall gaps. Added:
+
+- **New brand/category files**: `oneplus.json` (36 entries, TechAPI-driven, same discipline as
+  `build_samsung_galaxy_a` - 36 clean groups picked, 34 regional/edition variants rejected),
+  `apple-iphones-additional.json` (21 entries: iPhone 6/6s/7/8 incl. Plus, iPhone SE 1st/2nd/3rd
+  generation, X/XR/XS/XS Max, the 17 line, and iPhone 18 Pro/Pro Max - storage/colour for the newest two
+  models verified live via WebSearch/WebFetch against Apple's own newsroom post, since they launched
+  during this pass's working date; the standard iPhone 18/18e/second-generation iPhone Air were verified
+  **not yet released** - Apple deviated from its usual single-September-launch cadence this cycle - and
+  are deliberately not included), `apple-desktops.json` (7: iMac 24" M1/M3/M4, Mac mini M2/M2 Pro/M4/M4
+  Pro), `meta-quest.json` (4, storage tiers verified live), `microsoft-surface.json` (9, hand-curated -
+  TechAPI's coverage is good (24/30, 14/25 verified) but the underlying names carry per-SKU region codes
+  the same way the A-series did, with no simple wanted-regex to clean them, so this one stayed
+  hand-curated rather than mechanical), `dell.json` (9: XPS 13/15/17 kept generation-less since Dell's own
+  marketing reuses the bare name across years, plus 6 well-known recent Latitude 5000/7000-series codes).
+- **Extended existing files**: `gpu.json` (+13, GTX 900/1000 series), `cameras.json` (+4, newer Sony
+  bodies), `headphones.json` (+3, Sony WH-1000XM4/XM5 + Bose QuietComfort 45), `xiaomi.json` (+7, Redmi
+  Note 7/7 Pro/8 Pro + Redmi 7/7A/8/8A via the widened min_year).
+- **Multi-language generation notations**: `alias_rules.generation_word_aliases` widened from 4 forms to
+  11 explicit (not a full cross-product - see its docstring) (number-form, word-form) pairs covering
+  German ("9. Generation"/"9. Gen"), English ("9th Gen"/"Gen 9"/"9th Generation"), French ("9e"/"9ème
+  génération"), Italian ("9a generazione"/bare-number "9 generazione"), and Dutch ("9e generatie"). Also
+  added a "plain iPad only" bare-number/year policy (`build_ipad`) and AirPods' own bare-number form
+  (`build_airpods`) for the two lines where a bare number is unambiguous.
+- **Twin-key attribute bug** (`KnownProductAttributeConstraint.Apply`): fixed to drop/validate the raw
+  `storage_gb`/`ram_gb`/`screen_size_inch` keys AneNotifier's extractor writes alongside the formatted
+  `storage_size`/`ram_size`/`screen_size` ones, consistently in both directions - see that file's own
+  doc comment.
+
+**A real false positive found and fixed during this pass's own evaluation re-run**: OnePlus's numbered
+flagship line has no distinctive product-line word once the brand is stripped (unlike Samsung's "Galaxy"/
+Xiaomi's "Redmi"), so an early version of `build_oneplus` (via `clean_phone_name` stripping "OnePlus" the
+same way it strips "Samsung"/"Google"/"Xiaomi"/"Apple") produced a dangerously generic bare alias like
+"10 Pro"/"Open" - confirmed as real false positives ("Xiaomi Mi Note 10 Pro" matched `oneplus-10-pro`,
+"Bose Ultra Open Earbuds" matched `oneplus-open`). Fixed at the root: `clean_phone_name` no longer strips
+"OnePlus" at all, and `_build_phone_family`/`phone_aliases` gained a `full_phone_name` helper that avoids
+double-prefixing when a brand's own cleaned name already starts with the brand word (mirroring the guard
+already used by `build_apple_watch`/`build_airpods`) - every OnePlus alias now includes the brand word.
+
+**Coverage gaps still open after this pass**: Meta Quest Pro's exact discontinuation-era pricing/regional
+SKUs are not modelled (single 256GB entry only); Microsoft Surface/Dell storage and RAM are left free
+(configure-to-order, same as ThinkPad); Dell's XPS line has no generation/model-code granularity; no
+Google Pixel Watch, Fairphone, or Nothing Phone coverage was added (not requested this pass).

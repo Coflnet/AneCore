@@ -138,3 +138,43 @@ both task requirements met. The match-time/10k-call numbers above have wider ran
 pass because this re-run's dev machine was under heavy concurrent load (see
 `tools/catalog-import/README.md`'s "Performance" section) - all measurements still land inside the task's
 targets (per-title well under 0.2ms, 10k calls well under 2s, warm index build within 10-40ms).
+
+## 2026-09-28 update 2: live-listing audit follow-up
+
+Re-ran the same stored `titles.json` (1,286 titles, unchanged) after the second pass's additions (see
+`tools/catalog-import/README.md`'s "Second pass" section: OnePlus, additional iPhone generations,
+GTX 900/1000, iMac/Mac mini, Meta Quest, Microsoft Surface, Dell, Redmi Note 7-era models, newer Sony
+bodies, WH-1000XM4/XM5 + QuietComfort 45, and the twin-key attribute-constraint fix). Catalogue grew from
+959 to 1,072 products. Same method as before: diffed the new results row-by-row against the saved
+end-of-first-pass `results.json`, read every newly-matched title by hand (27 initially, the whole set).
+
+Found and fixed one real false-positive **pattern** (2 titles) before the final run: OnePlus's numbered
+flagship line has no distinctive product-line word once the brand is stripped (unlike Samsung's "Galaxy"/
+Xiaomi's "Redmi"), so an early version of the OnePlus builder produced a dangerously generic bare alias -
+confirmed live as `"Xiaomi Mi Note 10 Pro ..."` matching `oneplus-10-pro` and `"Bose Ultra Open Earbuds
+..."` matching `oneplus-open`. Fixed at the root in `build_seed.py`'s `full_phone_name`/`phone_aliases`/
+`_build_phone_family` (every OnePlus alias now includes the "OnePlus" word) and `lib/techapi.py`'s
+`clean_phone_name` (no longer strips "OnePlus"); regression test
+`OnePlus_NeverMatchesOnABareModelNumberAlone`.
+
+One pre-existing, already-documented limitation (not a new regression) surfaced again in the new matches:
+`"Gaming PC AMD Ryzen 5 2600X, GTX 1060, 16GB RAM, SSD+HDD"` matched `nvidia-gtx-1060` - the container veto
+(`KnownProductMatcher.ApplyContainerVeto`) only fires when **two or more** distinct component-category
+products match in one title, and this CPU (a 2018 chip) is not in the seeded `cpu.json` range, so only the
+GPU alias fires. This is the same residual gap the original evaluation's false-positive #5 already
+documented, not something this pass introduced.
+
+**Results**:
+
+| | After pass 1 | After pass 2 |
+| --- | --- | --- |
+| Catalogue size | 959 products | 1,072 products |
+| Titles matched | 110 / 1,286 (8.6%) | 135 / 1,286 (10.5%) |
+| Precision (manual review of every match) | 105/110 = 95.5% | 130/135 = **96.3%** |
+| Match time | 0.037-0.07ms/title | 0.040-0.043ms/title |
+| 10,000 `Match` calls | 65-180ms | 84-104ms |
+
+Precision = (105 previously-verified-correct matches, unchanged - zero lost/changed rows) + (25
+newly-matched titles, all manually verified correct after the OnePlus fix) ÷ 135 total matches. Recall
+rose again (+23% relative over pass 1, +71% relative over the original baseline) and precision improved
+further, still comfortably above the 93.7% floor.
