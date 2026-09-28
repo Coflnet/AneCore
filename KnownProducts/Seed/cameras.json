@@ -12,6 +12,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 1300D",
         "Canon EOS 1300D",
         "EOS 1300D"
       ],
@@ -31,6 +32,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 250D",
         "Canon EOS 250D",
         "EOS 250D"
       ],
@@ -50,6 +52,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 4000D",
         "Canon EOS 4000D",
         "EOS 4000D"
       ],
@@ -69,7 +72,15 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "5D 4",
+        "5D IV",
+        "5D Mark 4",
+        "5D Mark IV",
+        "Canon 5D Mark IV",
         "Canon EOS 5D Mark IV",
+        "EOS 5D 4",
+        "EOS 5D IV",
+        "EOS 5D Mark 4",
         "EOS 5D Mark IV"
       ],
       "possibleAttributes": {},
@@ -88,6 +99,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 5DS",
         "Canon EOS 5DS",
         "EOS 5DS"
       ],
@@ -109,6 +121,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 5DS R",
         "Canon EOS 5DS R",
         "EOS 5DS R"
       ],
@@ -128,7 +141,15 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "6D 2",
+        "6D II",
+        "6D Mark 2",
+        "6D Mark II",
+        "Canon 6D Mark II",
         "Canon EOS 6D Mark II",
+        "EOS 6D 2",
+        "EOS 6D II",
+        "EOS 6D Mark 2",
         "EOS 6D Mark II"
       ],
       "possibleAttributes": {},
@@ -147,6 +168,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 77D",
         "Canon EOS 77D",
         "EOS 77D"
       ],
@@ -166,6 +188,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 80D",
         "Canon EOS 80D",
         "EOS 80D"
       ],
@@ -185,6 +208,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 850D",
         "Canon EOS 850D",
         "EOS 850D"
       ],
@@ -204,6 +228,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon 90D",
         "Canon EOS 90D",
         "EOS 90D"
       ],
@@ -224,6 +249,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M10",
+        "Canon M10",
         "EOS M10"
       ],
       "possibleAttributes": {},
@@ -243,6 +269,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M100",
+        "Canon M100",
         "EOS M100"
       ],
       "possibleAttributes": {},
@@ -262,6 +289,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M200",
+        "Canon M200",
         "EOS M200"
       ],
       "possibleAttributes": {},
@@ -281,6 +309,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M3",
+        "Canon M3",
         "EOS M3"
       ],
       "possibleAttributes": {},
@@ -300,6 +329,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M5",
+        "Canon M5",
         "EOS M5"
       ],
       "possibleAttributes": {},
@@ -319,11 +349,14 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M50",
+        "Canon M50",
         "EOS M50"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
-        "ii"
+        "2",
+        "ii",
+        "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
     },
@@ -340,7 +373,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M50 II",
-        "EOS M50 II"
+        "Canon M50 II",
+        "EOS M50 2",
+        "EOS M50 II",
+        "EOS M50 Mark 2",
+        "EOS M50 Mark II",
+        "M50 2",
+        "M50 II",
+        "M50 Mark 2",
+        "M50 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -359,10 +400,13 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M6",
+        "Canon M6",
         "EOS M6"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
+        "2",
+        "ii",
         "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
@@ -380,7 +424,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS M6 Mark II",
-        "EOS M6 Mark II"
+        "Canon M6 Mark II",
+        "EOS M6 2",
+        "EOS M6 II",
+        "EOS M6 Mark 2",
+        "EOS M6 Mark II",
+        "M6 2",
+        "M6 II",
+        "M6 Mark 2",
+        "M6 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -399,6 +451,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R",
+        "Canon R",
         "EOS R"
       ],
       "possibleAttributes": {},
@@ -428,6 +481,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R1",
+        "Canon R1",
         "EOS R1"
       ],
       "possibleAttributes": {},
@@ -447,6 +501,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R10",
+        "Canon R10",
         "EOS R10"
       ],
       "possibleAttributes": {},
@@ -466,6 +521,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R100",
+        "Canon R100",
         "EOS R100"
       ],
       "possibleAttributes": {},
@@ -485,6 +541,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R3",
+        "Canon R3",
         "EOS R3"
       ],
       "possibleAttributes": {},
@@ -504,11 +561,14 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R5",
+        "Canon R5",
         "EOS R5"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
+        "2",
         "c",
+        "ii",
         "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
@@ -526,6 +586,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R5 C",
+        "Canon R5 C",
         "EOS R5 C"
       ],
       "possibleAttributes": {},
@@ -545,7 +606,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R5 Mark II",
-        "EOS R5 Mark II"
+        "Canon R5 Mark II",
+        "EOS R5 2",
+        "EOS R5 II",
+        "EOS R5 Mark 2",
+        "EOS R5 Mark II",
+        "R5 2",
+        "R5 II",
+        "R5 Mark 2",
+        "R5 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -564,10 +633,13 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R50",
+        "Canon R50",
         "EOS R50"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
+        "5",
+        "mark",
         "v"
       ],
       "source": "seed:cameradatabase-2026-09"
@@ -585,7 +657,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R50 V",
-        "EOS R50 V"
+        "Canon R50 V",
+        "EOS R50 5",
+        "EOS R50 Mark 5",
+        "EOS R50 Mark V",
+        "EOS R50 V",
+        "R50 5",
+        "R50 Mark 5",
+        "R50 Mark V",
+        "R50 V"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -604,10 +684,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R6",
+        "Canon R6",
         "EOS R6"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
+        "2",
+        "3",
+        "ii",
+        "iii",
         "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
@@ -625,7 +710,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R6 Mark II",
-        "EOS R6 Mark II"
+        "Canon R6 Mark II",
+        "EOS R6 2",
+        "EOS R6 II",
+        "EOS R6 Mark 2",
+        "EOS R6 Mark II",
+        "R6 2",
+        "R6 II",
+        "R6 Mark 2",
+        "R6 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -644,7 +737,15 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R6 Mark III",
-        "EOS R6 Mark III"
+        "Canon R6 Mark III",
+        "EOS R6 3",
+        "EOS R6 III",
+        "EOS R6 Mark 3",
+        "EOS R6 Mark III",
+        "R6 3",
+        "R6 III",
+        "R6 Mark 3",
+        "R6 Mark III"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -663,6 +764,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R7",
+        "Canon R7",
         "EOS R7"
       ],
       "possibleAttributes": {},
@@ -682,6 +784,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS R8",
+        "Canon R8",
         "EOS R8"
       ],
       "possibleAttributes": {},
@@ -701,6 +804,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS Rebel SL2",
+        "Canon Rebel SL2",
         "EOS Rebel SL2"
       ],
       "possibleAttributes": {},
@@ -720,6 +824,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS Rebel T6i",
+        "Canon Rebel T6i",
         "EOS Rebel T6i"
       ],
       "possibleAttributes": {},
@@ -739,6 +844,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS Rebel T6s",
+        "Canon Rebel T6s",
         "EOS Rebel T6s"
       ],
       "possibleAttributes": {},
@@ -758,6 +864,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS Rebel T7",
+        "Canon Rebel T7",
         "EOS Rebel T7"
       ],
       "possibleAttributes": {},
@@ -779,6 +886,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS Rebel T7i",
+        "Canon Rebel T7i",
         "EOS Rebel T7i"
       ],
       "possibleAttributes": {},
@@ -798,6 +906,7 @@
       "vertical": "electronics",
       "aliases": [
         "Canon EOS RP",
+        "Canon RP",
         "EOS RP"
       ],
       "possibleAttributes": {},
@@ -875,7 +984,10 @@
       "vertical": "electronics",
       "aliases": [
         "Nikon Z5 II",
-        "Z5 II"
+        "Z5 2",
+        "Z5 II",
+        "Z5 Mark 2",
+        "Z5 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -898,7 +1010,9 @@
       ],
       "possibleAttributes": {},
       "excludeTerms": [
-        "ii"
+        "2",
+        "ii",
+        "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
     },
@@ -915,7 +1029,10 @@
       "vertical": "electronics",
       "aliases": [
         "Nikon Z50 II",
-        "Z50 II"
+        "Z50 2",
+        "Z50 II",
+        "Z50 Mark 2",
+        "Z50 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -955,7 +1072,10 @@
       "vertical": "electronics",
       "aliases": [
         "Nikon Z6 II",
-        "Z6 II"
+        "Z6 2",
+        "Z6 II",
+        "Z6 Mark 2",
+        "Z6 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -974,7 +1094,10 @@
       "vertical": "electronics",
       "aliases": [
         "Nikon Z6 III",
-        "Z6 III"
+        "Z6 3",
+        "Z6 III",
+        "Z6 Mark 3",
+        "Z6 Mark III"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1013,7 +1136,10 @@
       "vertical": "electronics",
       "aliases": [
         "Nikon Z7 II",
-        "Z7 II"
+        "Z7 2",
+        "Z7 II",
+        "Z7 Mark 2",
+        "Z7 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1067,7 +1193,16 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "7R 2",
+        "7R II",
+        "7R Mark 2",
+        "7R Mark II",
+        "Alpha 7R 2",
         "Alpha 7R II",
+        "Alpha 7R Mark 2",
+        "Alpha 7R Mark II",
+        "ILCE-7RM2",
+        "Sony 7R II",
         "Sony Alpha 7R II"
       ],
       "possibleAttributes": {},
@@ -1086,7 +1221,16 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "7S 2",
+        "7S II",
+        "7S Mark 2",
+        "7S Mark II",
+        "Alpha 7S 2",
         "Alpha 7S II",
+        "Alpha 7S Mark 2",
+        "Alpha 7S Mark II",
+        "ILCE-7SM2",
+        "Sony 7S II",
         "Sony Alpha 7S II"
       ],
       "possibleAttributes": {},
@@ -1105,8 +1249,12 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 6300",
         "Alpha a6300",
-        "Sony Alpha a6300"
+        "ILCE-6300",
+        "Sony Alpha 6300",
+        "Sony Alpha a6300",
+        "Sony a6300"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1124,8 +1272,12 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 6400",
         "Alpha a6400",
-        "Sony Alpha a6400"
+        "ILCE-6400",
+        "Sony Alpha 6400",
+        "Sony Alpha a6400",
+        "Sony a6400"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1143,8 +1295,12 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 6500",
         "Alpha a6500",
-        "Sony Alpha a6500"
+        "ILCE-6500",
+        "Sony Alpha 6500",
+        "Sony Alpha a6500",
+        "Sony a6500"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1162,7 +1318,18 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "A7 3",
+        "A7 III",
+        "A7 Mark 3",
+        "A7 Mark III",
+        "Alpha 7 III",
+        "Alpha A7 3",
         "Alpha A7 III",
+        "Alpha A7 Mark 3",
+        "Alpha A7 Mark III",
+        "ILCE-7M3",
+        "Sony A7 III",
+        "Sony Alpha 7 III",
         "Sony Alpha A7 III"
       ],
       "possibleAttributes": {},
@@ -1181,8 +1348,19 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 7R III",
+        "Alpha a7R 3",
         "Alpha a7R III",
-        "Sony Alpha a7R III"
+        "Alpha a7R Mark 3",
+        "Alpha a7R Mark III",
+        "ILCE-7RM3",
+        "Sony Alpha 7R III",
+        "Sony Alpha a7R III",
+        "Sony a7R III",
+        "a7R 3",
+        "a7R III",
+        "a7R Mark 3",
+        "a7R Mark III"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1200,12 +1378,19 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 9",
         "Alpha a9",
-        "Sony Alpha a9"
+        "ILCE-9",
+        "Sony Alpha 9",
+        "Sony Alpha a9",
+        "Sony a9"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
-        "ii"
+        "2",
+        "ii",
+        "m",
+        "mark"
       ],
       "source": "seed:cameradatabase-2026-09"
     },
@@ -1221,8 +1406,19 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Alpha 9 II",
+        "Alpha a9 2",
         "Alpha a9 II",
-        "Sony Alpha a9 II"
+        "Alpha a9 Mark 2",
+        "Alpha a9 Mark II",
+        "ILCE-9M2",
+        "Sony Alpha 9 II",
+        "Sony Alpha a9 II",
+        "Sony a9 II",
+        "a9 2",
+        "a9 II",
+        "a9 Mark 2",
+        "a9 Mark II"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1240,7 +1436,17 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "A99 2",
+        "A99 II",
+        "A99 Mark 2",
+        "A99 Mark II",
+        "Alpha 99 II",
+        "Alpha A99 2",
         "Alpha A99 II",
+        "Alpha A99 Mark 2",
+        "Alpha A99 Mark II",
+        "Sony A99 II",
+        "Sony Alpha 99 II",
         "Sony Alpha A99 II"
       ],
       "possibleAttributes": {},
@@ -1260,7 +1466,8 @@
       "vertical": "electronics",
       "aliases": [
         "Alpha SLT-A68",
-        "Sony Alpha SLT-A68"
+        "Sony Alpha SLT-A68",
+        "Sony SLT-A68"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
