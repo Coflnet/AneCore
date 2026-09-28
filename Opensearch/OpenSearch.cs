@@ -512,5 +512,6 @@ public static class OpenSearchExtension
         services.AddSingleton<ProductIndex>();
         services.AddSingleton<ListingIndex>();
         services.AddSingleton<ListingSampleIndex>();
+        services.AddSingleton<ClothingVisualIndex>();
     }
 }
