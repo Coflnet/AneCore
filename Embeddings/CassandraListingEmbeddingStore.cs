@@ -9,8 +9,9 @@ namespace Coflnet.Ane.Embeddings;
 /// Cassandra-backed <see cref="IListingEmbeddingStore"/>. Columns are all plain scalar types (text, blob,
 /// int, timestamp), so unlike <c>CassandraKnownProductStore</c> the driver's POCO-&gt;DDL inference via
 /// <c>Table&lt;T&gt;.CreateIfNotExistsAsync()</c> is exact and no hand-written CQL is needed for the schema.
-/// <see cref="ListingImageEmbedding.Platform"/> is mapped as <c>int</c> (<c>WithDbType&lt;int&gt;()</c>), not
-/// as the enum itself - the Cassandra C# driver cannot map enum-typed properties directly.
+/// The <c>platform</c> column is backed by the <c>int</c> property
+/// <see cref="ListingImageEmbedding.PlatformValue"/>; the enum property is ignored. <c>WithDbType&lt;int&gt;()</c>
+/// on the enum is not enough for a partition key: routing key calculation serializes the raw value.
 /// </summary>
 public class CassandraListingEmbeddingStore : IListingEmbeddingStore
 {
@@ -25,14 +26,20 @@ public class CassandraListingEmbeddingStore : IListingEmbeddingStore
     public CassandraListingEmbeddingStore(ISession session)
     {
         this.session = session;
+        table = new Table<ListingImageEmbedding>(session, BuildMapping());
+    }
 
-        var mapping = new MappingConfiguration()
+    /// <summary>Table mapping, separate from the constructor so tests can inspect it without a session.</summary>
+    public static MappingConfiguration BuildMapping()
+    {
+        return new MappingConfiguration()
             .Define(new Map<ListingImageEmbedding>()
                 .TableName("listing_image_embeddings")
-                .PartitionKey(e => e.ListingId, e => e.Platform)
+                .PartitionKey(e => e.ListingId, e => e.PlatformValue)
                 .ClusteringKey(e => e.ImageIndex)
                 .Column(e => e.ListingId, cm => cm.WithName("listing_id"))
-                .Column(e => e.Platform, cm => cm.WithDbType<int>().WithName("platform"))
+                .Column(e => e.PlatformValue, cm => cm.WithName("platform"))
+                .Column(e => e.Platform, cm => cm.Ignore())
                 .Column(e => e.ImageIndex, cm => cm.WithName("image_index"))
                 .Column(e => e.ImageUrl, cm => cm.WithName("image_url"))
                 .Column(e => e.ModelId, cm => cm.WithName("model_id"))
@@ -40,8 +47,6 @@ public class CassandraListingEmbeddingStore : IListingEmbeddingStore
                 .Column(e => e.GroupKey, cm => cm.WithName("group_key"))
                 .Column(e => e.ClusterSeoId, cm => cm.WithName("cluster_seo_id"))
                 .Column(e => e.CreatedAt, cm => cm.WithName("created_at")));
-
-        table = new Table<ListingImageEmbedding>(session, mapping);
     }
 
     public async Task InitializeAsync()
@@ -64,8 +69,9 @@ public class CassandraListingEmbeddingStore : IListingEmbeddingStore
 
     public async Task<IReadOnlyList<ListingImageEmbedding>> GetEmbeddingsAsync(string listingId, Platform platform)
     {
+        var platformValue = (int)platform;
         var rows = await table
-            .Where(e => e.ListingId == listingId && e.Platform == platform)
+            .Where(e => e.ListingId == listingId && e.PlatformValue == platformValue)
             .ExecuteAsync();
         return rows.OrderBy(e => e.ImageIndex).ToList();
     }
@@ -85,13 +91,15 @@ public class CassandraListingEmbeddingStore : IListingEmbeddingStore
     /// </summary>
     public async Task SetClusterSeoIdAsync(string listingId, Platform platform, string? clusterSeoId)
     {
+        var platformValue = (int)platform;
         var rows = await table
-            .Where(e => e.ListingId == listingId && e.Platform == platform)
+            .Where(e => e.ListingId == listingId && e.PlatformValue == platformValue)
             .ExecuteAsync();
         foreach (var row in rows)
         {
+            var imageIndex = row.ImageIndex;
             await table
-                .Where(e => e.ListingId == listingId && e.Platform == platform && e.ImageIndex == row.ImageIndex)
+                .Where(e => e.ListingId == listingId && e.PlatformValue == platformValue && e.ImageIndex == imageIndex)
                 .Select(e => new ListingImageEmbedding { ClusterSeoId = clusterSeoId })
                 .Update()
                 .ExecuteAsync();

@@ -11,7 +11,19 @@ public class ListingImageEmbedding
     /// <summary>Together with <see cref="Platform"/>, the partition key - all photos of one listing sit in the same partition.</summary>
     public string ListingId { get; set; } = "";
 
-    public Platform Platform { get; set; }
+    /// <summary>Not a column: see <see cref="PlatformValue"/>.</summary>
+    public Platform Platform
+    {
+        get => (Platform)PlatformValue;
+        set => PlatformValue = (int)value;
+    }
+
+    /// <summary>
+    /// Column <c>platform</c>, part of the partition key. Kept as <c>int</c> because the Cassandra driver
+    /// serializes partition key values unconverted when it computes the routing key and throws
+    /// "Unknown Cassandra target type" for an enum.
+    /// </summary>
+    public int PlatformValue { get; set; }
 
     /// <summary>Clustering key: 0-based position of the photo within the listing's image list.</summary>
     public int ImageIndex { get; set; }
