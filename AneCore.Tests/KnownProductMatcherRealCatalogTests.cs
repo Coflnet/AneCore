@@ -265,14 +265,14 @@ public class KnownProductMatcherRealCatalogTests
     // ===== Siblings must still not be confused after the alias expansion. =====
 
     [Test]
-    public void Sibling_SonyA7III_DoesNotMatchA7rIii()
+    public void Sibling_SonyA7III_DoesNotMatchA7rIiiOrA7Iv()
     {
+        // "A7 IV" was a documented catalogue gap (CameraDatabase's Sony coverage stops ~2019) - now
+        // hand-curated (build_cameras_additional_sony), so all three must resolve to their own distinct
+        // product rather than any of them being confused with each other.
         Assert.That(matcher.Match("Sony A7 III Body")!.Id, Is.EqualTo("sony-alpha-a7-iii"));
         Assert.That(matcher.Match("Sony A7R III Body")!.Id, Is.EqualTo("sony-alpha-a7r-iii"));
-        // "a7 iv" is a documented catalogue gap (tools/catalog-import/README.md - CameraDatabase's Sony
-        // coverage stops ~2019, no A7 IV row exists), so it correctly matches nothing rather than being
-        // confused with A7 III - this is the sibling non-confusion property applied to an absent sibling.
-        Assert.That(matcher.Match("Sony A7 IV Body"), Is.Null);
+        Assert.That(matcher.Match("Sony A7 IV Body")!.Id, Is.EqualTo("sony-alpha-a7-iv"));
     }
 
     [Test]
@@ -341,5 +341,197 @@ public class KnownProductMatcherRealCatalogTests
         // (a tempered-glass screen protector listing) matched the phone before "schutzglas" was added to
         // KnownProductMatcher.AccessoryWords.
         Assert.That(matcher.Match("Samsung Galaxy A 54 5G Schutzglas"), Is.Null);
+    }
+
+    // ===== Second pass: coordinator-reported missing families and truncated-model checks =====
+
+    [Test]
+    public void AirPodsPro2_BareGenerationNumber_Matches()
+    {
+        Assert.That(matcher.Match("airpods pro 2")!.Id, Is.EqualTo("apple-airpods-pro-2nd-generation"));
+    }
+
+    [Test]
+    public void IPad9thGeneration_EveryNotation_Matches()
+    {
+        Assert.That(matcher.Match("Apple iPad 9.Generation 64GB")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9. Gen")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9th gen")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 2021")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+    }
+
+    [Test]
+    public void IPad9thGeneration_MultiLanguageNotations_Match()
+    {
+        Assert.That(matcher.Match("iPad 9e génération")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9ème génération")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9e generatie")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9a generazione")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+        Assert.That(matcher.Match("iPad 9° generazione")!.Id, Is.EqualTo("apple-ipad-9th-generation"));
+    }
+
+    [Test]
+    public void IPadAir_BareGenerationNumber_DoesNotStealFromPlainIPad()
+    {
+        // The bare-number/year alias policy is scoped to the plain "iPad" base line only - "iPad Air"/
+        // "iPad Pro"/"iPad mini" always carry their qualifier word, so they must not also pick up a bare
+        // "iPad Air 4" form that could collide with anything.
+        Assert.That(matcher.Match("iPad Air (4th generation) 64GB")!.Id, Is.EqualTo("apple-ipad-air-4th-generation"));
+        Assert.That(matcher.Match("iPad Air 4"), Is.Null);
+    }
+
+    [Test]
+    public void FiveGToken_NeverBlocksAMatch()
+    {
+        Assert.That(matcher.Match("Samsung Galaxy A54 5G 128GB")!.Id, Is.EqualTo("samsung-galaxy-a54"));
+        Assert.That(matcher.Match("Samsung Galaxy S21 5G 128GB")!.Id, Is.EqualTo("samsung-galaxy-s21"));
+        Assert.That(matcher.Match("iPhone 15 5G 128GB")!.Id, Is.EqualTo("apple-iphone-15"));
+        Assert.That(matcher.Match("Xiaomi Redmi Note 12 5G")!.Id, Is.EqualTo("xiaomi-redmi-note-12"));
+        // Still correctly vetoed as an accessory regardless of the "5G" token being present.
+        Assert.That(matcher.Match("Samsung Galaxy A 54 5G Schutzglas"), Is.Null);
+    }
+
+    [Test]
+    public void TruncatedModel_RedmiNote7_ResolvesToFullModelNotFamily()
+    {
+        // Live truncation: "Redmi Note 7" was seen elsewhere in the pipeline becoming "Xiaomi Redmi" -
+        // the model was simply missing from the catalogue (min_year cutoff excluded its 2019 launch).
+        // Now present and must resolve to the exact model.
+        Assert.That(matcher.Match("Xiaomi Redmi Note 7 64GB")!.Id, Is.EqualTo("xiaomi-redmi-note-7"));
+        Assert.That(matcher.Match("Xiaomi Redmi Note 7 Pro 128GB")!.Id, Is.EqualTo("xiaomi-redmi-note-7-pro"));
+    }
+
+    [Test]
+    public void TruncatedModel_OnePlus9Pro_ResolvesToFullModelNotFamily()
+    {
+        // Live truncation: "OnePlus 9 Pro" was seen becoming "OnePlus" - OnePlus had no catalogue entries
+        // at all before this pass.
+        Assert.That(matcher.Match("OnePlus 9 Pro 256GB")!.Id, Is.EqualTo("oneplus-9-pro"));
+        Assert.That(matcher.Match("OnePlus 9 256GB")!.Id, Is.EqualTo("oneplus-9"));
+    }
+
+    [Test]
+    public void OnePlus_NeverMatchesOnABareModelNumberAlone()
+    {
+        // Regression found via the evaluation re-run: OnePlus's numbered line has no distinctive
+        // product-line word once the brand is stripped (unlike Samsung "Galaxy"/Xiaomi "Redmi"), so an
+        // early version of this catalogue's OnePlus entries carried a dangerously generic bare alias
+        // ("10 Pro", "Open") that matched unrelated products naming the same bare phrase -
+        // "Xiaomi Mi Note 10 Pro" matched "oneplus-10-pro" and "Bose Ultra Open Earbuds" matched
+        // "oneplus-open". Every OnePlus alias must include the "OnePlus" brand word.
+        Assert.That(matcher.Match("Xiaomi Mi Note 10 Pro 256GB guter Zustand OVP"), Is.Null);
+        Assert.That(matcher.Match("Bose Ultra Open Earbuds Bluetooth schwarz"), Is.Null);
+    }
+
+    [Test]
+    public void TruncatedModel_GalaxyS25Ultra_ResolvesToFullModelNotFamily()
+    {
+        // Live truncation: "S25 Ultra" was seen becoming "Samsung" - the full model was already present
+        // in the catalogue (added in this pass's first commit), confirming the truncation happens
+        // upstream of AneCore's matcher, not inside it (no bare "Samsung"/"Galaxy" alias exists anywhere
+        // in the catalogue that could produce that result here).
+        Assert.That(matcher.Match("Samsung Galaxy S25 Ultra 256GB")!.Id, Is.EqualTo("samsung-galaxy-s25-ultra"));
+    }
+
+    [Test]
+    public void Nvidia_Gtx970And1080_Match()
+    {
+        Assert.That(matcher.Match("MSI GeForce GTX 970 4GB")!.Id, Is.EqualTo("nvidia-gtx-970"));
+        Assert.That(matcher.Match("Nvidia GeForce GTX 1080 Ti 11GB")!.Id, Is.EqualTo("nvidia-gtx-1080-ti"));
+        Assert.That(matcher.Match("Nvidia GeForce GTX 1080 8GB")!.Id, Is.EqualTo("nvidia-gtx-1080"));
+    }
+
+    [Test]
+    public void AppleDesktops_IMacAndMacMini_Match()
+    {
+        Assert.That(matcher.Match("Apple iMac 24-inch (M1, 2021) 256GB")!.Id, Is.EqualTo("apple-imac-24-inch-m1-2021"));
+        Assert.That(matcher.Match("Apple Mac mini (M4, 2024)")!.Id, Is.EqualTo("apple-mac-mini-m4-2024"));
+        Assert.That(matcher.Match("Apple Mac mini (M4 Pro, 2024)")!.Id, Is.EqualTo("apple-mac-mini-m4-pro-2024"));
+    }
+
+    [Test]
+    public void MetaQuest_AllModels_Match()
+    {
+        Assert.That(matcher.Match("Meta Quest 2 128GB")!.Id, Is.EqualTo("meta-quest-2"));
+        Assert.That(matcher.Match("Oculus Quest 2 256GB")!.Id, Is.EqualTo("meta-quest-2"));
+        Assert.That(matcher.Match("Meta Quest 3 512GB")!.Id, Is.EqualTo("meta-quest-3"));
+        Assert.That(matcher.Match("Meta Quest 3S 128GB")!.Id, Is.EqualTo("meta-quest-3s"));
+        Assert.That(matcher.Match("Meta Quest Pro")!.Id, Is.EqualTo("meta-quest-pro"));
+    }
+
+    [Test]
+    public void MicrosoftSurface_ProAndLaptop_Match()
+    {
+        Assert.That(matcher.Match("Microsoft Surface Pro 9 256GB")!.Id, Is.EqualTo("microsoft-surface-pro-9"));
+        Assert.That(matcher.Match("Microsoft Surface Laptop 6")!.Id, Is.EqualTo("microsoft-surface-laptop-6"));
+        Assert.That(matcher.Match("Microsoft Surface Go 4")!.Id, Is.EqualTo("microsoft-surface-go-4"));
+    }
+
+    [Test]
+    public void Dell_XpsAndLatitude_Match()
+    {
+        Assert.That(matcher.Match("Dell XPS 13 i7 16GB")!.Id, Is.EqualTo("dell-xps-13"));
+        Assert.That(matcher.Match("Dell Latitude 5420 i5")!.Id, Is.EqualTo("dell-latitude-5420"));
+        Assert.That(matcher.Match("Dell Latitude 7440 i7")!.Id, Is.EqualTo("dell-latitude-7440"));
+    }
+
+    [Test]
+    public void IPhone_OlderGenerations_Match()
+    {
+        Assert.That(matcher.Match("Apple iPhone 6 64GB")!.Id, Is.EqualTo("apple-iphone-6"));
+        Assert.That(matcher.Match("Apple iPhone 6s Plus 32GB")!.Id, Is.EqualTo("apple-iphone-6s-plus"));
+        Assert.That(matcher.Match("Apple iPhone 7 128GB")!.Id, Is.EqualTo("apple-iphone-7"));
+        Assert.That(matcher.Match("Apple iPhone 8 Plus 64GB")!.Id, Is.EqualTo("apple-iphone-8-plus"));
+        Assert.That(matcher.Match("Apple iPhone X 256GB")!.Id, Is.EqualTo("apple-iphone-x"));
+        Assert.That(matcher.Match("Apple iPhone XR 128GB")!.Id, Is.EqualTo("apple-iphone-xr"));
+        Assert.That(matcher.Match("Apple iPhone XS Max 256GB")!.Id, Is.EqualTo("apple-iphone-xs-max"));
+    }
+
+    [Test]
+    public void Sibling_IPhone6_DoesNotMatch6sOr6Plus()
+    {
+        Assert.That(matcher.Match("Apple iPhone 6 64GB")!.Id, Is.EqualTo("apple-iphone-6"));
+        Assert.That(matcher.Match("Apple iPhone 6s 64GB")!.Id, Is.EqualTo("apple-iphone-6s"));
+        Assert.That(matcher.Match("Apple iPhone 6 Plus 64GB")!.Id, Is.EqualTo("apple-iphone-6-plus"));
+    }
+
+    [Test]
+    public void IPhoneSE_Generations_EveryNotation_Match()
+    {
+        Assert.That(matcher.Match("Apple iPhone SE (2nd generation) 64GB")!.Id, Is.EqualTo("apple-iphone-se-2nd-generation"));
+        Assert.That(matcher.Match("iPhone SE 2020")!.Id, Is.EqualTo("apple-iphone-se-2nd-generation"));
+        Assert.That(matcher.Match("iPhone SE 2")!.Id, Is.EqualTo("apple-iphone-se-2nd-generation"));
+        Assert.That(matcher.Match("iPhone SE 3")!.Id, Is.EqualTo("apple-iphone-se-3rd-generation"));
+        Assert.That(matcher.Match("iPhone SE 2022")!.Id, Is.EqualTo("apple-iphone-se-3rd-generation"));
+    }
+
+    [Test]
+    public void IPhone17And18Line_Match()
+    {
+        Assert.That(matcher.Match("Apple iPhone 17 256GB")!.Id, Is.EqualTo("apple-iphone-17"));
+        Assert.That(matcher.Match("Apple iPhone Air 256GB")!.Id, Is.EqualTo("apple-iphone-air"));
+        Assert.That(matcher.Match("Apple iPhone 17 Pro Max 1TB")!.Id, Is.EqualTo("apple-iphone-17-pro-max"));
+        Assert.That(matcher.Match("Apple iPhone 18 Pro 256GB")!.Id, Is.EqualTo("apple-iphone-18-pro"));
+        Assert.That(matcher.Match("Apple iPhone 18 Pro Max 1TB Burgundy")!.Id, Is.EqualTo("apple-iphone-18-pro-max"));
+    }
+
+    [Test]
+    public void Sony_NewerBodies_Match()
+    {
+        Assert.That(matcher.Match("Sony A7 IV Body")!.Id, Is.EqualTo("sony-alpha-a7-iv"));
+        Assert.That(matcher.Match("Sony A7R V Body")!.Id, Is.EqualTo("sony-alpha-a7r-v"));
+        Assert.That(matcher.Match("Sony A9 III Body")!.Id, Is.EqualTo("sony-alpha-a9-iii"));
+        Assert.That(matcher.Match("Sony A1 Body")!.Id, Is.EqualTo("sony-alpha-a1"));
+        Assert.That(matcher.Match("Sony ILCE-7M4 Body")!.Id, Is.EqualTo("sony-alpha-a7-iv"));
+    }
+
+    [Test]
+    public void Headphones_NewlyAdded_Match()
+    {
+        Assert.That(matcher.Match("Sony WH-1000XM4 Kopfhörer")!.Id, Is.EqualTo("sony-wh-1000xm4"));
+        Assert.That(matcher.Match("Sony WH-1000XM5 Kopfhörer")!.Id, Is.EqualTo("sony-wh-1000xm5"));
+        Assert.That(matcher.Match("Bose QuietComfort 45 Kopfhörer")!.Id, Is.EqualTo("bose-quietcomfort-45"));
+        Assert.That(matcher.Match("Bose QC45 Kopfhörer")!.Id, Is.EqualTo("bose-quietcomfort-45"));
     }
 }
