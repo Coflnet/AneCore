@@ -377,6 +377,21 @@ public class ProductTableService
     }
 
     /// <summary>
+    /// Statement for one page of <see cref="GetProductListingPartitionKeysPageAsync"/>. Automatic paging is
+    /// off: with it on, enumerating the row set fetches every following page too, so a "page" would be the
+    /// whole table and the returned paging state always null.
+    /// </summary>
+    public static IStatement BuildProductListingPartitionKeysStatement(int pageSize, byte[]? pagingState)
+    {
+        var statement = new SimpleStatement("SELECT DISTINCT product_seo_id FROM product_listings")
+            .SetPageSize(pageSize)
+            .SetAutoPage(false);
+        if (pagingState != null)
+            statement = statement.SetPagingState(pagingState);
+        return statement;
+    }
+
+    /// <summary>
     /// Pages through the distinct <c>product_seo_id</c> partition keys of <c>product_listings</c>, via a
     /// raw CQL <c>SELECT DISTINCT</c> (the LINQ mapper has no way to express "distinct partition keys" -
     /// see the Products table LINQ mappings above). The <c>products</c> table is ~44x larger on disk than
@@ -391,12 +406,7 @@ public class ProductTableService
     public async Task<(IReadOnlyList<string> SeoIds, byte[]? PagingState)> GetProductListingPartitionKeysPageAsync(
         int pageSize, byte[]? pagingState)
     {
-        var statement = new SimpleStatement("SELECT DISTINCT product_seo_id FROM product_listings")
-            .SetPageSize(pageSize);
-        if (pagingState != null)
-            statement = statement.SetPagingState(pagingState);
-
-        var rowSet = await session.ExecuteAsync(statement);
+        var rowSet = await session.ExecuteAsync(BuildProductListingPartitionKeysStatement(pageSize, pagingState));
         var seoIds = rowSet
             .Select(row => row.GetValue<string>("product_seo_id"))
             .Where(seoId => !string.IsNullOrEmpty(seoId))
