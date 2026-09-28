@@ -13,7 +13,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T14 Gen 2",
-        "ThinkPad T14 Gen 2"
+        "ThinkPad T14 G 2",
+        "ThinkPad T14 G2",
+        "ThinkPad T14 Gen 2",
+        "ThinkPad T14 Gen2"
       ],
       "possibleAttributes": {
         "os": [
@@ -37,7 +40,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T14 Gen 3",
-        "ThinkPad T14 Gen 3"
+        "ThinkPad T14 G 3",
+        "ThinkPad T14 G3",
+        "ThinkPad T14 Gen 3",
+        "ThinkPad T14 Gen3"
       ],
       "possibleAttributes": {
         "os": [
@@ -61,7 +67,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T14 Gen 4",
-        "ThinkPad T14 Gen 4"
+        "ThinkPad T14 G 4",
+        "ThinkPad T14 G4",
+        "ThinkPad T14 Gen 4",
+        "ThinkPad T14 Gen4"
       ],
       "possibleAttributes": {
         "os": [
@@ -85,7 +94,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T14 Gen 5",
-        "ThinkPad T14 Gen 5"
+        "ThinkPad T14",
+        "ThinkPad T14 G 5",
+        "ThinkPad T14 G5",
+        "ThinkPad T14 Gen 5",
+        "ThinkPad T14 Gen5"
       ],
       "possibleAttributes": {
         "os": [
@@ -93,7 +106,11 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen",
+        "s"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -109,7 +126,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T16 Gen 1",
-        "ThinkPad T16 Gen 1"
+        "ThinkPad T16 G 1",
+        "ThinkPad T16 G1",
+        "ThinkPad T16 Gen 1",
+        "ThinkPad T16 Gen1"
       ],
       "possibleAttributes": {
         "os": [
@@ -133,7 +153,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad T16 Gen 2",
-        "ThinkPad T16 Gen 2"
+        "ThinkPad T16",
+        "ThinkPad T16 G 2",
+        "ThinkPad T16 G2",
+        "ThinkPad T16 Gen 2",
+        "ThinkPad T16 Gen2"
       ],
       "possibleAttributes": {
         "os": [
@@ -141,7 +165,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -157,7 +184,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X13 Gen 2",
-        "ThinkPad X13 Gen 2"
+        "ThinkPad X13 G 2",
+        "ThinkPad X13 G2",
+        "ThinkPad X13 Gen 2",
+        "ThinkPad X13 Gen2"
       ],
       "possibleAttributes": {
         "os": [
@@ -181,7 +211,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X13 Gen 3",
-        "ThinkPad X13 Gen 3"
+        "ThinkPad X13 G 3",
+        "ThinkPad X13 G3",
+        "ThinkPad X13 Gen 3",
+        "ThinkPad X13 Gen3"
       ],
       "possibleAttributes": {
         "os": [
@@ -205,7 +238,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X13 Gen 4",
-        "ThinkPad X13 Gen 4"
+        "ThinkPad X13",
+        "ThinkPad X13 G 4",
+        "ThinkPad X13 G4",
+        "ThinkPad X13 Gen 4",
+        "ThinkPad X13 Gen4"
       ],
       "possibleAttributes": {
         "os": [
@@ -213,7 +250,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -229,7 +269,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Carbon Gen 9",
-        "ThinkPad X1 Carbon Gen 9"
+        "ThinkPad X1 Carbon G 9",
+        "ThinkPad X1 Carbon G9",
+        "ThinkPad X1 Carbon Gen 9",
+        "ThinkPad X1 Carbon Gen9"
       ],
       "possibleAttributes": {
         "os": [
@@ -253,7 +296,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Carbon Gen 10",
-        "ThinkPad X1 Carbon Gen 10"
+        "ThinkPad X1 Carbon G 10",
+        "ThinkPad X1 Carbon G10",
+        "ThinkPad X1 Carbon Gen 10",
+        "ThinkPad X1 Carbon Gen10"
       ],
       "possibleAttributes": {
         "os": [
@@ -277,7 +323,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Carbon Gen 11",
-        "ThinkPad X1 Carbon Gen 11"
+        "ThinkPad X1 Carbon G 11",
+        "ThinkPad X1 Carbon G11",
+        "ThinkPad X1 Carbon Gen 11",
+        "ThinkPad X1 Carbon Gen11"
       ],
       "possibleAttributes": {
         "os": [
@@ -301,7 +350,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Carbon Gen 12",
-        "ThinkPad X1 Carbon Gen 12"
+        "ThinkPad X1 Carbon",
+        "ThinkPad X1 Carbon G 12",
+        "ThinkPad X1 Carbon G12",
+        "ThinkPad X1 Carbon Gen 12",
+        "ThinkPad X1 Carbon Gen12"
       ],
       "possibleAttributes": {
         "os": [
@@ -309,7 +362,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -325,7 +381,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Yoga Gen 6",
-        "ThinkPad X1 Yoga Gen 6"
+        "ThinkPad X1 Yoga G 6",
+        "ThinkPad X1 Yoga G6",
+        "ThinkPad X1 Yoga Gen 6",
+        "ThinkPad X1 Yoga Gen6"
       ],
       "possibleAttributes": {
         "os": [
@@ -349,7 +408,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad X1 Yoga Gen 7",
-        "ThinkPad X1 Yoga Gen 7"
+        "ThinkPad X1 Yoga",
+        "ThinkPad X1 Yoga G 7",
+        "ThinkPad X1 Yoga G7",
+        "ThinkPad X1 Yoga Gen 7",
+        "ThinkPad X1 Yoga Gen7"
       ],
       "possibleAttributes": {
         "os": [
@@ -357,7 +420,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -373,7 +439,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad L14 Gen 2",
-        "ThinkPad L14 Gen 2"
+        "ThinkPad L14 G 2",
+        "ThinkPad L14 G2",
+        "ThinkPad L14 Gen 2",
+        "ThinkPad L14 Gen2"
       ],
       "possibleAttributes": {
         "os": [
@@ -397,7 +466,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad L14 Gen 3",
-        "ThinkPad L14 Gen 3"
+        "ThinkPad L14 G 3",
+        "ThinkPad L14 G3",
+        "ThinkPad L14 Gen 3",
+        "ThinkPad L14 Gen3"
       ],
       "possibleAttributes": {
         "os": [
@@ -421,7 +493,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad L14 Gen 4",
-        "ThinkPad L14 Gen 4"
+        "ThinkPad L14",
+        "ThinkPad L14 G 4",
+        "ThinkPad L14 G4",
+        "ThinkPad L14 Gen 4",
+        "ThinkPad L14 Gen4"
       ],
       "possibleAttributes": {
         "os": [
@@ -429,7 +505,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -445,7 +524,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad P14s Gen 2",
-        "ThinkPad P14s Gen 2"
+        "ThinkPad P14s G 2",
+        "ThinkPad P14s G2",
+        "ThinkPad P14s Gen 2",
+        "ThinkPad P14s Gen2"
       ],
       "possibleAttributes": {
         "os": [
@@ -469,7 +551,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad P14s Gen 3",
-        "ThinkPad P14s Gen 3"
+        "ThinkPad P14s G 3",
+        "ThinkPad P14s G3",
+        "ThinkPad P14s Gen 3",
+        "ThinkPad P14s Gen3"
       ],
       "possibleAttributes": {
         "os": [
@@ -493,7 +578,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad P14s Gen 4",
-        "ThinkPad P14s Gen 4"
+        "ThinkPad P14s",
+        "ThinkPad P14s G 4",
+        "ThinkPad P14s G4",
+        "ThinkPad P14s Gen 4",
+        "ThinkPad P14s Gen4"
       ],
       "possibleAttributes": {
         "os": [
@@ -501,7 +590,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {
@@ -517,7 +609,10 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad E14 Gen 4",
-        "ThinkPad E14 Gen 4"
+        "ThinkPad E14 G 4",
+        "ThinkPad E14 G4",
+        "ThinkPad E14 Gen 4",
+        "ThinkPad E14 Gen4"
       ],
       "possibleAttributes": {
         "os": [
@@ -541,7 +636,11 @@
       "vertical": "electronics",
       "aliases": [
         "Lenovo ThinkPad E14 Gen 5",
-        "ThinkPad E14 Gen 5"
+        "ThinkPad E14",
+        "ThinkPad E14 G 5",
+        "ThinkPad E14 G5",
+        "ThinkPad E14 Gen 5",
+        "ThinkPad E14 Gen5"
       ],
       "possibleAttributes": {
         "os": [
@@ -549,7 +648,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "g",
+        "gen"
+      ],
       "source": "seed:hand-curated-2026-09"
     },
     {

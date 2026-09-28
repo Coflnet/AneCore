@@ -13,7 +13,15 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air (M1, 2020)",
-        "MacBook Air (M1, 2020)"
+        "MacBook Air (M1, 2020)",
+        "MacBook Air 13 M1",
+        "MacBook Air 13 inch M1",
+        "MacBook Air 13 zoll M1",
+        "MacBook Air 2020",
+        "MacBook Air M1",
+        "MacBook Air M1 13",
+        "MacBook Air M1 13 inch",
+        "MacBook Air M1 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -46,7 +54,15 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 13-inch (M2)",
-        "MacBook Air 13-inch (M2)"
+        "MacBook Air 13 M2",
+        "MacBook Air 13 inch M2",
+        "MacBook Air 13 zoll M2",
+        "MacBook Air 13-inch (M2)",
+        "MacBook Air 2022",
+        "MacBook Air M2",
+        "MacBook Air M2 13",
+        "MacBook Air M2 13 inch",
+        "MacBook Air M2 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -63,7 +79,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "15"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -79,7 +97,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 15-inch (M2)",
-        "MacBook Air 15-inch (M2)"
+        "MacBook Air 15 M2",
+        "MacBook Air 15 inch M2",
+        "MacBook Air 15 zoll M2",
+        "MacBook Air 15-inch (M2)",
+        "MacBook Air 2023",
+        "MacBook Air M2 15",
+        "MacBook Air M2 15 inch",
+        "MacBook Air M2 15 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -112,7 +137,15 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 13-inch (M3)",
-        "MacBook Air 13-inch (M3)"
+        "MacBook Air 13 M3",
+        "MacBook Air 13 inch M3",
+        "MacBook Air 13 zoll M3",
+        "MacBook Air 13-inch (M3)",
+        "MacBook Air 2024",
+        "MacBook Air M3",
+        "MacBook Air M3 13",
+        "MacBook Air M3 13 inch",
+        "MacBook Air M3 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -129,7 +162,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "15"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -145,7 +180,13 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 15-inch (M3)",
-        "MacBook Air 15-inch (M3)"
+        "MacBook Air 15 M3",
+        "MacBook Air 15 inch M3",
+        "MacBook Air 15 zoll M3",
+        "MacBook Air 15-inch (M3)",
+        "MacBook Air M3 15",
+        "MacBook Air M3 15 inch",
+        "MacBook Air M3 15 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -178,7 +219,15 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 13-inch (M4)",
-        "MacBook Air 13-inch (M4)"
+        "MacBook Air 13 M4",
+        "MacBook Air 13 inch M4",
+        "MacBook Air 13 zoll M4",
+        "MacBook Air 13-inch (M4)",
+        "MacBook Air 2025",
+        "MacBook Air M4",
+        "MacBook Air M4 13",
+        "MacBook Air M4 13 inch",
+        "MacBook Air M4 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -195,7 +244,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "15"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -211,7 +262,13 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Air 15-inch (M4)",
-        "MacBook Air 15-inch (M4)"
+        "MacBook Air 15 M4",
+        "MacBook Air 15 inch M4",
+        "MacBook Air 15 zoll M4",
+        "MacBook Air 15-inch (M4)",
+        "MacBook Air M4 15",
+        "MacBook Air M4 15 inch",
+        "MacBook Air M4 15 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -244,7 +301,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 13-inch (M1, 2020)",
-        "MacBook Pro 13-inch (M1, 2020)"
+        "MacBook Pro 13 M1",
+        "MacBook Pro 13 inch M1",
+        "MacBook Pro 13 zoll M1",
+        "MacBook Pro 13-inch (M1, 2020)",
+        "MacBook Pro M1",
+        "MacBook Pro M1 13",
+        "MacBook Pro M1 13 inch",
+        "MacBook Pro M1 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -261,7 +325,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "max",
+        "pro"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -277,7 +344,21 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M1 Pro/Max, 2021)",
-        "MacBook Pro 14-inch (M1 Pro/Max, 2021)"
+        "MacBook Pro 14 M1 Max",
+        "MacBook Pro 14 M1 Pro",
+        "MacBook Pro 14 inch M1 Max",
+        "MacBook Pro 14 inch M1 Pro",
+        "MacBook Pro 14 zoll M1 Max",
+        "MacBook Pro 14 zoll M1 Pro",
+        "MacBook Pro 14-inch (M1 Pro/Max, 2021)",
+        "MacBook Pro M1 Max",
+        "MacBook Pro M1 Max 14",
+        "MacBook Pro M1 Max 14 inch",
+        "MacBook Pro M1 Max 14 zoll",
+        "MacBook Pro M1 Pro",
+        "MacBook Pro M1 Pro 14",
+        "MacBook Pro M1 Pro 14 inch",
+        "MacBook Pro M1 Pro 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -295,7 +376,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "16"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -311,7 +394,19 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 16-inch (M1 Pro/Max, 2021)",
-        "MacBook Pro 16-inch (M1 Pro/Max, 2021)"
+        "MacBook Pro 16 M1 Max",
+        "MacBook Pro 16 M1 Pro",
+        "MacBook Pro 16 inch M1 Max",
+        "MacBook Pro 16 inch M1 Pro",
+        "MacBook Pro 16 zoll M1 Max",
+        "MacBook Pro 16 zoll M1 Pro",
+        "MacBook Pro 16-inch (M1 Pro/Max, 2021)",
+        "MacBook Pro M1 Max 16",
+        "MacBook Pro M1 Max 16 inch",
+        "MacBook Pro M1 Max 16 zoll",
+        "MacBook Pro M1 Pro 16",
+        "MacBook Pro M1 Pro 16 inch",
+        "MacBook Pro M1 Pro 16 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -345,7 +440,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 13-inch (M2, 2022)",
-        "MacBook Pro 13-inch (M2, 2022)"
+        "MacBook Pro 13 M2",
+        "MacBook Pro 13 inch M2",
+        "MacBook Pro 13 zoll M2",
+        "MacBook Pro 13-inch (M2, 2022)",
+        "MacBook Pro M2",
+        "MacBook Pro M2 13",
+        "MacBook Pro M2 13 inch",
+        "MacBook Pro M2 13 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -362,7 +464,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "max",
+        "pro"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -378,7 +483,21 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M2 Pro/Max, 2023)",
-        "MacBook Pro 14-inch (M2 Pro/Max, 2023)"
+        "MacBook Pro 14 M2 Max",
+        "MacBook Pro 14 M2 Pro",
+        "MacBook Pro 14 inch M2 Max",
+        "MacBook Pro 14 inch M2 Pro",
+        "MacBook Pro 14 zoll M2 Max",
+        "MacBook Pro 14 zoll M2 Pro",
+        "MacBook Pro 14-inch (M2 Pro/Max, 2023)",
+        "MacBook Pro M2 Max",
+        "MacBook Pro M2 Max 14",
+        "MacBook Pro M2 Max 14 inch",
+        "MacBook Pro M2 Max 14 zoll",
+        "MacBook Pro M2 Pro",
+        "MacBook Pro M2 Pro 14",
+        "MacBook Pro M2 Pro 14 inch",
+        "MacBook Pro M2 Pro 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -396,7 +515,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "16"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -412,7 +533,19 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 16-inch (M2 Pro/Max, 2023)",
-        "MacBook Pro 16-inch (M2 Pro/Max, 2023)"
+        "MacBook Pro 16 M2 Max",
+        "MacBook Pro 16 M2 Pro",
+        "MacBook Pro 16 inch M2 Max",
+        "MacBook Pro 16 inch M2 Pro",
+        "MacBook Pro 16 zoll M2 Max",
+        "MacBook Pro 16 zoll M2 Pro",
+        "MacBook Pro 16-inch (M2 Pro/Max, 2023)",
+        "MacBook Pro M2 Max 16",
+        "MacBook Pro M2 Max 16 inch",
+        "MacBook Pro M2 Max 16 zoll",
+        "MacBook Pro M2 Pro 16",
+        "MacBook Pro M2 Pro 16 inch",
+        "MacBook Pro M2 Pro 16 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -446,7 +579,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M3, 2023)",
-        "MacBook Pro 14-inch (M3, 2023)"
+        "MacBook Pro 14 M3",
+        "MacBook Pro 14 inch M3",
+        "MacBook Pro 14 zoll M3",
+        "MacBook Pro 14-inch (M3, 2023)",
+        "MacBook Pro M3",
+        "MacBook Pro M3 14",
+        "MacBook Pro M3 14 inch",
+        "MacBook Pro M3 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -461,7 +601,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "max",
+        "pro"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -477,7 +620,21 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M3 Pro/Max, 2023)",
-        "MacBook Pro 14-inch (M3 Pro/Max, 2023)"
+        "MacBook Pro 14 M3 Max",
+        "MacBook Pro 14 M3 Pro",
+        "MacBook Pro 14 inch M3 Max",
+        "MacBook Pro 14 inch M3 Pro",
+        "MacBook Pro 14 zoll M3 Max",
+        "MacBook Pro 14 zoll M3 Pro",
+        "MacBook Pro 14-inch (M3 Pro/Max, 2023)",
+        "MacBook Pro M3 Max",
+        "MacBook Pro M3 Max 14",
+        "MacBook Pro M3 Max 14 inch",
+        "MacBook Pro M3 Max 14 zoll",
+        "MacBook Pro M3 Pro",
+        "MacBook Pro M3 Pro 14",
+        "MacBook Pro M3 Pro 14 inch",
+        "MacBook Pro M3 Pro 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -494,7 +651,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "16"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -510,7 +669,19 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 16-inch (M3 Pro/Max, 2023)",
-        "MacBook Pro 16-inch (M3 Pro/Max, 2023)"
+        "MacBook Pro 16 M3 Max",
+        "MacBook Pro 16 M3 Pro",
+        "MacBook Pro 16 inch M3 Max",
+        "MacBook Pro 16 inch M3 Pro",
+        "MacBook Pro 16 zoll M3 Max",
+        "MacBook Pro 16 zoll M3 Pro",
+        "MacBook Pro 16-inch (M3 Pro/Max, 2023)",
+        "MacBook Pro M3 Max 16",
+        "MacBook Pro M3 Max 16 inch",
+        "MacBook Pro M3 Max 16 zoll",
+        "MacBook Pro M3 Pro 16",
+        "MacBook Pro M3 Pro 16 inch",
+        "MacBook Pro M3 Pro 16 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -544,7 +715,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M4, 2024)",
-        "MacBook Pro 14-inch (M4, 2024)"
+        "MacBook Pro 14 M4",
+        "MacBook Pro 14 inch M4",
+        "MacBook Pro 14 zoll M4",
+        "MacBook Pro 14-inch (M4, 2024)",
+        "MacBook Pro M4",
+        "MacBook Pro M4 14",
+        "MacBook Pro M4 14 inch",
+        "MacBook Pro M4 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -559,7 +737,10 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "max",
+        "pro"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -575,7 +756,21 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 14-inch (M4 Pro/Max, 2024)",
-        "MacBook Pro 14-inch (M4 Pro/Max, 2024)"
+        "MacBook Pro 14 M4 Max",
+        "MacBook Pro 14 M4 Pro",
+        "MacBook Pro 14 inch M4 Max",
+        "MacBook Pro 14 inch M4 Pro",
+        "MacBook Pro 14 zoll M4 Max",
+        "MacBook Pro 14 zoll M4 Pro",
+        "MacBook Pro 14-inch (M4 Pro/Max, 2024)",
+        "MacBook Pro M4 Max",
+        "MacBook Pro M4 Max 14",
+        "MacBook Pro M4 Max 14 inch",
+        "MacBook Pro M4 Max 14 zoll",
+        "MacBook Pro M4 Pro",
+        "MacBook Pro M4 Pro 14",
+        "MacBook Pro M4 Pro 14 inch",
+        "MacBook Pro M4 Pro 14 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -593,7 +788,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "16"
+      ],
       "source": "seed:apple-specs-2026-09"
     },
     {
@@ -609,7 +806,19 @@
       "vertical": "electronics",
       "aliases": [
         "Apple MacBook Pro 16-inch (M4 Pro/Max, 2024)",
-        "MacBook Pro 16-inch (M4 Pro/Max, 2024)"
+        "MacBook Pro 16 M4 Max",
+        "MacBook Pro 16 M4 Pro",
+        "MacBook Pro 16 inch M4 Max",
+        "MacBook Pro 16 inch M4 Pro",
+        "MacBook Pro 16 zoll M4 Max",
+        "MacBook Pro 16 zoll M4 Pro",
+        "MacBook Pro 16-inch (M4 Pro/Max, 2024)",
+        "MacBook Pro M4 Max 16",
+        "MacBook Pro M4 Max 16 inch",
+        "MacBook Pro M4 Max 16 zoll",
+        "MacBook Pro M4 Pro 16",
+        "MacBook Pro M4 Pro 16 inch",
+        "MacBook Pro M4 Pro 16 zoll"
       ],
       "possibleAttributes": {
         "storage_size": [
