@@ -21,6 +21,29 @@
       "source": "seed:docyx-pc-part-dataset-2026-09"
     },
     {
+      "id": "bose-quietcomfort-45",
+      "brand": "Bose",
+      "model": "QuietComfort 45",
+      "name": "Bose QuietComfort 45",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Bose QC45",
+        "Bose QuietComfort 45",
+        "QC45",
+        "QuietComfort 45"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
       "id": "jbl-quantum-100",
       "brand": "JBL",
       "model": "JBL Quantum 100",
@@ -769,6 +792,50 @@
       "possibleAttributes": {},
       "excludeTerms": [],
       "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sony-wh-1000xm4",
+      "brand": "Sony",
+      "model": "WH-1000XM4",
+      "name": "Sony WH-1000XM4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sony 1000XM4",
+        "Sony WH-1000XM4",
+        "WH-1000XM4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "sony-wh-1000xm5",
+      "brand": "Sony",
+      "model": "WH-1000XM5",
+      "name": "Sony WH-1000XM5",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sony 1000XM5",
+        "Sony WH-1000XM5",
+        "WH-1000XM5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
     },
     {
       "id": "sony-wh-1000xm6",
