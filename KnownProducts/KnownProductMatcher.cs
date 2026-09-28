@@ -47,6 +47,15 @@ public class KnownProductMatcher
         // are all specific brand+model names, e.g. "Bose QuietComfort 45"), so this cannot veto a
         // legitimate headphone listing, only a "<device> headset/Gaming-Headset" accessory-for-device one.
         "tasche", "tragetasche", "skin", "lufter", "kuhler", "headset",
+        // "Akku" (German "battery") - a replacement/spare battery listing for a camera/laptop/phone is an
+        // accessory, not the device itself (found via this task's catalogue-recall pass: "Sony A7 III
+        // Akku" was matching the camera before this was added).
+        "akku",
+        // "Schutzglas" (German "protective glass" - tempered-glass screen protector) - found via this
+        // pass's real-title evaluation re-run: "Samsung Galaxy A54 5G Schutzglas" matched the new Galaxy
+        // A-series entry before this was added; "panzerglas"/"displayglas" above cover the same concept
+        // under its other common German spellings but not this one.
+        "schutzglas",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>
@@ -397,6 +406,44 @@ public class KnownProductMatcher
         s = Regex.Replace(s, @"(?<=[0-9])(?=[a-z])", " ", Opts);
         s = Regex.Replace(s, @"[^a-z0-9 ]", " ", Opts);
         s = Regex.Replace(s, @"\s+", " ", Opts).Trim();
+        s = ApplySpellingVariants(s);
         return s;
     }
+
+    /// <summary>
+    /// Canonicalizes recurring misspellings/localizations of brand-name words found in real listing
+    /// titles/queries (see tools/catalog-import/eval/EVALUATION.md's "Language/spelling variants" gap) so
+    /// they match the catalogue's English-spelled aliases, without loosening matching generally - every
+    /// rule fires only on an exact whole-word (token) sequence via <c>\b</c>, never a substring, so it
+    /// cannot match inside an unrelated word (e.g. "series" itself is untouched by the "serie" rule).
+    /// </summary>
+    /// <remarks>
+    /// French "Série" already collapses to "serie" by the diacritic-stripping step above (the accent is a
+    /// <see cref="UnicodeCategory.NonSpacingMark"/>), so a single "serie" -&gt; "series" rule covers both
+    /// the German "Serie" and French "Série" gaps. "i phone"/"x box"/"play station"/"mac book"
+    /// (space-separated in the source title) are real, recurring patterns the letter/digit-join step above
+    /// does not merge because no digit is involved.
+    /// </remarks>
+    // One combined regex + lookup table rather than five separate Regex objects: constructing a Regex
+    // (parsing the pattern into its matching automaton) is a real one-time cost that, at the scale of
+    // this catalogue's alias index (thousands of Normalize() calls per KnownProductMatcher build), showed
+    // up as a measurable index-build-time regression (task target: 10-40ms) - see
+    // tools/catalog-import/eval/EVALUATION.md's performance section. RegexOptions.Compiled (used
+    // elsewhere in this file via Opts) is deliberately NOT used here either, for the same reason: these
+    // patterns run once per Normalize() call, never in a tight loop, so paying Compiled's extra
+    // construction-time MSIL-JIT cost for faster matching is the wrong trade.
+    private static readonly Regex SpellingVariantPattern =
+        new(@"\b(?:i phone|x box|play station|mac book|serie)\b", RegexOptions.CultureInvariant);
+
+    private static readonly Dictionary<string, string> SpellingVariantReplacements = new(StringComparer.Ordinal)
+    {
+        ["i phone"] = "iphone",
+        ["x box"] = "xbox",
+        ["play station"] = "playstation",
+        ["mac book"] = "macbook",
+        ["serie"] = "series",
+    };
+
+    private static string ApplySpellingVariants(string s) =>
+        SpellingVariantPattern.Replace(s, m => SpellingVariantReplacements[m.Value]);
 }
