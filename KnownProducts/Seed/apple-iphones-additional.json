@@ -1,0 +1,700 @@
+{
+  "products": [
+    {
+      "id": "apple-iphone-17",
+      "brand": "Apple",
+      "model": "iPhone 17",
+      "name": "Apple iPhone 17",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 17",
+        "iPhone 17"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-17-pro",
+      "brand": "Apple",
+      "model": "iPhone 17 Pro",
+      "name": "Apple iPhone 17 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 17 Pro",
+        "iPhone 17 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "max"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-17-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 17 Pro Max",
+      "name": "Apple iPhone 17 Pro Max",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 17 Pro Max",
+        "iPhone 17 Pro Max"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-18-pro",
+      "brand": "Apple",
+      "model": "iPhone 18 Pro",
+      "name": "Apple iPhone 18 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 18 Pro",
+        "iPhone 18 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": [
+          "Black",
+          "Silver",
+          "Glacier",
+          "Burgundy"
+        ]
+      },
+      "excludeTerms": [
+        "max"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-18-pro-max",
+      "brand": "Apple",
+      "model": "iPhone 18 Pro Max",
+      "name": "Apple iPhone 18 Pro Max",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 18 Pro Max",
+        "iPhone 18 Pro Max"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": [
+          "Black",
+          "Silver",
+          "Glacier",
+          "Burgundy"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-6",
+      "brand": "Apple",
+      "model": "iPhone 6",
+      "name": "Apple iPhone 6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 6",
+        "iPhone 6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "64GB",
+          "128GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "plus",
+        "s"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-6-plus",
+      "brand": "Apple",
+      "model": "iPhone 6 Plus",
+      "name": "Apple iPhone 6 Plus",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 6 Plus",
+        "iPhone 6 Plus"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "64GB",
+          "128GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-6s",
+      "brand": "Apple",
+      "model": "iPhone 6s",
+      "name": "Apple iPhone 6s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 6s",
+        "iPhone 6s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "32GB",
+          "64GB",
+          "128GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-6s-plus",
+      "brand": "Apple",
+      "model": "iPhone 6s Plus",
+      "name": "Apple iPhone 6s Plus",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 6s Plus",
+        "iPhone 6s Plus"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "32GB",
+          "64GB",
+          "128GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-7",
+      "brand": "Apple",
+      "model": "iPhone 7",
+      "name": "Apple iPhone 7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 7",
+        "iPhone 7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-7-plus",
+      "brand": "Apple",
+      "model": "iPhone 7 Plus",
+      "name": "Apple iPhone 7 Plus",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 7 Plus",
+        "iPhone 7 Plus"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-8",
+      "brand": "Apple",
+      "model": "iPhone 8",
+      "name": "Apple iPhone 8",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 8",
+        "iPhone 8"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-8-plus",
+      "brand": "Apple",
+      "model": "iPhone 8 Plus",
+      "name": "Apple iPhone 8 Plus",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone 8 Plus",
+        "iPhone 8 Plus"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-air",
+      "brand": "Apple",
+      "model": "iPhone Air",
+      "name": "Apple iPhone Air",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone Air",
+        "iPhone Air"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-se-1st-generation",
+      "brand": "Apple",
+      "model": "iPhone SE (1st generation)",
+      "name": "Apple iPhone SE (1st generation)",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone SE (1st generation)",
+        "iPhone SE (1st generation)",
+        "iPhone SE 1",
+        "iPhone SE 1 Gen",
+        "iPhone SE 1 Generation",
+        "iPhone SE 1 Generazione",
+        "iPhone SE 1a Generazione",
+        "iPhone SE 1e Generatie",
+        "iPhone SE 1e Generation",
+        "iPhone SE 1eme Generation",
+        "iPhone SE 1st Gen",
+        "iPhone SE 1st Generation",
+        "iPhone SE 2016",
+        "iPhone SE Gen 1",
+        "iPhone SE Generation 1"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "64GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-se-2nd-generation",
+      "brand": "Apple",
+      "model": "iPhone SE (2nd generation)",
+      "name": "Apple iPhone SE (2nd generation)",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone SE (2nd generation)",
+        "iPhone SE (2nd generation)",
+        "iPhone SE 2",
+        "iPhone SE 2 Gen",
+        "iPhone SE 2 Generation",
+        "iPhone SE 2 Generazione",
+        "iPhone SE 2020",
+        "iPhone SE 2a Generazione",
+        "iPhone SE 2e Generatie",
+        "iPhone SE 2e Generation",
+        "iPhone SE 2eme Generation",
+        "iPhone SE 2nd Gen",
+        "iPhone SE 2nd Generation",
+        "iPhone SE Gen 2",
+        "iPhone SE Generation 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-se-3rd-generation",
+      "brand": "Apple",
+      "model": "iPhone SE (3rd generation)",
+      "name": "Apple iPhone SE (3rd generation)",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone SE (3rd generation)",
+        "iPhone SE (3rd generation)",
+        "iPhone SE 2022",
+        "iPhone SE 3",
+        "iPhone SE 3 Gen",
+        "iPhone SE 3 Generation",
+        "iPhone SE 3 Generazione",
+        "iPhone SE 3a Generazione",
+        "iPhone SE 3e Generatie",
+        "iPhone SE 3e Generation",
+        "iPhone SE 3eme Generation",
+        "iPhone SE 3rd Gen",
+        "iPhone SE 3rd Generation",
+        "iPhone SE Gen 3",
+        "iPhone SE Generation 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-x",
+      "brand": "Apple",
+      "model": "iPhone X",
+      "name": "Apple iPhone X",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone X",
+        "iPhone X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-xr",
+      "brand": "Apple",
+      "model": "iPhone XR",
+      "name": "Apple iPhone XR",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone XR",
+        "iPhone XR"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-xs",
+      "brand": "Apple",
+      "model": "iPhone XS",
+      "name": "Apple iPhone XS",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone XS",
+        "iPhone XS"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB",
+          "512GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "max"
+      ],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-iphone-xs-max",
+      "brand": "Apple",
+      "model": "iPhone XS Max",
+      "name": "Apple iPhone XS Max",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPhone XS Max",
+        "iPhone XS Max"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB",
+          "512GB"
+        ],
+        "os": [
+          "ios"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    }
+  ]
+}
