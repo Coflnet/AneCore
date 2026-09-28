@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using Coflnet.Ane;
 
 namespace Coflnet.Ane.KnownProducts;
 
@@ -83,6 +84,49 @@ public class KnownProductMatcher
 
     private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
 
+    private readonly record struct TaxonomyLabelSets(HashSet<string> Roots, HashSet<string> AllLabels);
+
+    /// <summary>
+    /// Top-level taxonomy root labels (e.g. "Elektronik", "Bekleidung &amp; Accessoires") and every label
+    /// appearing anywhere in <c>Categories/UnifiedCategories.json</c>, loaded once per process via
+    /// <see cref="UnifiedCategoryService"/> and reused by <see cref="IsCategoryCompatible"/> - see that
+    /// method's doc for why both sets exist. A process-wide <see cref="Lazy{T}"/> (rather than an
+    /// instance/constructor field) so refreshing the known-products snapshot every few minutes (see
+    /// <see cref="KnownProductCatalog"/>) never re-reads or re-parses the taxonomy file; it is computed
+    /// once, not per call and not per matcher construction.
+    /// </summary>
+    private static readonly Lazy<TaxonomyLabelSets> Taxonomy = new(LoadTaxonomyLabelSets);
+
+    private static TaxonomyLabelSets LoadTaxonomyLabelSets()
+    {
+        var roots = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        var allLabels = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        try
+        {
+            var categoryService = new UnifiedCategoryService();
+
+            void Walk(UnifiedCategory category, bool isRoot)
+            {
+                allLabels.Add(category.Label);
+                if (isRoot)
+                    roots.Add(category.Label);
+                foreach (var sub in category.SubCategories ?? new List<UnifiedCategory>())
+                    Walk(sub, false);
+            }
+
+            foreach (var top in categoryService.GetTopLevelCategories())
+                Walk(top, true);
+        }
+        catch
+        {
+            // Taxonomy file missing/unreadable in this environment - fall back to empty sets. That
+            // reproduces the pre-fix behaviour (no generic root stripped) instead of throwing out of
+            // every Match() call; see IsCategoryCompatible, which treats an unknown category as always
+            // compatible, so this is the conservative direction to fail in.
+        }
+        return new TaxonomyLabelSets(roots, allLabels);
+    }
+
     public KnownProductMatcher(IReadOnlyList<KnownProduct> products)
     {
         this.products = products;
@@ -128,9 +172,11 @@ public class KnownProductMatcher
     /// <param name="brand">Already-extracted brand, if any - contradicting brands veto the match.</param>
     /// <param name="model">Currently unused for filtering; accepted for call-site symmetry with brand.</param>
     /// <param name="categoryPath">
-    /// The listing's own category path (e.g. from platform category mapping), if known. When given, a
-    /// candidate whose <see cref="KnownProduct.Categories"/> shares no label with this path is rejected.
-    /// An unknown/empty category path (the default) never rejects anything.
+    /// The listing's own category path (e.g. from platform category mapping), if known - callers may pass
+    /// the raw/unmodified path, including the generic taxonomy root and any marketplace-only labels; see
+    /// <see cref="IsCategoryCompatible"/> for how those are handled. When given, a candidate whose
+    /// <see cref="KnownProduct.Categories"/> shares no (non-generic) label with this path is rejected. An
+    /// unknown/empty category path (the default) never rejects anything.
     /// </param>
     public KnownProduct? Match(string? title, string? brand = null, string? model = null, IReadOnlyList<string>? categoryPath = null)
     {
@@ -232,16 +278,43 @@ public class KnownProductMatcher
         return false;
     }
 
-    /// <summary>True when the listing's own category is known and shares no label with the candidate's. Unknown category (null/empty) is always compatible.</summary>
+    /// <summary>
+    /// True when the listing's own category is known and shares a label with the candidate's, once
+    /// generic taxonomy roots are ignored on both sides. Unknown category (null/empty) is always
+    /// compatible - same for a product with no categories.
+    /// </summary>
+    /// <remarks>
+    /// Real product and listing category paths carry the whole taxonomy path including its generic
+    /// top-level root (e.g. a video game and a game console both start with "Elektronik"), so comparing
+    /// the raw paths would never veto anything within the same vertical - see the "Lego Worlds PS4"
+    /// false-match this fixes. Root labels (<see cref="TaxonomyLabelSets.Roots"/>, derived once from
+    /// <c>Categories/UnifiedCategories.json</c>, not hardcoded) are dropped from both sides first. If that
+    /// leaves either side empty, the category is unknown and never vetoes - same as the pre-existing
+    /// null/empty behaviour. Marketplace category trees also surface labels the unified taxonomy does not
+    /// know at all (e.g. "Konsolen", "Handy &amp; Telefon", "PC-Zubehör &amp; Software"); a listing path
+    /// made up entirely of such labels is likewise treated as unknown rather than risking a false veto
+    /// from vocabulary the taxonomy simply doesn't model.
+    /// </remarks>
     private static bool IsCategoryCompatible(KnownProduct product, IReadOnlyList<string>? categoryPath)
     {
         if (categoryPath == null || categoryPath.Count == 0)
             return true;
         if (product.Categories.Count == 0)
             return true;
-        foreach (var productCategory in product.Categories)
+
+        var taxonomy = Taxonomy.Value;
+        var listingLabels = categoryPath.Where(c => !taxonomy.Roots.Contains(c)).ToList();
+        var productLabels = product.Categories.Where(c => !taxonomy.Roots.Contains(c)).ToList();
+
+        if (listingLabels.Count == 0 || productLabels.Count == 0)
+            return true; // nothing left once the generic root(s) are removed - treat as unknown
+
+        if (listingLabels.All(c => !taxonomy.AllLabels.Contains(c)))
+            return true; // listing path is entirely marketplace vocabulary the taxonomy doesn't recognize
+
+        foreach (var productCategory in productLabels)
         {
-            foreach (var listingCategory in categoryPath)
+            foreach (var listingCategory in listingLabels)
             {
                 if (string.Equals(productCategory, listingCategory, StringComparison.OrdinalIgnoreCase))
                     return true;

@@ -46,6 +46,28 @@ public class KnownProductMatcherEngineTests
         Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { alias },
     };
 
+    private static KnownProduct Console(string id, string name, string alias) => new()
+    {
+        Id = id,
+        Brand = "Sony",
+        Model = name,
+        Name = name,
+        Categories = new List<string> { "Elektronik", "Videospielkonsolen" },
+        Vertical = "electronics",
+        Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { alias },
+    };
+
+    private static KnownProduct Phone(string id, string name, string alias) => new()
+    {
+        Id = id,
+        Brand = "Samsung",
+        Model = name,
+        Name = name,
+        Categories = new List<string> { "Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone" },
+        Vertical = "electronics",
+        Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { alias },
+    };
+
     [TestCase("Galaxy S21+", "galaxy s 21 plus")]
     [TestCase("Galaxy S21 Plus", "galaxy s 21 plus")]
     [TestCase("Galaxy S21", "galaxy s 21")]
@@ -157,6 +179,98 @@ public class KnownProductMatcherEngineTests
         var gpuCategory = new[] { "Elektronik", "Elektronisches Zubehör", "Computerkomponenten", "Computer-Steckkarten", "Grafikkarten & Videoadapter" };
 
         Assert.That(matcher.Match("MSI RTX 3060 12GB", categoryPath: gpuCategory), Is.Not.Null);
+    }
+
+    // Regression tests for the generic-taxonomy-root veto fix: every real product/listing category path
+    // carries the taxonomy's generic top-level root (e.g. "Elektronik"), so comparing raw paths never
+    // vetoed anything within the same vertical - see the "Lego Worlds PS4" false-match this fixes.
+    // IsCategoryCompatible now ignores taxonomy root labels (derived from Categories/UnifiedCategories.json,
+    // not hardcoded) on both sides before comparing.
+
+    [Test]
+    public void CategoryPlausibility_VideoGameTitleSharingOnlyGenericRoot_DoesNotMatchConsole()
+    {
+        // "PC- & Videospiele" is a real UnifiedCategories.json label (normally paired with the "Software"
+        // root there); used here as the listing's own non-root label, paired with "Elektronik" the way a
+        // real marketplace listing path does, to prove the veto now looks past the shared generic root
+        // instead of accepting any candidate that merely shares "Elektronik".
+        var products = new[] { Console("sony-ps4", "PlayStation 4", "ps4") };
+        var matcher = new KnownProductMatcher(products);
+        var videoGameCategory = new[] { "Elektronik", "PC- & Videospiele" };
+
+        Assert.That(matcher.Match("Lego Worlds PS4", categoryPath: videoGameCategory), Is.Null);
+    }
+
+    [Test]
+    public void CategoryPlausibility_ConsoleListingWithOwnCategory_Matches()
+    {
+        var products = new[] { Console("sony-ps4", "PlayStation 4", "ps4") };
+        var matcher = new KnownProductMatcher(products);
+        var consoleCategory = new[] { "Elektronik", "Videospielkonsolen" };
+
+        Assert.That(matcher.Match("Sony PS4 500GB", categoryPath: consoleCategory)?.Id, Is.EqualTo("sony-ps4"));
+    }
+
+    [Test]
+    public void CategoryPlausibility_PhoneListingWithRealisticFullPath_Matches()
+    {
+        var products = new[] { Phone("samsung-galaxy-s21", "Galaxy S21", "galaxy s21") };
+        var matcher = new KnownProductMatcher(products);
+        var phoneCategory = new[] { "Elektronik", "Kommunikationsgeräte", "Telefone", "Mobiltelefone" };
+
+        Assert.That(matcher.Match("Samsung Galaxy S21 128GB", categoryPath: phoneCategory)?.Id, Is.EqualTo("samsung-galaxy-s21"));
+    }
+
+    [Test]
+    public void CategoryPlausibility_GpuListingWithRealisticFullPath_Matches()
+    {
+        var products = new[] { Gpu("nvidia-rtx-3060", "RTX 3060", "rtx 3060") };
+        var matcher = new KnownProductMatcher(products);
+        var gpuCategory = new[] { "Elektronik", "Elektronisches Zubehör", "Computerkomponenten", "Computer-Steckkarten", "Grafikkarten & Videoadapter" };
+
+        Assert.That(matcher.Match("MSI RTX 3060 12GB Grafikkarte", categoryPath: gpuCategory)?.Id, Is.EqualTo("nvidia-rtx-3060"));
+    }
+
+    [Test]
+    public void CategoryPlausibility_LaptopListingWithRealisticFullPath_Matches()
+    {
+        var products = new[] { Laptop("lenovo-thinkpad-t14", "ThinkPad T14", "thinkpad t14") };
+        var matcher = new KnownProductMatcher(products);
+        var laptopCategory = new[] { "Elektronik", "Computer", "Laptops" };
+
+        Assert.That(matcher.Match("Lenovo ThinkPad T14 16GB RAM", categoryPath: laptopCategory)?.Id, Is.EqualTo("lenovo-thinkpad-t14"));
+    }
+
+    [Test]
+    public void CategoryPlausibility_ListingPathOnlyMarketplaceLabels_MatchAllowed()
+    {
+        // "Konsolen" is real marketplace-tree vocabulary that does not appear anywhere in
+        // UnifiedCategories.json at all - must not cause a false veto (treated as unknown category).
+        var products = new[] { Console("sony-ps4", "PlayStation 4", "ps4") };
+        var matcher = new KnownProductMatcher(products);
+        var marketplaceOnlyCategory = new[] { "Konsolen" };
+
+        Assert.That(matcher.Match("Sony PS4 500GB", categoryPath: marketplaceOnlyCategory)?.Id, Is.EqualTo("sony-ps4"));
+    }
+
+    [Test]
+    public void CategoryPlausibility_ListingPathOnlyGenericRoot_MatchAllowed()
+    {
+        var products = new[] { Gpu("nvidia-rtx-3060", "RTX 3060", "rtx 3060") };
+        var matcher = new KnownProductMatcher(products);
+        var rootOnlyCategory = new[] { "Elektronik" };
+
+        Assert.That(matcher.Match("MSI RTX 3060 12GB", categoryPath: rootOnlyCategory), Is.Not.Null);
+    }
+
+    [Test]
+    public void CategoryPlausibility_ClothingPathAgainstElectronicsProduct_DoesNotMatch()
+    {
+        var products = new[] { Phone("samsung-galaxy-s21", "Galaxy S21", "galaxy s21") };
+        var matcher = new KnownProductMatcher(products);
+        var clothingCategory = new[] { "Bekleidung & Accessoires", "Bekleidung", "Hosen" };
+
+        Assert.That(matcher.Match("Samsung Galaxy S21 128GB", categoryPath: clothingCategory), Is.Null);
     }
 
     [Test]
