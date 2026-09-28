@@ -14,6 +14,10 @@
       "aliases": [
         "Apple iPad (9th generation)",
         "iPad (9th generation)",
+        "iPad 9 Gen",
+        "iPad 9th Gen",
+        "iPad Gen 9",
+        "iPad Generation 9",
         "ipad 9th generation"
       ],
       "possibleAttributes": {
@@ -46,6 +50,10 @@
       "aliases": [
         "Apple iPad (10th generation)",
         "iPad (10th generation)",
+        "iPad 10 Gen",
+        "iPad 10th Gen",
+        "iPad Gen 10",
+        "iPad Generation 10",
         "ipad 10th generation"
       ],
       "possibleAttributes": {
@@ -75,6 +83,10 @@
       "aliases": [
         "Apple iPad Air (4th generation)",
         "iPad Air (4th generation)",
+        "iPad Air 4 Gen",
+        "iPad Air 4th Gen",
+        "iPad Air Gen 4",
+        "iPad Air Generation 4",
         "ipad air 4th generation"
       ],
       "possibleAttributes": {
@@ -104,6 +116,10 @@
       "aliases": [
         "Apple iPad Air (5th generation)",
         "iPad Air (5th generation)",
+        "iPad Air 5 Gen",
+        "iPad Air 5th Gen",
+        "iPad Air Gen 5",
+        "iPad Air Generation 5",
         "ipad air 5th generation"
       ],
       "possibleAttributes": {
@@ -132,7 +148,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple iPad Air 11-inch (M2)",
+        "iPad Air 11 M2",
+        "iPad Air 11 inch M2",
+        "iPad Air 11 zoll M2",
         "iPad Air 11-inch (M2)",
+        "iPad Air M2",
+        "iPad Air M2 11",
+        "iPad Air M2 11 inch",
+        "iPad Air M2 11 zoll",
         "ipad air m2 11"
       ],
       "possibleAttributes": {
@@ -147,7 +170,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "13"
+      ],
       "source": "seed:ios-device-list+apple-specs-2026-09"
     },
     {
@@ -163,7 +188,13 @@
       "vertical": "electronics",
       "aliases": [
         "Apple iPad Air 13-inch (M2)",
+        "iPad Air 13 M2",
+        "iPad Air 13 inch M2",
+        "iPad Air 13 zoll M2",
         "iPad Air 13-inch (M2)",
+        "iPad Air M2 13",
+        "iPad Air M2 13 inch",
+        "iPad Air M2 13 zoll",
         "ipad air m2 13"
       ],
       "possibleAttributes": {
@@ -195,6 +226,10 @@
       "aliases": [
         "Apple iPad mini (6th generation)",
         "iPad mini (6th generation)",
+        "iPad mini 6 Gen",
+        "iPad mini 6th Gen",
+        "iPad mini Gen 6",
+        "iPad mini Generation 6",
         "ipad mini 6th generation"
       ],
       "possibleAttributes": {
@@ -224,6 +259,10 @@
       "aliases": [
         "Apple iPad mini (7th generation)",
         "iPad mini (7th generation)",
+        "iPad mini 7 Gen",
+        "iPad mini 7th Gen",
+        "iPad mini Gen 7",
+        "iPad mini Generation 7",
         "ipad mini 7th generation"
       ],
       "possibleAttributes": {
@@ -254,6 +293,10 @@
       "aliases": [
         "Apple iPad Pro 11-inch (3rd generation)",
         "iPad Pro 11-inch (3rd generation)",
+        "iPad Pro 3 Gen",
+        "iPad Pro 3rd Gen",
+        "iPad Pro Gen 3",
+        "iPad Pro Generation 3",
         "ipad pro 11 3rd generation"
       ],
       "possibleAttributes": {
@@ -286,6 +329,10 @@
       "aliases": [
         "Apple iPad Pro 12.9-inch (5th generation)",
         "iPad Pro 12.9-inch (5th generation)",
+        "iPad Pro 5 Gen",
+        "iPad Pro 5th Gen",
+        "iPad Pro Gen 5",
+        "iPad Pro Generation 5",
         "ipad pro 12.9 5th generation"
       ],
       "possibleAttributes": {
@@ -317,7 +364,14 @@
       "vertical": "electronics",
       "aliases": [
         "Apple iPad Pro 11-inch (M4)",
+        "iPad Pro 11 M4",
+        "iPad Pro 11 inch M4",
+        "iPad Pro 11 zoll M4",
         "iPad Pro 11-inch (M4)",
+        "iPad Pro M4",
+        "iPad Pro M4 11",
+        "iPad Pro M4 11 inch",
+        "iPad Pro M4 11 zoll",
         "ipad pro m4 11"
       ],
       "possibleAttributes": {
@@ -332,7 +386,9 @@
         ],
         "color": []
       },
-      "excludeTerms": [],
+      "excludeTerms": [
+        "13"
+      ],
       "source": "seed:ios-device-list+apple-specs-2026-09"
     },
     {
@@ -348,7 +404,13 @@
       "vertical": "electronics",
       "aliases": [
         "Apple iPad Pro 13-inch (M4)",
+        "iPad Pro 13 M4",
+        "iPad Pro 13 inch M4",
+        "iPad Pro 13 zoll M4",
         "iPad Pro 13-inch (M4)",
+        "iPad Pro M4 13",
+        "iPad Pro M4 13 inch",
+        "iPad Pro M4 13 zoll",
         "ipad pro m4 13"
       ],
       "possibleAttributes": {

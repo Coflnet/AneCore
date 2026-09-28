@@ -12,7 +12,18 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch (1st generation)"
+        "Apple Watch (1st generation)",
+        "Apple Watch 1 Gen",
+        "Apple Watch 1st Gen",
+        "Apple Watch Gen 1",
+        "Apple Watch Generation 1",
+        "Apple iWatch (1st generation)",
+        "Watch (1st generation)",
+        "Watch 1 Gen",
+        "Watch 1st Gen",
+        "Watch Gen 1",
+        "Watch Generation 1",
+        "iWatch (1st generation)"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -46,7 +57,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch SE"
+        "Apple Watch SE",
+        "Apple iWatch SE",
+        "Watch SE",
+        "iWatch SE"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -63,7 +77,9 @@
         ]
       },
       "excludeTerms": [
-        "2"
+        "2",
+        "gen",
+        "generation"
       ],
       "source": "seed:ios-device-list+apple-specs-2026-09"
     },
@@ -79,7 +95,18 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch SE (2nd generation)"
+        "Apple Watch SE (2nd generation)",
+        "Apple Watch SE 2 Gen",
+        "Apple Watch SE 2nd Gen",
+        "Apple Watch SE Gen 2",
+        "Apple Watch SE Generation 2",
+        "Apple iWatch SE (2nd generation)",
+        "Watch SE (2nd generation)",
+        "Watch SE 2 Gen",
+        "Watch SE 2nd Gen",
+        "Watch SE Gen 2",
+        "Watch SE Generation 2",
+        "iWatch SE (2nd generation)"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -110,7 +137,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 1"
+        "Apple Watch Series 1",
+        "Apple iWatch Series 1",
+        "Watch Series 1",
+        "iWatch Series 1"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -142,7 +172,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 10"
+        "Apple Watch Series 10",
+        "Apple iWatch Series 10",
+        "Watch Series 10",
+        "iWatch Series 10"
       ],
       "possibleAttributes": {
         "screen_size": [],
@@ -166,7 +199,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 2"
+        "Apple Watch Series 2",
+        "Apple iWatch Series 2",
+        "Watch Series 2",
+        "iWatch Series 2"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -200,7 +236,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 3"
+        "Apple Watch Series 3",
+        "Apple iWatch Series 3",
+        "Watch Series 3",
+        "iWatch Series 3"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -234,7 +273,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 4"
+        "Apple Watch Series 4",
+        "Apple iWatch Series 4",
+        "Watch Series 4",
+        "iWatch Series 4"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -266,7 +308,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 5"
+        "Apple Watch Series 5",
+        "Apple iWatch Series 5",
+        "Watch Series 5",
+        "iWatch Series 5"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -301,7 +346,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 6"
+        "Apple Watch Series 6",
+        "Apple iWatch Series 6",
+        "Watch Series 6",
+        "iWatch Series 6"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -337,7 +385,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 7"
+        "Apple Watch Series 7",
+        "Apple iWatch Series 7",
+        "Watch Series 7",
+        "iWatch Series 7"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -375,7 +426,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 8"
+        "Apple Watch Series 8",
+        "Apple iWatch Series 8",
+        "Watch Series 8",
+        "iWatch Series 8"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -410,7 +464,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Series 9"
+        "Apple Watch Series 9",
+        "Apple iWatch Series 9",
+        "Watch Series 9",
+        "iWatch Series 9"
       ],
       "possibleAttributes": {
         "screen_size": [],
@@ -434,7 +491,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Ultra"
+        "Apple Watch Ultra",
+        "Apple iWatch Ultra",
+        "Watch Ultra",
+        "iWatch Ultra"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -464,7 +524,10 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Apple Watch Ultra 2"
+        "Apple Watch Ultra 2",
+        "Apple iWatch Ultra 2",
+        "Watch Ultra 2",
+        "iWatch Ultra 2"
       ],
       "possibleAttributes": {
         "screen_size": [],
