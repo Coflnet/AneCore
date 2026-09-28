@@ -356,4 +356,32 @@ public class ProductTableService
             .ExecuteAsync();
         return result.ToList();
     }
+
+    /// <summary>
+    /// Pages through the distinct <c>product_seo_id</c> partition keys of <c>product_listings</c>, via a
+    /// raw CQL <c>SELECT DISTINCT</c> (the LINQ mapper has no way to express "distinct partition keys" -
+    /// see the Products table LINQ mappings above). The <c>products</c> table is ~44x larger on disk than
+    /// <c>product_listings</c> and ~99.7% of products in <c>products</c>-token order have no offers left
+    /// at all (offers expire in 30-90 days, products live 365), so both the periodic maintenance pass
+    /// (<c>ProductGrouper.ProcessProductsBackgroundTasksAsync</c>) and the one-time regroup scan
+    /// (<c>RegroupRunService.RunScanAsync</c>) drive their scan off this instead of paging <c>products</c>
+    /// directly - shared here so both use the exact same query. A caller pairs this with
+    /// <see cref="GetProductAsync"/> per key and must treat a missing product row as an orphan (expected -
+    /// old products get pruned from <c>products</c> before their trailing offer rows expire).
+    /// </summary>
+    public async Task<(IReadOnlyList<string> SeoIds, byte[]? PagingState)> GetProductListingPartitionKeysPageAsync(
+        int pageSize, byte[]? pagingState)
+    {
+        var statement = new SimpleStatement("SELECT DISTINCT product_seo_id FROM product_listings")
+            .SetPageSize(pageSize);
+        if (pagingState != null)
+            statement = statement.SetPagingState(pagingState);
+
+        var rowSet = await session.ExecuteAsync(statement);
+        var seoIds = rowSet
+            .Select(row => row.GetValue<string>("product_seo_id"))
+            .Where(seoId => !string.IsNullOrEmpty(seoId))
+            .ToList();
+        return (seoIds, rowSet.PagingState);
+    }
 }
