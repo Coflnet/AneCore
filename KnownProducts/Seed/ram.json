@@ -1,0 +1,613 @@
+{
+  "products": [
+    {
+      "id": "corsair-dominator",
+      "brand": "Corsair",
+      "model": "Corsair Dominator",
+      "name": "Corsair Dominator",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "gt",
+        "gtx",
+        "platinum",
+        "titanium"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-gt",
+      "brand": "Corsair",
+      "model": "Corsair Dominator GT",
+      "name": "Corsair Dominator GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-gtx",
+      "brand": "Corsair",
+      "model": "Corsair Dominator GTX",
+      "name": "Corsair Dominator GTX",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator GTX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum",
+      "name": "Corsair Dominator Platinum",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "blackout",
+        "chrome",
+        "rgb",
+        "rog",
+        "special"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-blackout",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum Blackout",
+      "name": "Corsair Dominator Platinum Blackout",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum Blackout"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-chrome",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum Chrome",
+      "name": "Corsair Dominator Platinum Chrome",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum Chrome"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-rgb",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum RGB",
+      "name": "Corsair Dominator Platinum RGB",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum RGB"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "first"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-rgb-first-edition",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum RGB First Edition",
+      "name": "Corsair Dominator Platinum RGB First Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum RGB First Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-rog",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum ROG",
+      "name": "Corsair Dominator Platinum ROG",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum ROG"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "edition"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-rog-edition",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum ROG Edition",
+      "name": "Corsair Dominator Platinum ROG Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum ROG Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-special-edition",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum Special Edition",
+      "name": "Corsair Dominator Platinum Special Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum Special Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "contrast"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-platinum-special-edition-contrast",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Platinum Special Edition CONTRAST",
+      "name": "Corsair Dominator Platinum Special Edition CONTRAST",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Platinum Special Edition CONTRAST"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-titanium",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Titanium",
+      "name": "Corsair Dominator Titanium",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Titanium"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "first"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-dominator-titanium-first-edition",
+      "brand": "Corsair",
+      "model": "Corsair Dominator Titanium First Edition",
+      "name": "Corsair Dominator Titanium First Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Dominator Titanium First Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance",
+      "name": "Corsair Vengeance",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "led",
+        "lp",
+        "lpx",
+        "performance",
+        "pro",
+        "rgb"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-led",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance LED",
+      "name": "Corsair Vengeance LED",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance LED"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-lp",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance LP",
+      "name": "Corsair Vengeance LP",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance LP"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-lpx",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance LPX",
+      "name": "Corsair Vengeance LPX",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance LPX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-performance",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance Performance",
+      "name": "Corsair Vengeance Performance",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance Performance"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-pro",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance Pro",
+      "name": "Corsair Vengeance Pro",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-rgb",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance RGB",
+      "name": "Corsair Vengeance RGB",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance RGB"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "pro",
+        "rs",
+        "rt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-rgb-pro",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance RGB Pro",
+      "name": "Corsair Vengeance RGB Pro",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance RGB Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "sl"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-rgb-pro-sl",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance RGB Pro SL",
+      "name": "Corsair Vengeance RGB Pro SL",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance RGB Pro SL"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-rgb-rs",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance RGB RS",
+      "name": "Corsair Vengeance RGB RS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance RGB RS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "corsair-vengeance-rgb-rt",
+      "brand": "Corsair",
+      "model": "Corsair Vengeance RGB RT",
+      "name": "Corsair Vengeance RGB RT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Corsair Vengeance RGB RT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "g-skill-ripjaws",
+      "brand": "G.Skill",
+      "model": "G.Skill Ripjaws",
+      "name": "G.Skill Ripjaws",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "G.Skill Ripjaws"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "s",
+        "turbulence",
+        "v",
+        "x",
+        "z"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "g-skill-ripjaws-m5-neo-rgb",
+      "brand": "G.Skill",
+      "model": "G.Skill Ripjaws M5 Neo RGB",
+      "name": "G.Skill Ripjaws M5 Neo RGB",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "G.Skill Ripjaws M5 Neo RGB"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "g-skill-ripjaws-m5-rgb",
+      "brand": "G.Skill",
+      "model": "G.Skill Ripjaws M5 RGB",
+      "name": "G.Skill Ripjaws M5 RGB",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "G.Skill Ripjaws M5 RGB"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "g-skill-ripjaws-plus-turbulence-ii",
+      "brand": "G.Skill",
+      "model": "G.Skill Ripjaws + Turbulence II",
+      "name": "G.Skill Ripjaws + Turbulence II",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "G.Skill Ripjaws + Turbulence II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "g-skill-ripjaws-s",
+      "brand": "G.Skill",
+      "model": "G.Skill Ripjaws S",
+      "name": "G.Skill Ripjaws S",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Speicher",
+        "RAM"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "G.Skill Ripjaws S"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

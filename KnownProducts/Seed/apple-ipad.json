@@ -1,0 +1,399 @@
+{
+  "products": [
+    {
+      "id": "apple-ipad-9th-generation",
+      "brand": "Apple",
+      "model": "iPad (9th generation)",
+      "name": "Apple iPad (9th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad (9th generation)",
+        "iPad (9th generation)",
+        "ipad 9th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": [
+          "Silver",
+          "Space Gray"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-10th-generation",
+      "brand": "Apple",
+      "model": "iPad (10th generation)",
+      "name": "Apple iPad (10th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad (10th generation)",
+        "iPad (10th generation)",
+        "ipad 10th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-air-4th-generation",
+      "brand": "Apple",
+      "model": "iPad Air (4th generation)",
+      "name": "Apple iPad Air (4th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Air (4th generation)",
+        "iPad Air (4th generation)",
+        "ipad air 4th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-air-5th-generation",
+      "brand": "Apple",
+      "model": "iPad Air (5th generation)",
+      "name": "Apple iPad Air (5th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Air (5th generation)",
+        "iPad Air (5th generation)",
+        "ipad air 5th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-air-11-inch-m2",
+      "brand": "Apple",
+      "model": "iPad Air 11-inch (M2)",
+      "name": "Apple iPad Air 11-inch (M2)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Air 11-inch (M2)",
+        "iPad Air 11-inch (M2)",
+        "ipad air m2 11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-air-13-inch-m2",
+      "brand": "Apple",
+      "model": "iPad Air 13-inch (M2)",
+      "name": "Apple iPad Air 13-inch (M2)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Air 13-inch (M2)",
+        "iPad Air 13-inch (M2)",
+        "ipad air m2 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-mini-6th-generation",
+      "brand": "Apple",
+      "model": "iPad mini (6th generation)",
+      "name": "Apple iPad mini (6th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad mini (6th generation)",
+        "iPad mini (6th generation)",
+        "ipad mini 6th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-mini-7th-generation",
+      "brand": "Apple",
+      "model": "iPad mini (7th generation)",
+      "name": "Apple iPad mini (7th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad mini (7th generation)",
+        "iPad mini (7th generation)",
+        "ipad mini 7th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-pro-11-inch-3rd-generation",
+      "brand": "Apple",
+      "model": "iPad Pro 11-inch (3rd generation)",
+      "name": "Apple iPad Pro 11-inch (3rd generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Pro 11-inch (3rd generation)",
+        "iPad Pro 11-inch (3rd generation)",
+        "ipad pro 11 3rd generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-pro-12-9-inch-5th-generation",
+      "brand": "Apple",
+      "model": "iPad Pro 12.9-inch (5th generation)",
+      "name": "Apple iPad Pro 12.9-inch (5th generation)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Pro 12.9-inch (5th generation)",
+        "iPad Pro 12.9-inch (5th generation)",
+        "ipad pro 12.9 5th generation"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-pro-11-inch-m4",
+      "brand": "Apple",
+      "model": "iPad Pro 11-inch (M4)",
+      "name": "Apple iPad Pro 11-inch (M4)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Pro 11-inch (M4)",
+        "iPad Pro 11-inch (M4)",
+        "ipad pro m4 11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-pro-13-inch-m4",
+      "brand": "Apple",
+      "model": "iPad Pro 13-inch (M4)",
+      "name": "Apple iPad Pro 13-inch (M4)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad Pro 13-inch (M4)",
+        "iPad Pro 13-inch (M4)",
+        "ipad pro m4 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-ipad-a16",
+      "brand": "Apple",
+      "model": "iPad (A16)",
+      "name": "Apple iPad (A16)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Tablet-PCs"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iPad (A16)",
+        "iPad (A16)",
+        "ipad a16"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "os": [
+          "ipados"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    }
+  ]
+}

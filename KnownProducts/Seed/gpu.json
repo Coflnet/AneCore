@@ -1,0 +1,1624 @@
+{
+  "products": [
+    {
+      "id": "amd-radeon-rx-5500-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 5500 XT",
+      "name": "AMD Radeon RX 5500 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 5500 XT",
+        "RX 5500 XT",
+        "Radeon RX 5500 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-5600-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 5600 XT",
+      "name": "AMD Radeon RX 5600 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 5600 XT",
+        "RX 5600 XT",
+        "Radeon RX 5600 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-5700",
+      "brand": "AMD",
+      "model": "Radeon RX 5700",
+      "name": "AMD Radeon RX 5700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 5700",
+        "RX 5700",
+        "Radeon RX 5700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-5700-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 5700 XT",
+      "name": "AMD Radeon RX 5700 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 5700 XT",
+        "RX 5700 XT",
+        "Radeon RX 5700 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6400",
+      "brand": "AMD",
+      "model": "Radeon RX 6400",
+      "name": "AMD Radeon RX 6400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6400",
+        "RX 6400",
+        "Radeon RX 6400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6500-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6500 XT",
+      "name": "AMD Radeon RX 6500 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6500 XT",
+        "RX 6500 XT",
+        "Radeon RX 6500 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6600",
+      "brand": "AMD",
+      "model": "Radeon RX 6600",
+      "name": "AMD Radeon RX 6600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6600",
+        "RX 6600",
+        "Radeon RX 6600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6600-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6600 XT",
+      "name": "AMD Radeon RX 6600 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6600 XT",
+        "RX 6600 XT",
+        "Radeon RX 6600 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6650-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6650 XT",
+      "name": "AMD Radeon RX 6650 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6650 XT",
+        "RX 6650 XT",
+        "Radeon RX 6650 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6700",
+      "brand": "AMD",
+      "model": "Radeon RX 6700",
+      "name": "AMD Radeon RX 6700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6700",
+        "RX 6700",
+        "Radeon RX 6700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6700-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6700 XT",
+      "name": "AMD Radeon RX 6700 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6700 XT",
+        "RX 6700 XT",
+        "Radeon RX 6700 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6750-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6750 XT",
+      "name": "AMD Radeon RX 6750 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6750 XT",
+        "RX 6750 XT",
+        "Radeon RX 6750 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6800",
+      "brand": "AMD",
+      "model": "Radeon RX 6800",
+      "name": "AMD Radeon RX 6800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6800",
+        "RX 6800",
+        "Radeon RX 6800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6800-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6800 XT",
+      "name": "AMD Radeon RX 6800 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6800 XT",
+        "RX 6800 XT",
+        "Radeon RX 6800 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6900-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6900 XT",
+      "name": "AMD Radeon RX 6900 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6900 XT",
+        "RX 6900 XT",
+        "Radeon RX 6900 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-6950-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6950 XT",
+      "name": "AMD Radeon RX 6950 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 6950 XT",
+        "RX 6950 XT",
+        "Radeon RX 6950 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7600",
+      "brand": "AMD",
+      "model": "Radeon RX 7600",
+      "name": "AMD Radeon RX 7600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7600",
+        "RX 7600",
+        "Radeon RX 7600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7600-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 7600 XT",
+      "name": "AMD Radeon RX 7600 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7600 XT",
+        "RX 7600 XT",
+        "Radeon RX 7600 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7700-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 7700 XT",
+      "name": "AMD Radeon RX 7700 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7700 XT",
+        "RX 7700 XT",
+        "Radeon RX 7700 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7800-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 7800 XT",
+      "name": "AMD Radeon RX 7800 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7800 XT",
+        "RX 7800 XT",
+        "Radeon RX 7800 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7900-gre",
+      "brand": "AMD",
+      "model": "Radeon RX 7900 GRE",
+      "name": "AMD Radeon RX 7900 GRE",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7900 GRE",
+        "RX 7900 GRE",
+        "Radeon RX 7900 GRE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7900-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 7900 XT",
+      "name": "AMD Radeon RX 7900 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7900 XT",
+        "RX 7900 XT",
+        "Radeon RX 7900 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-7900-xtx",
+      "brand": "AMD",
+      "model": "Radeon RX 7900 XTX",
+      "name": "AMD Radeon RX 7900 XTX",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 7900 XTX",
+        "RX 7900 XTX",
+        "Radeon RX 7900 XTX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-9060-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 9060 XT",
+      "name": "AMD Radeon RX 9060 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 9060 XT",
+        "RX 9060 XT",
+        "Radeon RX 9060 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-9070",
+      "brand": "AMD",
+      "model": "Radeon RX 9070",
+      "name": "AMD Radeon RX 9070",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 9070",
+        "RX 9070",
+        "Radeon RX 9070"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-radeon-rx-9070-xt",
+      "brand": "AMD",
+      "model": "Radeon RX 9070 XT",
+      "name": "AMD Radeon RX 9070 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 9070 XT",
+        "RX 9070 XT",
+        "Radeon RX 9070 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-a310",
+      "brand": "Intel",
+      "model": "Arc A310",
+      "name": "Intel Arc A310",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc A310",
+        "Intel Arc A310"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-a380",
+      "brand": "Intel",
+      "model": "Arc A380",
+      "name": "Intel Arc A380",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc A380",
+        "Intel Arc A380"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-a580",
+      "brand": "Intel",
+      "model": "Arc A580",
+      "name": "Intel Arc A580",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc A580",
+        "Intel Arc A580"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-a750",
+      "brand": "Intel",
+      "model": "Arc A750",
+      "name": "Intel Arc A750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc A750",
+        "Intel Arc A750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-a770",
+      "brand": "Intel",
+      "model": "Arc A770",
+      "name": "Intel Arc A770",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc A770",
+        "Intel Arc A770"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-b570",
+      "brand": "Intel",
+      "model": "Arc B570",
+      "name": "Intel Arc B570",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc B570",
+        "Intel Arc B570"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-arc-b580",
+      "brand": "Intel",
+      "model": "Arc B580",
+      "name": "Intel Arc B580",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc B580",
+        "Intel Arc B580"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1630",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1630",
+      "name": "Nvidia GTX 1630",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1630",
+        "GeForce GTX 1630",
+        "Nvidia GTX 1630"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1650-g5",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1650 G5",
+      "name": "Nvidia GTX 1650 G5",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1650 G5",
+        "GeForce GTX 1650 G5",
+        "Nvidia GTX 1650 G5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1650-g6",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1650 G6",
+      "name": "Nvidia GTX 1650 G6",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1650 G6",
+        "GeForce GTX 1650 G6",
+        "Nvidia GTX 1650 G6"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1650-super",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1650 SUPER",
+      "name": "Nvidia GTX 1650 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1650 SUPER",
+        "GeForce GTX 1650 SUPER",
+        "Nvidia GTX 1650 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1660",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1660",
+      "name": "Nvidia GTX 1660",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1660",
+        "GeForce GTX 1660",
+        "Nvidia GTX 1660"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1660-super",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1660 SUPER",
+      "name": "Nvidia GTX 1660 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1660 SUPER",
+        "GeForce GTX 1660 SUPER",
+        "Nvidia GTX 1660 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-gtx-1660-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 1660 Ti",
+      "name": "Nvidia GTX 1660 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 1660 Ti",
+        "GeForce GTX 1660 Ti",
+        "Nvidia GTX 1660 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2060",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2060",
+      "name": "Nvidia RTX 2060",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2060",
+        "Nvidia RTX 2060",
+        "RTX 2060"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2060-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2060 SUPER",
+      "name": "Nvidia RTX 2060 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2060 SUPER",
+        "Nvidia RTX 2060 SUPER",
+        "RTX 2060 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2070",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2070",
+      "name": "Nvidia RTX 2070",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2070",
+        "Nvidia RTX 2070",
+        "RTX 2070"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2070-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2070 SUPER",
+      "name": "Nvidia RTX 2070 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2070 SUPER",
+        "Nvidia RTX 2070 SUPER",
+        "RTX 2070 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2080",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2080",
+      "name": "Nvidia RTX 2080",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2080",
+        "Nvidia RTX 2080",
+        "RTX 2080"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2080-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2080 SUPER",
+      "name": "Nvidia RTX 2080 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2080 SUPER",
+        "Nvidia RTX 2080 SUPER",
+        "RTX 2080 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-2080-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 2080 Ti",
+      "name": "Nvidia RTX 2080 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 2080 Ti",
+        "Nvidia RTX 2080 Ti",
+        "RTX 2080 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3050",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3050",
+      "name": "Nvidia RTX 3050",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3050",
+        "Nvidia RTX 3050",
+        "RTX 3050"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3060",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3060",
+      "name": "Nvidia RTX 3060",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3060",
+        "Nvidia RTX 3060",
+        "RTX 3060"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3060-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3060 Ti",
+      "name": "Nvidia RTX 3060 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3060 Ti",
+        "Nvidia RTX 3060 Ti",
+        "RTX 3060 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3070",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3070",
+      "name": "Nvidia RTX 3070",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3070",
+        "Nvidia RTX 3070",
+        "RTX 3070"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3070-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3070 Ti",
+      "name": "Nvidia RTX 3070 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3070 Ti",
+        "Nvidia RTX 3070 Ti",
+        "RTX 3070 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3080",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3080",
+      "name": "Nvidia RTX 3080",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3080",
+        "Nvidia RTX 3080",
+        "RTX 3080"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3080-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3080 Ti",
+      "name": "Nvidia RTX 3080 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3080 Ti",
+        "Nvidia RTX 3080 Ti",
+        "RTX 3080 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3090",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3090",
+      "name": "Nvidia RTX 3090",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3090",
+        "Nvidia RTX 3090",
+        "RTX 3090"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-3090-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 3090 Ti",
+      "name": "Nvidia RTX 3090 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 3090 Ti",
+        "Nvidia RTX 3090 Ti",
+        "RTX 3090 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4060",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4060",
+      "name": "Nvidia RTX 4060",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4060",
+        "Nvidia RTX 4060",
+        "RTX 4060"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4060-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4060 Ti",
+      "name": "Nvidia RTX 4060 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4060 Ti",
+        "Nvidia RTX 4060 Ti",
+        "RTX 4060 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4070",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4070",
+      "name": "Nvidia RTX 4070",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4070",
+        "Nvidia RTX 4070",
+        "RTX 4070"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4070-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4070 SUPER",
+      "name": "Nvidia RTX 4070 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4070 SUPER",
+        "Nvidia RTX 4070 SUPER",
+        "RTX 4070 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4070-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4070 Ti",
+      "name": "Nvidia RTX 4070 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4070 Ti",
+        "Nvidia RTX 4070 Ti",
+        "RTX 4070 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4070-ti-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4070 Ti SUPER",
+      "name": "Nvidia RTX 4070 Ti SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4070 Ti SUPER",
+        "Nvidia RTX 4070 Ti SUPER",
+        "RTX 4070 Ti SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4080",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4080",
+      "name": "Nvidia RTX 4080",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4080",
+        "Nvidia RTX 4080",
+        "RTX 4080"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "super"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4080-super",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4080 SUPER",
+      "name": "Nvidia RTX 4080 SUPER",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4080 SUPER",
+        "Nvidia RTX 4080 SUPER",
+        "RTX 4080 SUPER"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-4090",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 4090",
+      "name": "Nvidia RTX 4090",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 4090",
+        "Nvidia RTX 4090",
+        "RTX 4090"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5050",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5050",
+      "name": "Nvidia RTX 5050",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5050",
+        "Nvidia RTX 5050",
+        "RTX 5050"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5060",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5060",
+      "name": "Nvidia RTX 5060",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5060",
+        "Nvidia RTX 5060",
+        "RTX 5060"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5060-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5060 Ti",
+      "name": "Nvidia RTX 5060 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5060 Ti",
+        "Nvidia RTX 5060 Ti",
+        "RTX 5060 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5070",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5070",
+      "name": "Nvidia RTX 5070",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5070",
+        "Nvidia RTX 5070",
+        "RTX 5070"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5070-ti",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5070 Ti",
+      "name": "Nvidia RTX 5070 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5070 Ti",
+        "Nvidia RTX 5070 Ti",
+        "RTX 5070 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5080",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5080",
+      "name": "Nvidia RTX 5080",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5080",
+        "Nvidia RTX 5080",
+        "RTX 5080"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "nvidia-rtx-5090",
+      "brand": "Nvidia",
+      "model": "GeForce RTX 5090",
+      "name": "Nvidia RTX 5090",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce RTX 5090",
+        "Nvidia RTX 5090",
+        "RTX 5090"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

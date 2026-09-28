@@ -1,0 +1,1877 @@
+{
+  "products": [
+    {
+      "id": "samsung-galaxy-note-10",
+      "brand": "Samsung",
+      "model": "Galaxy Note 10",
+      "name": "Samsung Galaxy Note 10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Note 10",
+        "Samsung Galaxy Note 10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "lite"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-note-10-lite",
+      "brand": "Samsung",
+      "model": "Galaxy Note 10 Lite",
+      "name": "Samsung Galaxy Note 10 Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Note 10 Lite",
+        "SM-N770F",
+        "Samsung Galaxy Note 10 Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-note-10-plus",
+      "brand": "Samsung",
+      "model": "Galaxy Note 10+",
+      "name": "Samsung Galaxy Note 10+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Note 10+",
+        "SM-N975D",
+        "SM-N976Q",
+        "Samsung Galaxy Note 10+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "lite"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-note-20",
+      "brand": "Samsung",
+      "model": "Galaxy Note 20",
+      "name": "Samsung Galaxy Note 20",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Note 20",
+        "SM-N980F",
+        "SM-N9810",
+        "SM-N981B",
+        "SM-N981N",
+        "SM-N981U",
+        "SM-N981U1",
+        "SM-N981W",
+        "Samsung Galaxy Note 20"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-note-20-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy Note 20 Ultra",
+      "name": "Samsung Galaxy Note 20 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Note 20 Ultra",
+        "SM-N985F",
+        "SM-N9860",
+        "SM-N986B",
+        "SM-N986C",
+        "SM-N986D",
+        "SM-N986J",
+        "SM-N986N",
+        "SM-N986U",
+        "SM-N986U1",
+        "SM-N986W",
+        "Samsung Galaxy Note 20 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s10",
+      "brand": "Samsung",
+      "model": "Galaxy S10",
+      "name": "Samsung Galaxy S10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S10",
+        "Samsung Galaxy S10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s10-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S10+",
+      "name": "Samsung Galaxy S10+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S10+",
+        "Samsung Galaxy S10+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s20",
+      "brand": "Samsung",
+      "model": "Galaxy S20",
+      "name": "Samsung Galaxy S20",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S20",
+        "SM-G980F",
+        "SM-G9810",
+        "SM-G981B",
+        "SM-G981D",
+        "SM-G981J",
+        "SM-G981N",
+        "SM-G981U",
+        "SM-G981U1",
+        "SM-G981W",
+        "Samsung Galaxy S20"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s20-fe",
+      "brand": "Samsung",
+      "model": "Galaxy S20 FE",
+      "name": "Samsung Galaxy S20 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S20 FE",
+        "SM-G780F",
+        "SM-G780G",
+        "SM-G7810",
+        "SM-G781B",
+        "SM-G781N",
+        "SM-G781U",
+        "SM-G781U1",
+        "SM-G781W",
+        "Samsung Galaxy S20 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s20-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S20+",
+      "name": "Samsung Galaxy S20+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S20+",
+        "SM-G985F",
+        "SM-G9860",
+        "SM-G986B",
+        "SM-G986DS",
+        "SM-G986J",
+        "SM-G986N",
+        "SM-G986U",
+        "SM-G986U1",
+        "SM-G986W",
+        "Samsung Galaxy S20+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s20-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S20 Ultra",
+      "name": "Samsung Galaxy S20 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S20 Ultra",
+        "SM-G9880",
+        "SM-G988B",
+        "SM-G988N",
+        "SM-G988Q",
+        "SM-G988U",
+        "SM-G988U1",
+        "SM-G988W",
+        "Samsung Galaxy S20 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s21",
+      "brand": "Samsung",
+      "model": "Galaxy S21",
+      "name": "Samsung Galaxy S21",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S21",
+        "SM-G9910",
+        "SM-G991B",
+        "SM-G991D",
+        "SM-G991J",
+        "SM-G991N",
+        "SM-G991U",
+        "SM-G991U1",
+        "SM-G991W",
+        "Samsung Galaxy S21"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s21-fe",
+      "brand": "Samsung",
+      "model": "Galaxy S21 FE",
+      "name": "Samsung Galaxy S21 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S21 FE",
+        "SM-G9900",
+        "SM-G990B",
+        "SM-G990B2",
+        "SM-G990E",
+        "SM-G990N",
+        "SM-G990U",
+        "SM-G990U1",
+        "SM-G990W",
+        "Samsung Galaxy S21 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s21-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S21+",
+      "name": "Samsung Galaxy S21+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S21+",
+        "SM-G9960",
+        "SM-G996B",
+        "SM-G996J",
+        "SM-G996N",
+        "SM-G996U",
+        "SM-G996U1",
+        "SM-G996W",
+        "Samsung Galaxy S21+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "237GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s21-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S21 Ultra",
+      "name": "Samsung Galaxy S21 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S21 Ultra",
+        "SM-G9980",
+        "SM-G998B",
+        "SM-G998D",
+        "SM-G998N",
+        "SM-G998U",
+        "SM-G998U1",
+        "SM-G998W",
+        "Samsung Galaxy S21 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s22",
+      "brand": "Samsung",
+      "model": "Galaxy S22",
+      "name": "Samsung Galaxy S22",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S22",
+        "SM-S9010",
+        "SM-S901B",
+        "SM-S901D",
+        "SM-S901E",
+        "SM-S901J",
+        "SM-S901N",
+        "SM-S901U",
+        "SM-S901U1",
+        "SM-S901W",
+        "Samsung Galaxy S22"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s22-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S22+",
+      "name": "Samsung Galaxy S22+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S22+",
+        "SM-S9060",
+        "SM-S906B",
+        "SM-S906E",
+        "SM-S906N",
+        "SM-S906U",
+        "SM-S906U1",
+        "SM-S906W",
+        "Samsung Galaxy S22+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s22-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S22 Ultra",
+      "name": "Samsung Galaxy S22 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S22 Ultra",
+        "SM-S9080",
+        "SM-S908B",
+        "SM-S908D",
+        "SM-S908E",
+        "SM-S908J",
+        "SM-S908N",
+        "SM-S908U",
+        "SM-S908U1",
+        "SM-S908W",
+        "Samsung Galaxy S22 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s23",
+      "brand": "Samsung",
+      "model": "Galaxy S23",
+      "name": "Samsung Galaxy S23",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S23",
+        "SM-S9110",
+        "SM-S911B",
+        "SM-S911C",
+        "SM-S911D",
+        "SM-S911J",
+        "SM-S911N",
+        "SM-S911U",
+        "SM-S911U1",
+        "SM-S911W",
+        "Samsung Galaxy S23"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s23-fe",
+      "brand": "Samsung",
+      "model": "Galaxy S23 FE",
+      "name": "Samsung Galaxy S23 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S23 FE",
+        "SM-S7110",
+        "SM-S711B",
+        "SM-S711J",
+        "SM-S711N",
+        "SM-S711U",
+        "SM-S711U1",
+        "SM-S711W",
+        "Samsung Galaxy S23 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s23-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S23+",
+      "name": "Samsung Galaxy S23+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S23+",
+        "SM-S9160",
+        "SM-S916B",
+        "SM-S916N",
+        "SM-S916U",
+        "SM-S916U1",
+        "SM-S916W",
+        "Samsung Galaxy S23+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s23-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S23 Ultra",
+      "name": "Samsung Galaxy S23 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S23 Ultra",
+        "SM-S9180",
+        "SM-S918B",
+        "SM-S918D",
+        "SM-S918J",
+        "SM-S918N",
+        "SM-S918Q",
+        "SM-S918U",
+        "SM-S918U1",
+        "SM-S918W",
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s24",
+      "brand": "Samsung",
+      "model": "Galaxy S24",
+      "name": "Samsung Galaxy S24",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S24",
+        "SM-S9210",
+        "SM-S921B",
+        "SM-S921D",
+        "SM-S921J",
+        "SM-S921N",
+        "SM-S921Q",
+        "SM-S921U",
+        "SM-S921U1",
+        "SM-S921W",
+        "Samsung Galaxy S24"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s24-fe",
+      "brand": "Samsung",
+      "model": "Galaxy S24 FE",
+      "name": "Samsung Galaxy S24 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S24 FE",
+        "SM-S7210",
+        "SM-S721B",
+        "SM-S721J",
+        "SM-S721N",
+        "SM-S721Q",
+        "SM-S721U",
+        "SM-S721U1",
+        "SM-S721W",
+        "Samsung Galaxy S24 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s24-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S24+",
+      "name": "Samsung Galaxy S24+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S24+",
+        "SM-S9260",
+        "SM-S926B",
+        "SM-S926N",
+        "SM-S926U",
+        "SM-S926U1",
+        "SM-S926W",
+        "Samsung Galaxy S24+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s24-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S24 Ultra",
+      "name": "Samsung Galaxy S24 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S24 Ultra",
+        "SM-S9280",
+        "SM-S928B",
+        "SM-S928D",
+        "SM-S928J",
+        "SM-S928N",
+        "SM-S928Q",
+        "SM-S928U",
+        "SM-S928U1",
+        "SM-S928W",
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s25",
+      "brand": "Samsung",
+      "model": "Galaxy S25",
+      "name": "Samsung Galaxy S25",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S25",
+        "SM-S9310",
+        "SM-S931B",
+        "SM-S931D",
+        "SM-S931J",
+        "SM-S931N",
+        "SM-S931Q",
+        "SM-S931U",
+        "SM-S931U1",
+        "SM-S931W",
+        "SM-S931Z",
+        "Samsung Galaxy S25"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "edge",
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s25-edge",
+      "brand": "Samsung",
+      "model": "Galaxy S25 Edge",
+      "name": "Samsung Galaxy S25 Edge",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S25 Edge",
+        "SM-S9370",
+        "SM-S937B",
+        "SM-S937N",
+        "SM-S937U",
+        "SM-S937U1",
+        "SM-S937W",
+        "Samsung Galaxy S25 Edge"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s25-fe",
+      "brand": "Samsung",
+      "model": "Galaxy S25 FE",
+      "name": "Samsung Galaxy S25 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S25 FE",
+        "SM-S731B",
+        "SM-S731N",
+        "SM-S731U",
+        "SM-S731U1",
+        "SM-S731W",
+        "Samsung Galaxy S25 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s25-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S25+",
+      "name": "Samsung Galaxy S25+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S25+",
+        "SM-S9360",
+        "SM-S936B",
+        "SM-S936N",
+        "SM-S936U",
+        "SM-S936U1",
+        "SM-S936W",
+        "Samsung Galaxy S25+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "edge",
+        "fe",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s25-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S25 Ultra",
+      "name": "Samsung Galaxy S25 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S25 Ultra",
+        "SM-S9380",
+        "SM-S938B",
+        "SM-S938D",
+        "SM-S938J",
+        "SM-S938N",
+        "SM-S938Q",
+        "SM-S938U",
+        "SM-S938U1",
+        "SM-S938W",
+        "SM-S938Z",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s26",
+      "brand": "Samsung",
+      "model": "Galaxy S26",
+      "name": "Samsung Galaxy S26",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S26",
+        "Samsung Galaxy S26"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s26-plus",
+      "brand": "Samsung",
+      "model": "Galaxy S26+",
+      "name": "Samsung Galaxy S26+",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S26+",
+        "Samsung Galaxy S26+"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-s26-ultra",
+      "brand": "Samsung",
+      "model": "Galaxy S26 Ultra",
+      "name": "Samsung Galaxy S26 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy S26 Ultra",
+        "SM-S9480",
+        "SM-S948B",
+        "SM-S948U",
+        "SM-S948U1",
+        "SM-S948W",
+        "Samsung Galaxy S26 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip3",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip3",
+      "name": "Samsung Galaxy Z Flip3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip3",
+        "SM-F7110",
+        "SM-F711B",
+        "SM-F711D",
+        "SM-F711J",
+        "SM-F711N",
+        "SM-F711U",
+        "SM-F711U1",
+        "SM-F711W",
+        "Samsung Galaxy Z Flip3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip4",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip4",
+      "name": "Samsung Galaxy Z Flip4",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip4",
+        "SM-F7210",
+        "SM-F721B",
+        "SM-F721C",
+        "SM-F721D",
+        "SM-F721J",
+        "SM-F721N",
+        "SM-F721U",
+        "SM-F721U1",
+        "SM-F721W",
+        "Samsung Galaxy Z Flip4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip5",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip5",
+      "name": "Samsung Galaxy Z Flip5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip5",
+        "SM-F7310",
+        "SM-F731B",
+        "SM-F731D",
+        "SM-F731J",
+        "SM-F731N",
+        "SM-F731Q",
+        "SM-F731U",
+        "SM-F731U1",
+        "SM-F731W",
+        "Samsung Galaxy Z Flip5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip6",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip6",
+      "name": "Samsung Galaxy Z Flip6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip6",
+        "SM-F7410",
+        "SM-F741B",
+        "SM-F741D",
+        "SM-F741J",
+        "SM-F741N",
+        "SM-F741Q",
+        "SM-F741U",
+        "SM-F741U1",
+        "SM-F741W",
+        "Samsung Galaxy Z Flip6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip7",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip7",
+      "name": "Samsung Galaxy Z Flip7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip7",
+        "SM-F7660",
+        "SM-F766B",
+        "SM-F766D",
+        "SM-F766J",
+        "SM-F766N",
+        "SM-F766Q",
+        "SM-F766U",
+        "SM-F766U1",
+        "SM-F766W",
+        "SM-F766Z",
+        "Samsung Galaxy Z Flip7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fe"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-flip7-fe",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip7 FE",
+      "name": "Samsung Galaxy Z Flip7 FE",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Flip7 FE",
+        "SM-F7610",
+        "SM-F761B",
+        "SM-F761D",
+        "SM-F761J",
+        "SM-F761N",
+        "SM-F761Q",
+        "SM-F761U",
+        "SM-F761U1",
+        "SM-F761Z",
+        "Samsung Galaxy Z Flip7 FE"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold2",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold2",
+      "name": "Samsung Galaxy Z Fold2",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold2",
+        "SM-F9160",
+        "SM-F916B",
+        "SM-F916J",
+        "SM-F916N",
+        "SM-F916U",
+        "SM-F916U1",
+        "SM-F916W",
+        "Samsung Galaxy Z Fold2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold3",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold3",
+      "name": "Samsung Galaxy Z Fold3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold3",
+        "SM-F9260",
+        "SM-F926B",
+        "SM-F926D",
+        "SM-F926J",
+        "SM-F926N",
+        "SM-F926U",
+        "SM-F926U1",
+        "SM-F926W",
+        "Samsung Galaxy Z Fold3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold4",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold4",
+      "name": "Samsung Galaxy Z Fold4",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold4",
+        "SM-F9360",
+        "SM-F936B",
+        "SM-F936D",
+        "SM-F936J",
+        "SM-F936N",
+        "SM-F936U",
+        "SM-F936U1",
+        "SM-F936W",
+        "Samsung Galaxy Z Fold4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold5",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold5",
+      "name": "Samsung Galaxy Z Fold5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold5",
+        "SM-F9460",
+        "SM-F946B",
+        "SM-F946D",
+        "SM-F946J",
+        "SM-F946N",
+        "SM-F946Q",
+        "SM-F946U",
+        "SM-F946U1",
+        "SM-F946W",
+        "Samsung Galaxy Z Fold5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold6",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold6",
+      "name": "Samsung Galaxy Z Fold6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold6",
+        "SM-F9560",
+        "SM-F956B",
+        "SM-F956D",
+        "SM-F956J",
+        "SM-F956N",
+        "SM-F956Q",
+        "SM-F956U",
+        "SM-F956U1",
+        "SM-F956W",
+        "SM-F958N",
+        "Samsung Galaxy Z Fold6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-z-fold7",
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold7",
+      "name": "Samsung Galaxy Z Fold7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy Z Fold7",
+        "SM-F9660",
+        "SM-F966B",
+        "SM-F966D",
+        "SM-F966J",
+        "SM-F966N",
+        "SM-F966Q",
+        "SM-F966U",
+        "SM-F966U1",
+        "SM-F966W",
+        "SM-F966Z",
+        "Samsung Galaxy Z Fold7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    }
+  ]
+}

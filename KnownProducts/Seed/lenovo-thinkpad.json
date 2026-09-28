@@ -1,0 +1,628 @@
+{
+  "products": [
+    {
+      "id": "lenovo-thinkpad-t14-gen-2",
+      "brand": "Lenovo",
+      "model": "ThinkPad T14 Gen 2",
+      "name": "Lenovo ThinkPad T14 Gen 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T14 Gen 2",
+        "ThinkPad T14 Gen 2"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t14-gen-3",
+      "brand": "Lenovo",
+      "model": "ThinkPad T14 Gen 3",
+      "name": "Lenovo ThinkPad T14 Gen 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T14 Gen 3",
+        "ThinkPad T14 Gen 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t14-gen-4",
+      "brand": "Lenovo",
+      "model": "ThinkPad T14 Gen 4",
+      "name": "Lenovo ThinkPad T14 Gen 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T14 Gen 4",
+        "ThinkPad T14 Gen 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t14-gen-5",
+      "brand": "Lenovo",
+      "model": "ThinkPad T14 Gen 5",
+      "name": "Lenovo ThinkPad T14 Gen 5",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T14 Gen 5",
+        "ThinkPad T14 Gen 5"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t16-gen-1",
+      "brand": "Lenovo",
+      "model": "ThinkPad T16 Gen 1",
+      "name": "Lenovo ThinkPad T16 Gen 1",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T16 Gen 1",
+        "ThinkPad T16 Gen 1"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t16-gen-2",
+      "brand": "Lenovo",
+      "model": "ThinkPad T16 Gen 2",
+      "name": "Lenovo ThinkPad T16 Gen 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T16 Gen 2",
+        "ThinkPad T16 Gen 2"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x13-gen-2",
+      "brand": "Lenovo",
+      "model": "ThinkPad X13 Gen 2",
+      "name": "Lenovo ThinkPad X13 Gen 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X13 Gen 2",
+        "ThinkPad X13 Gen 2"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x13-gen-3",
+      "brand": "Lenovo",
+      "model": "ThinkPad X13 Gen 3",
+      "name": "Lenovo ThinkPad X13 Gen 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X13 Gen 3",
+        "ThinkPad X13 Gen 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x13-gen-4",
+      "brand": "Lenovo",
+      "model": "ThinkPad X13 Gen 4",
+      "name": "Lenovo ThinkPad X13 Gen 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X13 Gen 4",
+        "ThinkPad X13 Gen 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-carbon-gen-9",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon Gen 9",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 9",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Carbon Gen 9",
+        "ThinkPad X1 Carbon Gen 9"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-carbon-gen-10",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon Gen 10",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 10",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Carbon Gen 10",
+        "ThinkPad X1 Carbon Gen 10"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-carbon-gen-11",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon Gen 11",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Carbon Gen 11",
+        "ThinkPad X1 Carbon Gen 11"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-carbon-gen-12",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon Gen 12",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Carbon Gen 12",
+        "ThinkPad X1 Carbon Gen 12"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-yoga-gen-6",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Yoga Gen 6",
+      "name": "Lenovo ThinkPad X1 Yoga Gen 6",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Yoga Gen 6",
+        "ThinkPad X1 Yoga Gen 6"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-x1-yoga-gen-7",
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Yoga Gen 7",
+      "name": "Lenovo ThinkPad X1 Yoga Gen 7",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad X1 Yoga Gen 7",
+        "ThinkPad X1 Yoga Gen 7"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-l14-gen-2",
+      "brand": "Lenovo",
+      "model": "ThinkPad L14 Gen 2",
+      "name": "Lenovo ThinkPad L14 Gen 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad L14 Gen 2",
+        "ThinkPad L14 Gen 2"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-l14-gen-3",
+      "brand": "Lenovo",
+      "model": "ThinkPad L14 Gen 3",
+      "name": "Lenovo ThinkPad L14 Gen 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad L14 Gen 3",
+        "ThinkPad L14 Gen 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-l14-gen-4",
+      "brand": "Lenovo",
+      "model": "ThinkPad L14 Gen 4",
+      "name": "Lenovo ThinkPad L14 Gen 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad L14 Gen 4",
+        "ThinkPad L14 Gen 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-p14s-gen-2",
+      "brand": "Lenovo",
+      "model": "ThinkPad P14s Gen 2",
+      "name": "Lenovo ThinkPad P14s Gen 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad P14s Gen 2",
+        "ThinkPad P14s Gen 2"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-p14s-gen-3",
+      "brand": "Lenovo",
+      "model": "ThinkPad P14s Gen 3",
+      "name": "Lenovo ThinkPad P14s Gen 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad P14s Gen 3",
+        "ThinkPad P14s Gen 3"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-p14s-gen-4",
+      "brand": "Lenovo",
+      "model": "ThinkPad P14s Gen 4",
+      "name": "Lenovo ThinkPad P14s Gen 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad P14s Gen 4",
+        "ThinkPad P14s Gen 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-e14-gen-4",
+      "brand": "Lenovo",
+      "model": "ThinkPad E14 Gen 4",
+      "name": "Lenovo ThinkPad E14 Gen 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad E14 Gen 4",
+        "ThinkPad E14 Gen 4"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-e14-gen-5",
+      "brand": "Lenovo",
+      "model": "ThinkPad E14 Gen 5",
+      "name": "Lenovo ThinkPad E14 Gen 5",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad E14 Gen 5",
+        "ThinkPad E14 Gen 5"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t480",
+      "brand": "Lenovo",
+      "model": "ThinkPad T480",
+      "name": "Lenovo ThinkPad T480",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T480",
+        "ThinkPad T480"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t490",
+      "brand": "Lenovo",
+      "model": "ThinkPad T490",
+      "name": "Lenovo ThinkPad T490",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T490",
+        "ThinkPad T490"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "lenovo-thinkpad-t14s",
+      "brand": "Lenovo",
+      "model": "ThinkPad T14s",
+      "name": "Lenovo ThinkPad T14s",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Lenovo ThinkPad T14s",
+        "ThinkPad T14s"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    }
+  ]
+}

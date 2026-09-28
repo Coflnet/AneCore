@@ -1,0 +1,569 @@
+{
+  "products": [
+    {
+      "id": "microsoft-xbox-360",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox 360",
+      "name": "Microsoft Xbox 360",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox 360",
+        "Xbox 360"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "20GB",
+          "60GB",
+          "120GB",
+          "250GB",
+          "320GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "e",
+        "s",
+        "slim"
+      ],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-360-e",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox 360 E",
+      "name": "Microsoft Xbox 360 E",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox 360 E",
+        "Xbox 360 E"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "4GB",
+          "250GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-360-s",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox 360 S",
+      "name": "Microsoft Xbox 360 S",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox 360 S",
+        "Xbox 360 S",
+        "Xbox 360 Slim"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "4GB",
+          "250GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-one",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One",
+      "name": "Microsoft Xbox One",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox One",
+        "Xbox One"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "500GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s",
+        "x"
+      ],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-one-s",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One S",
+      "name": "Microsoft Xbox One S",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox One S",
+        "Xbox One S"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "500GB",
+          "1TB",
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-one-x",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One X",
+      "name": "Microsoft Xbox One X",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox One X",
+        "Xbox One X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-series-s",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox Series S",
+      "name": "Microsoft Xbox Series S",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox Series S",
+        "Xbox Series S"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "microsoft-xbox-series-x",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox Series X",
+      "name": "Microsoft Xbox Series X",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Microsoft Xbox Series X",
+        "Xbox Series X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch",
+      "name": "Nintendo Switch",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch",
+        "Switch"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "2",
+        "lite",
+        "oled"
+      ],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch-2",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch 2",
+      "name": "Nintendo Switch 2",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch 2",
+        "Switch 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch-lite",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite",
+      "name": "Nintendo Switch Lite",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite",
+        "Switch Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch-oled",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch OLED",
+      "name": "Nintendo Switch OLED",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch OLED",
+        "Switch OLED",
+        "Switch OLED Model"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-3",
+      "brand": "Sony",
+      "model": "Sony PlayStation 3",
+      "name": "Sony PlayStation 3",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS3",
+        "PlayStation 3",
+        "Sony PlayStation 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "20GB",
+          "40GB",
+          "60GB",
+          "80GB",
+          "120GB",
+          "160GB",
+          "250GB",
+          "320GB",
+          "500GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-4",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4",
+      "name": "Sony PlayStation 4",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS4",
+        "PlayStation 4",
+        "Sony PlayStation 4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "500GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro",
+        "slim"
+      ],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-4-pro",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 Pro",
+      "name": "Sony PlayStation 4 Pro",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS4 Pro",
+        "PlayStation 4 Pro",
+        "Sony PlayStation 4 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-4-slim",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 Slim",
+      "name": "Sony PlayStation 4 Slim",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS4 Slim",
+        "PlayStation 4 Slim",
+        "Sony PlayStation 4 Slim"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "500GB",
+          "1TB",
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-5",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5",
+      "name": "Sony PlayStation 5",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5",
+        "PlayStation 5",
+        "Sony PlayStation 5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "825GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "digital",
+        "pro",
+        "slim"
+      ],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-5-digital-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Digital Edition",
+      "name": "Sony PlayStation 5 Digital Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Digital",
+        "PlayStation 5 Digital Edition",
+        "Sony PlayStation 5 Digital Edition"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "825GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-5-pro",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Pro",
+      "name": "Sony PlayStation 5 Pro",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Pro",
+        "PlayStation 5 Pro",
+        "Sony PlayStation 5 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "sony-playstation-5-slim",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Slim",
+      "name": "Sony PlayStation 5 Slim",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Slim",
+        "PlayStation 5 Slim",
+        "Sony PlayStation 5 Slim"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "2TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "valve-steam-deck-lcd",
+      "brand": "Valve",
+      "model": "Valve Steam Deck LCD",
+      "name": "Valve Steam Deck LCD",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Steam Deck 256GB",
+        "Steam Deck 64GB",
+        "Steam Deck LCD",
+        "Valve Steam Deck LCD"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "256GB",
+          "512GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "valve-steam-deck-oled",
+      "brand": "Valve",
+      "model": "Valve Steam Deck OLED",
+      "name": "Valve Steam Deck OLED",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Steam Deck OLED",
+        "Valve Steam Deck OLED"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:wikidata+hand-curated-2026-09"
+    }
+  ]
+}

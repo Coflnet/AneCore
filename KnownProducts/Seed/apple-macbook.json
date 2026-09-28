@@ -1,0 +1,634 @@
+{
+  "products": [
+    {
+      "id": "apple-macbook-air-m1-2020",
+      "brand": "Apple",
+      "model": "MacBook Air (M1, 2020)",
+      "name": "Apple MacBook Air (M1, 2020)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air (M1, 2020)",
+        "MacBook Air (M1, 2020)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-13-inch-m2",
+      "brand": "Apple",
+      "model": "MacBook Air 13-inch (M2)",
+      "name": "Apple MacBook Air 13-inch (M2)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 13-inch (M2)",
+        "MacBook Air 13-inch (M2)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-15-inch-m2",
+      "brand": "Apple",
+      "model": "MacBook Air 15-inch (M2)",
+      "name": "Apple MacBook Air 15-inch (M2)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 15-inch (M2)",
+        "MacBook Air 15-inch (M2)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "15\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-13-inch-m3",
+      "brand": "Apple",
+      "model": "MacBook Air 13-inch (M3)",
+      "name": "Apple MacBook Air 13-inch (M3)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 13-inch (M3)",
+        "MacBook Air 13-inch (M3)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-15-inch-m3",
+      "brand": "Apple",
+      "model": "MacBook Air 15-inch (M3)",
+      "name": "Apple MacBook Air 15-inch (M3)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 15-inch (M3)",
+        "MacBook Air 15-inch (M3)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "15\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-13-inch-m4",
+      "brand": "Apple",
+      "model": "MacBook Air 13-inch (M4)",
+      "name": "Apple MacBook Air 13-inch (M4)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 13-inch (M4)",
+        "MacBook Air 13-inch (M4)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-air-15-inch-m4",
+      "brand": "Apple",
+      "model": "MacBook Air 15-inch (M4)",
+      "name": "Apple MacBook Air 15-inch (M4)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Air 15-inch (M4)",
+        "MacBook Air 15-inch (M4)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "15\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-13-inch-m1-2020",
+      "brand": "Apple",
+      "model": "MacBook Pro 13-inch (M1, 2020)",
+      "name": "Apple MacBook Pro 13-inch (M1, 2020)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 13-inch (M1, 2020)",
+        "MacBook Pro 13-inch (M1, 2020)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m1-pro-max-2021",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M1 Pro/Max, 2021)",
+      "name": "Apple MacBook Pro 14-inch (M1 Pro/Max, 2021)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M1 Pro/Max, 2021)",
+        "MacBook Pro 14-inch (M1 Pro/Max, 2021)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-16-inch-m1-pro-max-2021",
+      "brand": "Apple",
+      "model": "MacBook Pro 16-inch (M1 Pro/Max, 2021)",
+      "name": "Apple MacBook Pro 16-inch (M1 Pro/Max, 2021)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 16-inch (M1 Pro/Max, 2021)",
+        "MacBook Pro 16-inch (M1 Pro/Max, 2021)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "16\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-13-inch-m2-2022",
+      "brand": "Apple",
+      "model": "MacBook Pro 13-inch (M2, 2022)",
+      "name": "Apple MacBook Pro 13-inch (M2, 2022)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 13-inch (M2, 2022)",
+        "MacBook Pro 13-inch (M2, 2022)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "screen_size": [
+          "13\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m2-pro-max-2023",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M2 Pro/Max, 2023)",
+      "name": "Apple MacBook Pro 14-inch (M2 Pro/Max, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M2 Pro/Max, 2023)",
+        "MacBook Pro 14-inch (M2 Pro/Max, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-16-inch-m2-pro-max-2023",
+      "brand": "Apple",
+      "model": "MacBook Pro 16-inch (M2 Pro/Max, 2023)",
+      "name": "Apple MacBook Pro 16-inch (M2 Pro/Max, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 16-inch (M2 Pro/Max, 2023)",
+        "MacBook Pro 16-inch (M2 Pro/Max, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "16\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m3-2023",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M3, 2023)",
+      "name": "Apple MacBook Pro 14-inch (M3, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M3, 2023)",
+        "MacBook Pro 14-inch (M3, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m3-pro-max-2023",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M3 Pro/Max, 2023)",
+      "name": "Apple MacBook Pro 14-inch (M3 Pro/Max, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M3 Pro/Max, 2023)",
+        "MacBook Pro 14-inch (M3 Pro/Max, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-16-inch-m3-pro-max-2023",
+      "brand": "Apple",
+      "model": "MacBook Pro 16-inch (M3 Pro/Max, 2023)",
+      "name": "Apple MacBook Pro 16-inch (M3 Pro/Max, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 16-inch (M3 Pro/Max, 2023)",
+        "MacBook Pro 16-inch (M3 Pro/Max, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "16\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m4-2024",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M4, 2024)",
+      "name": "Apple MacBook Pro 14-inch (M4, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M4, 2024)",
+        "MacBook Pro 14-inch (M4, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-14-inch-m4-pro-max-2024",
+      "brand": "Apple",
+      "model": "MacBook Pro 14-inch (M4 Pro/Max, 2024)",
+      "name": "Apple MacBook Pro 14-inch (M4 Pro/Max, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 14-inch (M4 Pro/Max, 2024)",
+        "MacBook Pro 14-inch (M4 Pro/Max, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "14\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-macbook-pro-16-inch-m4-pro-max-2024",
+      "brand": "Apple",
+      "model": "MacBook Pro 16-inch (M4 Pro/Max, 2024)",
+      "name": "Apple MacBook Pro 16-inch (M4 Pro/Max, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple MacBook Pro 16-inch (M4 Pro/Max, 2024)",
+        "MacBook Pro 16-inch (M4 Pro/Max, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "screen_size": [
+          "16\""
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    }
+  ]
+}

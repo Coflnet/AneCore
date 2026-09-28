@@ -1,0 +1,865 @@
+{
+  "products": [
+    {
+      "id": "google-pixel-10",
+      "brand": "Google",
+      "model": "Pixel 10",
+      "name": "Google Pixel 10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 10",
+        "Pixel 10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-10-pro",
+      "brand": "Google",
+      "model": "Pixel 10 Pro",
+      "name": "Google Pixel 10 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 10 Pro",
+        "Pixel 10 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fold",
+        "xl"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-10-pro-fold",
+      "brand": "Google",
+      "model": "Pixel 10 Pro Fold",
+      "name": "Google Pixel 10 Pro Fold",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 10 Pro Fold",
+        "Pixel 10 Pro Fold"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-10-pro-xl",
+      "brand": "Google",
+      "model": "Pixel 10 Pro XL",
+      "name": "Google Pixel 10 Pro XL",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 10 Pro XL",
+        "Pixel 10 Pro XL"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-10a",
+      "brand": "Google",
+      "model": "Pixel 10a",
+      "name": "Google Pixel 10a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 10a",
+        "Pixel 10a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-3a-xl",
+      "brand": "Google",
+      "model": "Pixel 3a XL",
+      "name": "Google Pixel 3a XL",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 3a XL",
+        "Pixel 3a XL"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-4",
+      "brand": "Google",
+      "model": "Pixel 4",
+      "name": "Google Pixel 4",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 4",
+        "Pixel 4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "xl"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-4-xl",
+      "brand": "Google",
+      "model": "Pixel 4 XL",
+      "name": "Google Pixel 4 XL",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 4 XL",
+        "Pixel 4 XL"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-4a",
+      "brand": "Google",
+      "model": "Pixel 4a",
+      "name": "Google Pixel 4a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 4a",
+        "Pixel 4a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-5",
+      "brand": "Google",
+      "model": "Pixel 5",
+      "name": "Google Pixel 5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 5",
+        "Pixel 5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-5a",
+      "brand": "Google",
+      "model": "Pixel 5a",
+      "name": "Google Pixel 5a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 5a",
+        "Pixel 5a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-6",
+      "brand": "Google",
+      "model": "Pixel 6",
+      "name": "Google Pixel 6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 6",
+        "Pixel 6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-6-pro",
+      "brand": "Google",
+      "model": "Pixel 6 Pro",
+      "name": "Google Pixel 6 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 6 Pro",
+        "Pixel 6 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-6a",
+      "brand": "Google",
+      "model": "Pixel 6a",
+      "name": "Google Pixel 6a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 6a",
+        "Pixel 6a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-7",
+      "brand": "Google",
+      "model": "Pixel 7",
+      "name": "Google Pixel 7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 7",
+        "Pixel 7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-7-pro",
+      "brand": "Google",
+      "model": "Pixel 7 Pro",
+      "name": "Google Pixel 7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 7 Pro",
+        "Pixel 7 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-7a",
+      "brand": "Google",
+      "model": "Pixel 7a",
+      "name": "Google Pixel 7a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 7a",
+        "Pixel 7a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-8",
+      "brand": "Google",
+      "model": "Pixel 8",
+      "name": "Google Pixel 8",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 8",
+        "Pixel 8"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-8-pro",
+      "brand": "Google",
+      "model": "Pixel 8 Pro",
+      "name": "Google Pixel 8 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 8 Pro",
+        "Pixel 8 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-8a",
+      "brand": "Google",
+      "model": "Pixel 8a",
+      "name": "Google Pixel 8a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 8a",
+        "Pixel 8a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-9",
+      "brand": "Google",
+      "model": "Pixel 9",
+      "name": "Google Pixel 9",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 9",
+        "Pixel 9"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-9-pro",
+      "brand": "Google",
+      "model": "Pixel 9 Pro",
+      "name": "Google Pixel 9 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 9 Pro",
+        "Pixel 9 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "fold",
+        "xl"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-9-pro-fold",
+      "brand": "Google",
+      "model": "Pixel 9 Pro Fold",
+      "name": "Google Pixel 9 Pro Fold",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 9 Pro Fold",
+        "Pixel 9 Pro Fold"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-9-pro-xl",
+      "brand": "Google",
+      "model": "Pixel 9 Pro XL",
+      "name": "Google Pixel 9 Pro XL",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 9 Pro XL",
+        "Pixel 9 Pro XL"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-9a",
+      "brand": "Google",
+      "model": "Pixel 9a",
+      "name": "Google Pixel 9a",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel 9a",
+        "Pixel 9a"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "google-pixel-fold",
+      "brand": "Google",
+      "model": "Pixel Fold",
+      "name": "Google Pixel Fold",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Google Pixel Fold",
+        "Pixel Fold"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    }
+  ]
+}

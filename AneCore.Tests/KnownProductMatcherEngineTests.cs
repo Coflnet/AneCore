@@ -46,6 +46,37 @@ public class KnownProductMatcherEngineTests
         Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { alias },
     };
 
+    [TestCase("Galaxy S21+", "galaxy s 21 plus")]
+    [TestCase("Galaxy S21 Plus", "galaxy s 21 plus")]
+    [TestCase("Galaxy S21", "galaxy s 21")]
+    public void Normalize_PlusSign_BecomesPlusWord_SoPlusAndNonPlusAreDistinctTokenSequences(string input, string expected)
+    {
+        // Regression: "+" used to be silently stripped by the [^a-z0-9 ] catch-all, making "Galaxy S21+"
+        // normalize to the exact same tokens as "Galaxy S21" - permanently ambiguous between the two
+        // real, differently-priced products. Found while seeding Samsung's S21+/S22+/... line.
+        Assert.That(KnownProductMatcher.Normalize(input), Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void SiblingExclusion_GalaxyS21_DoesNotMatchS21Plus()
+    {
+        var basePhone = new KnownProduct
+        {
+            Id = "samsung-galaxy-s21", Brand = "Samsung", Model = "Galaxy S21", Name = "Samsung Galaxy S21",
+            Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "Galaxy S21" },
+            ExcludeTerms = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "plus" },
+        };
+        var plusPhone = new KnownProduct
+        {
+            Id = "samsung-galaxy-s21-plus", Brand = "Samsung", Model = "Galaxy S21+", Name = "Samsung Galaxy S21+",
+            Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "Galaxy S21+" },
+        };
+        var matcher = new KnownProductMatcher(new[] { basePhone, plusPhone });
+
+        Assert.That(matcher.Match("Samsung Galaxy S21+ 256GB")!.Id, Is.EqualTo("samsung-galaxy-s21-plus"));
+        Assert.That(matcher.Match("Samsung Galaxy S21 128GB")!.Id, Is.EqualTo("samsung-galaxy-s21"));
+    }
+
     [Test]
     public void ContainerVeto_GamingPcWithCpuAndGpu_MatchesNeither()
     {
@@ -165,7 +196,7 @@ public class KnownProductMatcherEngineTests
     [Test]
     public void Performance_TenThousandMatchesOnFullSeed_CompletesWithinBound()
     {
-        var seed = KnownProductSeed.LoadAll();
+        var seed = KnownProductSeed.LoadAll(includeExpandedCatalog: true);
         var matcher = new KnownProductMatcher(seed);
         var titles = new[]
         {
@@ -191,7 +222,7 @@ public class KnownProductMatcherEngineTests
         // Indirect check: constructing once and calling Match many times must be far cheaper per call
         // than constructing a new matcher per call would be - guards against reintroducing per-call index
         // rebuilding inside Match itself.
-        var seed = KnownProductSeed.LoadAll();
+        var seed = KnownProductSeed.LoadAll(includeExpandedCatalog: true);
         var matcher = new KnownProductMatcher(seed);
 
         var swManyMatches = Stopwatch.StartNew();

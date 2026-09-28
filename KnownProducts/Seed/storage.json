@@ -1,0 +1,630 @@
+{
+  "products": [
+    {
+      "id": "crucial-mx500",
+      "brand": "Crucial",
+      "model": "Crucial MX500",
+      "name": "Crucial MX500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial MX500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p2",
+      "brand": "Crucial",
+      "model": "Crucial P2",
+      "name": "Crucial P2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p3",
+      "brand": "Crucial",
+      "model": "Crucial P3",
+      "name": "Crucial P3",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P3"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p3-plus",
+      "brand": "Crucial",
+      "model": "Crucial P3 Plus",
+      "name": "Crucial P3 Plus",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P3 Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p310",
+      "brand": "Crucial",
+      "model": "Crucial P310",
+      "name": "Crucial P310",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P310"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "w"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p310-w-heatsink",
+      "brand": "Crucial",
+      "model": "Crucial P310 w/Heatsink",
+      "name": "Crucial P310 w/Heatsink",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P310 w/Heatsink"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p5",
+      "brand": "Crucial",
+      "model": "Crucial P5",
+      "name": "Crucial P5",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p5-plus",
+      "brand": "Crucial",
+      "model": "Crucial P5 Plus",
+      "name": "Crucial P5 Plus",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P5 Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "w"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p5-plus-w-heatsink",
+      "brand": "Crucial",
+      "model": "Crucial P5 Plus W/Heatsink",
+      "name": "Crucial P5 Plus W/Heatsink",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P5 Plus W/Heatsink"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p510",
+      "brand": "Crucial",
+      "model": "Crucial P510",
+      "name": "Crucial P510",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P510"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "w"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "crucial-p510-w-heatsink",
+      "brand": "Crucial",
+      "model": "Crucial P510 W/Heatsink",
+      "name": "Crucial P510 W/Heatsink",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Crucial P510 W/Heatsink"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "kingston-kc3000",
+      "brand": "Kingston",
+      "model": "Kingston KC3000",
+      "name": "Kingston KC3000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Kingston KC3000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "kingston-nv1",
+      "brand": "Kingston",
+      "model": "Kingston NV1",
+      "name": "Kingston NV1",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Kingston NV1"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "kingston-nv2",
+      "brand": "Kingston",
+      "model": "Kingston NV2",
+      "name": "Kingston NV2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Kingston NV2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "kingston-nv3",
+      "brand": "Kingston",
+      "model": "Kingston NV3",
+      "name": "Kingston NV3",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Kingston NV3"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket",
+      "name": "Sabrent Rocket",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "4",
+        "5",
+        "q"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket-4",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket 4",
+      "name": "Sabrent Rocket 4",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket 4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket-4-plus",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket 4 Plus",
+      "name": "Sabrent Rocket 4 Plus",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket 4 Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "g"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket-4-plus-g",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket 4 Plus G",
+      "name": "Sabrent Rocket 4 Plus G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket 4 Plus G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket-5",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket 5",
+      "name": "Sabrent Rocket 5",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket 5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sabrent-rocket-q",
+      "brand": "Sabrent",
+      "model": "Sabrent Rocket Q",
+      "name": "Sabrent Rocket Q",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sabrent Rocket Q"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-970-evo",
+      "brand": "Samsung",
+      "model": "Samsung 970 Evo",
+      "name": "Samsung 970 Evo",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 970 Evo"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-970-evo-plus",
+      "brand": "Samsung",
+      "model": "Samsung 970 Evo Plus",
+      "name": "Samsung 970 Evo Plus",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 970 Evo Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-970-pro",
+      "brand": "Samsung",
+      "model": "Samsung 970 Pro",
+      "name": "Samsung 970 Pro",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 970 Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-980-pro",
+      "brand": "Samsung",
+      "model": "Samsung 980 Pro",
+      "name": "Samsung 980 Pro",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 980 Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "w"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-980-pro-w-heatsink",
+      "brand": "Samsung",
+      "model": "Samsung 980 Pro w/Heatsink",
+      "name": "Samsung 980 Pro w/Heatsink",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 980 Pro w/Heatsink"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-990-evo",
+      "brand": "Samsung",
+      "model": "Samsung 990 EVO",
+      "name": "Samsung 990 EVO",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 990 EVO"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-990-evo-plus",
+      "brand": "Samsung",
+      "model": "Samsung 990 EVO Plus",
+      "name": "Samsung 990 EVO Plus",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 990 EVO Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-990-pro",
+      "brand": "Samsung",
+      "model": "Samsung 990 Pro",
+      "name": "Samsung 990 Pro",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 990 Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "w"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "samsung-990-pro-w-heatsink",
+      "brand": "Samsung",
+      "model": "Samsung 990 Pro w/Heatsink",
+      "name": "Samsung 990 Pro w/Heatsink",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Speichergeräte",
+        "Festplatten"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Samsung 990 Pro w/Heatsink"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

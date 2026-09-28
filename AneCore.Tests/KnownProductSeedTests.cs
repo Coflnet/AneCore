@@ -8,7 +8,7 @@ public class KnownProductSeedTests
     [Test]
     public void LoadAll_FindsEmbeddedSeedResources()
     {
-        var seed = KnownProductSeed.LoadAll();
+        var seed = KnownProductSeed.LoadAll(includeExpandedCatalog: true);
         Assert.That(seed, Is.Not.Empty);
     }
 

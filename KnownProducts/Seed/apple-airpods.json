@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": "apple-airpods-1st-generation",
+      "brand": "Apple",
+      "model": "AirPods (1st generation)",
+      "name": "Apple AirPods (1st generation)",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods (1st generation)",
+        "Apple AirPods (1st generation)"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-airpods-2nd-generation",
+      "brand": "Apple",
+      "model": "AirPods (2nd generation)",
+      "name": "Apple AirPods (2nd generation)",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods (2nd generation)",
+        "Apple AirPods (2nd generation)"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-airpods-3rd-generation",
+      "brand": "Apple",
+      "model": "AirPods (3rd generation)",
+      "name": "Apple AirPods (3rd generation)",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods (3rd generation)",
+        "Apple AirPods (3rd generation)"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-airpods-4th-generation",
+      "brand": "Apple",
+      "model": "AirPods (4th generation)",
+      "name": "Apple AirPods (4th generation)",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods (4th generation)",
+        "Apple AirPods (4th generation)"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "apple-airpods-max",
+      "brand": "Apple",
+      "model": "AirPods Max",
+      "name": "Apple AirPods Max",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods Max",
+        "Apple AirPods Max"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-airpods-pro",
+      "brand": "Apple",
+      "model": "AirPods Pro",
+      "name": "Apple AirPods Pro",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods Pro",
+        "Apple AirPods Pro"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [
+        "2"
+      ],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    },
+    {
+      "id": "apple-airpods-pro-2nd-generation",
+      "brand": "Apple",
+      "model": "AirPods Pro (2nd generation)",
+      "name": "Apple AirPods Pro (2nd generation)",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AirPods Pro (2nd generation)",
+        "Apple AirPods Pro (2nd generation)"
+      ],
+      "possibleAttributes": {
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:ios-device-list+apple-specs-2026-09"
+    }
+  ]
+}

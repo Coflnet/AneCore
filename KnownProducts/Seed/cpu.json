@@ -1,0 +1,3928 @@
+{
+  "products": [
+    {
+      "id": "amd-ryzen-3-3100",
+      "brand": "AMD",
+      "model": "AMD Ryzen 3 3100",
+      "name": "AMD Ryzen 3 3100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 3 3100",
+        "Ryzen 3 3100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-3-3200g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 3 3200G",
+      "name": "AMD Ryzen 3 3200G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 3 3200G",
+        "Ryzen 3 3200G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-3-3300x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 3 3300X",
+      "name": "AMD Ryzen 3 3300X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 3 3300X",
+        "Ryzen 3 3300X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-3-4100",
+      "brand": "AMD",
+      "model": "AMD Ryzen 3 4100",
+      "name": "AMD Ryzen 3 4100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 3 4100",
+        "Ryzen 3 4100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3400g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3400G",
+      "name": "AMD Ryzen 5 3400G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3400G",
+        "Ryzen 5 3400G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3500",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3500",
+      "name": "AMD Ryzen 5 3500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3500",
+        "Ryzen 5 3500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3500x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3500X",
+      "name": "AMD Ryzen 5 3500X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3500X",
+        "Ryzen 5 3500X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3600",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3600",
+      "name": "AMD Ryzen 5 3600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3600",
+        "Ryzen 5 3600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x",
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3600x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3600X",
+      "name": "AMD Ryzen 5 3600X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3600X",
+        "Ryzen 5 3600X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-3600xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 3600XT",
+      "name": "AMD Ryzen 5 3600XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 3600XT",
+        "Ryzen 5 3600XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-4500",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 4500",
+      "name": "AMD Ryzen 5 4500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 4500",
+        "Ryzen 5 4500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-4600g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 4600G",
+      "name": "AMD Ryzen 5 4600G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 4600G",
+        "Ryzen 5 4600G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5500",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5500",
+      "name": "AMD Ryzen 5 5500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5500",
+        "Ryzen 5 5500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "gt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5500gt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5500GT",
+      "name": "AMD Ryzen 5 5500GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5500GT",
+        "Ryzen 5 5500GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600",
+      "name": "AMD Ryzen 5 5600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600",
+        "Ryzen 5 5600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "g",
+        "gt",
+        "t",
+        "x",
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600G",
+      "name": "AMD Ryzen 5 5600G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600G",
+        "Ryzen 5 5600G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600gt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600GT",
+      "name": "AMD Ryzen 5 5600GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600GT",
+        "Ryzen 5 5600GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600t",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600T",
+      "name": "AMD Ryzen 5 5600T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600T",
+        "Ryzen 5 5600T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600X",
+      "name": "AMD Ryzen 5 5600X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600X",
+        "Ryzen 5 5600X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600X3D",
+      "name": "AMD Ryzen 5 5600X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600X3D",
+        "Ryzen 5 5600X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-5600xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 5600XT",
+      "name": "AMD Ryzen 5 5600XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 5600XT",
+        "Ryzen 5 5600XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-7500f",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 7500F",
+      "name": "AMD Ryzen 5 7500F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 7500F",
+        "Ryzen 5 7500F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-7600",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 7600",
+      "name": "AMD Ryzen 5 7600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 7600",
+        "Ryzen 5 7600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-7600x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 7600X",
+      "name": "AMD Ryzen 5 7600X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 7600X",
+        "Ryzen 5 7600X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-7600x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 7600X3D",
+      "name": "AMD Ryzen 5 7600X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 7600X3D",
+        "Ryzen 5 7600X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-8400f",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 8400F",
+      "name": "AMD Ryzen 5 8400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 8400F",
+        "Ryzen 5 8400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-8500g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 8500G",
+      "name": "AMD Ryzen 5 8500G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 8500G",
+        "Ryzen 5 8500G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-8600g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 8600G",
+      "name": "AMD Ryzen 5 8600G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 8600G",
+        "Ryzen 5 8600G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-9600",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 9600",
+      "name": "AMD Ryzen 5 9600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 9600",
+        "Ryzen 5 9600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-5-9600x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 5 9600X",
+      "name": "AMD Ryzen 5 9600X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 5 9600X",
+        "Ryzen 5 9600X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-3700x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 3700X",
+      "name": "AMD Ryzen 7 3700X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 3700X",
+        "Ryzen 7 3700X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-3800x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 3800X",
+      "name": "AMD Ryzen 7 3800X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 3800X",
+        "Ryzen 7 3800X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-3800xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 3800XT",
+      "name": "AMD Ryzen 7 3800XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 3800XT",
+        "Ryzen 7 3800XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5700",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5700",
+      "name": "AMD Ryzen 7 5700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5700",
+        "Ryzen 7 5700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "g",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5700g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5700G",
+      "name": "AMD Ryzen 7 5700G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5700G",
+        "Ryzen 7 5700G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5700x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5700X",
+      "name": "AMD Ryzen 7 5700X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5700X",
+        "Ryzen 7 5700X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5700x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5700X3D",
+      "name": "AMD Ryzen 7 5700X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5700X3D",
+        "Ryzen 7 5700X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5800x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5800X",
+      "name": "AMD Ryzen 7 5800X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5800X",
+        "Ryzen 7 5800X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5800x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5800X3D",
+      "name": "AMD Ryzen 7 5800X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5800X3D",
+        "Ryzen 7 5800X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-5800xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 5800XT",
+      "name": "AMD Ryzen 7 5800XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 5800XT",
+        "Ryzen 7 5800XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-7700",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 7700",
+      "name": "AMD Ryzen 7 7700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 7700",
+        "Ryzen 7 7700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-7700x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 7700X",
+      "name": "AMD Ryzen 7 7700X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 7700X",
+        "Ryzen 7 7700X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-7800x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 7800X3D",
+      "name": "AMD Ryzen 7 7800X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 7800X3D",
+        "Ryzen 7 7800X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-8700f",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 8700F",
+      "name": "AMD Ryzen 7 8700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 8700F",
+        "Ryzen 7 8700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-8700g",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 8700G",
+      "name": "AMD Ryzen 7 8700G",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 8700G",
+        "Ryzen 7 8700G"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-9700x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 9700X",
+      "name": "AMD Ryzen 7 9700X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 9700X",
+        "Ryzen 7 9700X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-7-9800x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 7 9800X3D",
+      "name": "AMD Ryzen 7 9800X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 7 9800X3D",
+        "Ryzen 7 9800X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-3900",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 3900",
+      "name": "AMD Ryzen 9 3900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 3900",
+        "Ryzen 9 3900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x",
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-3900x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 3900X",
+      "name": "AMD Ryzen 9 3900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 3900X",
+        "Ryzen 9 3900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-3900xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 3900XT",
+      "name": "AMD Ryzen 9 3900XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 3900XT",
+        "Ryzen 9 3900XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-3950x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 3950X",
+      "name": "AMD Ryzen 9 3950X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 3950X",
+        "Ryzen 9 3950X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-5900x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 5900X",
+      "name": "AMD Ryzen 9 5900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 5900X",
+        "Ryzen 9 5900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-5900xt",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 5900XT",
+      "name": "AMD Ryzen 9 5900XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 5900XT",
+        "Ryzen 9 5900XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-5950x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 5950X",
+      "name": "AMD Ryzen 9 5950X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 5950X",
+        "Ryzen 9 5950X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-7900",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 7900",
+      "name": "AMD Ryzen 9 7900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 7900",
+        "Ryzen 9 7900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-7900x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 7900X",
+      "name": "AMD Ryzen 9 7900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 7900X",
+        "Ryzen 9 7900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-7900x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 7900X3D",
+      "name": "AMD Ryzen 9 7900X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 7900X3D",
+        "Ryzen 9 7900X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-7950x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 7950X",
+      "name": "AMD Ryzen 9 7950X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 7950X",
+        "Ryzen 9 7950X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-7950x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 7950X3D",
+      "name": "AMD Ryzen 9 7950X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 7950X3D",
+        "Ryzen 9 7950X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-9900x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 9900X",
+      "name": "AMD Ryzen 9 9900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 9900X",
+        "Ryzen 9 9900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-9900x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 9900X3D",
+      "name": "AMD Ryzen 9 9900X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 9900X3D",
+        "Ryzen 9 9900X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-9950x",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 9950X",
+      "name": "AMD Ryzen 9 9950X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 9950X",
+        "Ryzen 9 9950X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "3"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "amd-ryzen-9-9950x3d",
+      "brand": "AMD",
+      "model": "AMD Ryzen 9 9950X3D",
+      "name": "AMD Ryzen 9 9950X3D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Ryzen 9 9950X3D",
+        "Ryzen 9 9950X3D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10400",
+      "brand": "Intel",
+      "model": "Intel Core i5-10400",
+      "name": "Intel Core i5-10400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10400",
+        "i5-10400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-10400F",
+      "name": "Intel Core i5-10400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10400F",
+        "i5-10400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10500",
+      "brand": "Intel",
+      "model": "Intel Core i5-10500",
+      "name": "Intel Core i5-10500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10500",
+        "i5-10500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10600",
+      "brand": "Intel",
+      "model": "Intel Core i5-10600",
+      "name": "Intel Core i5-10600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10600",
+        "i5-10600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-10600K",
+      "name": "Intel Core i5-10600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10600K",
+        "i5-10600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-10600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-10600KF",
+      "name": "Intel Core i5-10600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-10600KF",
+        "i5-10600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11400",
+      "brand": "Intel",
+      "model": "Intel Core i5-11400",
+      "name": "Intel Core i5-11400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11400",
+        "i5-11400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-11400F",
+      "name": "Intel Core i5-11400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11400F",
+        "i5-11400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11500",
+      "brand": "Intel",
+      "model": "Intel Core i5-11500",
+      "name": "Intel Core i5-11500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11500",
+        "i5-11500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11600",
+      "brand": "Intel",
+      "model": "Intel Core i5-11600",
+      "name": "Intel Core i5-11600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11600",
+        "i5-11600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-11600K",
+      "name": "Intel Core i5-11600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11600K",
+        "i5-11600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-11600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-11600KF",
+      "name": "Intel Core i5-11600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-11600KF",
+        "i5-11600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12400",
+      "brand": "Intel",
+      "model": "Intel Core i5-12400",
+      "name": "Intel Core i5-12400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12400",
+        "i5-12400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-12400F",
+      "name": "Intel Core i5-12400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12400F",
+        "i5-12400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12500",
+      "brand": "Intel",
+      "model": "Intel Core i5-12500",
+      "name": "Intel Core i5-12500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12500",
+        "i5-12500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12600",
+      "brand": "Intel",
+      "model": "Intel Core i5-12600",
+      "name": "Intel Core i5-12600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12600",
+        "i5-12600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-12600K",
+      "name": "Intel Core i5-12600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12600K",
+        "i5-12600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-12600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-12600KF",
+      "name": "Intel Core i5-12600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-12600KF",
+        "i5-12600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13400",
+      "brand": "Intel",
+      "model": "Intel Core i5-13400",
+      "name": "Intel Core i5-13400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13400",
+        "i5-13400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-13400F",
+      "name": "Intel Core i5-13400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13400F",
+        "i5-13400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13500",
+      "brand": "Intel",
+      "model": "Intel Core i5-13500",
+      "name": "Intel Core i5-13500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13500",
+        "i5-13500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13500t",
+      "brand": "Intel",
+      "model": "Intel Core i5-13500T",
+      "name": "Intel Core i5-13500T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13500T",
+        "i5-13500T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13600",
+      "brand": "Intel",
+      "model": "Intel Core i5-13600",
+      "name": "Intel Core i5-13600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13600",
+        "i5-13600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-13600K",
+      "name": "Intel Core i5-13600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13600K",
+        "i5-13600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-13600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-13600KF",
+      "name": "Intel Core i5-13600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-13600KF",
+        "i5-13600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14400",
+      "brand": "Intel",
+      "model": "Intel Core i5-14400",
+      "name": "Intel Core i5-14400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14400",
+        "i5-14400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-14400F",
+      "name": "Intel Core i5-14400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14400F",
+        "i5-14400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14500",
+      "brand": "Intel",
+      "model": "Intel Core i5-14500",
+      "name": "Intel Core i5-14500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14500",
+        "i5-14500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14500t",
+      "brand": "Intel",
+      "model": "Intel Core i5-14500T",
+      "name": "Intel Core i5-14500T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14500T",
+        "i5-14500T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-14600K",
+      "name": "Intel Core i5-14600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14600K",
+        "i5-14600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-14600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-14600KF",
+      "name": "Intel Core i5-14600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-14600KF",
+        "i5-14600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9400",
+      "brand": "Intel",
+      "model": "Intel Core i5-9400",
+      "name": "Intel Core i5-9400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9400",
+        "i5-9400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9400f",
+      "brand": "Intel",
+      "model": "Intel Core i5-9400F",
+      "name": "Intel Core i5-9400F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9400F",
+        "i5-9400F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9400t",
+      "brand": "Intel",
+      "model": "Intel Core i5-9400T",
+      "name": "Intel Core i5-9400T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9400T",
+        "i5-9400T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9500",
+      "brand": "Intel",
+      "model": "Intel Core i5-9500",
+      "name": "Intel Core i5-9500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9500",
+        "i5-9500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9500f",
+      "brand": "Intel",
+      "model": "Intel Core i5-9500F",
+      "name": "Intel Core i5-9500F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9500F",
+        "i5-9500F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9500t",
+      "brand": "Intel",
+      "model": "Intel Core i5-9500T",
+      "name": "Intel Core i5-9500T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9500T",
+        "i5-9500T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9600",
+      "brand": "Intel",
+      "model": "Intel Core i5-9600",
+      "name": "Intel Core i5-9600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9600",
+        "i5-9600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9600k",
+      "brand": "Intel",
+      "model": "Intel Core i5-9600K",
+      "name": "Intel Core i5-9600K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9600K",
+        "i5-9600K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9600kf",
+      "brand": "Intel",
+      "model": "Intel Core i5-9600KF",
+      "name": "Intel Core i5-9600KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9600KF",
+        "i5-9600KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i5-9600t",
+      "brand": "Intel",
+      "model": "Intel Core i5-9600T",
+      "name": "Intel Core i5-9600T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i5-9600T",
+        "i5-9600T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-10700",
+      "brand": "Intel",
+      "model": "Intel Core i7-10700",
+      "name": "Intel Core i7-10700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-10700",
+        "i7-10700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-10700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-10700F",
+      "name": "Intel Core i7-10700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-10700F",
+        "i7-10700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-10700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-10700K",
+      "name": "Intel Core i7-10700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-10700K",
+        "i7-10700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-10700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-10700KF",
+      "name": "Intel Core i7-10700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-10700KF",
+        "i7-10700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-11700",
+      "brand": "Intel",
+      "model": "Intel Core i7-11700",
+      "name": "Intel Core i7-11700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-11700",
+        "i7-11700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-11700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-11700F",
+      "name": "Intel Core i7-11700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-11700F",
+        "i7-11700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-11700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-11700K",
+      "name": "Intel Core i7-11700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-11700K",
+        "i7-11700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-11700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-11700KF",
+      "name": "Intel Core i7-11700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-11700KF",
+        "i7-11700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-12700",
+      "brand": "Intel",
+      "model": "Intel Core i7-12700",
+      "name": "Intel Core i7-12700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-12700",
+        "i7-12700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-12700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-12700F",
+      "name": "Intel Core i7-12700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-12700F",
+        "i7-12700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-12700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-12700K",
+      "name": "Intel Core i7-12700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-12700K",
+        "i7-12700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-12700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-12700KF",
+      "name": "Intel Core i7-12700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-12700KF",
+        "i7-12700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-13700",
+      "brand": "Intel",
+      "model": "Intel Core i7-13700",
+      "name": "Intel Core i7-13700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-13700",
+        "i7-13700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-13700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-13700F",
+      "name": "Intel Core i7-13700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-13700F",
+        "i7-13700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-13700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-13700K",
+      "name": "Intel Core i7-13700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-13700K",
+        "i7-13700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-13700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-13700KF",
+      "name": "Intel Core i7-13700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-13700KF",
+        "i7-13700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-13700t",
+      "brand": "Intel",
+      "model": "Intel Core i7-13700T",
+      "name": "Intel Core i7-13700T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-13700T",
+        "i7-13700T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-14700",
+      "brand": "Intel",
+      "model": "Intel Core i7-14700",
+      "name": "Intel Core i7-14700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-14700",
+        "i7-14700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-14700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-14700F",
+      "name": "Intel Core i7-14700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-14700F",
+        "i7-14700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-14700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-14700K",
+      "name": "Intel Core i7-14700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-14700K",
+        "i7-14700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-14700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-14700KF",
+      "name": "Intel Core i7-14700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-14700KF",
+        "i7-14700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-920",
+      "brand": "Intel",
+      "model": "Intel Core i7-920",
+      "name": "Intel Core i7-920",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-920",
+        "i7-920"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-930",
+      "brand": "Intel",
+      "model": "Intel Core i7-930",
+      "name": "Intel Core i7-930",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-930",
+        "i7-930"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-940",
+      "brand": "Intel",
+      "model": "Intel Core i7-940",
+      "name": "Intel Core i7-940",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-940",
+        "i7-940"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-950",
+      "brand": "Intel",
+      "model": "Intel Core i7-950",
+      "name": "Intel Core i7-950",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-950",
+        "i7-950"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-960",
+      "brand": "Intel",
+      "model": "Intel Core i7-960",
+      "name": "Intel Core i7-960",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-960",
+        "i7-960"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-970",
+      "brand": "Intel",
+      "model": "Intel Core i7-970",
+      "name": "Intel Core i7-970",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-970",
+        "i7-970"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9700",
+      "brand": "Intel",
+      "model": "Intel Core i7-9700",
+      "name": "Intel Core i7-9700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9700",
+        "i7-9700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9700f",
+      "brand": "Intel",
+      "model": "Intel Core i7-9700F",
+      "name": "Intel Core i7-9700F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9700F",
+        "i7-9700F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9700k",
+      "brand": "Intel",
+      "model": "Intel Core i7-9700K",
+      "name": "Intel Core i7-9700K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9700K",
+        "i7-9700K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9700kf",
+      "brand": "Intel",
+      "model": "Intel Core i7-9700KF",
+      "name": "Intel Core i7-9700KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9700KF",
+        "i7-9700KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9700t",
+      "brand": "Intel",
+      "model": "Intel Core i7-9700T",
+      "name": "Intel Core i7-9700T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9700T",
+        "i7-9700T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-980",
+      "brand": "Intel",
+      "model": "Intel Core i7-980",
+      "name": "Intel Core i7-980",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-980",
+        "i7-980"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i7-9800x",
+      "brand": "Intel",
+      "model": "Intel Core i7-9800X",
+      "name": "Intel Core i7-9800X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i7-9800X",
+        "i7-9800X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10850k",
+      "brand": "Intel",
+      "model": "Intel Core i9-10850K",
+      "name": "Intel Core i9-10850K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10850K",
+        "i9-10850K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10900",
+      "brand": "Intel",
+      "model": "Intel Core i9-10900",
+      "name": "Intel Core i9-10900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10900",
+        "i9-10900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10900f",
+      "brand": "Intel",
+      "model": "Intel Core i9-10900F",
+      "name": "Intel Core i9-10900F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10900F",
+        "i9-10900F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-10900K",
+      "name": "Intel Core i9-10900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10900K",
+        "i9-10900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-10900KF",
+      "name": "Intel Core i9-10900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10900KF",
+        "i9-10900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10900x",
+      "brand": "Intel",
+      "model": "Intel Core i9-10900X",
+      "name": "Intel Core i9-10900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10900X",
+        "i9-10900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10920x",
+      "brand": "Intel",
+      "model": "Intel Core i9-10920X",
+      "name": "Intel Core i9-10920X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10920X",
+        "i9-10920X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10940x",
+      "brand": "Intel",
+      "model": "Intel Core i9-10940X",
+      "name": "Intel Core i9-10940X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10940X",
+        "i9-10940X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-10980xe",
+      "brand": "Intel",
+      "model": "Intel Core i9-10980XE",
+      "name": "Intel Core i9-10980XE",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-10980XE",
+        "i9-10980XE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-11900",
+      "brand": "Intel",
+      "model": "Intel Core i9-11900",
+      "name": "Intel Core i9-11900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-11900",
+        "i9-11900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-11900f",
+      "brand": "Intel",
+      "model": "Intel Core i9-11900F",
+      "name": "Intel Core i9-11900F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-11900F",
+        "i9-11900F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-11900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-11900K",
+      "name": "Intel Core i9-11900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-11900K",
+        "i9-11900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-11900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-11900KF",
+      "name": "Intel Core i9-11900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-11900KF",
+        "i9-11900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-12900",
+      "brand": "Intel",
+      "model": "Intel Core i9-12900",
+      "name": "Intel Core i9-12900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-12900",
+        "i9-12900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "ks"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-12900f",
+      "brand": "Intel",
+      "model": "Intel Core i9-12900F",
+      "name": "Intel Core i9-12900F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-12900F",
+        "i9-12900F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-12900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-12900K",
+      "name": "Intel Core i9-12900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-12900K",
+        "i9-12900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-12900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-12900KF",
+      "name": "Intel Core i9-12900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-12900KF",
+        "i9-12900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-12900ks",
+      "brand": "Intel",
+      "model": "Intel Core i9-12900KS",
+      "name": "Intel Core i9-12900KS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-12900KS",
+        "i9-12900KS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900",
+      "name": "Intel Core i9-13900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900",
+        "i9-13900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "ks",
+        "t"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900f",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900F",
+      "name": "Intel Core i9-13900F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900F",
+        "i9-13900F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900K",
+      "name": "Intel Core i9-13900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900K",
+        "i9-13900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900KF",
+      "name": "Intel Core i9-13900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900KF",
+        "i9-13900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900ks",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900KS",
+      "name": "Intel Core i9-13900KS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900KS",
+        "i9-13900KS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-13900t",
+      "brand": "Intel",
+      "model": "Intel Core i9-13900T",
+      "name": "Intel Core i9-13900T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-13900T",
+        "i9-13900T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-14900",
+      "brand": "Intel",
+      "model": "Intel Core i9-14900",
+      "name": "Intel Core i9-14900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-14900",
+        "i9-14900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf",
+        "ks"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-14900f",
+      "brand": "Intel",
+      "model": "Intel Core i9-14900F",
+      "name": "Intel Core i9-14900F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-14900F",
+        "i9-14900F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-14900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-14900K",
+      "name": "Intel Core i9-14900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-14900K",
+        "i9-14900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-14900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-14900KF",
+      "name": "Intel Core i9-14900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-14900KF",
+        "i9-14900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-14900ks",
+      "brand": "Intel",
+      "model": "Intel Core i9-14900KS",
+      "name": "Intel Core i9-14900KS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-14900KS",
+        "i9-14900KS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9820x",
+      "brand": "Intel",
+      "model": "Intel Core i9-9820X",
+      "name": "Intel Core i9-9820X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9820X",
+        "i9-9820X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900",
+      "name": "Intel Core i9-9900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900",
+        "i9-9900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k",
+        "kf",
+        "ks",
+        "t",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900k",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900K",
+      "name": "Intel Core i9-9900K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900K",
+        "i9-9900K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900kf",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900KF",
+      "name": "Intel Core i9-9900KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900KF",
+        "i9-9900KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900ks",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900KS",
+      "name": "Intel Core i9-9900KS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900KS",
+        "i9-9900KS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900t",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900T",
+      "name": "Intel Core i9-9900T",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900T",
+        "i9-9900T"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9900x",
+      "brand": "Intel",
+      "model": "Intel Core i9-9900X",
+      "name": "Intel Core i9-9900X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9900X",
+        "i9-9900X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9920x",
+      "brand": "Intel",
+      "model": "Intel Core i9-9920X",
+      "name": "Intel Core i9-9920X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9920X",
+        "i9-9920X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9940x",
+      "brand": "Intel",
+      "model": "Intel Core i9-9940X",
+      "name": "Intel Core i9-9940X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9940X",
+        "i9-9940X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9960x",
+      "brand": "Intel",
+      "model": "Intel Core i9-9960X",
+      "name": "Intel Core i9-9960X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9960X",
+        "i9-9960X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-i9-9980xe",
+      "brand": "Intel",
+      "model": "Intel Core i9-9980XE",
+      "name": "Intel Core i9-9980XE",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core i9-9980XE",
+        "i9-9980XE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-5-225",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 5 225",
+      "name": "Intel Core Ultra 5 225",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 5 225",
+        "Ultra 5 225"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-5-225f",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 5 225F",
+      "name": "Intel Core Ultra 5 225F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 5 225F",
+        "Ultra 5 225F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-5-235",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 5 235",
+      "name": "Intel Core Ultra 5 235",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 5 235",
+        "Ultra 5 235"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-5-245k",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 5 245K",
+      "name": "Intel Core Ultra 5 245K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 5 245K",
+        "Ultra 5 245K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-5-245kf",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 5 245KF",
+      "name": "Intel Core Ultra 5 245KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 5 245KF",
+        "Ultra 5 245KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-7-265",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 7 265",
+      "name": "Intel Core Ultra 7 265",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 7 265",
+        "Ultra 7 265"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "f",
+        "k",
+        "kf"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-7-265f",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 7 265F",
+      "name": "Intel Core Ultra 7 265F",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 7 265F",
+        "Ultra 7 265F"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-7-265k",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 7 265K",
+      "name": "Intel Core Ultra 7 265K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 7 265K",
+        "Ultra 7 265K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-7-265kf",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 7 265KF",
+      "name": "Intel Core Ultra 7 265KF",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 7 265KF",
+        "Ultra 7 265KF"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-9-285",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 9 285",
+      "name": "Intel Core Ultra 9 285",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 9 285",
+        "Ultra 9 285"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "k"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "intel-core-ultra-9-285k",
+      "brand": "Intel",
+      "model": "Intel Core Ultra 9 285K",
+      "name": "Intel Core Ultra 9 285K",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Prozessoren"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Intel Core Ultra 9 285K",
+        "Ultra 9 285K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

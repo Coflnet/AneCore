@@ -306,6 +306,12 @@ public class KnownProductMatcher
         }
         var s = sb.ToString().Replace("ß", "ss");
 
+        // "+" is a real distinguishing character in a lot of model names (Galaxy S21 vs S21+, Note10+,
+        // iPad Pro ...) - without this it gets wiped by the [^a-z0-9 ] catch-all below just like any
+        // other punctuation, making e.g. "Galaxy S21+" normalize to the exact same tokens as "Galaxy
+        // S21" and become permanently ambiguous between the two products.
+        s = s.Replace("+", " plus ");
+
         s = Regex.Replace(s, @"[-_/]+", " ", Opts);
         s = Regex.Replace(s, @"(?<=[a-z])(?=[0-9])", " ", Opts);
         s = Regex.Replace(s, @"(?<=[0-9])(?=[a-z])", " ", Opts);

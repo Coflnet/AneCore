@@ -1,0 +1,1270 @@
+{
+  "products": [
+    {
+      "id": "canon-eos-1300d",
+      "brand": "Canon",
+      "model": "EOS 1300D",
+      "name": "Canon EOS 1300D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 1300D",
+        "EOS 1300D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-250d",
+      "brand": "Canon",
+      "model": "EOS 250D",
+      "name": "Canon EOS 250D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 250D",
+        "EOS 250D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-4000d",
+      "brand": "Canon",
+      "model": "EOS 4000D",
+      "name": "Canon EOS 4000D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 4000D",
+        "EOS 4000D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-5d-mark-iv",
+      "brand": "Canon",
+      "model": "EOS 5D Mark IV",
+      "name": "Canon EOS 5D Mark IV",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 5D Mark IV",
+        "EOS 5D Mark IV"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-5ds",
+      "brand": "Canon",
+      "model": "EOS 5DS",
+      "name": "Canon EOS 5DS",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 5DS",
+        "EOS 5DS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "r"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-5ds-r",
+      "brand": "Canon",
+      "model": "EOS 5DS R",
+      "name": "Canon EOS 5DS R",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 5DS R",
+        "EOS 5DS R"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-6d-mark-ii",
+      "brand": "Canon",
+      "model": "EOS 6D Mark II",
+      "name": "Canon EOS 6D Mark II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 6D Mark II",
+        "EOS 6D Mark II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-77d",
+      "brand": "Canon",
+      "model": "EOS 77D",
+      "name": "Canon EOS 77D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 77D",
+        "EOS 77D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-80d",
+      "brand": "Canon",
+      "model": "EOS 80D",
+      "name": "Canon EOS 80D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 80D",
+        "EOS 80D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-850d",
+      "brand": "Canon",
+      "model": "EOS 850D",
+      "name": "Canon EOS 850D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 850D",
+        "EOS 850D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-90d",
+      "brand": "Canon",
+      "model": "EOS 90D",
+      "name": "Canon EOS 90D",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS 90D",
+        "EOS 90D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m10",
+      "brand": "Canon",
+      "model": "EOS M10",
+      "name": "Canon EOS M10",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M10",
+        "EOS M10"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m100",
+      "brand": "Canon",
+      "model": "EOS M100",
+      "name": "Canon EOS M100",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M100",
+        "EOS M100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m200",
+      "brand": "Canon",
+      "model": "EOS M200",
+      "name": "Canon EOS M200",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M200",
+        "EOS M200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m3",
+      "brand": "Canon",
+      "model": "EOS M3",
+      "name": "Canon EOS M3",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M3",
+        "EOS M3"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m5",
+      "brand": "Canon",
+      "model": "EOS M5",
+      "name": "Canon EOS M5",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M5",
+        "EOS M5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m50",
+      "brand": "Canon",
+      "model": "EOS M50",
+      "name": "Canon EOS M50",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M50",
+        "EOS M50"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m50-ii",
+      "brand": "Canon",
+      "model": "EOS M50 II",
+      "name": "Canon EOS M50 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M50 II",
+        "EOS M50 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m6",
+      "brand": "Canon",
+      "model": "EOS M6",
+      "name": "Canon EOS M6",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M6",
+        "EOS M6"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "mark"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-m6-mark-ii",
+      "brand": "Canon",
+      "model": "EOS M6 Mark II",
+      "name": "Canon EOS M6 Mark II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS M6 Mark II",
+        "EOS M6 Mark II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r",
+      "brand": "Canon",
+      "model": "EOS R",
+      "name": "Canon EOS R",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R",
+        "EOS R"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "1",
+        "10",
+        "100",
+        "3",
+        "5",
+        "50",
+        "6",
+        "7",
+        "8"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r1",
+      "brand": "Canon",
+      "model": "EOS R1",
+      "name": "Canon EOS R1",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R1",
+        "EOS R1"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r10",
+      "brand": "Canon",
+      "model": "EOS R10",
+      "name": "Canon EOS R10",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R10",
+        "EOS R10"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r100",
+      "brand": "Canon",
+      "model": "EOS R100",
+      "name": "Canon EOS R100",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R100",
+        "EOS R100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r3",
+      "brand": "Canon",
+      "model": "EOS R3",
+      "name": "Canon EOS R3",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R3",
+        "EOS R3"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r5",
+      "brand": "Canon",
+      "model": "EOS R5",
+      "name": "Canon EOS R5",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R5",
+        "EOS R5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "c",
+        "mark"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r5-c",
+      "brand": "Canon",
+      "model": "EOS R5 C",
+      "name": "Canon EOS R5 C",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R5 C",
+        "EOS R5 C"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r5-mark-ii",
+      "brand": "Canon",
+      "model": "EOS R5 Mark II",
+      "name": "Canon EOS R5 Mark II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R5 Mark II",
+        "EOS R5 Mark II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r50",
+      "brand": "Canon",
+      "model": "EOS R50",
+      "name": "Canon EOS R50",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R50",
+        "EOS R50"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "v"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r50-v",
+      "brand": "Canon",
+      "model": "EOS R50 V",
+      "name": "Canon EOS R50 V",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R50 V",
+        "EOS R50 V"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r6",
+      "brand": "Canon",
+      "model": "EOS R6",
+      "name": "Canon EOS R6",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R6",
+        "EOS R6"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "mark"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r6-mark-ii",
+      "brand": "Canon",
+      "model": "EOS R6 Mark II",
+      "name": "Canon EOS R6 Mark II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R6 Mark II",
+        "EOS R6 Mark II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r6-mark-iii",
+      "brand": "Canon",
+      "model": "EOS R6 Mark III",
+      "name": "Canon EOS R6 Mark III",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R6 Mark III",
+        "EOS R6 Mark III"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r7",
+      "brand": "Canon",
+      "model": "EOS R7",
+      "name": "Canon EOS R7",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R7",
+        "EOS R7"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-r8",
+      "brand": "Canon",
+      "model": "EOS R8",
+      "name": "Canon EOS R8",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS R8",
+        "EOS R8"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rebel-sl2",
+      "brand": "Canon",
+      "model": "EOS Rebel SL2",
+      "name": "Canon EOS Rebel SL2",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS Rebel SL2",
+        "EOS Rebel SL2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rebel-t6i",
+      "brand": "Canon",
+      "model": "EOS Rebel T6i",
+      "name": "Canon EOS Rebel T6i",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS Rebel T6i",
+        "EOS Rebel T6i"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rebel-t6s",
+      "brand": "Canon",
+      "model": "EOS Rebel T6s",
+      "name": "Canon EOS Rebel T6s",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS Rebel T6s",
+        "EOS Rebel T6s"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rebel-t7",
+      "brand": "Canon",
+      "model": "EOS Rebel T7",
+      "name": "Canon EOS Rebel T7",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS Rebel T7",
+        "EOS Rebel T7"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "i"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rebel-t7i",
+      "brand": "Canon",
+      "model": "EOS Rebel T7i",
+      "name": "Canon EOS Rebel T7i",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS Rebel T7i",
+        "EOS Rebel T7i"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "canon-eos-rp",
+      "brand": "Canon",
+      "model": "EOS RP",
+      "name": "Canon EOS RP",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Canon EOS RP",
+        "EOS RP"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z-fc",
+      "brand": "Nikon",
+      "model": "Z fc",
+      "name": "Nikon Z fc",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z fc",
+        "Z fc"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z30",
+      "brand": "Nikon",
+      "model": "Z30",
+      "name": "Nikon Z30",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z30",
+        "Z30"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z5",
+      "brand": "Nikon",
+      "model": "Z5",
+      "name": "Nikon Z5",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z5"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z5-ii",
+      "brand": "Nikon",
+      "model": "Z5 II",
+      "name": "Nikon Z5 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z5 II",
+        "Z5 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z50",
+      "brand": "Nikon",
+      "model": "Z50",
+      "name": "Nikon Z50",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z50",
+        "Z50"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z50-ii",
+      "brand": "Nikon",
+      "model": "Z50 II",
+      "name": "Nikon Z50 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z50 II",
+        "Z50 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z6",
+      "brand": "Nikon",
+      "model": "Z6",
+      "name": "Nikon Z6",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z6"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii",
+        "iii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z6-ii",
+      "brand": "Nikon",
+      "model": "Z6 II",
+      "name": "Nikon Z6 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z6 II",
+        "Z6 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z6-iii",
+      "brand": "Nikon",
+      "model": "Z6 III",
+      "name": "Nikon Z6 III",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z6 III",
+        "Z6 III"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z7",
+      "brand": "Nikon",
+      "model": "Z7",
+      "name": "Nikon Z7",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z7"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z7-ii",
+      "brand": "Nikon",
+      "model": "Z7 II",
+      "name": "Nikon Z7 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z7 II",
+        "Z7 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z8",
+      "brand": "Nikon",
+      "model": "Z8",
+      "name": "Nikon Z8",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z8"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "nikon-z9",
+      "brand": "Nikon",
+      "model": "Z9",
+      "name": "Nikon Z9",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nikon Z9"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-7r-ii",
+      "brand": "Sony",
+      "model": "Alpha 7R II",
+      "name": "Sony Alpha 7R II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha 7R II",
+        "Sony Alpha 7R II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-7s-ii",
+      "brand": "Sony",
+      "model": "Alpha 7S II",
+      "name": "Sony Alpha 7S II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha 7S II",
+        "Sony Alpha 7S II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a6300",
+      "brand": "Sony",
+      "model": "Alpha a6300",
+      "name": "Sony Alpha a6300",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a6300",
+        "Sony Alpha a6300"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a6400",
+      "brand": "Sony",
+      "model": "Alpha a6400",
+      "name": "Sony Alpha a6400",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a6400",
+        "Sony Alpha a6400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a6500",
+      "brand": "Sony",
+      "model": "Alpha a6500",
+      "name": "Sony Alpha a6500",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a6500",
+        "Sony Alpha a6500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a7-iii",
+      "brand": "Sony",
+      "model": "Alpha A7 III",
+      "name": "Sony Alpha A7 III",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha A7 III",
+        "Sony Alpha A7 III"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a7r-iii",
+      "brand": "Sony",
+      "model": "Alpha a7R III",
+      "name": "Sony Alpha a7R III",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a7R III",
+        "Sony Alpha a7R III"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a9",
+      "brand": "Sony",
+      "model": "Alpha a9",
+      "name": "Sony Alpha a9",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a9",
+        "Sony Alpha a9"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ii"
+      ],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a9-ii",
+      "brand": "Sony",
+      "model": "Alpha a9 II",
+      "name": "Sony Alpha a9 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha a9 II",
+        "Sony Alpha a9 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-a99-ii",
+      "brand": "Sony",
+      "model": "Alpha A99 II",
+      "name": "Sony Alpha A99 II",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha A99 II",
+        "Sony Alpha A99 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    },
+    {
+      "id": "sony-alpha-slt-a68",
+      "brand": "Sony",
+      "model": "Alpha SLT-A68",
+      "name": "Sony Alpha SLT-A68",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Digitalkameras"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Alpha SLT-A68",
+        "Sony Alpha SLT-A68"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:cameradatabase-2026-09"
+    }
+  ]
+}

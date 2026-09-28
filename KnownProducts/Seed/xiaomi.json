@@ -1,0 +1,3188 @@
+{
+  "products": [
+    {
+      "id": "xiaomi-mi-10",
+      "brand": "Xiaomi",
+      "model": "Mi 10",
+      "name": "Xiaomi Mi 10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10",
+        "Xiaomi Mi 10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "i",
+        "lite",
+        "pro",
+        "s",
+        "t",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10-lite",
+      "brand": "Xiaomi",
+      "model": "Mi 10 Lite",
+      "name": "Xiaomi Mi 10 Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10 Lite",
+        "Xiaomi Mi 10 Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 10 Pro",
+      "name": "Xiaomi Mi 10 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10 Pro",
+        "Xiaomi Mi 10 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10-ultra",
+      "brand": "Xiaomi",
+      "model": "Mi 10 Ultra",
+      "name": "Xiaomi Mi 10 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10 Ultra",
+        "Xiaomi Mi 10 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10i",
+      "brand": "Xiaomi",
+      "model": "Mi 10i",
+      "name": "Xiaomi Mi 10i",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10i",
+        "Xiaomi Mi 10i"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10s",
+      "brand": "Xiaomi",
+      "model": "Mi 10S",
+      "name": "Xiaomi Mi 10S",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10S",
+        "Xiaomi Mi 10S"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10t",
+      "brand": "Xiaomi",
+      "model": "Mi 10T",
+      "name": "Xiaomi Mi 10T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10T",
+        "Xiaomi Mi 10T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "lite",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10t-lite",
+      "brand": "Xiaomi",
+      "model": "Mi 10T Lite",
+      "name": "Xiaomi Mi 10T Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10T Lite",
+        "Xiaomi Mi 10T Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-10t-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 10T Pro",
+      "name": "Xiaomi Mi 10T Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 10T Pro",
+        "Xiaomi Mi 10T Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11",
+      "brand": "Xiaomi",
+      "model": "Mi 11",
+      "name": "Xiaomi Mi 11",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11",
+        "Xiaomi Mi 11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "i",
+        "lite",
+        "pro",
+        "t",
+        "ultra",
+        "x"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11-lite",
+      "brand": "Xiaomi",
+      "model": "Mi 11 Lite",
+      "name": "Xiaomi Mi 11 Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11 Lite",
+        "Xiaomi Mi 11 Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 11 Pro",
+      "name": "Xiaomi Mi 11 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11 Pro",
+        "Xiaomi Mi 11 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11-ultra",
+      "brand": "Xiaomi",
+      "model": "Mi 11 Ultra",
+      "name": "Xiaomi Mi 11 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11 Ultra",
+        "Xiaomi Mi 11 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11i",
+      "brand": "Xiaomi",
+      "model": "Mi 11i",
+      "name": "Xiaomi Mi 11i",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11i",
+        "Xiaomi Mi 11i"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11t",
+      "brand": "Xiaomi",
+      "model": "Mi 11T",
+      "name": "Xiaomi Mi 11T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11T",
+        "Xiaomi Mi 11T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11t-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 11T Pro",
+      "name": "Xiaomi Mi 11T Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11T Pro",
+        "Xiaomi Mi 11T Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11x",
+      "brand": "Xiaomi",
+      "model": "Mi 11X",
+      "name": "Xiaomi Mi 11X",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11X",
+        "Xiaomi Mi 11X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-11x-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 11X Pro",
+      "name": "Xiaomi Mi 11X Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 11X Pro",
+        "Xiaomi Mi 11X Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12",
+      "brand": "Xiaomi",
+      "model": "Mi 12",
+      "name": "Xiaomi Mi 12",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12",
+        "Xiaomi Mi 12"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "lite",
+        "pro",
+        "s",
+        "t",
+        "x"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12-lite",
+      "brand": "Xiaomi",
+      "model": "Mi 12 Lite",
+      "name": "Xiaomi Mi 12 Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12 Lite",
+        "Xiaomi Mi 12 Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 12 Pro",
+      "name": "Xiaomi Mi 12 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12 Pro",
+        "Xiaomi Mi 12 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12s",
+      "brand": "Xiaomi",
+      "model": "Mi 12S",
+      "name": "Xiaomi Mi 12S",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12S",
+        "Xiaomi Mi 12S"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12s-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 12S Pro",
+      "name": "Xiaomi Mi 12S Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12S Pro",
+        "Xiaomi Mi 12S Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12s-ultra",
+      "brand": "Xiaomi",
+      "model": "Mi 12S Ultra",
+      "name": "Xiaomi Mi 12S Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12S Ultra",
+        "Xiaomi Mi 12S Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12t",
+      "brand": "Xiaomi",
+      "model": "Mi 12T",
+      "name": "Xiaomi Mi 12T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12T",
+        "Xiaomi Mi 12T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12t-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 12T Pro",
+      "name": "Xiaomi Mi 12T Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12T Pro",
+        "Xiaomi Mi 12T Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-12x",
+      "brand": "Xiaomi",
+      "model": "Mi 12X",
+      "name": "Xiaomi Mi 12X",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 12X",
+        "Xiaomi Mi 12X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13",
+      "brand": "Xiaomi",
+      "model": "Mi 13",
+      "name": "Xiaomi Mi 13",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13",
+        "Xiaomi Mi 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "lite",
+        "pro",
+        "t",
+        "ultra"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13-lite",
+      "brand": "Xiaomi",
+      "model": "Mi 13 Lite",
+      "name": "Xiaomi Mi 13 Lite",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13 Lite",
+        "Xiaomi Mi 13 Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 13 Pro",
+      "name": "Xiaomi Mi 13 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13 Pro",
+        "Xiaomi Mi 13 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13-ultra",
+      "brand": "Xiaomi",
+      "model": "Mi 13 Ultra",
+      "name": "Xiaomi Mi 13 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13 Ultra",
+        "Xiaomi Mi 13 Ultra"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13t",
+      "brand": "Xiaomi",
+      "model": "Mi 13T",
+      "name": "Xiaomi Mi 13T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13T",
+        "Xiaomi Mi 13T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-mi-13t-pro",
+      "brand": "Xiaomi",
+      "model": "Mi 13T Pro",
+      "name": "Xiaomi Mi 13T Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Mi 13T Pro",
+        "Xiaomi Mi 13T Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f3",
+      "brand": "Xiaomi",
+      "model": "Poco F3",
+      "name": "Xiaomi Poco F3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F3",
+        "Xiaomi Poco F3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "gt"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f3-gt",
+      "brand": "Xiaomi",
+      "model": "Poco F3 GT",
+      "name": "Xiaomi Poco F3 GT",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F3 GT",
+        "Xiaomi Poco F3 GT"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f4",
+      "brand": "Xiaomi",
+      "model": "Poco F4",
+      "name": "Xiaomi Poco F4",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F4",
+        "Xiaomi Poco F4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "gt"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f4-gt",
+      "brand": "Xiaomi",
+      "model": "Poco F4 GT",
+      "name": "Xiaomi Poco F4 GT",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F4 GT",
+        "Xiaomi Poco F4 GT"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f5",
+      "brand": "Xiaomi",
+      "model": "Poco F5",
+      "name": "Xiaomi Poco F5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F5",
+        "Xiaomi Poco F5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f5-pro",
+      "brand": "Xiaomi",
+      "model": "Poco F5 Pro",
+      "name": "Xiaomi Poco F5 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F5 Pro",
+        "Xiaomi Poco F5 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f6",
+      "brand": "Xiaomi",
+      "model": "Poco F6",
+      "name": "Xiaomi Poco F6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F6",
+        "Xiaomi Poco F6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f6-pro",
+      "brand": "Xiaomi",
+      "model": "Poco F6 Pro",
+      "name": "Xiaomi Poco F6 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F6 Pro",
+        "Xiaomi Poco F6 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f7",
+      "brand": "Xiaomi",
+      "model": "Poco F7",
+      "name": "Xiaomi Poco F7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco F7",
+        "Xiaomi Poco F7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-f7-pro",
+      "brand": "Xiaomi",
+      "model": "POCO F7 Pro",
+      "name": "Xiaomi POCO F7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "POCO F7 Pro",
+        "Xiaomi POCO F7 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m2",
+      "brand": "Xiaomi",
+      "model": "Poco M2",
+      "name": "Xiaomi Poco M2",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M2",
+        "Xiaomi Poco M2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m2-pro",
+      "brand": "Xiaomi",
+      "model": "Poco M2 Pro",
+      "name": "Xiaomi Poco M2 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M2 Pro",
+        "Xiaomi Poco M2 Pro"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m3-pro",
+      "brand": "Xiaomi",
+      "model": "Poco M3 Pro",
+      "name": "Xiaomi Poco M3 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M3 Pro",
+        "Xiaomi Poco M3 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m4",
+      "brand": "Xiaomi",
+      "model": "Poco M4",
+      "name": "Xiaomi Poco M4",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M4",
+        "Xiaomi Poco M4"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m4-pro",
+      "brand": "Xiaomi",
+      "model": "Poco M4 Pro",
+      "name": "Xiaomi Poco M4 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M4 Pro",
+        "Xiaomi Poco M4 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m5",
+      "brand": "Xiaomi",
+      "model": "Poco M5",
+      "name": "Xiaomi Poco M5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M5",
+        "Xiaomi Poco M5"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m5s",
+      "brand": "Xiaomi",
+      "model": "Poco M5s",
+      "name": "Xiaomi Poco M5s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M5s",
+        "Xiaomi Poco M5s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m6",
+      "brand": "Xiaomi",
+      "model": "Poco M6",
+      "name": "Xiaomi Poco M6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M6",
+        "Xiaomi Poco M6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m6-pro",
+      "brand": "Xiaomi",
+      "model": "Poco M6 Pro",
+      "name": "Xiaomi Poco M6 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M6 Pro",
+        "Xiaomi Poco M6 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m7",
+      "brand": "Xiaomi",
+      "model": "Poco M7",
+      "name": "Xiaomi Poco M7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M7",
+        "Xiaomi Poco M7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-m7-pro",
+      "brand": "Xiaomi",
+      "model": "Poco M7 Pro",
+      "name": "Xiaomi Poco M7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco M7 Pro",
+        "Xiaomi Poco M7 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x3-gt",
+      "brand": "Xiaomi",
+      "model": "Poco X3 GT",
+      "name": "Xiaomi Poco X3 GT",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X3 GT",
+        "Xiaomi Poco X3 GT"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x3-pro",
+      "brand": "Xiaomi",
+      "model": "Poco X3 Pro",
+      "name": "Xiaomi Poco X3 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X3 Pro",
+        "Xiaomi Poco X3 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x4-gt",
+      "brand": "Xiaomi",
+      "model": "Poco X4 GT",
+      "name": "Xiaomi Poco X4 GT",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X4 GT",
+        "Xiaomi Poco X4 GT"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x4-pro",
+      "brand": "Xiaomi",
+      "model": "Poco X4 Pro",
+      "name": "Xiaomi Poco X4 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X4 Pro",
+        "Xiaomi Poco X4 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x5",
+      "brand": "Xiaomi",
+      "model": "Poco X5",
+      "name": "Xiaomi Poco X5",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X5",
+        "Xiaomi Poco X5"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x5-pro",
+      "brand": "Xiaomi",
+      "model": "Poco X5 Pro",
+      "name": "Xiaomi Poco X5 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X5 Pro",
+        "Xiaomi Poco X5 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x6",
+      "brand": "Xiaomi",
+      "model": "Poco X6",
+      "name": "Xiaomi Poco X6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X6",
+        "Xiaomi Poco X6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x6-pro",
+      "brand": "Xiaomi",
+      "model": "Poco X6 Pro",
+      "name": "Xiaomi Poco X6 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X6 Pro",
+        "Xiaomi Poco X6 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x7",
+      "brand": "Xiaomi",
+      "model": "Poco X7",
+      "name": "Xiaomi Poco X7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X7",
+        "Xiaomi Poco X7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-poco-x7-pro",
+      "brand": "Xiaomi",
+      "model": "Poco X7 Pro",
+      "name": "Xiaomi Poco X7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Poco X7 Pro",
+        "Xiaomi Poco X7 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-10",
+      "brand": "Xiaomi",
+      "model": "Redmi 10",
+      "name": "Xiaomi Redmi 10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 10",
+        "Xiaomi Redmi 10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "x"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-10a",
+      "brand": "Xiaomi",
+      "model": "Redmi 10A",
+      "name": "Xiaomi Redmi 10A",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 10A",
+        "Xiaomi Redmi 10A"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-10x",
+      "brand": "Xiaomi",
+      "model": "Redmi 10X",
+      "name": "Xiaomi Redmi 10X",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 10X",
+        "Xiaomi Redmi 10X"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-10x-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi 10X Pro",
+      "name": "Xiaomi Redmi 10X Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 10X Pro",
+        "Xiaomi Redmi 10X Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-12",
+      "brand": "Xiaomi",
+      "model": "Redmi 12",
+      "name": "Xiaomi Redmi 12",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 12",
+        "Xiaomi Redmi 12"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "c"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-12c",
+      "brand": "Xiaomi",
+      "model": "Redmi 12C",
+      "name": "Xiaomi Redmi 12C",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 12C",
+        "Xiaomi Redmi 12C"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-13",
+      "brand": "Xiaomi",
+      "model": "Redmi 13",
+      "name": "Xiaomi Redmi 13",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 13",
+        "Xiaomi Redmi 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "c",
+        "r"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-13c",
+      "brand": "Xiaomi",
+      "model": "Redmi 13C",
+      "name": "Xiaomi Redmi 13C",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 13C",
+        "Xiaomi Redmi 13C"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-13r",
+      "brand": "Xiaomi",
+      "model": "Redmi 13R",
+      "name": "Xiaomi Redmi 13R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 13R",
+        "Xiaomi Redmi 13R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-14c",
+      "brand": "Xiaomi",
+      "model": "Redmi 14C",
+      "name": "Xiaomi Redmi 14C",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 14C",
+        "Xiaomi Redmi 14C"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-14r",
+      "brand": "Xiaomi",
+      "model": "Redmi 14R",
+      "name": "Xiaomi Redmi 14R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 14R",
+        "Xiaomi Redmi 14R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-8a-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi 8A Pro",
+      "name": "Xiaomi Redmi 8A Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 8A Pro",
+        "Xiaomi Redmi 8A Pro"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-9",
+      "brand": "Xiaomi",
+      "model": "Redmi 9",
+      "name": "Xiaomi Redmi 9",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 9",
+        "Xiaomi Redmi 9"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "a",
+        "c",
+        "i",
+        "t"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-9a",
+      "brand": "Xiaomi",
+      "model": "Redmi 9A",
+      "name": "Xiaomi Redmi 9A",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 9A",
+        "Xiaomi Redmi 9A"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-9c",
+      "brand": "Xiaomi",
+      "model": "Redmi 9C",
+      "name": "Xiaomi Redmi 9C",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 9C",
+        "Xiaomi Redmi 9C"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-9i",
+      "brand": "Xiaomi",
+      "model": "Redmi 9i",
+      "name": "Xiaomi Redmi 9i",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 9i",
+        "Xiaomi Redmi 9i"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-9t",
+      "brand": "Xiaomi",
+      "model": "Redmi 9T",
+      "name": "Xiaomi Redmi 9T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi 9T",
+        "Xiaomi Redmi 9T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-10",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 10",
+      "name": "Xiaomi Redmi Note 10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 10",
+        "Xiaomi Redmi Note 10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-10-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 10 Pro",
+      "name": "Xiaomi Redmi Note 10 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 10 Pro",
+        "Xiaomi Redmi Note 10 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-11",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 11",
+      "name": "Xiaomi Redmi Note 11",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 11",
+        "Xiaomi Redmi Note 11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-11-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 11 Pro",
+      "name": "Xiaomi Redmi Note 11 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 11 Pro",
+        "Xiaomi Redmi Note 11 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-12",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 12",
+      "name": "Xiaomi Redmi Note 12",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 12",
+        "Xiaomi Redmi Note 12"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-12-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 12 Pro",
+      "name": "Xiaomi Redmi Note 12 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 12 Pro",
+        "Xiaomi Redmi Note 12 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-13",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 13",
+      "name": "Xiaomi Redmi Note 13",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 13",
+        "Xiaomi Redmi Note 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-13-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 13 Pro",
+      "name": "Xiaomi Redmi Note 13 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 13 Pro",
+        "Xiaomi Redmi Note 13 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-14",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 14",
+      "name": "Xiaomi Redmi Note 14",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 14",
+        "Xiaomi Redmi Note 14"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-14-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 14 Pro",
+      "name": "Xiaomi Redmi Note 14 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 14 Pro",
+        "Xiaomi Redmi Note 14 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-8",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 8",
+      "name": "Xiaomi Redmi Note 8",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 8",
+        "Xiaomi Redmi Note 8"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-9",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 9",
+      "name": "Xiaomi Redmi Note 9",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 9",
+        "Xiaomi Redmi Note 9"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-redmi-note-9-pro",
+      "brand": "Xiaomi",
+      "model": "Redmi Note 9 Pro",
+      "name": "Xiaomi Redmi Note 9 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Redmi Note 9 Pro",
+        "Xiaomi Redmi Note 9 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    }
+  ]
+}

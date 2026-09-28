@@ -1,0 +1,604 @@
+{
+  "products": [
+    {
+      "id": "asrock-b450m-ac-r2-0",
+      "brand": "ASRock",
+      "model": "ASRock B450M/ac R2.0",
+      "name": "ASRock B450M/ac R2.0",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "ASRock B450M/ac R2.0"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asrock-b450m-hdv-r4-0",
+      "brand": "ASRock",
+      "model": "ASRock B450M-HDV R4.0",
+      "name": "ASRock B450M-HDV R4.0",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "ASRock B450M-HDV R4.0"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asrock-b650m-pg-lightning-wifi",
+      "brand": "ASRock",
+      "model": "ASRock B650M PG Lightning Wifi",
+      "name": "ASRock B650M PG Lightning Wifi",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "ASRock B650M PG Lightning Wifi"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asrock-b650m-pro-rs-wifi",
+      "brand": "ASRock",
+      "model": "ASRock B650M Pro RS WiFi",
+      "name": "ASRock B650M Pro RS WiFi",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "ASRock B650M Pro RS WiFi"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-b650e-max-gaming-wifi-w",
+      "brand": "Asus",
+      "model": "Asus B650E MAX GAMING WIFI W",
+      "name": "Asus B650E MAX GAMING WIFI W",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus B650E MAX GAMING WIFI W"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-prime-b550m-a-wifi-ii",
+      "brand": "Asus",
+      "model": "Asus PRIME B550M-A WIFI II",
+      "name": "Asus PRIME B550M-A WIFI II",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus PRIME B550M-A WIFI II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-prime-b650-plus-wifi",
+      "brand": "Asus",
+      "model": "Asus PRIME B650-PLUS WIFI",
+      "name": "Asus PRIME B650-PLUS WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus PRIME B650-PLUS WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-rog-strix-b550-f-gaming-wifi-ii",
+      "brand": "Asus",
+      "model": "Asus ROG STRIX B550-F GAMING WIFI II",
+      "name": "Asus ROG STRIX B550-F GAMING WIFI II",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ROG STRIX B550-F GAMING WIFI II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-rog-strix-b650-a-gaming-wifi",
+      "brand": "Asus",
+      "model": "Asus ROG STRIX B650-A GAMING WIFI",
+      "name": "Asus ROG STRIX B650-A GAMING WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ROG STRIX B650-A GAMING WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-tuf-gaming-b550-plus-wifi-ii",
+      "brand": "Asus",
+      "model": "Asus TUF GAMING B550-PLUS WIFI II",
+      "name": "Asus TUF GAMING B550-PLUS WIFI II",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus TUF GAMING B550-PLUS WIFI II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-tuf-gaming-b650-e-wifi",
+      "brand": "Asus",
+      "model": "Asus TUF GAMING B650-E WIFI",
+      "name": "Asus TUF GAMING B650-E WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus TUF GAMING B650-E WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-tuf-gaming-b650-plus-wifi",
+      "brand": "Asus",
+      "model": "Asus TUF GAMING B650-PLUS WIFI",
+      "name": "Asus TUF GAMING B650-PLUS WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus TUF GAMING B650-PLUS WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b550m-aorus-elite-ax",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B550M AORUS ELITE AX",
+      "name": "Gigabyte B550M AORUS ELITE AX",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B550M AORUS ELITE AX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b550m-k",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B550M K",
+      "name": "Gigabyte B550M K",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B550M K"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b650-eagle-ax",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B650 EAGLE AX",
+      "name": "Gigabyte B650 EAGLE AX",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B650 EAGLE AX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b650-gaming-x-ax-v2",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B650 GAMING X AX V2",
+      "name": "Gigabyte B650 GAMING X AX V2",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B650 GAMING X AX V2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b650m-gaming-plus-wifi",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B650M GAMING PLUS WIFI",
+      "name": "Gigabyte B650M GAMING PLUS WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B650M GAMING PLUS WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-b760m-gaming-plus-wifi-ddr4",
+      "brand": "Gigabyte",
+      "model": "Gigabyte B760M GAMING PLUS WIFI DDR4",
+      "name": "Gigabyte B760M GAMING PLUS WIFI DDR4",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte B760M GAMING PLUS WIFI DDR4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "gigabyte-z790-eagle-ax",
+      "brand": "Gigabyte",
+      "model": "Gigabyte Z790 EAGLE AX",
+      "name": "Gigabyte Z790 EAGLE AX",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Gigabyte Z790 EAGLE AX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-b450m-a-pro-max-ii",
+      "brand": "MSI",
+      "model": "MSI B450M-A PRO MAX II",
+      "name": "MSI B450M-A PRO MAX II",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI B450M-A PRO MAX II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-b550m-pro-vdh-wifi",
+      "brand": "MSI",
+      "model": "MSI B550M PRO-VDH WIFI",
+      "name": "MSI B550M PRO-VDH WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI B550M PRO-VDH WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-b650-gaming-plus-wifi",
+      "brand": "MSI",
+      "model": "MSI B650 GAMING PLUS WIFI",
+      "name": "MSI B650 GAMING PLUS WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI B650 GAMING PLUS WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-b760-gaming-plus-wifi",
+      "brand": "MSI",
+      "model": "MSI B760 GAMING PLUS WIFI",
+      "name": "MSI B760 GAMING PLUS WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI B760 GAMING PLUS WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-mag-b550-tomahawk-max-wifi",
+      "brand": "MSI",
+      "model": "MSI MAG B550 TOMAHAWK MAX WIFI",
+      "name": "MSI MAG B550 TOMAHAWK MAX WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI MAG B550 TOMAHAWK MAX WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-mag-b650-tomahawk-wifi",
+      "brand": "MSI",
+      "model": "MSI MAG B650 TOMAHAWK WIFI",
+      "name": "MSI MAG B650 TOMAHAWK WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI MAG B650 TOMAHAWK WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-pro-b550m-vc-wifi",
+      "brand": "MSI",
+      "model": "MSI PRO B550M-VC WIFI",
+      "name": "MSI PRO B550M-VC WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI PRO B550M-VC WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-pro-b650-s-wifi",
+      "brand": "MSI",
+      "model": "MSI PRO B650-S WIFI",
+      "name": "MSI PRO B650-S WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI PRO B650-S WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-pro-b650m-p",
+      "brand": "MSI",
+      "model": "MSI PRO B650M-P",
+      "name": "MSI PRO B650M-P",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI PRO B650M-P"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-pro-b760m-p-ddr4",
+      "brand": "MSI",
+      "model": "MSI PRO B760M-P DDR4",
+      "name": "MSI PRO B760M-P DDR4",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI PRO B760M-P DDR4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "msi-pro-z790-a-max-wifi",
+      "brand": "MSI",
+      "model": "MSI PRO Z790-A MAX WIFI",
+      "name": "MSI PRO Z790-A MAX WIFI",
+      "categories": [
+        "Elektronik",
+        "Elektronische Leiterplatten & Bauteile",
+        "Leiterplatten",
+        "Computer-Leiterplatten",
+        "Motherboards"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "MSI PRO Z790-A MAX WIFI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "products": [
+    {
+      "id": "bose-quietcomfort-35-series-ii",
+      "brand": "Bose",
+      "model": "Bose QuietComfort 35 Series II",
+      "name": "Bose QuietComfort 35 Series II",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Bose QuietComfort 35 Series II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-100",
+      "brand": "JBL",
+      "model": "JBL Quantum 100",
+      "name": "JBL Quantum 100",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-200",
+      "brand": "JBL",
+      "model": "JBL Quantum 200",
+      "name": "JBL Quantum 200",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-300",
+      "brand": "JBL",
+      "model": "JBL Quantum 300",
+      "name": "JBL Quantum 300",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 300"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-400",
+      "brand": "JBL",
+      "model": "JBL Quantum 400",
+      "name": "JBL Quantum 400",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-600",
+      "brand": "JBL",
+      "model": "JBL Quantum 600",
+      "name": "JBL Quantum 600",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-800",
+      "brand": "JBL",
+      "model": "JBL Quantum 800",
+      "name": "JBL Quantum 800",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-910",
+      "brand": "JBL",
+      "model": "JBL Quantum 910",
+      "name": "JBL Quantum 910",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum 910"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "jbl-quantum-one",
+      "brand": "JBL",
+      "model": "JBL Quantum One",
+      "name": "JBL Quantum One",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "JBL Quantum One"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-25-1-ii",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 25-1 II",
+      "name": "Sennheiser HD 25-1 II",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 25-1 II"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-280-pro",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 280 PRO",
+      "name": "Sennheiser HD 280 PRO",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 280 PRO"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-300-pro",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 300 PRO",
+      "name": "Sennheiser HD 300 PRO",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 300 PRO"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-380-pro",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 380 Pro",
+      "name": "Sennheiser HD 380 Pro",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 380 Pro"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-4-40bt",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 4.40BT",
+      "name": "Sennheiser HD 4.40BT",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 4.40BT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-4-50-btnc",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 4.50 BTNC",
+      "name": "Sennheiser HD 4.50 BTNC",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 4.50 BTNC"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-490-pro",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 490 PRO",
+      "name": "Sennheiser HD 490 PRO",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 490 PRO"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "plus"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-490-pro-plus",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 490 PRO Plus",
+      "name": "Sennheiser HD 490 PRO Plus",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 490 PRO Plus"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-558",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 558",
+      "name": "Sennheiser HD 558",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 558"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-559",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 559",
+      "name": "Sennheiser HD 559",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 559"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-560s",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 560S",
+      "name": "Sennheiser HD 560S",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 560S"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-569",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 569",
+      "name": "Sennheiser HD 569",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 569"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-598",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 598",
+      "name": "Sennheiser HD 598",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 598"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "cs",
+        "se",
+        "sr"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-598-cs",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 598 CS",
+      "name": "Sennheiser HD 598 CS",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 598 CS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-598-se",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 598 SE",
+      "name": "Sennheiser HD 598 SE",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 598 SE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-598sr",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 598SR",
+      "name": "Sennheiser HD 598SR",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 598SR"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-599",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 599",
+      "name": "Sennheiser HD 599",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 599"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "se"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-599-se",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 599 SE",
+      "name": "Sennheiser HD 599 SE",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 599 SE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-650",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 650",
+      "name": "Sennheiser HD 650",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 650"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-660-s",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 660 S",
+      "name": "Sennheiser HD 660 S",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 660 S"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "2"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-660s2",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 660S2",
+      "name": "Sennheiser HD 660S2",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 660S2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-800-s",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 800 S",
+      "name": "Sennheiser HD 800 S",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 800 S"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd-820",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD 820",
+      "name": "Sennheiser HD 820",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD 820"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd600",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD600",
+      "name": "Sennheiser HD600",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-hd6xx",
+      "brand": "Sennheiser",
+      "model": "Sennheiser HD6XX",
+      "name": "Sennheiser HD6XX",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser HD6XX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-momentum-2-0",
+      "brand": "Sennheiser",
+      "model": "Sennheiser Momentum 2.0",
+      "name": "Sennheiser Momentum 2.0",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser Momentum 2.0"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-momentum-4",
+      "brand": "Sennheiser",
+      "model": "Sennheiser MOMENTUM 4",
+      "name": "Sennheiser MOMENTUM 4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser MOMENTUM 4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sennheiser-momentum-black",
+      "brand": "Sennheiser",
+      "model": "Sennheiser Momentum Black",
+      "name": "Sennheiser Momentum Black",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sennheiser Momentum Black"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sony-wh-1000xm3",
+      "brand": "Sony",
+      "model": "Sony WH-1000XM3",
+      "name": "Sony WH-1000XM3",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sony WH-1000XM3"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sony-wh-1000xm6",
+      "brand": "Sony",
+      "model": "Sony WH-1000XM6",
+      "name": "Sony WH-1000XM6",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sony WH-1000XM6"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "sony-wh-ch710n",
+      "brand": "Sony",
+      "model": "Sony WH-CH710N",
+      "name": "Sony WH-CH710N",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Sony WH-CH710N"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}

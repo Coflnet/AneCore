@@ -1,0 +1,3315 @@
+{
+  "products": [
+    {
+      "id": "acer-nitro-ed240q-sbiipx",
+      "brand": "Acer",
+      "model": "Acer Nitro ED240Q Sbiipx",
+      "name": "Acer Nitro ED240Q Sbiipx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro ED240Q Sbiipx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.6\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-ed270u-s3",
+      "brand": "Acer",
+      "model": "Acer Nitro ED270U S3",
+      "name": "Acer Nitro ED270U S3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro ED270U S3"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-eda270u-p",
+      "brand": "Acer",
+      "model": "Acer Nitro EDA270U P",
+      "name": "Acer Nitro EDA270U P",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro EDA270U P"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-kg1-kg251q-p3biip",
+      "brand": "Acer",
+      "model": "Acer Nitro KG1 KG251Q P3biip",
+      "name": "Acer Nitro KG1 KG251Q P3biip",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro KG1 KG251Q P3biip"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-kg251q-z",
+      "brand": "Acer",
+      "model": "Acer Nitro KG251Q Z",
+      "name": "Acer Nitro KG251Q Z",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro KG251Q Z"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-qg1",
+      "brand": "Acer",
+      "model": "Acer Nitro QG1",
+      "name": "Acer Nitro QG1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro QG1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-qg221q-bii",
+      "brand": "Acer",
+      "model": "Acer NITRO QG221Q bii",
+      "name": "Acer NITRO QG221Q bii",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer NITRO QG221Q bii"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "21.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-qg221q-bmiix",
+      "brand": "Acer",
+      "model": "Acer Nitro QG221Q bmiix",
+      "name": "Acer Nitro QG221Q bmiix",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro QG221Q bmiix"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "21.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-qg241y-pbmiipx",
+      "brand": "Acer",
+      "model": "Acer Nitro QG241Y Pbmiipx",
+      "name": "Acer Nitro QG241Y Pbmiipx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro QG241Y Pbmiipx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-qg271-bii",
+      "brand": "Acer",
+      "model": "Acer Nitro QG271 bii",
+      "name": "Acer Nitro QG271 bii",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro QG271 bii"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-rg240y",
+      "brand": "Acer",
+      "model": "Acer Nitro RG240Y",
+      "name": "Acer Nitro RG240Y",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro RG240Y"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-rg241yp",
+      "brand": "Acer",
+      "model": "Acer Nitro RG241YP",
+      "name": "Acer Nitro RG241YP",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro RG241YP"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-rx1-rx241y-pbmiiphx",
+      "brand": "Acer",
+      "model": "Acer Nitro RX1 RX241Y Pbmiiphx",
+      "name": "Acer Nitro RX1 RX241Y Pbmiiphx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro RX1 RX241Y Pbmiiphx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.6\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg240y-bmiix",
+      "brand": "Acer",
+      "model": "Acer Nitro VG240Y bmiix",
+      "name": "Acer Nitro VG240Y bmiix",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG240Y bmiix"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg240y-dbmipcx",
+      "brand": "Acer",
+      "model": "Acer Nitro VG240Y Dbmipcx",
+      "name": "Acer Nitro VG240Y Dbmipcx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG240Y Dbmipcx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg240yu-bmiipx",
+      "brand": "Acer",
+      "model": "Acer Nitro VG240YU bmiipx",
+      "name": "Acer Nitro VG240YU bmiipx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG240YU bmiipx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg242yp",
+      "brand": "Acer",
+      "model": "Acer Nitro VG242YP",
+      "name": "Acer Nitro VG242YP",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG242YP"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg252q-p",
+      "brand": "Acer",
+      "model": "Acer Nitro VG252Q P",
+      "name": "Acer Nitro VG252Q P",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG252Q P"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg270k",
+      "brand": "Acer",
+      "model": "Acer Nitro VG270K",
+      "name": "Acer Nitro VG270K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG270K"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg270u",
+      "brand": "Acer",
+      "model": "Acer Nitro VG270U",
+      "name": "Acer Nitro VG270U",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG270U"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg272-xbmiipx",
+      "brand": "Acer",
+      "model": "Acer Nitro VG272 Xbmiipx",
+      "name": "Acer Nitro VG272 Xbmiipx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG272 Xbmiipx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-vg272u-v",
+      "brand": "Acer",
+      "model": "Acer Nitro VG272U V",
+      "name": "Acer Nitro VG272U V",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro VG272U V"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xf240y-m3biiph",
+      "brand": "Acer",
+      "model": "Acer Nitro XF240Y M3biiph",
+      "name": "Acer Nitro XF240Y M3biiph",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XF240Y M3biiph"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xf252q",
+      "brand": "Acer",
+      "model": "Acer Nitro XF252Q",
+      "name": "Acer Nitro XF252Q",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XF252Q"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv1",
+      "brand": "Acer",
+      "model": "Acer Nitro XV1",
+      "name": "Acer Nitro XV1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "43.8\""
+        ]
+      },
+      "excludeTerms": [
+        "xv"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv1-xv271u-m3bmiiprx",
+      "brand": "Acer",
+      "model": "Acer Nitro XV1 XV271U M3bmiiprx",
+      "name": "Acer Nitro XV1 XV271U M3bmiiprx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV1 XV271U M3bmiiprx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv252qf",
+      "brand": "Acer",
+      "model": "Acer Nitro XV252QF",
+      "name": "Acer Nitro XV252QF",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV252QF"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv270u",
+      "brand": "Acer",
+      "model": "Acer Nitro XV270U",
+      "name": "Acer Nitro XV270U",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV270U"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv271u-m3bmiiprfx",
+      "brand": "Acer",
+      "model": "Acer Nitro XV271U M3Bmiiprfx",
+      "name": "Acer Nitro XV271U M3Bmiiprfx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV271U M3Bmiiprfx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv272k-lv",
+      "brand": "Acer",
+      "model": "Acer Nitro XV272K LV",
+      "name": "Acer Nitro XV272K LV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV272K LV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv272u-rv",
+      "brand": "Acer",
+      "model": "Acer Nitro XV272U RV",
+      "name": "Acer Nitro XV272U RV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV272U RV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv272u-vbmiiprx",
+      "brand": "Acer",
+      "model": "Acer Nitro XV272U Vbmiiprx",
+      "name": "Acer Nitro XV272U Vbmiiprx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV272U Vbmiiprx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv273-xbmiiprzx",
+      "brand": "Acer",
+      "model": "Acer Nitro XV273 Xbmiiprzx",
+      "name": "Acer Nitro XV273 Xbmiiprzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV273 Xbmiiprzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv273k-pbmiipphzx",
+      "brand": "Acer",
+      "model": "Acer Nitro XV273K Pbmiipphzx",
+      "name": "Acer Nitro XV273K Pbmiipphzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV273K Pbmiipphzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv273k-v3",
+      "brand": "Acer",
+      "model": "Acer Nitro XV273K V3",
+      "name": "Acer Nitro XV273K V3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV273K V3"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv275k-p3",
+      "brand": "Acer",
+      "model": "Acer Nitro XV275K P3",
+      "name": "Acer Nitro XV275K P3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV275K P3"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xv275u-p3",
+      "brand": "Acer",
+      "model": "Acer Nitro XV275U P3",
+      "name": "Acer Nitro XV275U P3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XV275U P3"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xz272u-pbmiiphx",
+      "brand": "Acer",
+      "model": "Acer Nitro XZ272U Pbmiiphx",
+      "name": "Acer Nitro XZ272U Pbmiiphx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XZ272U Pbmiiphx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xz452cu-v",
+      "brand": "Acer",
+      "model": "Acer Nitro XZ452CU V",
+      "name": "Acer Nitro XZ452CU V",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XZ452CU V"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "45.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-nitro-xz6",
+      "brand": "Acer",
+      "model": "Acer Nitro XZ6",
+      "name": "Acer Nitro XZ6",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Nitro XZ6"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "29.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-cg437k-pbmiiippuzx",
+      "brand": "Acer",
+      "model": "Acer Predator CG437K Pbmiiippuzx",
+      "name": "Acer Predator CG437K Pbmiiippuzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator CG437K Pbmiiippuzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "43\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-cg48-bmiiiipuzx",
+      "brand": "Acer",
+      "model": "Acer Predator CG48 bmiiiipuzx",
+      "name": "Acer Predator CG48 bmiiiipuzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator CG48 bmiiiipuzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "48\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x25-bmiiprzx",
+      "brand": "Acer",
+      "model": "Acer Predator X25 bmiiprzx",
+      "name": "Acer Predator X25 bmiiprzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X25 bmiiprzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x27-bmiiphzx",
+      "brand": "Acer",
+      "model": "Acer Predator X27 bmiiphzx",
+      "name": "Acer Predator X27 bmiiphzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X27 bmiiphzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x27-pbmiphzx",
+      "brand": "Acer",
+      "model": "Acer Predator X27 Pbmiphzx",
+      "name": "Acer Predator X27 Pbmiphzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X27 Pbmiphzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x27u-bmiipruzx",
+      "brand": "Acer",
+      "model": "Acer Predator X27U bmiipruzx",
+      "name": "Acer Predator X27U bmiipruzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X27U bmiipruzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x32-fp",
+      "brand": "Acer",
+      "model": "Acer PREDATOR X32 FP",
+      "name": "Acer PREDATOR X32 FP",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer PREDATOR X32 FP"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x32-x",
+      "brand": "Acer",
+      "model": "Acer Predator X32 X",
+      "name": "Acer Predator X32 X",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X32 X"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x34",
+      "brand": "Acer",
+      "model": "Acer Predator X34",
+      "name": "Acer Predator X34",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X34"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [
+        "gs",
+        "p",
+        "s"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x34-gs",
+      "brand": "Acer",
+      "model": "Acer Predator X34 GS",
+      "name": "Acer Predator X34 GS",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X34 GS"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x34-s",
+      "brand": "Acer",
+      "model": "Acer Predator X34 S",
+      "name": "Acer Predator X34 S",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X34 S"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x34p",
+      "brand": "Acer",
+      "model": "Acer Predator X34P",
+      "name": "Acer Predator X34P",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X34P"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x35-bmiphzx",
+      "brand": "Acer",
+      "model": "Acer PREDATOR X35 bmiphzx",
+      "name": "Acer PREDATOR X35 bmiphzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer PREDATOR X35 bmiphzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "35\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x39",
+      "brand": "Acer",
+      "model": "Acer Predator X39",
+      "name": "Acer Predator X39",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X39"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "39\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-x45-bmiiphuzx",
+      "brand": "Acer",
+      "model": "Acer Predator X45 bmiiphuzx",
+      "name": "Acer Predator X45 bmiiphuzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator X45 bmiiphuzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "44.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb1",
+      "brand": "Acer",
+      "model": "Acer Predator XB1",
+      "name": "Acer Predator XB1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb2",
+      "brand": "Acer",
+      "model": "Acer Predator XB2",
+      "name": "Acer Predator XB2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB2"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb241yu",
+      "brand": "Acer",
+      "model": "Acer Predator XB241YU",
+      "name": "Acer Predator XB241YU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB241YU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb271hua",
+      "brand": "Acer",
+      "model": "Acer Predator XB271HUA",
+      "name": "Acer Predator XB271HUA",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB271HUA"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb272-bmiprz",
+      "brand": "Acer",
+      "model": "Acer Predator XB272 bmiprz",
+      "name": "Acer Predator XB272 bmiprz",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB272 bmiprz"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb273-gz",
+      "brand": "Acer",
+      "model": "Acer Predator XB273 GZ",
+      "name": "Acer Predator XB273 GZ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB273 GZ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb273k-pbmiphzx",
+      "brand": "Acer",
+      "model": "Acer Predator XB273K Pbmiphzx",
+      "name": "Acer Predator XB273K Pbmiphzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB273K Pbmiphzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb283k-kv",
+      "brand": "Acer",
+      "model": "Acer Predator XB283K KV",
+      "name": "Acer Predator XB283K KV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB283K KV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb323k-rv",
+      "brand": "Acer",
+      "model": "Acer Predator XB323K RV",
+      "name": "Acer Predator XB323K RV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB323K RV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb323qk-nv",
+      "brand": "Acer",
+      "model": "Acer Predator XB323QK NV",
+      "name": "Acer Predator XB323QK NV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB323QK NV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb323qk-v3bmiiphx",
+      "brand": "Acer",
+      "model": "Acer Predator XB323QK V3bmiiphx",
+      "name": "Acer Predator XB323QK V3bmiiphx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB323QK V3bmiiphx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xb323u-gp",
+      "brand": "Acer",
+      "model": "Acer Predator XB323U GP",
+      "name": "Acer Predator XB323U GP",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XB323U GP"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xn253q-xbmiprzx",
+      "brand": "Acer",
+      "model": "Acer Predator XN253Q Xbmiprzx",
+      "name": "Acer Predator XN253Q Xbmiprzx",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XN253Q Xbmiprzx"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-xr341ck",
+      "brand": "Acer",
+      "model": "Acer Predator XR341CK",
+      "name": "Acer Predator XR341CK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator XR341CK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-z1",
+      "brand": "Acer",
+      "model": "Acer Predator Z1",
+      "name": "Acer Predator Z1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator Z1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-z301c",
+      "brand": "Acer",
+      "model": "Acer Predator Z301C",
+      "name": "Acer Predator Z301C",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator Z301C"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "30\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-z301ct",
+      "brand": "Acer",
+      "model": "Acer Predator Z301CT",
+      "name": "Acer Predator Z301CT",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator Z301CT"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "29.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "acer-predator-z35p",
+      "brand": "Acer",
+      "model": "Acer Predator Z35P",
+      "name": "Acer Predator Z35P",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Acer Predator Z35P"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "35\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag246fk",
+      "brand": "AOC",
+      "model": "AOC AGON AG246FK",
+      "name": "AOC AGON AG246FK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG246FK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.1\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag251fz2",
+      "brand": "AOC",
+      "model": "AOC AGON AG251FZ2",
+      "name": "AOC AGON AG251FZ2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG251FZ2"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "25\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag256fs",
+      "brand": "AOC",
+      "model": "AOC AGON AG256FS",
+      "name": "AOC AGON AG256FS",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG256FS"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag273qcg",
+      "brand": "AOC",
+      "model": "AOC AGON AG273QCG",
+      "name": "AOC AGON AG273QCG",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG273QCG"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag273qx",
+      "brand": "AOC",
+      "model": "AOC AGON AG273QX",
+      "name": "AOC AGON AG273QX",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG273QX"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag274qs",
+      "brand": "AOC",
+      "model": "AOC AGON AG274QS",
+      "name": "AOC AGON AG274QS",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG274QS"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag275qxw",
+      "brand": "AOC",
+      "model": "AOC AGON AG275QXW",
+      "name": "AOC AGON AG275QXW",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG275QXW"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag275qz",
+      "brand": "AOC",
+      "model": "AOC AGON AG275QZ",
+      "name": "AOC AGON AG275QZ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG275QZ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag322qcx",
+      "brand": "AOC",
+      "model": "AOC AGON AG322QCX",
+      "name": "AOC AGON AG322QCX",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG322QCX"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag405uxc",
+      "brand": "AOC",
+      "model": "AOC AGON AG405UXC",
+      "name": "AOC AGON AG405UXC",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON AG405UXC"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "40\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-ag493ucx",
+      "brand": "AOC",
+      "model": "AOC Agon AG493UCX",
+      "name": "AOC Agon AG493UCX",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC Agon AG493UCX"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "49\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-g2590vxq",
+      "brand": "AOC",
+      "model": "AOC AGON G2590VXQ",
+      "name": "AOC AGON G2590VXQ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON G2590VXQ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pd27",
+      "brand": "AOC",
+      "model": "AOC AGON PD27",
+      "name": "AOC AGON PD27",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON PD27"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag274fz",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG274FZ",
+      "name": "AOC AGON Pro AG274FZ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG274FZ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag274qxm",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG274QXM",
+      "name": "AOC AGON Pro AG274QXM",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG274QXM"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag274uxp",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG274UXP",
+      "name": "AOC AGON Pro AG274UXP",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG274UXP"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag275qxl",
+      "brand": "AOC",
+      "model": "AOC AGON PRO AG275QXL",
+      "name": "AOC AGON PRO AG275QXL",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON PRO AG275QXL"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag276qzd2",
+      "brand": "AOC",
+      "model": "AOC Agon PRO AG276QZD2",
+      "name": "AOC Agon PRO AG276QZD2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC Agon PRO AG276QZD2"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "26.7\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag324ux",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG324UX",
+      "name": "AOC AGON Pro AG324UX",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG324UX"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag326ud",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG326UD",
+      "name": "AOC AGON Pro AG326UD",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG326UD"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag344uxm",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG344UXM",
+      "name": "AOC AGON Pro AG344UXM",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG344UXM"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-ag456uczd",
+      "brand": "AOC",
+      "model": "AOC AGON Pro AG456UCZD",
+      "name": "AOC AGON Pro AG456UCZD",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC AGON Pro AG456UCZD"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "44.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-agon-pro-pd49",
+      "brand": "AOC",
+      "model": "AOC Agon PRO PD49",
+      "name": "AOC Agon PRO PD49",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC Agon PRO PD49"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "49\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g1",
+      "brand": "AOC",
+      "model": "AOC CQ27G1",
+      "name": "AOC CQ27G1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g2",
+      "brand": "AOC",
+      "model": "AOC CQ27G2",
+      "name": "AOC CQ27G2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G2"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [
+        "s",
+        "u"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g2s-bk",
+      "brand": "AOC",
+      "model": "AOC CQ27G2S/BK",
+      "name": "AOC CQ27G2S/BK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G2S/BK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g2u-bk",
+      "brand": "AOC",
+      "model": "AOC CQ27G2U/BK",
+      "name": "AOC CQ27G2U/BK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G2U/BK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g3s",
+      "brand": "AOC",
+      "model": "AOC CQ27G3S",
+      "name": "AOC CQ27G3S",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G3S"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g3z",
+      "brand": "AOC",
+      "model": "AOC CQ27G3Z",
+      "name": "AOC CQ27G3Z",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G3Z"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq27g4x",
+      "brand": "AOC",
+      "model": "AOC CQ27G4X",
+      "name": "AOC CQ27G4X",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ27G4X"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq30g3e",
+      "brand": "AOC",
+      "model": "AOC CQ30G3E",
+      "name": "AOC CQ30G3E",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ30G3E"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "30\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq32g1",
+      "brand": "AOC",
+      "model": "AOC CQ32G1",
+      "name": "AOC CQ32G1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ32G1"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq32g3se",
+      "brand": "AOC",
+      "model": "AOC CQ32G3SE",
+      "name": "AOC CQ32G3SE",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ32G3SE"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-cq34g2",
+      "brand": "AOC",
+      "model": "AOC CQ34G2",
+      "name": "AOC CQ34G2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC CQ34G2"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u2477pwq",
+      "brand": "AOC",
+      "model": "AOC U2477PWQ",
+      "name": "AOC U2477PWQ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U2477PWQ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.6\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u2790vq",
+      "brand": "AOC",
+      "model": "AOC U2790VQ",
+      "name": "AOC U2790VQ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U2790VQ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u27b3a",
+      "brand": "AOC",
+      "model": "AOC U27B3A",
+      "name": "AOC U27B3A",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U27B3A"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u27b3af",
+      "brand": "AOC",
+      "model": "AOC U27B3AF",
+      "name": "AOC U27B3AF",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U27B3AF"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u27g3x",
+      "brand": "AOC",
+      "model": "AOC U27G3X",
+      "name": "AOC U27G3X",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U27G3X"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u27p2ca",
+      "brand": "AOC",
+      "model": "AOC U27P2CA",
+      "name": "AOC U27P2CA",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U27P2CA"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u2868pqu",
+      "brand": "AOC",
+      "model": "AOC U2868PQU",
+      "name": "AOC U2868PQU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U2868PQU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u2870vqe",
+      "brand": "AOC",
+      "model": "AOC U2870VQE",
+      "name": "AOC U2870VQE",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U2870VQE"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u2879vf",
+      "brand": "AOC",
+      "model": "AOC U2879VF",
+      "name": "AOC U2879VF",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U2879VF"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u28g2ae-bk",
+      "brand": "AOC",
+      "model": "AOC U28G2AE/BK",
+      "name": "AOC U28G2AE/BK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U28G2AE/BK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u28g2xu2-bk",
+      "brand": "AOC",
+      "model": "AOC U28G2XU2/BK",
+      "name": "AOC U28G2XU2/BK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U28G2XU2/BK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "28\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u3277fwq",
+      "brand": "AOC",
+      "model": "AOC U3277FWQ",
+      "name": "AOC U3277FWQ",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U3277FWQ"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u3277pqu",
+      "brand": "AOC",
+      "model": "AOC U3277PQU",
+      "name": "AOC U3277PQU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U3277PQU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u3277pwqu",
+      "brand": "AOC",
+      "model": "AOC U3277PWQU",
+      "name": "AOC U3277PWQU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U3277PWQU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u32g3x-bk",
+      "brand": "AOC",
+      "model": "AOC U32G3X/BK",
+      "name": "AOC U32G3X/BK",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U32G3X/BK"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u3477pqu",
+      "brand": "AOC",
+      "model": "AOC U3477PQU",
+      "name": "AOC U3477PQU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U3477PQU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "aoc-u34g3xm-eu",
+      "brand": "AOC",
+      "model": "AOC U34G3XM/EU",
+      "name": "AOC U34G3XM/EU",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AOC U34G3XM/EU"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display",
+      "brand": "Asus",
+      "model": "Asus ProArt Display",
+      "name": "Asus ProArt Display",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [
+        "pa"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa247cv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA247CV",
+      "name": "Asus ProArt Display PA247CV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA247CV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa248crv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA248CRV",
+      "name": "Asus ProArt Display PA248CRV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA248CRV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.1\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa248qv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA248QV",
+      "name": "Asus ProArt Display PA248QV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA248QV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "24.1\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa24acrv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA24ACRV",
+      "name": "Asus ProArt Display PA24ACRV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA24ACRV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23.8\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa278cgv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA278CGV",
+      "name": "Asus ProArt Display PA278CGV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA278CGV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa278cv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA278CV",
+      "name": "Asus ProArt Display PA278CV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA278CV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa278qv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA278QV",
+      "name": "Asus ProArt Display PA278QV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA278QV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa279cv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA279CV",
+      "name": "Asus ProArt Display PA279CV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA279CV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa27ac",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA27AC",
+      "name": "Asus ProArt Display PA27AC",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA27AC"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa27dce-k",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA27DCE-K",
+      "name": "Asus ProArt Display PA27DCE-K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA27DCE-K"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "26.9\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa27jcv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA27JCV",
+      "name": "Asus ProArt Display PA27JCV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA27JCV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa27ucx-k",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA27UCX-K",
+      "name": "Asus ProArt Display PA27UCX-K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA27UCX-K"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa328cgv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA328CGV",
+      "name": "Asus ProArt Display PA328CGV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA328CGV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa328qv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA328QV",
+      "name": "Asus ProArt Display PA328QV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA328QV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa329crv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA329CRV",
+      "name": "Asus ProArt Display PA329CRV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA329CRV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa329cv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA329CV",
+      "name": "Asus ProArt Display PA329CV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA329CV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa32dc",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA32DC",
+      "name": "Asus ProArt Display PA32DC",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA32DC"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "31.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa32ucg-k",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA32UCG-K",
+      "name": "Asus ProArt Display PA32UCG-K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA32UCG-K"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa32ucr-k",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA32UCR-K",
+      "name": "Asus ProArt Display PA32UCR-K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA32UCR-K"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa32ucxr",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA32UCXR",
+      "name": "Asus ProArt Display PA32UCXR",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA32UCXR"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa348cgv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA348CGV",
+      "name": "Asus ProArt Display PA348CGV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA348CGV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-display-pa34vcnv",
+      "brand": "Asus",
+      "model": "Asus ProArt Display PA34VCNV",
+      "name": "Asus ProArt Display PA34VCNV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt Display PA34VCNV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "34.1\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-pa279crv",
+      "brand": "Asus",
+      "model": "Asus ProArt PA279CRV",
+      "name": "Asus ProArt PA279CRV",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt PA279CRV"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "27\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-pa329c",
+      "brand": "Asus",
+      "model": "Asus ProArt PA329C",
+      "name": "Asus ProArt PA329C",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt PA329C"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    },
+    {
+      "id": "asus-proart-pa32uc",
+      "brand": "Asus",
+      "model": "Asus ProArt PA32UC",
+      "name": "Asus ProArt PA32UC",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Asus ProArt PA32UC"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "32\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-09"
+    }
+  ]
+}
