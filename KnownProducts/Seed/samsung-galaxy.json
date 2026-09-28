@@ -1,6 +1,2290 @@
 {
   "products": [
     {
+      "id": "samsung-galaxy-a01",
+      "brand": "Samsung",
+      "model": "Galaxy A01",
+      "name": "Samsung Galaxy A01",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A01",
+        "SM-A015F",
+        "SM-A015G",
+        "SM-A015M",
+        "SM-A015V",
+        "Samsung Galaxy A01"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB"
+        ],
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "core"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a01-core",
+      "brand": "Samsung",
+      "model": "Galaxy A01 Core",
+      "name": "Samsung Galaxy A01 Core",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A01 Core",
+        "SM-A013F",
+        "SM-A013G",
+        "SM-A013M",
+        "Samsung Galaxy A01 Core"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB",
+          "32GB"
+        ],
+        "ram_size": [
+          "1GB",
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a02",
+      "brand": "Samsung",
+      "model": "Galaxy A02",
+      "name": "Samsung Galaxy A02",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A02",
+        "SM-A022F",
+        "SM-A022G",
+        "SM-A022M",
+        "Samsung Galaxy A02"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a02s",
+      "brand": "Samsung",
+      "model": "Galaxy A02s",
+      "name": "Samsung Galaxy A02s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A02s",
+        "SM-A025F",
+        "SM-A025G",
+        "SM-A025M",
+        "SM-A025U",
+        "SM-A025U1",
+        "SM-A025V",
+        "Samsung Galaxy A02s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a03",
+      "brand": "Samsung",
+      "model": "Galaxy A03",
+      "name": "Samsung Galaxy A03",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A03",
+        "SM-A035F",
+        "SM-A035G",
+        "SM-A035M",
+        "Samsung Galaxy A03"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "core",
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a03-core",
+      "brand": "Samsung",
+      "model": "Galaxy A03 Core",
+      "name": "Samsung Galaxy A03 Core",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A03 Core",
+        "SM-A032F",
+        "SM-A032M",
+        "Samsung Galaxy A03 Core"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a03s",
+      "brand": "Samsung",
+      "model": "Galaxy A03s",
+      "name": "Samsung Galaxy A03s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A03s",
+        "SM-A037F",
+        "SM-A037G",
+        "SM-A037M",
+        "SM-A037U",
+        "SM-A037W",
+        "Samsung Galaxy A03s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a04",
+      "brand": "Samsung",
+      "model": "Galaxy A04",
+      "name": "Samsung Galaxy A04",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A04",
+        "SM-A045F",
+        "SM-A045M",
+        "Samsung Galaxy A04"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "e",
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a04e",
+      "brand": "Samsung",
+      "model": "Galaxy A04e",
+      "name": "Samsung Galaxy A04e",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A04e",
+        "SM-A042F",
+        "SM-A042M",
+        "Samsung Galaxy A04e"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a04s",
+      "brand": "Samsung",
+      "model": "Galaxy A04s",
+      "name": "Samsung Galaxy A04s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A04s",
+        "SM-A047F",
+        "SM-A047M",
+        "Samsung Galaxy A04s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a05",
+      "brand": "Samsung",
+      "model": "Galaxy A05",
+      "name": "Samsung Galaxy A05",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A05",
+        "SM-A055F",
+        "SM-A055M",
+        "Samsung Galaxy A05"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a05s",
+      "brand": "Samsung",
+      "model": "Galaxy A05s",
+      "name": "Samsung Galaxy A05s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A05s",
+        "SM-A057F",
+        "SM-A057G",
+        "SM-A057M",
+        "Samsung Galaxy A05s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a06",
+      "brand": "Samsung",
+      "model": "Galaxy A06",
+      "name": "Samsung Galaxy A06",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A06",
+        "SM-A065F",
+        "SM-A065M",
+        "SM-A066B",
+        "SM-A066E",
+        "SM-A066M",
+        "Samsung Galaxy A06"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a07",
+      "brand": "Samsung",
+      "model": "Galaxy A07",
+      "name": "Samsung Galaxy A07",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A07",
+        "SM-A075F",
+        "SM-A075M",
+        "SM-A076B",
+        "SM-A076E",
+        "SM-A076M",
+        "Samsung Galaxy A07"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a10",
+      "brand": "Samsung",
+      "model": "Galaxy A10",
+      "name": "Samsung Galaxy A10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A10",
+        "SM-A105M",
+        "Samsung Galaxy A10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "e",
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a10e",
+      "brand": "Samsung",
+      "model": "Galaxy A10e",
+      "name": "Samsung Galaxy A10e",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A10e",
+        "SM-A102N",
+        "SM-A102U",
+        "Samsung Galaxy A10e"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a10s",
+      "brand": "Samsung",
+      "model": "Galaxy A10s",
+      "name": "Samsung Galaxy A10s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A10s",
+        "Samsung Galaxy A10s"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "2GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a11",
+      "brand": "Samsung",
+      "model": "Galaxy A11",
+      "name": "Samsung Galaxy A11",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A11",
+        "SM-A115F",
+        "SM-A115M",
+        "SM-A115U",
+        "SM-A115U1",
+        "SM-A115W",
+        "Samsung Galaxy A11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a12",
+      "brand": "Samsung",
+      "model": "Galaxy A12",
+      "name": "Samsung Galaxy A12",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A12",
+        "SM-A125F",
+        "SM-A125M",
+        "SM-A125N",
+        "SM-A125U",
+        "SM-A125U1",
+        "SM-A125W",
+        "SM-A127F",
+        "Samsung Galaxy A12"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a13",
+      "brand": "Samsung",
+      "model": "Galaxy A13",
+      "name": "Samsung Galaxy A13",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A13",
+        "SM-A135F",
+        "SM-A135M",
+        "SM-A135N",
+        "SM-A135U",
+        "SM-A135U1",
+        "SM-A136B",
+        "SM-A136M",
+        "SM-A136U",
+        "SM-A136U1",
+        "SM-A136W",
+        "SM-A137F",
+        "Samsung Galaxy A13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a14",
+      "brand": "Samsung",
+      "model": "Galaxy A14",
+      "name": "Samsung Galaxy A14",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A14",
+        "SM-A145F",
+        "SM-A145M",
+        "SM-A145P",
+        "SM-A145R",
+        "SM-A146B",
+        "SM-A146M",
+        "SM-A146P",
+        "SM-A146U",
+        "SM-A146U1",
+        "SM-A146W",
+        "Samsung Galaxy A14"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a15",
+      "brand": "Samsung",
+      "model": "Galaxy A15",
+      "name": "Samsung Galaxy A15",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A15",
+        "SM-A155F",
+        "SM-A155M",
+        "SM-A1560",
+        "SM-A156B",
+        "SM-A156E",
+        "SM-A156M",
+        "SM-A156U",
+        "SM-A156U1",
+        "SM-A156W",
+        "Samsung Galaxy A15"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a16",
+      "brand": "Samsung",
+      "model": "Galaxy A16",
+      "name": "Samsung Galaxy A16",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A16",
+        "SM-A165F",
+        "SM-A165M",
+        "SM-A165N",
+        "SM-A1660",
+        "SM-A166B",
+        "SM-A166E",
+        "SM-A166M",
+        "SM-A166P",
+        "SM-A166U",
+        "SM-A166U1",
+        "SM-A166W",
+        "Samsung Galaxy A16"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a17",
+      "brand": "Samsung",
+      "model": "Galaxy A17",
+      "name": "Samsung Galaxy A17",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A17",
+        "SM-A175F",
+        "SM-A175N",
+        "SM-A1760",
+        "SM-A176B",
+        "SM-A176U",
+        "SM-A176U1",
+        "SM-A176W",
+        "Samsung Galaxy A17"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a2-core",
+      "brand": "Samsung",
+      "model": "Galaxy A2 Core",
+      "name": "Samsung Galaxy A2 Core",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A2 Core",
+        "Samsung Galaxy A2 Core"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "1GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a20",
+      "brand": "Samsung",
+      "model": "Galaxy A20",
+      "name": "Samsung Galaxy A20",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A20",
+        "SM-A205G",
+        "SM-A205U",
+        "SM-A205U1",
+        "Samsung Galaxy A20"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "e",
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a20e",
+      "brand": "Samsung",
+      "model": "Galaxy A20e",
+      "name": "Samsung Galaxy A20e",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A20e",
+        "Samsung Galaxy A20e"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a20s",
+      "brand": "Samsung",
+      "model": "Galaxy A20s",
+      "name": "Samsung Galaxy A20s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A20s",
+        "SM-A207M",
+        "Samsung Galaxy A20s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a21",
+      "brand": "Samsung",
+      "model": "Galaxy A21",
+      "name": "Samsung Galaxy A21",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A21",
+        "SM-A102D",
+        "SM-A215U",
+        "SM-A215U1",
+        "SM-A215W",
+        "Samsung Galaxy A21"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a21s",
+      "brand": "Samsung",
+      "model": "Galaxy A21s",
+      "name": "Samsung Galaxy A21s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A21s",
+        "SM-A217F",
+        "SM-A217M",
+        "SM-A217N",
+        "Samsung Galaxy A21s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "2GB",
+          "3GB",
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a22",
+      "brand": "Samsung",
+      "model": "Galaxy A22",
+      "name": "Samsung Galaxy A22",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A22",
+        "SM-A223D",
+        "SM-A225F",
+        "SM-A225M",
+        "SM-A226B",
+        "SM-A226BR",
+        "Samsung Galaxy A22"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a23",
+      "brand": "Samsung",
+      "model": "Galaxy A23",
+      "name": "Samsung Galaxy A23",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A23",
+        "SM-A233C",
+        "SM-A233D",
+        "SM-A233J",
+        "SM-A2360",
+        "SM-A236B",
+        "SM-A236E",
+        "SM-A236M",
+        "SM-A236U",
+        "SM-A236U1",
+        "Samsung Galaxy A23"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a24",
+      "brand": "Samsung",
+      "model": "Galaxy A24",
+      "name": "Samsung Galaxy A24",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A24",
+        "SM-A245F",
+        "SM-A245M",
+        "SM-A245N",
+        "Samsung Galaxy A24"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a25",
+      "brand": "Samsung",
+      "model": "Galaxy A25",
+      "name": "Samsung Galaxy A25",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A25",
+        "SM-A253C",
+        "SM-A253D",
+        "SM-A253J",
+        "SM-A253Q",
+        "SM-A253Z",
+        "SM-A2560",
+        "SM-A256B",
+        "SM-A256E",
+        "SM-A256N",
+        "SM-A256U",
+        "SM-A256U1",
+        "Samsung Galaxy A25"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a26",
+      "brand": "Samsung",
+      "model": "Galaxy A26",
+      "name": "Samsung Galaxy A26",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A26",
+        "SM-A266B",
+        "SM-A266M",
+        "SM-A266U",
+        "SM-A266U1",
+        "Samsung Galaxy A26"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a30",
+      "brand": "Samsung",
+      "model": "Galaxy A30",
+      "name": "Samsung Galaxy A30",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A30",
+        "SM-A305G",
+        "SM-A305GT",
+        "SM-A305YN",
+        "Samsung Galaxy A30"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a30s",
+      "brand": "Samsung",
+      "model": "Galaxy A30s",
+      "name": "Samsung Galaxy A30s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A30s",
+        "SM-A307FN",
+        "SM-A307G",
+        "SM-A307GN",
+        "SM-A307GT",
+        "Samsung Galaxy A30s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "3GB",
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a31",
+      "brand": "Samsung",
+      "model": "Galaxy A31",
+      "name": "Samsung Galaxy A31",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A31",
+        "SM-A315F",
+        "SM-A315G",
+        "SM-A315N",
+        "Samsung Galaxy A31"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a32",
+      "brand": "Samsung",
+      "model": "Galaxy A32",
+      "name": "Samsung Galaxy A32",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A32",
+        "SM-A325F",
+        "SM-A325M",
+        "SM-A325N",
+        "SM-A326B",
+        "SM-A326J",
+        "SM-A326U",
+        "SM-A326U1",
+        "SM-A326W",
+        "Samsung Galaxy A32"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a34",
+      "brand": "Samsung",
+      "model": "Galaxy A34",
+      "name": "Samsung Galaxy A34",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A34",
+        "SM-A3460",
+        "SM-A346B",
+        "SM-A346E",
+        "SM-A346M",
+        "SM-A346N",
+        "Samsung Galaxy A34"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a35",
+      "brand": "Samsung",
+      "model": "Galaxy A35",
+      "name": "Samsung Galaxy A35",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A35",
+        "SM-A3560",
+        "SM-A356B",
+        "SM-A356E",
+        "SM-A356N",
+        "SM-A356U",
+        "SM-A356U1",
+        "SM-A356W",
+        "Samsung Galaxy A35"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a36",
+      "brand": "Samsung",
+      "model": "Galaxy A36",
+      "name": "Samsung Galaxy A36",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A36",
+        "SM-A3660",
+        "SM-A366B",
+        "SM-A366D",
+        "SM-A366E",
+        "SM-A366N",
+        "SM-A366Q",
+        "SM-A366U",
+        "SM-A366U1",
+        "SM-A366W",
+        "Samsung Galaxy A36"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a37",
+      "brand": "Samsung",
+      "model": "Galaxy A37",
+      "name": "Samsung Galaxy A37",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A37",
+        "Samsung Galaxy A37"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a40",
+      "brand": "Samsung",
+      "model": "Galaxy A40",
+      "name": "Samsung Galaxy A40",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A40",
+        "Samsung Galaxy A40"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a41",
+      "brand": "Samsung",
+      "model": "Galaxy A41",
+      "name": "Samsung Galaxy A41",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A41",
+        "SM-A415D",
+        "SM-A415F",
+        "Samsung Galaxy A41"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a42",
+      "brand": "Samsung",
+      "model": "Galaxy A42",
+      "name": "Samsung Galaxy A42",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A42",
+        "SM-A426B",
+        "SM-A426N",
+        "SM-A426U",
+        "SM-A426U1",
+        "Samsung Galaxy A42"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a50",
+      "brand": "Samsung",
+      "model": "Galaxy A50",
+      "name": "Samsung Galaxy A50",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A50",
+        "SM-A505G",
+        "SM-A505GT",
+        "SM-A505U",
+        "Samsung Galaxy A50"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a50s",
+      "brand": "Samsung",
+      "model": "Galaxy A50s",
+      "name": "Samsung Galaxy A50s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A50s",
+        "SM-A5070",
+        "Samsung Galaxy A50s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a51",
+      "brand": "Samsung",
+      "model": "Galaxy A51",
+      "name": "Samsung Galaxy A51",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A51",
+        "SM-A515F",
+        "SM-A515U",
+        "SM-A515U1",
+        "SM-A515W",
+        "SM-A5160",
+        "SM-A516B",
+        "SM-A516D",
+        "SM-A516J",
+        "SM-A516N",
+        "SM-A516U",
+        "Samsung Galaxy A51"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a52",
+      "brand": "Samsung",
+      "model": "Galaxy A52",
+      "name": "Samsung Galaxy A52",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A52",
+        "SM-A525F",
+        "SM-A525M",
+        "SM-A5260",
+        "SM-A526B",
+        "SM-A526D",
+        "SM-A526N",
+        "SM-A526U",
+        "SM-A526U1",
+        "SM-A526W",
+        "Samsung Galaxy A52"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "1GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a52s",
+      "brand": "Samsung",
+      "model": "Galaxy A52s",
+      "name": "Samsung Galaxy A52s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A52s",
+        "SM-A528B",
+        "SM-A528N",
+        "Samsung Galaxy A52s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a53",
+      "brand": "Samsung",
+      "model": "Galaxy A53",
+      "name": "Samsung Galaxy A53",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A53",
+        "Samsung Galaxy A53"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a54",
+      "brand": "Samsung",
+      "model": "Galaxy A54",
+      "name": "Samsung Galaxy A54",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A54",
+        "SM-A5460",
+        "SM-A546B",
+        "SM-A546D",
+        "SM-A546E",
+        "SM-A546J",
+        "SM-A546U",
+        "SM-A546U1",
+        "Samsung Galaxy A54"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a55",
+      "brand": "Samsung",
+      "model": "Galaxy A55",
+      "name": "Samsung Galaxy A55",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A55",
+        "SM-A5560",
+        "SM-A556B",
+        "SM-A556D",
+        "SM-A556E",
+        "SM-A556J",
+        "Samsung Galaxy A55"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a56",
+      "brand": "Samsung",
+      "model": "Galaxy A56",
+      "name": "Samsung Galaxy A56",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A56",
+        "SM-A5660",
+        "SM-A566B",
+        "SM-A566E",
+        "SM-A566W",
+        "Samsung Galaxy A56"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a57",
+      "brand": "Samsung",
+      "model": "Galaxy A57",
+      "name": "Samsung Galaxy A57",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A57",
+        "Samsung Galaxy A57"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a60",
+      "brand": "Samsung",
+      "model": "Galaxy A60",
+      "name": "Samsung Galaxy A60",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A60",
+        "Samsung Galaxy A60"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a70",
+      "brand": "Samsung",
+      "model": "Galaxy A70",
+      "name": "Samsung Galaxy A70",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A70",
+        "SM-A705FN",
+        "SM-A705GM",
+        "Samsung Galaxy A70"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a70s",
+      "brand": "Samsung",
+      "model": "Galaxy A70s",
+      "name": "Samsung Galaxy A70s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A70s",
+        "Samsung Galaxy A70s"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a71",
+      "brand": "Samsung",
+      "model": "Galaxy A71",
+      "name": "Samsung Galaxy A71",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A71",
+        "SM-A715F",
+        "SM-A715W",
+        "SM-A7160",
+        "SM-A716B",
+        "SM-A716U",
+        "SM-A716U1",
+        "Samsung Galaxy A71"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a72",
+      "brand": "Samsung",
+      "model": "Galaxy A72",
+      "name": "Samsung Galaxy A72",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A72",
+        "SM-A725F",
+        "SM-A725M",
+        "Samsung Galaxy A72"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "samsung-galaxy-a73",
+      "brand": "Samsung",
+      "model": "Galaxy A73",
+      "name": "Samsung Galaxy A73",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Galaxy A73",
+        "SM-A736B",
+        "Samsung Galaxy A73"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
       "id": "samsung-galaxy-note-10",
       "brand": "Samsung",
       "model": "Galaxy Note 10",
