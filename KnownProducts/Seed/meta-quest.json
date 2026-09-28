@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": "meta-quest-2",
+      "brand": "Meta",
+      "model": "Meta Quest 2",
+      "name": "Meta Meta Quest 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Datenbrillen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Meta Quest 2",
+        "Oculus Quest 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "meta-quest-3",
+      "brand": "Meta",
+      "model": "Meta Quest 3",
+      "name": "Meta Meta Quest 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Datenbrillen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Meta Quest 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "512GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "s"
+      ],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "meta-quest-3s",
+      "brand": "Meta",
+      "model": "Meta Quest 3S",
+      "name": "Meta Meta Quest 3S",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Datenbrillen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Meta Quest 3S"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "meta-quest-pro",
+      "brand": "Meta",
+      "model": "Meta Quest Pro",
+      "name": "Meta Meta Quest Pro",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Datenbrillen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Meta Quest Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    }
+  ]
+}
