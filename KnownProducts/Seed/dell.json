@@ -1,0 +1,211 @@
+{
+  "products": [
+    {
+      "id": "dell-latitude-5420",
+      "brand": "Dell",
+      "model": "Dell Latitude 5420",
+      "name": "Dell Latitude 5420",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 5420"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-latitude-5430",
+      "brand": "Dell",
+      "model": "Dell Latitude 5430",
+      "name": "Dell Latitude 5430",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 5430"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-latitude-5440",
+      "brand": "Dell",
+      "model": "Dell Latitude 5440",
+      "name": "Dell Latitude 5440",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 5440"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-latitude-7420",
+      "brand": "Dell",
+      "model": "Dell Latitude 7420",
+      "name": "Dell Latitude 7420",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 7420"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-latitude-7430",
+      "brand": "Dell",
+      "model": "Dell Latitude 7430",
+      "name": "Dell Latitude 7430",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 7430"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-latitude-7440",
+      "brand": "Dell",
+      "model": "Dell Latitude 7440",
+      "name": "Dell Latitude 7440",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell Latitude 7440"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-xps-13",
+      "brand": "Dell",
+      "model": "Dell XPS 13",
+      "name": "Dell XPS 13",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell XPS 13"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-xps-15",
+      "brand": "Dell",
+      "model": "Dell XPS 15",
+      "name": "Dell XPS 15",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell XPS 15"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "dell-xps-17",
+      "brand": "Dell",
+      "model": "Dell XPS 17",
+      "name": "Dell XPS 17",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Laptops"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dell XPS 17"
+      ],
+      "possibleAttributes": {
+        "os": [
+          "windows"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-09"
+    }
+  ]
+}
