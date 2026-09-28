@@ -173,10 +173,13 @@ public class Listing
             return $"https://www.gumtree.com/p/redirect/redirect/{id}";
         if (platform == Platform.Shpock)
             return $"https://www.shpock.com/{locale}/i/{id}";
+        if (platform == Platform.Vinted)
+            return $"https://www.vinted.de/items/{id}"; // only vinted.de is crawled
         if (platform == Platform.Marktplaats)
             if (id.Contains('/'))
                 return $"https://www.marktplaats.nl{id}";
             else
+                // the trailing slug is required (any text works), without it the redirect returns 404
                 return $"https://www.marktplaats.nl/v/redirect/redirect/{id}-test";
         return "https://ane.deals/auctions?platform=" + platform.ToString().ToLower() + "&id=" + Uri.EscapeDataString(id);
     }
