@@ -42,6 +42,10 @@ CAT_MONITOR = ["Elektronik", "Video", "Computermonitore"]
 CAT_HEADPHONES = ["Elektronik", "Audio", "Audiokomponenten", "Kopfhörer & Headsets", "Kopfhörer"]
 CAT_CAMERA = ["Kameras & Optik", "Kameras", "Digitalkameras"]
 CAT_CONSOLE = ["Elektronik", "Videospielkonsolen"]
+CAT_DESKTOP = ["Elektronik", "Computer", "Desktop-Computer"]
+# No dedicated "VR/AR headset" node exists in UnifiedCategories.json (checked exhaustively, same way as
+# CAT_WATCH below) - "Datenbrillen" ("data glasses") is the closest real path under Elektronik > Computer.
+CAT_VR = ["Elektronik", "Computer", "Datenbrillen"]
 # No dedicated "smartwatch" node exists in UnifiedCategories.json (checked exhaustively - see README).
 # Armbanduhren & Taschenuhren ("wristwatches & pocket watches") is the closest real path and is where
 # smartwatch listings land in practice; documented as a known caveat rather than an invented label.
@@ -64,8 +68,19 @@ def make_product(id_, brand, model, name, categories, vertical, aliases, source_
     }
 
 
+def full_phone_name(brand, model_name):
+    """
+    'Samsung', 'Galaxy S21' -> 'Samsung Galaxy S21'. Some brands' cleaned TechAPI names already start
+    with the brand word itself - OnePlus's numbered flagship line has no separate distinctive
+    product-line word the way Samsung has "Galaxy"/Xiaomi has "Redmi" (see clean_phone_name's own note),
+    so its names keep the "OnePlus " prefix instead of having it stripped - don't double it into
+    "OnePlus OnePlus 10 Pro".
+    """
+    return model_name if model_name.lower().startswith(brand.lower() + " ") else f"{brand} {model_name}"
+
+
 def phone_aliases(brand, model_name, model_codes):
-    aliases = {f"{brand} {model_name}", model_name}
+    aliases = {full_phone_name(brand, model_name), model_name}
     if nz.is_distinctive(model_name):
         aliases.add(model_name)
     for code in model_codes:
@@ -122,7 +137,9 @@ def build_pixel(repo_root):
 
 
 def build_xiaomi(repo_root):
-    groups = techapi.group_smartphones(repo_root, "xiaomi", min_year=2020)
+    # min_year=2019 (not 2020) so "Redmi Note 7" (2019) is covered - a real truncation found live
+    # ("Redmi Note 7" -> "Xiaomi Redmi" elsewhere in the pipeline; see this pass's final report).
+    groups = techapi.group_smartphones(repo_root, "xiaomi", min_year=2019)
     wanted = re.compile(
         r"^(Redmi Note \d+( Pro)?( \+| Plus)?( 5G)?$|Redmi \d+[A-Z]?( Pro)?$|POCO [FXM]\d[A-Z]?( Pro)?( GT)?$|"
         r"Xiaomi (1[3-5])( Pro| Ultra| Lite)?$|Mi (1[0-3])[A-Za-z]?( Pro| Ultra| Lite)?$)", re.I)
@@ -131,11 +148,27 @@ def build_xiaomi(repo_root):
     return _build_phone_family(picked, brand="Xiaomi", vertical="electronics", source="techapi")
 
 
+def build_oneplus(repo_root):
+    # Mainstream numbered flagship line (6 through 15, T/R/RT/Pro/s variants), Nord/Nord N/Nord CE, Ace
+    # and the Open foldable - checked against the actual TechAPI output (36 clean groups picked, 34
+    # rejected: regional/carrier "Top Edition"/"V1"/"V2"-suffixed and crossover-branded "Genshin Impact"/
+    # "McLaren"/"Jupiter Rock" special editions) before shipping, the same discipline as
+    # build_samsung_galaxy_a. Added for this pass's "OnePlus 9 Pro" truncation fix (see final report).
+    groups = techapi.group_smartphones(repo_root, "oneplus", min_year=2018)
+    # clean_phone_name() deliberately does NOT strip "OnePlus" (see that function's own note) - group
+    # names here keep the "OnePlus " prefix ("OnePlus 9 Pro", not bare "9 Pro").
+    wanted = re.compile(
+        r"^OnePlus (\d{1,2}[A-Za-z]{0,3}(\s+Pro)?|Nord|Nord \d+T?|Nord CE(\s\d)?|Nord N\d+|"
+        r"Ace(\s\d)?(\s+Pro)?|Open)$", re.I)
+    picked = {k: v for k, v in groups.items() if wanted.match(k.strip())}
+    return _build_phone_family(picked, brand="OnePlus", vertical="electronics", source="techapi")
+
+
 def _build_phone_family(groups, brand, vertical, source):
     aliases_by_id = {}
     meta = {}
     for name, g in groups.items():
-        pid = nz.slugify(brand, name)
+        pid = nz.slugify(full_phone_name(brand, name))
         if pid in meta and meta[pid][0] != name:
             raise ValueError(
                 f"id collision: '{name}' and '{meta[pid][0]}' both slugify to '{pid}' - two different "
@@ -156,7 +189,7 @@ def _build_phone_family(groups, brand, vertical, source):
         possible["os"] = ["android"]
         possible["color"] = []
         products.append(make_product(
-            pid, brand, name, f"{brand} {name}", CAT_PHONE, vertical,
+            pid, brand, name, full_phone_name(brand, name), CAT_PHONE, vertical,
             aliases_by_id[pid], source, possible, excludes[pid],
         ))
     products.sort(key=lambda p: p["id"])
@@ -178,21 +211,21 @@ def build_ipad(ios_dir):
     # Known-good official storage options per generation (Apple tech specs, 2026-09). Colour is left an
     # open/free value (empty set) except where ios-device-list gives a verified matrix.
     # (name, storage, base line, generation number or None, chip or None, screen size or None,
-    #  bespoke alias kept from the original hand-curated seed)
+    #  bespoke alias kept from the original hand-curated seed, launch year or None)
     lineup = [
-        ("iPad (9th generation)", ["64GB", "256GB"], "iPad", 9, None, None, "ipad 9th generation"),
-        ("iPad (10th generation)", ["64GB", "256GB"], "iPad", 10, None, None, "ipad 10th generation"),
-        ("iPad Air (4th generation)", ["64GB", "256GB"], "iPad Air", 4, None, None, "ipad air 4th generation"),
-        ("iPad Air (5th generation)", ["64GB", "256GB"], "iPad Air", 5, None, None, "ipad air 5th generation"),
-        ("iPad Air 11-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "11", "ipad air m2 11"),
-        ("iPad Air 13-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "13", "ipad air m2 13"),
-        ("iPad mini (6th generation)", ["64GB", "256GB"], "iPad mini", 6, None, None, "ipad mini 6th generation"),
-        ("iPad mini (7th generation)", ["128GB", "256GB", "512GB"], "iPad mini", 7, None, None, "ipad mini 7th generation"),
-        ("iPad Pro 11-inch (3rd generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 3, None, "11", "ipad pro 11 3rd generation"),
-        ("iPad Pro 12.9-inch (5th generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 5, None, "12.9", "ipad pro 12.9 5th generation"),
-        ("iPad Pro 11-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "11", "ipad pro m4 11"),
-        ("iPad Pro 13-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "13", "ipad pro m4 13"),
-        ("iPad (A16)", ["128GB", "256GB"], "iPad", None, "A16", None, "ipad a16"),
+        ("iPad (9th generation)", ["64GB", "256GB"], "iPad", 9, None, None, "ipad 9th generation", 2021),
+        ("iPad (10th generation)", ["64GB", "256GB"], "iPad", 10, None, None, "ipad 10th generation", 2022),
+        ("iPad Air (4th generation)", ["64GB", "256GB"], "iPad Air", 4, None, None, "ipad air 4th generation", None),
+        ("iPad Air (5th generation)", ["64GB", "256GB"], "iPad Air", 5, None, None, "ipad air 5th generation", None),
+        ("iPad Air 11-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "11", "ipad air m2 11", None),
+        ("iPad Air 13-inch (M2)", ["128GB", "256GB", "512GB", "1TB"], "iPad Air", None, "M2", "13", "ipad air m2 13", None),
+        ("iPad mini (6th generation)", ["64GB", "256GB"], "iPad mini", 6, None, None, "ipad mini 6th generation", None),
+        ("iPad mini (7th generation)", ["128GB", "256GB", "512GB"], "iPad mini", 7, None, None, "ipad mini 7th generation", None),
+        ("iPad Pro 11-inch (3rd generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 3, None, "11", "ipad pro 11 3rd generation", None),
+        ("iPad Pro 12.9-inch (5th generation)", ["128GB", "256GB", "512GB", "1TB", "2TB"], "iPad Pro", 5, None, "12.9", "ipad pro 12.9 5th generation", None),
+        ("iPad Pro 11-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "11", "ipad pro m4 11", None),
+        ("iPad Pro 13-inch (M4)", ["256GB", "512GB", "1TB", "2TB"], "iPad Pro", None, "M4", "13", "ipad pro m4 13", None),
+        ("iPad (A16)", ["128GB", "256GB"], "iPad", None, "A16", None, "ipad a16", 2025),
     ]
 
     # Ambiguity policy (same "default to the smaller/base screen size" rule as build_macbook - see that
@@ -201,7 +234,7 @@ def build_ipad(ios_dir):
     # chip-only alias, the 13-inch keeps only its size-qualified aliases, and a query naming the size still
     # resolves to the exact variant via "longest alias wins" regardless of this default.
     chip_group_names = defaultdict(list)
-    for name, storage, base, gen, chip, size, alias_extra in lineup:
+    for name, storage, base, gen, chip, size, alias_extra, year in lineup:
         if chip:
             chip_group_names[(base, chip)].append((name, size))
     default_variant_for_chip = {
@@ -210,11 +243,22 @@ def build_ipad(ios_dir):
     }
 
     products = []
-    for name, storage, base, gen, chip, size, alias_extra in lineup:
+    for name, storage, base, gen, chip, size, alias_extra, year in lineup:
         pid = nz.slugify("apple", name)
         aliases = {f"Apple {name}", name, alias_extra}
         if gen is not None:
             aliases |= ar.generation_word_aliases(base, gen)
+            # Bare "iPad 9" (no "Gen"/"Generation" word) - real listings write this a lot, but it is only
+            # safe to add for the plain "iPad" base line: "iPad Air"/"iPad Pro"/"iPad mini" always carry
+            # their qualifier word too, so a bare "iPad Air 4" (say) is not how those are actually
+            # searched/listed and would just be extra false-positive surface for no real recall gain.
+            if base == "iPad":
+                aliases.add(f"{base} {gen}")
+        if year is not None and base == "iPad":
+            # Same "plain iPad only" scoping as the bare-number form above - year is only unambiguous
+            # within this one base line ("iPad 2021" could otherwise also mean the 9th-gen iPad mini or
+            # the 3rd-gen 11-inch iPad Pro, both also released in 2021).
+            aliases |= ar.year_aliases(base, year)
         if chip is not None and size is not None:
             aliases |= ar.chip_size_aliases(base, chip, size)
             if len(chip_group_names[(base, chip)]) == 1 or default_variant_for_chip.get(name):
@@ -428,6 +472,16 @@ def build_airpods(ios_dir):
     for name in names:
         pid = nz.slugify("apple", name)
         aliases = {f"Apple {name}", name}
+        # "AirPods Pro 2"/"AirPods 4" (bare number, no "Gen"/"Generation" word) - unlike iPad's Air/Pro/
+        # mini lines, AirPods' own product-line qualifier ("Pro" or nothing) is baked into `name` itself,
+        # so a bare number is unambiguous here without needing iPad's "one base line at a time" scoping;
+        # "AirPods Pro 2" is genuinely how this is most often typed/listed, more so than the formal
+        # "(2nd generation)" parenthetical.
+        gen_match = re.match(r"^(.*?)\s*\((\d+)(?:st|nd|rd|th) generation\)$", name, re.I)
+        if gen_match:
+            gen_base, gen_num = gen_match.group(1), int(gen_match.group(2))
+            aliases |= ar.generation_word_aliases(gen_base, gen_num)
+            aliases.add(f"{gen_base} {gen_num}")
         products.append(make_product(
             pid, "Apple", name, f"Apple {name}", CAT_HEADPHONES, "electronics", aliases,
             "ios-device-list+apple-specs" if name in groups else "hand-curated",
@@ -451,7 +505,9 @@ def clean_gpu_chipset(chip):
 def build_gpus(raw_dir):
     cards = docyx.load(os.path.join(raw_dir, "pcpp-video-card.json"))
     raw_chips = docyx.unique_chipsets(cards)
-    wanted = re.compile(r"^(GeForce (RTX (2|3|4|5)0\d0|GTX 16\d0)|Radeon RX (5|6|7|9)\d{3}|Arc [AB]\d{3})", re.I)
+    # GTX 9\d0/10\d0 added for the 900/1000 series (GTX 970/1080 seen live, still common in resale) -
+    # alongside the existing RTX 20-50 series, GTX 16\d0, Radeon RX and Arc coverage.
+    wanted = re.compile(r"^(GeForce (RTX (2|3|4|5)0\d0|GTX (9\d0|10\d0|16\d0))|Radeon RX (5|6|7|9)\d{3}|Arc [AB]\d{3})", re.I)
 
     merged = {}
     for chip, meta in raw_chips.items():
@@ -736,11 +792,257 @@ def build_cameras(raw_dir):
     return products
 
 
+def build_cameras_additional_sony():
+    # CameraDatabase's Sony coverage stops ~2019 (documented gap in README/ATTRIBUTION) - these 4
+    # full-frame bodies (2021-2023) are hand-curated against Sony's own published model codes, the same
+    # "certain knowledge" latitude as elsewhere in this importer. Uses the same alias-generation approach
+    # as build_cameras's Sony branch (core without "Alpha", mark_variants, delettered "Alpha 7 IV" form,
+    # ILCE model code) rather than duplicating it as static aliases.
+    lineup = [
+        ("Alpha A7 IV", "ILCE-7M4"),
+        ("Alpha A7R V", "ILCE-7RM5"),
+        ("Alpha A9 III", "ILCE-9M3"),
+        ("Alpha A1", "ILCE-1"),
+    ]
+    products = []
+    for model, code in lineup:
+        name = f"Sony {model}"
+        pid = nz.slugify("sony", model)
+        aliases = {name, model} | ar.mark_variants(model)
+        core = re.sub(r"^Alpha\s+", "", model, flags=re.I)
+        aliases.add(f"Sony {core}")
+        aliases |= ar.mark_variants(core)
+        delettered = re.sub(r"^([A-Za-z])(\d)", r"\2", core)
+        if delettered != core:
+            aliases.add(f"Sony Alpha {delettered}")
+            aliases.add(f"Alpha {delettered}")
+        aliases.add(code)
+        products.append(make_product(
+            pid, "Sony", model, name, CAT_CAMERA, "electronics", aliases, "hand-curated",
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
+def build_headphones_additional():
+    # docyx/pc-part-dataset's headphone data is missing several very popular current models entirely
+    # (documented gap in README/EVALUATION.md) - hand-added against the manufacturers' own published
+    # names/model numbers.
+    lineup = [
+        ("Sony", "WH-1000XM4", {"Sony WH-1000XM4", "WH-1000XM4", "Sony 1000XM4"}),
+        ("Sony", "WH-1000XM5", {"Sony WH-1000XM5", "WH-1000XM5", "Sony 1000XM5"}),
+        ("Bose", "QuietComfort 45", {"Bose QuietComfort 45", "QuietComfort 45", "Bose QC45", "QC45"}),
+    ]
+    products = []
+    for brand, model, aliases in lineup:
+        name = f"{brand} {model}"
+        pid = nz.slugify(brand, model)
+        products.append(make_product(
+            pid, brand, model, name, CAT_HEADPHONES, "electronics", {name} | aliases, "hand-curated",
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
 # ============================== Game consoles (hand-curated, Wikidata-checked) ==============================
 # Wikidata's "video game console model" class (Q56682555) turned out too sparse/inconsistent to drive
 # this mechanically (see tools/catalog-import/README.md "Consoles" section for the query used and why);
 # the task explicitly allows hand-checking this category against certain public knowledge instead. Storage
 # options are only set where they are well-established retail SKUs; everything else is left free (color []).
+
+# ============================== Additional iPhone generations (hand-curated) ==============================
+# apple-iphones.json (iPhone 11-16) is the original hand-curated "core" seed file - KnownProductSeed.
+# LoadAll() without includeExpandedCatalog returns ONLY that file, for callers that predate the wider
+# catalogue (see its own comment). Adding rows to it would change that "unchanged core" boundary for those
+# callers, so the older (6/6s/7/8/SE/X/XR/XS/XS Max) and newer (17 line, 18 Pro line) generations this pass
+# adds - found missing via a live-listing audit - go in their own expanded-catalogue file instead. Storage
+# tiers are Apple's own published tech specs (2025/2026 models cross-checked live via WebSearch/WebFetch
+# against Apple's own newsroom post for iPhone 18 Pro/Pro Max, since that launched during this session's
+# working "today" of 2026-09-28); colour is left free (empty set) except for iPhone 18 Pro/Pro Max, whose
+# 4 colours were verified the same way - per the task's "only verified attribute values, otherwise leave
+# the list empty" instruction. iPhone 18 (standard)/18e/iPhone Air 2 are NOT included: verified via
+# WebSearch that Apple deviated from its usual single-September-launch cadence this cycle and is shipping
+# those in spring 2027, not yet released as of this pass.
+def build_iphones_additional():
+    # (model, storage, year, plus_variant_of or None - Plus/Max siblings share the base model's storage)
+    lineup = [
+        ("iPhone 6", ["16GB", "64GB", "128GB"], 2014),
+        ("iPhone 6 Plus", ["16GB", "64GB", "128GB"], 2014),
+        ("iPhone 6s", ["16GB", "32GB", "64GB", "128GB"], 2015),
+        ("iPhone 6s Plus", ["16GB", "32GB", "64GB", "128GB"], 2015),
+        ("iPhone 7", ["32GB", "128GB", "256GB"], 2016),
+        ("iPhone 7 Plus", ["32GB", "128GB", "256GB"], 2016),
+        ("iPhone 8", ["64GB", "256GB"], 2017),
+        ("iPhone 8 Plus", ["64GB", "256GB"], 2017),
+        ("iPhone X", ["64GB", "256GB"], 2017),
+        ("iPhone XR", ["64GB", "128GB", "256GB"], 2018),
+        ("iPhone XS", ["64GB", "256GB", "512GB"], 2018),
+        ("iPhone XS Max", ["64GB", "256GB", "512GB"], 2018),
+        ("iPhone 17", ["256GB", "512GB"], 2025),
+        ("iPhone Air", ["256GB", "512GB", "1TB"], 2025),
+        ("iPhone 17 Pro", ["256GB", "512GB", "1TB"], 2025),
+        ("iPhone 17 Pro Max", ["256GB", "512GB", "1TB", "2TB"], 2025),
+        ("iPhone 18 Pro", ["256GB", "512GB", "1TB", "2TB"], 2026),
+        ("iPhone 18 Pro Max", ["256GB", "512GB", "1TB", "2TB"], 2026),
+    ]
+    verified_colors_18_pro = ["Black", "Silver", "Glacier", "Burgundy"]
+
+    products = []
+    for model, storage, year in lineup:
+        name = f"Apple {model}"
+        aliases = {name, model}
+        colors = verified_colors_18_pro if model in ("iPhone 18 Pro", "iPhone 18 Pro Max") else []
+        pid = nz.slugify("apple", model)
+        products.append(make_product(
+            pid, "Apple", model, name, CAT_PHONE, "electronics", aliases, "apple-specs",
+            {"storage_size": storage, "os": ["ios"], "color": colors},
+        ))
+
+    # iPhone SE generations - the "(Nth generation)" naming + everyday multi-language/year/bare-number
+    # forms, same as iPad's/Apple Watch's handling.
+    se_lineup = [(1, ["16GB", "64GB"], 2016), (2, ["64GB", "128GB", "256GB"], 2020), (3, ["64GB", "128GB", "256GB"], 2022)]
+    for gen, storage, year in se_lineup:
+        model = f"iPhone SE ({ar.ordinal(gen)} generation)"
+        name = f"Apple {model}"
+        aliases = {name, model} | ar.generation_word_aliases("iPhone SE", gen) | ar.year_aliases("iPhone SE", year)
+        aliases.add(f"iPhone SE {gen}")  # "iPhone SE 2"/"iPhone SE 3" - the common colloquial form
+        pid = nz.slugify("apple", model)
+        products.append(make_product(
+            pid, "Apple", model, name, CAT_PHONE, "electronics", aliases, "apple-specs",
+            {"storage_size": storage, "os": ["ios"], "color": []},
+        ))
+
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
+# ============================== Desktops, VR, Surface, Dell (hand-curated) ==============================
+# Same "certain knowledge" latitude as MacBook/ThinkPad/consoles above: small, stable, well-documented
+# lineups where TechAPI has no usable category at all (desktops, VR headsets) or (Dell) too little
+# verified data. Storage/colour are only set where a source or certain knowledge supports them; left free
+# (empty set) otherwise, per this pass's explicit "leave the list empty rather than guessing" instruction.
+
+def build_apple_desktops():
+    lineup = [
+        ("iMac 24-inch (M1, 2021)", ["256GB", "512GB", "1TB", "2TB"]),
+        ("iMac 24-inch (M3, 2023)", ["256GB", "512GB", "1TB", "2TB"]),
+        ("iMac 24-inch (M4, 2024)", ["256GB", "512GB", "1TB", "2TB"]),
+        ("Mac mini (M2, 2023)", ["256GB", "512GB", "1TB", "2TB"]),
+        ("Mac mini (M2 Pro, 2023)", ["512GB", "1TB", "2TB", "4TB", "8TB"]),
+        ("Mac mini (M4, 2024)", ["256GB", "512GB", "1TB", "2TB"]),
+        ("Mac mini (M4 Pro, 2024)", ["512GB", "1TB", "2TB", "4TB"]),
+    ]
+    products = []
+    for model, storage in lineup:
+        pid = nz.slugify("apple", model)
+        aliases = {f"Apple {model}", model}
+        products.append(make_product(
+            pid, "Apple", model, f"Apple {model}", CAT_DESKTOP, "electronics", aliases, "apple-specs",
+            {"storage_size": storage, "os": ["macos"], "color": []},
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
+def build_meta_quest():
+    # Storage tiers verified live (WebSearch, this pass): Quest 2 shipped 64GB then (from Aug 2021) 128GB,
+    # plus a 256GB tier throughout - a used listing could be any of the three. Quest 3 shipped 128GB
+    # originally, now sold only as 512GB. Quest 3S: 128GB/256GB. Quest Pro: a single 256GB configuration,
+    # discontinued Sept 2024.
+    lineup = [
+        ("Meta Quest 2", ["64GB", "128GB", "256GB"]),
+        ("Meta Quest 3", ["128GB", "512GB"]),
+        ("Meta Quest 3S", ["128GB", "256GB"]),
+        ("Meta Quest Pro", ["256GB"]),
+    ]
+    products = []
+    for model, storage in lineup:
+        pid = nz.slugify(model)  # `model` already starts with "Meta" - don't double the brand prefix
+        aliases = {model}
+        # "Oculus Quest 2" only - Meta's Oculus->Meta rebrand happened in 2021, before Quest 3/3S/Pro
+        # (2022+) ever shipped, so those were never sold under the Oculus name; adding an "Oculus Quest 3"
+        # alias would be an unverified guess, not a real historical name.
+        if model == "Meta Quest 2":
+            aliases.add("Oculus Quest 2")
+        products.append(make_product(
+            pid, "Meta", model, f"Meta {model}", CAT_VR, "electronics", aliases, "hand-curated",
+            {"storage_size": storage, "color": []},
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
+def build_surface():
+    # TechAPI's laptop/microsoft and tablet/microsoft verified coverage (24/30, 14/25) is good, but the
+    # underlying names/directories carry per-SKU region/carrier codes ("Surface Pro 11 ZIB-00031") the
+    # same way the A-series' TechAPI records did, and (unlike the A-series) there is no simple numeric
+    # wanted-regex that cleanly separates the generation from the SKU suffix here - grouping by directory
+    # would produce one near-duplicate KnownProduct per SKU code, not per generation. Hand-curated against
+    # Microsoft's own published generation lineup instead, the same "TechAPI too noisy to use mechanically
+    # this pass" latitude as Dell below. Storage/RAM left free (configure-to-order), same as ThinkPad.
+    tablets = ["Surface Pro 9", "Surface Pro 10", "Surface Pro 11", "Surface Go 3", "Surface Go 4"]
+    laptops = ["Surface Laptop 5", "Surface Laptop 6", "Surface Laptop 7", "Surface Book 3"]
+    products = []
+    for model in tablets:
+        pid = nz.slugify("microsoft", model)
+        aliases = {f"Microsoft {model}", model}
+        products.append(make_product(
+            pid, "Microsoft", model, f"Microsoft {model}", CAT_TABLET, "electronics", aliases, "hand-curated",
+            {"os": ["windows"], "color": []},
+        ))
+    for model in laptops:
+        pid = nz.slugify("microsoft", model)
+        aliases = {f"Microsoft {model}", model}
+        products.append(make_product(
+            pid, "Microsoft", model, f"Microsoft {model}", CAT_LAPTOP, "electronics", aliases, "hand-curated",
+            {"os": ["windows"], "color": []},
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
+
+def build_dell():
+    # XPS is deliberately NOT generation-numbered here (unlike ThinkPad) - Dell's own marketing reuses
+    # the bare "XPS 13"/"XPS 15"/"XPS 17" name across years, distinguishing generations only by an
+    # internal 4-digit service-tag-adjacent model code most listings do not use; a single entry per screen
+    # size is the more accurate match for how these are actually searched/sold. Latitude, the numbered
+    # business line, is covered by its well-known recent 5000/7000/9000-series model codes instead - the
+    # same "TechAPI verified coverage too thin to group mechanically" reasoning as ThinkPad (8/305 files).
+    xps = ["Dell XPS 13", "Dell XPS 15", "Dell XPS 17"]
+    latitude = ["Dell Latitude 5420", "Dell Latitude 5430", "Dell Latitude 5440",
+                "Dell Latitude 7420", "Dell Latitude 7430", "Dell Latitude 7440"]
+    products = []
+    for full_name in xps + latitude:
+        pid = nz.slugify(full_name)
+        aliases = {full_name}
+        products.append(make_product(
+            pid, "Dell", full_name, full_name, CAT_LAPTOP, "electronics", aliases, "hand-curated",
+            {"os": ["windows"], "color": []},
+        ))
+    excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
+    for p in products:
+        p["excludeTerms"] = sorted(excludes[p["id"]])
+    products.sort(key=lambda p: p["id"])
+    return products
+
 
 def build_consoles():
     lineup = [
@@ -809,6 +1111,7 @@ def main():
         ),
         "google-pixel": lambda: build_pixel(args.techapi_repo),
         "xiaomi": lambda: build_xiaomi(args.techapi_repo),
+        "oneplus": lambda: build_oneplus(args.techapi_repo),
         "apple-ipad": lambda: build_ipad(args.raw_dir),
         "apple-macbook": lambda: build_macbook(),
         "lenovo-thinkpad": lambda: build_thinkpad(),
@@ -820,9 +1123,14 @@ def main():
         "ram": lambda: build_ram(args.raw_dir),
         "motherboards": lambda: build_motherboards(args.raw_dir),
         "storage": lambda: build_storage(args.raw_dir),
-        "headphones": lambda: build_headphones(args.raw_dir),
-        "cameras": lambda: build_cameras(args.raw_dir),
+        "headphones": lambda: sorted(build_headphones(args.raw_dir) + build_headphones_additional(), key=lambda p: p["id"]),
+        "cameras": lambda: sorted(build_cameras(args.raw_dir) + build_cameras_additional_sony(), key=lambda p: p["id"]),
         "game-consoles": lambda: build_consoles(),
+        "apple-iphones-additional": lambda: build_iphones_additional(),
+        "apple-desktops": lambda: build_apple_desktops(),
+        "meta-quest": lambda: build_meta_quest(),
+        "microsoft-surface": lambda: build_surface(),
+        "dell": lambda: build_dell(),
     }
 
     total = 0

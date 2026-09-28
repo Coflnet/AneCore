@@ -49,6 +49,11 @@ def clean_phone_name(name: str) -> str:
     n = re.sub(r"\s*\([^)]*\)\s*$", "", n)  # trailing "(Samsung Miracle 3)" internal codename
     n = re.sub(r"\s*/\s*SM-[A-Z0-9/]+$", "", n)  # "US / SM-G990U3/DS" trailing alt model code
     n = re.sub(r"(\s*/\s*[A-Z0-9-]{4,})+$", "", n)  # "/ SM-S948V" alt model code suffixes
+    # OnePlus deliberately excluded: unlike Samsung "Galaxy"/Xiaomi "Redmi"/Google "Pixel", OnePlus's own
+    # numbered flagship line has no separate distinctive product-line word once the manufacturer name is
+    # stripped ("OnePlus 10 Pro" -> bare "10 Pro" would be a dangerously generic standalone alias - found
+    # as a real false positive: "Xiaomi Mi Note 10 Pro" matched it). _build_phone_family handles a name
+    # that already starts with its own brand word instead (see that function).
     n = re.sub(r"^(Samsung|Google|Xiaomi|Apple)\s+", "", n, flags=re.I)
     n = re.sub(r"^[A-Z]{1,4}-[A-Z0-9/]{2,}\s+", "", n)  # leading manufacturer model code, e.g. "SM-S948W ", "SM-A076B/DS "
     n = re.sub(r"^[A-Z]{1,3}\d[A-Z0-9-]{2,}\s+", "", n)  # leading model code without hyphen, e.g. "M2101K6G "

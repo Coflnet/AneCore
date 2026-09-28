@@ -63,19 +63,30 @@ def ordinal(n: int) -> str:
 
 def generation_word_aliases(base: str, n: int) -> set[str]:
     """
-    'iPad', 9 -> the everyday ways to say "9th generation" that a listing/query uses instead of the full
-    formal "(9th generation)" parenthetical: "iPad 9th Gen", "iPad Gen 9", "iPad 9 Gen", "iPad
-    Generation 9". Does not include a bare "iPad 9" (no "Gen"/"Generation" word) - odd-numbered-only
-    ambiguity risk aside, a bare trailing number reads as a storage/price fragment far too often in real
-    titles to be worth the false-positive risk for a recall gain this rule already covers otherwise.
+    'iPad', 9 -> the everyday, multi-language ways real listings write "9th generation" instead of the
+    full formal "(9th generation)" parenthetical - covers German ("9. Generation"/"9. Gen" - the period
+    strips to a space, landing on the same "9 Generation"/"9 Gen" forms), English ("9th Gen"/"Gen 9"/"9th
+    Generation"), French ("9e/9ème génération" - the accent strips to plain "e"/"generation"), Italian
+    ("9a generazione"), and Dutch ("9e generatie"). Does not include a bare "iPad 9" (no "Gen"/
+    "Generation"/-word at all) here - that is ambiguous across a product line's Air/Pro/mini siblings and
+    is instead added, scoped to one unqualified base line at a time, by the caller (see build_ipad's
+    "plain iPad only" year/bare-number handling) - the same "smallest sound solution" reasoning as the
+    MacBook/iPad chip-size ambiguity policy.
     """
     ord_ = ordinal(n)
-    return {
-        f"{base} {ord_} Gen",
-        f"{base} Gen {n}",
-        f"{base} {n} Gen",
-        f"{base} Generation {n}",
-    }
+    # Explicit (number-form, word-form) pairs, not a full cross product - a full cross product would also
+    # generate combinations nobody writes ("9a Gen", "9th Generatie") and, at this catalogue's alias-index
+    # scale, cost real index-build time for zero recall benefit (see tools/catalog-import/README.md's
+    # "Performance" section on why alias bloat is a real, previously-measured regression, not just a
+    # style concern).
+    pairs = [
+        (ord_, "Gen"), (str(n), "Gen"), ("Gen", str(n)),
+        (str(n), "Generation"), (ord_, "Generation"), ("Generation", str(n)),
+        (f"{n}e", "Generation"), (f"{n}eme", "Generation"),  # French "9e"/"9ème" (accent-stripped) génération
+        (f"{n}e", "Generatie"),  # Dutch "9e generatie"
+        (f"{n}a", "Generazione"), (str(n), "Generazione"),  # Italian "9a"/bare-number (from "9°") generazione
+    ]
+    return {f"{base} {a} {b}" for a, b in pairs}
 
 
 ARABIC_BY_ROMAN = {"II": "2", "III": "3", "IV": "4", "V": "5"}
