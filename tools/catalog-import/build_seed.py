@@ -970,6 +970,10 @@ def build_meta_quest():
     products = []
     for model, storage in lineup:
         pid = nz.slugify(model)  # `model` already starts with "Meta" - don't double the brand prefix
+        # `model` ("Meta Quest 2") already starts with the brand word, same as OnePlus's numbered
+        # flagships (see full_phone_name's own note) - naively prepending "Meta " here produced
+        # "Meta Meta Quest 2" in the display name. Reuse the same "don't double" guard.
+        name = full_phone_name("Meta", model)
         aliases = {model}
         # "Oculus Quest 2" only - Meta's Oculus->Meta rebrand happened in 2021, before Quest 3/3S/Pro
         # (2022+) ever shipped, so those were never sold under the Oculus name; adding an "Oculus Quest 3"
@@ -977,7 +981,7 @@ def build_meta_quest():
         if model == "Meta Quest 2":
             aliases.add("Oculus Quest 2")
         products.append(make_product(
-            pid, "Meta", model, f"Meta {model}", CAT_VR, "electronics", aliases, "hand-curated",
+            pid, "Meta", model, name, CAT_VR, "electronics", aliases, "hand-curated",
             {"storage_size": storage, "color": []},
         ))
     excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in products})
