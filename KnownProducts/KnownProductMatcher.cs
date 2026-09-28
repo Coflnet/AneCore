@@ -5,49 +5,127 @@ using System.Text.RegularExpressions;
 namespace Coflnet.Ane.KnownProducts;
 
 /// <summary>
-/// Matches a listing title (plus optionally already-extracted brand/model) against the verified
-/// known-products catalog. Pure and I/O-free: callers pass the catalog snapshot in, this class never
-/// touches the store.
+/// Matches a listing title (plus optionally already-extracted brand/model/category) against the
+/// verified known-products catalog. Pure and I/O-free: callers pass the catalog snapshot in, this class
+/// never touches the store.
 /// </summary>
 /// <remarks>
+/// <para>
 /// Accessory detection here is deliberately a small, self-contained word list rather than a call into
 /// AneNotifier's <c>ElectronicsExtractor</c> - AneCore is a dependency of AneNotifier, not the other way
 /// around, so it cannot reuse that extractor's regexes directly. This keeps a single source of truth for
 /// the *known-products veto* (this list); it does not duplicate ElectronicsExtractor's own, larger,
 /// classification list, which serves a different purpose (naming the accessory type) and keeps doing its
 /// own thing for the rule-extraction path.
+/// </para>
+/// <para>
+/// Performance: the constructor builds a first-token index once per catalogue snapshot (see
+/// <see cref="BuildIndex"/>) instead of the naive "scan every product's every alias on every call"
+/// approach. <see cref="Match"/> then only ever looks at aliases that start with a token actually present
+/// in the title, which keeps it fast even with tens of thousands of products. Build one instance per
+/// snapshot and reuse it - see <see cref="KnownProductCatalog.Matcher"/>, which does exactly that.
+/// </para>
 /// </remarks>
 public class KnownProductMatcher
 {
     private static readonly RegexOptions Opts = RegexOptions.Compiled | RegexOptions.CultureInvariant;
 
-    /// <summary>Words that mark a listing as an accessory/part rather than the device itself.</summary>
+    /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
     private static readonly string[] AccessoryWords =
     {
         "hulle", "huelle", "schutzhulle", "case", "cover", "etui", "coque", "bumper", "sleeve",
         "custodia", "custodie", "panzerglas", "schutzfolie", "displayschutz", "folie", "screenprotector",
         "kabel", "ladekabel", "ladegerat", "ladegeraet", "netzteil", "charger", "chargeur", "cavo", "adapter",
         "armband", "zubehor", "accessory", "accessoire", "accessorio",
+        // Extended for the wider catalogue (consoles, GPUs/CPUs, cameras, watches, headphones, ...).
+        "ersatzteil", "displayglas", "leerkarton", "ovp leer", "nur ovp", "ovp ohne inhalt",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>
     private static readonly Regex AccessoryPreposition = new(
-        @"\b(?:fur|fuer|for|per|pour)\s+(?:das\s+|den\s+|die\s+|ein\s+|apple\s+)?(?:iphone|ipad|handy|smartphone|telefon|tablet)\b",
+        @"\b(?:fur|fuer|for|per|pour)\s+(?:das\s+|den\s+|die\s+|ein\s+|apple\s+)?" +
+        @"(?:iphone|ipad|handy|smartphone|telefon|tablet|ps5|ps4|ps3|playstation|xbox|switch|konsole|spielekonsole|" +
+        @"laptop|notebook|macbook|kamera|uhr|watch|kopfhorer|airpods|monitor|controller)\b",
         Opts);
 
+    /// <summary>"<accessory noun> für/fuer ..." - the accessory word comes before the preposition (e.g. "Tasche für Kamera").</summary>
+    private static readonly Regex AccessoryBeforePreposition = new(
+        @"\b(gehause|tasche|akku|controller|displayschutzglas|panzerglasfolie|hulle|huelle|schutzhulle)\s+(?:fur|fuer)\b",
+        Opts);
+
+    /// <summary>Titles containing one of these indicate a complete system, not a single listed part - see <see cref="IsCompleteSystemListing"/>.</summary>
+    private static readonly string[] CompleteSystemWords =
+    {
+        "gaming pc", "gamingpc", "komplett pc", "komplettpc", "rechner", "desktop pc", "desktoppc",
+    };
+
+    /// <summary>
+    /// Category leaf labels (last segment of <see cref="KnownProduct.Categories"/>) treated as a PC
+    /// "component" for the container veto - a whole-system listing merely containing the part must not
+    /// be matched to the component product itself. Kept narrow and explicit (see AneCore/tools/catalog-import
+    /// README for the exact UnifiedCategories.json paths used) rather than inferring from
+    /// <see cref="KnownProduct.Vertical"/>, which is informational/free text.
+    /// </summary>
+    private static readonly HashSet<string> ComponentCategoryLeaves = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "Grafikkarten & Videoadapter", "Prozessoren", "RAM", "Motherboards", "Festplatten",
+    };
+
     private readonly IReadOnlyList<KnownProduct> products;
+    private readonly Dictionary<string, List<AliasEntry>> aliasIndex;
+
+    private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
 
     public KnownProductMatcher(IReadOnlyList<KnownProduct> products)
     {
         this.products = products;
+        aliasIndex = BuildIndex(products);
+    }
+
+    /// <summary>
+    /// Builds the first-token -> candidate-aliases index once. Products/aliases with an empty normalized
+    /// alias are skipped (nothing to index).
+    /// </summary>
+    private static Dictionary<string, List<AliasEntry>> BuildIndex(IReadOnlyList<KnownProduct> products)
+    {
+        var index = new Dictionary<string, List<AliasEntry>>(StringComparer.Ordinal);
+        foreach (var product in products)
+        {
+            foreach (var alias in product.Aliases)
+            {
+                var normalizedAlias = Normalize(alias);
+                if (normalizedAlias.Length == 0)
+                    continue;
+                var aliasTokens = normalizedAlias.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                if (aliasTokens.Length == 0)
+                    continue;
+                if (!index.TryGetValue(aliasTokens[0], out var list))
+                {
+                    list = new List<AliasEntry>();
+                    index[aliasTokens[0]] = list;
+                }
+                list.Add(new AliasEntry(product, aliasTokens));
+            }
+        }
+        return index;
     }
 
     /// <summary>
     /// Returns the matching known product, or null when there is no match, the title looks like an
     /// accessory rather than the device, the match is ambiguous between two equally-specific products,
-    /// or a given brand contradicts the candidate's brand.
+    /// a given brand contradicts the candidate's brand, the listing's category is known and incompatible
+    /// with the candidate's category, or the title looks like a whole system that merely contains the
+    /// matched component.
     /// </summary>
-    public KnownProduct? Match(string? title, string? brand = null, string? model = null)
+    /// <param name="title">Listing title.</param>
+    /// <param name="brand">Already-extracted brand, if any - contradicting brands veto the match.</param>
+    /// <param name="model">Currently unused for filtering; accepted for call-site symmetry with brand.</param>
+    /// <param name="categoryPath">
+    /// The listing's own category path (e.g. from platform category mapping), if known. When given, a
+    /// candidate whose <see cref="KnownProduct.Categories"/> shares no label with this path is rejected.
+    /// An unknown/empty category path (the default) never rejects anything.
+    /// </param>
+    public KnownProduct? Match(string? title, string? brand = null, string? model = null, IReadOnlyList<string>? categoryPath = null)
     {
         if (string.IsNullOrWhiteSpace(title))
             return null;
@@ -59,23 +137,39 @@ public class KnownProductMatcher
         var titleTokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
         var matches = new List<(KnownProduct Product, int TokenCount, int StartIndex)>();
-        foreach (var product in products)
+        for (var i = 0; i < titleTokens.Length; i++)
         {
-            foreach (var alias in product.Aliases)
+            if (!aliasIndex.TryGetValue(titleTokens[i], out var candidates))
+                continue;
+
+            foreach (var entry in candidates)
             {
-                var normalizedAlias = Normalize(alias);
-                if (normalizedAlias.Length == 0)
+                var aliasTokens = entry.Tokens;
+                if (i + aliasTokens.Length > titleTokens.Length)
                     continue;
-                var aliasTokens = normalizedAlias.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                var start = FindTokenSequence(titleTokens, aliasTokens);
-                if (start < 0)
+                var ok = true;
+                for (var j = 1; j < aliasTokens.Length; j++)
+                {
+                    if (titleTokens[i + j] != aliasTokens[j])
+                    {
+                        ok = false;
+                        break;
+                    }
+                }
+                if (!ok)
                     continue;
-                if (IsExcluded(product, titleTokens, start, aliasTokens.Length))
+                if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
                     continue;
-                matches.Add((product, aliasTokens.Length, start));
+                if (!IsCategoryCompatible(entry.Product, categoryPath))
+                    continue;
+                matches.Add((entry.Product, aliasTokens.Length, i));
             }
         }
 
+        if (matches.Count == 0)
+            return null;
+
+        matches = ApplyContainerVeto(matches, titleTokens, normalizedTitle);
         if (matches.Count == 0)
             return null;
 
@@ -96,6 +190,59 @@ public class KnownProductMatcher
         return candidate;
     }
 
+    /// <summary>
+    /// Drops component-category matches (GPU/CPU/RAM/motherboard/storage) when the title both reads as a
+    /// whole system ("Gaming PC ...", "Komplett PC ...", "Rechner ...") AND matched two or more distinct
+    /// component products - e.g. "Gaming PC Ryzen 5 5600 RTX 3060 16GB" matching both the CPU and the GPU.
+    /// Both signals are required: a single component alias in a system-worded title (e.g. a legitimate
+    /// "Rechner mit RTX 3060" upgrade-part listing) is not enough on its own to veto, and multiple
+    /// component matches without system wording (e.g. a bundle listing) is left to the normal
+    /// longest-alias/ambiguity logic instead of being silently dropped here.
+    /// </summary>
+    private static List<(KnownProduct Product, int TokenCount, int StartIndex)> ApplyContainerVeto(
+        List<(KnownProduct Product, int TokenCount, int StartIndex)> matches, string[] titleTokens, string normalizedTitle)
+    {
+        var componentMatches = matches.Where(m => IsComponentCategory(m.Product)).ToList();
+        var distinctComponentProducts = componentMatches.Select(m => m.Product.Id).Distinct().Count();
+        if (distinctComponentProducts < 2)
+            return matches;
+        if (!IsCompleteSystemListing(normalizedTitle))
+            return matches;
+
+        return matches.Where(m => !IsComponentCategory(m.Product)).ToList();
+    }
+
+    private static bool IsComponentCategory(KnownProduct product) =>
+        product.Categories.Count > 0 && ComponentCategoryLeaves.Contains(product.Categories[^1]);
+
+    private static bool IsCompleteSystemListing(string normalizedTitle)
+    {
+        foreach (var word in CompleteSystemWords)
+        {
+            if (normalizedTitle.Contains(word, StringComparison.Ordinal))
+                return true;
+        }
+        return false;
+    }
+
+    /// <summary>True when the listing's own category is known and shares no label with the candidate's. Unknown category (null/empty) is always compatible.</summary>
+    private static bool IsCategoryCompatible(KnownProduct product, IReadOnlyList<string>? categoryPath)
+    {
+        if (categoryPath == null || categoryPath.Count == 0)
+            return true;
+        if (product.Categories.Count == 0)
+            return true;
+        foreach (var productCategory in product.Categories)
+        {
+            foreach (var listingCategory in categoryPath)
+            {
+                if (string.Equals(productCategory, listingCategory, StringComparison.OrdinalIgnoreCase))
+                    return true;
+            }
+        }
+        return false;
+    }
+
     /// <summary>True when a token immediately after the matched alias is one of the product's exclude terms.</summary>
     private static bool IsExcluded(KnownProduct product, string[] titleTokens, int aliasStart, int aliasLength)
     {
@@ -107,28 +254,6 @@ public class KnownProductMatcher
         return product.ExcludeTerms.Contains(titleTokens[nextIndex]);
     }
 
-    /// <summary>Index of the first token of <paramref name="needle"/> in <paramref name="haystack"/>, or -1.</summary>
-    private static int FindTokenSequence(string[] haystack, string[] needle)
-    {
-        if (needle.Length == 0 || needle.Length > haystack.Length)
-            return -1;
-        for (var i = 0; i <= haystack.Length - needle.Length; i++)
-        {
-            var match = true;
-            for (var j = 0; j < needle.Length; j++)
-            {
-                if (haystack[i + j] != needle[j])
-                {
-                    match = false;
-                    break;
-                }
-            }
-            if (match)
-                return i;
-        }
-        return -1;
-    }
-
     private static bool IsAccessory(string normalizedTitle)
     {
         foreach (var word in AccessoryWords)
@@ -136,7 +261,7 @@ public class KnownProductMatcher
             if (normalizedTitle.Contains(word, StringComparison.Ordinal))
                 return true;
         }
-        return AccessoryPreposition.IsMatch(normalizedTitle);
+        return AccessoryPreposition.IsMatch(normalizedTitle) || AccessoryBeforePreposition.IsMatch(normalizedTitle);
     }
 
     /// <summary>

@@ -18,7 +18,22 @@
   <ItemGroup>
     <Content Update="Categories/UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
     <EmbeddedResource Include="Categories/CategoryScope.json" LogicalName="Coflnet.Ane.Categories.CategoryScope.json" />
-    <EmbeddedResource Include="KnownProducts/Seed/apple-iphones.json" LogicalName="Coflnet.Ane.KnownProducts.Seed.apple-iphones.json" />
+    <EmbeddedResource Include="KnownProducts/Seed/*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AneCore.Tests and tools/ are separate, non-shipped projects living inside this directory for
+         convenience; the SDK's default recursive globs would otherwise pull their .cs/content files
+         into this library and its NuGet-consuming dependants (AneNotifier/AneApi reference this project
+         directly, not a package, but keeping the library's own compile unit clean still matters). -->
+    <Compile Remove="AneCore.Tests/**/*.cs" />
+    <Compile Remove="tools/**/*.cs" />
+    <Content Remove="AneCore.Tests/**/*" />
+    <Content Remove="tools/**/*" />
+    <None Remove="AneCore.Tests/**/*" />
+    <None Remove="tools/**/*" />
+    <EmbeddedResource Remove="AneCore.Tests/**/*" />
+    <EmbeddedResource Remove="tools/**/*" />
   </ItemGroup>
 
 </Project>

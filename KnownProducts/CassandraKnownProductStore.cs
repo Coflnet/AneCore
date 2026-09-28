@@ -43,6 +43,9 @@ public class CassandraKnownProductStore : IKnownProductStore
         table = new Table<KnownProduct>(session, mapping);
     }
 
+    /// <summary>Partition key value for the single row this store keeps its applied-seed-version marker under.</summary>
+    private const string SeedVersionRowKey = "applied_seed_version";
+
     public async Task InitializeAsync()
     {
         if (tableInitialized) return;
@@ -63,6 +66,14 @@ public class CassandraKnownProductStore : IKnownProductStore
                     exclude_terms set<text>,
                     source text,
                     verified_at timestamp
+                )"));
+            // Tiny key/value table for operational metadata about the catalogue as a whole - currently
+            // just the applied KnownProductSeed.Version, so a seeder can skip re-upserting the full seed
+            // (tens of thousands of rows once the wider catalogue is loaded) when nothing changed.
+            await session.ExecuteAsync(new SimpleStatement(@"
+                CREATE TABLE IF NOT EXISTS known_products_meta (
+                    key text PRIMARY KEY,
+                    value text
                 )"));
             tableInitialized = true;
         }
@@ -86,4 +97,19 @@ public class CassandraKnownProductStore : IKnownProductStore
 
     public async Task DeleteAsync(string id) =>
         await table.Where(p => p.Id == id).Delete().ExecuteAsync();
+
+    public async Task<string?> GetAppliedSeedVersionAsync()
+    {
+        var statement = new SimpleStatement("SELECT value FROM known_products_meta WHERE key = ?", SeedVersionRowKey);
+        var result = await session.ExecuteAsync(statement);
+        var row = result.FirstOrDefault();
+        return row?.GetValue<string>("value");
+    }
+
+    public async Task SetAppliedSeedVersionAsync(string version)
+    {
+        var statement = new SimpleStatement(
+            "INSERT INTO known_products_meta (key, value) VALUES (?, ?)", SeedVersionRowKey, version);
+        await session.ExecuteAsync(statement);
+    }
 }

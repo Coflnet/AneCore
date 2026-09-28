@@ -15,6 +15,7 @@ public class KnownProductCatalog : IDisposable
     private readonly TimeSpan refreshInterval;
     private readonly SemaphoreSlim refreshLock = new(1, 1);
     private volatile IReadOnlyList<KnownProduct> snapshot = Array.Empty<KnownProduct>();
+    private volatile KnownProductMatcher matcher = new(Array.Empty<KnownProduct>());
     private Timer? timer;
 
     public KnownProductCatalog(IKnownProductStore store, ILogger<KnownProductCatalog>? logger = null, TimeSpan? refreshInterval = null)
@@ -28,6 +29,14 @@ public class KnownProductCatalog : IDisposable
     public IReadOnlyList<KnownProduct> Snapshot => snapshot;
 
     /// <summary>
+    /// A <see cref="KnownProductMatcher"/> built once for the current <see cref="Snapshot"/> and swapped
+    /// atomically whenever the snapshot refreshes. Callers (AneNotifier per listing, AneApi per search
+    /// query) should use this instead of constructing <c>new KnownProductMatcher(catalog.Snapshot)</c>
+    /// themselves - that used to rebuild the matcher's alias index on every single call.
+    /// </summary>
+    public KnownProductMatcher Matcher => matcher;
+
+    /// <summary>
     /// Reloads the snapshot from the store. Swallows and logs any failure, keeping the previous
     /// snapshot in place - callers (including the periodic timer) never need to handle exceptions.
     /// </summary>
@@ -38,6 +47,7 @@ public class KnownProductCatalog : IDisposable
         {
             var loaded = await store.GetAllAsync();
             snapshot = loaded;
+            matcher = new KnownProductMatcher(loaded);
         }
         catch (Exception ex)
         {
