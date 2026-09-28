@@ -15,6 +15,18 @@
       "vertical": "electronics",
       "aliases": [
         "AirPods (1st generation)",
+        "AirPods 1",
+        "AirPods 1 Gen",
+        "AirPods 1 Generation",
+        "AirPods 1 Generazione",
+        "AirPods 1a Generazione",
+        "AirPods 1e Generatie",
+        "AirPods 1e Generation",
+        "AirPods 1eme Generation",
+        "AirPods 1st Gen",
+        "AirPods 1st Generation",
+        "AirPods Gen 1",
+        "AirPods Generation 1",
         "Apple AirPods (1st generation)"
       ],
       "possibleAttributes": {
@@ -38,6 +50,18 @@
       "vertical": "electronics",
       "aliases": [
         "AirPods (2nd generation)",
+        "AirPods 2",
+        "AirPods 2 Gen",
+        "AirPods 2 Generation",
+        "AirPods 2 Generazione",
+        "AirPods 2a Generazione",
+        "AirPods 2e Generatie",
+        "AirPods 2e Generation",
+        "AirPods 2eme Generation",
+        "AirPods 2nd Gen",
+        "AirPods 2nd Generation",
+        "AirPods Gen 2",
+        "AirPods Generation 2",
         "Apple AirPods (2nd generation)"
       ],
       "possibleAttributes": {
@@ -61,6 +85,18 @@
       "vertical": "electronics",
       "aliases": [
         "AirPods (3rd generation)",
+        "AirPods 3",
+        "AirPods 3 Gen",
+        "AirPods 3 Generation",
+        "AirPods 3 Generazione",
+        "AirPods 3a Generazione",
+        "AirPods 3e Generatie",
+        "AirPods 3e Generation",
+        "AirPods 3eme Generation",
+        "AirPods 3rd Gen",
+        "AirPods 3rd Generation",
+        "AirPods Gen 3",
+        "AirPods Generation 3",
         "Apple AirPods (3rd generation)"
       ],
       "possibleAttributes": {
@@ -84,6 +120,18 @@
       "vertical": "electronics",
       "aliases": [
         "AirPods (4th generation)",
+        "AirPods 4",
+        "AirPods 4 Gen",
+        "AirPods 4 Generation",
+        "AirPods 4 Generazione",
+        "AirPods 4a Generazione",
+        "AirPods 4e Generatie",
+        "AirPods 4e Generation",
+        "AirPods 4eme Generation",
+        "AirPods 4th Gen",
+        "AirPods 4th Generation",
+        "AirPods Gen 4",
+        "AirPods Generation 4",
         "Apple AirPods (4th generation)"
       ],
       "possibleAttributes": {
@@ -136,7 +184,9 @@
         "color": []
       },
       "excludeTerms": [
-        "2"
+        "2",
+        "gen",
+        "generation"
       ],
       "source": "seed:ios-device-list+apple-specs-2026-09"
     },
@@ -155,6 +205,18 @@
       "vertical": "electronics",
       "aliases": [
         "AirPods Pro (2nd generation)",
+        "AirPods Pro 2",
+        "AirPods Pro 2 Gen",
+        "AirPods Pro 2 Generation",
+        "AirPods Pro 2 Generazione",
+        "AirPods Pro 2a Generazione",
+        "AirPods Pro 2e Generatie",
+        "AirPods Pro 2e Generation",
+        "AirPods Pro 2eme Generation",
+        "AirPods Pro 2nd Gen",
+        "AirPods Pro 2nd Generation",
+        "AirPods Pro Gen 2",
+        "AirPods Pro Generation 2",
         "Apple AirPods Pro (2nd generation)"
       ],
       "possibleAttributes": {
