@@ -39,6 +39,13 @@ public class KnownProductMatcher
         "armband", "zubehor", "accessory", "accessoire", "accessorio",
         // Extended for the wider catalogue (consoles, GPUs/CPUs, cameras, watches, headphones, ...).
         "ersatzteil", "displayglas", "leerkarton", "ovp leer", "nur ovp", "ovp ohne inhalt",
+        // Found via the real-listing-title evaluation (tools/catalog-import/eval): "Nintendo Switch
+        // Tasche"/"Tragetasche" (carry bag), "Skin ps5" (cosmetic vinyl overlay) and "lüfter"/"kühler"
+        // (replacement cooling fan) were all matching the console/GPU itself. "headset" is safe as an
+        // unconditional accessory word - no seeded headphone product's own alias contains that word (they
+        // are all specific brand+model names, e.g. "Bose QuietComfort 45"), so this cannot veto a
+        // legitimate headphone listing, only a "<device> headset/Gaming-Headset" accessory-for-device one.
+        "tasche", "tragetasche", "skin", "lufter", "kuhler", "headset",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>

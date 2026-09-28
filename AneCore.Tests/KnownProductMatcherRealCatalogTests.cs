@@ -75,6 +75,40 @@ public class KnownProductMatcherRealCatalogTests
         Assert.That(matcher.Match("Controller für PS5"), Is.Null);
     }
 
+    // The next four are regressions from the real-listing-title evaluation (tools/catalog-import/eval) -
+    // each of these titles matched the console/GPU itself before the AccessoryWords list was extended.
+    [Test]
+    public void Accessory_NintendoSwitchTasche_ReturnsNull()
+    {
+        Assert.That(matcher.Match("Nintendo Switch Tasche"), Is.Null);
+        Assert.That(matcher.Match("Nintendo Switch Tragetasche schwarz"), Is.Null);
+    }
+
+    [Test]
+    public void Accessory_Ps5Skin_ReturnsNull()
+    {
+        Assert.That(matcher.Match("Skin ps5 rosa gta6"), Is.Null);
+    }
+
+    [Test]
+    public void Accessory_Ps5Luefter_ReturnsNull()
+    {
+        Assert.That(matcher.Match("lüfter PS 5"), Is.Null);
+    }
+
+    [Test]
+    public void Accessory_NintendoSwitchGamingHeadset_ReturnsNull()
+    {
+        Assert.That(matcher.Match("Nintendo Switch Gaming-Headset mit Mikrofon – voll funktionsfähig"), Is.Null);
+    }
+
+    [Test]
+    public void NonAccessory_NintendoSwitchConsoleListing_StillMatches()
+    {
+        // Guard against the accessory-word additions above being too broad.
+        Assert.That(matcher.Match("Nintendo Switch Konsole - Top Zustand")!.Id, Is.EqualTo("nintendo-switch"));
+    }
+
     [Test]
     public void Watch_AppleWatchSeries9_DoesNotFalseMatchSe()
     {

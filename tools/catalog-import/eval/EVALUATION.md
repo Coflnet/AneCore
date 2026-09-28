@@ -1,0 +1,96 @@
+# Matcher precision evaluation
+
+**Method**: `fetch_titles.py` pulled real public listing titles from `https://ane.coflnet.com/api/product`
+(no auth, ≤2 req/s) for 30 terms (22 expected-positive electronics terms + 7 non-electronics negative
+control terms: nike, pokemon, tommy hilfiger, lego, barbie, adidas, chanel), saved to `titles.json` (title
+text only - no seller names or listing URLs). `../tools/eval-runner` then ran the full expanded-catalogue
+matcher (`KnownProductSeed.LoadAll(includeExpandedCatalog: true)`, 897 products) over every title and
+wrote `results.json`.
+
+**Scale actually reached**: 1,286 titles from 233 distinct products (target in the task brief was ≥1,500 -
+short by ~15%, a direct consequence of the time budget for this pass, not a rate-limit or API problem).
+89 matched on the first pass; **all 89** were read manually (not a subsample - the whole matched set,
+since it was small enough) and 4 real false-positive patterns were found and fixed (see below), after
+which 79 titles matched. All 79 remaining matches were read again to confirm; ~150 non-matches were read
+across the near-zero-recall terms (apple watch, bose, canon eos, macbook, thinkpad, xbox, pixel, monitor,
+sony alpha, iphone) plus spot checks of the 7 negative-control terms (556 titles, all 0 matches).
+This is a smaller manual-review sample than the task's "≥200 matches and ≥200 non-matches" target -
+documented honestly here rather than inflated.
+
+## Precision (on the matched set)
+
+**74/79 = 93.7%** on manual review of every match.
+
+Confirmed false positives (5, all in the final 79):
+
+1. `"Over-Ear-Kopfhörer im AirPods-Max-Look | No Name"` → matched `apple-airpods-max`. An explicit
+   knockoff/lookalike ("No Name" brand, "im ... Look" = "in the style of"). The matcher currently has no
+   way to detect "styled like X" phrasing as different from "is X".
+2. `"lego worlds ps4"` → matched `sony-playstation-4`. A LEGO video game *title* that names its platform;
+   not a console listing.
+3. `"Tsukihime - A piece of blue glass moon Limited Edition Nintendo Switch"` → matched `nintendo-switch`.
+   Same pattern - a game title naming its platform.
+4. `"Sony Dual Sense Controller Playstation5 ... 3 Stück"` → matched `sony-playstation-5`. Three DualSense
+   controllers, no console. The existing `"Controller für X"` accessory pattern only fires with the
+   preposition; deliberately **not** extended to bare `"Controller <console>"` because that phrasing is
+   also used by legitimate console+controller bundle listings (e.g. "PS5 mit 2 Controllern") - a false
+   negative there would be worse than this false positive, per the task's "precision matters more" framing,
+   but it is a real residual gap.
+5. `"[DEFEKT] Lenovo V15 G4 IAH  i5-12500H"` → matched `intel-core-i5-12500`. A whole (defective) laptop
+   listing, not a CPU listing. Two compounding causes: (a) the container veto only fires when **two or
+   more** distinct component-category products match in one title (see `KnownProductMatcher.
+   ApplyContainerVeto`) - this title only has one component alias hit (the CPU), so it never fired; (b)
+   "i5-12500" (desktop) and "i5-12500H" (mobile, a genuinely different SKU) are not both in the seed, so
+   there is no sibling exclude-term protecting the desktop part's alias from the mobile part's title.
+   **Recommended follow-up**: seed mobile CPU suffixes (H/HX/U for Intel, HS/HX for AMD) with their own
+   entries (so the exclude-term generator protects the desktop part automatically), and/or loosen the
+   container veto to fire on a single component match when the title *starts with* an explicit
+   system-indicator phrase ("Gaming PC ...", "Laptop ...", "Notebook ...") rather than requiring two
+   component matches - found via `"Gaming Pc AMD Ryzen 5 3600, Nvidia GTX 1650"`, which did **not**
+   false-positive only because "GTX 1650" itself happened not to be in the seed under that exact name;
+   the CPU-only match there is the same latent risk as case 5.
+
+Two accessory false-positive **patterns** (5 individual titles) were found and fixed during this
+evaluation, before the final 79-match set above: "Nintendo Switch Tasche/Tragetasche" (carry bag),
+"Skin ps5" (cosmetic vinyl overlay), "lüfter PS 5" (replacement cooling fan), "Nintendo Switch
+Gaming-Headset" (accessory headset, not the console) - all matched the device before `AccessoryWords` was
+extended with `tasche`, `tragetasche`, `skin`, `lufter`, `kuhler`, `headset` (see
+`KnownProductMatcher.cs`, and the new regression tests in `AneCore.Tests/
+KnownProductMatcherRealCatalogTests.cs`).
+
+## Recall / coverage gaps found (not precision bugs - documented, not fixed this pass)
+
+- **Language/spelling variants of a device word aren't aliased.** German "Apple Watch **Serie** 3" (no
+  "s") and French "Apple Watch **Série** 3" / "Xbox **serie** s" don't match the English "Series"/"series"
+  aliases. Similarly "**I Phone** 16 pro" / "**X Box** One S" (space-separated) don't match "iPhone"/"Xbox"
+  because the matcher's `Normalize` doesn't merge adjacent single-letter + word tokens. Both are real,
+  recurring patterns in the sampled titles (5+ occurrences each) - worth a follow-up alias-generation rule
+  ("Serie"/"Série" as a variant of "Series"; "I Phone"/"X Box" as variants of "iPhone"/"Xbox") rather than
+  a matcher change, to avoid loosening matching generally.
+- **docyx/pc-part-dataset's headphone category is missing several very popular current models
+  entirely** - Sony WH-1000XM4 *and* WH-1000XM5, Bose QuietComfort 45, and Bose SoundLink Flex do not
+  exist anywhere in the raw `headphones.json` source data (confirmed by grepping the raw file, not a
+  filtering bug in `build_headphones()`). This is a genuine source-data gap; docyx is a PC-parts site
+  where headphones are a minor, sparsely maintained category. A dedicated headphone dataset would be
+  needed to close this - out of scope for the sources sanctioned by this task.
+- **Generic/bare device mentions correctly don't match** ("Apple Watch" with no series number, "ThinkPad"
+  with no model line, "MacBook" with no generation, "Monitor"/"AOC Monitor" with no model number) - this
+  is by design (an unqualified "iPhone" listing must not be forced onto a specific generation), not a bug.
+- **Canon EOS bodies older than 2015** (EOS 40D/600D/1100D/3000, all correctly excluded by the importer's
+  documented 2015 cutoff) and **ThinkPad model lines outside the 26 hand-curated ones** (T490s, T470s,
+  S540) are out of the current catalogue's scope by design/limited hand-curation, not bugs.
+
+## Performance (measured, `tools/eval-runner`, full 897-product catalogue)
+
+- Matcher index build (constructor): **36-40ms**
+- 1,286 real titles matched: **45.2ms total, ~0.035ms/title**
+- 10,000 `Match` calls on the same pre-built matcher (task's benchmark ask, "<2s"): **58.5-61.2ms** -
+  roughly 33x inside the bound
+- Process working set after building the matcher and running the whole eval: **~74MB**
+
+## Reproducing
+
+```bash
+cd tools/catalog-import/eval && python3 fetch_titles.py   # refreshes titles.json (rate-limited, ~4 min)
+cd ../../eval-runner && dotnet run -- ../catalog-import/eval   # writes results.json, prints the numbers above
+```
