@@ -1,0 +1,215 @@
+{
+  "products": [
+    {
+      "id": "apple-imac-24-inch-m1-2021",
+      "brand": "Apple",
+      "model": "iMac 24-inch (M1, 2021)",
+      "name": "Apple iMac 24-inch (M1, 2021)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iMac 24-inch (M1, 2021)",
+        "iMac 24-inch (M1, 2021)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-imac-24-inch-m3-2023",
+      "brand": "Apple",
+      "model": "iMac 24-inch (M3, 2023)",
+      "name": "Apple iMac 24-inch (M3, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iMac 24-inch (M3, 2023)",
+        "iMac 24-inch (M3, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-imac-24-inch-m4-2024",
+      "brand": "Apple",
+      "model": "iMac 24-inch (M4, 2024)",
+      "name": "Apple iMac 24-inch (M4, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple iMac 24-inch (M4, 2024)",
+        "iMac 24-inch (M4, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-mac-mini-m2-2023",
+      "brand": "Apple",
+      "model": "Mac mini (M2, 2023)",
+      "name": "Apple Mac mini (M2, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple Mac mini (M2, 2023)",
+        "Mac mini (M2, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-mac-mini-m2-pro-2023",
+      "brand": "Apple",
+      "model": "Mac mini (M2 Pro, 2023)",
+      "name": "Apple Mac mini (M2 Pro, 2023)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple Mac mini (M2 Pro, 2023)",
+        "Mac mini (M2 Pro, 2023)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB",
+          "8TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-mac-mini-m4-2024",
+      "brand": "Apple",
+      "model": "Mac mini (M4, 2024)",
+      "name": "Apple Mac mini (M4, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple Mac mini (M4, 2024)",
+        "Mac mini (M4, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    },
+    {
+      "id": "apple-mac-mini-m4-pro-2024",
+      "brand": "Apple",
+      "model": "Mac mini (M4 Pro, 2024)",
+      "name": "Apple Mac mini (M4 Pro, 2024)",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Desktop-Computer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Apple Mac mini (M4 Pro, 2024)",
+        "Mac mini (M4 Pro, 2024)"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB",
+          "1TB",
+          "2TB",
+          "4TB"
+        ],
+        "os": [
+          "macos"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:apple-specs-2026-09"
+    }
+  ]
+}
