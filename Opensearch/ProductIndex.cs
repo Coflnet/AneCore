@@ -55,6 +55,7 @@ public class ProductIndex(
             .Number(k => k.Name(n => n.MinPrice).Type(NumberType.Double))
             .Number(k => k.Name(n => n.MaxPrice).Type(NumberType.Double))
             .Number(k => k.Name(n => n.ListingCount).Type(NumberType.Integer))
+            .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))
             .Date(d => d.Name(n => n.CreatedAt))
             .Date(d => d.Name(n => n.LastUpdated))
             .Nested<ProductAttribute>(o => o
@@ -77,6 +78,47 @@ public class ProductIndex(
             .IndexPatterns(IndexPattern())
             .Settings(IndexSettings)
             .Map<ProductDocument>(Mapping);
+
+    /// <summary>
+    /// Additive migrations only (the existing backing indices keep their old mapping until they expire):
+    /// adds <c>offersFound</c> to indices that predate it, via a mapping put (no reindex needed).
+    /// </summary>
+    protected override async Task UpdateExistingIndexMappings(
+        OpenSearchClient client,
+        CancellationToken stoppingToken)
+    {
+        var mappings = await client.Indices.GetMappingAsync<ProductDocument>(m => m.Index(IndexPattern()), stoppingToken);
+        if (!mappings.IsValid)
+        {
+            if (IsPermissionDenied(mappings))
+            {
+                WarnMissingPermissionOnce("get mapping", mappings.ServerError?.Error?.Reason);
+                return;
+            }
+            throw new InvalidOperationException(
+                $"Failed to read product index mappings: {mappings.DebugInformation}");
+        }
+
+        foreach (var (index, state) in mappings.Indices)
+        {
+            if (state.Mappings?.Properties?.ContainsKey("offersFound") == true)
+                continue;
+            var response = await client.Indices.PutMappingAsync<ProductDocument>(m => m
+                .Index(index)
+                .Properties(p => p
+                    .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))),
+                stoppingToken);
+            if (response.IsValid)
+                continue;
+            if (IsPermissionDenied(response))
+            {
+                WarnMissingPermissionOnce("put mapping", response.ServerError?.Error?.Reason);
+                return;
+            }
+            throw new InvalidOperationException(
+                $"Failed to add offersFound mapping to product index {index.Name}: {response.DebugInformation}");
+        }
+    }
 
     protected override CreateIndexDescriptor ConfigureNewIndex(CreateIndexDescriptor descriptor) =>
         descriptor.Settings(IndexSettings).Map<ProductDocument>(Mapping);
@@ -147,6 +189,7 @@ public record ProductDocument(
     double? MinPrice,
     double? MaxPrice,
     int? ListingCount,
+    int? OffersFound,
     DateTime CreatedAt,
     DateTime LastUpdated,
     List<ProductAttribute> Attributes,

@@ -25,6 +25,12 @@ public class Product
     public double? EstimatedValue { get; set; }
     public int? SoldCount { get; set; }
     public int ListingCount { get; set; }
+    /// <summary>Monotonic high-water mark of offers this product has ever had (see
+    /// ProductGrouper.ComputeOffersFound) - unlike <see cref="ListingCount"/> (the CURRENT count of active,
+    /// unsold offers, which goes down again as offers sell/expire), this never decreases. Used by search to
+    /// keep showing a product that once had real market activity even while it is temporarily out of stock.
+    /// Zero on a product written before this field existed until its stats are next recomputed.</summary>
+    public int OffersFound { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime LastUpdated { get; set; }
     public List<string> SampleTitles { get; set; } = new();

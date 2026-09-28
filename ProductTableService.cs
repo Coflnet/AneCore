@@ -50,6 +50,7 @@ public class ProductTableService
                 .Column(p => p.EstimatedValue, cm => cm.WithName("estimated_value"))
                 .Column(p => p.SoldCount, cm => cm.WithName("sold_count"))
                 .Column(p => p.ListingCount, cm => cm.WithName("listing_count"))
+                .Column(p => p.OffersFound, cm => cm.WithName("offers_found"))
                 .Column(p => p.LastUpdated, cm => cm.WithName("last_updated"))
                 .Column(p => p.CreatedAt, cm => cm.WithName("created_at"))
                 .Column(p => p.SampleTitles, cm => cm.WithName("sample_titles"))
@@ -172,6 +173,7 @@ public class ProductTableService
             await migrationRuns.CreateIfNotExistsAsync();
             await EnsureRetentionDefaultsAsync();
             await EnsureSellerHashLineageSchemaAsync();
+            await EnsureOffersFoundSchemaAsync();
 
             tablesInitialized = true;
         }
@@ -207,6 +209,23 @@ public class ProductTableService
 
         await session.ExecuteAsync(new SimpleStatement(
             "CREATE INDEX IF NOT EXISTS product_listings_seller_hash_idx ON product_listings (seller_hash)"));
+    }
+
+    /// <summary>
+    /// Adds <c>offers_found</c> to <c>products</c> for tables created before it existed (existing tables are
+    /// not altered by <c>CreateIfNotExistsAsync</c> - same idiom as <see cref="EnsureSellerHashLineageSchemaAsync"/>).
+    /// Safe to run on every startup: the column-existence check makes it a no-op once the column is there.
+    /// </summary>
+    private async Task EnsureOffersFoundSchemaAsync()
+    {
+        var columns = await session.ExecuteAsync(new SimpleStatement(
+            "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+            session.Keyspace,
+            "products",
+            "offers_found"));
+        if (!columns.Any())
+            await session.ExecuteAsync(new SimpleStatement(
+                "ALTER TABLE products ADD offers_found int"));
     }
 
     /// <summary>
