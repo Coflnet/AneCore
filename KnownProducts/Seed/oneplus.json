@@ -1,0 +1,1176 @@
+{
+  "products": [
+    {
+      "id": "oneplus-10-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus 10 Pro",
+      "name": "OnePlus 10 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 10 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-10r",
+      "brand": "OnePlus",
+      "model": "OnePlus 10R",
+      "name": "OnePlus 10R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 10R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-10t",
+      "brand": "OnePlus",
+      "model": "OnePlus 10T",
+      "name": "OnePlus 10T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 10T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-11",
+      "brand": "OnePlus",
+      "model": "OnePlus 11",
+      "name": "OnePlus 11",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 11"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "r"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-11r",
+      "brand": "OnePlus",
+      "model": "OnePlus 11R",
+      "name": "OnePlus 11R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 11R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "16GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-12",
+      "brand": "OnePlus",
+      "model": "OnePlus 12",
+      "name": "OnePlus 12",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 12"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "r"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-12r",
+      "brand": "OnePlus",
+      "model": "OnePlus 12R",
+      "name": "OnePlus 12R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 12R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "16GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-13",
+      "brand": "OnePlus",
+      "model": "OnePlus 13",
+      "name": "OnePlus 13",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 13"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "r",
+        "s"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-13r",
+      "brand": "OnePlus",
+      "model": "OnePlus 13R",
+      "name": "OnePlus 13R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 13R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-13s",
+      "brand": "OnePlus",
+      "model": "OnePlus 13s",
+      "name": "OnePlus 13s",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 13s"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-15",
+      "brand": "OnePlus",
+      "model": "OnePlus 15",
+      "name": "OnePlus 15",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 15"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-6",
+      "brand": "OnePlus",
+      "model": "OnePlus 6",
+      "name": "OnePlus 6",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 6"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "t"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-6t",
+      "brand": "OnePlus",
+      "model": "OnePlus 6T",
+      "name": "OnePlus 6T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 6T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-7",
+      "brand": "OnePlus",
+      "model": "OnePlus 7",
+      "name": "OnePlus 7",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 7"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-7-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus 7 Pro",
+      "name": "OnePlus 7 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 7 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-8",
+      "brand": "OnePlus",
+      "model": "OnePlus 8",
+      "name": "OnePlus 8",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 8"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro",
+        "t"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-8-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus 8 Pro",
+      "name": "OnePlus 8 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 8 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-8t",
+      "brand": "OnePlus",
+      "model": "OnePlus 8T",
+      "name": "OnePlus 8T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 8T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-9",
+      "brand": "OnePlus",
+      "model": "OnePlus 9",
+      "name": "OnePlus 9",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 9"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro",
+        "r",
+        "rt"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-9-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus 9 Pro",
+      "name": "OnePlus 9 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 9 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-9r",
+      "brand": "OnePlus",
+      "model": "OnePlus 9R",
+      "name": "OnePlus 9R",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 9R"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-9rt",
+      "brand": "OnePlus",
+      "model": "OnePlus 9RT",
+      "name": "OnePlus 9RT",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus 9RT"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace",
+      "name": "OnePlus Ace",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "2",
+        "3",
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace-2",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace 2",
+      "name": "OnePlus Ace 2",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace-2-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace 2 Pro",
+      "name": "OnePlus Ace 2 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace 2 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace-3",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace 3",
+      "name": "OnePlus Ace 3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "pro"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace-3-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace 3 Pro",
+      "name": "OnePlus Ace 3 Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace 3 Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB",
+          "512GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-ace-pro",
+      "brand": "OnePlus",
+      "model": "OnePlus Ace Pro",
+      "name": "OnePlus Ace Pro",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Ace Pro"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord",
+      "name": "OnePlus Nord",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB",
+          "64GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "4GB",
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "2",
+        "3",
+        "ce",
+        "n"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-2",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord 2",
+      "name": "OnePlus Nord 2",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [
+        "t"
+      ],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-2t",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord 2T",
+      "name": "OnePlus Nord 2T",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord 2T"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-3",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord 3",
+      "name": "OnePlus Nord 3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-ce-2",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord CE 2",
+      "name": "OnePlus Nord CE 2",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord CE 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-ce-3",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord CE 3",
+      "name": "OnePlus Nord CE 3",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord CE 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB",
+          "256GB"
+        ],
+        "ram_size": [
+          "12GB",
+          "8GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-nord-n10",
+      "brand": "OnePlus",
+      "model": "OnePlus Nord N10",
+      "name": "OnePlus Nord N10",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Nord N10"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "128GB"
+        ],
+        "ram_size": [
+          "6GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "oneplus-open",
+      "brand": "OnePlus",
+      "model": "OnePlus Open",
+      "name": "OnePlus Open",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "OnePlus Open"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "512GB"
+        ],
+        "ram_size": [
+          "16GB"
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:techapi-2026-09"
+    }
+  ]
+}
