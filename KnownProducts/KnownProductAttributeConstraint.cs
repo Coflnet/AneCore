@@ -47,6 +47,35 @@ public static class KnownProductAttributeConstraint
     };
 
     /// <summary>
+    /// Raw/plain-number "twin" of a slug-differentiating key that AneNotifier's extractor writes
+    /// alongside the formatted canonical one (see <c>Extraction/ElectronicsExtractor.cs</c>'s
+    /// <c>TrySet</c> calls and <c>Extraction/RuleBasedExtractionService.ToProductInfo</c>, which copies
+    /// every raw extractor attribute into the same dictionary and then *adds* the formatted
+    /// <c>storage_size</c>/<c>ram_size</c>/<c>screen_size</c> on top, without removing the raw ones - both
+    /// twins end up in the same <paramref name="attributes"/> dictionary <see cref="Apply"/> receives).
+    /// <c>gpu_vram_gb</c> is the one other raw key the extractor writes but has no canonical twin derived
+    /// for it anywhere in that mapping (checked - GPUs are not one of the device types
+    /// <c>ToProductInfo</c> derives a canonical key for), so there is nothing to keep it consistent with
+    /// here; not included below.
+    /// </summary>
+    /// <remarks>
+    /// Found via a live product (<c>apple-iphone-15-pro-max-silver-defekt-used</c>) that kept
+    /// <c>storage_gb</c>="265" after <c>storage_size</c> was correctly dropped for not being a verified
+    /// iPhone 15 Pro Max storage tier - the canonical key's drop was never propagated to its twin.
+    /// <c>ToCanonicalShape</c> reformats the twin's plain-number value into the same shape the canonical
+    /// key uses before comparing, so e.g. <c>screen_size_inch</c>="13" compares against the catalogue's
+    /// <c>13"</c> as equal (storage/ram need no reshaping: <see cref="NormalizeForComparison"/> already
+    /// treats a bare number as GB, the same default RuleBasedExtractionService uses).
+    /// </remarks>
+    private static readonly Dictionary<string, (string TwinKey, Func<string, string> ToCanonicalShape)> TwinKeys =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            ["storage_size"] = ("storage_gb", v => v),
+            ["ram_size"] = ("ram_gb", v => v),
+            ["screen_size"] = ("screen_size_inch", v => v + "\""),
+        };
+
+    /// <summary>
     /// Applies the constraint in place, removing invalid entries from <paramref name="attributes"/>.
     /// Returns the dropped key/value pairs for logging/metrics.
     /// </summary>
@@ -62,27 +91,55 @@ public static class KnownProductAttributeConstraint
                 continue;
             if (!SlugDifferentiatingKeys.Contains(key))
                 continue;
+            if (!attributes.TryGetValue(key, out var value))
+                continue; // already removed by an earlier iteration (shouldn't happen for distinct keys, but stay safe)
 
-            var value = attributes[key];
-            if (!product.PossibleAttributes.TryGetValue(key, out var allowed))
+            if (!IsAllowed(product, key, value))
             {
-                // Not declared on this known product at all: unverified variant differentiator, drop.
                 dropped.Add((key, value));
                 attributes.Remove(key);
-                continue;
+                DropTwin(key, attributes, dropped);
             }
+        }
 
-            if (allowed.Count == 0)
-                continue; // explicitly allowed, free value (e.g. colour without a certain full list)
+        // A raw twin can be present without its canonical counterpart ever having been derived (or after
+        // the loop above dropped the canonical key and its twin with it, in which case this is a no-op) -
+        // validate it independently so it can never silently disagree with what the canonical key would
+        // have been.
+        foreach (var (canonicalKey, (twinKey, toCanonicalShape)) in TwinKeys)
+        {
+            if (attributes.ContainsKey(canonicalKey) || !attributes.TryGetValue(twinKey, out var twinValue))
+                continue;
 
-            if (!allowed.Any(a => string.Equals(NormalizeForComparison(a), NormalizeForComparison(value), StringComparison.Ordinal)))
+            if (!IsAllowed(product, canonicalKey, toCanonicalShape(twinValue)))
             {
-                dropped.Add((key, value));
-                attributes.Remove(key);
+                dropped.Add((twinKey, twinValue));
+                attributes.Remove(twinKey);
             }
         }
 
         return dropped;
+    }
+
+    /// <summary>True when <paramref name="value"/> is a verified value of <paramref name="key"/> on <paramref name="product"/>, or the key is declared with a free (empty) value set.</summary>
+    private static bool IsAllowed(KnownProduct product, string key, string value)
+    {
+        if (!product.PossibleAttributes.TryGetValue(key, out var allowed))
+            return false; // not declared on this known product at all: unverified variant differentiator
+        if (allowed.Count == 0)
+            return true; // explicitly allowed, free value (e.g. colour without a certain full list)
+        return allowed.Any(a => string.Equals(NormalizeForComparison(a), NormalizeForComparison(value), StringComparison.Ordinal));
+    }
+
+    private static void DropTwin(string canonicalKey, IDictionary<string, string> attributes, List<(string Key, string Value)> dropped)
+    {
+        if (!TwinKeys.TryGetValue(canonicalKey, out var twin))
+            return;
+        if (attributes.TryGetValue(twin.TwinKey, out var twinValue))
+        {
+            dropped.Add((twin.TwinKey, twinValue));
+            attributes.Remove(twin.TwinKey);
+        }
     }
 
     /// <summary>
