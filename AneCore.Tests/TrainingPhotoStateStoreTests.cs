@@ -17,7 +17,8 @@ public class TrainingPhotoStateStoreTests
                  {
                      (typeof(TrainingRecheckRow), mapping.Get<TrainingRecheckRow>()),
                      (typeof(TrainingRunStateRow), mapping.Get<TrainingRunStateRow>()),
-                     (typeof(TrainingGroupCountRow), mapping.Get<TrainingGroupCountRow>())
+                     (typeof(TrainingGroupCountRow), mapping.Get<TrainingGroupCountRow>()),
+                     (typeof(TrainingAwaitingRow), mapping.Get<TrainingAwaitingRow>())
                  })
         {
             foreach (var property in type.GetProperties(BindingFlags.Public | BindingFlags.Instance))
@@ -30,6 +31,8 @@ public class TrainingPhotoStateStoreTests
             }
         }
         Assert.That(mapping.Get<TrainingRecheckRow>().PartitionKeys, Is.EqualTo(new[] { "platform", "listing_id" }));
+        Assert.That(mapping.Get<TrainingAwaitingRow>().PartitionKeys, Is.EqualTo(new[] { "day" }));
+        Assert.That(mapping.Get<TrainingAwaitingRow>().ClusteringKeys.Select(k => k.Item1), Is.EqualTo(new[] { "platform", "listing_id", "image_index" }));
         Assert.That(mapping.Get<TrainingGroupCountRow>().PartitionKeys, Is.EqualTo(new[] { "day" }));
         Assert.That(mapping.Get<TrainingGroupCountRow>().ClusteringKeys.Select(k => k.Item1), Is.EqualTo(new[] { "group_key" }));
     }
@@ -69,5 +72,32 @@ public class TrainingPhotoStateStoreTests
         var counts = await store.GetGroupCountsAsync(day);
         Assert.That(counts["nike|hoodie"], Is.EqualTo(4));
         Assert.That(counts, Has.Count.EqualTo(1));
+    }
+
+    private static TrainingAwaitingRow Awaiting(string id, int index, DateTime requestedAt) => new()
+    {
+        PlatformValue = (int)Platform.Kleinanzeigen, ListingId = id, ImageIndex = index, ImageUrl = $"https://x/{id}_{index}.jpg",
+        GroupKey = "nike|hoodie|used", Source = "pair", CreatedAt = requestedAt.AddDays(-2), RequestedAt = requestedAt
+    };
+
+    [Test]
+    public async Task Awaiting_RoundTrips_IsDeletedAndExpires()
+    {
+        var now = Now;
+        var store = new InMemoryTrainingPhotoStateStore(() => now);
+        await store.SaveAwaitingAsync(Awaiting("1", 0, Now.AddHours(-3)), TimeSpan.FromHours(24));
+        await store.SaveAwaitingAsync(Awaiting("1", 1, Now.AddHours(-5)), TimeSpan.FromHours(24));
+        await store.SaveAwaitingAsync(Awaiting("2", 0, Now.AddHours(-30)), TimeSpan.FromHours(24));   // older than the age limit
+
+        var rows = await store.ListAwaitingAsync(now, TimeSpan.FromHours(24));
+        Assert.That(rows.Select(r => (r.ListingId, r.ImageIndex)), Is.EqualTo(new[] { ("1", 1), ("1", 0) }));
+        Assert.That(rows[0].ImageUrl, Is.EqualTo("https://x/1_1.jpg"));
+        Assert.That(rows[0].Day, Is.EqualTo("2026-09-29"));
+
+        await store.DeleteAwaitingAsync(Awaiting("1", 0, Now.AddHours(-3)));
+        Assert.That((await store.ListAwaitingAsync(now, TimeSpan.FromHours(24))).Select(r => r.ImageIndex), Is.EqualTo(new[] { 1 }));
+
+        now = Now.AddHours(25);
+        Assert.That(await store.ListAwaitingAsync(now, TimeSpan.FromHours(24)), Is.Empty);
     }
 }
