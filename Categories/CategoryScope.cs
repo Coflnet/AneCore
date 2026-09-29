@@ -198,14 +198,30 @@ public sealed class CategoryScopeCatalog
             return new PlatformCategoryScope(null, Array.Empty<string>());
         if (byId.TryGetValue(platform, out var ids))
         {
-            if (!string.IsNullOrWhiteSpace(categoryId) && ids.TryGetValue(categoryId.Trim(), out var fromHint))
+            if (!string.IsNullOrWhiteSpace(categoryId) && ResolveId(ids, categoryId) is { } fromHint)
                 return fromHint;
-            if (!string.IsNullOrWhiteSpace(category) && ids.TryGetValue(category.Trim(), out var fromId))
+            if (!string.IsNullOrWhiteSpace(category) && ResolveId(ids, category) is { } fromId)
                 return fromId;
         }
         if (byLabel.TryGetValue(platform, out var labels) && !string.IsNullOrWhiteSpace(category)
             && labels.TryGetValue(WebUtility.HtmlDecode(category).Trim(), out var fromLabel))
             return fromLabel;
+        return null;
+    }
+
+    /// <summary>
+    /// Looks up a category id. A value containing ';' is an id path (Willhaben: "root;child;leaf"); it is resolved
+    /// from the most specific id to the root so a narrow entry (a Sammelkarten leaf) wins over its broad parent.
+    /// </summary>
+    private static PlatformCategoryScope? ResolveId(Dictionary<string, PlatformCategoryScope> ids, string value)
+    {
+        var trimmed = value.Trim();
+        if (!trimmed.Contains(';'))
+            return ids.GetValueOrDefault(trimmed);
+        var segments = trimmed.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        for (var i = segments.Length - 1; i >= 0; i--)
+            if (ids.TryGetValue(segments[i], out var match))
+                return match;
         return null;
     }
 
