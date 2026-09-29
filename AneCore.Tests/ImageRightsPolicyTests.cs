@@ -80,6 +80,8 @@ public class ImageRightsPolicyTests
     [TestCase("img.kleinanzeigen.de", "www.kleinanzeigen.de", Platform.Kleinanzeigen)]
     [TestCase("i.ebayimg.com", "www.ebay.de", Platform.Ebay)]
     [TestCase("a.marktplaats.nl", "www.marktplaats.nl", Platform.Marktplaats)]
+    // Regression: live Marktplaats photos are served from images.marktplaats.com; the .nl hosts do not resolve.
+    [TestCase("images.marktplaats.com", "www.marktplaats.nl", Platform.Marktplaats)]
     [TestCase("cache.willhaben.at", "www.willhaben.at", Platform.Willhaben)]
     [TestCase("I.EBAYIMG.COM", "www.ebay.de", Platform.Ebay)]
     public void HostMapping(string host, string site, Platform platform)

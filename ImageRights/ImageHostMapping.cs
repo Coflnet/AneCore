@@ -11,8 +11,7 @@ public static class ImageHostMapping
         new("images1.vinted.net", "www.vinted.de", Platform.Vinted),
         new("img.kleinanzeigen.de", "www.kleinanzeigen.de", Platform.Kleinanzeigen),
         new("i.ebayimg.com", "www.ebay.de", Platform.Ebay),
-        new("a.marktplaats.nl", "www.marktplaats.nl", Platform.Marktplaats),
-        new("images.marktplaats.nl", "www.marktplaats.nl", Platform.Marktplaats),
+        new("images.marktplaats.com", "www.marktplaats.nl", Platform.Marktplaats),
         new("cache.willhaben.at", "www.willhaben.at", Platform.Willhaben),
     ];
 
@@ -22,6 +21,7 @@ public static class ImageHostMapping
         (".vinted.net", "www.vinted.de", Platform.Vinted),
         (".ebayimg.com", "www.ebay.de", Platform.Ebay),
         (".marktplaats.nl", "www.marktplaats.nl", Platform.Marktplaats),
+        (".marktplaats.com", "www.marktplaats.nl", Platform.Marktplaats),
         (".willhaben.at", "www.willhaben.at", Platform.Willhaben),
     ];
 
