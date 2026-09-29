@@ -54,7 +54,9 @@ public class ImageRightsRefresher : BackgroundService
         {
             try
             {
-                await store.UpsertAsync(await BuildRecordAsync(entry, cache, token));
+                var record = await BuildRecordAsync(entry, cache, token);
+                record.StatusSince = ResolveStatusSince(await store.GetAsync(entry.ImageHost), record.Status, record.CheckedAt);
+                await store.UpsertAsync(record);
             }
             catch (OperationCanceledException) when (token.IsCancellationRequested) { throw; }
             catch (Exception e)
@@ -89,6 +91,17 @@ public class ImageRightsRefresher : BackgroundService
             CheckedAt = DateTime.UtcNow,
             RobotsHash = Hash(imageRobots.Text, siteRobots.Text)
         };
+    }
+
+    /// <summary>
+    /// Since when the status holds: the new check time when the status changed (or there was no row), otherwise the time already
+    /// stored (the previous check time for rows from before the column existed).
+    /// </summary>
+    public static DateTime ResolveStatusSince(ImageRightsRecord? previous, string newStatus, DateTime checkedAt)
+    {
+        if (previous == null || previous.Status != newStatus)
+            return checkedAt;
+        return previous.StatusSince ?? previous.CheckedAt;
     }
 
     public static string Hash(string? imageRobots, string? siteRobots)

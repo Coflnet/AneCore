@@ -29,6 +29,13 @@ public interface IVisualPairStore
 
     /// <summary>Number of labels per label value.</summary>
     Task<IReadOnlyDictionary<string, long>> CountLabelsAsync();
+
+    /// <summary>
+    /// Takedown of an offer: removes the candidate pairs and labels that reference it on either side. Uses
+    /// <c>visual_pairs_by_listing</c> and, for older rows that are not in it, a scan of the candidate day partitions of the last
+    /// 90 days. Idempotent; returns the numbers removed.
+    /// </summary>
+    Task<(int Candidates, int Labels)> DeleteForListingAsync(Platform platform, string listingId);
 }
 
 /// <summary>Cassandra-backed store. Tables use only int/text/double/timestamp columns; platforms are ints.</summary>
@@ -43,6 +50,8 @@ public class CassandraVisualPairStore : IVisualPairStore
     private readonly Table<VisualPairCandidate> candidates;
     private readonly Table<VisualPairCandidateLocation> locations;
     private readonly Table<VisualPairLabel> labels;
+    private readonly Table<VisualPairByListing> byListing;
+    private readonly IMapper mapper;
     private static bool tablesInitialized;
     private static readonly SemaphoreSlim InitLock = new(1, 1);
 
@@ -53,6 +62,8 @@ public class CassandraVisualPairStore : IVisualPairStore
         candidates = new Table<VisualPairCandidate>(session, mapping);
         locations = new Table<VisualPairCandidateLocation>(session, mapping);
         labels = new Table<VisualPairLabel>(session, mapping);
+        byListing = new Table<VisualPairByListing>(session, mapping);
+        mapper = new Mapper(session, mapping);
     }
 
     public static MappingConfiguration BuildMapping() =>
@@ -88,6 +99,13 @@ public class CassandraVisualPairStore : IVisualPairStore
                 .PartitionKey(l => l.PairId)
                 .Column(l => l.PairId, cm => cm.WithName("pair_id"))
                 .Column(l => l.Day, cm => cm.WithName("day")))
+            .Define(new Map<VisualPairByListing>()
+                .TableName("visual_pairs_by_listing")
+                .PartitionKey(l => l.PlatformValue, l => l.ListingId)
+                .ClusteringKey(l => l.PairId)
+                .Column(l => l.PlatformValue, cm => cm.WithName("platform"))
+                .Column(l => l.ListingId, cm => cm.WithName("listing_id"))
+                .Column(l => l.PairId, cm => cm.WithName("pair_id")))
             .Define(new Map<VisualPairLabel>()
                 .TableName("visual_pair_labels")
                 .PartitionKey(l => l.PairId)
@@ -120,6 +138,7 @@ public class CassandraVisualPairStore : IVisualPairStore
             await candidates.CreateIfNotExistsAsync();
             await locations.CreateIfNotExistsAsync();
             await labels.CreateIfNotExistsAsync();
+            await byListing.CreateIfNotExistsAsync();
             foreach (var table in new[] { "visual_pair_candidates", "visual_pair_candidate_days" })
                 await session.ExecuteAsync(new global::Cassandra.SimpleStatement(
                     $"ALTER TABLE {table} WITH default_time_to_live = {CandidateTimeToLiveSeconds}"));
@@ -142,7 +161,21 @@ public class CassandraVisualPairStore : IVisualPairStore
         await candidates.Insert(candidate).SetTTL(CandidateTimeToLiveSeconds).ExecuteAsync();
         await locations.Insert(new VisualPairCandidateLocation { PairId = pairId, Day = candidate.Day })
             .SetTTL(CandidateTimeToLiveSeconds).ExecuteAsync();
+        await IndexAsync(candidate.A, candidate.B, pairId, CandidateTimeToLiveSeconds);
         return true;
+    }
+
+    /// <summary>Lookup rows of both sides; labels have no TTL so their lookup rows have none either.</summary>
+    private async Task IndexAsync(VisualPairImage a, VisualPairImage b, string pairId, int? ttlSeconds)
+    {
+        foreach (var side in new[] { a, b }.DistinctBy(i => (i.Platform, i.ListingId)))
+        {
+            var insert = byListing.Insert(new VisualPairByListing { PlatformValue = (int)side.Platform, ListingId = side.ListingId, PairId = pairId });
+            if (ttlSeconds != null)
+                await insert.SetTTL(ttlSeconds.Value).ExecuteAsync();
+            else
+                await insert.ExecuteAsync();
+        }
     }
 
     public async Task<VisualPairCandidate?> GetCandidateAsync(string pairId)
@@ -189,6 +222,53 @@ public class CassandraVisualPairStore : IVisualPairStore
         if (label.CreatedAt == default)
             label.CreatedAt = DateTime.UtcNow;
         await labels.Insert(label).ExecuteAsync();
+        await IndexAsync(label.A, label.B, label.PairId, null);
+    }
+
+    public async Task<(int Candidates, int Labels)> DeleteForListingAsync(Platform platform, string listingId)
+    {
+        await InitializeAsync();
+        var platformValue = (int)platform;
+        var pairIds = (await byListing.Where(l => l.PlatformValue == platformValue && l.ListingId == listingId).ExecuteAsync())
+            .Select(l => l.PairId).ToHashSet();
+
+        // rows from before the lookup table: the candidates are still there for 90 days
+        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        foreach (var chunk in Enumerable.Range(0, 90).Chunk(10))
+        {
+            var scanned = await Task.WhenAll(chunk.Select(i => GetCandidatesAsync(today.AddDays(-i), 100000)));
+            foreach (var c in scanned.SelectMany(x => x))
+                if ((c.APlatformValue == platformValue && c.AListingId == listingId) || (c.BPlatformValue == platformValue && c.BListingId == listingId))
+                    pairIds.Add(c.PairId);
+        }
+
+        int removedCandidates = 0, removedLabels = 0;
+        foreach (var pairId in pairIds)
+        {
+            var pairLabels = (await labels.Where(l => l.PairId == pairId).ExecuteAsync()).ToList();
+            var candidate = await GetCandidateAsync(pairId);
+            var sides = candidate != null ? new[] { candidate.A, candidate.B }
+                : pairLabels.Count > 0 ? new[] { pairLabels[0].A, pairLabels[0].B } : [];
+            if (candidate != null)
+            {
+                await mapper.ExecuteAsync("DELETE FROM visual_pair_candidates WHERE day = ? AND shard = ? AND pair_id = ?",
+                    candidate.Day, candidate.Shard, pairId);
+                removedCandidates++;
+            }
+            await mapper.ExecuteAsync("DELETE FROM visual_pair_candidate_days WHERE pair_id = ?", pairId);
+            if (pairLabels.Count > 0)
+                await mapper.ExecuteAsync("DELETE FROM visual_pair_labels WHERE pair_id = ?", pairId);
+            removedLabels += pairLabels.Count;
+            foreach (var side in sides)
+            {
+                var sidePlatform = (int)side.Platform;
+                await mapper.ExecuteAsync("DELETE FROM visual_pairs_by_listing WHERE platform = ? AND listing_id = ? AND pair_id = ?",
+                    sidePlatform, side.ListingId, pairId);
+            }
+        }
+        // rows of this listing whose pair is gone already (expired candidate, no label)
+        await mapper.ExecuteAsync("DELETE FROM visual_pairs_by_listing WHERE platform = ? AND listing_id = ?", platformValue, listingId);
+        return (removedCandidates, removedLabels);
     }
 
     public async Task<(IReadOnlyList<VisualPairLabel> Labels, byte[]? NextPagingState)> GetLabelsAsync(int pageSize, byte[]? pagingState)
@@ -292,6 +372,19 @@ public class InMemoryVisualPairStore : IVisualPairStore
             var page = all.Skip(offset).Take(pageSize).ToList();
             var next = offset + page.Count < all.Count ? BitConverter.GetBytes(offset + page.Count) : null;
             return Task.FromResult<(IReadOnlyList<VisualPairLabel>, byte[]?)>((page, next));
+        }
+    }
+
+    public Task<(int Candidates, int Labels)> DeleteForListingAsync(Platform platform, string listingId)
+    {
+        bool Refs(VisualPairImage i) => i.Platform == platform && i.ListingId == listingId;
+        lock (gate)
+        {
+            var candidateIds = candidates.Values.Where(c => Refs(c.A) || Refs(c.B)).Select(c => c.PairId).ToList();
+            var labelKeys = labels.Where(kv => Refs(kv.Value.A) || Refs(kv.Value.B)).Select(kv => kv.Key).ToList();
+            foreach (var id in candidateIds) candidates.Remove(id);
+            foreach (var key in labelKeys) labels.Remove(key);
+            return Task.FromResult((candidateIds.Count, labelKeys.Count));
         }
     }
 

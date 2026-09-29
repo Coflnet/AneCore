@@ -17,6 +17,11 @@ public class ImageRightsRecord
     public DateTime CheckedAt { get; set; }
     /// <summary>SHA-256 (hex) of the robots.txt texts read, to see when the files changed.</summary>
     public string RobotsHash { get; set; } = "";
+    /// <summary>
+    /// Since when <see cref="Status"/> has been the same (set by the refresher when the status changes, kept otherwise).
+    /// Null on rows written before the column existed.
+    /// </summary>
+    public DateTime? StatusSince { get; set; }
 
     /// <summary>Not a column: <see cref="Status"/> parsed, Unknown for anything unrecognised.</summary>
     public ImageRightsStatus StatusValue =>
@@ -61,6 +66,7 @@ public class CassandraImageRightsStore : IImageRightsStore
             .Column(r => r.Evidence, cm => cm.WithName("evidence"))
             .Column(r => r.CheckedAt, cm => cm.WithName("checked_at"))
             .Column(r => r.RobotsHash, cm => cm.WithName("robots_hash"))
+            .Column(r => r.StatusSince, cm => cm.WithName("status_since"))
             .Column(r => r.StatusValue, cm => cm.Ignore()));
 
     public async Task InitializeAsync()
@@ -71,6 +77,10 @@ public class CassandraImageRightsStore : IImageRightsStore
         {
             if (tableInitialized) return;
             await table.CreateIfNotExistsAsync();
+            // additive column of tables created before it existed
+            try { await session.ExecuteAsync(new global::Cassandra.SimpleStatement("ALTER TABLE image_rights_status ADD status_since timestamp")); }
+            catch (global::Cassandra.InvalidQueryException e) when (e.Message.Contains("already exists", StringComparison.OrdinalIgnoreCase)
+                                                                    || e.Message.Contains("conflicts", StringComparison.OrdinalIgnoreCase)) { }
             tableInitialized = true;
         }
         finally { InitLock.Release(); }

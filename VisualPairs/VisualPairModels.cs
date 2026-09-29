@@ -53,6 +53,14 @@ public class VisualPairCandidateLocation
     public string Day { get; set; } = "";
 }
 
+/// <summary>Row of <c>visual_pairs_by_listing</c>, partition <c>(platform, listing_id)</c>, clustering <c>pair_id</c>: which pairs reference an offer (either side).</summary>
+public class VisualPairByListing
+{
+    public int PlatformValue { get; set; }
+    public string ListingId { get; set; } = "";
+    public string PairId { get; set; } = "";
+}
+
 /// <summary>
 /// One person's judgement of a pair. Row of <c>visual_pair_labels</c>, partition <c>pair_id</c>, clustering
 /// <c>user_id</c> (so one label per user and pair, writing again overwrites). No TTL; carries a copy of both
