@@ -437,6 +437,14 @@ public class KnownProductMatcher
         return sb?.ToString() ?? input;
     }
 
+    // Instance regexes, not static Regex.Replace calls: the static overloads go through the process-wide regex cache (15 entries), which the rest of the
+    // listing pipeline evicts constantly, and a RegexOptions.Compiled pattern was then recompiled on every call (~3 ms per listing measured).
+    private static readonly Regex SeparatorRuns = new(@"[-_/]+", Opts);
+    private static readonly Regex LetterDigit = new(@"(?<=[a-z])(?=[0-9])", Opts);
+    private static readonly Regex DigitLetter = new(@"(?<=[0-9])(?=[a-z])", Opts);
+    private static readonly Regex NonAlphanumeric = new(@"[^a-z0-9 ]", Opts);
+    private static readonly Regex WhitespaceRuns = new(@"\s+", Opts);
+
     public static string Normalize(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
@@ -458,11 +466,11 @@ public class KnownProductMatcher
         // S21" and become permanently ambiguous between the two products.
         s = s.Replace("+", " plus ");
 
-        s = Regex.Replace(s, @"[-_/]+", " ", Opts);
-        s = Regex.Replace(s, @"(?<=[a-z])(?=[0-9])", " ", Opts);
-        s = Regex.Replace(s, @"(?<=[0-9])(?=[a-z])", " ", Opts);
-        s = Regex.Replace(s, @"[^a-z0-9 ]", " ", Opts);
-        s = Regex.Replace(s, @"\s+", " ", Opts).Trim();
+        s = SeparatorRuns.Replace(s, " ");
+        s = LetterDigit.Replace(s, " ");
+        s = DigitLetter.Replace(s, " ");
+        s = NonAlphanumeric.Replace(s, " ");
+        s = WhitespaceRuns.Replace(s, " ").Trim();
         s = ApplySpellingVariants(s);
         return s;
     }
