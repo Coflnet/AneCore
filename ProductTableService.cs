@@ -12,6 +12,7 @@ namespace Coflnet.Ane;
 public class ProductTableService
 {
     private readonly ISession session;
+    private readonly IMapper mapper;
     private readonly Table<Product> products;
     private readonly Table<ProductListing> productListings;
     private readonly Table<PricePoint> priceHistory;
@@ -143,6 +144,7 @@ public class ProductTableService
                 .Column(r => r.Checkpoint, cm => cm.WithName("checkpoint"))
             );
 
+        mapper = new Mapper(session, mapping);
         products = new Table<Product>(session, mapping);
         productListings = new Table<ProductListing>(session, mapping);
         priceHistory = new Table<PricePoint>(session, mapping);
@@ -359,8 +361,21 @@ public class ProductTableService
     /// </summary>
     public async Task<Listing?> GetListingAsync(string id, Platform platform)
     {
-        return await listings.FirstOrDefault(l => l.Id == id && l.Platform == platform).ExecuteAsync();
+        // The driver cannot bind the Platform enum as a query parameter ("Unknown Cassandra target type for
+        // CLR type Coflnet.Ane.Platform"), so read the partition by Id alone and pick the platform in memory.
+        var rows = await mapper.FetchAsync<Listing>(BuildListingLookupCql(id));
+        return SelectListingForPlatform(rows.ToList(), platform);
     }
+
+    /// <summary>
+    /// Statement reading every platform's row of one listing id (Id is the partition key, Platform the
+    /// clustering key stored as int). Binds only the string id - never an enum.
+    /// </summary>
+    public static Cql BuildListingLookupCql(string id) => Cql.New("SELECT * FROM listings WHERE id = ?", id);
+
+    /// <summary>Picks the row of <paramref name="platform"/> out of the rows of one listing id, or null.</summary>
+    public static Listing? SelectListingForPlatform(IReadOnlyList<Listing> candidates, Platform platform) =>
+        candidates.FirstOrDefault(l => l.Platform == platform);
 
     public async Task InsertFlipReportAsync(FlipReport report)
     {
