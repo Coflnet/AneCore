@@ -575,4 +575,12 @@ public class KnownProductMatcherRealCatalogTests
         Assert.That(matcher.Match("Apple AirPods Pro 3 mit Ladecase und Zubehör")?.Id, Is.Not.EqualTo("apple-airpods-pro"));
         Assert.That(matcher.Match("Apple AirPods Pro mit Ladecase")?.Id, Is.EqualTo("apple-airpods-pro"));
     }
+
+    [TestCase("iPhone 14promax 256GB", "apple-iphone-14-pro-max")]
+    [TestCase("iPhone14 ProMax", "apple-iphone-14-pro-max")]
+    [TestCase("iPhone 14 Pro Max", "apple-iphone-14-pro-max")]
+    public void ProMaxWrittenAsOneWord_IsTheProMax(string title, string expectedId)
+    {
+        Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expectedId), title);
+    }
 }

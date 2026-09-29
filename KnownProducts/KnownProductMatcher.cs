@@ -490,7 +490,7 @@ public class KnownProductMatcher
     // patterns run once per Normalize() call, never in a tight loop, so paying Compiled's extra
     // construction-time MSIL-JIT cost for faster matching is the wrong trade.
     private static readonly Regex SpellingVariantPattern =
-        new(@"\b(?:i phone|x box|play station|mac book|serie)\b", RegexOptions.CultureInvariant);
+        new(@"\b(?:i phone|x box|play station|mac book|serie|promax)\b", RegexOptions.CultureInvariant);
 
     private static readonly Dictionary<string, string> SpellingVariantReplacements = new(StringComparer.Ordinal)
     {
@@ -499,6 +499,7 @@ public class KnownProductMatcher
         ["play station"] = "playstation",
         ["mac book"] = "macbook",
         ["serie"] = "series",
+        ["promax"] = "pro max",
     };
 
     private static string ApplySpellingVariants(string s) =>
