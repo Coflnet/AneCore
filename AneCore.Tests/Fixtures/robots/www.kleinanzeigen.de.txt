@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /?utm_source=ekde$
+Disallow: /*?utm_source=ekde
+Disallow: /account/index.html
+Disallow: /ad/
+Disallow: /annonces/
+Disallow: /back-from-mobile.html
+Disallow: /boutiques/
+Disallow: /ck/
+Disallow: /classified/latest/
+Disallow: /dc/accessibilite
+Disallow: /dc/decisions_de_justice
+Disallow: /m-abmelden.html
+Disallow: /m-anzeige-loeschen.html
+Disallow: /m-anzeige-loeschen-mail.html
+Disallow: /m-anzeige-pausieren.html
+Disallow: /m-anzeige-verlaengern-mail.html
+Disallow: /m-benutzer-aktivierung.html
+Disallow: /m-benutzer-aktivierungsmail.html
+Disallow: /m-bestellung-abgeschlossen.html
+
+
+User-agent: Adsbot-Google
+Disallow:
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: zoomRank/2.0
+Disallow: /
+
+User-agent: Google-Display-Ads-Bot
+Disallow:
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+Disallow: /m-anzeige-loeschen.html
+Disallow: /m-benutzer-aktivierungsmail.html
+Disallow: /m-bestellung-aufnehmen.html
+Disallow: /m-einspruch-erheben.html
+Disallow: /m-einstellungen.html
+Disallow: /m-nachrichten.html
+Disallow: /m-meine-anzeigen.html
+Disallow: /m-einstellungen-bearbeiten.html
+Disallow: /m-merkliste.html
+Disallow: /m-merkliste-bearbeiten.html
+Disallow: /m-nutzer-entfolgen-ajax.html
+Disallow: /m-nutzer-folgen-ajax.html
+Disallow: /m-passwort-erneuern.html
+Disallow: /m-passwort-vergessen.html
+Disallow: /m-meine-nutzer.html
+Disallow: /m-meine-suchen.html
+Disallow: /m-verifikation.html
+Disallow: /checkout.html
+Disallow: /loesungscenter.html
