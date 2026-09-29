@@ -38,10 +38,16 @@ public class CassandraImageRightsStore : IImageRightsStore
     private readonly Table<ImageRightsRecord> table;
     private static bool tableInitialized;
     private static readonly SemaphoreSlim InitLock = new(1, 1);
+    private readonly bool createTable;
 
-    public CassandraImageRightsStore(ISession session)
+    /// <param name="createTable">
+    /// Whether <see cref="InitializeAsync"/> creates the table. AneApi (writer of the rows) creates it, read-only
+    /// consumers such as AneNotifier pass false: a missing table then makes reads throw and counts as "unavailable".
+    /// </param>
+    public CassandraImageRightsStore(ISession session, bool createTable = true)
     {
         this.session = session;
+        this.createTable = createTable;
         table = new Table<ImageRightsRecord>(session, BuildMapping());
     }
 
@@ -59,7 +65,7 @@ public class CassandraImageRightsStore : IImageRightsStore
 
     public async Task InitializeAsync()
     {
-        if (tableInitialized) return;
+        if (tableInitialized || !createTable) return;
         await InitLock.WaitAsync();
         try
         {
