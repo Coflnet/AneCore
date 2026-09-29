@@ -23,7 +23,7 @@ public interface IListingEmbeddingStore
 /// In-memory <see cref="IListingEmbeddingStore"/> for tests and any other non-Cassandra-backed usage.
 /// Thread-safe; no persistence beyond process lifetime.
 /// </summary>
-public class InMemoryListingEmbeddingStore : IListingEmbeddingStore
+public partial class InMemoryListingEmbeddingStore : IListingEmbeddingStore
 {
     private readonly System.Collections.Concurrent.ConcurrentDictionary<
         (string ListingId, Platform Platform),

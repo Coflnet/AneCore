@@ -13,7 +13,7 @@ namespace Coflnet.Ane.Embeddings;
 /// <see cref="ListingImageEmbedding.PlatformValue"/>; the enum property is ignored. <c>WithDbType&lt;int&gt;()</c>
 /// on the enum is not enough for a partition key: routing key calculation serializes the raw value.
 /// </summary>
-public class CassandraListingEmbeddingStore : IListingEmbeddingStore
+public partial class CassandraListingEmbeddingStore : IListingEmbeddingStore
 {
     /// <summary>14 days, matching the notifier's re-embedding cadence - a listing that stops being seen just ages out.</summary>
     public const int TimeToLiveSeconds = 14 * 24 * 60 * 60;
