@@ -185,6 +185,8 @@
       },
       "excludeTerms": [
         "2",
+        "3",
+        "4",
         "gen",
         "generation"
       ],

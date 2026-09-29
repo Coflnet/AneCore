@@ -567,4 +567,12 @@ public class KnownProductMatcherRealCatalogTests
     {
         Assert.That(matcher.Match(title), Is.Null, title);
     }
+
+    [Test]
+    public void AirPodsPro3_IsNotTheFirstGenerationAirPodsPro()
+    {
+        // the catalogue has no Pro 3 yet; matching the bare "AirPods Pro" alias put it on the first generation product
+        Assert.That(matcher.Match("Apple AirPods Pro 3 mit Ladecase und Zubehör")?.Id, Is.Not.EqualTo("apple-airpods-pro"));
+        Assert.That(matcher.Match("Apple AirPods Pro mit Ladecase")?.Id, Is.EqualTo("apple-airpods-pro"));
+    }
 }
