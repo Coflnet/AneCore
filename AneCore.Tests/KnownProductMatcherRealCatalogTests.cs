@@ -534,4 +534,37 @@ public class KnownProductMatcherRealCatalogTests
         Assert.That(matcher.Match("Bose QuietComfort 45 Kopfhörer")!.Id, Is.EqualTo("bose-quietcomfort-45"));
         Assert.That(matcher.Match("Bose QC45 Kopfhörer")!.Id, Is.EqualTo("bose-quietcomfort-45"));
     }
+
+    // ===== An accessory word that is only an extra of the offer ("inkl. Zubehör", "mit Controller") is not an accessory listing. =====
+    // Real titles from the live Switch / PlayStation / AirPods products; before the change every one of them fell back to the
+    // extractor result because the blunt accessory word list vetoed the match (the reason ane_known_product_fallback_total is ten times
+    // the matched counter, next to clothing and cards, which the catalogue does not cover).
+
+    [TestCase("Nintendo Switch OLED inkl. Zubehör & 3 Mario Spiele", "nintendo-switch-oled")]
+    [TestCase("Nintendo Switch OLED Weiß mit Zubehör & OVP", "nintendo-switch-oled")]
+    [TestCase("Nintendo Switch Konsole mit viel Zubehör für 4 Spieler", "nintendo-switch")]
+    [TestCase("Nintendo Switch 2 mit Spielen und Zubehör", "nintendo-switch-2")]
+    [TestCase("PS4 Konsole 500GB schwarz mit Controller und Kabeln", "sony-playstation-4")]
+    [TestCase("Sony PlayStation 4 Konsole mit Controller und Zubehör", "sony-playstation-4")]
+    [TestCase("Playstation 5 mit original Zubehör und 2 Spielen", "sony-playstation-5")]
+    [TestCase("Sony PlayStation 5 Konsole mit Controller, Headset und Spiel", "sony-playstation-5")]
+    [TestCase("Apple AirPods Pro 2. Generation mit MagSafe Ladecase", "apple-airpods-pro-2nd-generation")]
+    [TestCase("Nintendo Switch ohne Controller", "nintendo-switch")]
+    [TestCase("Nintendo Switch Zubehör inklusive", "nintendo-switch")]
+    public void AccessoryWordThatIsAnIncludedExtra_StillMatchesTheDevice(string title, string expectedId)
+    {
+        Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expectedId), title);
+    }
+
+    [TestCase("Nintendo Switch Zubehör Set")]
+    [TestCase("Zubehör für Nintendo Switch")]
+    [TestCase("Hülle mit Ständer für PlayStation 5 Controller")]
+    [TestCase("Galaxy S21+ Hülle")]
+    [TestCase("PS5 Controller Ladekabel")]
+    [TestCase("Nintendo Switch Tragetasche")]
+    [TestCase("Nintendo Switch OLED Skin mit Schutzfolie")]
+    public void AccessoryTitle_IsStillAnAccessory(string title)
+    {
+        Assert.That(matcher.Match(title), Is.Null, title);
+    }
 }

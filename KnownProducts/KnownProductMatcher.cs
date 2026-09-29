@@ -343,14 +343,71 @@ public class KnownProductMatcher
         return product.ExcludeTerms.Contains(titleTokens[nextIndex]);
     }
 
+    /// <summary>
+    /// Words that turn a following accessory word into an extra sold WITH (or without) the device: "Nintendo Switch OLED inkl. Zubehör",
+    /// "PS4 Konsole mit Controller und Kabeln", "AirPods Pro mit Ladecase", "iPhone 11 ohne Hülle". Deliberately not "und"/"plus"/"and":
+    /// "Galaxy S21+ Hülle" normalises to "... plus hulle" and is still a case.
+    /// </summary>
+    private static readonly HashSet<string> IncludedMarkers = new(StringComparer.Ordinal)
+    {
+        "mit", "inkl", "inklusive", "incl", "inclusive", "including", "with", "avec", "con", "samt", "sowie", "inclusief", "met",
+        "incluye", "comprend", "compris", "ohne", "sans", "senza", "sin", "without", "zonder", "sem",
+    };
+
+    /// <summary>Words right after an accessory word that say it comes with the device ("Zubehör dabei", "Ladekabel inklusive").</summary>
+    private static readonly HashSet<string> IncludedAfterMarkers = new(StringComparer.Ordinal)
+    {
+        "dabei", "included", "inklusive", "inkl", "gratis", "inbegrepen", "inclus", "incluso", "inclusa",
+    };
+
     private static bool IsAccessory(string normalizedTitle)
     {
+        var tokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         foreach (var word in AccessoryWords)
         {
-            if (normalizedTitle.Contains(word, StringComparison.Ordinal))
-                return true;
+            var from = 0;
+            while (true)
+            {
+                var index = normalizedTitle.IndexOf(word, from, StringComparison.Ordinal);
+                if (index < 0)
+                    break;
+                from = index + word.Length;
+                if (!IsIncludedExtra(normalizedTitle, tokens, index, word.Length))
+                    return true;
+            }
         }
         return AccessoryPreposition.IsMatch(normalizedTitle) || AccessoryBeforePreposition.IsMatch(normalizedTitle);
+    }
+
+    /// <summary>
+    /// True when the accessory word at <paramref name="index"/> is an extra that is part of the offer, not the item itself: one of
+    /// <see cref="IncludedMarkers"/> within the three words in front of it, or <see cref="IncludedAfterMarkers"/> right behind it.
+    /// </summary>
+    private static bool IsIncludedExtra(string normalizedTitle, string[] tokens, int index, int length)
+    {
+        var start = 0;
+        var tokenIndex = -1;
+        for (var i = 0; i < tokens.Length; i++)
+        {
+            var end = start + tokens[i].Length;
+            if (index >= start && index < end)
+            {
+                tokenIndex = i;
+                break;
+            }
+            start = end + 1;
+        }
+        if (tokenIndex < 0)
+            return false;
+
+        for (var back = 1; back <= 3 && tokenIndex - back >= 0; back++)
+        {
+            if (IncludedMarkers.Contains(tokens[tokenIndex - back]))
+                return true;
+        }
+
+        var after = tokenIndex + 1 < tokens.Length ? tokens[tokenIndex + 1] : null;
+        return after != null && IncludedAfterMarkers.Contains(after);
     }
 
     /// <summary>
