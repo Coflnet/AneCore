@@ -147,9 +147,9 @@
       }
     },
     "video_games": {
-      "status": "next",
+      "status": "active",
       "name": "Video games (single titles, not consoles)",
-      "rationale": "Title x platform is a well-defined product, volume is high and retro games hold value. The scraper used to produce them as electronics while the notifier dropped them as out of scope; sampling makes that traffic useful.",
+      "rationale": "Title x platform is a well-defined product, volume is high and retro games hold value. Consoles and controllers are not part of it: Kleinanzeigen Konsolen (279), Willhaben 2786 and unified Videospielkonsolen (1294) stay in the electronics vertical.",
       "unified": [
         "1279"
       ],
