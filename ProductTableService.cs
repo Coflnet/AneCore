@@ -20,6 +20,7 @@ public class ProductTableService
     private readonly Table<SitemapEntry> sitemapEntries;
     private readonly Table<FlipReport> flipReports;
     private readonly Table<MigrationRun> migrationRuns;
+    private readonly Table<RegroupMove> regroupMoves;
     private static bool tablesInitialized = false;
     private static readonly SemaphoreSlim initSemaphore = new(1, 1);
 
@@ -130,6 +131,17 @@ public class ProductTableService
                 .Column(r => r.CurrentSlug, cm => cm.WithName("current_slug"))
                 .Column(r => r.SuggestedSlug, cm => cm.WithName("suggested_slug"))
                 .Column(r => r.Status, cm => cm.WithName("status"))
+                .Column(r => r.ProductSeoId, cm => cm.WithName("product_seo_id"))
+                .Column(r => r.ProductName, cm => cm.WithName("product_name"))
+                .Column(r => r.ProductBrand, cm => cm.WithName("product_brand"))
+                .Column(r => r.ProductModel, cm => cm.WithName("product_model"))
+                .Column(r => r.ProductCategory, cm => cm.WithName("product_category"))
+                .Column(r => r.ProductListingCount, cm => cm.WithName("product_listing_count"))
+                .Column(r => r.ProductMedianPrice, cm => cm.WithName("product_median_price"))
+                .Column(r => r.ContextJson, cm => cm.WithName("context_json"))
+                .Column(r => r.ResolvedAt, cm => cm.WithName("resolved_at"))
+                .Column(r => r.Resolution, cm => cm.WithName("resolution"))
+                .Column(r => r.ResolutionRef, cm => cm.WithName("resolution_ref"))
             )
             .Define(new Map<MigrationRun>()
                 .TableName("migration_runs")
@@ -142,6 +154,25 @@ public class ProductTableService
                 .Column(r => r.Status, cm => cm.WithName("status"))
                 .Column(r => r.Counters, cm => cm.WithName("counters").WithDbType<Dictionary<string, long>>())
                 .Column(r => r.Checkpoint, cm => cm.WithName("checkpoint"))
+            )
+            .Define(new Map<RegroupMove>()
+                .TableName("regroup_moves")
+                .PartitionKey(m => m.RunId)
+                .ClusteringKey(m => m.ListingPlatform)
+                .ClusteringKey(m => m.ListingId)
+                .ClusteringKey(m => m.FromSlug)
+                .Column(m => m.RunId, cm => cm.WithName("run_id"))
+                .Column(m => m.ListingPlatform, cm => cm.WithName("listing_platform"))
+                .Column(m => m.ListingId, cm => cm.WithName("listing_id"))
+                .Column(m => m.FromSlug, cm => cm.WithName("from_slug"))
+                .Column(m => m.Title, cm => cm.WithName("title"))
+                .Column(m => m.Price, cm => cm.WithName("price"))
+                .Column(m => m.ToSlug, cm => cm.WithName("to_slug"))
+                .Column(m => m.Outcome, cm => cm.WithName("outcome"))
+                .Column(m => m.DetachReason, cm => cm.WithName("detach_reason"))
+                .Column(m => m.TargetName, cm => cm.WithName("target_name"))
+                .Column(m => m.Applied, cm => cm.WithName("applied"))
+                .Column(m => m.CreatedAt, cm => cm.WithName("created_at"))
             );
 
         mapper = new Mapper(session, mapping);
@@ -152,6 +183,7 @@ public class ProductTableService
         sitemapEntries = new Table<SitemapEntry>(session, mapping);
         flipReports = new Table<FlipReport>(session, mapping);
         migrationRuns = new Table<MigrationRun>(session, mapping);
+        regroupMoves = new Table<RegroupMove>(session, mapping);
     }
 
     /// <summary>
@@ -173,9 +205,13 @@ public class ProductTableService
             await sitemapEntries.CreateIfNotExistsAsync();
             await flipReports.CreateIfNotExistsAsync();
             await migrationRuns.CreateIfNotExistsAsync();
+            await regroupMoves.CreateIfNotExistsAsync();
+            await session.ExecuteAsync(new SimpleStatement(
+                $"ALTER TABLE regroup_moves WITH default_time_to_live = {RegroupMove.TtlSeconds}"));
             await EnsureRetentionDefaultsAsync();
             await EnsureSellerHashLineageSchemaAsync();
             await EnsureOffersFoundSchemaAsync();
+            await EnsureFlipReportColumnsAsync();
 
             tablesInitialized = true;
         }
@@ -230,6 +266,50 @@ public class ProductTableService
                 "ALTER TABLE products ADD offers_found int"));
     }
 
+    /// <summary>New flip_reports columns as (name, cql type), added to tables created before they existed.</summary>
+    public static readonly (string Name, string CqlType)[] FlipReportAddedColumns =
+    {
+        ("product_seo_id", "text"), ("product_name", "text"), ("product_brand", "text"), ("product_model", "text"),
+        ("product_category", "text"), ("product_listing_count", "int"), ("product_median_price", "double"),
+        ("context_json", "text"), ("resolved_at", "timestamp"), ("resolution", "text"), ("resolution_ref", "text"),
+    };
+
+    private volatile bool flipReportSchemaReady;
+
+    /// <summary>
+    /// AneApi never calls <see cref="InitializeTablesAsync"/> (only AneNotifier does), so every flip report access ensures the
+    /// flip_reports columns itself, once per process. Idempotent and safe next to the notifier's run of the same check.
+    /// </summary>
+    public async Task EnsureFlipReportSchemaAsync()
+    {
+        if (flipReportSchemaReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (flipReportSchemaReady) return;
+            await EnsureFlipReportColumnsAsync();
+            flipReportSchemaReady = true;
+        }
+        finally
+        {
+            initSemaphore.Release();
+        }
+    }
+
+    /// <summary>Adds the report enrichment/resolution columns to an existing flip_reports table (same idiom as <see cref="EnsureOffersFoundSchemaAsync"/>, no-op once present).</summary>
+    private async Task EnsureFlipReportColumnsAsync()
+    {
+        await flipReports.CreateIfNotExistsAsync();
+        foreach (var (name, type) in FlipReportAddedColumns)
+        {
+            var columns = await session.ExecuteAsync(new SimpleStatement(
+                "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                session.Keyspace, "flip_reports", name));
+            if (!columns.Any())
+                await session.ExecuteAsync(new SimpleStatement($"ALTER TABLE flip_reports ADD {name} {type}"));
+        }
+    }
+
     /// <summary>
     /// Access to the products table
     /// </summary>
@@ -256,6 +336,35 @@ public class ProductTableService
 
     /// <summary>Tracks one-time background migration/regroup runs (see AneNotifier's RegroupRunService).</summary>
     public Table<MigrationRun> MigrationRuns => migrationRuns;
+
+    /// <summary>
+    /// Writes decisions of one regroup run to <c>regroup_moves</c> as a single-partition unlogged batch (all
+    /// rows share the run id) with a 30 day TTL. Callers keep batches small (see RegroupMoveBuffer).
+    /// </summary>
+    public async Task InsertRegroupMovesAsync(IReadOnlyList<RegroupMove> moves)
+    {
+        if (moves.Count == 0)
+            return;
+        var batch = session.CreateBatch(BatchType.Unlogged);
+        foreach (var move in moves)
+            batch.Append(regroupMoves.Insert(move).SetTTL(RegroupMove.TtlSeconds));
+        await batch.ExecuteAsync();
+    }
+
+    /// <summary>One page of a run's persisted decisions; pass the returned paging state back to continue.</summary>
+    public async Task<(IReadOnlyList<RegroupMove> Moves, byte[]? PagingState)> GetRegroupMovesPageAsync(
+        string runId, int limit, byte[]? pagingState)
+    {
+        var cql = Cql.New("WHERE run_id = ?", runId)
+            .WithOptions(o =>
+            {
+                o.SetPageSize(limit);
+                if (pagingState != null)
+                    o.SetPagingState(pagingState);
+            });
+        var page = await mapper.FetchPageAsync<RegroupMove>(cql);
+        return (page.ToList(), page.PagingState);
+    }
 
     /// <summary>Loads a migration run row, or null when this run_id+mode has never been started.</summary>
     public async Task<MigrationRun?> GetMigrationRunAsync(string runId, string mode)
@@ -379,16 +488,72 @@ public class ProductTableService
 
     public async Task InsertFlipReportAsync(FlipReport report)
     {
+        await EnsureFlipReportSchemaAsync();
         await flipReports.Insert(report).ExecuteAsync();
     }
 
     public async Task<List<FlipReport>> GetFlipReportsAsync(string status, int limit = 100)
     {
+        await EnsureFlipReportSchemaAsync();
         var result = await flipReports
             .Where(r => r.Status == status)
             .Take(limit)
             .ExecuteAsync();
         return result.ToList();
+    }
+
+    /// <summary>Statuses a report can have; each is a partition of flip_reports.</summary>
+    public static readonly string[] FlipReportStatuses = { "pending", "approved", "rejected", "fixed" };
+
+    /// <summary>
+    /// Reports created at or after <paramref name="since"/>, newest first, optionally of one status. The partition key is the status and
+    /// created_at the first clustering column, so each status is one efficient clustering range read; without a status the (few) status
+    /// partitions are read separately and merged in memory. Rows with a status outside <see cref="FlipReportStatuses"/> are not returned.
+    /// </summary>
+    public async Task<List<FlipReport>> GetFlipReportsSinceAsync(DateTime? since, string? status, int limit)
+    {
+        await EnsureFlipReportSchemaAsync();
+        var statuses = string.IsNullOrEmpty(status) ? FlipReportStatuses : new[] { status };
+        var all = new List<FlipReport>();
+        foreach (var s in statuses)
+        {
+            var query = since.HasValue
+                ? flipReports.Where(r => r.Status == s && r.CreatedAt >= since.Value)
+                : flipReports.Where(r => r.Status == s);
+            all.AddRange(await query.Take(limit).ExecuteAsync());
+        }
+        return all.OrderByDescending(r => r.CreatedAt).Take(limit).ToList();
+    }
+
+    /// <summary>
+    /// One report by id. report_id is only the second clustering column (after created_at) of the status partition, so an id lookup
+    /// cannot be a point read: this scans each status partition (bounded by <paramref name="scanLimit"/> newest rows per status).
+    /// flip_reports is small (user submitted reports), so this is acceptable; add a report_id lookup table if it ever grows large.
+    /// </summary>
+    public async Task<FlipReport?> GetFlipReportByIdAsync(string reportId, int scanLimit = 5000)
+    {
+        await EnsureFlipReportSchemaAsync();
+        foreach (var s in FlipReportStatuses)
+        {
+            var rows = await flipReports.Where(r => r.Status == s).Take(scanLimit).ExecuteAsync();
+            var hit = rows.FirstOrDefault(r => string.Equals(r.ReportId, reportId, StringComparison.OrdinalIgnoreCase));
+            if (hit != null)
+                return hit;
+        }
+        return null;
+    }
+
+    /// <summary>
+    /// Stores the resolution. Status is the partition key so a status change is insert-new then delete-old (a crash in between leaves a
+    /// duplicate, never a lost report). <paramref name="report"/> carries the NEW status; <paramref name="oldStatus"/> the stored one.
+    /// </summary>
+    public async Task SaveFlipReportResolutionAsync(FlipReport report, string oldStatus)
+    {
+        await EnsureFlipReportSchemaAsync();
+        await flipReports.Insert(report).ExecuteAsync();
+        if (!string.Equals(oldStatus, report.Status, StringComparison.Ordinal))
+            await flipReports.Where(r => r.Status == oldStatus && r.CreatedAt == report.CreatedAt && r.ReportId == report.ReportId)
+                .Delete().ExecuteAsync();
     }
 
     /// <summary>
