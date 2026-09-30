@@ -375,6 +375,13 @@ public class ProductTableService
             .ExecuteAsync();
     }
 
+    /// <summary>Runs still marked "running" with no finish time. migration_runs holds a handful of operator rows, so a full scan filtered in memory is fine.</summary>
+    public async Task<IReadOnlyList<MigrationRun>> GetRunningMigrationRunsAsync()
+    {
+        var all = await migrationRuns.ExecuteAsync();
+        return all.Where(r => r.Status == "running" && r.FinishedAt == null).ToList();
+    }
+
     /// <summary>Upserts a migration run row (no TTL - these are small, operator-relevant audit rows).</summary>
     public async Task UpsertMigrationRunAsync(MigrationRun run)
     {
