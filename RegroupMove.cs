@@ -22,6 +22,12 @@ public class RegroupMove
     public string Outcome { get; set; } = "";
     public string? DetachReason { get; set; }
     public string? TargetName { get; set; }
+    /// <summary>
+    /// Short machine-built line stating why the decision was made when the title alone does not show it (defect phrase and its source, colour/storage
+    /// from a marketplace field, the price floor's numbers); null when the title explains the move and on rows written before the column existed.
+    /// One line, at most 300 characters, no contact data.
+    /// </summary>
+    public string? Evidence { get; set; }
     /// <summary>True when the run was in apply mode and this change was actually written.</summary>
     public bool Applied { get; set; }
     public DateTime CreatedAt { get; set; }

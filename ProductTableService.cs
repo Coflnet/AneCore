@@ -171,6 +171,7 @@ public class ProductTableService
                 .Column(m => m.Outcome, cm => cm.WithName("outcome"))
                 .Column(m => m.DetachReason, cm => cm.WithName("detach_reason"))
                 .Column(m => m.TargetName, cm => cm.WithName("target_name"))
+                .Column(m => m.Evidence, cm => cm.WithName("evidence"))
                 .Column(m => m.Applied, cm => cm.WithName("applied"))
                 .Column(m => m.CreatedAt, cm => cm.WithName("created_at"))
             );
@@ -212,6 +213,7 @@ public class ProductTableService
             await EnsureSellerHashLineageSchemaAsync();
             await EnsureOffersFoundSchemaAsync();
             await EnsureFlipReportColumnsAsync();
+            await EnsureRegroupMoveColumnsAsync();
 
             tablesInitialized = true;
         }
@@ -264,6 +266,51 @@ public class ProductTableService
         if (!columns.Any())
             await session.ExecuteAsync(new SimpleStatement(
                 "ALTER TABLE products ADD offers_found int"));
+    }
+
+    /// <summary>regroup_moves columns added after the table was first created, as (name, cql type).</summary>
+    public static readonly (string Name, string CqlType)[] RegroupMoveAddedColumns =
+    {
+        ("detach_reason", "text"), ("evidence", "text"),
+    };
+
+    private volatile bool regroupMoveSchemaReady;
+
+    /// <summary>
+    /// Adds the columns of <see cref="RegroupMoveAddedColumns"/> to a regroup_moves table created before they existed (<c>CreateIfNotExistsAsync</c> does not alter
+    /// existing tables; same idiom as <see cref="EnsureFlipReportColumnsAsync"/>). No-op once present, so it runs on every start without manual steps.
+    /// </summary>
+    private async Task EnsureRegroupMoveColumnsAsync()
+    {
+        await regroupMoves.CreateIfNotExistsAsync();
+        foreach (var (name, type) in RegroupMoveAddedColumns)
+        {
+            var columns = await session.ExecuteAsync(new SimpleStatement(
+                "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                session.Keyspace, "regroup_moves", name));
+            if (!columns.Any())
+                await session.ExecuteAsync(new SimpleStatement($"ALTER TABLE regroup_moves ADD {name} {type}"));
+        }
+        regroupMoveSchemaReady = true;
+    }
+
+    /// <summary>
+    /// AneApi never calls <see cref="InitializeTablesAsync"/> (only AneNotifier does), so reading the moves ensures the regroup_moves columns itself, once per process
+    /// (the mapper selects every mapped column, so a table without <c>evidence</c> would fail the whole read). Idempotent next to the notifier's run of the same check.
+    /// </summary>
+    public async Task EnsureRegroupMoveSchemaAsync()
+    {
+        if (regroupMoveSchemaReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (regroupMoveSchemaReady) return;
+            await EnsureRegroupMoveColumnsAsync();
+        }
+        finally
+        {
+            initSemaphore.Release();
+        }
     }
 
     /// <summary>New flip_reports columns as (name, cql type), added to tables created before they existed.</summary>
@@ -355,6 +402,7 @@ public class ProductTableService
     public async Task<(IReadOnlyList<RegroupMove> Moves, byte[]? PagingState)> GetRegroupMovesPageAsync(
         string runId, int limit, byte[]? pagingState)
     {
+        await EnsureRegroupMoveSchemaAsync();
         var cql = Cql.New("WHERE run_id = ?", runId)
             .WithOptions(o =>
             {
