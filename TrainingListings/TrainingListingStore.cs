@@ -1,5 +1,6 @@
 using System.Text;
 using Cassandra;
+using Microsoft.Extensions.Logging;
 using ISession = Cassandra.ISession;
 
 namespace Coflnet.Ane.TrainingListings;
@@ -54,7 +55,8 @@ public interface ITrainingListingStore
 
     /// <summary>
     /// Stores the listing in the partition of the UTC day of <see cref="TrainingListing.FirstSeenAt"/> (now when missing) and counts it.
-    /// Idempotent per (day, platform, listing id): returns false and changes nothing when the row exists already.
+    /// Idempotent per (day, platform, listing id): returns false and changes nothing when the row exists already, so a re-delivered message
+    /// or a retried write never creates a second row. Without a first-seen time the row of today and of yesterday counts as existing (midnight).
     /// </summary>
     Task<bool> AddAsync(TrainingListing listing);
 
@@ -71,6 +73,20 @@ public interface ITrainingListingStore
     Task<TrainingListingPage> ReadPartitionAsync(string day, int shard, int limit, string? cursor);
 }
 
+/// <summary>The two statements the store needs to write a listing; the seam lets tests simulate a slow or failing node.</summary>
+public interface ITrainingListingCql
+{
+    /// <summary>Runs a select and tells whether it returned a row.</summary>
+    Task<bool> AnyRowAsync(SimpleStatement statement);
+    Task ExecuteAsync(SimpleStatement statement);
+}
+
+internal sealed class SessionCql(ISession session) : ITrainingListingCql
+{
+    public async Task<bool> AnyRowAsync(SimpleStatement statement) => (await session.ExecuteAsync(statement)).Any();
+    public Task ExecuteAsync(SimpleStatement statement) => session.ExecuteAsync(statement);
+}
+
 /// <summary>Cassandra store. Only int/text/double/boolean/timestamp/list/map columns; platform and price kind are ints, never enum parameters.</summary>
 public class CassandraTrainingListingStore : ITrainingListingStore
 {
@@ -82,19 +98,38 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         "day, shard, platform, listing_id, url, title, description, description_short, category, categories, attributes, price, currency, "
         + "price_kind, condition, image_urls, country, region, locality, commercial, shipping, created_at, first_seen_at, scope, scope_reason";
 
-    private readonly ISession session;
+    private readonly ISession? sessionOrNull;
+    private ISession session => sessionOrNull ?? throw new InvalidOperationException("This store was built for writing only");
+    private readonly ITrainingListingCql cql;
     private readonly bool createTables;
     private readonly TimeSpan ttl;
+    private ILogger? logger;
+    private readonly Func<DateTime> clock;
+    private readonly TrainingRetryPolicy retry;
     private static bool tablesInitialized;
     private static readonly SemaphoreSlim InitLock = new(1, 1);
 
     /// <param name="createTables">Whether <see cref="InitializeAsync"/> creates the tables. AneApi creates them at start.</param>
     /// <param name="ttl">Lifetime of a row; default <see cref="DefaultTtl"/>.</param>
-    public CassandraTrainingListingStore(ISession session, bool createTables = true, TimeSpan? ttl = null)
+    /// <param name="logger">Receives retry and give-up lines (error type only, no listing content).</param>
+    /// <param name="retry">Backoff for transient Cassandra errors, default <see cref="TrainingRetryPolicy.Default"/>.</param>
+    public CassandraTrainingListingStore(ISession session, bool createTables = true, TimeSpan? ttl = null, ILogger? logger = null,
+        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null)
+        : this(new SessionCql(session), createTables, ttl, logger, retry, clock)
     {
-        this.session = session;
+        sessionOrNull = session;
+    }
+
+    /// <summary>Write-only store over the given statement runner (tests); reads and takedowns need the session constructor.</summary>
+    public CassandraTrainingListingStore(ITrainingListingCql cql, bool createTables = false, TimeSpan? ttl = null, ILogger? logger = null,
+        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null)
+    {
+        this.cql = cql;
         this.createTables = createTables;
         this.ttl = ttl ?? DefaultTtl;
+        this.logger = logger;
+        this.retry = retry ?? TrainingRetryPolicy.Default;
+        this.clock = clock ?? (() => DateTime.UtcNow);
     }
 
     public const string CreateListingsCql =
@@ -121,14 +156,23 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         finally { InitLock.Release(); }
     }
 
-    /// <summary>Insert of one row, applied only when it does not exist. The platform is bound as int.</summary>
+    /// <summary>
+    /// Plain insert of one row (no lightweight transaction, so no Paxos round). It is idempotent: a repeat writes the same values under the
+    /// same key. The platform is bound as int.
+    /// </summary>
     public static SimpleStatement BuildInsertStatement(TrainingListing listing, string day, int shard, TimeSpan ttl) =>
         new SimpleStatement(
-            $"INSERT INTO training_listings ({Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 25))}) IF NOT EXISTS USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
+            $"INSERT INTO training_listings ({Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 25))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
             day, shard, (int)listing.Platform, listing.ListingId, listing.Url, listing.Title, listing.Description, listing.DescriptionShort,
             listing.Category, listing.Categories, listing.Attributes, listing.Price, listing.Currency, (int)listing.PriceKind, listing.Condition,
             listing.ImageUrls, listing.Country, listing.Region, listing.Locality, listing.Commercial, listing.Shipping,
             listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason);
+
+    public static SimpleStatement BuildExistsStatement(string day, int shard, int platform, string listingId) =>
+        new SimpleStatement("SELECT listing_id FROM training_listings WHERE day = ? AND shard = ? AND platform = ? AND listing_id = ?", day, shard, platform, listingId);
+
+    public static SimpleStatement BuildCountStatement(string day, int shard) =>
+        new SimpleStatement("UPDATE training_listing_days SET written = written + 1 WHERE day = ? AND shard = ?", day, shard);
 
     /// <summary>Keys of up to <paramref name="count"/> rows after the cursor. Auto paging stays on: the LIMIT bounds the total, the driver fetches it in pages of 5000.</summary>
     public static SimpleStatement BuildKeysStatement(string day, int shard, int count, int? cursorPlatform, string? cursorListingId)
@@ -154,18 +198,46 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         return statement;
     }
 
+    /// <summary>
+    /// Exists check, then a plain insert, then the counter. Every statement is retried on transient errors; the check makes a retry or a
+    /// re-delivery after an unknown write outcome a no-op (and keeps the first write, a later message of the same key does not overwrite it).
+    /// The counter is not idempotent: it is only repeated when the replicas were unavailable (nothing was written) and given up with a log
+    /// line otherwise, so the day counts can be one too low, never too high because of a retry.
+    /// </summary>
     public async Task<bool> AddAsync(TrainingListing listing)
     {
         await InitializeAsync();
-        var day = TrainingListingKeys.DayBucket(listing.FirstSeenAt ?? DateTime.UtcNow);
+        // the time is taken once: a retry or a later delivery with the same first-seen time lands on the same key
+        var day = TrainingListingKeys.DayBucket(listing.FirstSeenAt ?? clock());
         var shard = TrainingListingKeys.ShardOf((int)listing.Platform, listing.ListingId);
-        var result = await session.ExecuteAsync(BuildInsertStatement(listing, day, shard, ttl));
-        var applied = result.FirstOrDefault()?.GetValue<bool>("[applied]") ?? true;
-        if (!applied)
-            return false;
-        await session.ExecuteAsync(new SimpleStatement("UPDATE training_listing_days SET written = written + 1 WHERE day = ? AND shard = ?", day, shard));
+        var candidates = listing.FirstSeenAt == null ? new[] { day, TrainingListingKeys.DayBucket(clock().AddDays(-1)) } : new[] { day };
+        foreach (var candidate in candidates.Distinct())
+            if (await Retried("exists", () => cql.AnyRowAsync(BuildExistsStatement(candidate, shard, (int)listing.Platform, listing.ListingId))))
+                return false;
+        await Retried("insert", async () =>
+        {
+            await cql.ExecuteAsync(BuildInsertStatement(listing, day, shard, ttl));
+            return true;
+        });
+        try
+        {
+            await TrainingStoreRetry.ExecuteAsync(async () =>
+            {
+                await cql.ExecuteAsync(BuildCountStatement(day, shard));
+                return true;
+            }, "count", retry, logger, retryable: ex => ex is UnavailableException);
+        }
+        catch (Exception ex) when (TrainingStoreRetry.IsTransient(ex))
+        {
+            logger?.LogWarning("Training listing day counter not incremented ({Error}), the row was stored", ex.GetType().Name);
+        }
         return true;
     }
+
+    /// <summary>Sets the logger for retry lines when the store was built without one (the sink does this, the store comes from DI).</summary>
+    public void AttachLogger(ILogger log) => logger ??= log;
+
+    private Task<bool> Retried(string operation, Func<Task<bool>> action) => TrainingStoreRetry.ExecuteAsync(action, operation, retry, logger);
 
     public async Task<int> DeleteAsync(Platform platform, string listingId)
     {
@@ -311,7 +383,8 @@ public class InMemoryTrainingListingStore : ITrainingListingStore
         var key = (day, shard, (int)listing.Platform, listing.ListingId);
         lock (gate)
         {
-            if (rows.TryGetValue(key, out var existing) && existing.ExpiresAt > clock())
+            var days = listing.FirstSeenAt == null ? new[] { day, TrainingListingKeys.DayBucket(clock().AddDays(-1)) } : new[] { day };
+            if (days.Any(d => rows.TryGetValue((d, shard, (int)listing.Platform, listing.ListingId), out var existing) && existing.ExpiresAt > clock()))
                 return Task.FromResult(false);
             rows[key] = (Copy(listing), clock() + ttl);
             written[(day, shard)] = written.GetValueOrDefault((day, shard)) + 1;

@@ -272,7 +272,7 @@ public class TrainingListingStoreTests
         var insert = CassandraTrainingListingStore.BuildInsertStatement(listing, "2026-09-30", 3, TimeSpan.FromDays(14));
 
         Assert.That(insert.QueryValues.Where(v => v != null).Select(v => v.GetType().IsEnum), Has.All.False);
-        Assert.That(insert.QueryString, Does.Contain("IF NOT EXISTS USING TTL 1209600"));
+        Assert.That(insert.QueryString, Does.Contain("USING TTL 1209600"));
         Assert.That(CassandraTrainingListingStore.BuildRowsStatement("d", 1, null, null, null).AutoPage, Is.False);
         Assert.That(CassandraTrainingListingStore.BuildRowsStatement("d", 1, 2, "x", [1, 2]).QueryString, Does.Contain("(platform, listing_id) > (?, ?)"));
         Assert.That(CassandraTrainingListingStore.CreateListingsCql, Does.Contain("PRIMARY KEY ((day, shard), platform, listing_id)"));
