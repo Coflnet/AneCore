@@ -42,6 +42,12 @@ public class Product
     /// of one game are related through <see cref="ProductRelation"/>, not merged.</summary>
     public Dictionary<string, string>? LocalizedNames { get; set; }
 
+    /// <summary>The attributes of the page of an empty game case: <c>product_kind=game_case</c> and <c>case_of=&lt;game page id&gt;</c>.</summary>
+    public const string ProductKindKey = "product_kind", GameCaseKind = "game_case", CaseOfKey = "case_of";
+
+    /// <summary>This page sells only the empty case or box of a game (<see cref="ProductKindKey"/> is <see cref="GameCaseKind"/>), not the game. Its name ends with "empty case, no game" and <see cref="CaseOfKey"/> names the game page. A static method on purpose: a property would be a column of the products table.</summary>
+    public static bool IsGameCase(Product product) => product.Attributes != null && product.Attributes.TryGetValue(ProductKindKey, out var kind) && kind == GameCaseKind;
+
     // Canonical SEO ID for grouped products - if set, this product redirects to another
     public string? CanonicalSeoId { get; set; }
     // All SEO IDs grouped together (includes self) - stored on canonical product only

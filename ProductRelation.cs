@@ -18,7 +18,16 @@ public class ProductRelation
 
     /// <summary>The relation key of the editions of one catalogue game on one platform. Never spans platforms.</summary>
     public static string GameKey(string qid, string platform) => $"game:{qid}:{platform}";
+
+    /// <summary>
+    /// The relation key of the case pages of one game page: <c>case:&lt;game page id&gt;</c> (see <see cref="Product.IsGameCase(Product)"/>). The pages of the key are the pages that sell only the empty case or box of that game; the game page
+    /// is the id in the key (the page with that id may not exist, a game page with no listing of that condition has none). Pages of this key are never language editions of the game.
+    /// </summary>
+    public static string CaseKey(string gamePageId) => $"case:{gamePageId}";
 }
 
 /// <summary>Another product page related to a product: its id, edition language (may be null) and name.</summary>
 public record RelatedEdition(string SeoId, string? Language, string Name);
+
+/// <summary>A page that sells only the empty case or box of a game: its id and its name (the game's name with the marker "empty case, no game").</summary>
+public record CasePage(string SeoId, string Name);

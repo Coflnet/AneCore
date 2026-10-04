@@ -22,6 +22,8 @@ public class ProductTableService
     private readonly Table<MigrationRun> migrationRuns;
     private readonly Table<RegroupMove> regroupMoves;
     private readonly Table<ProductRelation> productRelations;
+    private readonly Table<UnidentifiedGame> unidentifiedGames;
+    private readonly Table<UnidentifiedGameIndexRow> unidentifiedGameIndex;
     private static bool tablesInitialized = false;
     private static readonly SemaphoreSlim initSemaphore = new(1, 1);
 
@@ -72,6 +74,31 @@ public class ProductTableService
                 .Column(r => r.Language, cm => cm.WithName("language"))
                 .Column(r => r.Name, cm => cm.WithName("name"))
                 .Column(r => r.UpdatedAt, cm => cm.WithName("updated_at"))
+            )
+            .Define(new Map<UnidentifiedGame>()
+                .TableName("unidentified_games")
+                .PartitionKey(g => g.Platform, g => g.Series)
+                .ClusteringKey(g => g.ListingPlatform)
+                .ClusteringKey(g => g.ListingId)
+                .Column(g => g.Platform, cm => cm.WithName("platform"))
+                .Column(g => g.Series, cm => cm.WithName("series"))
+                .Column(g => g.ListingPlatform, cm => cm.WithName("listing_platform"))
+                .Column(g => g.ListingId, cm => cm.WithName("listing_id"))
+                .Column(g => g.Title, cm => cm.WithName("title"))
+                .Column(g => g.Price, cm => cm.WithName("price"))
+                .Column(g => g.Currency, cm => cm.WithName("currency"))
+                .Column(g => g.ImageUrl, cm => cm.WithName("image_url"))
+                .Column(g => g.FoundAt, cm => cm.WithName("found_at"))
+                .Column(g => g.IdentifyStage, cm => cm.WithName("identify_stage"))
+                .Column(g => g.Evidence, cm => cm.WithName("evidence"))
+                .Column(g => g.UpdatedAt, cm => cm.WithName("updated_at"))
+            )
+            .Define(new Map<UnidentifiedGameIndexRow>()
+                .TableName("unidentified_game_index")
+                .PartitionKey(r => r.ListingKey)
+                .Column(r => r.ListingKey, cm => cm.WithName("listing_key"))
+                .Column(r => r.Platform, cm => cm.WithName("platform"))
+                .Column(r => r.Series, cm => cm.WithName("series"))
             )
             .Define(new Map<ProductListing>()
                 .TableName("product_listings")
@@ -198,6 +225,8 @@ public class ProductTableService
         migrationRuns = new Table<MigrationRun>(session, mapping);
         regroupMoves = new Table<RegroupMove>(session, mapping);
         productRelations = new Table<ProductRelation>(session, mapping);
+        unidentifiedGames = new Table<UnidentifiedGame>(session, mapping);
+        unidentifiedGameIndex = new Table<UnidentifiedGameIndexRow>(session, mapping);
     }
 
     /// <summary>
@@ -228,6 +257,7 @@ public class ProductTableService
             await EnsureFlipReportColumnsAsync();
             await EnsureRegroupMoveColumnsAsync();
             await EnsureLocalizedNamesAndRelationsAsync();
+            await EnsureUnidentifiedGamesAsync();
 
             tablesInitialized = true;
         }
@@ -346,10 +376,47 @@ public class ProductTableService
     /// The relation key of the game pages of a product: <c>game:&lt;game_id&gt;:&lt;platform&gt;</c> from its attributes (<c>game_platform</c>, else <c>platform</c>), or null for a product that is no catalogue game page.
     /// </summary>
     public static string? GameRelationKeyOf(Product product) =>
-        product.Attributes != null && product.Attributes.TryGetValue("game_id", out var gameId) && !string.IsNullOrWhiteSpace(gameId)
+        !Product.IsGameCase(product) && product.Attributes != null && product.Attributes.TryGetValue("game_id", out var gameId) && !string.IsNullOrWhiteSpace(gameId)
             && (product.Attributes.TryGetValue("game_platform", out var platform) || product.Attributes.TryGetValue("platform", out platform)) && !string.IsNullOrWhiteSpace(platform)
             ? ProductRelation.GameKey(gameId, platform)
             : null;
+
+    /// <summary>The relation key of a page that sells only the empty case of a game: <c>case:&lt;case_of&gt;</c>, or null for any other product.</summary>
+    public static string? CaseRelationKeyOf(Product product) =>
+        Product.IsGameCase(product) && product.Attributes!.TryGetValue(Product.CaseOfKey, out var gamePageId) && !string.IsNullOrWhiteSpace(gamePageId)
+            ? ProductRelation.CaseKey(gamePageId)
+            : null;
+
+    /// <summary>The relation key a page belongs to (<see cref="GameRelationKeyOf"/> or <see cref="CaseRelationKeyOf"/>), or null.</summary>
+    public static string? RelationKeyOf(Product product) => GameRelationKeyOf(product) ?? CaseRelationKeyOf(product);
+
+    public const int MaxCasePages = 20;
+
+    /// <summary>
+    /// The pages that sell only the empty case or box of the game page <paramref name="gamePageId"/> (relation key <c>case:&lt;gamePageId&gt;</c>, normally one: the case page of the same condition), at most <paramref name="limit"/>.
+    /// Rows of pages that no longer exist, hold no listing or redirect to a canonical page are left out. The game page does not have to exist. Nothing is merged: <c>CanonicalSeoId</c> and <c>RelatedSeoIds</c> are not used.
+    /// </summary>
+    public async Task<IReadOnlyList<CasePage>> GetCasePagesAsync(string gamePageId, int limit = MaxCasePages)
+    {
+        if (string.IsNullOrWhiteSpace(gamePageId))
+            return Array.Empty<CasePage>();
+        limit = Math.Clamp(limit, 1, MaxCasePages);
+        await EnsureLocalizedNamesSchemaAsync();
+        var rows = (await productRelations.Where(r => r.RelationKey == ProductRelation.CaseKey(gamePageId)).Take(limit).ExecuteAsync()).ToList();
+        if (rows.Count == 0)
+            return Array.Empty<CasePage>();
+        var ids = rows.Select(r => r.SeoId).ToList();
+        var alive = (await products.Where(p => ids.Contains(p.SeoId)).ExecuteAsync())
+            .Where(p => p.ListingCount > 0 && string.IsNullOrEmpty(p.CanonicalSeoId)).Select(p => p.SeoId).ToHashSet(StringComparer.Ordinal);
+        return rows.Where(r => alive.Contains(r.SeoId)).Select(r => new CasePage(r.SeoId, r.Name)).ToList();
+    }
+
+    /// <summary>The game page a case page sells the case of (its <c>case_of</c> attribute), or null when <paramref name="casePageId"/> is no case page. The game page may not exist.</summary>
+    public async Task<string?> GetCaseOfAsync(string casePageId)
+    {
+        var product = await GetProductAsync(casePageId);
+        return product != null && Product.IsGameCase(product) && product.Attributes!.TryGetValue(Product.CaseOfKey, out var gamePageId) && !string.IsNullOrWhiteSpace(gamePageId) ? gamePageId : null;
+    }
 
     /// <summary>
     /// Writes only the catalogue game cells of a product (a targeted UPDATE, so a concurrent whole-row write of other fields is not overwritten): <paramref name="attributes"/> are merged into <c>attributes</c>,
@@ -403,6 +470,103 @@ public class ProductTableService
         string.IsNullOrEmpty(imageUrl)
             ? session.ExecuteAsync(new SimpleStatement("DELETE image_url FROM products WHERE seo_id = ?", seoId))
             : session.ExecuteAsync(new SimpleStatement($"UPDATE products USING TTL {ttlSeconds} SET image_url = ? WHERE seo_id = ?", imageUrl, seoId));
+
+    private volatile bool unidentifiedGamesReady;
+
+    /// <summary>Creates the tables <c>unidentified_games</c> and <c>unidentified_game_index</c> (new tables only, nothing existing is altered; idempotent).</summary>
+    private async Task EnsureUnidentifiedGamesAsync()
+    {
+        await unidentifiedGames.CreateIfNotExistsAsync();
+        await unidentifiedGameIndex.CreateIfNotExistsAsync();
+        unidentifiedGamesReady = true;
+    }
+
+    /// <summary>Ensures the unidentified game tables once per process, for services that never call <see cref="InitializeTablesAsync"/> (AneApi). Idempotent next to the notifier's run of the same check.</summary>
+    public async Task EnsureUnidentifiedGamesSchemaAsync()
+    {
+        if (unidentifiedGamesReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (unidentifiedGamesReady) return;
+            await EnsureUnidentifiedGamesAsync();
+        }
+        finally
+        {
+            initSemaphore.Release();
+        }
+    }
+
+    /// <summary>
+    /// Records a listing as not identified (see <see cref="UnidentifiedGame"/>): the row of its (platform, series) and the index row, both with the TTL of <see cref="UnidentifiedGame.TtlSeconds"/>.
+    /// A listing that was listed under another series or platform before moves (its old row is deleted). The stage never goes back: a row that already has the stage "photo" keeps it.
+    /// </summary>
+    public async Task UpsertUnidentifiedGameAsync(UnidentifiedGame game)
+    {
+        await EnsureUnidentifiedGamesSchemaAsync();
+        var key = UnidentifiedGame.ListingKey(game.ListingPlatform, game.ListingId);
+        var known = await unidentifiedGameIndex.Where(r => r.ListingKey == key).FirstOrDefault().ExecuteAsync();
+        if (known != null && (known.Platform != game.Platform || known.Series != game.Series))
+            await unidentifiedGames.Where(g => g.Platform == known.Platform && g.Series == known.Series && g.ListingPlatform == game.ListingPlatform && g.ListingId == game.ListingId).Delete().ExecuteAsync();
+        game.UpdatedAt = DateTime.UtcNow;
+        await unidentifiedGames.Insert(game).SetTTL(UnidentifiedGame.TtlSeconds).ExecuteAsync();
+        await unidentifiedGameIndex.Insert(new UnidentifiedGameIndexRow { ListingKey = key, Platform = game.Platform, Series = game.Series }).SetTTL(UnidentifiedGame.TtlSeconds).ExecuteAsync();
+    }
+
+    /// <summary>Takes a listing off the unidentified list (it was identified, joined a page); a no-op for a listing that is not on it. Returns whether it was on the list.</summary>
+    public async Task<bool> RemoveUnidentifiedGameAsync(int listingPlatform, string listingId)
+    {
+        await EnsureUnidentifiedGamesSchemaAsync();
+        var key = UnidentifiedGame.ListingKey(listingPlatform, listingId);
+        var known = await unidentifiedGameIndex.Where(r => r.ListingKey == key).FirstOrDefault().ExecuteAsync();
+        if (known == null)
+            return false;
+        await unidentifiedGames.Where(g => g.Platform == known.Platform && g.Series == known.Series && g.ListingPlatform == listingPlatform && g.ListingId == listingId).Delete().ExecuteAsync();
+        await unidentifiedGameIndex.Where(r => r.ListingKey == key).Delete().ExecuteAsync();
+        return true;
+    }
+
+    public const int MaxUnidentifiedGamesPage = 200;
+
+    /// <summary>
+    /// One page of the unidentified listings of a series on a game platform (the partition (<paramref name="platform"/>, <paramref name="series"/>) of <c>unidentified_games</c>), ordered by marketplace and listing id;
+    /// pass the returned paging state back to continue (null: the last page). <paramref name="limit"/> is 1 to <see cref="MaxUnidentifiedGamesPage"/>.
+    /// </summary>
+    public async Task<(IReadOnlyList<UnidentifiedGame> Games, byte[]? PagingState)> GetUnidentifiedGamesAsync(string platform, string series, int limit = 50, byte[]? pagingState = null)
+    {
+        await EnsureUnidentifiedGamesSchemaAsync();
+        var cql = Cql.New("WHERE platform = ? AND series = ?", platform, series)
+            .WithOptions(o =>
+            {
+                o.SetPageSize(Math.Clamp(limit, 1, MaxUnidentifiedGamesPage));
+                if (pagingState != null)
+                    o.SetPagingState(pagingState);
+            });
+        var page = await mapper.FetchPageAsync<UnidentifiedGame>(cql);
+        return (page.ToList(), page.PagingState);
+    }
+
+    /// <summary>
+    /// The series that have unidentified listings, with how many: one scan of the partition keys (<c>SELECT DISTINCT platform, series</c>) and one count per partition. The table is small (the series-only listings of the last 90 days),
+    /// so this is meant for a review page, not for every request. <paramref name="platform"/> limits it to one game platform.
+    /// </summary>
+    public async Task<IReadOnlyList<UnidentifiedGameSeries>> ListUnidentifiedGameSeriesAsync(string? platform = null)
+    {
+        await EnsureUnidentifiedGamesSchemaAsync();
+        var keys = await session.ExecuteAsync(new SimpleStatement("SELECT DISTINCT platform, series FROM unidentified_games"));
+        var result = new List<UnidentifiedGameSeries>();
+        foreach (var row in keys)
+        {
+            var rowPlatform = row.GetValue<string>("platform");
+            var series = row.GetValue<string>("series");
+            if (platform != null && !string.Equals(platform, rowPlatform, StringComparison.Ordinal))
+                continue;
+            var count = (await session.ExecuteAsync(new SimpleStatement("SELECT COUNT(*) FROM unidentified_games WHERE platform = ? AND series = ?", rowPlatform, series))).First().GetValue<long>(0);
+            if (count > 0)
+                result.Add(new UnidentifiedGameSeries(rowPlatform, series, count));
+        }
+        return result.OrderBy(r => r.Platform, StringComparer.Ordinal).ThenByDescending(r => r.Count).ThenBy(r => r.Series, StringComparer.Ordinal).ToList();
+    }
 
     public const int MaxRelatedEditions = 50;
 
