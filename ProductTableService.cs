@@ -21,6 +21,7 @@ public class ProductTableService
     private readonly Table<FlipReport> flipReports;
     private readonly Table<MigrationRun> migrationRuns;
     private readonly Table<RegroupMove> regroupMoves;
+    private readonly Table<ProductRelation> productRelations;
     private static bool tablesInitialized = false;
     private static readonly SemaphoreSlim initSemaphore = new(1, 1);
 
@@ -60,6 +61,17 @@ public class ProductTableService
                 .Column(p => p.ImageUrl, cm => cm.WithName("image_url"))
                 .Column(p => p.RelatedSeoIds, cm => cm.WithName("related_seo_ids"))
                 .Column(p => p.CanonicalSeoId, cm => cm.WithName("canonical_seo_id"))
+                .Column(p => p.LocalizedNames, cm => cm.WithName("localized_names").WithDbType<Dictionary<string, string>>())
+            )
+            .Define(new Map<ProductRelation>()
+                .TableName("product_relations")
+                .PartitionKey(r => r.RelationKey)
+                .ClusteringKey(r => r.SeoId)
+                .Column(r => r.RelationKey, cm => cm.WithName("relation_key"))
+                .Column(r => r.SeoId, cm => cm.WithName("seo_id"))
+                .Column(r => r.Language, cm => cm.WithName("language"))
+                .Column(r => r.Name, cm => cm.WithName("name"))
+                .Column(r => r.UpdatedAt, cm => cm.WithName("updated_at"))
             )
             .Define(new Map<ProductListing>()
                 .TableName("product_listings")
@@ -185,6 +197,7 @@ public class ProductTableService
         flipReports = new Table<FlipReport>(session, mapping);
         migrationRuns = new Table<MigrationRun>(session, mapping);
         regroupMoves = new Table<RegroupMove>(session, mapping);
+        productRelations = new Table<ProductRelation>(session, mapping);
     }
 
     /// <summary>
@@ -214,6 +227,7 @@ public class ProductTableService
             await EnsureOffersFoundSchemaAsync();
             await EnsureFlipReportColumnsAsync();
             await EnsureRegroupMoveColumnsAsync();
+            await EnsureLocalizedNamesAndRelationsAsync();
 
             tablesInitialized = true;
         }
@@ -266,6 +280,125 @@ public class ProductTableService
         if (!columns.Any())
             await session.ExecuteAsync(new SimpleStatement(
                 "ALTER TABLE products ADD offers_found int"));
+    }
+
+    private volatile bool localizedSchemaReady;
+
+    /// <summary>
+    /// Adds <c>products.localized_names map&lt;text,text&gt;</c> and creates <c>product_relations</c>. Additive and idempotent, safe while several services start at once: the existence check makes it a no-op once
+    /// present, and a concurrent ALTER of the same column that loses the race ("already exists") is treated as done. Old readers are not affected (the mapper ignores columns its class does not map);
+    /// a reader on this AneCore selects <c>localized_names</c>, so the column must exist before such a service reads products (AneNotifier creates it at start, other services may call
+    /// <see cref="EnsureLocalizedNamesSchemaAsync"/>).
+    /// </summary>
+    private async Task EnsureLocalizedNamesAndRelationsAsync()
+    {
+        var columns = await session.ExecuteAsync(new SimpleStatement(
+            "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+            session.Keyspace, "products", "localized_names"));
+        if (!columns.Any())
+        {
+            try
+            {
+                await session.ExecuteAsync(new SimpleStatement("ALTER TABLE products ADD localized_names map<text, text>"));
+            }
+            catch (InvalidQueryException ex) when (ex.Message.Contains("already exist", StringComparison.OrdinalIgnoreCase))
+            {
+                // another service added it a moment ago
+            }
+        }
+        await productRelations.CreateIfNotExistsAsync();
+        localizedSchemaReady = true;
+    }
+
+    /// <summary>Ensures the localized names column and the relations table once per process, for services that never call <see cref="InitializeTablesAsync"/>. Idempotent.</summary>
+    public async Task EnsureLocalizedNamesSchemaAsync()
+    {
+        if (localizedSchemaReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (localizedSchemaReady) return;
+            await EnsureLocalizedNamesAndRelationsAsync();
+        }
+        finally
+        {
+            initSemaphore.Release();
+        }
+    }
+
+    /// <summary>The relation rows (pages related to each other, see <see cref="ProductRelation"/>).</summary>
+    public Table<ProductRelation> ProductRelations => productRelations;
+
+    /// <summary>Inserts or replaces the row of one page in a relation group. No TTL: stale rows are filtered when read (<see cref="GetRelatedEditionsAsync"/>) and removed by <see cref="DeleteProductRelationAsync"/>.</summary>
+    public async Task UpsertProductRelationAsync(ProductRelation relation)
+    {
+        relation.UpdatedAt = DateTime.UtcNow;
+        await productRelations.Insert(relation).ExecuteAsync();
+    }
+
+    /// <summary>Removes a page from a relation group (a no-op when it is not in it).</summary>
+    public async Task DeleteProductRelationAsync(string relationKey, string seoId)
+    {
+        await productRelations.Where(r => r.RelationKey == relationKey && r.SeoId == seoId).Delete().ExecuteAsync();
+    }
+
+    /// <summary>
+    /// The relation key of the game pages of a product: <c>game:&lt;game_id&gt;:&lt;platform&gt;</c> from its attributes, or null for a product that is no catalogue game page.
+    /// </summary>
+    public static string? GameRelationKeyOf(Product product) =>
+        product.Attributes != null && product.Attributes.TryGetValue("game_id", out var gameId) && !string.IsNullOrWhiteSpace(gameId)
+            && product.Attributes.TryGetValue("platform", out var platform) && !string.IsNullOrWhiteSpace(platform)
+            ? ProductRelation.GameKey(gameId, platform)
+            : null;
+
+    /// <summary>
+    /// Writes only the catalogue game cells of a product (a targeted UPDATE, so a concurrent whole-row write of other fields is not overwritten): <paramref name="attributes"/> are merged into <c>attributes</c>,
+    /// <c>game_language</c> is removed when <paramref name="removeLanguage"/>, <paramref name="localizedNames"/> replaces <c>localized_names</c> when given. The cells get the TTL of the product row.
+    /// </summary>
+    public async Task UpdateProductEditionAsync(string seoId, IReadOnlyDictionary<string, string> attributes, bool removeLanguage, IReadOnlyDictionary<string, string>? localizedNames, int ttlSeconds)
+    {
+        var set = new Dictionary<string, string>(attributes);
+        if (set.Count > 0 || localizedNames != null)
+        {
+            var parts = new List<string>();
+            var values = new List<object>();
+            if (set.Count > 0)
+            {
+                parts.Add("attributes = attributes + ?");
+                values.Add(set);
+            }
+            if (localizedNames != null)
+            {
+                parts.Add("localized_names = ?");
+                values.Add(new Dictionary<string, string>(localizedNames));
+            }
+            values.Add(seoId);
+            await session.ExecuteAsync(new SimpleStatement($"UPDATE products USING TTL {ttlSeconds} SET {string.Join(", ", parts)} WHERE seo_id = ?", values.ToArray()));
+        }
+        if (removeLanguage)
+            await session.ExecuteAsync(new SimpleStatement("DELETE attributes['game_language'] FROM products WHERE seo_id = ?", seoId));
+    }
+
+    public const int MaxRelatedEditions = 50;
+
+    /// <summary>
+    /// The other pages related to <paramref name="seoId"/> (same relation key: the same catalogue game on the same platform, in another edition language), without the page itself, at most <paramref name="limit"/>.
+    /// Rows of pages that no longer exist, hold no listing or redirect to a canonical page are left out. Empty for a product without a game id.
+    /// </summary>
+    public async Task<IReadOnlyList<RelatedEdition>> GetRelatedEditionsAsync(string seoId, int limit = MaxRelatedEditions)
+    {
+        limit = Math.Clamp(limit, 1, MaxRelatedEditions);
+        var product = await GetProductAsync(seoId);
+        var key = product == null ? null : GameRelationKeyOf(product);
+        if (key == null)
+            return Array.Empty<RelatedEdition>();
+        var rows = (await productRelations.Where(r => r.RelationKey == key).Take(limit + 1).ExecuteAsync()).Where(r => r.SeoId != seoId).Take(limit).ToList();
+        if (rows.Count == 0)
+            return Array.Empty<RelatedEdition>();
+        var ids = rows.Select(r => r.SeoId).ToList();
+        var alive = (await products.Where(p => ids.Contains(p.SeoId)).ExecuteAsync())
+            .Where(p => p.ListingCount > 0 && string.IsNullOrEmpty(p.CanonicalSeoId)).Select(p => p.SeoId).ToHashSet(StringComparer.Ordinal);
+        return rows.Where(r => alive.Contains(r.SeoId)).Select(r => new RelatedEdition(r.SeoId, r.Language, r.Name)).ToList();
     }
 
     /// <summary>regroup_moves columns added after the table was first created, as (name, cql type).</summary>

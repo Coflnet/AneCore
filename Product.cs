@@ -37,6 +37,11 @@ public class Product
     public string? ImageUrl { get; set; }
     public Dictionary<string, string>? Attributes { get; set; } // Key attributes extracted from listings
 
+    /// <summary>The name of a catalogue game in each language (language code to name, e.g. de to "Harry Potter und der Feuerkelch"), set on game pages the game catalogue identified
+    /// (column <c>localized_names map&lt;text,text&gt;</c>). Display names only: <see cref="Name"/> and the page id do not depend on it. Null when unknown. The pages of the language editions
+    /// of one game are related through <see cref="ProductRelation"/>, not merged.</summary>
+    public Dictionary<string, string>? LocalizedNames { get; set; }
+
     // Canonical SEO ID for grouped products - if set, this product redirects to another
     public string? CanonicalSeoId { get; set; }
     // All SEO IDs grouped together (includes self) - stored on canonical product only
