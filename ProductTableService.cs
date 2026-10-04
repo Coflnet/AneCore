@@ -379,6 +379,31 @@ public class ProductTableService
             await session.ExecuteAsync(new SimpleStatement("DELETE attributes['game_language'] FROM products WHERE seo_id = ?", seoId));
     }
 
+    /// <summary>
+    /// Writes only the given attribute cells of a product (a targeted UPDATE, so a concurrent whole-row write of other fields is not overwritten): <paramref name="set"/> is merged into <c>attributes</c>,
+    /// the keys in <paramref name="remove"/> are deleted from it. Used for catalogue attributes (phone specs) that are computed from brand and model, not from a listing.
+    /// </summary>
+    public async Task UpdateProductAttributesAsync(string seoId, IReadOnlyDictionary<string, string> set, IReadOnlyCollection<string> remove, int ttlSeconds)
+    {
+        if (set.Count > 0)
+            await session.ExecuteAsync(new SimpleStatement($"UPDATE products USING TTL {ttlSeconds} SET attributes = attributes + ? WHERE seo_id = ?", new Dictionary<string, string>(set), seoId));
+        if (remove.Count > 0)
+        {
+            // the keys are code constants, never user input; the pattern check keeps it that way
+            if (remove.Any(key => !System.Text.RegularExpressions.Regex.IsMatch(key, "^[a-z0-9_]+$")))
+                throw new ArgumentException("attribute keys to remove must be lowercase letters, digits and underscores", nameof(remove));
+            await session.ExecuteAsync(new SimpleStatement($"DELETE {string.Join(", ", remove.Select(key => $"attributes['{key}']"))} FROM products WHERE seo_id = ?", seoId));
+        }
+    }
+
+    /// <summary>
+    /// Writes only the image of a product (a targeted UPDATE; a null <paramref name="imageUrl"/> deletes the cell). The image of a product follows its active listings, see ProductImageHeal.
+    /// </summary>
+    public Task UpdateProductImageAsync(string seoId, string? imageUrl, int ttlSeconds) =>
+        string.IsNullOrEmpty(imageUrl)
+            ? session.ExecuteAsync(new SimpleStatement("DELETE image_url FROM products WHERE seo_id = ?", seoId))
+            : session.ExecuteAsync(new SimpleStatement($"UPDATE products USING TTL {ttlSeconds} SET image_url = ? WHERE seo_id = ?", imageUrl, seoId));
+
     public const int MaxRelatedEditions = 50;
 
     /// <summary>
