@@ -31,6 +31,13 @@ public class RecheckResult
     [Key(4)]
     public DateTime CheckedAt { get; set; }
 
+    /// <summary>Explicit observed sale signal, never inferred from disappearance.</summary>
+    [Key(5)]
+    public string? SaleEvidence { get; set; }
+
+    [Key(6)]
+    public string? AgeBasis { get; set; }
+
     [IgnoreMember]
     public Platform Platform
     {

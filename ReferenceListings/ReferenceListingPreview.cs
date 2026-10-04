@@ -729,7 +729,8 @@ public class ReferenceListingPreviewService
 public static class ReferenceListingUrlPolicy
 {
     public static readonly string[] SupportedRootDomains =
-    [
+    new string[]
+    {
         "ebay.de", "ebay.com", "ebay.at", "ebay.ch", "ebay.co.uk", "ebay.fr", "ebay.it", "ebay.es", "ebay.nl", "ebay.be", "ebay.pl", "ebay.ie", "ebay.ca", "ebay.com.au",
         "cardmarket.com",
         "kleinanzeigen.de",
@@ -737,7 +738,7 @@ public static class ReferenceListingUrlPolicy
         "willhaben.at",
         "marktplaats.nl",
         "shpock.com",
-    ];
+    }.Concat(MarketplaceCatalog.Marketplaces.SelectMany(m => m.Domains)).Distinct().ToArray();
 
     public static bool TryCreateSupportedUri(string? url, out Uri uri)
     {
@@ -767,16 +768,8 @@ public static class ReferenceListingUrlPolicy
             return "Cardmarket";
         if (SupportedRootDomains.Where(d => d.StartsWith("ebay", StringComparison.OrdinalIgnoreCase)).Any(d => HostMatches(host, d)))
             return "Ebay";
-        if (HostMatches(host, "kleinanzeigen.de"))
-            return "Kleinanzeigen";
-        if (SupportedRootDomains.Where(d => d.StartsWith("vinted", StringComparison.OrdinalIgnoreCase)).Any(d => HostMatches(host, d)))
-            return "Vinted";
-        if (HostMatches(host, "willhaben.at"))
-            return "Willhaben";
-        if (HostMatches(host, "marktplaats.nl"))
-            return "Marktplaats";
-        if (HostMatches(host, "shpock.com"))
-            return "Shpock";
+        var platform = MarketplaceCatalog.DetectPlatform(host);
+        if (platform != Platform.Unknown) return platform.ToString();
         return "External";
     }
 

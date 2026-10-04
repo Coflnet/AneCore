@@ -134,11 +134,15 @@ public class Listing
         Commercial = other.Commercial;
         Metadata = other.Metadata == null ? null : new Dictionary<string, string>(other.Metadata);
         Platform = other.Platform;
+        SeoId = other.SeoId;
+        Categories = other.Categories;
     }
 
     public static string GetUrlForListing(string locale, Platform platform, string id)
     {
-        var localDomain = locale switch
+        if (MarketplaceCatalog.TryResolve(id, out var address) && address.Platform == platform)
+            return address.Url;
+        var localDomain = locale.Replace('_', '-') switch
         {
             "de-DE" => "de",
             "de-AT" => "at",

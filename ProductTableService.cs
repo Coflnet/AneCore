@@ -541,6 +541,25 @@ public class ProductTableService
     public static Listing? SelectListingForPlatform(IReadOnlyList<Listing> candidates, Platform platform) =>
         candidates.FirstOrDefault(l => l.Platform == platform);
 
+    /// <summary>Creates a discovered snapshot or updates only browser-observed fields, preserving concurrent grouping/seller data.</summary>
+    public async Task UpsertDiscoveredListingAsync(Listing listing, string? condition = null, string? availability = null)
+    {
+        var inserted = await listings.Insert(listing).IfNotExists().SetTTL(14 * 24 * 60 * 60).ExecuteAsync();
+        if (inserted.Applied) return;
+        var attributes = new Dictionary<string, string> { ["url"] = listing.Attributes!["url"] };
+        if (!string.IsNullOrWhiteSpace(condition)) attributes["condition"] = condition;
+        if (!string.IsNullOrWhiteSpace(availability)) attributes["availability"] = availability;
+        await session.ExecuteAsync(new SimpleStatement(
+            "UPDATE listings USING TTL 1209600 SET title = ?, description = ?, price = ?, currency = ?, imageurls = ?, attributes = attributes + ? WHERE id = ? AND platform = ?",
+            listing.Title, listing.Description, listing.Price, listing.Currency, listing.ImageUrls, attributes, listing.Id, (int)listing.Platform));
+        if (listing.CreatedAt.HasValue)
+            await session.ExecuteAsync(new SimpleStatement("UPDATE listings USING TTL 1209600 SET createdat = ? WHERE id = ? AND platform = ?", listing.CreatedAt, listing.Id, (int)listing.Platform));
+        if (availability is "sold" or "available")
+            await session.ExecuteAsync(new SimpleStatement(
+                "UPDATE listings USING TTL 1209600 SET soldbefore = ? WHERE id = ? AND platform = ?",
+                listing.SoldBefore, listing.Id, (int)listing.Platform));
+    }
+
     public async Task InsertFlipReportAsync(FlipReport report)
     {
         await EnsureFlipReportSchemaAsync();

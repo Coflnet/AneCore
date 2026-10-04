@@ -13,4 +13,6 @@ public class MissingListing
     public DateTime FoundAt { get; set; }
     [Key(3)]
     public double Price { get; set; }
+    [Key(4)]
+    public Platform Platform { get; set; }
 }
