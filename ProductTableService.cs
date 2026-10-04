@@ -343,11 +343,11 @@ public class ProductTableService
     }
 
     /// <summary>
-    /// The relation key of the game pages of a product: <c>game:&lt;game_id&gt;:&lt;platform&gt;</c> from its attributes, or null for a product that is no catalogue game page.
+    /// The relation key of the game pages of a product: <c>game:&lt;game_id&gt;:&lt;platform&gt;</c> from its attributes (<c>game_platform</c>, else <c>platform</c>), or null for a product that is no catalogue game page.
     /// </summary>
     public static string? GameRelationKeyOf(Product product) =>
         product.Attributes != null && product.Attributes.TryGetValue("game_id", out var gameId) && !string.IsNullOrWhiteSpace(gameId)
-            && product.Attributes.TryGetValue("platform", out var platform) && !string.IsNullOrWhiteSpace(platform)
+            && (product.Attributes.TryGetValue("game_platform", out var platform) || product.Attributes.TryGetValue("platform", out platform)) && !string.IsNullOrWhiteSpace(platform)
             ? ProductRelation.GameKey(gameId, platform)
             : null;
 
