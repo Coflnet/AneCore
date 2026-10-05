@@ -249,7 +249,41 @@
         "Nintendo Switch Pokemon Lets Go",
         "Nintendo Switch Let's Go Pikachu",
         "Nintendo Switch Let's Go Evoli",
-        "Nintendo Switch Let's Go Eevee"
+        "Nintendo Switch Let's Go Eevee",
+        "Nintendo Switch 1. Gen",
+        "Nintendo Switch 1 Gen",
+        "Nintendo Switch 1. Generation",
+        "Nintendo Switch 1 Generation",
+        "Nintendo Switch Gen 1",
+        "Nintendo Switch Gen. 1",
+        "Nintendo Switch First Gen",
+        "Nintendo Switch First Generation",
+        "Nintendo Switch 1 First Gen",
+        "Nintendo Switch 1 First Generation",
+        "Nintendo Switch erste Generation",
+        "Nintendo Switch 1 erste Generation",
+        "Nintendo Switch XAJ",
+        "Nintendo Switch XAJ1",
+        "Nintendo Switch XAJ4",
+        "Nintendo Switch XAJ7",
+        "Switch 1. Gen",
+        "Switch 1 Gen",
+        "Switch 1. Generation",
+        "Switch 1 Generation",
+        "Switch Gen 1",
+        "Switch Gen. 1",
+        "Switch First Gen",
+        "Switch First Generation",
+        "Switch 1 First Gen",
+        "Switch 1 First Generation",
+        "Switch erste Generation",
+        "Switch 1 erste Generation",
+        "Switch XAJ",
+        "Switch XAJ1",
+        "Switch XAJ4",
+        "Switch XAJ7",
+        "Nintendo Switch 1 1 Generation",
+        "Switch 1 1 Generation"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -290,7 +324,21 @@
         "Nintendo Switch Fortnite Edition",
         "Nintendo Switch Mario Red Blue",
         "Nintendo Switch Mario Red & Blue",
-        "Nintendo Switch Mario Rot Blau"
+        "Nintendo Switch Mario Rot Blau",
+        "Nintendo Switch 1 V2",
+        "Nintendo Switch zweite Version",
+        "Nintendo Switch 1 zweite Version",
+        "Nintendo Switch 2. Version",
+        "Nintendo Switch XKW",
+        "Nintendo Switch XKJ",
+        "Nintendo Switch Monster Hunter Rise Edition",
+        "Switch 1 V2",
+        "Switch zweite Version",
+        "Switch 1 zweite Version",
+        "Switch 2. Version",
+        "Switch XKW",
+        "Switch XKJ",
+        "Switch Monster Hunter Rise Edition"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -363,7 +411,13 @@
       "aliases": [
         "Nintendo Switch OLED",
         "Switch OLED",
-        "Switch OLED Model"
+        "Switch OLED Model",
+        "Nintendo Switch Karmesin Edition",
+        "Nintendo Switch Purpur Edition",
+        "Nintendo Switch Karmesin & Purpur Edition",
+        "Switch Karmesin Edition",
+        "Switch Purpur Edition",
+        "Switch Karmesin & Purpur Edition"
       ],
       "possibleAttributes": {
         "storage_size": [
