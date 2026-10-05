@@ -322,6 +322,10 @@
         "Nintendo Switch Animal Crossing Edition",
         "Nintendo Switch Edition Fortnite",
         "Nintendo Switch Fortnite Edition",
+        "Nintendo Switch Fortnite Special Edition",
+        "Nintendo Switch Fortnite Wildcat Edition",
+        "Nintendo Switch Special Edition Fortnite",
+        "Nintendo Switch Wildcat Edition Fortnite",
         "Nintendo Switch Mario Red Blue",
         "Nintendo Switch Mario Red & Blue",
         "Nintendo Switch Mario Rot Blau",
@@ -338,7 +342,10 @@
         "Switch 2. Version",
         "Switch XKW",
         "Switch XKJ",
-        "Switch Monster Hunter Rise Edition"
+        "Switch Monster Hunter Rise Edition",
+        "Switch Fortnite Edition",
+        "Switch Fortnite Special Edition",
+        "Switch Fortnite Wildcat Edition"
       ],
       "possibleAttributes": {
         "storage_size": [
