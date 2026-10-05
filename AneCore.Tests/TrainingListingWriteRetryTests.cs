@@ -9,6 +9,7 @@ internal sealed class FlakyCql : ITrainingListingCql
 {
     public readonly HashSet<(string Day, int Shard, int Platform, string Id)> Rows = new();
     public readonly Dictionary<(string Day, int Shard), int> Counters = new();
+    public readonly List<(string Day, int Shard, int Platform, string Id)> ByTimeRows = new();
     public int Inserts, Counts;
     /// <summary>Statement kind (SELECT, INSERT, UPDATE) to the exceptions thrown by its next calls.</summary>
     public readonly Dictionary<string, Queue<Exception>> Failures = new();
@@ -35,6 +36,11 @@ internal sealed class FlakyCql : ITrainingListingCql
     {
         var kind = Kind(statement);
         var v = statement.QueryValues;
+        if (statement.QueryString.StartsWith("INSERT INTO training_listings_by_time"))
+        {
+            ByTimeRows.Add(((string)v[1], (int)v[2], (int)v[3], (string)v[4]));
+            return Task.CompletedTask;
+        }
         if (kind == "INSERT")
         {
             var failing = Failures.TryGetValue(kind, out var q) && q.Count > 0;
@@ -92,6 +98,7 @@ public class TrainingListingWriteRetryTests
         Assert.That(await Store(cql).AddAsync(Row("1", Now)), Is.True);
 
         Assert.That(cql.Rows, Has.Count.EqualTo(1));
+        Assert.That(cql.ByTimeRows, Is.Not.Empty);
         Assert.That(cql.Counters.Values.Sum(), Is.EqualTo(1));
         Assert.That(waits, Has.Count.EqualTo(2));
         Assert.That(waits[0], Is.InRange(TimeSpan.FromMilliseconds(100), TimeSpan.FromMilliseconds(150)));

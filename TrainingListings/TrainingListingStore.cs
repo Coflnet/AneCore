@@ -5,27 +5,32 @@ using ISession = Cassandra.ISession;
 
 namespace Coflnet.Ane.TrainingListings;
 
-/// <summary>Position after a row of a partition: the clustering key <c>(platform, listing_id)</c>, opaque to callers.</summary>
+/// <summary>
+/// Position in a partition, opaque to callers. Current form: <c>t:&lt;timeuuid&gt;</c>, the <c>written_at</c> of the last row read from
+/// <c>training_listings_by_time</c>. Legacy form <c>platform:listing_id</c> (clustering key of <c>training_listings</c>) is still decoded.
+/// </summary>
 public static class TrainingListingCursor
 {
-    public static string Encode(int platform, string listingId) =>
-        Convert.ToBase64String(Encoding.UTF8.GetBytes($"{platform}:{listingId}")).TrimEnd('=').Replace('+', '-').Replace('/', '_');
+    private const string TimePrefix = "t:";
 
-    public static bool TryDecode(string? cursor, out int platform, out string listingId)
+    public static string Encode(int platform, string listingId) => ToBase64($"{platform}:{listingId}");
+
+    /// <summary>Cursor after the row written under <paramref name="writtenAt"/>.</summary>
+    public static string EncodeTime(TimeUuid writtenAt) => ToBase64(TimePrefix + ((Guid)writtenAt).ToString("D"));
+
+    private static string ToBase64(string text) =>
+        Convert.ToBase64String(Encoding.UTF8.GetBytes(text)).TrimEnd('=').Replace('+', '-').Replace('/', '_');
+
+    private static bool TryText(string? cursor, out string text)
     {
-        platform = 0;
-        listingId = "";
+        text = "";
         if (string.IsNullOrEmpty(cursor))
             return false;
         try
         {
             var padded = cursor.Replace('-', '+').Replace('_', '/');
             padded = padded.PadRight(padded.Length + (4 - padded.Length % 4) % 4, '=');
-            var text = Encoding.UTF8.GetString(Convert.FromBase64String(padded));
-            var split = text.IndexOf(':');
-            if (split <= 0 || !int.TryParse(text.AsSpan(0, split), out platform))
-                return false;
-            listingId = text[(split + 1)..];
+            text = Encoding.UTF8.GetString(Convert.FromBase64String(padded));
             return true;
         }
         catch (FormatException)
@@ -33,6 +38,34 @@ public static class TrainingListingCursor
             return false;
         }
     }
+
+    /// <summary>Decodes a time cursor; false for null, garbage and the legacy key form.</summary>
+    public static bool TryDecodeTime(string? cursor, out TimeUuid writtenAt)
+    {
+        writtenAt = default;
+        if (!TryText(cursor, out var text) || !text.StartsWith(TimePrefix, StringComparison.Ordinal)
+            || !Guid.TryParse(text.AsSpan(TimePrefix.Length), out var guid))
+            return false;
+        writtenAt = guid;
+        return true;
+    }
+
+    /// <summary>Decodes a legacy key cursor (platform, listing id); false for null, garbage and the time form.</summary>
+    public static bool TryDecode(string? cursor, out int platform, out string listingId)
+    {
+        platform = 0;
+        listingId = "";
+        if (!TryText(cursor, out var text))
+            return false;
+        var split = text.IndexOf(':');
+        if (split <= 0 || !int.TryParse(text.AsSpan(0, split), out platform))
+            return false;
+        listingId = text[(split + 1)..];
+        return true;
+    }
+
+    /// <summary>Whether the cursor is one the export accepts: a time cursor or a legacy key cursor (the latter restarts the time order).</summary>
+    public static bool IsValid(string? cursor) => TryDecodeTime(cursor, out _) || TryDecode(cursor, out _, out _);
 }
 
 /// <summary>Rows written to one day partition (all shards), see <see cref="ITrainingListingStore.ListDaysAsync"/>.</summary>
@@ -46,7 +79,8 @@ public sealed record TrainingListingPage(string? NextCursor, IAsyncEnumerable<Tr
 
 /// <summary>
 /// Store of <see cref="TrainingListing"/> rows for the export. Table <c>training_listings</c>, partition <c>(day, shard)</c> with 16 shards,
-/// clustering <c>(platform, listing_id)</c>, TTL (default 14 days, the workstation holds the permanent copy).
+/// clustering <c>(platform, listing_id)</c>, plus <c>training_listings_by_time</c> (same partition, clustering <c>written_at timeuuid</c>) for the
+/// resumable export. TTL (default 14 days, the workstation holds the permanent copy).
 /// </summary>
 public interface ITrainingListingStore
 {
@@ -67,8 +101,9 @@ public interface ITrainingListingStore
     Task<IReadOnlyList<TrainingListingDay>> ListDaysAsync();
 
     /// <summary>
-    /// Up to <paramref name="limit"/> rows of one partition after <paramref name="cursor"/> (null starts at the beginning), ordered by
-    /// (platform, listing id).
+    /// Up to <paramref name="limit"/> rows of one partition after <paramref name="cursor"/> (null starts at the beginning), ordered by write
+    /// time, so rows written later always sort after any cursor. A legacy key cursor starts at the beginning (rows may repeat, none are
+    /// skipped). Partitions without rows in the time-ordered table (written before it existed) are read ordered by (platform, listing id).
     /// </summary>
     Task<TrainingListingPage> ReadPartitionAsync(string day, int shard, int limit, string? cursor);
 }
@@ -93,6 +128,11 @@ public class CassandraTrainingListingStore : ITrainingListingStore
     public static readonly TimeSpan DefaultTtl = TimeSpan.FromDays(14);
     /// <summary>Rows fetched per driver page while a page is streamed.</summary>
     public const int FetchPageSize = 500;
+    /// <summary>
+    /// Rows younger than this are not exported yet: a row whose timeuuid lies slightly behind a cursor (clock skew between writers,
+    /// replication lag) must not be skipped.
+    /// </summary>
+    public static readonly TimeSpan DefaultReadHorizon = TimeSpan.FromSeconds(10);
 
     private const string Columns =
         "day, shard, platform, listing_id, url, title, description, description_short, category, categories, attributes, price, currency, "
@@ -105,6 +145,7 @@ public class CassandraTrainingListingStore : ITrainingListingStore
     private readonly TimeSpan ttl;
     private ILogger? logger;
     private readonly Func<DateTime> clock;
+    private readonly TimeSpan readHorizon;
     private readonly TrainingRetryPolicy retry;
     private static bool tablesInitialized;
     private static readonly SemaphoreSlim InitLock = new(1, 1);
@@ -113,17 +154,19 @@ public class CassandraTrainingListingStore : ITrainingListingStore
     /// <param name="ttl">Lifetime of a row; default <see cref="DefaultTtl"/>.</param>
     /// <param name="logger">Receives retry and give-up lines (error type only, no listing content).</param>
     /// <param name="retry">Backoff for transient Cassandra errors, default <see cref="TrainingRetryPolicy.Default"/>.</param>
+    /// <param name="readHorizon">Age a row needs before the export returns it, default <see cref="DefaultReadHorizon"/>.</param>
     public CassandraTrainingListingStore(ISession session, bool createTables = true, TimeSpan? ttl = null, ILogger? logger = null,
-        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null)
-        : this(new SessionCql(session), createTables, ttl, logger, retry, clock)
+        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null, TimeSpan? readHorizon = null)
+        : this(new SessionCql(session), createTables, ttl, logger, retry, clock, readHorizon)
     {
         sessionOrNull = session;
     }
 
     /// <summary>Write-only store over the given statement runner (tests); reads and takedowns need the session constructor.</summary>
     public CassandraTrainingListingStore(ITrainingListingCql cql, bool createTables = false, TimeSpan? ttl = null, ILogger? logger = null,
-        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null)
+        TrainingRetryPolicy? retry = null, Func<DateTime>? clock = null, TimeSpan? readHorizon = null)
     {
+        this.readHorizon = readHorizon ?? DefaultReadHorizon;
         this.cql = cql;
         this.createTables = createTables;
         this.ttl = ttl ?? DefaultTtl;
@@ -138,6 +181,14 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         + "condition text, image_urls list<text>, country text, region text, locality text, commercial boolean, shipping text, created_at timestamp, "
         + "first_seen_at timestamp, scope text, scope_reason text, PRIMARY KEY ((day, shard), platform, listing_id))";
 
+    /// <summary>Same columns plus the write time as clustering key: the export pages this table so a cursor never skips later rows.</summary>
+    public const string CreateByTimeCql =
+        "CREATE TABLE IF NOT EXISTS training_listings_by_time (day text, shard int, written_at timeuuid, platform int, listing_id text, url text, "
+        + "title text, description text, description_short text, category text, categories list<text>, attributes map<text, text>, price double, "
+        + "currency text, price_kind int, condition text, image_urls list<text>, country text, region text, locality text, commercial boolean, "
+        + "shipping text, created_at timestamp, first_seen_at timestamp, scope text, scope_reason text, PRIMARY KEY ((day, shard), written_at)) "
+        + "WITH CLUSTERING ORDER BY (written_at ASC)";
+
     /// <summary>Counter table: rows written per day and shard. A counter cannot expire, the few rows per day stay.</summary>
     public const string CreateDaysCql =
         "CREATE TABLE IF NOT EXISTS training_listing_days (day text, shard int, written counter, PRIMARY KEY (day, shard))";
@@ -150,6 +201,7 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         {
             if (tablesInitialized) return;
             await session.ExecuteAsync(new SimpleStatement(CreateListingsCql));
+            await session.ExecuteAsync(new SimpleStatement(CreateByTimeCql));
             await session.ExecuteAsync(new SimpleStatement(CreateDaysCql));
             tablesInitialized = true;
         }
@@ -167,6 +219,51 @@ public class CassandraTrainingListingStore : ITrainingListingStore
             listing.Category, listing.Categories, listing.Attributes, listing.Price, listing.Currency, (int)listing.PriceKind, listing.Condition,
             listing.ImageUrls, listing.Country, listing.Region, listing.Locality, listing.Commercial, listing.Shipping,
             listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason);
+
+    /// <summary>Insert into the time-ordered table; <paramref name="writtenAt"/> is taken once per add, so a retry rewrites the same row.</summary>
+    public static SimpleStatement BuildByTimeInsertStatement(TrainingListing listing, string day, int shard, TimeUuid writtenAt, TimeSpan ttl) =>
+        new SimpleStatement(
+            $"INSERT INTO training_listings_by_time (written_at, {Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 26))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
+            writtenAt, day, shard, (int)listing.Platform, listing.ListingId, listing.Url, listing.Title, listing.Description, listing.DescriptionShort,
+            listing.Category, listing.Categories, listing.Attributes, listing.Price, listing.Currency, (int)listing.PriceKind, listing.Condition,
+            listing.ImageUrls, listing.Country, listing.Region, listing.Locality, listing.Commercial, listing.Shipping,
+            listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason);
+
+    /// <summary>
+    /// Write times of up to <paramref name="count"/> rows after the cursor (pass one of a page), only rows written before
+    /// <paramref name="horizon"/> when given (null: no bound).
+    /// </summary>
+    public static SimpleStatement BuildTimeKeysStatement(string day, int shard, int count, TimeUuid? after, DateTime? horizon = null)
+    {
+        var where = "day = ? AND shard = ?";
+        var values = new List<object> { day, shard };
+        if (after != null)
+        {
+            where += " AND written_at > ?";
+            values.Add(after.Value);
+        }
+        if (horizon != null)
+        {
+            where += " AND written_at < maxTimeuuid(?)";
+            values.Add(DateTime.SpecifyKind(horizon.Value, DateTimeKind.Utc));
+        }
+        values.Add(count);
+        var statement = new SimpleStatement($"SELECT written_at FROM training_listings_by_time WHERE {where} ORDER BY written_at ASC LIMIT ?", values.ToArray());
+        return (SimpleStatement)statement.SetPageSize(5000);
+    }
+
+    /// <summary>Full rows in <c>(after, upTo]</c> in write order, fetched page by page (no auto paging).</summary>
+    public static SimpleStatement BuildTimeRowsStatement(string day, int shard, TimeUuid? after, TimeUuid upTo, byte[]? pagingState)
+    {
+        var statement = after == null
+            ? new SimpleStatement($"SELECT {Columns} FROM training_listings_by_time WHERE day = ? AND shard = ? AND written_at <= ? ORDER BY written_at ASC", day, shard, upTo)
+            : new SimpleStatement($"SELECT {Columns} FROM training_listings_by_time WHERE day = ? AND shard = ? AND written_at > ? AND written_at <= ? ORDER BY written_at ASC",
+                day, shard, after.Value, upTo);
+        statement.SetPageSize(FetchPageSize).SetAutoPage(false);
+        if (pagingState != null)
+            statement.SetPagingState(pagingState);
+        return statement;
+    }
 
     public static SimpleStatement BuildExistsStatement(string day, int shard, int platform, string listingId) =>
         new SimpleStatement("SELECT listing_id FROM training_listings WHERE day = ? AND shard = ? AND platform = ? AND listing_id = ?", day, shard, platform, listingId);
@@ -214,8 +311,12 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         foreach (var candidate in candidates.Distinct())
             if (await Retried("exists", () => cql.AnyRowAsync(BuildExistsStatement(candidate, shard, (int)listing.Platform, listing.ListingId))))
                 return false;
+        // time-ordered copy first: when it fails the add fails and the redelivery writes it again, the other order would leave a row the
+        // exists check hides from the export. The time is taken once, so retries rewrite the same row.
+        var writtenAt = TimeUuid.NewId();
         await Retried("insert", async () =>
         {
+            await cql.ExecuteAsync(BuildByTimeInsertStatement(listing, day, shard, writtenAt, ttl));
             await cql.ExecuteAsync(BuildInsertStatement(listing, day, shard, ttl));
             return true;
         });
@@ -246,6 +347,12 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         var removed = 0;
         foreach (var day in await ListDaysAsync())
         {
+            // the time-ordered copy has no (platform, listing id) key: scan the partition (takedowns are rare), also when the main row is gone
+            var byTime = await session.ExecuteAsync(new SimpleStatement(
+                "SELECT written_at, platform, listing_id FROM training_listings_by_time WHERE day = ? AND shard = ?", day.Day, shard));
+            foreach (var row in byTime.Where(r => r.GetValue<int>("platform") == (int)platform && r.GetValue<string>("listing_id") == listingId).ToList())
+                await session.ExecuteAsync(new SimpleStatement(
+                    "DELETE FROM training_listings_by_time WHERE day = ? AND shard = ? AND written_at = ?", day.Day, shard, row.GetValue<TimeUuid>("written_at")));
             var exists = await session.ExecuteAsync(new SimpleStatement(
                 "SELECT listing_id FROM training_listings WHERE day = ? AND shard = ? AND platform = ? AND listing_id = ?", day.Day, shard, (int)platform, listingId));
             if (!exists.Any())
@@ -274,6 +381,38 @@ public class CassandraTrainingListingStore : ITrainingListingStore
     {
         await InitializeAsync();
         limit = Math.Max(1, limit);
+        // a legacy key cursor, null or garbage start at the beginning of the time order (repeated rows are fine, skipped ones are not)
+        TimeUuid? after = TrainingListingCursor.TryDecodeTime(cursor, out var decoded) ? decoded : null;
+        var times = new List<TimeUuid>();
+        foreach (var row in await session.ExecuteAsync(BuildTimeKeysStatement(day, shard, limit + 1, after, clock() - readHorizon)))
+            times.Add(row.GetValue<TimeUuid>("written_at"));
+        if (times.Count == 0)
+        {
+            // rows that are too young are not a reason to fall back: only a partition without any time-ordered row is a pre-table one
+            var anyYoung = after != null || (await session.ExecuteAsync(BuildTimeKeysStatement(day, shard, 1, null))).Any();
+            return anyYoung ? new TrainingListingPage(null, Empty()) : await ReadByKeyAsync(day, shard, limit, cursor);
+        }
+        var hasMore = times.Count > limit;
+        var last = times[Math.Min(limit, times.Count) - 1];
+        return new TrainingListingPage(hasMore ? TrainingListingCursor.EncodeTime(last) : null, StreamByTimeAsync(day, shard, after, last));
+    }
+
+    // rows in (after, last] in pages; rows written in between sort after last and belong to the next page
+    private async IAsyncEnumerable<TrainingListing> StreamByTimeAsync(string day, int shard, TimeUuid? after, TimeUuid last)
+    {
+        byte[]? state = null;
+        do
+        {
+            var rows = await session.ExecuteAsync(BuildTimeRowsStatement(day, shard, after, last, state));
+            foreach (var row in rows)
+                yield return FromRow(row);
+            state = rows.PagingState;
+        } while (state != null);
+    }
+
+    /// <summary>Key ordered read of <c>training_listings</c>, the fallback for partitions without time-ordered rows.</summary>
+    private async Task<TrainingListingPage> ReadByKeyAsync(string day, int shard, int limit, string? cursor)
+    {
         int? cursorPlatform = null;
         string? cursorId = null;
         if (TrainingListingCursor.TryDecode(cursor, out var platform, out var id))
@@ -363,11 +502,16 @@ public class InMemoryTrainingListingStore : ITrainingListingStore
     private readonly object gate = new();
     private readonly Func<DateTime> clock;
     private readonly TimeSpan ttl;
-    private readonly Dictionary<(string Day, int Shard, int Platform, string Id), (TrainingListing Row, DateTime ExpiresAt)> rows = new();
+    private readonly Dictionary<(string Day, int Shard, int Platform, string Id), (TrainingListing Row, DateTime ExpiresAt, TimeUuid WrittenAt)> rows = new();
+    private long lastTicks;
     private readonly Dictionary<(string Day, int Shard), long> written = new();
 
-    public InMemoryTrainingListingStore(Func<DateTime>? clock = null, TimeSpan? ttl = null)
+    private readonly TimeSpan readHorizon;
+
+    /// <param name="readHorizon">Age a row needs before a read returns it (zero by default; the Cassandra store uses 10 s).</param>
+    public InMemoryTrainingListingStore(Func<DateTime>? clock = null, TimeSpan? ttl = null, TimeSpan? readHorizon = null)
     {
+        this.readHorizon = readHorizon ?? TimeSpan.Zero;
         this.clock = clock ?? (() => DateTime.UtcNow);
         this.ttl = ttl ?? CassandraTrainingListingStore.DefaultTtl;
     }
@@ -386,7 +530,9 @@ public class InMemoryTrainingListingStore : ITrainingListingStore
             var days = listing.FirstSeenAt == null ? new[] { day, TrainingListingKeys.DayBucket(clock().AddDays(-1)) } : new[] { day };
             if (days.Any(d => rows.TryGetValue((d, shard, (int)listing.Platform, listing.ListingId), out var existing) && existing.ExpiresAt > clock()))
                 return Task.FromResult(false);
-            rows[key] = (Copy(listing), clock() + ttl);
+            // strictly increasing write times, like the timeuuids of the Cassandra table
+            lastTicks = Math.Max(lastTicks + 1, DateTime.SpecifyKind(clock(), DateTimeKind.Utc).Ticks);
+            rows[key] = (Copy(listing), clock() + ttl, TimeUuid.NewId(new DateTimeOffset(lastTicks, TimeSpan.Zero)));
             written[(day, shard)] = written.GetValueOrDefault((day, shard)) + 1;
             return Task.FromResult(true);
         }
@@ -420,20 +566,21 @@ public class InMemoryTrainingListingStore : ITrainingListingStore
     public Task<TrainingListingPage> ReadPartitionAsync(string day, int shard, int limit, string? cursor)
     {
         limit = Math.Max(1, limit);
-        var hasCursor = TrainingListingCursor.TryDecode(cursor, out var cursorPlatform, out var cursorId);
-        List<TrainingListing> page;
+        var hasCursor = TrainingListingCursor.TryDecodeTime(cursor, out var after);
+        List<(TrainingListing Row, TimeUuid WrittenAt)> page;
         bool hasMore;
         lock (gate)
         {
             var ordered = rows.Where(kv => kv.Key.Day == day && kv.Key.Shard == shard && kv.Value.ExpiresAt > clock())
-                .OrderBy(kv => kv.Key.Platform).ThenBy(kv => kv.Key.Id, Comparer<string>.Create(CassandraTrainingListingStore.CompareUtf8))
-                .Where(kv => !hasCursor || CassandraTrainingListingStore.Compare(kv.Key.Platform, kv.Key.Id, cursorPlatform, cursorId) > 0)
-                .Take(limit + 1).Select(kv => Copy(kv.Value.Row)).ToList();
+                .OrderBy(kv => kv.Value.WrittenAt)
+                .Where(kv => readHorizon == TimeSpan.Zero || kv.Value.WrittenAt.GetDate().UtcTicks < (clock() - readHorizon).Ticks)
+                .Where(kv => !hasCursor || kv.Value.WrittenAt.CompareTo(after) > 0)
+                .Take(limit + 1).Select(kv => (Copy(kv.Value.Row), kv.Value.WrittenAt)).ToList();
             hasMore = ordered.Count > limit;
             page = ordered.Take(limit).ToList();
         }
-        var next = hasMore ? TrainingListingCursor.Encode((int)page[^1].Platform, page[^1].ListingId) : null;
-        return Task.FromResult(new TrainingListingPage(next, ToAsync(page)));
+        var next = hasMore ? TrainingListingCursor.EncodeTime(page[^1].WrittenAt) : null;
+        return Task.FromResult(new TrainingListingPage(next, ToAsync(page.Select(p => p.Row))));
     }
 
     private static async IAsyncEnumerable<TrainingListing> ToAsync(IEnumerable<TrainingListing> items)

@@ -1,3 +1,4 @@
+using Cassandra;
 using Coflnet.Ane;
 using Coflnet.Ane.TrainingListings;
 using MessagePack;
@@ -353,7 +354,7 @@ public class TrainingListingStoreTests
             pages++;
         } while (cursor != null);
 
-        Assert.That(seen, Is.EqualTo(inShard.OrderBy(i => i, StringComparer.Ordinal).ToList()));
+        Assert.That(seen, Is.EqualTo(inShard));
         Assert.That(pages, Is.EqualTo((inShard.Count + 4) / 5));
     }
 
@@ -369,6 +370,107 @@ public class TrainingListingStoreTests
 
         Assert.That(await page.Rows.ToListAsync(), Has.Count.EqualTo(4));
         Assert.That(page.NextCursor, Is.Null);
+    }
+
+    [Test]
+    public async Task ReadPartition_RowWithSmallerKeyWrittenAfterTheCursorIsStillReturned()
+    {
+        var store = new InMemoryTrainingListingStore(() => Now);
+        var ids = Enumerable.Range(0, 600).Select(i => (2000 + i).ToString()).Where(i => TrainingListingKeys.ShardOf((int)Platform.Kleinanzeigen, i) == 0).ToList();
+        Assert.That(ids.Count, Is.GreaterThan(6));
+        // the first rows written have the large keys, the cursor is taken after them
+        var early = ids.OrderByDescending(i => i, StringComparer.Ordinal).Take(3).ToList();
+        foreach (var id in early)
+            await store.AddAsync(Row(id));
+        var first = await store.ReadPartitionAsync("2026-09-30", 0, 2, null);
+        var firstRows = await first.Rows.ToListAsync();
+        Assert.That(firstRows, Has.Count.EqualTo(2));
+        // written later, sorts before everything the cursor has passed
+        var late = ids.OrderBy(i => i, StringComparer.Ordinal).First();
+        await store.AddAsync(Row(late));
+
+        var seen = firstRows.Select(r => r.ListingId).ToList();
+        var cursor = first.NextCursor;
+        while (cursor != null)
+        {
+            var page = await store.ReadPartitionAsync("2026-09-30", 0, 2, cursor);
+            seen.AddRange((await page.Rows.ToListAsync()).Select(r => r.ListingId));
+            cursor = page.NextCursor;
+        }
+
+        Assert.That(seen, Is.EqualTo(early.Append(late).ToList()));
+    }
+
+    [Test]
+    public async Task ReadPartition_RowYoungerThanTheHorizonIsReturnedOnALaterPage()
+    {
+        var clock = Now;
+        var store = new InMemoryTrainingListingStore(() => clock, readHorizon: TimeSpan.FromSeconds(10));
+        var ids = Enumerable.Range(0, 200).Select(i => i.ToString()).Where(i => TrainingListingKeys.ShardOf((int)Platform.Kleinanzeigen, i) == 0).Take(3).ToList();
+        await store.AddAsync(Row(ids[0]));
+        clock = Now.AddSeconds(30);
+        await store.AddAsync(Row(ids[1])); // written "now", behind the horizon
+        var first = await store.ReadPartitionAsync("2026-09-30", 0, 10, null);
+        Assert.That((await first.Rows.ToListAsync()).Select(r => r.ListingId), Is.EqualTo(new[] { ids[0] }));
+        Assert.That(first.NextCursor, Is.Null);
+
+        clock = Now.AddSeconds(41);
+        var next = await store.ReadPartitionAsync("2026-09-30", 0, 10, null);
+        Assert.That((await next.Rows.ToListAsync()).Select(r => r.ListingId), Is.EqualTo(new[] { ids[0], ids[1] }));
+    }
+
+    [Test]
+    public void TimeKeysStatement_BoundsTheReadByTheHorizon()
+    {
+        var horizon = new DateTime(2026, 10, 5, 12, 0, 0, DateTimeKind.Utc);
+        var bounded = CassandraTrainingListingStore.BuildTimeKeysStatement("2026-10-05", 1, 11, TimeUuid.NewId(), horizon);
+        Assert.That(bounded.QueryString, Does.Contain("written_at < maxTimeuuid(?)"));
+        Assert.That(bounded.QueryValues, Has.Length.EqualTo(5));
+        Assert.That(CassandraTrainingListingStore.BuildTimeKeysStatement("2026-10-05", 1, 11, null).QueryString, Does.Not.Contain("maxTimeuuid"));
+    }
+
+    [Test]
+    public async Task ReadPartition_LegacyKeyCursorStartsAtTheBeginning()
+    {
+        var store = new InMemoryTrainingListingStore(() => Now);
+        var ids = Enumerable.Range(0, 200).Select(i => i.ToString()).Where(i => TrainingListingKeys.ShardOf((int)Platform.Kleinanzeigen, i) == 0).Take(4).ToList();
+        foreach (var id in ids)
+            await store.AddAsync(Row(id));
+
+        var page = await store.ReadPartitionAsync("2026-09-30", 0, 10, TrainingListingCursor.Encode((int)Platform.Kleinanzeigen, "zzz"));
+
+        Assert.That((await page.Rows.ToListAsync()).Select(r => r.ListingId), Is.EqualTo(ids));
+    }
+
+    [Test]
+    public void TimeCursor_RoundTripsAndIsNotTakenForALegacyCursor()
+    {
+        var id = TimeUuid.NewId();
+        var cursor = TrainingListingCursor.EncodeTime(id);
+        Assert.That(TrainingListingCursor.TryDecodeTime(cursor, out var decoded), Is.True);
+        Assert.That(decoded, Is.EqualTo(id));
+        Assert.That(TrainingListingCursor.TryDecode(cursor, out _, out _), Is.False);
+        var legacy = TrainingListingCursor.Encode(3, "witgoed:1");
+        Assert.That(TrainingListingCursor.TryDecodeTime(legacy, out _), Is.False);
+        Assert.That(TrainingListingCursor.IsValid(legacy), Is.True);
+        Assert.That(TrainingListingCursor.IsValid(cursor), Is.True);
+        Assert.That(TrainingListingCursor.IsValid("!!!"), Is.False);
+        Assert.That(TrainingListingCursor.TryDecodeTime("t:" , out _), Is.False);
+    }
+
+    [Test]
+    public void ByTimeStatements_PageAscendingByWrittenAtAndInsertWithTheTtl()
+    {
+        var after = TimeUuid.NewId();
+        var keys = CassandraTrainingListingStore.BuildTimeKeysStatement("2026-10-04", 3, 11, after);
+        Assert.That(keys.QueryString, Does.Contain("training_listings_by_time").And.Contain("written_at > ?").And.Contain("ORDER BY written_at ASC"));
+        Assert.That(CassandraTrainingListingStore.BuildTimeKeysStatement("2026-10-04", 3, 11, null).QueryString, Does.Not.Contain("written_at > ?"));
+        var rows = CassandraTrainingListingStore.BuildTimeRowsStatement("2026-10-04", 3, after, TimeUuid.NewId(), null);
+        Assert.That(rows.QueryString, Does.Contain("written_at > ?").And.Contain("written_at <= ?"));
+        var insert = CassandraTrainingListingStore.BuildByTimeInsertStatement(Row("1"), "2026-10-04", 3, after, TimeSpan.FromDays(14));
+        Assert.That(insert.QueryString, Does.StartWith("INSERT INTO training_listings_by_time").And.Contain("USING TTL 1209600"));
+        Assert.That(insert.QueryValues, Has.Length.EqualTo(26));
+        Assert.That(CassandraTrainingListingStore.CreateByTimeCql, Does.Contain("PRIMARY KEY ((day, shard), written_at)"));
     }
 
     [Test]
