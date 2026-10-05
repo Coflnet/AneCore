@@ -220,8 +220,7 @@
       "possibleAttributes": {
         "storage_size": [
           "32GB"
-        ],
-        "color": []
+        ]
       },
       "excludeTerms": [
         "2",
@@ -229,6 +228,81 @@
         "oled"
       ],
       "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch-v1",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch V1",
+      "name": "Nintendo Switch V1",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch V1",
+        "Switch V1",
+        "Nintendo Switch HAC-001",
+        "Switch HAC-001",
+        "Nintendo Switch Pokemon Edition",
+        "Nintendo Switch Pokemon Let's Go",
+        "Nintendo Switch Pokemon Lets Go",
+        "Nintendo Switch Let's Go Pikachu",
+        "Nintendo Switch Let's Go Evoli",
+        "Nintendo Switch Let's Go Eevee"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "lite",
+        "oled"
+      ],
+      "source": "seed:hand-curated-2026-09"
+    },
+    {
+      "id": "nintendo-switch-v2",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch V2",
+      "name": "Nintendo Switch V2",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch V2",
+        "Switch V2",
+        "Nintendo Switch HAC-001-01",
+        "Switch HAC-001-01",
+        "Nintendo Switch neue Version",
+        "Nintendo Switch new version",
+        "Nintendo Switch nouvelle version",
+        "Nintendo Switch nieuwe versie",
+        "Nintendo Switch verbesserter Akku",
+        "Nintendo Switch improved battery",
+        "Nintendo Switch Edition Animal Crossing",
+        "Nintendo Switch Animal Crossing Edition",
+        "Nintendo Switch Edition Fortnite",
+        "Nintendo Switch Fortnite Edition",
+        "Nintendo Switch Mario Red Blue",
+        "Nintendo Switch Mario Red & Blue",
+        "Nintendo Switch Mario Rot Blau"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "32GB"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "lite",
+        "oled"
+      ],
+      "source": "seed:hand-curated-2026-09"
     },
     {
       "id": "nintendo-switch-2",
