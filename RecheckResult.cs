@@ -38,6 +38,17 @@ public class RecheckResult
     [Key(6)]
     public string? AgeBasis { get; set; }
 
+    /// <summary>
+    /// Item attributes read from the page the recheck fetched anyway (Vinted: the page's own labels as keys, the colour under
+    /// <c>color</c>). Null when the page was not read or showed none; only sent for an available listing. Keys 0-6 keep their numbers.
+    /// </summary>
+    [Key(7)]
+    public Dictionary<string, string>? Attributes { get; set; }
+
+    /// <summary>The seller's description read from that page, capped by the scraper; null when absent.</summary>
+    [Key(8)]
+    public string? Description { get; set; }
+
     [IgnoreMember]
     public Platform Platform
     {
