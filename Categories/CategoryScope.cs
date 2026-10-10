@@ -18,8 +18,47 @@ public enum CategoryScopeStatus
 /// <param name="Key">Stable key (cards, clothing, electronics, watches, ...)</param>
 public sealed record ScopeVertical(string Key, CategoryScopeStatus Status, string Name, string? Rationale)
 {
+    /// <summary>
+    /// Brand words a listing title must name to enter this vertical (JSON <c>brands</c>), or null when the vertical has no brand gate.
+    /// Used inside the vertical's categories only, so ambiguous words ("mz", "sachs", "victoria") are safe there.
+    /// </summary>
+    public ScopeBrandList? Brands { get; init; }
+
     public bool IsActive => Status == CategoryScopeStatus.Active;
     public bool IsNext => Status == CategoryScopeStatus.Next;
+}
+
+/// <summary>
+/// Brand tokens of a vertical, matched as whole words on <see cref="CategoryScopeCatalog.Normalize"/>d text
+/// (case and diacritics folded: Zündapp, ZUNDAPP and Zuendapp are listed as separate spellings, "Fichtel &amp; Sachs" is "fichtel sachs").
+/// </summary>
+public sealed class ScopeBrandList
+{
+    private readonly string[] normalized;
+
+    public ScopeBrandList(IEnumerable<string> brands)
+    {
+        Words = brands.Where(b => !string.IsNullOrWhiteSpace(b)).Select(b => b.Trim()).ToList();
+        normalized = Words.Select(CategoryScopeCatalog.Normalize).Where(b => b.Length > 0).Distinct().ToArray();
+    }
+
+    /// <summary>The configured spellings as written in the JSON.</summary>
+    public IReadOnlyList<string> Words { get; }
+
+    /// <summary>True when one of the texts contains a brand token as whole words.</summary>
+    public bool Matches(params string?[] texts)
+    {
+        foreach (var text in texts)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                continue;
+            var haystack = " " + CategoryScopeCatalog.Normalize(text) + " ";
+            foreach (var brand in normalized)
+                if (haystack.Contains(" " + brand + " ", StringComparison.Ordinal))
+                    return true;
+        }
+        return false;
+    }
 }
 
 /// <summary>
@@ -117,7 +156,12 @@ public sealed class CategoryScopeCatalog
                 };
                 var vertical = new ScopeVertical(property.Name, status,
                     property.Value.TryGetProperty("name", out var name) ? name.GetString() ?? property.Name : property.Name,
-                    property.Value.TryGetProperty("rationale", out var rationale) ? rationale.GetString() : null);
+                    property.Value.TryGetProperty("rationale", out var rationale) ? rationale.GetString() : null)
+                {
+                    Brands = property.Value.TryGetProperty("brands", out var brands)
+                        ? new ScopeBrandList(brands.EnumerateArray().Select(b => b.GetString() ?? ""))
+                        : null
+                };
                 verticals.Add(vertical.Key, vertical);
                 ReadGroup(property.Value, vertical);
             }

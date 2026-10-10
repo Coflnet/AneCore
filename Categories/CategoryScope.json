@@ -240,6 +240,43 @@
       "vinted": {
         "ids": [3875, 3888, 3898, 3899, 3900, 3901, 3902, 3903, 3904, 3905, 3906, 3907, 3908, 3909, 3910, 3911, 3912, 3913, 3914, 3915, 4066, 4067, 4069, 4070, 4072, 4073, 4075, 4170, 4171, 4172, 4173, 4174, 4175, 4176, 4177, 4178, 4179, 4185, 4186, 4187, 4188, 4189, 4190, 4191, 4192, 4193, 4194, 4195, 4196, 4197, 4198, 4199]
       }
+    },
+    "classic_two_wheelers": {
+      "status": "active",
+      "name": "Classic mopeds, motorcycles, scooters and their parts",
+      "rationale": "Collectable two wheelers (Zündapp, Kreidler, Simson, Puch, ...) have identifiable models and a collector market. Kleinanzeigen Motorräder and Motorradteile carry mostly modern bikes, so a listing enters only when its title names one of the brands. The brand list mirrors the notifier's Extraction/Data/two-wheelers.txt (brand lines; the +modelonly brands as brand plus model phrase); AneCore.Tests pins it.",
+      "unified": [
+        "919"
+      ],
+      "brands": [
+        "Zündapp", "Zuendapp", "Zundapp", "Zundap", "Zuendap",
+        "Kreidler",
+        "Hercules", "Herkules",
+        "Simson",
+        "Puch",
+        "NSU",
+        "DKW",
+        "MZ",
+        "Vespa",
+        "Solex", "Velosolex",
+        "Tomos",
+        "Sachs", "Fichtel Sachs", "Fichtel",
+        "Maico",
+        "Victoria",
+        "Horex",
+        "Garelli",
+        "Rixe",
+        "Ardie",
+        "Peugeot 103",
+        "Piaggio Ciao"
+      ],
+      "kleinanzeigen": {
+        "ids": [305, 306],
+        "labels": [
+          "Motorräder & Motorroller",
+          "Motorradteile & Zubehör"
+        ]
+      }
     }
   },
   "outOfScope": {
@@ -258,7 +295,7 @@
     ],
     "willhaben": {"ids": [6941, 3928, 3076, 5007823, 387, 537, 6462, 3541, 6142, 5136, 4390, 4915, 5387]},
     "kleinanzeigen": {
-      "ids": [17, 18, 19, 20, 21, 22, 25, 73, 75, 76, 77, 78, 79, 80, 81, 82, 86, 87, 88, 89, 90, 91, 93, 102, 105, 107, 109, 110, 111, 114, 117, 118, 123, 125, 130, 132, 133, 134, 135, 136, 138, 139, 176, 185, 187, 189, 191, 192, 195, 196, 197, 198, 199, 203, 205, 207, 208, 210, 211, 216, 220, 223, 224, 226, 230, 231, 232, 233, 235, 236, 237, 238, 239, 240, 241, 242, 243, 246, 247, 248, 249, 250, 251, 252, 254, 255, 256, 257, 258, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 280, 281, 282, 283, 284, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 305, 306, 313, 400, 401],
+      "ids": [17, 18, 19, 20, 21, 22, 25, 73, 75, 76, 77, 78, 79, 80, 81, 82, 86, 87, 88, 89, 90, 91, 93, 102, 105, 107, 109, 110, 111, 114, 117, 118, 123, 125, 130, 132, 133, 134, 135, 136, 138, 139, 176, 185, 187, 189, 191, 192, 195, 196, 197, 198, 199, 203, 205, 207, 208, 210, 211, 216, 220, 223, 224, 226, 230, 231, 232, 233, 235, 236, 237, 238, 239, 240, 241, 242, 243, 246, 247, 248, 249, 250, 251, 252, 254, 255, 256, 257, 258, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 280, 281, 282, 283, 284, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 313, 400, 401],
       "labels": [
         "Altenpflege",
         "Auf Zeit & WG",
@@ -330,9 +367,7 @@
         "Mietwohnungen",
         "Mini- & Nebenjobs",
         "Modellbau",
-        "Motorradteile & Zubehör",
-        "Motorräder & Motorroller",
-        "Musik & CDs",
+                "Musik & CDs",
         "Musik & Gesang",
         "Musik, Filme & Bücher",
         "Nachbarschaftshilfe",
