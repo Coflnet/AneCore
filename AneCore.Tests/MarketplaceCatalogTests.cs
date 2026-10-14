@@ -27,6 +27,7 @@ public class MarketplaceCatalogTests
     [TestCase("https://www.anibis.ch/de/d/camera-123456", Platform.Anibis, "123456")]
     [TestCase("https://www.tradera.com/item/1234/123456/camera", Platform.Tradera, "123456")]
     [TestCase("https://www.blocket.se/annons/stockholm/camera/123456", Platform.Blocket, "123456")]
+    [TestCase("https://www.blocket.se/recommerce/forsale/item/123456", Platform.Blocket, "123456")]
     [TestCase("https://www.finn.no/bap/forsale/ad.html?finnkode=123456&ref=feed", Platform.Finn, "123456")]
     [TestCase("https://www.finn.no/recommerce/forsale/item/123456", Platform.Finn, "123456")]
     [TestCase("https://www.tori.fi/recommerce/forsale/item/123456", Platform.Tori, "123456")]

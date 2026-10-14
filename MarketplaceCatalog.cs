@@ -29,7 +29,7 @@ public static class MarketplaceCatalog
         new(Platform.Tutti, ["tutti.ch"], @"^/[^/]+/vi/.*/(?<id>\d+)/?$", "CH", "CHF"),
         new(Platform.Anibis, ["anibis.ch"], @"^/[^/]+/d/[^/]+-(?<id>\d+)/?$", "CH", "CHF"),
         new(Platform.Tradera, ["tradera.com"], @"^/item/\d+/(?<id>\d+)(?:/[^/]*)?/?$", "SE", "SEK"),
-        new(Platform.Blocket, ["blocket.se"], @"^/annons/(?:[^/]+/)*(?<id>\d+)/?$", "SE", "SEK"),
+        new(Platform.Blocket, ["blocket.se"], @"^(?:/annons/(?:[^/]+/)*(?<id>\d+)|/recommerce/forsale/item/(?<id>\d+))/?$", "SE", "SEK"),
         new(Platform.Finn, ["finn.no"], @"^/(?:bap/forsale/ad\.html|recommerce/forsale/item/(?<id>\d+))/?$", "NO", "NOK"),
         new(Platform.Tori, ["tori.fi"], @"^/(?:recommerce/forsale/item/(?<id>\d+)|[^/]+/[^/]+_(?<id>\d+)\.htm)/?$", "FI"),
         new(Platform.DBA, ["dba.dk"], @"^/(?:recommerce/forsale/item/(?<id>\d+)|[^/]+/id-(?<id>\d+))/?$", "DK", "DKK"),
