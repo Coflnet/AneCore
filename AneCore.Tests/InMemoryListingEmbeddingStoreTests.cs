@@ -93,6 +93,40 @@ public class InMemoryListingEmbeddingStoreTests
     }
 
     [Test]
+    public async Task DeleteEmbeddings_RemovesAllPhotosOnlyFromTheMatchingPartition_AndAllowsFreshUpsert()
+    {
+        IListingEmbeddingStore store = new InMemoryListingEmbeddingStore();
+        var otherPlatform = Embedding("l1", Platform.Kleinanzeigen, 0, "keep-platform");
+        var otherListing = Embedding("other", Platform.Ebay, 0, "keep-listing");
+        await store.UpsertEmbeddingsAsync([
+            Embedding("l1", Platform.Ebay, 0),
+            Embedding("l1", Platform.Ebay, 2),
+            otherPlatform,
+            otherListing,
+        ]);
+
+        await store.DeleteEmbeddingsAsync("l1", Platform.Ebay);
+        await store.DeleteEmbeddingsAsync("l1", Platform.Ebay);
+
+        Assert.That(await store.GetEmbeddingsAsync("l1", Platform.Ebay), Is.Empty);
+        Assert.That(await store.GetEmbeddingsAsync("l1", Platform.Kleinanzeigen), Is.EqualTo(new[] { otherPlatform }));
+        Assert.That(await store.GetEmbeddingsAsync("other", Platform.Ebay), Is.EqualTo(new[] { otherListing }));
+
+        var fresh = Embedding("l1", Platform.Ebay, 1);
+        await store.UpsertEmbeddingsAsync([fresh]);
+        Assert.That(await store.GetEmbeddingsAsync("l1", Platform.Ebay), Is.EqualTo(new[] { fresh }));
+    }
+
+    [Test]
+    public async Task DeleteEmbeddings_MissingPartition_IsIdempotent()
+    {
+        IListingEmbeddingStore store = new InMemoryListingEmbeddingStore();
+        await store.DeleteEmbeddingsAsync("missing", Platform.Ebay);
+        await store.DeleteEmbeddingsAsync("missing", Platform.Ebay);
+        Assert.That(await store.GetEmbeddingsAsync("missing", Platform.Ebay), Is.Empty);
+    }
+
+    [Test]
     public async Task SetClusterSeoId_UnknownListing_DoesNotThrow()
     {
         var store = new InMemoryListingEmbeddingStore();

@@ -12,6 +12,9 @@ public interface IListingEmbeddingStore
     /// <summary>Inserts or fully replaces one or more photo embeddings (each carries its own listing id/platform/image index).</summary>
     Task UpsertEmbeddingsAsync(IEnumerable<ListingImageEmbedding> embeddings);
 
+    /// <summary>Deletes every photo of this listing/platform partition. Safe when the partition is absent.</summary>
+    Task DeleteEmbeddingsAsync(string listingId, Platform platform);
+
     /// <summary>
     /// Sets <see cref="ListingImageEmbedding.ClusterSeoId"/> on every photo currently stored for this listing
     /// (there is one row per photo, so this touches every row of the listing's partition, not a single cell).
@@ -54,6 +57,12 @@ public partial class InMemoryListingEmbeddingStore : IListingEmbeddingStore
         if (byListing.TryGetValue((listingId, platform), out var images))
             foreach (var image in images.Values)
                 image.ClusterSeoId = clusterSeoId;
+        return Task.CompletedTask;
+    }
+
+    public Task DeleteEmbeddingsAsync(string listingId, Platform platform)
+    {
+        byListing.TryRemove((listingId, platform), out _);
         return Task.CompletedTask;
     }
 }

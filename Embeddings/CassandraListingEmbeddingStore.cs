@@ -82,6 +82,13 @@ public partial class CassandraListingEmbeddingStore : IListingEmbeddingStore
             await table.Insert(embedding).SetTTL(TimeToLiveSeconds).ExecuteAsync();
     }
 
+    public Task DeleteEmbeddingsAsync(string listingId, Platform platform)
+    {
+        var platformValue = (int)platform;
+        return table.Where(e => e.ListingId == listingId && e.PlatformValue == platformValue)
+            .Delete().ExecuteAsync();
+    }
+
     /// <summary>
     /// There is one row per photo (clustering key <c>image_index</c>), so setting the cluster assignment
     /// "for a listing" means a read of the current image indices followed by one partial-column update per
