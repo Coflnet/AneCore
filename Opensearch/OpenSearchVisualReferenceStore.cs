@@ -58,16 +58,21 @@ public class OpenSearchVisualReferenceStore(
         if (!available)
             return;
         var client = await index.Client(ct);
+        var refresh = await client.Indices.RefreshAsync(index.IndexName(), ct: ct);
+        if (!refresh.IsValid || refresh.Shards?.Failed > 0)
+            throw new InvalidOperationException(
+                $"Failed to refresh clothing visual index before deleting listing {listingId}: {refresh.DebugInformation}");
         var response = await client.DeleteByQueryAsync<ClothingVisualDocument>(d => d
             .Index(index.IndexName())
             .Conflicts(Conflicts.Proceed)
+            .Refresh(true)
             .Query(q => q.Bool(b => b.Filter(
                 f => f.Term(t => t.Field(x => x.ListingId).Value(listingId)),
                 f => f.Term(t => t.Field(x => x.Platform).Value(platform))))),
             ct);
-        if (!response.IsValid)
+        if (!response.IsValid || !response.ApiCall.Success || response.TimedOut || response.VersionConflicts > 0)
             throw new InvalidOperationException(
-                $"Failed to delete clothing visual documents for listing {listingId}: {response.DebugInformation}");
+                $"Failed to delete clothing visual documents for listing {listingId} ({response.VersionConflicts} version conflicts, timed out: {response.TimedOut}): {response.DebugInformation}");
     }
 
     public async Task<IReadOnlyList<VisualSearchHit>> SearchAsync(

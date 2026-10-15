@@ -179,7 +179,7 @@ public class ClothingVisualIndexMappingTests
     }
 
     [Test]
-    public async Task DeleteByListing_RequestBody_FiltersByListingAndPlatform()
+    public async Task DeleteByListing_RefreshesBeforeQuery_AndRefreshesDeletedListingAndPlatform()
     {
         var (_, store, connection) = Build();
         await store.InitializeAsync();
@@ -190,6 +190,41 @@ public class ClothingVisualIndexMappingTests
         Assert.That(body, Is.Not.Null);
         var expected = """{"query":{"bool":{"filter":[{"term":{"listingId":{"value":"l1"}}},{"term":{"platform":{"value":"Ebay"}}}]}}}""";
         Assert.That(Encoding.UTF8.GetString(body!), Is.EqualTo(expected));
+        Assert.That(connection.Calls.Where(c => c.Path.EndsWith("_refresh") || c.Path.EndsWith("_delete_by_query"))
+            .Select(c => (c.Method, c.Path)), Is.EqualTo(new[]
+            {
+                ("POST", "/ane_clothing_visual_v1/_refresh"),
+                ("POST", "/ane_clothing_visual_v1/_delete_by_query"),
+            }));
+        Assert.That(connection.Calls.Last().Query, Does.Contain("refresh=true"));
+    }
+
+    [TestCase(503, 0)]
+    [TestCase(200, 1)]
+    public async Task DeleteByListing_RefreshFailure_PreventsDeletion(int status, int failedShards)
+    {
+        var (_, store, connection) = Build((method, path) => path.EndsWith("_refresh")
+            ? (status, Encoding.UTF8.GetBytes($"{{\"_shards\":{{\"total\":1,\"successful\":0,\"failed\":{failedShards}}}}}"))
+            : DefaultResponse(method, path));
+        await store.InitializeAsync();
+        Assert.That(store.IsAvailable, Is.True);
+
+        Assert.ThrowsAsync<InvalidOperationException>(() => store.DeleteByListingAsync("l1", "Ebay", default));
+        Assert.That(connection.Calls.Any(c => c.Path.EndsWith("_delete_by_query")), Is.False);
+    }
+
+    [TestCase(503, 0, false)]
+    [TestCase(200, 2, false)]
+    [TestCase(200, 0, true)]
+    public async Task DeleteByListing_FailedOrIncompleteQuery_Throws(int status, int conflicts, bool timedOut)
+    {
+        var (_, store, _) = Build((method, path) => path.EndsWith("_delete_by_query")
+            ? (status, Encoding.UTF8.GetBytes($"{{\"version_conflicts\":{conflicts},\"timed_out\":{JsonSerializer.Serialize(timedOut)},\"total\":2,\"deleted\":0,\"failures\":[]}}"))
+            : DefaultResponse(method, path));
+        await store.InitializeAsync();
+        Assert.That(store.IsAvailable, Is.True);
+
+        Assert.ThrowsAsync<InvalidOperationException>(() => store.DeleteByListingAsync("l1", "Ebay", default));
     }
 
     [Test]
@@ -221,6 +256,8 @@ public class ClothingVisualIndexMappingTests
             return (200, Encoding.UTF8.GetBytes("""{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}"""));
         if (path.EndsWith("_delete_by_query"))
             return (200, Encoding.UTF8.GetBytes("""{"took":1,"timed_out":false,"total":0,"deleted":0,"batches":0,"version_conflicts":0,"noops":0,"retries":{"bulk":0,"search":0},"throttled_millis":0,"requests_per_second":-1.0,"throttled_until_millis":0,"failures":[]}"""));
+        if (path.EndsWith("_refresh"))
+            return (200, Encoding.UTF8.GetBytes("""{"_shards":{"total":1,"successful":1,"failed":0}}"""));
         return (200, []);
     }
 
@@ -240,9 +277,9 @@ public class ClothingVisualIndexMappingTests
     /// </summary>
     private sealed class RecordingConnection(Func<string, string, (int Status, byte[] Body)>? respond) : InMemoryConnection
     {
-        private readonly List<(string Method, string Path, byte[]? Body)> calls = [];
+        private readonly List<(string Method, string Path, string Query, byte[]? Body)> calls = [];
 
-        public IReadOnlyList<(string Method, string Path, byte[]? Body)> Calls => calls;
+        public IReadOnlyList<(string Method, string Path, string Query, byte[]? Body)> Calls => calls;
 
         public byte[]? LastBodyForPath(string method, string path) =>
             calls.LastOrDefault(c => c.Method == method && Uri.UnescapeDataString(c.Path.Trim('/')) == path).Body;
@@ -258,7 +295,7 @@ public class ClothingVisualIndexMappingTests
                 requestData.PostData.Write(ms, requestData.ConnectionSettings);
                 body = ms.ToArray();
             }
-            calls.Add((method, path, body));
+            calls.Add((method, path, requestData.Uri.Query, body));
 
             var (status, respBody) = (respond ?? DefaultResponse)(method, path.Trim('/'));
             var routed = new InMemoryConnection(respBody, status);
