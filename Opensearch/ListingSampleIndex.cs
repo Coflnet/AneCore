@@ -30,7 +30,7 @@ public class ListingSampleIndex(
     private IPromise<IIndexSettings> IndexSettings(IndexSettingsDescriptor s) => s
         .Setting("plugins.index_state_management.rollover_alias", IndexName())
         .NumberOfShards(1)
-        .NumberOfReplicas(0)
+        .NumberOfReplicas(1)
         .RefreshInterval(RefreshInterval)
         .Setting("index.codec", "best_compression");
 
