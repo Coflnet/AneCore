@@ -491,8 +491,67 @@ public class TrainingListingStoreTests
         Assert.That(rows.QueryString, Does.Contain("written_at > ?").And.Contain("written_at <= ?"));
         var insert = CassandraTrainingListingStore.BuildByTimeInsertStatement(Row("1"), "2026-10-04", 3, after, TimeSpan.FromDays(14));
         Assert.That(insert.QueryString, Does.StartWith("INSERT INTO training_listings_by_time").And.Contain("USING TTL 1209600"));
-        Assert.That(insert.QueryValues, Has.Length.EqualTo(26));
+        Assert.That(insert.QueryValues, Has.Length.EqualTo(28));
         Assert.That(CassandraTrainingListingStore.CreateByTimeCql, Does.Contain("PRIMARY KEY ((day, shard), written_at)"));
+    }
+
+    [Test]
+    public void ProductColumns_AreInBothTablesTheInsertsAndTheMigration()
+    {
+        Assert.That(CassandraTrainingListingStore.CreateListingsCql, Does.Contain("known_product_id text").And.Contain("known_product_method text"));
+        Assert.That(CassandraTrainingListingStore.CreateByTimeCql, Does.Contain("known_product_id text").And.Contain("known_product_method text"));
+        Assert.That(CassandraTrainingListingStore.AddedColumnsCql, Is.EquivalentTo(new[]
+        {
+            "ALTER TABLE training_listings ADD known_product_id text", "ALTER TABLE training_listings ADD known_product_method text",
+            "ALTER TABLE training_listings_by_time ADD known_product_id text", "ALTER TABLE training_listings_by_time ADD known_product_method text"
+        }));
+        var listing = Row("1");
+        listing.KnownProductId = "apple-iphone-14";
+        listing.KnownProductMethod = TrainingProductMatch.CatalogAlias;
+        var insert = CassandraTrainingListingStore.BuildInsertStatement(listing, "2026-10-04", 3, TimeSpan.FromDays(14));
+        Assert.That(insert.QueryValues, Has.Length.EqualTo(27));
+        Assert.That(insert.QueryValues[^2], Is.EqualTo("apple-iphone-14"));
+        Assert.That(insert.QueryString.Split("?").Length - 1, Is.EqualTo(27));
+    }
+
+    [Test]
+    public void TrainingProductMatch_SetsTheCatalogProductAndKeepsExistingOnes()
+    {
+        var matcher = new Coflnet.Ane.KnownProducts.KnownProductMatcher(new[]
+        {
+            new Coflnet.Ane.KnownProducts.KnownProduct
+            {
+                Id = "apple-iphone-14", Brand = "Apple", Name = "Apple iPhone 14", Model = "iPhone 14",
+                Aliases = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "iphone 14" }
+            }
+        });
+        var phone = Row("1");
+        phone.Title = "iPhone 14 128GB";
+        var accessory = Row("2");
+        accessory.Title = "Hülle für iPhone 14";
+        var preset = Row("3");
+        preset.Title = "iPhone 14";
+        preset.KnownProductId = "other";
+
+        Assert.That(TrainingProductMatch.Apply(phone, matcher), Is.True);
+        Assert.That(phone.KnownProductId, Is.EqualTo("apple-iphone-14"));
+        Assert.That(phone.KnownProductMethod, Is.EqualTo(TrainingProductMatch.CatalogAlias));
+        Assert.That(TrainingProductMatch.Apply(accessory, matcher), Is.False);
+        Assert.That(accessory.KnownProductId, Is.Null);
+        Assert.That(TrainingProductMatch.Apply(preset, matcher), Is.False);
+        Assert.That(preset.KnownProductId, Is.EqualTo("other"));
+        Assert.That(TrainingProductMatch.Apply(Row("4"), null), Is.False);
+    }
+
+    [Test]
+    public void ProductFields_SurviveMessagePack()
+    {
+        var row = Row("1");
+        row.KnownProductId = "apple-iphone-14";
+        row.KnownProductMethod = TrainingProductMatch.CatalogAlias;
+        var back = MessagePack.MessagePackSerializer.Deserialize<TrainingListing>(MessagePack.MessagePackSerializer.Serialize(row));
+        Assert.That(back.KnownProductId, Is.EqualTo("apple-iphone-14"));
+        Assert.That(back.KnownProductMethod, Is.EqualTo(TrainingProductMatch.CatalogAlias));
     }
 
     [Test]

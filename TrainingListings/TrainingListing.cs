@@ -43,6 +43,14 @@ public class TrainingListing
     [Key(21)] public string Scope { get; set; } = TrainingListingScope.Kept;
     /// <summary>Drop reason or vertical key of the scope decision, null when there is none.</summary>
     [Key(22)] public string? ScopeReason { get; set; }
+    /// <summary>
+    /// Id (canonical slug, e.g. <c>apple-iphone-14</c>) of the verified known product the title matched, null when there is no (safe) match.
+    /// Listings of different sellers with the same id show the same product model, so their photos are weak positive pairs.
+    /// Set by the api when the row is stored, not by the scraper (it has no catalog).
+    /// </summary>
+    [Key(23)] public string? KnownProductId { get; set; }
+    /// <summary>How <see cref="KnownProductId"/> was found, one of <see cref="TrainingProductMatch"/> constants; null without a match.</summary>
+    [Key(24)] public string? KnownProductMethod { get; set; }
 }
 
 /// <summary>Values of <see cref="TrainingListing.Scope"/>.</summary>

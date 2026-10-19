@@ -136,7 +136,7 @@ public class CassandraTrainingListingStore : ITrainingListingStore
 
     private const string Columns =
         "day, shard, platform, listing_id, url, title, description, description_short, category, categories, attributes, price, currency, "
-        + "price_kind, condition, image_urls, country, region, locality, commercial, shipping, created_at, first_seen_at, scope, scope_reason";
+        + "price_kind, condition, image_urls, country, region, locality, commercial, shipping, created_at, first_seen_at, scope, scope_reason, known_product_id, known_product_method";
 
     private readonly ISession? sessionOrNull;
     private ISession session => sessionOrNull ?? throw new InvalidOperationException("This store was built for writing only");
@@ -179,19 +179,28 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         "CREATE TABLE IF NOT EXISTS training_listings (day text, shard int, platform int, listing_id text, url text, title text, description text, "
         + "description_short text, category text, categories list<text>, attributes map<text, text>, price double, currency text, price_kind int, "
         + "condition text, image_urls list<text>, country text, region text, locality text, commercial boolean, shipping text, created_at timestamp, "
-        + "first_seen_at timestamp, scope text, scope_reason text, PRIMARY KEY ((day, shard), platform, listing_id))";
+        + "first_seen_at timestamp, scope text, scope_reason text, known_product_id text, known_product_method text int, PRIMARY KEY ((day, shard), platform, listing_id))";
 
     /// <summary>Same columns plus the write time as clustering key: the export pages this table so a cursor never skips later rows.</summary>
     public const string CreateByTimeCql =
         "CREATE TABLE IF NOT EXISTS training_listings_by_time (day text, shard int, written_at timeuuid, platform int, listing_id text, url text, "
         + "title text, description text, description_short text, category text, categories list<text>, attributes map<text, text>, price double, "
         + "currency text, price_kind int, condition text, image_urls list<text>, country text, region text, locality text, commercial boolean, "
-        + "shipping text, created_at timestamp, first_seen_at timestamp, scope text, scope_reason text, PRIMARY KEY ((day, shard), written_at)) "
+        + "shipping text, created_at timestamp, first_seen_at timestamp, scope text, scope_reason text, known_product_id text, known_product_method text int, "
+        + "PRIMARY KEY ((day, shard), written_at)) "
         + "WITH CLUSTERING ORDER BY (written_at ASC)";
 
     /// <summary>Counter table: rows written per day and shard. A counter cannot expire, the few rows per day stay.</summary>
     public const string CreateDaysCql =
         "CREATE TABLE IF NOT EXISTS training_listing_days (day text, shard int, written counter, PRIMARY KEY (day, shard))";
+
+    /// <summary>Columns added after the first release; each is applied to both tables at start and tolerated when it exists already.</summary>
+    public static readonly string[] AddedColumnsCql = new[] { "training_listings", "training_listings_by_time" }
+        .SelectMany(table => new[] { ("known_product_id", "text"), ("known_product_method", "text") }
+            .Select(column => $"ALTER TABLE {table} ADD {column.Item1} {column.Item2}")).ToArray();
+
+    internal static bool IsColumnExists(InvalidQueryException e) =>
+        e.Message.Contains("already exists", StringComparison.OrdinalIgnoreCase) || e.Message.Contains("conflicts", StringComparison.OrdinalIgnoreCase);
 
     public async Task InitializeAsync()
     {
@@ -203,6 +212,12 @@ public class CassandraTrainingListingStore : ITrainingListingStore
             await session.ExecuteAsync(new SimpleStatement(CreateListingsCql));
             await session.ExecuteAsync(new SimpleStatement(CreateByTimeCql));
             await session.ExecuteAsync(new SimpleStatement(CreateDaysCql));
+            foreach (var statement in AddedColumnsCql)
+            {
+                // additive columns of tables created before they existed; CREATE TABLE IF NOT EXISTS does not alter an existing table
+                try { await session.ExecuteAsync(new SimpleStatement(statement)); }
+                catch (InvalidQueryException e) when (IsColumnExists(e)) { }
+            }
             tablesInitialized = true;
         }
         finally { InitLock.Release(); }
@@ -214,20 +229,20 @@ public class CassandraTrainingListingStore : ITrainingListingStore
     /// </summary>
     public static SimpleStatement BuildInsertStatement(TrainingListing listing, string day, int shard, TimeSpan ttl) =>
         new SimpleStatement(
-            $"INSERT INTO training_listings ({Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 25))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
+            $"INSERT INTO training_listings ({Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 27))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
             day, shard, (int)listing.Platform, listing.ListingId, listing.Url, listing.Title, listing.Description, listing.DescriptionShort,
             listing.Category, listing.Categories, listing.Attributes, listing.Price, listing.Currency, (int)listing.PriceKind, listing.Condition,
             listing.ImageUrls, listing.Country, listing.Region, listing.Locality, listing.Commercial, listing.Shipping,
-            listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason);
+            listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason, listing.KnownProductId, listing.KnownProductMethod);
 
     /// <summary>Insert into the time-ordered table; <paramref name="writtenAt"/> is taken once per add, so a retry rewrites the same row.</summary>
     public static SimpleStatement BuildByTimeInsertStatement(TrainingListing listing, string day, int shard, TimeUuid writtenAt, TimeSpan ttl) =>
         new SimpleStatement(
-            $"INSERT INTO training_listings_by_time (written_at, {Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 26))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
+            $"INSERT INTO training_listings_by_time (written_at, {Columns}) VALUES ({string.Join(", ", Enumerable.Repeat("?", 28))}) USING TTL {Math.Max(1, (int)ttl.TotalSeconds)}",
             writtenAt, day, shard, (int)listing.Platform, listing.ListingId, listing.Url, listing.Title, listing.Description, listing.DescriptionShort,
             listing.Category, listing.Categories, listing.Attributes, listing.Price, listing.Currency, (int)listing.PriceKind, listing.Condition,
             listing.ImageUrls, listing.Country, listing.Region, listing.Locality, listing.Commercial, listing.Shipping,
-            listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason);
+            listing.CreatedAt?.ToUniversalTime(), listing.FirstSeenAt?.ToUniversalTime(), listing.Scope, listing.ScopeReason, listing.KnownProductId, listing.KnownProductMethod);
 
     /// <summary>
     /// Write times of up to <paramref name="count"/> rows after the cursor (pass one of a page), only rows written before
@@ -489,7 +504,9 @@ public class CassandraTrainingListingStore : ITrainingListingStore
         CreatedAt = Utc(row, "created_at"),
         FirstSeenAt = Utc(row, "first_seen_at"),
         Scope = row.GetValue<string?>("scope") ?? TrainingListingScope.Kept,
-        ScopeReason = row.GetValue<string?>("scope_reason")
+        ScopeReason = row.GetValue<string?>("scope_reason"),
+        KnownProductId = row.GetValue<string?>("known_product_id"),
+        KnownProductMethod = row.GetValue<string?>("known_product_method")
     };
 
     private static DateTime? Utc(Row row, string column) =>
