@@ -193,9 +193,31 @@ public class TrainingListingBuilderTests
 
     [TestCase(Platform.Vinted)]
     [TestCase(Platform.Ebay)]
+    [TestCase(Platform.Gumtree)]
     [TestCase(Platform.Unknown)]
     public void Build_RefusesForbiddenPlatforms(Platform platform) =>
         Assert.That(TrainingListingBuilder.Build(Sample(platform), TrainingListingScope.Kept), Is.Null);
+
+    [Test]
+    public void GumtreeAndEbayAreRefusedEvenWhenConfigured()
+    {
+        var parsed = TrainingListingPolicy.ParsePlatforms("Kleinanzeigen,Gumtree,Ebay");
+        Assert.That(parsed.Allowed, Is.EquivalentTo(new[] { Platform.Kleinanzeigen }));
+        Assert.That(parsed.Refused, Is.EquivalentTo(new[] { Platform.Gumtree, Platform.Ebay }));
+        Assert.That(parsed.Contains(Platform.Gumtree), Is.False);
+    }
+
+    [Test]
+    public void GumtreeAndEbayPhotoHostsAreNeverAllowedByTheImageRightsPolicy()
+    {
+        // not in the mapping: no rights row can exist, so the status is Unknown, never Allowed
+        Assert.That(Coflnet.Ane.ImageRights.ImageHostMapping.TryGet("img.gumtree.com"), Is.Null);
+        var decision = Coflnet.Ane.ImageRights.ImageRightsPolicy.Resolve("img.gumtree.com", null, DateTime.UtcNow, new Coflnet.Ane.ImageRights.ImageRightsOptions());
+        Assert.That(decision.Status, Is.Not.EqualTo(Coflnet.Ane.ImageRights.ImageRightsStatus.Allowed));
+        // i.ebayimg.com serves eBay UK too and maps to the forbidden Ebay platform
+        Assert.That(Coflnet.Ane.ImageRights.ImageHostMapping.TryGet("i.ebayimg.com")!.Platform, Is.EqualTo(Platform.Ebay));
+        Assert.That(TrainingListingPolicy.IsForbidden(Platform.Ebay), Is.True);
+    }
 
     [Test]
     public void Build_RefusesListingsWithoutText()

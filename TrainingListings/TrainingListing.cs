@@ -60,12 +60,14 @@ public static class TrainingListingScope
 /// <summary>
 /// Which platforms may end up in the training data. Only a machine readable statement in the robots.txt of a marketplace counts
 /// as a rights reservation: Vinted and eBay have one and are refused in code, whatever the configuration says.
+/// Gumtree is refused as well (product decision 2026-10-19): its listings and photos are used for matching only,
+/// never retained as training data. eBay UK is <see cref="Platform.Ebay"/> and therefore covered.
 /// </summary>
 public static class TrainingListingPolicy
 {
     public const string DefaultPlatforms = "Kleinanzeigen,Marktplaats";
 
-    public static readonly IReadOnlySet<Platform> Forbidden = new HashSet<Platform> { Platform.Vinted, Platform.Ebay };
+    public static readonly IReadOnlySet<Platform> Forbidden = new HashSet<Platform> { Platform.Vinted, Platform.Ebay, Platform.Gumtree };
 
     public static bool IsForbidden(Platform platform) => Forbidden.Contains(platform);
 
