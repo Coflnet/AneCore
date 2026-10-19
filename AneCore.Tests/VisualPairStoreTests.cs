@@ -132,4 +132,17 @@ public class VisualPairStoreTests
         Assert.That(label.APlatformValue, Is.EqualTo((int)Platform.Vinted));
         Assert.That(label.Similarity, Is.EqualTo(0.85));
     }
+
+    [Test]
+    public async Task UpgradeCandidateSource_ChangesSourceOfExistingCandidateOnly()
+    {
+        IVisualPairStore store = new InMemoryVisualPairStore();
+        var id = VisualPairId.Compute("Vinted:1:0", "Vinted:2:0");
+        await store.AddCandidateAsync(new VisualPairCandidate { PairId = id, Source = "model", CreatedAt = DateTime.UtcNow });
+
+        Assert.That(await store.UpgradeCandidateSourceAsync(id, "user_report"), Is.True);
+        Assert.That((await store.GetCandidateAsync(id))!.Source, Is.EqualTo("user_report"));
+        Assert.That(await store.UpgradeCandidateSourceAsync(id, "user_report"), Is.False);
+        Assert.That(await store.UpgradeCandidateSourceAsync("missing", "user_report"), Is.False);
+    }
 }

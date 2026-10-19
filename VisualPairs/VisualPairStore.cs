@@ -13,6 +13,12 @@ public interface IVisualPairStore
 
     Task<VisualPairCandidate?> GetCandidateAsync(string pairId);
 
+    /// <summary>
+    /// Raises the <see cref="VisualPairCandidate.Source"/> of an existing candidate (used to upgrade a model candidate when a user reports the same pair).
+    /// Returns false when the candidate does not exist or already has this source. Default: not supported.
+    /// </summary>
+    Task<bool> UpgradeCandidateSourceAsync(string pairId, string source) => Task.FromResult(false);
+
     /// <summary>Up to <paramref name="limit"/> candidates of one UTC day bucket, newest first.</summary>
     Task<IReadOnlyList<VisualPairCandidate>> GetCandidatesAsync(DateOnly day, int limit);
 
@@ -189,6 +195,16 @@ public class CassandraVisualPairStore : IVisualPairStore
         return (await candidates.Where(c => c.Day == day && c.Shard == shard && c.PairId == pairId).ExecuteAsync()).FirstOrDefault();
     }
 
+    public async Task<bool> UpgradeCandidateSourceAsync(string pairId, string source)
+    {
+        var existing = await GetCandidateAsync(pairId);
+        if (existing == null || existing.Source == source)
+            return false;
+        await mapper.ExecuteAsync("UPDATE visual_pair_candidates USING TTL ? SET source = ? WHERE day = ? AND shard = ? AND pair_id = ?",
+            CandidateTimeToLiveSeconds, source, existing.Day, existing.Shard, pairId);
+        return true;
+    }
+
     public async Task<IReadOnlyList<VisualPairCandidate>> GetCandidatesAsync(DateOnly day, int limit)
     {
         await InitializeAsync();
@@ -323,6 +339,17 @@ public class InMemoryVisualPairStore : IVisualPairStore
     public Task<VisualPairCandidate?> GetCandidateAsync(string pairId)
     {
         lock (gate) return Task.FromResult(candidates.GetValueOrDefault(pairId));
+    }
+
+    public Task<bool> UpgradeCandidateSourceAsync(string pairId, string source)
+    {
+        lock (gate)
+        {
+            if (!candidates.TryGetValue(pairId, out var c) || c.Source == source)
+                return Task.FromResult(false);
+            c.Source = source;
+            return Task.FromResult(true);
+        }
     }
 
     public Task<IReadOnlyList<VisualPairCandidate>> GetCandidatesAsync(DateOnly day, int limit)
