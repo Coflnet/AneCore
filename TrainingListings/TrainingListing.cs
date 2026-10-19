@@ -51,6 +51,11 @@ public class TrainingListing
     [Key(23)] public string? KnownProductId { get; set; }
     /// <summary>How <see cref="KnownProductId"/> was found, one of <see cref="TrainingProductMatch"/> constants; null without a match.</summary>
     [Key(24)] public string? KnownProductMethod { get; set; }
+    /// <summary>
+    /// 0..16383, first 14 bits of a keyed HMAC of the seller id (see <see cref="SellerBucket"/>); null without a configured key or seller id.
+    /// The raw seller id is not part of this message.
+    /// </summary>
+    [Key(25)] public int? SellerBucket { get; set; }
 }
 
 /// <summary>Values of <see cref="TrainingListing.Scope"/>.</summary>

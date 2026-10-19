@@ -28,7 +28,8 @@ public static class TrainingListingBuilder
     /// <param name="scope">One of <see cref="TrainingListingScope"/>.</param>
     /// <param name="scopeReason">Drop reason or vertical of the scope decision.</param>
     /// <param name="imageUrls">All photo urls when the crawler knows more than <see cref="Listing.ImageUrls"/>.</param>
-    public static TrainingListing? Build(Listing listing, string scope, string? scopeReason = null, IEnumerable<string>? imageUrls = null)
+    /// <param name="sellerBucketKey">HMAC key of <see cref="SellerBucket"/>; null leaves <see cref="TrainingListing.SellerBucket"/> empty. <see cref="Listing.UserId"/> is only read here and never copied.</param>
+    public static TrainingListing? Build(Listing listing, string scope, string? scopeReason = null, IEnumerable<string>? imageUrls = null, byte[]? sellerBucketKey = null)
     {
         if (TrainingListingPolicy.IsForbidden(listing.Platform) || listing.Platform == Platform.Unknown)
             return null;
@@ -69,7 +70,8 @@ public static class TrainingListingBuilder
             CreatedAt = listing.CreatedAt,
             FirstSeenAt = listing.FoundAt,
             Scope = scope,
-            ScopeReason = scopeReason
+            ScopeReason = scopeReason,
+            SellerBucket = Coflnet.Ane.TrainingListings.SellerBucket.Compute(sellerBucketKey, listing.Platform, listing.UserId)
         };
     }
 }

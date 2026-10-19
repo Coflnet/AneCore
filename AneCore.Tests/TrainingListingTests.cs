@@ -164,7 +164,7 @@ public class TrainingListingBuilderTests
             Assert.That(text, Does.Not.Contain(secret));
         var names = typeof(TrainingListing).GetProperties().Select(p => p.Name).ToList();
         Assert.That(names, Has.None.Matches<string>(n => n.Contains("User") || n.Contains("Contact") || n.Contains("Street")
-            || n.Contains("Latitude") || n.Contains("Longitude") || n.Contains("Seller")));
+            || n.Contains("Latitude") || n.Contains("Longitude") || n.Contains("Seller") && n != nameof(TrainingListing.SellerBucket)));
     }
 
     [TestCase("address", true)]
@@ -491,7 +491,7 @@ public class TrainingListingStoreTests
         Assert.That(rows.QueryString, Does.Contain("written_at > ?").And.Contain("written_at <= ?"));
         var insert = CassandraTrainingListingStore.BuildByTimeInsertStatement(Row("1"), "2026-10-04", 3, after, TimeSpan.FromDays(14));
         Assert.That(insert.QueryString, Does.StartWith("INSERT INTO training_listings_by_time").And.Contain("USING TTL 1209600"));
-        Assert.That(insert.QueryValues, Has.Length.EqualTo(28));
+        Assert.That(insert.QueryValues, Has.Length.EqualTo(29));
         Assert.That(CassandraTrainingListingStore.CreateByTimeCql, Does.Contain("PRIMARY KEY ((day, shard), written_at)"));
     }
 
@@ -503,15 +503,18 @@ public class TrainingListingStoreTests
         Assert.That(CassandraTrainingListingStore.AddedColumnsCql, Is.EquivalentTo(new[]
         {
             "ALTER TABLE training_listings ADD known_product_id text", "ALTER TABLE training_listings ADD known_product_method text",
-            "ALTER TABLE training_listings_by_time ADD known_product_id text", "ALTER TABLE training_listings_by_time ADD known_product_method text"
+            "ALTER TABLE training_listings_by_time ADD known_product_id text", "ALTER TABLE training_listings_by_time ADD known_product_method text",
+            "ALTER TABLE training_listings ADD seller_bucket int", "ALTER TABLE training_listings_by_time ADD seller_bucket int"
         }));
+        Assert.That(CassandraTrainingListingStore.CreateListingsCql, Does.Contain("seller_bucket int"));
+        Assert.That(CassandraTrainingListingStore.CreateByTimeCql, Does.Contain("seller_bucket int"));
         var listing = Row("1");
         listing.KnownProductId = "apple-iphone-14";
         listing.KnownProductMethod = TrainingProductMatch.CatalogAlias;
         var insert = CassandraTrainingListingStore.BuildInsertStatement(listing, "2026-10-04", 3, TimeSpan.FromDays(14));
-        Assert.That(insert.QueryValues, Has.Length.EqualTo(27));
-        Assert.That(insert.QueryValues[^2], Is.EqualTo("apple-iphone-14"));
-        Assert.That(insert.QueryString.Split("?").Length - 1, Is.EqualTo(27));
+        Assert.That(insert.QueryValues, Has.Length.EqualTo(28));
+        Assert.That(insert.QueryValues[^3], Is.EqualTo("apple-iphone-14"));
+        Assert.That(insert.QueryString.Split("?").Length - 1, Is.EqualTo(28));
     }
 
     [Test]
@@ -541,6 +544,56 @@ public class TrainingListingStoreTests
         Assert.That(TrainingProductMatch.Apply(preset, matcher), Is.False);
         Assert.That(preset.KnownProductId, Is.EqualTo("other"));
         Assert.That(TrainingProductMatch.Apply(Row("4"), null), Is.False);
+    }
+
+    private static readonly byte[] BucketKey = SellerBucket.ParseKey("test-key")!;
+
+    [Test]
+    public void SellerBucket_IsTheFirst14BitsOfTheKeyedHmac()
+    {
+        // python: hmac.new(b"test-key", b"2:999", sha256) -> (mac[0] << 6) | (mac[1] >> 2)
+        Assert.That(SellerBucket.Compute(BucketKey, Platform.Kleinanzeigen, "999"), Is.EqualTo(9931));
+        Assert.That(SellerBucket.Compute(BucketKey, Platform.Kleinanzeigen, " 999 "), Is.EqualTo(9931));
+        Assert.That(SellerBucket.Compute(SellerBucket.ParseKey("other-key"), Platform.Kleinanzeigen, "999"), Is.Not.EqualTo(9931));
+        Assert.That(SellerBucket.Compute(BucketKey, Platform.Marktplaats, "999"), Is.EqualTo(9027)); // "3:999", the platform is part of the input
+    }
+
+    [Test]
+    public void SellerBucket_StaysInRangeAndSpreads()
+    {
+        var buckets = Enumerable.Range(0, 5000).Select(i => SellerBucket.Compute(BucketKey, Platform.Kleinanzeigen, "user" + i)!.Value).ToList();
+        Assert.That(buckets, Has.All.InRange(0, 16383));
+        Assert.That(buckets.Distinct().Count(), Is.GreaterThan(3500));
+    }
+
+    [TestCase(null)]
+    [TestCase("")]
+    [TestCase("   ")]
+    [TestCase("0")]
+    public void SellerBucket_IsNullWithoutKeyOrUsableSellerId(string? userId)
+    {
+        Assert.That(SellerBucket.Compute(BucketKey, Platform.Kleinanzeigen, userId), Is.Null);
+        Assert.That(SellerBucket.Compute(null, Platform.Kleinanzeigen, "999"), Is.Null);
+        Assert.That(SellerBucket.ParseKey(null), Is.Null);
+        Assert.That(SellerBucket.ParseKey("  "), Is.Null);
+    }
+
+    [Test]
+    public void Build_SetsTheBucketOnlyWithAKey_AndTheRawSellerIdIsNowhereInTheRow()
+    {
+        var listing = new Listing { Platform = Platform.Kleinanzeigen, Id = "42", Title = "Sony Fernseher", UserId = "999", Contact = "Max Mustermann" };
+        var withKey = TrainingListingBuilder.Build(listing, TrainingListingScope.Kept, sellerBucketKey: BucketKey)!;
+        var withoutKey = TrainingListingBuilder.Build(listing, TrainingListingScope.Kept)!;
+
+        Assert.That(withKey.SellerBucket, Is.EqualTo(9931)); // Sample() has UserId "999"
+        Assert.That(withoutKey.SellerBucket, Is.Null);
+        Assert.That(typeof(TrainingListing).GetProperties().Select(p => p.Name), Has.None.Matches<string>(n => n.Contains("UserId") || n.Contains("Seller") && n != "SellerBucket"));
+        var json = System.Text.Json.JsonSerializer.Serialize(withKey);
+        var pack = System.Text.Encoding.UTF8.GetString(MessagePack.MessagePackSerializer.Serialize(withKey));
+        Assert.That(json, Does.Not.Contain("\"999\"").And.Not.Contain("userId").And.Not.Contain("UserId"));
+        Assert.That(pack, Does.Not.Contain("999"));
+        var back = MessagePack.MessagePackSerializer.Deserialize<TrainingListing>(MessagePack.MessagePackSerializer.Serialize(withKey));
+        Assert.That(back.SellerBucket, Is.EqualTo(9931));
     }
 
     [Test]
