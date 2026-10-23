@@ -133,3 +133,38 @@ page. The TechAPI share-alike clause is the one obligation that needs active tra
 `samsung-galaxy.json`/`google-pixel.json`/`xiaomi.json` seed files are ever exported/republished
 as a standalone dataset (not just used internally to power matching), that export must itself be
 licensed CC-BY-SA 4.0.
+
+## 8. Exact-model expansion (2026-10-23)
+
+`monitors-expanded.json`, `motherboards-expanded.json`, and `headphones-expanded.json` were imported
+from [docyx/pc-part-dataset revision c52a04c](https://github.com/docyx/pc-part-dataset/tree/c52a04ca9465c83997ed335f7767b09a2005dd26)
+(MIT), retrieved 2026-10-23. The original seeds and their curated aliases are preserved. Each addition
+uses only the complete source model name as its alias, with no generated SKU combinations. Models
+without a number, names whose source rows disagree on identifying specifications, and headsets are
+omitted. Source SHA256 checks and the repeatable command are in `tools/catalog-import/expand_seed.py`
+and its README. The dataset proves model existence; it does not claim manufacturer verification of
+every specification or current resale demand.
+
+PC component specification data derived from docyx/pc-part-dataset, MIT License:
+
+> MIT License
+>
+> Copyright (c) 2021-2025 Doc Oliver
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all
+> copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+> SOFTWARE.

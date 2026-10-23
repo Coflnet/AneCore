@@ -13,36 +13,14 @@ public class ReferenceListingPreviewService
     private static readonly Regex SearchPriceNoiseRegex = new(
         @"(?:(?:€|EUR|CHF|US\$|\$|£|GBP)\s*\d{1,3}(?:[.\s]\d{3})*(?:[,\.]\d{1,2})?|\d{1,3}(?:[.\s]\d{3})*(?:[,\.]\d{1,2})?\s*(?:€|EUR|CHF|US\$|\$|£|GBP))",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private const string CurrencyPattern = @"€|EUR|CHF|US\$|\$|£|GBP|USD|PLN|zł|CZK|Kč|DKK|SEK|HUF|RON|BGN|NOK";
+    private static readonly Regex CurrencyRegex = new(CurrencyPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex PriceRegex = new(
-        @"(?:(?<currency>€|EUR|CHF|US\$|\$|£|GBP)\s*)?(?<amount>\d{1,3}(?:[.\s]\d{3})*(?:[,\.]\d{1,2})?|\d+(?:[,\.]\d{1,2})?)(?:\s*(?<currency2>€|EUR|CHF|US\$|\$|£|GBP))?",
+        @"(?:(?<currency>" + CurrencyPattern + @")\s*)?(?<amount>\d{1,3}(?:[.\s]\d{3})+(?:[,\.]\d{1,2})?|\d+(?:[,\.]\d{1,2})?)(?:\s*(?<currency2>" + CurrencyPattern + @"))?",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    public ReferenceListingPreviewResponse Build(Uri uri, string html, string? selectedSelector)
-    {
-        var document = LoadDocument(html);
-        var listing = ExtractListingSummary(document, uri);
-        var marketplace = ReferenceListingUrlPolicy.DetectMarketplace(uri.Host);
-        var candidates = ExtractRankedPriceCandidates(document);
-        var selected = SelectReferencePrice(candidates, selectedSelector);
-        var previewElements = BuildPreviewElements(document, candidates, listing.Title, listing.Description)
-            .Take(48)
-            .ToList();
-
-        MarkSelectedPreviewElement(previewElements, selected);
-
-        return new ReferenceListingPreviewResponse
-        {
-            Url = uri.ToString(),
-            Host = uri.Host,
-            Marketplace = marketplace,
-            Listing = listing,
-            PriceCandidates = candidates,
-            PreviewElements = previewElements,
-            SelectedReference = selected,
-            RequiresReferencePriceSelection = selected == null && candidates.Count > 0,
-            SuggestedFilter = BuildSuggestedFilter(uri, marketplace, listing, selected),
-        };
-    }
+    public ReferenceListingPreviewResponse Build(Uri uri, string html, string? selectedSelector, List<string>? additionalSelectors = null)
+        => BuildFromRender(uri, new RenderedReferenceListing { Html = html }, selectedSelector, additionalSelectors);
 
     public ReferenceListingPreviewResponse BuildFromRender(Uri uri, RenderedReferenceListing render, string? selectedSelector, List<string>? additionalSelectors)
     {
@@ -81,43 +59,40 @@ public class ReferenceListingPreviewService
             .Take(64)
             .ToList();
 
-        var selected = SelectReferencePrice(merged, selectedSelector);
-
-        // Apply summed-additional logic if extra selectors were supplied.
-        if (selected != null && additionalSelectors != null && additionalSelectors.Count > 0)
+        // Explicit picks must resolve exactly, even outside the ranked candidate limit.
+        var selected = string.IsNullOrWhiteSpace(selectedSelector)
+            ? SelectClearReferencePrice(merged)
+            : ResolveSelection(document, render.Nodes, merged, selectedSelector);
+        if (selected != null)
         {
-            var lookup = merged.ToDictionary(c => c.Selector, StringComparer.Ordinal);
-            double sum = selected.Price;
-            var texts = new List<string> { selected.Text };
-            foreach (var extra in additionalSelectors)
+            selected.IsAutoSelected = string.IsNullOrWhiteSpace(selectedSelector);
+            merged.RemoveAll(c => c.Selector == selected.Selector);
+            merged.Insert(0, selected);
+        }
+        if (selected != null && additionalSelectors?.Count > 0)
+        {
+            var extras = additionalSelectors.Where(s => s != selected.Selector).Distinct(StringComparer.Ordinal)
+                .Select(s => ResolveSelection(document, render.Nodes, merged, s)).ToList();
+            // A partial or mixed-currency sum must never change a saved threshold.
+            if (extras.Any(c => c == null || c.Currency != selected.Currency))
+                selected = null;
+            else
             {
-                if (string.IsNullOrWhiteSpace(extra)) continue;
-                if (lookup.TryGetValue(extra, out var extraCandidate))
+                foreach (var extra in extras)
                 {
-                    sum += extraCandidate.Price;
-                    texts.Add(extraCandidate.Text);
+                    merged.RemoveAll(c => c.Selector == extra!.Selector);
+                    merged.Add(extra!);
                 }
-                else
+                selected = new ReferencePriceCandidate
                 {
-                    // Try render nodes directly
-                    var node = render.Nodes.FirstOrDefault(n => n.XPath == extra && n.Price != null);
-                    if (node != null && node.Price != null)
-                    {
-                        sum += node.Price.Value;
-                        texts.Add(node.Text);
-                    }
-                }
+                    Selector = selected.Selector,
+                    Text = string.Join(" + ", new[] { selected.Text }.Concat(extras.Select(c => c!.Text))),
+                    Price = Math.Round(selected.Price + extras.Sum(c => c!.Price), 2),
+                    Currency = selected.Currency,
+                    Confidence = selected.Confidence,
+                    Source = "summed",
+                };
             }
-            selected = new ReferencePriceCandidate
-            {
-                Selector = selected.Selector,
-                Text = string.Join(" + ", texts),
-                Price = Math.Round(sum, 2),
-                Currency = selected.Currency,
-                Confidence = selected.Confidence,
-                Source = "summed",
-                IsAutoSelected = false,
-            };
         }
 
         var previewElements = BuildPreviewElements(document, merged, listing.Title, listing.Description)
@@ -270,17 +245,32 @@ public class ReferenceListingPreviewService
             .ToList();
     }
 
-    private static ReferencePriceCandidate? SelectReferencePrice(IReadOnlyList<ReferencePriceCandidate> candidates, string? selectedSelector)
+    private static ReferencePriceCandidate? ResolveSelection(HtmlDocument document, List<RenderedNode> nodes,
+        List<ReferencePriceCandidate> candidates, string selector)
     {
-        ReferencePriceCandidate? selected = null;
-        if (!string.IsNullOrWhiteSpace(selectedSelector))
-            selected = candidates.FirstOrDefault(c => string.Equals(c.Selector, selectedSelector, StringComparison.Ordinal));
-
-        selected ??= SelectClearReferencePrice(candidates);
-        if (selected != null)
-            selected.IsAutoSelected = string.IsNullOrWhiteSpace(selectedSelector);
-
-        return selected;
+        if (selector.Length > 2048) return null;
+        if (selector.StartsWith('/'))
+        {
+            try
+            {
+                var matches = document.DocumentNode.SelectNodes(selector);
+                if (matches != null)
+                {
+                    if (matches.Count != 1 || matches[0].NodeType != HtmlNodeType.Element) return null;
+                    var node = matches[0];
+                    var text = NormalizeText(node.GetAttributeValue("content", node.InnerText));
+                    if (text.Length > 180 || !TryParsePrice(text, LooksLikePriceNode(node), out var parsed)) return null;
+                    return new ReferencePriceCandidate { Selector = selector, Text = text, Price = parsed.Amount,
+                        Currency = parsed.Currency, Source = "markup" };
+                }
+            }
+            catch (System.Xml.XPath.XPathException) { return null; }
+        }
+        var candidate = candidates.FirstOrDefault(c => c.Selector == selector);
+        if (candidate != null) return candidate;
+        var rendered = nodes.FirstOrDefault(n => n.XPath == selector || n.Css == selector);
+        return rendered?.Price == null ? null : new ReferencePriceCandidate { Selector = selector, Text = rendered.Text,
+            Price = rendered.Price.Value, Currency = rendered.Currency ?? "EUR", Source = "render" };
     }
 
     private static ReferenceListingSuggestedFilter BuildSuggestedFilter(Uri uri, string marketplace, ReferenceListingSummary listing, ReferencePriceCandidate? selected)
@@ -593,20 +583,12 @@ public class ReferenceListingPreviewService
             return "USD";
         if (currency.Equals("£", StringComparison.OrdinalIgnoreCase) || currency.Equals("GBP", StringComparison.OrdinalIgnoreCase))
             return "GBP";
-        if (currency.Equals("CHF", StringComparison.OrdinalIgnoreCase))
-            return "CHF";
+        if (currency.Equals("zł", StringComparison.OrdinalIgnoreCase)) return "PLN";
+        if (currency.Equals("Kč", StringComparison.OrdinalIgnoreCase)) return "CZK";
         return currency.ToUpperInvariant();
     }
 
-    private static bool ContainsCurrency(string text)
-    {
-        return text.Contains('€')
-            || text.Contains('$')
-            || text.Contains('£')
-            || text.Contains("EUR", StringComparison.OrdinalIgnoreCase)
-            || text.Contains("CHF", StringComparison.OrdinalIgnoreCase)
-            || text.Contains("GBP", StringComparison.OrdinalIgnoreCase);
-    }
+    private static bool ContainsCurrency(string text) => CurrencyRegex.IsMatch(text);
 
     private static string BuildProductSearchQuery(string value)
     {
@@ -754,7 +736,8 @@ public static class ReferenceListingUrlPolicy
         if (!Uri.TryCreate(url.Trim(), UriKind.Absolute, out var parsed))
             return false;
 
-        if (parsed.Scheme != Uri.UriSchemeHttp && parsed.Scheme != Uri.UriSchemeHttps)
+        if ((parsed.Scheme != Uri.UriSchemeHttp && parsed.Scheme != Uri.UriSchemeHttps)
+            || !string.IsNullOrEmpty(parsed.UserInfo) || !parsed.IsDefaultPort || parsed.OriginalString.Length > 2048)
             return false;
 
         uri = parsed;
@@ -780,19 +763,43 @@ public static class ReferenceListingUrlPolicy
 
     public static async Task<bool> HostResolvesToPublicAddress(Uri uri, CancellationToken cancellationToken)
     {
-        var addresses = await Dns.GetHostAddressesAsync(uri.Host, cancellationToken);
-        return addresses.Length > 0 && addresses.All(address => !IsPrivateAddress(address));
+        if (IPAddress.TryParse(uri.DnsSafeHost, out var literal))
+            return !IsPrivateAddress(literal);
+        try
+        {
+            var addresses = await Dns.GetHostAddressesAsync(uri.DnsSafeHost, cancellationToken);
+            return addresses.Length > 0 && addresses.All(address => !IsPrivateAddress(address));
+        }
+        catch (SocketException) { return false; }
+    }
+
+    // Resolve again at connect time and connect to that exact public IP, preventing DNS rebinding.
+    public static async ValueTask<Stream> ConnectPublicAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+    {
+        var addresses = await Dns.GetHostAddressesAsync(context.DnsEndPoint.Host, cancellationToken);
+        if (addresses.Length == 0 || addresses.Any(IsPrivateAddress))
+            throw new HttpRequestException("unsupported_host");
+        var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+        try
+        {
+            await socket.ConnectAsync(addresses, context.DnsEndPoint.Port, cancellationToken);
+            return new NetworkStream(socket, ownsSocket: true);
+        }
+        catch { socket.Dispose(); throw; }
     }
 
     private static bool IsPrivateAddress(IPAddress address)
     {
-        if (IPAddress.IsLoopback(address))
+        if (address.IsIPv4MappedToIPv6)
+            address = address.MapToIPv4();
+        if (IPAddress.IsLoopback(address) || address.Equals(IPAddress.Any) || address.Equals(IPAddress.IPv6Any))
             return true;
 
         if (address.AddressFamily == AddressFamily.InterNetwork)
         {
             var bytes = address.GetAddressBytes();
-            return bytes[0] == 10
+            return bytes[0] == 0 || bytes[0] >= 224 || bytes[0] == 100 && bytes[1] >= 64 && bytes[1] <= 127
+                || bytes[0] == 10
                 || bytes[0] == 127
                 || bytes[0] == 169 && bytes[1] == 254
                 || bytes[0] == 172 && bytes[1] >= 16 && bytes[1] <= 31
@@ -802,7 +809,7 @@ public static class ReferenceListingUrlPolicy
         if (address.AddressFamily == AddressFamily.InterNetworkV6)
         {
             var bytes = address.GetAddressBytes();
-            return address.IsIPv6LinkLocal || address.IsIPv6SiteLocal || bytes[0] == 0xfc || bytes[0] == 0xfd;
+            return (bytes[0] & 0xe0) != 0x20; // Only globally routable IPv6 unicast (2000::/3).
         }
 
         return true;
@@ -818,9 +825,13 @@ public static class ReferenceListingUrlPolicy
 
 public class ReferenceListingPreviewRequest
 {
+    [System.ComponentModel.DataAnnotations.Required, System.ComponentModel.DataAnnotations.MaxLength(2048)]
     public string Url { get; set; } = string.Empty;
+    [System.ComponentModel.DataAnnotations.MaxLength(16)]
     public string? Locale { get; set; }
+    [System.ComponentModel.DataAnnotations.MaxLength(2048)]
     public string? SelectedSelector { get; set; }
+    [System.ComponentModel.DataAnnotations.MaxLength(12)]
     public List<string>? AdditionalSelectors { get; set; }
 }
 

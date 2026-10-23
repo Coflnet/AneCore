@@ -72,7 +72,7 @@ def matcher_tokens(s: str) -> list[str]:
     diacritics, split letter/digit joins, drop non-alnum. Used here only to compute sibling exclude
     terms (see compute_prefix_exclude_terms) exactly the way the matcher will tokenize the same alias.
     """
-    s = strip_diacritics(s.lower()).replace("ß", "ss")
+    s = strip_diacritics(s.lower()).replace("ß", "ss").replace("+", " plus ")
     s = re.sub(r"[-_/]+", " ", s)
     s = re.sub(r"(?<=[a-z])(?=[0-9])", " ", s)
     s = re.sub(r"(?<=[0-9])(?=[a-z])", " ", s)
@@ -85,22 +85,19 @@ def compute_prefix_exclude_terms(aliases_by_id: dict[str, set[str]]) -> dict[str
     For every pair of products in the same call where one product's alias is a strict token-prefix of
     another's (e.g. "iphone 14" / "iphone 14 pro"), add the immediate next token ("pro") as an exclude
     term on the shorter one - the same sibling-exclusion pattern used throughout the hand-curated
-    apple-iphones.json seed. Call once per "family" of products that could plausibly collide (e.g. all
-    Galaxy S aliases together) - not over the whole catalogue, which would be O(n^2) for no benefit since
-    unrelated products never share a token prefix anyway... but is still safe/cheap enough at the sizes
-    used by this importer (a few hundred products per family at most).
+    apple-iphones.json seed. Prefix lookup scales with alias tokens, so a whole category or catalogue
+    can be processed without the old quadratic pairwise scan.
     """
-    tokenized = {pid: [matcher_tokens(a) for a in aliases] for pid, aliases in aliases_by_id.items()}
+    # Look up each proper prefix, instead of comparing every pair of products. The expanded
+    # catalogue has thousands of models, so the old quadratic scan made refreshes impractical.
+    owners: dict[tuple[str, ...], set[str]] = {}
+    for pid, aliases in aliases_by_id.items():
+        for alias in aliases:
+            owners.setdefault(tuple(matcher_tokens(alias)), set()).add(pid)
     excludes: dict[str, set[str]] = {pid: set() for pid in aliases_by_id}
-    ids = list(tokenized)
-    for i, pid_a in enumerate(ids):
-        for pid_b in ids:
-            if pid_a == pid_b:
-                continue
-            for a_tokens in tokenized[pid_a]:
-                if not a_tokens:
-                    continue
-                for b_tokens in tokenized[pid_b]:
-                    if len(b_tokens) > len(a_tokens) and b_tokens[: len(a_tokens)] == a_tokens:
-                        excludes[pid_a].add(b_tokens[len(a_tokens)])
+    for tokens, product_ids in owners.items():
+        for end in range(1, len(tokens)):
+            for prefix_id in owners.get(tokens[:end], ()):
+                if product_ids - {prefix_id}:
+                    excludes[prefix_id].add(tokens[end])
     return excludes

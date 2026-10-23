@@ -359,3 +359,60 @@ already used by `build_apple_watch`/`build_airpods`) - every OnePlus alias now i
 SKUs are not modelled (single 256GB entry only); Microsoft Surface/Dell storage and RAM are left free
 (configure-to-order, same as ThinkPad); Dell's XPS line has no generation/model-code granularity; no
 Google Pixel Watch, Fairphone, or Nothing Phone coverage was added (not requested this pass).
+
+## Exact-model expansion (2026-10-23)
+
+`expand_seed.py` adds complete source model names beyond the original caps, while preserving every
+original seed row and its curated aliases. Input is pinned to docyx/pc-part-dataset commit
+`c52a04ca9465c83997ed335f7767b09a2005dd26`, with per-file SHA256 checks in the script. To reproduce:
+
+```bash
+mkdir -p /tmp/ane-catalog-expand
+for category in monitor motherboard headphones; do
+  curl --fail --silent --show-error \
+    "https://raw.githubusercontent.com/docyx/pc-part-dataset/c52a04ca9465c83997ed335f7767b09a2005dd26/data/json/$category.json" \
+    -o "/tmp/ane-catalog-expand/pcpp-$category.json"
+done
+python3 tools/catalog-import/expand_seed.py --raw-dir /tmp/ane-catalog-expand
+python3 -m unittest discover -s tools/catalog-import -p 'test_*.py'
+dotnet test AneCore.Tests/AneCore.Tests.csproj --filter FullyQualifiedName~KnownProduct
+```
+
+Run from the AneCore repository. Generated `*-expanded.json` files are excluded from importer input,
+so a second run or a clean regeneration produces byte-identical files. Run this after `build_seed.py`
+when rebuilding the original catalogue. No upstream requests happen during production startup.
+
+| Category | Original | Added | Total |
+| --- | ---: | ---: | ---: |
+| Monitors | 150 | 4,540 | 4,690 |
+| Motherboards | 30 | 4,818 | 4,848 |
+| Headphones | 43 | 1,176 | 1,219 |
+| Entire catalogue | 1,074 | 10,534 | 11,608 |
+
+Every addition uses its complete source name as its only alias. There are no brandless chipset aliases
+or generated size/capacity combinations. Malformed rows repeating their brand are omitted. Names
+without model numbers are omitted because they often identify an umbrella range (LG UltraGear, HP OMEN). A name with conflicting identifying specifications
+is also omitted: 63 monitor names (screen size/resolution/refresh rate), one motherboard name
+(socket/form factor), and 23 headphone names (wireless/microphone/type/enclosure). These are conservative
+omissions, including possible source rounding errors. Headphones require an explicit `microphone: false`;
+headsets need their own category/guard treatment. Model existence is source-backed, while independent
+manufacturer verification and resale popularity are not asserted for every source record.
+
+Existing categories and stable ids are retained. Full source names improve exact-model coverage;
+marketing words inserted into a different source spelling can still fall back to rule extraction
+(e.g. source `Dell U2723QE`, seller `Dell UltraSharp U2723QE`). The expansion does not guess aliases.
+Each added model is checked against the complete C# matcher for identity, including sibling variants;
+umbrella families, accessories and complete PC systems have explicit negative regressions.
+
+Production startup automatically applies the changed seed hash through `SeedKnownProductsAsync`.
+This seeds matcher records and repairs metadata for already existing exact product ids; it does not
+move historical listings out of old rule-created groups. A reviewed regroup dry run/apply is needed
+to backfill those listings. Existing operator-created known-product rows remain protected by seeding.
+
+Validation on 2026-10-23 checked every added model against the full matcher. The stored 500-listing
+auction audit kept all 189 existing matches unchanged. The earlier 1,286 public-title sample gained
+one correct match (`Lenovo Q24h-10`); its other identities were unchanged. These samples establish
+precision preservation on those titles, not a population-wide recall gain. In a local Debug run the
+11,608-product index built in 708 ms; 10,000 matches took 377 ms for an iPhone title, 1,808 ms for an MSI
+board, 1,622 ms for an Asus board and 202 ms for a Dell monitor. Index construction happens once per
+catalogue refresh, while listing processing reuses that index.
