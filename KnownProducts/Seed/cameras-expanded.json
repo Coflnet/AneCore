@@ -12,7 +12,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 100 IS"
+        "Canon Digital IXUS 100 IS",
+        "Canon IXY DIGITAL 210 IS",
+        "Canon PowerShot SD780 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -30,7 +32,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 110 IS"
+        "Canon Digital IXUS 110 IS",
+        "Canon IXY DIGITAL 510 IS",
+        "Canon PowerShot SD960 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -48,7 +52,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 200 IS"
+        "Canon Digital IXUS 200 IS",
+        "Canon IXY DIGITAL 930 IS",
+        "Canon PowerShot SD980 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -66,10 +72,14 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 300"
+        "Canon Digital IXUS 300",
+        "Canon IXY DIGITAL 300",
+        "Canon PowerShot S300 DIGITAL ELPH"
       ],
       "possibleAttributes": {},
-      "excludeTerms": [],
+      "excludeTerms": [
+        "a"
+      ],
       "source": "seed:cameradatabase-2026-10"
     },
     {
@@ -84,7 +94,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 330"
+        "Canon Digital IXUS 330",
+        "Canon IXY DIGITAL 300a",
+        "Canon PowerShot S330 DIGITAL ELPH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -102,7 +114,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 40"
+        "Canon Digital IXUS 40",
+        "Canon IXY DIGITAL 50",
+        "Canon PowerShot SD300"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -120,7 +134,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 400"
+        "Canon Digital IXUS 400",
+        "Canon IXY DIGITAL 400",
+        "Canon PowerShot S400 DIGITAL ELPH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -138,7 +154,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 430"
+        "Canon Digital IXUS 430",
+        "Canon IXY DIGITAL 450",
+        "Canon PowerShot S410"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -156,7 +174,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 50"
+        "Canon Digital IXUS 50",
+        "Canon IXY DIGITAL 55",
+        "Canon PowerShot SD400"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -174,7 +194,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 500"
+        "Canon Digital IXUS 500",
+        "Canon IXY DIGITAL 500",
+        "Canon PowerShot S500"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -192,7 +214,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 60"
+        "Canon Digital IXUS 60",
+        "Canon IXY DIGITAL 70",
+        "Canon PowerShot SD600"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -210,7 +234,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 65"
+        "Canon Digital IXUS 65",
+        "Canon IXY DIGITAL 80",
+        "Canon PowerShot SD630"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -228,7 +254,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 80 IS"
+        "Canon Digital IXUS 80 IS",
+        "Canon IXY DIGITAL 20 IS",
+        "Canon PowerShot SD1100 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -246,7 +274,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 800 IS"
+        "Canon Digital IXUS 800 IS",
+        "Canon IXY DIGITAL 800 IS",
+        "Canon PowerShot SD700 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -264,7 +294,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 85 IS"
+        "Canon Digital IXUS 85 IS",
+        "Canon IXY DIGITAL 25 IS",
+        "Canon PowerShot SD770 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -282,7 +314,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 850 IS"
+        "Canon Digital IXUS 850 IS",
+        "Canon IXY DIGITAL 900 IS",
+        "Canon PowerShot SD800 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -300,7 +334,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 860 IS"
+        "Canon Digital IXUS 860 IS",
+        "Canon IXY DIGITAL 910 IS",
+        "Canon PowerShot SD870 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -318,7 +354,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 870 IS"
+        "Canon Digital IXUS 870 IS",
+        "Canon IXY DIGITAL 920 IS",
+        "Canon PowerShot SD880 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -336,7 +374,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 90 IS"
+        "Canon Digital IXUS 90 IS",
+        "Canon IXY DIGITAL 95 IS",
+        "Canon PowerShot SD790 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -354,7 +394,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 900 Ti"
+        "Canon Digital IXUS 900 Ti",
+        "Canon IXY DIGITAL 1000",
+        "Canon PowerShot SD900"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -372,7 +414,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 95 IS"
+        "Canon Digital IXUS 95 IS",
+        "Canon IXY DIGITAL 110 IS",
+        "Canon PowerShot SD1200 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -390,7 +434,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 950 IS"
+        "Canon Digital IXUS 950 IS",
+        "Canon IXY DIGITAL 810 IS",
+        "Canon PowerShot SD850 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -408,7 +454,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 960 IS"
+        "Canon Digital IXUS 960 IS",
+        "Canon IXY DIGITAL 2000 IS",
+        "Canon PowerShot SD950 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -426,7 +474,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 970 IS"
+        "Canon Digital IXUS 970 IS",
+        "Canon IXY DIGITAL 820 IS",
+        "Canon PowerShot SD890 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -444,7 +494,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 980 IS"
+        "Canon Digital IXUS 980 IS",
+        "Canon IXY DIGITAL 3000 IS",
+        "Canon PowerShot SD990 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -462,7 +514,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS 990 IS"
+        "Canon Digital IXUS 990 IS",
+        "Canon IXY DIGITAL 830 IS",
+        "Canon PowerShot SD970 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -480,7 +534,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS i7"
+        "Canon Digital IXUS i7",
+        "Canon IXY DIGITAL L4",
+        "Canon PowerShot SD40"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -498,7 +554,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS v2"
+        "Canon Digital IXUS v2",
+        "Canon IXY DIGITAL 200a",
+        "Canon PowerShot S200 DIGITAL ELPH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -516,7 +574,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon Digital IXUS v3"
+        "Canon Digital IXUS v3",
+        "Canon IXY DIGITAL 320",
+        "Canon PowerShot S230 DIGITAL ELPH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -922,7 +982,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon EOS 450D"
+        "Canon EOS 450D",
+        "Canon EOS Kiss X2"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -940,7 +1001,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon EOS 500D"
+        "Canon EOS 500D",
+        "Canon EOS Kiss X3",
+        "Canon EOS Rebel T1i"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1180,10 +1243,14 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 100D",
+        "Canon EOS Kiss X7",
         "Canon EOS Rebel SL1"
       ],
       "possibleAttributes": {},
-      "excludeTerms": [],
+      "excludeTerms": [
+        "i"
+      ],
       "source": "seed:cameradatabase-2026-10"
     },
     {
@@ -1198,6 +1265,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 550D",
+        "Canon EOS Kiss X4",
         "Canon EOS Rebel T2i"
       ],
       "possibleAttributes": {},
@@ -1216,6 +1285,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 1100D",
+        "Canon EOS Kiss X50",
         "Canon EOS Rebel T3"
       ],
       "possibleAttributes": {},
@@ -1236,6 +1307,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 600D",
+        "Canon EOS Kiss X5",
         "Canon EOS Rebel T3i"
       ],
       "possibleAttributes": {},
@@ -1254,6 +1327,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 650D",
+        "Canon EOS Kiss X6i",
         "Canon EOS Rebel T4i"
       ],
       "possibleAttributes": {},
@@ -1272,6 +1347,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 1200D",
+        "Canon EOS Kiss X70",
         "Canon EOS Rebel T5"
       ],
       "possibleAttributes": {},
@@ -1292,6 +1369,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon EOS 700D",
+        "Canon EOS Kiss X7i",
         "Canon EOS Rebel T5i"
       ],
       "possibleAttributes": {},
@@ -1310,7 +1389,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 105"
+        "Canon IXUS 105",
+        "Canon IXY 200F",
+        "Canon PowerShot SD1300 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1328,7 +1409,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 1100 HS"
+        "Canon IXUS 1100 HS",
+        "Canon IXY 51S",
+        "Canon PowerShot ELPH 510 HS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1346,7 +1429,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 130"
+        "Canon IXUS 130",
+        "Canon IXY 400F",
+        "Canon PowerShot SD1400 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1364,7 +1449,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 165"
+        "Canon IXUS 165",
+        "Canon IXY 160",
+        "Canon PowerShot ELPH 165 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1382,7 +1469,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 210"
+        "Canon IXUS 210",
+        "Canon IXY 10S",
+        "Canon PowerShot SD3500 IS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -1400,7 +1489,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Canon IXUS 230 HS"
+        "Canon IXUS 230 HS",
+        "Canon IXY 600F",
+        "Canon PowerShot ELPH 310 HS"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -2698,6 +2789,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 115 HS",
+        "Canon IXY 210F",
         "Canon PowerShot ELPH 100 HS"
       ],
       "possibleAttributes": {},
@@ -2716,6 +2809,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 125 HS",
+        "Canon IXY 220F",
         "Canon PowerShot ELPH 110 HS"
       ],
       "possibleAttributes": {},
@@ -2734,6 +2829,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 132",
+        "Canon IXY 90F",
         "Canon PowerShot ELPH 115 IS"
       ],
       "possibleAttributes": {},
@@ -2752,6 +2849,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 135",
+        "Canon IXY 100F",
         "Canon PowerShot ELPH 120 IS"
       ],
       "possibleAttributes": {},
@@ -2770,6 +2869,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 140",
+        "Canon IXY 110F",
         "Canon PowerShot ELPH 130 IS"
       ],
       "possibleAttributes": {},
@@ -2788,6 +2889,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 145",
+        "Canon IXY 120",
         "Canon PowerShot ELPH 135"
       ],
       "possibleAttributes": {},
@@ -2806,6 +2909,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 150",
+        "Canon IXY 130",
         "Canon PowerShot ELPH 140 IS"
       ],
       "possibleAttributes": {},
@@ -2824,6 +2929,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 155",
+        "Canon IXY 140",
         "Canon PowerShot ELPH 150 IS"
       ],
       "possibleAttributes": {},
@@ -2842,6 +2949,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 160",
+        "Canon IXY 150",
         "Canon PowerShot ELPH 160"
       ],
       "possibleAttributes": {},
@@ -2860,6 +2969,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 170",
+        "Canon IXY 170",
         "Canon PowerShot ELPH 170 IS"
       ],
       "possibleAttributes": {},
@@ -2878,6 +2989,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 175",
+        "Canon IXY 180",
         "Canon PowerShot ELPH 180"
       ],
       "possibleAttributes": {},
@@ -2896,6 +3009,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 180",
+        "Canon IXY 190",
         "Canon PowerShot ELPH 190 IS"
       ],
       "possibleAttributes": {},
@@ -2914,6 +3029,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 220 HS",
+        "Canon IXY 410F",
         "Canon PowerShot ELPH 300 HS"
       ],
       "possibleAttributes": {},
@@ -2932,6 +3049,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 240 HS",
+        "Canon IXY 420F",
         "Canon PowerShot ELPH 320 HS"
       ],
       "possibleAttributes": {},
@@ -2950,6 +3069,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 255 HS",
+        "Canon IXY 610F",
         "Canon PowerShot ELPH 330 HS"
       ],
       "possibleAttributes": {},
@@ -2968,6 +3089,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 265 HS",
+        "Canon IXY 630",
         "Canon PowerShot ELPH 340 HS"
       ],
       "possibleAttributes": {},
@@ -2986,6 +3109,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 275 HS",
+        "Canon IXY 640",
         "Canon PowerShot ELPH 350 HS"
       ],
       "possibleAttributes": {},
@@ -3004,6 +3129,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 285 HS",
+        "Canon IXY 650",
         "Canon PowerShot ELPH 360 HS"
       ],
       "possibleAttributes": {},
@@ -3024,6 +3151,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 285 HS A",
         "Canon PowerShot ELPH 360 HS A"
       ],
       "possibleAttributes": {},
@@ -3042,6 +3170,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 310 HS",
+        "Canon IXY 31S",
         "Canon PowerShot ELPH 500 HS"
       ],
       "possibleAttributes": {},
@@ -3060,6 +3190,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 500 HS",
+        "Canon IXY 3",
         "Canon PowerShot ELPH 520 HS"
       ],
       "possibleAttributes": {},
@@ -3078,6 +3210,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 510 HS",
+        "Canon IXY 1",
         "Canon PowerShot Elph 530 HS"
       ],
       "possibleAttributes": {},
@@ -3747,7 +3881,9 @@
         "Canon PowerShot S200"
       ],
       "possibleAttributes": {},
-      "excludeTerms": [],
+      "excludeTerms": [
+        "digital"
+      ],
       "source": "seed:cameradatabase-2026-10"
     },
     {
@@ -3960,6 +4096,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 70",
+        "Canon IXY DIGITAL 10",
         "Canon PowerShot SD1000"
       ],
       "possibleAttributes": {},
@@ -3978,6 +4116,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS i5",
+        "Canon IXY DIGITAL L2",
         "Canon PowerShot SD20"
       ],
       "possibleAttributes": {},
@@ -3996,6 +4136,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 30",
+        "Canon IXY DIGITAL 40",
         "Canon PowerShot SD200"
       ],
       "possibleAttributes": {},
@@ -4014,6 +4156,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 300 HS",
+        "Canon IXY 30S",
         "Canon PowerShot SD4000 IS"
       ],
       "possibleAttributes": {},
@@ -4050,6 +4194,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 55",
+        "Canon IXY DIGITAL 60",
         "Canon PowerShot SD450"
       ],
       "possibleAttributes": {},
@@ -4068,6 +4214,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon IXUS 1000 HS",
+        "Canon IXY 50S",
         "Canon PowerShot SD4500 IS"
       ],
       "possibleAttributes": {},
@@ -4086,6 +4234,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 700",
+        "Canon IXY DIGITAL 600",
         "Canon PowerShot SD500"
       ],
       "possibleAttributes": {},
@@ -4104,6 +4254,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 750",
+        "Canon IXY DIGITAL 700",
         "Canon PowerShot SD550"
       ],
       "possibleAttributes": {},
@@ -4122,6 +4274,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon DIGITAL IXUS 75",
+        "Canon IXY DIGITAL 90",
         "Canon PowerShot SD750"
       ],
       "possibleAttributes": {},
@@ -4140,6 +4294,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Canon Digital IXUS 120 IS",
+        "Canon IXY DIGITAL 220 IS",
         "Canon PowerShot SD940 IS"
       ],
       "possibleAttributes": {},
@@ -31704,7 +31860,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DC-FZ80"
+        "Panasonic Lumix DC-FZ80",
+        "Panasonic Lumix DC-FZ82"
       ],
       "possibleAttributes": {},
       "excludeTerms": [
@@ -31724,7 +31881,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DC-FZ80D"
+        "Panasonic Lumix DC-FZ80D",
+        "Panasonic Lumix DC-FZ82D",
+        "Panasonic Lumix DC-FZ85D"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -31742,7 +31901,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DC-G100"
+        "Panasonic Lumix DC-G100",
+        "Panasonic Lumix DC-G110"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -31798,6 +31958,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DC-G90",
+        "Panasonic Lumix DC-G91",
         "Panasonic Lumix DC-G95"
       ],
       "possibleAttributes": {},
@@ -31927,6 +32089,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DC-GF9",
+        "Panasonic Lumix DC-GX800",
         "Panasonic Lumix DC-GX850"
       ],
       "possibleAttributes": {},
@@ -32152,6 +32316,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DC-FT7",
         "Panasonic Lumix DC-TS7"
       ],
       "possibleAttributes": {},
@@ -32170,7 +32335,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DC-TZ95"
+        "Panasonic Lumix DC-TZ95",
+        "Panasonic Lumix DC-ZS80"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32188,7 +32354,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DC-TZ99"
+        "Panasonic Lumix DC-TZ99",
+        "Panasonic Lumix DC-ZS99"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32206,6 +32373,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DC-TZ200",
         "Panasonic Lumix DC-ZS200"
       ],
       "possibleAttributes": {},
@@ -32224,6 +32392,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DC-TZ90",
         "Panasonic Lumix DC-ZS70"
       ],
       "possibleAttributes": {},
@@ -32332,7 +32501,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FH1"
+        "Panasonic Lumix DMC-FH1",
+        "Panasonic Lumix DMC-FS10"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32368,7 +32538,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FH20"
+        "Panasonic Lumix DMC-FH20",
+        "Panasonic Lumix DMC-FS30"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32386,7 +32557,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FH3"
+        "Panasonic Lumix DMC-FH3",
+        "Panasonic Lumix DMC-FS11"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32602,6 +32774,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH2",
         "Panasonic Lumix DMC-FS16"
       ],
       "possibleAttributes": {},
@@ -32620,6 +32793,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH5",
         "Panasonic Lumix DMC-FS18"
       ],
       "possibleAttributes": {},
@@ -32674,6 +32848,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH7",
         "Panasonic Lumix DMC-FS22"
       ],
       "possibleAttributes": {},
@@ -32746,6 +32921,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH22",
         "Panasonic Lumix DMC-FS33"
       ],
       "possibleAttributes": {},
@@ -32764,6 +32940,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH25",
         "Panasonic Lumix DMC-FS35"
       ],
       "possibleAttributes": {},
@@ -32782,6 +32959,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FH27",
         "Panasonic Lumix DMC-FS37"
       ],
       "possibleAttributes": {},
@@ -32926,7 +33104,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FT1"
+        "Panasonic Lumix DMC-FT1",
+        "Panasonic Lumix DMC-TS1"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32944,7 +33123,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FT20"
+        "Panasonic Lumix DMC-FT20",
+        "Panasonic Lumix DMC-TS20"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32962,7 +33142,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FT3"
+        "Panasonic Lumix DMC-FT3",
+        "Panasonic Lumix DMC-TS3"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32980,7 +33161,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FT30"
+        "Panasonic Lumix DMC-FT30",
+        "Panasonic Lumix DMC-TS30"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -32998,7 +33180,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FT4"
+        "Panasonic Lumix DMC-FT4",
+        "Panasonic Lumix DMC-TS4"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33250,7 +33433,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FX40"
+        "Panasonic Lumix DMC-FX40",
+        "Panasonic Lumix DMC-FX48"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33340,7 +33524,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FX550"
+        "Panasonic Lumix DMC-FX550",
+        "Panasonic Lumix DMC-FX580"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33358,6 +33543,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FX60",
         "Panasonic Lumix DMC-FX65"
       ],
       "possibleAttributes": {},
@@ -33376,6 +33562,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FX66",
         "Panasonic Lumix DMC-FX68"
       ],
       "possibleAttributes": {},
@@ -33430,6 +33617,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FX70",
         "Panasonic Lumix DMC-FX75"
       ],
       "possibleAttributes": {},
@@ -33448,7 +33636,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FX77"
+        "Panasonic Lumix DMC-FX77",
+        "Panasonic Lumix DMC-FX78"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33718,7 +33907,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FZ2500"
+        "Panasonic Lumix DMC-FZ2000",
+        "Panasonic Lumix DMC-FZ2500",
+        "Panasonic Lumix DMC-FZH1"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33808,6 +33999,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FZ35",
         "Panasonic Lumix DMC-FZ38"
       ],
       "possibleAttributes": {},
@@ -33844,7 +34036,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FZ40"
+        "Panasonic Lumix DMC-FZ40",
+        "Panasonic Lumix DMC-FZ45"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33862,7 +34055,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FZ47"
+        "Panasonic Lumix DMC-FZ47",
+        "Panasonic Lumix DMC-FZ48"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -33916,7 +34110,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-FZ60"
+        "Panasonic Lumix DMC-FZ60",
+        "Panasonic Lumix DMC-FZ62"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -34114,6 +34309,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-G8",
+        "Panasonic Lumix DMC-G80",
+        "Panasonic Lumix DMC-G81",
         "Panasonic Lumix DMC-G85"
       ],
       "possibleAttributes": {},
@@ -34387,7 +34585,9 @@
         "Panasonic Lumix DMC-GX7"
       ],
       "possibleAttributes": {},
-      "excludeTerms": [],
+      "excludeTerms": [
+        "mark"
+      ],
       "source": "seed:cameradatabase-2026-10"
     },
     {
@@ -34420,6 +34620,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-GX7 Mark II",
+        "Panasonic Lumix DMC-GX80",
         "Panasonic Lumix DMC-GX85"
       ],
       "possibleAttributes": {},
@@ -34834,7 +35036,9 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-LX10"
+        "Panasonic Lumix DMC-LX10",
+        "Panasonic Lumix DMC-LX15",
+        "Panasonic Lumix DMC-LX9"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35338,6 +35542,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FT10",
         "Panasonic Lumix DMC-TS10"
       ],
       "possibleAttributes": {},
@@ -35356,6 +35561,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FT2",
         "Panasonic Lumix DMC-TS2"
       ],
       "possibleAttributes": {},
@@ -35374,6 +35580,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FT25",
         "Panasonic Lumix DMC-TS25"
       ],
       "possibleAttributes": {},
@@ -35392,6 +35599,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FT5",
         "Panasonic Lumix DMC-TS5"
       ],
       "possibleAttributes": {},
@@ -35410,6 +35618,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-FT6",
         "Panasonic Lumix DMC-TS6"
       ],
       "possibleAttributes": {},
@@ -35482,7 +35691,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ25"
+        "Panasonic Lumix DMC-TZ25",
+        "Panasonic Lumix DMC-ZS15"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35518,7 +35728,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ30"
+        "Panasonic Lumix DMC-TZ30",
+        "Panasonic Lumix DMC-ZS20"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35608,7 +35819,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ57"
+        "Panasonic Lumix DMC-TZ57",
+        "Panasonic Lumix DMC-ZS45"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35626,7 +35838,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ6"
+        "Panasonic Lumix DMC-TZ6",
+        "Panasonic Lumix DMC-ZS1"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35644,7 +35857,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ7"
+        "Panasonic Lumix DMC-TZ7",
+        "Panasonic Lumix DMC-ZS3"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35662,7 +35876,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-TZ70"
+        "Panasonic Lumix DMC-TZ70",
+        "Panasonic Lumix DMC-ZS50"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35716,7 +35931,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-ZR1"
+        "Panasonic Lumix DMC-ZR1",
+        "Panasonic Lumix DMC-ZX1"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35734,7 +35950,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Panasonic Lumix DMC-ZR3"
+        "Panasonic Lumix DMC-ZR3",
+        "Panasonic Lumix DMC-ZX3"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -35752,6 +35969,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ20",
         "Panasonic Lumix DMC-ZS10"
       ],
       "possibleAttributes": {},
@@ -35770,6 +35988,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ100",
         "Panasonic Lumix DMC-ZS100"
       ],
       "possibleAttributes": {},
@@ -35788,6 +36007,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ35",
         "Panasonic Lumix DMC-ZS25"
       ],
       "possibleAttributes": {},
@@ -35806,6 +36026,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ40",
         "Panasonic Lumix DMC-ZS30"
       ],
       "possibleAttributes": {},
@@ -35824,6 +36045,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ55",
         "Panasonic Lumix DMC-ZS35"
       ],
       "possibleAttributes": {},
@@ -35842,6 +36064,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ60",
         "Panasonic Lumix DMC-ZS40"
       ],
       "possibleAttributes": {},
@@ -35860,6 +36083,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ8",
         "Panasonic Lumix DMC-ZS5"
       ],
       "possibleAttributes": {},
@@ -35878,6 +36102,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ80",
         "Panasonic Lumix DMC-ZS60"
       ],
       "possibleAttributes": {},
@@ -35896,6 +36121,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ10",
         "Panasonic Lumix DMC-ZS7"
       ],
       "possibleAttributes": {},
@@ -35914,6 +36140,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Panasonic Lumix DMC-TZ18",
         "Panasonic Lumix DMC-ZS8"
       ],
       "possibleAttributes": {},

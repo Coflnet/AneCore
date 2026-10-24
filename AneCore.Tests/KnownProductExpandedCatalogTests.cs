@@ -26,6 +26,15 @@ public class KnownProductExpandedCatalogTests
         Assert.That(failures, Is.Empty);
     }
 
+    [TestCase("Canon EOS Rebel T5", "canon-eos-rebel-t5")]
+    [TestCase("Canon EOS 1200D", "canon-eos-rebel-t5")]
+    [TestCase("Canon EOS 1200D / EOS Rebel T5", "canon-eos-rebel-t5")]
+    [TestCase("Canon EOS 1200D / Canon EOS Rebel T5", "canon-eos-rebel-t5")]
+    [TestCase("Canon EOS Kiss X70", "canon-eos-rebel-t5")]
+    [TestCase("Canon EOS Rebel SL1", "canon-eos-rebel-sl1")]
+    [TestCase("Canon EOS 100D", "canon-eos-rebel-sl1")]
+    [TestCase("Canon EOS Kiss X7", "canon-eos-rebel-sl1")]
+    [TestCase("Panasonic Lumix DMC-GX80", "panasonic-lumix-dmc-gx85")]
     [TestCase("Samsung NX3000", "samsung-nx3000")]
     [TestCase("Nvidia Quadro P2000", "nvidia-quadro-p2000")]
     [TestCase("AMD Radeon Pro WX 5100", "amd-radeon-pro-wx-5100")]
@@ -99,6 +108,15 @@ public class KnownProductExpandedCatalogTests
     public void ExactComponents_KeepTheirIdentity(string title, string expectedId)
     {
         Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(expectedId));
+    }
+
+    [Test]
+    public void EveryImportedCameraAlias_ResolvesToItsCanonicalIdentity()
+    {
+        var failures = Catalog.Where(p => p.Source == "seed:cameradatabase-2026-10")
+            .SelectMany(p => p.Aliases.Where(alias => Matcher.Match(alias)?.Id != p.Id)
+                .Select(alias => $"{p.Id}: '{alias}' matched {Matcher.Match(alias)?.Id ?? "nothing"}"));
+        Assert.That(failures, Is.Empty);
     }
 
     [Test]

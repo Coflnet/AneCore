@@ -476,3 +476,9 @@ dotnet test AneCore.Tests/AneCore.Tests.csproj --filter 'FullyQualifiedName~Know
 This pass adds 278 GPU chipset families and 2,812 digital camera models (15,801 → 18,891 total).
 The previous capped-camera/consumer-GPU coverage notes above describe the original seed files;
 these additive files broaden those families without rewriting their curated entries.
+
+A follow-up adds 219 numeric regional aliases from the pinned camera source's explicit
+`Also known as` field to 139 new camera rows, preserving the 18,891 identities. Only full
+brand-plus-model aliases are emitted; only the source's trailing `(US)`/`(Japan)` country labels
+are removed. Conflicts with existing names or another source row's primary/alternate aliases
+are omitted. No regional equivalences are inferred from matching specifications.

@@ -5,6 +5,8 @@ import csv
 import hashlib
 import io
 import json
+import re
+from collections import defaultdict
 from pathlib import Path
 
 import build_seed as seed
@@ -33,6 +35,7 @@ def expand(raw_dir):
     gpu_rows = json.loads(pinned_bytes(raw_dir / "pcpp-video-card.json", GPU_SHA256))
     camera_rows = csv.DictReader(io.StringIO(pinned_bytes(raw_dir / "camera_data.csv", CAMERA_SHA256).decode()))
     candidates = {"gpu-expanded": [], "cameras-expanded": []}
+    regional = defaultdict(set)
     for chip in sorted({seed.clean_gpu_chipset(r["chipset"]) for r in gpu_rows}):
         brand = ("Intel" if chip.startswith("Arc ") else "AMD" if chip.startswith(("Radeon ", "Fire", "Vega "))
                  else "Nvidia")
@@ -53,6 +56,12 @@ def expand(raw_dir):
         product = seed.make_product(nz.slugify(name), brand, model, name, seed.CAT_CAMERA, "electronics",
                                     {name}, "cameradatabase")
         product["source"] = "seed:cameradatabase-2026-10"
+        for alias in row.get("Also known as", "").split(","):
+            # These are the only country annotations present in the pinned source; retain no
+            # unknown parenthetical text as a model alias and infer no regional equivalences.
+            alias = re.sub(r"\((?:US|Japan)\)$", "", alias.strip()).strip()
+            if any(c.isdigit() for c in alias) and "(" not in alias and ")" not in alias:
+                regional[product["id"]].add(f"{brand} {alias.removeprefix(brand + ' ')}")
         candidates["cameras-expanded"].append(product)
     ids = {p["id"] for p in existing}
     aliases = {tuple(nz.matcher_tokens(a)) for p in existing for a in p["aliases"]}
@@ -65,6 +74,15 @@ def expand(raw_dir):
             products.append(product)
             ids.add(product["id"])
             aliases.update(keys)
+        if output == "cameras-expanded":
+            owners = defaultdict(set)
+            for product in existing + rows:
+                for alias in set(product["aliases"]) | regional.get(product["id"], set()):
+                    owners[tuple(nz.matcher_tokens(alias))].add(product["id"])
+            for product in products:
+                safe = {a for a in regional[product["id"]]
+                        if owners[tuple(nz.matcher_tokens(a))] == {product["id"]}}
+                product["aliases"] = sorted(set(product["aliases"]) | safe)
         excludes = nz.compute_prefix_exclude_terms({p["id"]: set(p["aliases"]) for p in existing + products})
         for product in products:
             # A desktop GTX 780 must not claim a laptop's GTX 780M; explicit source M models retain

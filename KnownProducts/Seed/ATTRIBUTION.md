@@ -197,6 +197,9 @@ are included. Existing GPU identities and aliases remain authoritative.
 retrieved 2026-10-24, licensed MIT. This covers Canon, Nikon, Sony, Fujifilm, Olympus, Panasonic,
 Pentax, Ricoh, Leica, Sigma, Kodak, Casio, Minolta, Konica-Minolta and Samsung. Names must include a
 numeric model identifier, and only complete brand-plus-model source names are added as aliases.
+A follow-up adds 219 explicit numeric regional names from `Also known as` to 139 of these new
+rows, omitting collisions and stripping only source `(US)`/`(Japan)` country labels; identities
+and the 18,891-product catalogue count remain unchanged.
 The source's Nokia smartphone rows and other unreviewed manufacturers are excluded. Existing
 identities and aliases are preserved. Camera attributes remain free rather than inferring values
 from historical specification columns. The dataset establishes model names, not current resale

@@ -65,13 +65,14 @@ class RemainingFamilyExpansionTests(unittest.TestCase):
         import expand_families as expansion
         gpu = json.dumps([{"chipset": "Quadro P2000"}, {"chipset": "RTX A2000 6GB"},
                           {"chipset": "RTX A2000 12GB"}]).encode()
-        cameras = ("Brand,Model\nNikon,D850\nNokia,Lumia 1020\nFujifilm,X-T5\n"
-                   "Panasonic,Lumix\n").encode()
+        cameras = ("Brand,Model,Also known as\nNikon,D850,\nNokia,Lumia 1020,\n"
+                   'Fujifilm,X-T5,"X-T05(Japan),X-T005(US),Shared99,Existing9,X-T6,Series X,X-T5(Typ100)"\n'
+                   "Fujifilm,X-T6,Shared99\nPanasonic,Lumix,\n").encode()
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
             seeds = directory / "seeds"
             seeds.mkdir()
-            original = json.dumps({"products": [{"id": "preserved", "aliases": ["Nikon D850"]}]}).encode()
+            original = json.dumps({"products": [{"id": "preserved", "aliases": ["Nikon D850", "Fujifilm Existing9"]}]}).encode()
             (seeds / "earlier-expanded.json").write_bytes(original)
             (directory / "pcpp-video-card.json").write_bytes(gpu)
             (directory / "camera_data.csv").write_bytes(cameras)
@@ -81,7 +82,10 @@ class RemainingFamilyExpansionTests(unittest.TestCase):
                 expansion.expand(directory)
                 paths = [seeds / f"{name}.json" for name in sorted(expansion.OUTPUTS)]
                 first = [p.read_bytes() for p in paths]
-                self.assertEqual([p["name"] for p in json.loads(first[0])["products"]], ["Fujifilm X-T5"])
+                imported_cameras = json.loads(first[0])["products"]
+                self.assertEqual([p["name"] for p in imported_cameras], ["Fujifilm X-T5", "Fujifilm X-T6"])
+                self.assertEqual(imported_cameras[0]["aliases"], ["Fujifilm X-T005", "Fujifilm X-T05", "Fujifilm X-T5"])
+                self.assertEqual(imported_cameras[1]["aliases"], ["Fujifilm X-T6"])
                 self.assertEqual([p["name"] for p in json.loads(first[1])["products"]],
                                  ["Nvidia Quadro P2000", "Nvidia RTX A2000"])
                 expansion.expand(directory)
