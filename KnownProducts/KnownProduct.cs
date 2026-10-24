@@ -21,7 +21,7 @@ public class KnownProduct
     /// <summary>German taxonomy path as used on products (e.g. Elektronik, Kommunikationsgeräte, Telefone, Mobiltelefone).</summary>
     public List<string> Categories { get; set; } = new();
 
-    /// <summary>One of "electronics", "clothing", "cards" - informational, not used for matching.</summary>
+    /// <summary>Catalogue vertical, e.g. "electronics", "clothing", "cards", "lego"; enables vertical-specific matching guards.</summary>
     public string Vertical { get; set; } = "";
 
     /// <summary>

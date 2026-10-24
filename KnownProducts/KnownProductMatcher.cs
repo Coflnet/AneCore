@@ -224,6 +224,15 @@ public class KnownProductMatcher
                     continue;
                 if (!IsCategoryCompatible(entry.Product, categoryPath))
                     continue;
+                // A set number can also name a manual, empty box, partial set or custom build.
+                // Keep those offers on the extraction path, where their scope is preserved.
+                if (entry.Product.Vertical == "lego" &&
+                    (Regex.IsMatch(normalizedTitle, @"\b(?:unvollstandig|incomplete|fehlteile|konvolut|sammlung|bundle|moc|nachbau|kompatibel|nur|ohne)\b", Opts)
+                     || Regex.Matches(normalizedTitle, @"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light)\b", Opts)
+                         .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
+                     || titleTokens.Where(t => Regex.IsMatch(t, @"^\d{4,7}$", Opts)).Distinct().Count() > 1
+                     || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts)))
+                    continue;
                 matches.Add((entry.Product, aliasTokens.Length, i));
             }
         }

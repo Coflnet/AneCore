@@ -482,3 +482,30 @@ A follow-up adds 219 numeric regional aliases from the pinned camera source's ex
 brand-plus-model aliases are emitted; only the source's trailing `(US)`/`(Japan)` country labels
 are removed. Conflicts with existing names or another source row's primary/alternate aliases
 are omitted. No regional equivalences are inferred from matching specifications.
+
+### LEGO identity import (2026-10 round 2)
+
+`expand_lego.py` writes only `lego-sets.json` and leaves previous seed files unchanged.
+It requires Python 3 and `7z`. Download the fixed historical archive and retain the current
+set-list snapshot (its rolling URL will change; the importer intentionally rejects changed bytes):
+
+```sh
+curl -L --fail https://joncraton.org/files/lego_sets_20140302.7z -o lego_sets_20140302.7z
+curl -L --fail https://cdn.rebrickable.com/media/downloads/sets.csv.gz -o sets.csv.gz
+python3 tools/catalog-import/expand_lego.py --archive lego_sets_20140302.7z --current-sets sets.csv.gz
+```
+
+Inputs are SHA-256 pinned in the script. The 2014 archive has an explicit owner-authorized
+CC BY-SA 3.0 grant (see seed attribution); only its numeric identities are imported. The
+current CSV contributes only a veto for reused printed numbers. Rows with multiple editions,
+non-numeric/short/long codes, leading zeros or empty inventories are excluded. No suffix such as
+`-1` is silently conflated with another edition. Historical names remain `LEGO Set <number>`;
+four modern names are individually verified against the official pages linked in attribution.
+
+Result: 5,630 LEGO identities (5,626 historical + 4 official), taking the expanded catalogue
+from 18,891 to 24,521. Aliases require LEGO and an exact printed number; no bare-number or
+name-only aliases. Manual, box, partial, custom-build and multiple-code offers are held out
+of the known-product fast path for ordinary extraction to retain their scope.
+
+No vinyl title/artist seed is added: these identify recordings or albums, not an exact pressing.
+Vinyl crawling and extraction can proceed without guessing country/year/format/label editions.

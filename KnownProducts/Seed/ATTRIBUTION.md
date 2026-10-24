@@ -229,3 +229,26 @@ validation commands are in its README. CameraDatabase's notice follows:
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
+
+### LEGO exact set identities (2026-10 round 2)
+
+`lego-sets.json` includes 5,626 historic identities derived from Jonathan Craton's
+[2014-03-02 archive](https://joncraton.org/files/lego_sets_20140302.7z), sourced from
+Rebrickable with Nathan's explicit permission under **CC BY-SA 3.0** as recorded on the
+[author's release page](https://joncraton.org/blog/68/lego-set-database/).
+Copyright Rebrickable / Jonathan Craton; the historical derived rows are provided under
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Changes: inventory details discarded, unique 4/5 digit printed identities retained, synthetic
+`LEGO Set <number>` labels and Ane taxonomy/aliases added. No historical display names are inferred.
+
+Four additional individually verified factual identities come from the official LEGO product pages:
+[10294 Titanic](https://www.lego.com/en-us/product/lego-titanic-10294),
+[42115 Lamborghini Sián FKP 37](https://www.lego.com/en-us/product/lamborghini-sian-fkp-37-42115),
+[42143 Ferrari Daytona SP3](https://www.lego.com/en-us/product/ferrari-daytona-sp3-42143),
+[75192 Millennium Falcon](https://www.lego.com/en-us/product/millennium-falcon-75192).
+Only the product number and short product name are recorded; no descriptions or images are reused.
+
+A pinned current Rebrickable set list is used only to **reject reused numbers**, not to import names
+or other metadata. Current Rebrickable licensing was not asserted: its downloads/terms pages
+returned HTTP 403 during verification. See `tools/catalog-import/expand_lego.py` for both SHA-256 pins.
+LEGO is a trademark of the LEGO Group, which does not sponsor or endorse this project.
