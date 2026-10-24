@@ -25,6 +25,7 @@ public class KnownProductLegoCatalogTests
     [TestCase("LEGO 75192-1 Millennium Falcon", "lego-75192")]
     [TestCase("LEGO 75192 mit Anleitung", "lego-75192")]
     [TestCase("LEGO 42115 mit Box", "lego-42115")]
+    [TestCase("LEGO 75192 mit Originalverpackung und Anleitung", "lego-75192")]
     [TestCase("LEGO 10294 Titanic", "lego-10294")]
     public void ExactBrandAndSetNumberMatch(string title, string expected)
     {
@@ -36,6 +37,8 @@ public class KnownProductLegoCatalogTests
     [TestCase("LEGO 42115 Bauanleitung")]
     [TestCase("LEGO 42115 nur OVP")]
     [TestCase("LEGO 42115 Karton")]
+    [TestCase("Nur die Verpackung Lego 75192 Falcon")]
+    [TestCase("LEGO 75192 - beleuchtet, inkl. Hangar & Tisch")]
     [TestCase("LEGO 42115 unvollständig")]
     [TestCase("LEGO 42115 ohne Figuren")]
     [TestCase("LEGO 42115 MOC")]
