@@ -7,6 +7,8 @@ namespace AneCore.Tests;
 public class PartClassRegistryTests
 {
     // B1: the class is decided from the title only, with anchored nouns and an exclusion list
+    [TestCase("MITCHELL 308X GOLD (10 KUGELLAGER)")]
+    [TestCase("Innenlager-Abzieher 3-Arm-Lager- & Kugellager-Abzieher Brand7 YZ-5062")]
     [TestCase("Metal Gear Solid PS2")]
     [TestCase("Gears of War 3 Xbox 360")]
     [TestCase("Top Gear DVD Box")]
@@ -49,6 +51,13 @@ public class PartClassRegistryTests
     [TestCase("Tandwiel 40 tanden", "gear")]
     [TestCase("Zahnriemenrad 20 Zähne", "gear")]
     [TestCase("Kugellager 6203-2RS", "bearing")]
+    [TestCase("Rillenkugellager skf 698RS EZO 4 Stück Kugellager", "bearing")]
+    [TestCase("10 Kugellager 6203", "bearing")]
+    [TestCase("Kugellager 6203 (10 Kugellager)", "bearing")]
+    [TestCase("Kugellager 6203 für Kugellager-Abzieher", "bearing")]
+    [TestCase("Replacement bearing 6203 for MITCHELL fishing reel", "bearing")]
+    [TestCase("Replacement gear 36 teeth for MITCHELL fishing reel", "gear")]
+    [TestCase("Zahnrad 24 Zähne für MITCHELL 308X GOLD (10 KUGELLAGER)", "gear")]
     [TestCase("Ball bearing 608ZZ skateboard", "bearing")]
     [TestCase("Keilriemen SPZ 1000", "belt")]
     [TestCase("Kettenrad 42 Zähne Simson", "sprocket")]

@@ -110,6 +110,12 @@ public static class PartClassRegistry
         @"motorrad|roller|auto|pkw|lkw|kawasaki|yamaha|honda|suzuki|bmw|audi|vw|mercedes|ford|opel|toyota|skoda)(?![\p{L}\p{N}])",
         Opts);
 
+    // A device's bearing count and the names of bearing-puller tools do not name a bearing for sale.
+    // Remove only those mentions, so a separate replacement bearing noun in the same title still counts.
+    private static readonly Regex BearingNonPartMentions = new(
+        @"\(\s*\d+\s*(?:kugellager|ball\s?bearings?)\s*\)|(?<![\p{L}\p{N}])(?:\p{L}*lager[\s-]*&\s*)?\p{L}*lager[\s-]*abzieher(?![\p{L}\p{N}])",
+        Opts);
+
     public static PartClassDefinition? Find(string? name) => name == null ? null : All.FirstOrDefault(c => string.Equals(c.Name, name, StringComparison.Ordinal));
 
     /// <summary>
@@ -123,7 +129,7 @@ public static class PartClassRegistry
             return null;
         foreach (var cls in All)
         {
-            var m = cls.NounRegex.Match(folded);
+            var m = cls.NounRegex.Match(cls == Bearing ? BearingNonPartMentions.Replace(folded, " ") : folded);
             if (m.Success)
                 return new PartClassMatch(cls, m.Value.Trim());
         }
