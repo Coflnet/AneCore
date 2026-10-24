@@ -46,7 +46,7 @@ public class KnownProductMatcher
         // unconditional accessory word - no seeded headphone product's own alias contains that word (they
         // are all specific brand+model names, e.g. "Bose QuietComfort 45"), so this cannot veto a
         // legitimate headphone listing, only a "<device> headset/Gaming-Headset" accessory-for-device one.
-        "tasche", "tragetasche", "skin", "lufter", "kuhler", "headset",
+        "tasche", "tragetasche", "camera bag", "skin", "lufter", "kuhler", "headset",
         // "Akku" (German "battery") - a replacement/spare battery listing for a camera/laptop/phone is an
         // accessory, not the device itself (found via this task's catalogue-recall pass: "Sony A7 III
         // Akku" was matching the camera before this was added).
@@ -73,7 +73,7 @@ public class KnownProductMatcher
     /// <summary>Titles containing one of these indicate a complete system, not a single listed part - see <see cref="IsCompleteSystemListing"/>.</summary>
     private static readonly string[] CompleteSystemWords =
     {
-        "gaming pc", "gamingpc", "komplett pc", "komplettpc", "rechner", "desktop pc", "desktoppc",
+        "gaming pc", "gamingpc", "gaming dator", "bundle", "komplett pc", "komplettpc", "rechner", "desktop pc", "desktoppc",
     };
 
     /// <summary>
@@ -253,14 +253,18 @@ public class KnownProductMatcher
     }
 
     /// <summary>
-    /// Explicit whole-system phrases before a component, or a motherboard/CPU bundle, describe a
-    /// container rather than the component itself. Generic "Rechner" wording still needs multiple
-    /// matched components so ordinary upgrade listings continue to match.
+    /// Explicit whole-system or bundle phrases before a component, a motherboard/CPU bundle, or
+    /// separate camera bodies describe an offer containing multiple items. Generic "Rechner" wording
+    /// still needs multiple matched components so ordinary upgrade listings continue to match.
     /// </summary>
     private static List<(KnownProduct Product, int TokenCount, int StartIndex)> ApplyContainerVeto(
         List<(KnownProduct Product, int TokenCount, int StartIndex)> matches, string[] titleTokens,
         string normalizedTitle, string title)
     {
+        // Separate camera names in one title describe a multi-camera offer, not either single body.
+        var cameras = matches.Where(m => m.Product.Categories.LastOrDefault() == "Digitalkameras").ToList();
+        if (cameras.Any(a => cameras.Any(b => a.Product.Id != b.Product.Id && a.StartIndex + a.TokenCount <= b.StartIndex)))
+            matches = matches.Where(m => m.Product.Categories.LastOrDefault() != "Digitalkameras").ToList();
         var componentMatches = matches.Where(m => IsComponentCategory(m.Product)).ToList();
         if (componentMatches.Count == 0)
             return matches;

@@ -1,0 +1,6606 @@
+{
+  "products": [
+    {
+      "id": "amd-firegl-v7300",
+      "brand": "AMD",
+      "model": "FireGL V7300",
+      "name": "AMD FireGL V7300",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FireGL V7300",
+        "FireGL V7300"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-2270",
+      "brand": "AMD",
+      "model": "FirePro 2270",
+      "name": "AMD FirePro 2270",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro 2270",
+        "FirePro 2270"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-2450",
+      "brand": "AMD",
+      "model": "FirePro 2450",
+      "name": "AMD FirePro 2450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro 2450",
+        "FirePro 2450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-2460",
+      "brand": "AMD",
+      "model": "FirePro 2460",
+      "name": "AMD FirePro 2460",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro 2460",
+        "FirePro 2460"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-r5000",
+      "brand": "AMD",
+      "model": "FirePro R5000",
+      "name": "AMD FirePro R5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro R5000",
+        "FirePro R5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-rg220a",
+      "brand": "AMD",
+      "model": "FirePro RG220A",
+      "name": "AMD FirePro RG220A",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro RG220A",
+        "FirePro RG220A"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-s10000",
+      "brand": "AMD",
+      "model": "FirePro S10000",
+      "name": "AMD FirePro S10000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro S10000",
+        "FirePro S10000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-s7000",
+      "brand": "AMD",
+      "model": "FirePro S7000",
+      "name": "AMD FirePro S7000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro S7000",
+        "FirePro S7000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-s9000",
+      "brand": "AMD",
+      "model": "FirePro S9000",
+      "name": "AMD FirePro S9000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro S9000",
+        "FirePro S9000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-s9050",
+      "brand": "AMD",
+      "model": "FirePro S9050",
+      "name": "AMD FirePro S9050",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro S9050",
+        "FirePro S9050"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-s9150",
+      "brand": "AMD",
+      "model": "FirePro S9150",
+      "name": "AMD FirePro S9150",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro S9150",
+        "FirePro S9150"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v3800",
+      "brand": "AMD",
+      "model": "FirePro V3800",
+      "name": "AMD FirePro V3800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V3800",
+        "FirePro V3800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v3900",
+      "brand": "AMD",
+      "model": "FirePro V3900",
+      "name": "AMD FirePro V3900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V3900",
+        "FirePro V3900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v4900",
+      "brand": "AMD",
+      "model": "FirePro V4900",
+      "name": "AMD FirePro V4900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V4900",
+        "FirePro V4900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v5700",
+      "brand": "AMD",
+      "model": "FirePro V5700",
+      "name": "AMD FirePro V5700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V5700",
+        "FirePro V5700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v5800",
+      "brand": "AMD",
+      "model": "FirePro V5800",
+      "name": "AMD FirePro V5800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V5800",
+        "FirePro V5800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v5900",
+      "brand": "AMD",
+      "model": "FirePro V5900",
+      "name": "AMD FirePro V5900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V5900",
+        "FirePro V5900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v7750",
+      "brand": "AMD",
+      "model": "FirePro V7750",
+      "name": "AMD FirePro V7750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V7750",
+        "FirePro V7750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v7900",
+      "brand": "AMD",
+      "model": "FirePro V7900",
+      "name": "AMD FirePro V7900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V7900",
+        "FirePro V7900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "sdi"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v7900-sdi",
+      "brand": "AMD",
+      "model": "FirePro V7900 SDI",
+      "name": "AMD FirePro V7900 SDI",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V7900 SDI",
+        "FirePro V7900 SDI"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v8750",
+      "brand": "AMD",
+      "model": "FirePro V8750",
+      "name": "AMD FirePro V8750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V8750",
+        "FirePro V8750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v8800",
+      "brand": "AMD",
+      "model": "FirePro V8800",
+      "name": "AMD FirePro V8800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V8800",
+        "FirePro V8800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-v9800",
+      "brand": "AMD",
+      "model": "FirePro V9800",
+      "name": "AMD FirePro V9800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro V9800",
+        "FirePro V9800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w2100",
+      "brand": "AMD",
+      "model": "FirePro W2100",
+      "name": "AMD FirePro W2100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W2100",
+        "FirePro W2100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w4100",
+      "brand": "AMD",
+      "model": "FirePro W4100",
+      "name": "AMD FirePro W4100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W4100",
+        "FirePro W4100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w4300",
+      "brand": "AMD",
+      "model": "FirePro W4300",
+      "name": "AMD FirePro W4300",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W4300",
+        "FirePro W4300"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w5000",
+      "brand": "AMD",
+      "model": "FirePro W5000",
+      "name": "AMD FirePro W5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W5000",
+        "FirePro W5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w5100",
+      "brand": "AMD",
+      "model": "FirePro W5100",
+      "name": "AMD FirePro W5100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W5100",
+        "FirePro W5100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w600",
+      "brand": "AMD",
+      "model": "FirePro W600",
+      "name": "AMD FirePro W600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W600",
+        "FirePro W600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w7000",
+      "brand": "AMD",
+      "model": "FirePro W7000",
+      "name": "AMD FirePro W7000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W7000",
+        "FirePro W7000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w7100",
+      "brand": "AMD",
+      "model": "FirePro W7100",
+      "name": "AMD FirePro W7100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W7100",
+        "FirePro W7100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w8000",
+      "brand": "AMD",
+      "model": "FirePro W8000",
+      "name": "AMD FirePro W8000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W8000",
+        "FirePro W8000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w8100",
+      "brand": "AMD",
+      "model": "FirePro W8100",
+      "name": "AMD FirePro W8100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W8100",
+        "FirePro W8100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w9000",
+      "brand": "AMD",
+      "model": "FirePro W9000",
+      "name": "AMD FirePro W9000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W9000",
+        "FirePro W9000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-firepro-w9100",
+      "brand": "AMD",
+      "model": "FirePro W9100",
+      "name": "AMD FirePro W9100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD FirePro W9100",
+        "FirePro W9100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-9550",
+      "brand": "AMD",
+      "model": "Radeon 9550",
+      "name": "AMD Radeon 9550",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon 9550",
+        "Radeon 9550"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-3450",
+      "brand": "AMD",
+      "model": "Radeon HD 3450",
+      "name": "AMD Radeon HD 3450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 3450",
+        "HD 3450",
+        "Radeon HD 3450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4350",
+      "brand": "AMD",
+      "model": "Radeon HD 4350",
+      "name": "AMD Radeon HD 4350",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4350",
+        "HD 4350",
+        "Radeon HD 4350"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4550",
+      "brand": "AMD",
+      "model": "Radeon HD 4550",
+      "name": "AMD Radeon HD 4550",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4550",
+        "HD 4550",
+        "Radeon HD 4550"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4650",
+      "brand": "AMD",
+      "model": "Radeon HD 4650",
+      "name": "AMD Radeon HD 4650",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4650",
+        "HD 4650",
+        "Radeon HD 4650"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4670",
+      "brand": "AMD",
+      "model": "Radeon HD 4670",
+      "name": "AMD Radeon HD 4670",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4670",
+        "HD 4670",
+        "Radeon HD 4670"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4670-x2",
+      "brand": "AMD",
+      "model": "Radeon HD 4670 X2",
+      "name": "AMD Radeon HD 4670 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4670 X2",
+        "HD 4670 X2",
+        "Radeon HD 4670 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4830",
+      "brand": "AMD",
+      "model": "Radeon HD 4830",
+      "name": "AMD Radeon HD 4830",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4830",
+        "HD 4830",
+        "Radeon HD 4830"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4850",
+      "brand": "AMD",
+      "model": "Radeon HD 4850",
+      "name": "AMD Radeon HD 4850",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4850",
+        "HD 4850",
+        "Radeon HD 4850"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4870",
+      "brand": "AMD",
+      "model": "Radeon HD 4870",
+      "name": "AMD Radeon HD 4870",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4870",
+        "HD 4870",
+        "Radeon HD 4870"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-4890",
+      "brand": "AMD",
+      "model": "Radeon HD 4890",
+      "name": "AMD Radeon HD 4890",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 4890",
+        "HD 4890",
+        "Radeon HD 4890"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5450",
+      "brand": "AMD",
+      "model": "Radeon HD 5450",
+      "name": "AMD Radeon HD 5450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5450",
+        "HD 5450",
+        "Radeon HD 5450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5550",
+      "brand": "AMD",
+      "model": "Radeon HD 5550",
+      "name": "AMD Radeon HD 5550",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5550",
+        "HD 5550",
+        "Radeon HD 5550"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5570",
+      "brand": "AMD",
+      "model": "Radeon HD 5570",
+      "name": "AMD Radeon HD 5570",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5570",
+        "HD 5570",
+        "Radeon HD 5570"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5670",
+      "brand": "AMD",
+      "model": "Radeon HD 5670",
+      "name": "AMD Radeon HD 5670",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5670",
+        "HD 5670",
+        "Radeon HD 5670"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5750",
+      "brand": "AMD",
+      "model": "Radeon HD 5750",
+      "name": "AMD Radeon HD 5750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5750",
+        "HD 5750",
+        "Radeon HD 5750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5770",
+      "brand": "AMD",
+      "model": "Radeon HD 5770",
+      "name": "AMD Radeon HD 5770",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5770",
+        "HD 5770",
+        "Radeon HD 5770"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5830",
+      "brand": "AMD",
+      "model": "Radeon HD 5830",
+      "name": "AMD Radeon HD 5830",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5830",
+        "HD 5830",
+        "Radeon HD 5830"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5850",
+      "brand": "AMD",
+      "model": "Radeon HD 5850",
+      "name": "AMD Radeon HD 5850",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5850",
+        "HD 5850",
+        "Radeon HD 5850"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5870",
+      "brand": "AMD",
+      "model": "Radeon HD 5870",
+      "name": "AMD Radeon HD 5870",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5870",
+        "HD 5870",
+        "Radeon HD 5870"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5870-x2",
+      "brand": "AMD",
+      "model": "Radeon HD 5870 X2",
+      "name": "AMD Radeon HD 5870 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5870 X2",
+        "HD 5870 X2",
+        "Radeon HD 5870 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-5970",
+      "brand": "AMD",
+      "model": "Radeon HD 5970",
+      "name": "AMD Radeon HD 5970",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 5970",
+        "HD 5970",
+        "Radeon HD 5970"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6450",
+      "brand": "AMD",
+      "model": "Radeon HD 6450",
+      "name": "AMD Radeon HD 6450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6450",
+        "HD 6450",
+        "Radeon HD 6450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6570",
+      "brand": "AMD",
+      "model": "Radeon HD 6570",
+      "name": "AMD Radeon HD 6570",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6570",
+        "HD 6570",
+        "Radeon HD 6570"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6670",
+      "brand": "AMD",
+      "model": "Radeon HD 6670",
+      "name": "AMD Radeon HD 6670",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6670",
+        "HD 6670",
+        "Radeon HD 6670"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6750",
+      "brand": "AMD",
+      "model": "Radeon HD 6750",
+      "name": "AMD Radeon HD 6750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6750",
+        "HD 6750",
+        "Radeon HD 6750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6770",
+      "brand": "AMD",
+      "model": "Radeon HD 6770",
+      "name": "AMD Radeon HD 6770",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6770",
+        "HD 6770",
+        "Radeon HD 6770"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6790",
+      "brand": "AMD",
+      "model": "Radeon HD 6790",
+      "name": "AMD Radeon HD 6790",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6790",
+        "HD 6790",
+        "Radeon HD 6790"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6850",
+      "brand": "AMD",
+      "model": "Radeon HD 6850",
+      "name": "AMD Radeon HD 6850",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6850",
+        "HD 6850",
+        "Radeon HD 6850"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6870",
+      "brand": "AMD",
+      "model": "Radeon HD 6870",
+      "name": "AMD Radeon HD 6870",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6870",
+        "HD 6870",
+        "Radeon HD 6870"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6870-x2",
+      "brand": "AMD",
+      "model": "Radeon HD 6870 X2",
+      "name": "AMD Radeon HD 6870 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6870 X2",
+        "HD 6870 X2",
+        "Radeon HD 6870 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6950",
+      "brand": "AMD",
+      "model": "Radeon HD 6950",
+      "name": "AMD Radeon HD 6950",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6950",
+        "HD 6950",
+        "Radeon HD 6950"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6970",
+      "brand": "AMD",
+      "model": "Radeon HD 6970",
+      "name": "AMD Radeon HD 6970",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6970",
+        "HD 6970",
+        "Radeon HD 6970"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-6990",
+      "brand": "AMD",
+      "model": "Radeon HD 6990",
+      "name": "AMD Radeon HD 6990",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 6990",
+        "HD 6990",
+        "Radeon HD 6990"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7750",
+      "brand": "AMD",
+      "model": "Radeon HD 7750",
+      "name": "AMD Radeon HD 7750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7750",
+        "HD 7750",
+        "Radeon HD 7750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7770",
+      "brand": "AMD",
+      "model": "Radeon HD 7770",
+      "name": "AMD Radeon HD 7770",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7770",
+        "HD 7770",
+        "Radeon HD 7770"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ghz",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7770-ghz-edition",
+      "brand": "AMD",
+      "model": "Radeon HD 7770 GHz Edition",
+      "name": "AMD Radeon HD 7770 GHz Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7770 GHz Edition",
+        "HD 7770 GHz Edition",
+        "Radeon HD 7770 GHz Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7790",
+      "brand": "AMD",
+      "model": "Radeon HD 7790",
+      "name": "AMD Radeon HD 7790",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7790",
+        "HD 7790",
+        "Radeon HD 7790"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7850",
+      "brand": "AMD",
+      "model": "Radeon HD 7850",
+      "name": "AMD Radeon HD 7850",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7850",
+        "HD 7850",
+        "Radeon HD 7850"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7870",
+      "brand": "AMD",
+      "model": "Radeon HD 7870",
+      "name": "AMD Radeon HD 7870",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7870",
+        "HD 7870",
+        "Radeon HD 7870"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ghz",
+        "m",
+        "xt"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7870-ghz-edition",
+      "brand": "AMD",
+      "model": "Radeon HD 7870 GHz Edition",
+      "name": "AMD Radeon HD 7870 GHz Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7870 GHz Edition",
+        "HD 7870 GHz Edition",
+        "Radeon HD 7870 GHz Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7870-xt",
+      "brand": "AMD",
+      "model": "Radeon HD 7870 XT",
+      "name": "AMD Radeon HD 7870 XT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7870 XT",
+        "HD 7870 XT",
+        "Radeon HD 7870 XT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7950",
+      "brand": "AMD",
+      "model": "Radeon HD 7950",
+      "name": "AMD Radeon HD 7950",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7950",
+        "HD 7950",
+        "Radeon HD 7950"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7970",
+      "brand": "AMD",
+      "model": "Radeon HD 7970",
+      "name": "AMD Radeon HD 7970",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7970",
+        "HD 7970",
+        "Radeon HD 7970"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ghz",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7970-ghz-edition",
+      "brand": "AMD",
+      "model": "Radeon HD 7970 GHz Edition",
+      "name": "AMD Radeon HD 7970 GHz Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7970 GHz Edition",
+        "HD 7970 GHz Edition",
+        "Radeon HD 7970 GHz Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-hd-7990",
+      "brand": "AMD",
+      "model": "Radeon HD 7990",
+      "name": "AMD Radeon HD 7990",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon HD 7990",
+        "HD 7990",
+        "Radeon HD 7990"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-duo",
+      "brand": "AMD",
+      "model": "Radeon Pro Duo",
+      "name": "AMD Radeon Pro Duo",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro Duo",
+        "Pro Duo",
+        "Radeon Pro Duo"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "polaris"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-duo-polaris",
+      "brand": "AMD",
+      "model": "Radeon Pro Duo Polaris",
+      "name": "AMD Radeon Pro Duo Polaris",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro Duo Polaris",
+        "Pro Duo Polaris",
+        "Radeon Pro Duo Polaris"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-vii",
+      "brand": "AMD",
+      "model": "Radeon Pro VII",
+      "name": "AMD Radeon Pro VII",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro VII",
+        "Pro VII",
+        "Radeon Pro VII"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w5500",
+      "brand": "AMD",
+      "model": "Radeon Pro W5500",
+      "name": "AMD Radeon Pro W5500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro W5500",
+        "Pro W5500",
+        "Radeon Pro W5500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w5700",
+      "brand": "AMD",
+      "model": "Radeon Pro W5700",
+      "name": "AMD Radeon Pro W5700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro W5700",
+        "Pro W5700",
+        "Radeon Pro W5700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w6400",
+      "brand": "AMD",
+      "model": "Radeon PRO W6400",
+      "name": "AMD Radeon PRO W6400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W6400",
+        "PRO W6400",
+        "Radeon PRO W6400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w6600",
+      "brand": "AMD",
+      "model": "Radeon PRO W6600",
+      "name": "AMD Radeon PRO W6600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W6600",
+        "PRO W6600",
+        "Radeon PRO W6600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w6800",
+      "brand": "AMD",
+      "model": "Radeon PRO W6800",
+      "name": "AMD Radeon PRO W6800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W6800",
+        "PRO W6800",
+        "Radeon PRO W6800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w7500",
+      "brand": "AMD",
+      "model": "Radeon PRO W7500",
+      "name": "AMD Radeon PRO W7500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W7500",
+        "PRO W7500",
+        "Radeon PRO W7500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w7600",
+      "brand": "AMD",
+      "model": "Radeon PRO W7600",
+      "name": "AMD Radeon PRO W7600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W7600",
+        "PRO W7600",
+        "Radeon PRO W7600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w7700",
+      "brand": "AMD",
+      "model": "Radeon PRO W7700",
+      "name": "AMD Radeon PRO W7700",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W7700",
+        "PRO W7700",
+        "Radeon PRO W7700"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w7800",
+      "brand": "AMD",
+      "model": "Radeon PRO W7800",
+      "name": "AMD Radeon PRO W7800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W7800",
+        "PRO W7800",
+        "Radeon PRO W7800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-w7900",
+      "brand": "AMD",
+      "model": "Radeon PRO W7900",
+      "name": "AMD Radeon PRO W7900",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon PRO W7900",
+        "PRO W7900",
+        "Radeon PRO W7900"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-2100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 2100",
+      "name": "AMD Radeon Pro WX 2100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 2100",
+        "Pro WX 2100",
+        "Radeon Pro WX 2100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-3100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 3100",
+      "name": "AMD Radeon Pro WX 3100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 3100",
+        "Pro WX 3100",
+        "Radeon Pro WX 3100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-3200",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 3200",
+      "name": "AMD Radeon Pro WX 3200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 3200",
+        "Pro WX 3200",
+        "Radeon Pro WX 3200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-4100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 4100",
+      "name": "AMD Radeon Pro WX 4100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 4100",
+        "Pro WX 4100",
+        "Radeon Pro WX 4100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-5100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 5100",
+      "name": "AMD Radeon Pro WX 5100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 5100",
+        "Pro WX 5100",
+        "Radeon Pro WX 5100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-7100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 7100",
+      "name": "AMD Radeon Pro WX 7100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 7100",
+        "Pro WX 7100",
+        "Radeon Pro WX 7100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-8200",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 8200",
+      "name": "AMD Radeon Pro WX 8200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 8200",
+        "Pro WX 8200",
+        "Radeon Pro WX 8200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-pro-wx-9100",
+      "brand": "AMD",
+      "model": "Radeon Pro WX 9100",
+      "name": "AMD Radeon Pro WX 9100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon Pro WX 9100",
+        "Pro WX 9100",
+        "Radeon Pro WX 9100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r5-220",
+      "brand": "AMD",
+      "model": "Radeon R5 220",
+      "name": "AMD Radeon R5 220",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R5 220",
+        "R5 220",
+        "Radeon R5 220"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r5-230",
+      "brand": "AMD",
+      "model": "Radeon R5 230",
+      "name": "AMD Radeon R5 230",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R5 230",
+        "R5 230",
+        "Radeon R5 230"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-240",
+      "brand": "AMD",
+      "model": "Radeon R7 240",
+      "name": "AMD Radeon R7 240",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 240",
+        "R7 240",
+        "Radeon R7 240"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-250",
+      "brand": "AMD",
+      "model": "Radeon R7 250",
+      "name": "AMD Radeon R7 250",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 250",
+        "R7 250",
+        "Radeon R7 250"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-250x",
+      "brand": "AMD",
+      "model": "Radeon R7 250X",
+      "name": "AMD Radeon R7 250X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 250X",
+        "R7 250X",
+        "Radeon R7 250X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-260",
+      "brand": "AMD",
+      "model": "Radeon R7 260",
+      "name": "AMD Radeon R7 260",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 260",
+        "R7 260",
+        "Radeon R7 260"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-260x",
+      "brand": "AMD",
+      "model": "Radeon R7 260X",
+      "name": "AMD Radeon R7 260X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 260X",
+        "R7 260X",
+        "Radeon R7 260X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-265",
+      "brand": "AMD",
+      "model": "Radeon R7 265",
+      "name": "AMD Radeon R7 265",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 265",
+        "R7 265",
+        "Radeon R7 265"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-350",
+      "brand": "AMD",
+      "model": "Radeon R7 350",
+      "name": "AMD Radeon R7 350",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 350",
+        "R7 350",
+        "Radeon R7 350"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-360",
+      "brand": "AMD",
+      "model": "Radeon R7 360",
+      "name": "AMD Radeon R7 360",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 360",
+        "R7 360",
+        "Radeon R7 360"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r7-370",
+      "brand": "AMD",
+      "model": "Radeon R7 370",
+      "name": "AMD Radeon R7 370",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R7 370",
+        "R7 370",
+        "Radeon R7 370"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-270",
+      "brand": "AMD",
+      "model": "Radeon R9 270",
+      "name": "AMD Radeon R9 270",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 270",
+        "R9 270",
+        "Radeon R9 270"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-270x",
+      "brand": "AMD",
+      "model": "Radeon R9 270X",
+      "name": "AMD Radeon R9 270X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 270X",
+        "R9 270X",
+        "Radeon R9 270X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-280",
+      "brand": "AMD",
+      "model": "Radeon R9 280",
+      "name": "AMD Radeon R9 280",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 280",
+        "R9 280",
+        "Radeon R9 280"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-280x",
+      "brand": "AMD",
+      "model": "Radeon R9 280X",
+      "name": "AMD Radeon R9 280X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 280X",
+        "R9 280X",
+        "Radeon R9 280X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-285",
+      "brand": "AMD",
+      "model": "Radeon R9 285",
+      "name": "AMD Radeon R9 285",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 285",
+        "R9 285",
+        "Radeon R9 285"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-290",
+      "brand": "AMD",
+      "model": "Radeon R9 290",
+      "name": "AMD Radeon R9 290",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 290",
+        "R9 290",
+        "Radeon R9 290"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-290x",
+      "brand": "AMD",
+      "model": "Radeon R9 290X",
+      "name": "AMD Radeon R9 290X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 290X",
+        "R9 290X",
+        "Radeon R9 290X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-295x2",
+      "brand": "AMD",
+      "model": "Radeon R9 295X2",
+      "name": "AMD Radeon R9 295X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 295X2",
+        "R9 295X2",
+        "Radeon R9 295X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-380",
+      "brand": "AMD",
+      "model": "Radeon R9 380",
+      "name": "AMD Radeon R9 380",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 380",
+        "R9 380",
+        "Radeon R9 380"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-380x",
+      "brand": "AMD",
+      "model": "Radeon R9 380X",
+      "name": "AMD Radeon R9 380X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 380X",
+        "R9 380X",
+        "Radeon R9 380X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-390",
+      "brand": "AMD",
+      "model": "Radeon R9 390",
+      "name": "AMD Radeon R9 390",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 390",
+        "R9 390",
+        "Radeon R9 390"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-390x",
+      "brand": "AMD",
+      "model": "Radeon R9 390X",
+      "name": "AMD Radeon R9 390X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 390X",
+        "R9 390X",
+        "Radeon R9 390X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "2",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-390x2",
+      "brand": "AMD",
+      "model": "Radeon R9 390X2",
+      "name": "AMD Radeon R9 390X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 390X2",
+        "R9 390X2",
+        "Radeon R9 390X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-fury",
+      "brand": "AMD",
+      "model": "Radeon R9 Fury",
+      "name": "AMD Radeon R9 Fury",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 Fury",
+        "R9 Fury",
+        "Radeon R9 Fury"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-fury-x",
+      "brand": "AMD",
+      "model": "Radeon R9 Fury X",
+      "name": "AMD Radeon R9 Fury X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 Fury X",
+        "R9 Fury X",
+        "Radeon R9 Fury X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-r9-nano",
+      "brand": "AMD",
+      "model": "Radeon R9 Nano",
+      "name": "AMD Radeon R9 Nano",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon R9 Nano",
+        "R9 Nano",
+        "Radeon R9 Nano"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-460",
+      "brand": "AMD",
+      "model": "Radeon RX 460",
+      "name": "AMD Radeon RX 460",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 460",
+        "RX 460",
+        "Radeon RX 460"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-470",
+      "brand": "AMD",
+      "model": "Radeon RX 470",
+      "name": "AMD Radeon RX 470",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 470",
+        "RX 470",
+        "Radeon RX 470"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-480",
+      "brand": "AMD",
+      "model": "Radeon RX 480",
+      "name": "AMD Radeon RX 480",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 480",
+        "RX 480",
+        "Radeon RX 480"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-550-512",
+      "brand": "AMD",
+      "model": "Radeon RX 550 - 512",
+      "name": "AMD Radeon RX 550 - 512",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 550 - 512",
+        "RX 550 - 512",
+        "Radeon RX 550 - 512"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-550-640",
+      "brand": "AMD",
+      "model": "Radeon RX 550 - 640",
+      "name": "AMD Radeon RX 550 - 640",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 550 - 640",
+        "RX 550 - 640",
+        "Radeon RX 550 - 640"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-560-1024",
+      "brand": "AMD",
+      "model": "Radeon RX 560 - 1024",
+      "name": "AMD Radeon RX 560 - 1024",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 560 - 1024",
+        "RX 560 - 1024",
+        "Radeon RX 560 - 1024"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-560-896",
+      "brand": "AMD",
+      "model": "Radeon RX 560 - 896",
+      "name": "AMD Radeon RX 560 - 896",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 560 - 896",
+        "RX 560 - 896",
+        "Radeon RX 560 - 896"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-570",
+      "brand": "AMD",
+      "model": "Radeon RX 570",
+      "name": "AMD Radeon RX 570",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 570",
+        "RX 570",
+        "Radeon RX 570"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-580",
+      "brand": "AMD",
+      "model": "Radeon RX 580",
+      "name": "AMD Radeon RX 580",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 580",
+        "RX 580",
+        "Radeon RX 580"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-590",
+      "brand": "AMD",
+      "model": "Radeon RX 590",
+      "name": "AMD Radeon RX 590",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX 590",
+        "RX 590",
+        "Radeon RX 590"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-vega-56",
+      "brand": "AMD",
+      "model": "Radeon RX VEGA 56",
+      "name": "AMD Radeon RX VEGA 56",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX VEGA 56",
+        "RX VEGA 56",
+        "Radeon RX VEGA 56"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-rx-vega-64",
+      "brand": "AMD",
+      "model": "Radeon RX VEGA 64",
+      "name": "AMD Radeon RX VEGA 64",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon RX VEGA 64",
+        "RX VEGA 64",
+        "Radeon RX VEGA 64"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-radeon-vii",
+      "brand": "AMD",
+      "model": "Radeon VII",
+      "name": "AMD Radeon VII",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Radeon VII",
+        "Radeon VII",
+        "VII"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-vega-frontier-edition",
+      "brand": "AMD",
+      "model": "Vega Frontier Edition",
+      "name": "AMD Vega Frontier Edition",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Vega Frontier Edition",
+        "Vega Frontier Edition"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "liquid",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "amd-vega-frontier-edition-liquid",
+      "brand": "AMD",
+      "model": "Vega Frontier Edition Liquid",
+      "name": "AMD Vega Frontier Edition Liquid",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "AMD Vega Frontier Edition Liquid",
+        "Vega Frontier Edition Liquid"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "intel-arc-pro-a40",
+      "brand": "Intel",
+      "model": "Arc Pro A40",
+      "name": "Intel Arc Pro A40",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc Pro A40",
+        "Intel Arc Pro A40"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "intel-arc-pro-a50",
+      "brand": "Intel",
+      "model": "Arc Pro A50",
+      "name": "Intel Arc Pro A50",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc Pro A50",
+        "Intel Arc Pro A50"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "intel-arc-pro-a60",
+      "brand": "Intel",
+      "model": "Arc Pro A60",
+      "name": "Intel Arc Pro A60",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Arc Pro A60",
+        "Intel Arc Pro A60"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-210",
+      "brand": "Nvidia",
+      "model": "GeForce 210",
+      "name": "Nvidia 210",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GeForce 210",
+        "Nvidia 210"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-7200-gs",
+      "brand": "Nvidia",
+      "model": "GeForce 7200 GS",
+      "name": "Nvidia 7200 GS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "7200 GS",
+        "GeForce 7200 GS",
+        "Nvidia 7200 GS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-8400-gs",
+      "brand": "Nvidia",
+      "model": "GeForce 8400 GS",
+      "name": "Nvidia 8400 GS",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "8400 GS",
+        "GeForce 8400 GS",
+        "Nvidia 8400 GS"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-8500-gt",
+      "brand": "Nvidia",
+      "model": "GeForce 8500 GT",
+      "name": "Nvidia 8500 GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "8500 GT",
+        "GeForce 8500 GT",
+        "Nvidia 8500 GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9400-gt",
+      "brand": "Nvidia",
+      "model": "GeForce 9400 GT",
+      "name": "Nvidia 9400 GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9400 GT",
+        "GeForce 9400 GT",
+        "Nvidia 9400 GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9500-gt",
+      "brand": "Nvidia",
+      "model": "GeForce 9500 GT",
+      "name": "Nvidia 9500 GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9500 GT",
+        "GeForce 9500 GT",
+        "Nvidia 9500 GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9600-gso",
+      "brand": "Nvidia",
+      "model": "GeForce 9600 GSO",
+      "name": "Nvidia 9600 GSO",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9600 GSO",
+        "GeForce 9600 GSO",
+        "Nvidia 9600 GSO"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9600-gt",
+      "brand": "Nvidia",
+      "model": "GeForce 9600 GT",
+      "name": "Nvidia 9600 GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9600 GT",
+        "GeForce 9600 GT",
+        "Nvidia 9600 GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9800-gt",
+      "brand": "Nvidia",
+      "model": "GeForce 9800 GT",
+      "name": "Nvidia 9800 GT",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9800 GT",
+        "GeForce 9800 GT",
+        "Nvidia 9800 GT"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-9800-gtx-plus",
+      "brand": "Nvidia",
+      "model": "GeForce 9800 GTX+",
+      "name": "Nvidia 9800 GTX+",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "9800 GTX+",
+        "GeForce 9800 GTX+",
+        "Nvidia 9800 GTX+"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-fx-5200",
+      "brand": "Nvidia",
+      "model": "GeForce FX 5200",
+      "name": "Nvidia FX 5200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "FX 5200",
+        "GeForce FX 5200",
+        "Nvidia FX 5200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-1030",
+      "brand": "Nvidia",
+      "model": "GeForce GT 1030",
+      "name": "Nvidia GT 1030",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 1030",
+        "GeForce GT 1030",
+        "Nvidia GT 1030"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "ddr",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-1030-ddr4",
+      "brand": "Nvidia",
+      "model": "GeForce GT 1030 DDR4",
+      "name": "Nvidia GT 1030 DDR4",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 1030 DDR4",
+        "GeForce GT 1030 DDR4",
+        "Nvidia GT 1030 DDR4"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-220",
+      "brand": "Nvidia",
+      "model": "GeForce GT 220",
+      "name": "Nvidia GT 220",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 220",
+        "GeForce GT 220",
+        "Nvidia GT 220"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-430",
+      "brand": "Nvidia",
+      "model": "GeForce GT 430",
+      "name": "Nvidia GT 430",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 430",
+        "GeForce GT 430",
+        "Nvidia GT 430"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-440",
+      "brand": "Nvidia",
+      "model": "GeForce GT 440",
+      "name": "Nvidia GT 440",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 440",
+        "GeForce GT 440",
+        "Nvidia GT 440"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-520",
+      "brand": "Nvidia",
+      "model": "GeForce GT 520",
+      "name": "Nvidia GT 520",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 520",
+        "GeForce GT 520",
+        "Nvidia GT 520"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-610",
+      "brand": "Nvidia",
+      "model": "GeForce GT 610",
+      "name": "Nvidia GT 610",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 610",
+        "GeForce GT 610",
+        "Nvidia GT 610"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-620",
+      "brand": "Nvidia",
+      "model": "GeForce GT 620",
+      "name": "Nvidia GT 620",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 620",
+        "GeForce GT 620",
+        "Nvidia GT 620"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-630",
+      "brand": "Nvidia",
+      "model": "GeForce GT 630",
+      "name": "Nvidia GT 630",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 630",
+        "GeForce GT 630",
+        "Nvidia GT 630"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-640",
+      "brand": "Nvidia",
+      "model": "GeForce GT 640",
+      "name": "Nvidia GT 640",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 640",
+        "GeForce GT 640",
+        "Nvidia GT 640"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-710",
+      "brand": "Nvidia",
+      "model": "GeForce GT 710",
+      "name": "Nvidia GT 710",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 710",
+        "GeForce GT 710",
+        "Nvidia GT 710"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-720",
+      "brand": "Nvidia",
+      "model": "GeForce GT 720",
+      "name": "Nvidia GT 720",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 720",
+        "GeForce GT 720",
+        "Nvidia GT 720"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-730",
+      "brand": "Nvidia",
+      "model": "GeForce GT 730",
+      "name": "Nvidia GT 730",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 730",
+        "GeForce GT 730",
+        "Nvidia GT 730"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gt-740",
+      "brand": "Nvidia",
+      "model": "GeForce GT 740",
+      "name": "Nvidia GT 740",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GT 740",
+        "GeForce GT 740",
+        "Nvidia GT 740"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gts-250",
+      "brand": "Nvidia",
+      "model": "GeForce GTS 250",
+      "name": "Nvidia GTS 250",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTS 250",
+        "GeForce GTS 250",
+        "Nvidia GTS 250"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gts-450",
+      "brand": "Nvidia",
+      "model": "GeForce GTS 450",
+      "name": "Nvidia GTS 450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTS 450",
+        "GeForce GTS 450",
+        "Nvidia GTS 450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-260",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 260",
+      "name": "Nvidia GTX 260",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 260",
+        "GeForce GTX 260",
+        "Nvidia GTX 260"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-275",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 275",
+      "name": "Nvidia GTX 275",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 275",
+        "GeForce GTX 275",
+        "Nvidia GTX 275"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-285",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 285",
+      "name": "Nvidia GTX 285",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 285",
+        "GeForce GTX 285",
+        "Nvidia GTX 285"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-295",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 295",
+      "name": "Nvidia GTX 295",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 295",
+        "GeForce GTX 295",
+        "Nvidia GTX 295"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-460",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 460",
+      "name": "Nvidia GTX 460",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 460",
+        "GeForce GTX 460",
+        "Nvidia GTX 460"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "se",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-460-se",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 460 SE",
+      "name": "Nvidia GTX 460 SE",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 460 SE",
+        "GeForce GTX 460 SE",
+        "Nvidia GTX 460 SE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-460-x2",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 460 X2",
+      "name": "Nvidia GTX 460 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 460 X2",
+        "GeForce GTX 460 X2",
+        "Nvidia GTX 460 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-465",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 465",
+      "name": "Nvidia GTX 465",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 465",
+        "GeForce GTX 465",
+        "Nvidia GTX 465"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-470",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 470",
+      "name": "Nvidia GTX 470",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 470",
+        "GeForce GTX 470",
+        "Nvidia GTX 470"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-480",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 480",
+      "name": "Nvidia GTX 480",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 480",
+        "GeForce GTX 480",
+        "Nvidia GTX 480"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-550-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 550 Ti",
+      "name": "Nvidia GTX 550 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 550 Ti",
+        "GeForce GTX 550 Ti",
+        "Nvidia GTX 550 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-560",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 560",
+      "name": "Nvidia GTX 560",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 560",
+        "GeForce GTX 560",
+        "Nvidia GTX 560"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "se",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-560-se",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 560 SE",
+      "name": "Nvidia GTX 560 SE",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 560 SE",
+        "GeForce GTX 560 SE",
+        "Nvidia GTX 560 SE"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-560-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 560 Ti",
+      "name": "Nvidia GTX 560 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 560 Ti",
+        "GeForce GTX 560 Ti",
+        "Nvidia GTX 560 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "448",
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-560-ti-448",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 560 Ti 448",
+      "name": "Nvidia GTX 560 Ti 448",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 560 Ti 448",
+        "GeForce GTX 560 Ti 448",
+        "Nvidia GTX 560 Ti 448"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-560-ti-x2",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 560 Ti X2",
+      "name": "Nvidia GTX 560 Ti X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 560 Ti X2",
+        "GeForce GTX 560 Ti X2",
+        "Nvidia GTX 560 Ti X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-570",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 570",
+      "name": "Nvidia GTX 570",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 570",
+        "GeForce GTX 570",
+        "Nvidia GTX 570"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-580",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 580",
+      "name": "Nvidia GTX 580",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 580",
+        "GeForce GTX 580",
+        "Nvidia GTX 580"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-580-x2",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 580 X2",
+      "name": "Nvidia GTX 580 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 580 X2",
+        "GeForce GTX 580 X2",
+        "Nvidia GTX 580 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-590",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 590",
+      "name": "Nvidia GTX 590",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 590",
+        "GeForce GTX 590",
+        "Nvidia GTX 590"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-650",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 650",
+      "name": "Nvidia GTX 650",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 650",
+        "GeForce GTX 650",
+        "Nvidia GTX 650"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-650-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 650 Ti",
+      "name": "Nvidia GTX 650 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 650 Ti",
+        "GeForce GTX 650 Ti",
+        "Nvidia GTX 650 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "boost",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-650-ti-boost",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 650 Ti Boost",
+      "name": "Nvidia GTX 650 Ti Boost",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 650 Ti Boost",
+        "GeForce GTX 650 Ti Boost",
+        "Nvidia GTX 650 Ti Boost"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-660",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 660",
+      "name": "Nvidia GTX 660",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 660",
+        "GeForce GTX 660",
+        "Nvidia GTX 660"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-660-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 660 Ti",
+      "name": "Nvidia GTX 660 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 660 Ti",
+        "GeForce GTX 660 Ti",
+        "Nvidia GTX 660 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-670",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 670",
+      "name": "Nvidia GTX 670",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 670",
+        "GeForce GTX 670",
+        "Nvidia GTX 670"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-680",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 680",
+      "name": "Nvidia GTX 680",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 680",
+        "GeForce GTX 680",
+        "Nvidia GTX 680"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-690",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 690",
+      "name": "Nvidia GTX 690",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 690",
+        "GeForce GTX 690",
+        "Nvidia GTX 690"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-750",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 750",
+      "name": "Nvidia GTX 750",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 750",
+        "GeForce GTX 750",
+        "Nvidia GTX 750"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-750-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 750 Ti",
+      "name": "Nvidia GTX 750 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 750 Ti",
+        "GeForce GTX 750 Ti",
+        "Nvidia GTX 750 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-760",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 760",
+      "name": "Nvidia GTX 760",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 760",
+        "GeForce GTX 760",
+        "Nvidia GTX 760"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "x"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-760-x2",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 760 X2",
+      "name": "Nvidia GTX 760 X2",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 760 X2",
+        "GeForce GTX 760 X2",
+        "Nvidia GTX 760 X2"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-770",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 770",
+      "name": "Nvidia GTX 770",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 770",
+        "GeForce GTX 770",
+        "Nvidia GTX 770"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-780",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 780",
+      "name": "Nvidia GTX 780",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 780",
+        "GeForce GTX 780",
+        "Nvidia GTX 780"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m",
+        "ti"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-780-ti",
+      "brand": "Nvidia",
+      "model": "GeForce GTX 780 Ti",
+      "name": "Nvidia GTX 780 Ti",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX 780 Ti",
+        "GeForce GTX 780 Ti",
+        "Nvidia GTX 780 Ti"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-titan",
+      "brand": "Nvidia",
+      "model": "GeForce GTX Titan",
+      "name": "Nvidia GTX Titan",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX Titan",
+        "GeForce GTX Titan",
+        "Nvidia GTX Titan"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "black",
+        "m",
+        "x",
+        "z"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-titan-black",
+      "brand": "Nvidia",
+      "model": "GeForce GTX Titan Black",
+      "name": "Nvidia GTX Titan Black",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX Titan Black",
+        "GeForce GTX Titan Black",
+        "Nvidia GTX Titan Black"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-titan-x",
+      "brand": "Nvidia",
+      "model": "GeForce GTX Titan X",
+      "name": "Nvidia GTX Titan X",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX Titan X",
+        "GeForce GTX Titan X",
+        "Nvidia GTX Titan X"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-gtx-titan-z",
+      "brand": "Nvidia",
+      "model": "GeForce GTX Titan Z",
+      "name": "Nvidia GTX Titan Z",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "GTX Titan Z",
+        "GeForce GTX Titan Z",
+        "Nvidia GTX Titan Z"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-nvs-810",
+      "brand": "Nvidia",
+      "model": "NVS 810",
+      "name": "Nvidia NVS 810",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "NVS 810",
+        "Nvidia NVS 810"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-2000d",
+      "brand": "Nvidia",
+      "model": "Quadro 2000D",
+      "name": "Nvidia Quadro 2000D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 2000D",
+        "Quadro 2000D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-400",
+      "brand": "Nvidia",
+      "model": "Quadro 400",
+      "name": "Nvidia Quadro 400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 400",
+        "Quadro 400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-4000",
+      "brand": "Nvidia",
+      "model": "Quadro 4000",
+      "name": "Nvidia Quadro 4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 4000",
+        "Quadro 4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-410",
+      "brand": "Nvidia",
+      "model": "Quadro 410",
+      "name": "Nvidia Quadro 410",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 410",
+        "Quadro 410"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-5000",
+      "brand": "Nvidia",
+      "model": "Quadro 5000",
+      "name": "Nvidia Quadro 5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 5000",
+        "Quadro 5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-6000",
+      "brand": "Nvidia",
+      "model": "Quadro 6000",
+      "name": "Nvidia Quadro 6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro 6000",
+        "Quadro 6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-fx-1800",
+      "brand": "Nvidia",
+      "model": "Quadro FX 1800",
+      "name": "Nvidia Quadro FX 1800",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro FX 1800",
+        "Quadro FX 1800"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-gp100",
+      "brand": "Nvidia",
+      "model": "Quadro GP100",
+      "name": "Nvidia Quadro GP100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro GP100",
+        "Quadro GP100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-gv100",
+      "brand": "Nvidia",
+      "model": "Quadro GV100",
+      "name": "Nvidia Quadro GV100",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro GV100",
+        "Quadro GV100"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k1200",
+      "brand": "Nvidia",
+      "model": "Quadro K1200",
+      "name": "Nvidia Quadro K1200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K1200",
+        "Quadro K1200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k2000",
+      "brand": "Nvidia",
+      "model": "Quadro K2000",
+      "name": "Nvidia Quadro K2000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K2000",
+        "Quadro K2000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "d",
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k2000d",
+      "brand": "Nvidia",
+      "model": "Quadro K2000D",
+      "name": "Nvidia Quadro K2000D",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K2000D",
+        "Quadro K2000D"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k2200",
+      "brand": "Nvidia",
+      "model": "Quadro K2200",
+      "name": "Nvidia Quadro K2200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K2200",
+        "Quadro K2200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k4000",
+      "brand": "Nvidia",
+      "model": "Quadro K4000",
+      "name": "Nvidia Quadro K4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K4000",
+        "Quadro K4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k4000m",
+      "brand": "Nvidia",
+      "model": "Quadro K4000M",
+      "name": "Nvidia Quadro K4000M",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K4000M",
+        "Quadro K4000M"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k420",
+      "brand": "Nvidia",
+      "model": "Quadro K420",
+      "name": "Nvidia Quadro K420",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K420",
+        "Quadro K420"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k4200",
+      "brand": "Nvidia",
+      "model": "Quadro K4200",
+      "name": "Nvidia Quadro K4200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K4200",
+        "Quadro K4200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k5000",
+      "brand": "Nvidia",
+      "model": "Quadro K5000",
+      "name": "Nvidia Quadro K5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K5000",
+        "Quadro K5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k5200",
+      "brand": "Nvidia",
+      "model": "Quadro K5200",
+      "name": "Nvidia Quadro K5200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K5200",
+        "Quadro K5200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k600",
+      "brand": "Nvidia",
+      "model": "Quadro K600",
+      "name": "Nvidia Quadro K600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K600",
+        "Quadro K600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k6000",
+      "brand": "Nvidia",
+      "model": "Quadro K6000",
+      "name": "Nvidia Quadro K6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K6000",
+        "Quadro K6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-k620",
+      "brand": "Nvidia",
+      "model": "Quadro K620",
+      "name": "Nvidia Quadro K620",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro K620",
+        "Quadro K620"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-m2000",
+      "brand": "Nvidia",
+      "model": "Quadro M2000",
+      "name": "Nvidia Quadro M2000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro M2000",
+        "Quadro M2000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-m4000",
+      "brand": "Nvidia",
+      "model": "Quadro M4000",
+      "name": "Nvidia Quadro M4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro M4000",
+        "Quadro M4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-m5000",
+      "brand": "Nvidia",
+      "model": "Quadro M5000",
+      "name": "Nvidia Quadro M5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro M5000",
+        "Quadro M5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-m6000",
+      "brand": "Nvidia",
+      "model": "Quadro M6000",
+      "name": "Nvidia Quadro M6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro M6000",
+        "Quadro M6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-nvs-295",
+      "brand": "Nvidia",
+      "model": "Quadro NVS 295",
+      "name": "Nvidia Quadro NVS 295",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro NVS 295",
+        "Quadro NVS 295"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-nvs-420",
+      "brand": "Nvidia",
+      "model": "Quadro NVS 420",
+      "name": "Nvidia Quadro NVS 420",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro NVS 420",
+        "Quadro NVS 420"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-nvs-450",
+      "brand": "Nvidia",
+      "model": "Quadro NVS 450",
+      "name": "Nvidia Quadro NVS 450",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro NVS 450",
+        "Quadro NVS 450"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p1000",
+      "brand": "Nvidia",
+      "model": "Quadro P1000",
+      "name": "Nvidia Quadro P1000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P1000",
+        "Quadro P1000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p2000",
+      "brand": "Nvidia",
+      "model": "Quadro P2000",
+      "name": "Nvidia Quadro P2000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P2000",
+        "Quadro P2000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p2200",
+      "brand": "Nvidia",
+      "model": "Quadro P2200",
+      "name": "Nvidia Quadro P2200",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P2200",
+        "Quadro P2200"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p400",
+      "brand": "Nvidia",
+      "model": "Quadro P400",
+      "name": "Nvidia Quadro P400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P400",
+        "Quadro P400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p4000",
+      "brand": "Nvidia",
+      "model": "Quadro P4000",
+      "name": "Nvidia Quadro P4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P4000",
+        "Quadro P4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p5000",
+      "brand": "Nvidia",
+      "model": "Quadro P5000",
+      "name": "Nvidia Quadro P5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P5000",
+        "Quadro P5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p600",
+      "brand": "Nvidia",
+      "model": "Quadro P600",
+      "name": "Nvidia Quadro P600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P600",
+        "Quadro P600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p6000",
+      "brand": "Nvidia",
+      "model": "Quadro P6000",
+      "name": "Nvidia Quadro P6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P6000",
+        "Quadro P6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-p620",
+      "brand": "Nvidia",
+      "model": "Quadro P620",
+      "name": "Nvidia Quadro P620",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro P620",
+        "Quadro P620"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-rtx-4000",
+      "brand": "Nvidia",
+      "model": "Quadro RTX 4000",
+      "name": "Nvidia Quadro RTX 4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro RTX 4000",
+        "Quadro RTX 4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-rtx-5000",
+      "brand": "Nvidia",
+      "model": "Quadro RTX 5000",
+      "name": "Nvidia Quadro RTX 5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro RTX 5000",
+        "Quadro RTX 5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-rtx-6000",
+      "brand": "Nvidia",
+      "model": "Quadro RTX 6000",
+      "name": "Nvidia Quadro RTX 6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro RTX 6000",
+        "Quadro RTX 6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-quadro-rtx-8000",
+      "brand": "Nvidia",
+      "model": "Quadro RTX 8000",
+      "name": "Nvidia Quadro RTX 8000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Quadro RTX 8000",
+        "Quadro RTX 8000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-2000-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 2000 Ada Generation",
+      "name": "Nvidia RTX 2000 Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 2000 Ada Generation",
+        "RTX 2000 Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-2000e-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 2000E Ada Generation",
+      "name": "Nvidia RTX 2000E Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 2000E Ada Generation",
+        "RTX 2000E Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-4000-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 4000 Ada Generation",
+      "name": "Nvidia RTX 4000 Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 4000 Ada Generation",
+        "RTX 4000 Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-4000-sff-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 4000 SFF Ada Generation",
+      "name": "Nvidia RTX 4000 SFF Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 4000 SFF Ada Generation",
+        "RTX 4000 SFF Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-4500-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 4500 Ada Generation",
+      "name": "Nvidia RTX 4500 Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 4500 Ada Generation",
+        "RTX 4500 Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-5000-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 5000 Ada Generation",
+      "name": "Nvidia RTX 5000 Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 5000 Ada Generation",
+        "RTX 5000 Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-6000-ada-generation",
+      "brand": "Nvidia",
+      "model": "RTX 6000 Ada Generation",
+      "name": "Nvidia RTX 6000 Ada Generation",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX 6000 Ada Generation",
+        "RTX 6000 Ada Generation"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a1000",
+      "brand": "Nvidia",
+      "model": "RTX A1000",
+      "name": "Nvidia RTX A1000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A1000",
+        "RTX A1000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a2000",
+      "brand": "Nvidia",
+      "model": "RTX A2000",
+      "name": "Nvidia RTX A2000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A2000",
+        "RTX A2000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a400",
+      "brand": "Nvidia",
+      "model": "RTX A400",
+      "name": "Nvidia RTX A400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A400",
+        "RTX A400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a4000",
+      "brand": "Nvidia",
+      "model": "RTX A4000",
+      "name": "Nvidia RTX A4000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A4000",
+        "RTX A4000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a4500",
+      "brand": "Nvidia",
+      "model": "RTX A4500",
+      "name": "Nvidia RTX A4500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A4500",
+        "RTX A4500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a5000",
+      "brand": "Nvidia",
+      "model": "RTX A5000",
+      "name": "Nvidia RTX A5000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A5000",
+        "RTX A5000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a5500",
+      "brand": "Nvidia",
+      "model": "RTX A5500",
+      "name": "Nvidia RTX A5500",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A5500",
+        "RTX A5500"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-rtx-a6000",
+      "brand": "Nvidia",
+      "model": "RTX A6000",
+      "name": "Nvidia RTX A6000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia RTX A6000",
+        "RTX A6000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-t1000",
+      "brand": "Nvidia",
+      "model": "T1000",
+      "name": "Nvidia T1000",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia T1000",
+        "T1000"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-t400",
+      "brand": "Nvidia",
+      "model": "T400",
+      "name": "Nvidia T400",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia T400",
+        "T400"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-t600",
+      "brand": "Nvidia",
+      "model": "T600",
+      "name": "Nvidia T600",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia T600",
+        "T600"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-titan-rtx",
+      "brand": "Nvidia",
+      "model": "TITAN RTX",
+      "name": "Nvidia TITAN RTX",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia TITAN RTX",
+        "TITAN RTX"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-titan-v",
+      "brand": "Nvidia",
+      "model": "Titan V",
+      "name": "Nvidia Titan V",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Titan V",
+        "Titan V"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-titan-x-pascal",
+      "brand": "Nvidia",
+      "model": "Titan X (Pascal)",
+      "name": "Nvidia Titan X (Pascal)",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Titan X (Pascal)",
+        "Titan X (Pascal)"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    {
+      "id": "nvidia-titan-xp",
+      "brand": "Nvidia",
+      "model": "Titan Xp",
+      "name": "Nvidia Titan Xp",
+      "categories": [
+        "Elektronik",
+        "Elektronisches Zubehör",
+        "Computerkomponenten",
+        "Computer-Steckkarten",
+        "Grafikkarten & Videoadapter"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nvidia Titan Xp",
+        "Titan Xp"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [
+        "m"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    }
+  ]
+}

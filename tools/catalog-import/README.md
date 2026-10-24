@@ -448,3 +448,31 @@ to 150 matches: exactly four explicit Gaming PC titles lose incorrect component 
 other stored title changes identity. With the fixed matcher applied to both catalogues, all 1,786
 stored titles have identical results; these samples demonstrate preservation and the container fix,
 not measured recall improvement for the new CPU/storage/RAM models.
+
+
+## Camera and GPU family expansion (2026-10-24)
+
+`expand_families.py` preserves all existing seeds, including `expand_seed.py` outputs, and adds
+missing GPU chipset families and exact camera names in two separate `*-expanded.json` files.
+GPU names use the original importer's capacity/LHR family grouping; cameras require a reviewed
+camera manufacturer and a numeric model identifier. The camera dataset also includes Nokia phones,
+which are deliberately excluded. No unbranded camera aliases or inferred attribute options are added.
+Both fixed source inputs are verified by SHA256 before any output is written. To regenerate after
+the preceding exact-model expansion:
+
+```bash
+mkdir -p /tmp/ane-catalog-expand
+curl --fail --location \
+  'https://raw.githubusercontent.com/docyx/pc-part-dataset/c52a04ca9465c83997ed335f7767b09a2005dd26/data/json/video-card.json' \
+  -o /tmp/ane-catalog-expand/pcpp-video-card.json
+curl --fail --location \
+  'https://raw.githubusercontent.com/leavestylecode/CameraDatabase/374a630bac7847f851b3746e82aa528262ef0b5c/data/camera_data.csv' \
+  -o /tmp/ane-catalog-expand/camera_data.csv
+python3 tools/catalog-import/expand_families.py --raw-dir /tmp/ane-catalog-expand
+python3 -m unittest discover -s tools/catalog-import -p 'test_*.py'
+dotnet test AneCore.Tests/AneCore.Tests.csproj --filter 'FullyQualifiedName~KnownProduct'
+```
+
+This pass adds 278 GPU chipset families and 2,812 digital camera models (15,801 → 18,891 total).
+The previous capped-camera/consumer-GPU coverage notes above describe the original seed files;
+these additive files broaden those families without rewriting their curated entries.

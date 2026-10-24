@@ -58,3 +58,35 @@ class ExpansionTests(unittest.TestCase):
                 (directory / "pcpp-memory.json").write_bytes(raw + b" ")
                 with self.assertRaisesRegex(ValueError, "input differs from pinned dataset"):
                     expansion.expand(directory)
+
+
+class RemainingFamilyExpansionTests(unittest.TestCase):
+    def test_pinned_sources_keep_previous_expansion_and_reject_phone_rows(self):
+        import expand_families as expansion
+        gpu = json.dumps([{"chipset": "Quadro P2000"}, {"chipset": "RTX A2000 6GB"},
+                          {"chipset": "RTX A2000 12GB"}]).encode()
+        cameras = ("Brand,Model\nNikon,D850\nNokia,Lumia 1020\nFujifilm,X-T5\n"
+                   "Panasonic,Lumix\n").encode()
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            seeds = directory / "seeds"
+            seeds.mkdir()
+            original = json.dumps({"products": [{"id": "preserved", "aliases": ["Nikon D850"]}]}).encode()
+            (seeds / "earlier-expanded.json").write_bytes(original)
+            (directory / "pcpp-video-card.json").write_bytes(gpu)
+            (directory / "camera_data.csv").write_bytes(cameras)
+            with patch.object(expansion, "GPU_SHA256", hashlib.sha256(gpu).hexdigest()), \
+                    patch.object(expansion, "CAMERA_SHA256", hashlib.sha256(cameras).hexdigest()), \
+                    patch.object(expansion.seed, "SEED_DIR", str(seeds)):
+                expansion.expand(directory)
+                paths = [seeds / f"{name}.json" for name in sorted(expansion.OUTPUTS)]
+                first = [p.read_bytes() for p in paths]
+                self.assertEqual([p["name"] for p in json.loads(first[0])["products"]], ["Fujifilm X-T5"])
+                self.assertEqual([p["name"] for p in json.loads(first[1])["products"]],
+                                 ["Nvidia Quadro P2000", "Nvidia RTX A2000"])
+                expansion.expand(directory)
+                self.assertEqual(first, [p.read_bytes() for p in paths])
+                self.assertEqual(original, (seeds / "earlier-expanded.json").read_bytes())
+                (directory / "camera_data.csv").write_bytes(cameras + b" ")
+                with self.assertRaisesRegex(ValueError, "input differs from pinned dataset"):
+                    expansion.expand(directory)

@@ -182,3 +182,47 @@ Conflicting drive interfaces/form factors and RAM generation/speed/module/CAS co
 omitted, and a RAM name needs a model number beyond its trailing capacity. The dataset supports
 model existence and the listed configurations; completeness, independent manufacturer validation
 and current resale demand are not asserted.
+
+
+## 10. Camera and GPU family expansion (2026-10-24)
+
+`gpu-expanded.json` adds 278 missing GPU chipset families from the same pinned docyx revision
+and MIT licence in sections 8–9. It follows the existing GPU identity policy: board partners,
+VRAM capacities and LHR revisions are grouped under the chipset family; no board SKU combinations
+are generated. Workstation Quadro/RTX, Radeon Pro/FirePro, Arc Pro and older consumer families
+are included. Existing GPU identities and aliases remain authoritative.
+
+`cameras-expanded.json` adds 2,812 exact digital camera names from
+[leavestylecode/CameraDatabase revision 374a630](https://github.com/leavestylecode/CameraDatabase/tree/374a630bac7847f851b3746e82aa528262ef0b5c),
+retrieved 2026-10-24, licensed MIT. This covers Canon, Nikon, Sony, Fujifilm, Olympus, Panasonic,
+Pentax, Ricoh, Leica, Sigma, Kodak, Casio, Minolta, Konica-Minolta and Samsung. Names must include a
+numeric model identifier, and only complete brand-plus-model source names are added as aliases.
+The source's Nokia smartphone rows and other unreviewed manufacturers are excluded. Existing
+identities and aliases are preserved. Camera attributes remain free rather than inferring values
+from historical specification columns. The dataset establishes model names, not current resale
+demand, exhaustive coverage or independent manufacturer verification.
+
+Both inputs have SHA256 checks in `tools/catalog-import/expand_families.py`; regeneration and
+validation commands are in its README. CameraDatabase's notice follows:
+
+> MIT License
+>
+> Copyright (c) 2025 leavestylecode
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all
+> copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+> SOFTWARE.
