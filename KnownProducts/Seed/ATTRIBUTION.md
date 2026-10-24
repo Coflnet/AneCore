@@ -168,3 +168,17 @@ PC component specification data derived from docyx/pc-part-dataset, MIT License:
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
+
+
+## 9. CPU, storage and RAM expansion (2026-10-24)
+
+`cpu-expanded.json`, `storage-expanded.json`, and `ram-expanded.json` use the same
+[docyx/pc-part-dataset revision c52a04c](https://github.com/docyx/pc-part-dataset/tree/c52a04ca9465c83997ed335f7767b09a2005dd26)
+(MIT, copyright Doc Oliver; full notice in section 8), using the original bytes retrieved
+2026-10-23. Per-file SHA256 pins and regeneration instructions are in `tools/catalog-import`.
+The existing catalogue is preserved. Additions are 772 exact CPU names, 1,405 storage model names,
+and 2,016 RAM kit names. Storage capacity options and RAM capacities derive only from source rows.
+Conflicting drive interfaces/form factors and RAM generation/speed/module/CAS configurations are
+omitted, and a RAM name needs a model number beyond its trailing capacity. The dataset supports
+model existence and the listed configurations; completeness, independent manufacturer validation
+and current resale demand are not asserted.

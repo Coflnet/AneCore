@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -17,11 +18,18 @@ INPUTS = {
                 ("screen_size", "resolution", "refresh_rate")),
     "motherboard": ("7bf4ecb66756c40234ccc1f6e2e43ca477dea7ef3f6e5c92d9b432d5776c6a1b", "motherboards", seed.CAT_MOBO,
                     ("socket", "form_factor")),
+    "cpu": ("1e3fd9ba6bf11fca4217675d67ed5edd0d60cc6cb2604418c443cf474fe58c1c", "cpu", seed.CAT_CPU,
+            ("core_count", "core_clock", "boost_clock", "microarchitecture", "tdp", "graphics")),
+    "internal-hard-drive": ("0634f9c8157d649cf4e6a67ffcaa69ae22695f7a0befb1c60fdfffe921845d3b", "storage", seed.CAT_STORAGE,
+                            ("type", "form_factor", "interface")),
+    "memory": ("2c70f628bebd31bb47ef5b46b39de52c41a417b17dfcc0c63991b2d27310de63", "ram", seed.CAT_RAM,
+               ("speed", "modules", "cas_latency")),
     "headphones": ("84b601bafaeb48f981eda8caa00cc58e7812465c6b89044064ab0e78327c753c", "headphones", seed.CAT_HEADPHONES,
                    ("wireless", "microphone", "type", "enclosure_type")),
 }
 COMPOUND_BRANDS = ("Cooler Master", "Turtle Beach", "Cyber Acoustics", "Harman Kardon", "Altec Lansing",
-                   "Mad Catz", "Final Audio", "Titan Army")
+                   "Mad Catz", "Final Audio", "Titan Army", "Western Digital", "Silicon Power", "SK Hynix",
+                   "Oyen Digital", "Super Talent", "Neo Forza", "Fantom Drives", "Edge Tech")
 
 
 def expand(raw_dir):
@@ -43,6 +51,8 @@ def expand(raw_dir):
             if (len(name.split()) < 2 or name.split()[0].casefold() == name.split()[1].casefold()
                     or not any(c.isdigit() for c in name.split(" ", 1)[1])):
                 continue
+            if source_file == "memory" and not any(c.isdigit() for c in re.sub(r"\s+\d+\s+GB$", "", name)):
+                continue  # A capacity alone does not distinguish a RAM kit's generation/speed.
             groups[tuple(nz.matcher_tokens(name))].append(row)
         products = []
         ambiguous = 0
@@ -62,6 +72,11 @@ def expand(raw_dir):
             possible = {}
             if source_file == "monitor" and rows[0].get("screen_size"):
                 possible["screen_size"] = [f'{rows[0]["screen_size"]}"']
+            if source_file == "internal-hard-drive":
+                possible["storage_size"] = sorted({nz.fmt_storage(r["capacity"]) for r in rows if r.get("capacity")})
+            if source_file == "memory" and rows[0].get("modules"):
+                count, capacity = rows[0]["modules"]
+                possible["ram_size"] = [nz.fmt_ram(count * capacity)]
             product = seed.make_product(pid, brand, name, name, path, "electronics", {name}, "docyx-pc-part-dataset", possible)
             product["source"] = SOURCE
             products.append(product)

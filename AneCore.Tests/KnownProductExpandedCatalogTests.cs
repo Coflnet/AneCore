@@ -57,6 +57,24 @@ public class KnownProductExpandedCatalogTests
         Assert.That(Matcher.Match(title), Is.Null);
     }
 
+    [TestCase("Desktop PC / Rechner Intel Core i7 4790K Win 10")]
+    [TestCase("Gaming PC Intel Core i7-6700 16GB DDR4")]
+    [TestCase("Mainboard Fujitsu D3401-B21 + Intel Core i7-6700")]
+    public void SingleRecognizedCpu_InWholeSystemOrBoardBundle_DoesNotMatch(string title)
+    {
+        Assert.That(Matcher.Match(title), Is.Null);
+    }
+
+    [TestCase("Intel Core i7-6700 Desktop Prozessor", "intel-core-i7-6700")]
+    [TestCase("Intel Core i7-6700 für Desktop PC", "intel-core-i7-6700")]
+    [TestCase("Intel Core i7-6700 Mainboard kompatibel", "intel-core-i7-6700")]
+    [TestCase("Crucial CT2K16G48C40U5 32 GB gebraucht", "crucial-ct2k16g48c40u5-32-gb")]
+    [TestCase("Lexar NM790 2TB SSD gebraucht", "lexar-nm790")]
+    public void ExactComponents_KeepTheirIdentity(string title, string expectedId)
+    {
+        Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(expectedId));
+    }
+
     [Test]
     public void MotherboardVariants_KeepWirelessRevisionAndPlusDistinct()
     {

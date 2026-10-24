@@ -231,7 +231,7 @@ public class KnownProductMatcher
         if (matches.Count == 0)
             return null;
 
-        matches = ApplyContainerVeto(matches, titleTokens, normalizedTitle);
+        matches = ApplyContainerVeto(matches, titleTokens, normalizedTitle, title);
         if (matches.Count == 0)
             return null;
 
@@ -253,24 +253,25 @@ public class KnownProductMatcher
     }
 
     /// <summary>
-    /// Drops component-category matches (GPU/CPU/RAM/motherboard/storage) when the title both reads as a
-    /// whole system ("Gaming PC ...", "Komplett PC ...", "Rechner ...") AND matched two or more distinct
-    /// component products - e.g. "Gaming PC Ryzen 5 5600 RTX 3060 16GB" matching both the CPU and the GPU.
-    /// Both signals are required: a single component alias in a system-worded title (e.g. a legitimate
-    /// "Rechner mit RTX 3060" upgrade-part listing) is not enough on its own to veto, and multiple
-    /// component matches without system wording (e.g. a bundle listing) is left to the normal
-    /// longest-alias/ambiguity logic instead of being silently dropped here.
+    /// Explicit whole-system phrases before a component, or a motherboard/CPU bundle, describe a
+    /// container rather than the component itself. Generic "Rechner" wording still needs multiple
+    /// matched components so ordinary upgrade listings continue to match.
     /// </summary>
     private static List<(KnownProduct Product, int TokenCount, int StartIndex)> ApplyContainerVeto(
-        List<(KnownProduct Product, int TokenCount, int StartIndex)> matches, string[] titleTokens, string normalizedTitle)
+        List<(KnownProduct Product, int TokenCount, int StartIndex)> matches, string[] titleTokens,
+        string normalizedTitle, string title)
     {
         var componentMatches = matches.Where(m => IsComponentCategory(m.Product)).ToList();
-        var distinctComponentProducts = componentMatches.Select(m => m.Product.Id).Distinct().Count();
-        if (distinctComponentProducts < 2)
+        if (componentMatches.Count == 0)
             return matches;
-        if (!IsCompleteSystemListing(normalizedTitle))
+        var prefix = string.Join(" ", titleTokens.Take(componentMatches.Min(m => m.StartIndex)));
+        var explicitSystem = CompleteSystemWords.Any(word => word != "rechner" && prefix.Contains(word, StringComparison.Ordinal));
+        var boardCpuBundle = title.Contains(" + ", StringComparison.Ordinal)
+            && (titleTokens.Contains("mainboard") || titleTokens.Contains("motherboard"))
+            && componentMatches.Any(m => m.Product.Categories[^1] == "Prozessoren");
+        var multipleComponents = componentMatches.Select(m => m.Product.Id).Distinct().Count() >= 2;
+        if (!explicitSystem && !boardCpuBundle && !(multipleComponents && IsCompleteSystemListing(normalizedTitle)))
             return matches;
-
         return matches.Where(m => !IsComponentCategory(m.Product)).ToList();
     }
 

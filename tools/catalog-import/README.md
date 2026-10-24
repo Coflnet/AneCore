@@ -368,7 +368,7 @@ original seed row and its curated aliases. Input is pinned to docyx/pc-part-data
 
 ```bash
 mkdir -p /tmp/ane-catalog-expand
-for category in monitor motherboard headphones; do
+for category in monitor motherboard cpu internal-hard-drive memory headphones; do
   curl --fail --silent --show-error \
     "https://raw.githubusercontent.com/docyx/pc-part-dataset/c52a04ca9465c83997ed335f7767b09a2005dd26/data/json/$category.json" \
     -o "/tmp/ane-catalog-expand/pcpp-$category.json"
@@ -416,3 +416,35 @@ precision preservation on those titles, not a population-wide recall gain. In a 
 11,608-product index built in 708 ms; 10,000 matches took 377 ms for an iPhone title, 1,808 ms for an MSI
 board, 1,622 ms for an Asus board and 202 ms for a Dell monitor. Index construction happens once per
 catalogue refresh, while listing processing reuses that index.
+
+
+## CPU, storage and RAM follow-up (2026-10-24)
+
+The same pinned docyx snapshot now supplies `cpu-expanded.json` (+772), `storage-expanded.json`
+(+1,405) and `ram-expanded.json` (+2,016). Total catalogue size is 15,801. All 11,608 prior rows,
+including ids, aliases and attributes, remain byte-identical. The command above regenerates all six
+expansion files; the input hashes protect the original retrieved bytes.
+
+CPU names are deduplicated across tray/boxed rows only when core count, clocks, microarchitecture,
+TDP and graphics agree (961 distinct names, 189 already covered). Storage names must agree on drive
+type, interface and form factor; 113 conflicting names are omitted. Capacities actually listed for an
+accepted storage model become its `storage_size` options. No new capacity/model combinations are
+invented. RAM names must contain a model number *before* the trailing capacity, and all rows for the
+name must agree on DDR generation/speed, module count/capacity and CAS latency (184 conflicting names
+omitted). The source module configuration supplies `ram_size`. RAM umbrella names such as
+`Corsair Vengeance 32 GB` remain omitted even when the snapshot happens to list only one speed.
+Full model names remain the sole aliases; no short numeric CPU aliases or board-partner GPU splits
+are introduced. These source checks prevent demonstrated conflations, but cannot prove upstream
+completeness or manufacturer accuracy. Capacity constraints reflect this snapshot, not an assertion
+that no other configuration exists.
+
+The stored 500-title auction sample retains its 189 matches. Extending CPUs exposed complete-system
+and motherboard/CPU-bundle titles containing only one recognized part. The matcher now rejects an
+explicit system phrase before that part and a motherboard/CPU ` + ` bundle. Plain Desktop/PC
+compatibility wording after a CPU model remains valid, as does the existing `Rechner Upgrade` case.
+
+Against the original 11,608-row catalogue and matcher, the older 1,286-title sample drops from 154
+to 150 matches: exactly four explicit Gaming PC titles lose incorrect component identities. No
+other stored title changes identity. With the fixed matcher applied to both catalogues, all 1,786
+stored titles have identical results; these samples demonstrate preservation and the container fix,
+not measured recall improvement for the new CPU/storage/RAM models.

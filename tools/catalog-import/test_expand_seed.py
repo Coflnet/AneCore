@@ -1,7 +1,11 @@
 """Run with: python3 -m unittest discover -s tools/catalog-import -p 'test_*.py'."""
+import hashlib
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parent / "lib"))
 import normalize as nz
@@ -20,3 +24,37 @@ class PrefixExclusionTests(unittest.TestCase):
                    "b": {"Dell U2723QEA"}, "c": {"Dell U2723QE-A"}, "other": {"HP U2723QE"}}
         self.assertEqual(nz.compute_prefix_exclude_terms(aliases),
                          {"a": {"a"}, "b": set(), "c": set(), "other": set()})
+
+
+class ExpansionTests(unittest.TestCase):
+    def test_exact_models_preserve_existing_and_omit_conflicting_ram(self):
+        import expand_seed as expansion
+        rows = [
+            {"name": "Crucial CT2K16G48C40U5 32 GB", "speed": [5, 4800], "modules": [2, 16], "cas_latency": 40},
+            {"name": "Corsair Vengeance 32 GB", "speed": [5, 6000], "modules": [2, 16], "cas_latency": 36},
+            {"name": "Kingston KF432 32 GB", "speed": [4, 3200], "modules": [2, 16], "cas_latency": 16},
+            {"name": "Kingston KF432 32 GB", "speed": [4, 3600], "modules": [2, 16], "cas_latency": 16},
+            {"name": "Crucial CT8G48 8 GB", "speed": [5, 4800], "modules": [1, 8], "cas_latency": 40},
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            seeds = directory / "seeds"
+            seeds.mkdir()
+            raw = json.dumps(rows).encode()
+            (directory / "pcpp-memory.json").write_bytes(raw)
+            original = json.dumps({"products": [{"id": "curated", "aliases": ["Crucial CT8G48 8 GB"]}]}).encode()
+            (seeds / "curated.json").write_bytes(original)
+            inputs = {"memory": (hashlib.sha256(raw).hexdigest(), "ram", expansion.seed.CAT_RAM,
+                                 ("speed", "modules", "cas_latency"))}
+            with patch.object(expansion, "INPUTS", inputs), patch.object(expansion.seed, "SEED_DIR", str(seeds)):
+                expansion.expand(directory)
+                first = (seeds / "ram-expanded.json").read_bytes()
+                products = json.loads(first)["products"]
+                self.assertEqual([p["name"] for p in products], ["Crucial CT2K16G48C40U5 32 GB"])
+                self.assertEqual(products[0]["possibleAttributes"], {"ram_size": ["32GB"]})
+                expansion.expand(directory)
+                self.assertEqual(first, (seeds / "ram-expanded.json").read_bytes())
+                self.assertEqual(original, (seeds / "curated.json").read_bytes())
+                (directory / "pcpp-memory.json").write_bytes(raw + b" ")
+                with self.assertRaisesRegex(ValueError, "input differs from pinned dataset"):
+                    expansion.expand(directory)
