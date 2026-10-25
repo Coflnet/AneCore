@@ -14,6 +14,23 @@ public class CategoryScopeComicsTests
         Assert.That(scope.MatchesTitle("Batman Sammlung"), Is.True);
     }
 
+    // Native IDs from the captured Marktplaats /v/boeken/stripboeken and /strips-comics rows.
+    [TestCase("227")]
+    [TestCase("1459")]
+    public void MarktplaatsComicLeavesKeepGenericComicTitles(string category)
+    {
+        var scope = CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Marktplaats, category)!;
+        Assert.That(scope.Vertical!.Key, Is.EqualTo("comics"));
+        Assert.That(scope.Vertical.IsActive, Is.True);
+        Assert.That(scope.MatchesTitle("PEP weekbladen"), Is.True);
+    }
+
+    [TestCase("1447")]
+    [TestCase("1125")]
+    [TestCase("896")]
+    public void OtherMarktplaatsLeavesDoNotBecomeComics(string category) =>
+        Assert.That(CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Marktplaats, category)?.Vertical?.Key, Is.Not.EqualTo("comics"));
+
     [Test]
     public void BroaderBooksCategoryDoesNotBecomeAnUnboundedCrawl() =>
         Assert.That(CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Kleinanzeigen, "76")!.IsOutOfScope, Is.True);

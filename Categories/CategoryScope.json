@@ -149,7 +149,8 @@
       "name": "Comics and graphic novels",
       "rationale": "Single issues retain explicit series, number, language and edition evidence. Ambiguous issues and collections remain browsable as separate offers.",
       "unified": ["ane-comics"],
-      "kleinanzeigen": {"ids": [284], "labels": ["Comics"]}
+      "kleinanzeigen": {"ids": [284], "labels": ["Comics"]},
+      "marktplaats": {"ids": [227, 1459]}
     },
     "bikes": {
       "status": "next",
