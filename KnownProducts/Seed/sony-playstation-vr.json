@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": "sony-playstation-vr-2",
+      "brand": "Sony",
+      "model": "Sony PlayStation VR 2",
+      "name": "Sony PlayStation VR 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "Datenbrillen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PlayStation VR2",
+        "PlayStation VR 2",
+        "PSVR2",
+        "PS VR2",
+        "VR 2 PS 5",
+        "CFI-ZVR1"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:https://www.playstation.com/en-us/support/hardware/psvr2/;https://manuals.playstation.net/document/pdf/CFI-ZVR1G-1.pdf"
+    }
+  ]
+}
