@@ -30,6 +30,9 @@ public class KnownProductLegoCatalogTests
     [TestCase("LEGO 10316 Rivendell gebraucht", "lego-10316")]
     [TestCase("LEGO Set 10305 vollständig", "lego-10305")]
     [TestCase("LEGO 10333 Barad-dûr", "lego-10333")]
+    [TestCase("LEGO 21335 Motorized Lighthouse", "lego-21335")]
+    [TestCase("LEGO 7592 Buzz Lightyear", "lego-7592")]
+    [TestCase("LEGO 8200 Lightning McQueen", "lego-8200")]
     public void ExactBrandAndSetNumberMatch(string title, string expected)
     {
         Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(expected));
@@ -46,6 +49,9 @@ public class KnownProductLegoCatalogTests
     [TestCase("LEGO 42115 ohne Figuren")]
     [TestCase("LEGO 42115 MOC")]
     [TestCase("LEGO 42115 Beleuchtung")]
+    [TestCase("Lightailing LED Kit voor LEGO Lord of the Rings Rivendell 10316")]
+    [TestCase("LEGO 10316 Lighting Kit")]
+    [TestCase("LEGO 10316 Light Kit")]
     [TestCase("LEGO 42115 + 42143")]
     [TestCase("LEGO 42115 und LEGO Set 42143")]
     [TestCase("LEGO 421150")]

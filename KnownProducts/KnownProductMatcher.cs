@@ -229,7 +229,7 @@ public class KnownProductMatcher
                 if (entry.Product.Vertical == "lego" &&
                     (Regex.IsMatch(normalizedTitle, @"\b(?:unvollstandig|incomplete|fehlteile|konvolut|sammlung|bundle|moc|nachbau|kompatibel|nur|ohne)\b", Opts)
                      || Regex.IsMatch(normalizedTitle, @"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts)
-                     || Regex.Matches(normalizedTitle, @"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light)\b", Opts)
+                     || Regex.Matches(normalizedTitle, @"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts)
                          .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
                      || titleTokens.Where(t => Regex.IsMatch(t, @"^\d{4,7}$", Opts)).Distinct().Count() > 1
                      || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts)))
