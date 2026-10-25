@@ -53,10 +53,12 @@ public static class Fitment
         "lego", "marklin", "maerklin", "fleischmann", "roco", "piko", "tamiya", "carrera", "lgb", "trix", "faller", "playmobil",
         "brother", "singer", "pfaff", "bernina", "husqvarna", "janome", "juki",
         "bmw", "vw", "volkswagen", "audi", "mercedes", "opel", "ford", "fiat", "renault", "peugeot", "skoda", "seat", "toyota", "nissan", "mazda", "volvo",
-        "kawasaki", "yamaha", "suzuki", "ktm", "vespa", "piaggio", "simson", "mz", "zundapp", "kreidler", "hercules", "puch", "ducati", "aprilia", "harley",
+        "kawasaki", "yamaha", "suzuki", "ktm", "vespa", "piaggio", "simson", "mz", "zundapp", "kreidler", "hercules", "puch", "ducati", "aprilia", "harley", "dkw", "nsu", "solo", "hirth", "rotax", "agria", "dnepr", "ural",
     };
 
     private static readonly Regex TrailingNoise =new(@"\s+(?:zahnrad\p{L}*|ritzel|gear\p{L}*|ersatzteil\p{L}*|spare|parts?|teile?)$", Opts);
+    private static readonly Regex NegatedPhrase = new(@"(?<![\p{L}\p{N}])(?:nicht|not)\s+$", Opts);
+
     private static readonly Regex NonKey = new(@"[^\p{L}\p{N}]+", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
     /// <summary>The comparison key of a machine name: folded, letters and digits, single spaces ("Bosch GSR 12V-15" and "bosch gsr 12 v 15" differ; "BOSCH GSR 12V-15" and "bosch gsr 12v-15" do not).</summary>
@@ -73,6 +75,8 @@ public static class Fitment
         var result = new List<FitMention>();
         foreach (Match phrase in Phrase.Matches(text))
         {
+            if (NegatedPhrase.IsMatch(text[..phrase.Index]))
+                continue;
             var m = phrase;
             var first = true;
             while (m.Success && result.Count < max)

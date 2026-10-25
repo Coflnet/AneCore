@@ -15,6 +15,7 @@ public sealed class PartTextFacts
     public string? TeethNote { get; init; }
     /// <summary>Bearing designation ("6203-2RS") as the comparison key (<see cref="BearingTextExtractor.DesignationKey"/>).</summary>
     public TextName? Designation { get; init; }
+    public TextName? CarburetorDesignation { get; init; }
     public TextValue<double>? Module { get; init; }
     public TextValue<double>? OuterDiameterMm { get; init; }
     public TextValue<double>? BoreMm { get; init; }
@@ -39,6 +40,7 @@ public sealed class PartTextFacts
     {
         if (Material != null) yield return (PartAttributeKeys.Material, Material);
         if (Designation != null) yield return (PartAttributeKeys.BearingDesignation, Designation);
+        if (CarburetorDesignation != null) yield return (PartAttributeKeys.CarburetorDesignation, CarburetorDesignation);
     }
 
     /// <summary>The first labelled part number, or null (a bare code never becomes the page's part number).</summary>
@@ -119,6 +121,9 @@ public static class BearingTextExtractor
 /// </summary>
 public static class PartTextExtractors
 {
+    // Slash-separated types are read only beside the explicit Bing maker; they are not inferred dimensions or OEM numbers.
+    private static readonly Regex BingDesignation = new(@"(?<![\p{L}\p{N}])bing\s+(?:vergass?er\s+)?(?<d>\d{1,2}/\d{1,2}(?:/\d{1,3})?(?:\s+[a-z](?![\p{L}\p{N}]))?)(?![\p{L}\p{N}/])", RegexOptions.Compiled | RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+
     /// <summary>The facts of a listing, or null when the title names no part class (or an excluded context).</summary>
     public static PartTextFacts? Extract(string? title, string? description)
     {
@@ -143,6 +148,8 @@ public static class PartTextExtractors
                 var generic = new PartTextFacts
                 {
                     Class = cls.Class, ClassEvidence = cls.Evidence,
+                    CarburetorDesignation = cls.Class.Name == PartClasses.Carburetor && BingDesignation.Match(title ?? "") is { Success: true } carb
+                        ? new TextName("Bing " + carb.Groups["d"].Value.Trim().ToUpperInvariant(), 0.9, PartText.Evidence($"carburetor type: \"{carb.Value}\"") ?? "") : null,
                     PartNumbers = PartNumbers.Find((title ?? "") + " \n " + (description ?? "")),
                     Fits = Fitment.FindInListing(title, description),
                 };
@@ -160,6 +167,8 @@ public static class PartTextExtractors
         {
             case PartAttributeKeys.GearTeeth:
                 return decidedTeeth == null ? null : (decidedTeeth.Value.ToString(System.Globalization.CultureInfo.InvariantCulture), teethConfidence);
+            case PartAttributeKeys.CarburetorDesignation:
+                return facts.CarburetorDesignation == null ? null : (facts.CarburetorDesignation.Value, facts.CarburetorDesignation.Confidence);
             case PartAttributeKeys.BearingDesignation:
                 return facts.Designation == null ? null : (facts.Designation.Value, facts.Designation.Confidence);
             default:

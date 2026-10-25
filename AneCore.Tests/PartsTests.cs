@@ -25,6 +25,11 @@ public class PartClassRegistryTests
     [TestCase("Getriebe komplett für Bosch GSR")]
     [TestCase("Nikon Z50 Kit")]
     [TestCase("Kawasaki Z125 Pro")]
+    [TestCase("Auto mit Vergaser")]
+    [TestCase("PKW mit Vergaser")]
+    [TestCase("LKW mit Vergaser")]
+    [TestCase("Motorrad mit Vergaser")]
+    [TestCase("Roller mit Vergaser")]
     [TestCase("Bluetooth Lautsprecher transparent")]
     public void ExcludedContexts_AreNoPart(string title)
     {
@@ -66,6 +71,20 @@ public class PartClassRegistryTests
     public void Nouns_GiveTheClass(string title, string expected) =>
         Assert.That(PartClassRegistry.Classify(title)?.Class.Name, Is.EqualTo(expected), title);
 
+    [TestCase("Bing Vergaser 1/20/38", "Bing 1/20/38")]
+    [TestCase("Bing 21/20/105 A Vergaser Gehäuse", "Bing 21/20/105 A")]
+    [TestCase("Vergaser Bing 3/22/43 inkl. Ansaugstutzen", "Bing 3/22/43")]
+    [TestCase("Bing Vergaser", null)]
+    public void Carburetors_PreserveExplicitTypeWithoutInventingDimensionsOrFit(string title, string? designation)
+    {
+        var facts = PartTextExtractors.Extract(title, "")!;
+        Assert.That(facts.Class.Name, Is.EqualTo(PartClasses.Carburetor));
+        Assert.That(facts.CarburetorDesignation?.Value, Is.EqualTo(designation));
+        Assert.That(facts.LabelledPartNumber, Is.Null);
+        Assert.That(facts.Numbers(), Is.Empty);
+        Assert.That(facts.Fits, Is.Empty);
+    }
+
     [Test]
     public void Registry_HasAPrimaryKeyAndKeysForEveryClass()
     {
@@ -78,7 +97,7 @@ public class PartClassRegistryTests
         Assert.That(PartAttributeKeys.IsIndexKey("gear_teeth"), Is.True);
         Assert.That(PartAttributeKeys.IsIndexKey("part_fits"), Is.True);
         Assert.That(PartAttributeKeys.IsIndexKey("color"), Is.False);
-        Assert.That(PartAttributeKeys.Searchable, Has.Count.EqualTo(3), "the search index gains at most three attribute pairs per part product");
+        Assert.That(PartAttributeKeys.Searchable, Has.Count.EqualTo(4), "searchable part facts include the explicit carburetor designation");
     }
 
     [Test]
@@ -331,6 +350,17 @@ public class PartNumbersTests
 [TestFixture]
 public class FitmentTests
 {
+    [TestCase("nicht für Zündapp KS50")]
+    [TestCase("Bing Vergaser nicht passend für Zündapp KS50")]
+    [TestCase("Carburetor not for BMW R75")]
+    public void NegatedPhrases_AreNotFits(string title) =>
+        Assert.That(Fitment.Find(title, 0.75), Is.Empty);
+
+    [Test]
+    public void PositiveFitAfterNegatedPhrase_IsStillRead() =>
+        Assert.That(Fitment.Find("Nicht für Zündapp KS50, für Puch Maxi", 0.75).Select(f => f.MachineKey),
+            Is.EqualTo(new[] { "puch maxi" }));
+
     [Test]
     public void German_Phrases()
     {

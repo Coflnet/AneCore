@@ -7,6 +7,7 @@ public static class PartClasses
 {
     public const string Gear = "gear";
     public const string Bearing = "bearing";
+    public const string Carburetor = "carburetor";
     public const string Belt = "belt";
     public const string Pulley = "pulley";
     public const string Sprocket = "sprocket";
@@ -60,6 +61,10 @@ public static class PartClassRegistry
         @"kugellager|rillenkugellager|walzlager|rollenlager|nadellager|kegelrollenlager|pendellager|lager(?:satz)?|ball\s?bearings?|roller\s?bearings?|bearings?|roulements?|cuscinett[oi]|rodamientos?|kogellager|lozysk[oa]",
         true);
 
+    public static readonly PartClassDefinition Carburetor = new(PartClasses.Carburetor, PartAttributeKeys.CarburetorDesignation,
+        [PartAttributeKeys.CarburetorDesignation, PartAttributeKeys.PartNumber],
+        @"vergaser|vergasser|carburett?ors?|carburateurs?|carburator[ei]", true);
+
     public static readonly PartClassDefinition Belt = new(PartClasses.Belt, PartAttributeKeys.BeltProfile,
         [PartAttributeKeys.BeltProfile, PartAttributeKeys.BeltLengthMm, PartAttributeKeys.WidthMm, PartAttributeKeys.PartNumber],
         @"keilriemen|zahnriemen|flachriemen|antriebsriemen|rippenriemen|riemen|v-?belts?|timing\s?belts?|drive\s?belts?|toothed\s?belts?|courroies?|cinghi[ae]|correas?|aandrijfriem|snaar", false);
@@ -96,7 +101,7 @@ public static class PartClassRegistry
         [PartAttributeKeys.PartNumber],
         @"ersatzteil(?:e)?|spare\s?parts?|replacement\s?parts?|pieces?\s?(?:detachees?|de\s?rechange)|ricambi[o]?|repuestos?|onderdeel|onderdelen", true);
 
-    public static readonly IReadOnlyList<PartClassDefinition> All = [Gear, Bearing, Pulley, Sprocket, Belt, Seal, Filter, Brush, Blade, Nozzle, Generic];
+    public static readonly IReadOnlyList<PartClassDefinition> All = [Gear, Bearing, Carburetor, Pulley, Sprocket, Belt, Seal, Filter, Brush, Blade, Nozzle, Generic];
 
     // contexts in which the part nouns do not name a part: games and media, wearables, bicycles, cameras, phones, vehicles with the noun in their model name
     private static readonly Regex Excluded = new(
@@ -116,6 +121,11 @@ public static class PartClassRegistry
         @"\(\s*\d+\s*(?:kugellager|ball\s?bearings?)\s*\)|(?<![\p{L}\p{N}])(?:\p{L}*lager[\s-]*&\s*)?\p{L}*lager[\s-]*abzieher(?![\p{L}\p{N}])",
         Opts);
 
+    // A carburetor may name compatible vehicle makes; media, services, lots and complete vehicles still do not name a loose part.
+    private static readonly Regex CarburetorNonPart = new(
+        @"(?<![\p{L}\p{N}])(?:suche|gesucht|tausche|wanted|service|reparaturservice|reinigung|instandsetzung|sammlung|konvolut|teilepaket|teiletrager|schlachtfest|diverse\s+teile|buch|bucher|handbuch|anleitung|prospekt\p{L}*|katalog|zeitschrift|magazin|poster|aufkleber|modellbau|spielzeug|schmuck|ringe?|uhr\p{L}*|watch|helm|handschuhe|fahrbereit|fahrzeug|baujahr|erstzulassung|papiere)(?![\p{L}\p{N}])|(?:moped|motorrad|mofa|roller)\s+mit\b", Opts);
+    private static readonly Regex CarburetorVehicleContext = new(@"^(?:kawasaki|yamaha|honda|suzuki|bmw|audi|vw|mercedes|ford|opel|toyota|skoda)$", Opts);
+
     public static PartClassDefinition? Find(string? name) => name == null ? null : All.FirstOrDefault(c => string.Equals(c.Name, name, StringComparison.Ordinal));
 
     /// <summary>
@@ -125,10 +135,17 @@ public static class PartClassRegistry
     public static PartClassMatch? Classify(string? title)
     {
         var folded = PartText.Fold(title);
-        if (folded.Length == 0 || Excluded.IsMatch(folded))
+        if (folded.Length == 0)
+            return null;
+        if (Carburetor.NounRegex.Match(folded) is { Success: true } carb
+            && !CarburetorNonPart.IsMatch(folded) && !Nozzle.NounRegex.IsMatch(folded)
+            && Excluded.Matches(folded).Cast<Match>().All(m => CarburetorVehicleContext.IsMatch(m.Value)))
+            return new PartClassMatch(Carburetor, carb.Value);
+        if (Excluded.IsMatch(folded) || CarburetorNonPart.IsMatch(folded) && Carburetor.NounRegex.IsMatch(folded))
             return null;
         foreach (var cls in All)
         {
+            if (cls == Carburetor) continue; // handled above with the loose-part guards
             var m = cls.NounRegex.Match(cls == Bearing ? BearingNonPartMentions.Replace(folded, " ") : folded);
             if (m.Success)
                 return new PartClassMatch(cls, m.Value.Trim());
@@ -138,7 +155,7 @@ public static class PartClassRegistry
 }
 
 /// <summary>
-/// The attribute keys of the index. Only <see cref="Searchable"/> (<c>part_class</c>, <c>part_key</c>, <c>part_number</c>) are written to the product and so to the search index;
+/// The attribute keys of the index. Only <see cref="Searchable"/> keys are written to the product and so to the search index;
 /// every measurement lives in <c>part_measurements</c> only. Values are plain invariant numbers without a unit; the unit is in the key. An unknown value is a missing key, never "unknown".
 /// </summary>
 public static class PartAttributeKeys
@@ -172,20 +189,22 @@ public static class PartAttributeKeys
     public const string BoreToOuterRatio = "part_bore_ratio";
     /// <summary>Bearing designation, e.g. 6203-2RS.</summary>
     public const string BearingDesignation = "bearing_designation";
+    /// <summary>Explicit carburetor type, never a bore measurement or vehicle fitment.</summary>
+    public const string CarburetorDesignation = "carburetor_designation";
     /// <summary>Belt profile (A, B, SPZ, HTD 5M, GT2, ...).</summary>
     public const string BeltProfile = "belt_profile";
     /// <summary>Belt length in millimetres.</summary>
     public const string BeltLengthMm = "belt_length_mm";
 
-    /// <summary>The keys that are written to the product (the search index): at most three attribute pairs per part product.</summary>
-    public static readonly IReadOnlyList<string> Searchable = [PartClass, PartKey, PartNumber];
+    /// <summary>The keys that are written to the product (the search index): class, primary key, labelled number and explicit carburetor designation.</summary>
+    public static readonly IReadOnlyList<string> Searchable = [PartClass, PartKey, PartNumber, CarburetorDesignation];
 
     /// <summary>Every key the index may write to <c>part_measurements</c> or remove from a product.</summary>
     public static readonly IReadOnlyList<string> All =
-        [PartClass, PartKey, PartNumber, GearTeeth, GearTeethSource, GearModule, OuterDiameterMm, BoreMm, InnerDiameterMm, WidthMm, Material, FitsFor, BoreToOuterRatio, BearingDesignation, BeltProfile, BeltLengthMm];
+        [PartClass, PartKey, PartNumber, GearTeeth, GearTeethSource, GearModule, OuterDiameterMm, BoreMm, InnerDiameterMm, WidthMm, Material, FitsFor, BoreToOuterRatio, BearingDesignation, CarburetorDesignation, BeltProfile, BeltLengthMm];
 
     /// <summary>True for a key the index owns (the search gate of AneApi skips these attribute values).</summary>
-    public static bool IsIndexKey(string? key) => key != null && (key.StartsWith("part_", StringComparison.Ordinal) || key.StartsWith("gear_", StringComparison.Ordinal) || key.StartsWith("bearing_", StringComparison.Ordinal) || key.StartsWith("belt_", StringComparison.Ordinal));
+    public static bool IsIndexKey(string? key) => key != null && (key.StartsWith("part_", StringComparison.Ordinal) || key.StartsWith("gear_", StringComparison.Ordinal) || key.StartsWith("bearing_", StringComparison.Ordinal) || key.StartsWith("carburetor_", StringComparison.Ordinal) || key.StartsWith("belt_", StringComparison.Ordinal));
 
     /// <summary>The <c>part_key</c> value of a class and a primary key value.</summary>
     public static string Key(string partClass, string primaryValue) => partClass + ":" + primaryValue;
