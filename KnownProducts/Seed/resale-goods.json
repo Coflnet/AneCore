@@ -117,6 +117,616 @@
         "go"
       ],
       "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-402vlz4",
+      "brand": "Mackie",
+      "model": "402VLZ4",
+      "name": "Mackie 402VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 402VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "4"
+        ],
+        "microphone_inputs": [
+          "2"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-802vlz4",
+      "brand": "Mackie",
+      "model": "802VLZ4",
+      "name": "Mackie 802VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 802VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "8"
+        ],
+        "microphone_inputs": [
+          "3"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-1202vlz4",
+      "brand": "Mackie",
+      "model": "1202VLZ4",
+      "name": "Mackie 1202VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 1202VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "12"
+        ],
+        "microphone_inputs": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-1402vlz4",
+      "brand": "Mackie",
+      "model": "1402VLZ4",
+      "name": "Mackie 1402VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 1402VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "14"
+        ],
+        "microphone_inputs": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-1642vlz4",
+      "brand": "Mackie",
+      "model": "1642VLZ4",
+      "name": "Mackie 1642VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 1642VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "16"
+        ],
+        "microphone_inputs": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-1604vlz4",
+      "brand": "Mackie",
+      "model": "1604VLZ4",
+      "name": "Mackie 1604VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 1604VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "16"
+        ],
+        "microphone_inputs": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-2404vlz4",
+      "brand": "Mackie",
+      "model": "2404VLZ4",
+      "name": "Mackie 2404VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 2404VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "24"
+        ],
+        "microphone_inputs": [
+          "20"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "mackie-3204vlz4",
+      "brand": "Mackie",
+      "model": "3204VLZ4",
+      "name": "Mackie 3204VLZ4",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Audiomixer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Mackie 3204VLZ4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "audio mixer"
+        ],
+        "channels": [
+          "32"
+        ],
+        "microphone_inputs": [
+          "28"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "electro-harmonix-deluxe-memory-man-550-tt",
+      "brand": "Electro-Harmonix",
+      "model": "Deluxe Memory Man 550-TT",
+      "name": "Electro-Harmonix Deluxe Memory Man 550-TT",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Signalprozessoren",
+        "Effektprozessoren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Electro-Harmonix Deluxe Memory Man 550-TT",
+        "EHX Deluxe Memory Man 550-TT"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "effects pedal"
+        ],
+        "delay_time_ms": [
+          "550"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "electro-harmonix-deluxe-memory-man-1100-tt",
+      "brand": "Electro-Harmonix",
+      "model": "Deluxe Memory Man 1100-TT",
+      "name": "Electro-Harmonix Deluxe Memory Man 1100-TT",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Signalprozessoren",
+        "Effektprozessoren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Electro-Harmonix Deluxe Memory Man 1100-TT",
+        "EHX Deluxe Memory Man 1100-TT"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "effects pedal"
+        ],
+        "delay_time_ms": [
+          "1100"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ninja-creami-nc300eu",
+      "brand": "Ninja",
+      "model": "CREAMi NC300EU",
+      "name": "Ninja CREAMi NC300EU",
+      "categories": [
+        "Heim & Garten",
+        "Küche & Esszimmer",
+        "Küchengeräte",
+        "Speiseeismaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ninja CREAMi NC300EU",
+        "Ninja CREAMi 300 EU",
+        "Ninja NC300EU"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "ice cream maker"
+        ],
+        "program_count": [
+          "7"
+        ],
+        "capacity_l": [
+          "0.473"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "lg-bp440",
+      "brand": "LG",
+      "model": "BP440",
+      "name": "LG BP440",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "DVD- & Blu-ray-Player"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "LG BP440",
+        "LG Blu-ray-Player 3D BP440",
+        "LG Blu-ray Player BP440"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "Blu-ray player"
+        ],
+        "resolution": [
+          "1920x1080"
+        ],
+        "supports_3d": [
+          "true"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "haba-meine-ersten-spiele-fische-angeln",
+      "brand": "HABA",
+      "model": "Meine ersten Spiele – Fische angeln",
+      "name": "HABA Meine ersten Spiele – Fische angeln",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "HABA Meine ersten Spiele Fische angeln",
+        "HABA Fische angeln"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "min_players": [
+          "1"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "min_age": [
+          "2"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-maulwurf-und-sein-lieblingsspiel",
+      "brand": "Ravensburger",
+      "model": "Der Maulwurf und sein Lieblingsspiel",
+      "name": "Ravensburger Der Maulwurf und sein Lieblingsspiel",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger Der Maulwurf und sein Lieblingsspiel",
+        "Ravensburger Meine ersten Spiele Der Maulwurf"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "min_players": [
+          "2"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "min_age": [
+          "3"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "remember-woodman-tu1",
+      "brand": "REMEMBER",
+      "model": "Woodman TU1",
+      "name": "REMEMBER Woodman TU1",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "REMEMBER Woodman",
+        "REMEMBER TU1"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "min_players": [
+          "2"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "material": [
+          "wood"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "playmobil-9433",
+      "brand": "PLAYMOBIL",
+      "model": "9433",
+      "name": "PLAYMOBIL Propellerboot mit Dinokäfig 9433",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "PLAYMOBIL 9433",
+        "PLAYMOBIL Propellerboot mit Dinokäfig 9433"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play_set"
+        ],
+        "set_number": [
+          "9433"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ikea-malm-6-schubladen-weiss-160x78",
+      "brand": "IKEA",
+      "model": "MALM 6 Schubladen weiß 160x78 cm",
+      "name": "IKEA MALM 6 Schubladen weiß 160x78 cm",
+      "categories": [
+        "Möbel",
+        "Schränke",
+        "Kommoden"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "IKEA MALM Kommode weiß mit 6 Schubladen 160x78 cm",
+        "IKEA MALM Kommode mit 6 Schubladen weiß 160x78 cm",
+        "IKEA MALM weiß 160x78",
+        "IKEA MALM 60403584"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "chest of drawers"
+        ],
+        "drawer_count": [
+          "6"
+        ],
+        "width_cm": [
+          "160"
+        ],
+        "height_cm": [
+          "78"
+        ],
+        "depth_cm": [
+          "48"
+        ],
+        "color": [
+          "white"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "neewer-z1-n",
+      "brand": "NEEWER",
+      "model": "Z1-N",
+      "name": "NEEWER Z1-N",
+      "categories": [
+        "Kameras & Optik",
+        "Kamera- & Optisches Zubehör",
+        "Kamerazubehör",
+        "Kamera-Blitzgeräte"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "NEEWER Z1-N"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera flash"
+        ],
+        "flash_power_ws": [
+          "76"
+        ],
+        "camera_mount": [
+          "Nikon"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "tonies-nico-sternbaum-schuettel-den-weihnachtsbaum-de",
+      "brand": "tonies",
+      "model": "Nico Sternbaum – Schüttel den Weihnachtsbaum",
+      "name": "tonies Nico Sternbaum – Schüttel den Weihnachtsbaum",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schüttel den Weihnachtsbaum Tonie",
+        "Tonie Schüttel den Weihnachtsbaum",
+        "Tonies Nico Sternbaum Schüttel den Weihnachtsbaum"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "audio_figure"
+        ],
+        "language": [
+          "German"
+        ],
+        "min_age": [
+          "2"
+        ],
+        "material": [
+          "plastic"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "tonies-bibi-tina-der-verschwundene-pokal-de",
+      "brand": "tonies",
+      "model": "Bibi & Tina – Der verschwundene Pokal",
+      "name": "tonies Bibi & Tina – Der verschwundene Pokal",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Tonie Bibi und Tina Der verschwundene Pokal",
+        "Tonie Bibi Tina Der verschwundene Pokal",
+        "Tonies Bibi und Tina Der verschwundene Pokal"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "audio_figure"
+        ],
+        "language": [
+          "German"
+        ],
+        "min_age": [
+          "5"
+        ],
+        "material": [
+          "plastic"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
     }
   ]
 }

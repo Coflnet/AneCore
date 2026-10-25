@@ -17,6 +17,8 @@ public class KnownProductSeedIntegrityTests
     {
         "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year",
         "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
+        "channels", "microphone_inputs", "delay_time_ms", "program_count", "min_players", "max_players", "min_age",
+        "width_cm", "height_cm", "depth_cm", "drawer_count", "resolution", "supports_3d", "flash_power_ws", "camera_mount", "language",
     };
 
     private IReadOnlyList<KnownProduct> seed = null!;
@@ -103,6 +105,13 @@ public class KnownProductSeedIntegrityTests
         "Sportartikel>Outdoor-Aktivitäten>Radsport>Fahrräder",
         "Spielzeuge & Spiele>Spielzeuge>Puppen, Spielkombinationen & Spielzeugfiguren",
         "Spielzeuge & Spiele>Spielzeuge>Bausteine & Bauspielzeug",
+        "Elektronik>Audio>Audiokomponenten>Audiomixer",
+        "Elektronik>Audio>Audiokomponenten>Signalprozessoren>Effektprozessoren",
+        "Elektronik>Video>Videoabspielgeräte & -rekorder>DVD- & Blu-ray-Player",
+        "Heim & Garten>Küche & Esszimmer>Küchengeräte>Speiseeismaschinen",
+        "Kameras & Optik>Kamera- & Optisches Zubehör>Kamerazubehör>Kamera-Blitzgeräte",
+        "Möbel>Schränke>Kommoden",
+        "Spielzeuge & Spiele>Spiele>Brettspiele",
     };
 
     [Test]

@@ -3394,6 +3394,42 @@
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
+    },
+    {
+      "id": "xiaomi-15-ultra",
+      "brand": "Xiaomi",
+      "model": "15 Ultra",
+      "name": "Xiaomi 15 Ultra",
+      "categories": [
+        "Elektronik",
+        "Kommunikationsgeräte",
+        "Telefone",
+        "Mobiltelefone"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xiaomi 15 Ultra"
+      ],
+      "possibleAttributes": {
+        "ram_size": [
+          "12GB",
+          "16GB"
+        ],
+        "storage_size": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "screen_size": [
+          "6.73\""
+        ],
+        "os": [
+          "android"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
     }
   ]
 }

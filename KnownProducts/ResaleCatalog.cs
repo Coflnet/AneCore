@@ -31,16 +31,16 @@ public static class ResaleCatalog
         if (Matcher.Value.Match(AccessoryFor.Match(text).Groups[1].Value)?.Id == match.Id) return null;
         if (match.PossibleAttributes.GetValueOrDefault("specificity")?.Contains("unspecific") == true
             && match.ExcludeTerms.Any(term => (" " + text + " ").Contains(" " + term + " ", StringComparison.Ordinal))) return null;
-        if (title.Contains('+') || Regex.IsMatch(text, @"\b(?:und|and)\b", Options)) return null;
+        // Reuse the same matcher after removing this model's aliases to detect another named model.
+        var remainder = " " + KnownProductMatcher.Normalize(title) + " ";
+        foreach (var alias in match.Aliases.OrderByDescending(a => a.Length))
+            remainder = remainder.Replace(" " + KnownProductMatcher.Normalize(alias) + " ", " ", StringComparison.Ordinal);
+        if (title.Contains('+') || Regex.IsMatch(remainder, @"\b(?:und|and)\b", Options)) return null;
         if (match.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("expansion") == true
             && Regex.IsMatch(text, @"\bstarter(?:set|\s+set|\s+pack)\b", Options)) return null;
         // A listing of several numbered play sets is not the first single set's page.
         if (match.PossibleAttributes.ContainsKey("set_number")
             && Regex.Matches(text, @"\b\d{4,7}\b").Select(m => m.Value).Distinct().Count() > 1) return null;
-        // Reuse the same matcher after removing this model's aliases to detect another named model.
-        var remainder = " " + KnownProductMatcher.Normalize(title) + " ";
-        foreach (var alias in match.Aliases.OrderByDescending(a => a.Length))
-            remainder = remainder.Replace(" " + KnownProductMatcher.Normalize(alias) + " ", " ", StringComparison.Ordinal);
         if (Matcher.Value.Match(remainder) is { } other && other.Id != match.Id) return null;
         if (description != null && Regex.IsMatch(KnownProductMatcher.Normalize(description), @"\b(?:teile fehlen|missing parts|parts missing)\b", Options)) return null;
         return match;
