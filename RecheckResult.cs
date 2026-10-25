@@ -49,6 +49,13 @@ public class RecheckResult
     [Key(8)]
     public string? Description { get; set; }
 
+    [Key(9)]
+    public string? SnapshotRecoveryId { get; set; }
+
+    /// <summary>Complete own-page parse for an explicit recovery, never synthesized from a product row.</summary>
+    [Key(10)]
+    public Listing? Snapshot { get; set; }
+
     [IgnoreMember]
     public Platform Platform
     {

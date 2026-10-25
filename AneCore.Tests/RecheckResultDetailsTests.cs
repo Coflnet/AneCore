@@ -31,5 +31,23 @@ public sealed class RecheckResultDetailsTests
         Assert.That(back.ListingId, Is.EqualTo("10286893245"));
         Assert.That(back.Attributes, Is.Null);
         Assert.That(back.Description, Is.Null);
+        Assert.That(back.Snapshot, Is.Null);
+        Assert.That(back.SnapshotRecoveryId, Is.Null);
+    }
+
+    [Test]
+    public void RecoveryIsAdditiveAndCarriesActualFullSource()
+    {
+        var request = new RecrawlRequest { ListingId = "42", Platform = Platform.Kleinanzeigen, SnapshotRecoveryId = "snapshot-test", SnapshotRecoveryExpiresAt = DateTime.UtcNow.AddMinutes(15) };
+        var requestBack = MessagePackSerializer.Deserialize<RecrawlRequest>(MessagePackSerializer.Serialize(request));
+        Assert.That(requestBack.SnapshotRecoveryId, Is.EqualTo(request.SnapshotRecoveryId));
+        Assert.That(requestBack.SnapshotRecoveryExpiresAt, Is.EqualTo(request.SnapshotRecoveryExpiresAt));
+        var old = MessagePackSerializer.Serialize(new object?[] { "42", null, (int)Platform.Kleinanzeigen, "product" });
+        Assert.That(MessagePackSerializer.Deserialize<RecrawlRequest>(old).SnapshotRecoveryId, Is.Null);
+        var message = new RecheckResult { SnapshotRecoveryId = request.SnapshotRecoveryId,
+            Snapshot = new Listing { Id = "42", Platform = Platform.Kleinanzeigen, Description = "Complete original seller text" } };
+        var back = MessagePackSerializer.Deserialize<RecheckResult>(MessagePackSerializer.Serialize(message));
+        Assert.That(back.SnapshotRecoveryId, Is.EqualTo(request.SnapshotRecoveryId));
+        Assert.That(back.Snapshot!.Description, Is.EqualTo(message.Snapshot.Description));
     }
 }

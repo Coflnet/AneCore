@@ -15,6 +15,8 @@ public static class ResaleCatalog
     private static readonly Regex IncludedManual = new(@"\b(?:mit|inkl\.?|inklusive|with)\s+(?:anleitung|handbuch|manual|instructions)\b", Options);
     private static readonly Regex CameraExtras = new(@"\s*(?:\+|mit|inkl\.?|inklusive|with)\s+(?:kamera\s*)?(?:tasche|bag|stativ|tripod)(?:\s*(?:&|und|and|\+)\s*(?:tasche|bag|stativ|tripod))*\s*$", Options);
 
+    private static readonly Regex KeyboardExtras = new(@"\s*,?\s*\b(?:mit|inkl\.?|incl\.?|inklusive|with)\s+(?:netzteil|power\s+adapter|ständer|staender|stand)(?:\s*(?:&|und|and)\s*(?:netzteil|power\s+adapter|ständer|staender|stand))*\s*$", Options);
+
     public static KnownProduct? Match(string? title, string? description = null, IReadOnlyList<string>? categoryPath = null)
     {
         if (string.IsNullOrWhiteSpace(title)) return null;
@@ -25,6 +27,8 @@ public static class ResaleCatalog
         if (Parts.IsMatch(KnownProductMatcher.Normalize(title))) return null;
         var match = Matcher.Value.Match(title, categoryPath: categoryPath);
         if (cameraExtras && match?.Categories.FirstOrDefault() != "Kameras & Optik") return null;
+        if (match?.PossibleAttributes.GetValueOrDefault("device_type")?.Contains("keyboard") == true)
+            title = KeyboardExtras.Replace(title, "");
         text = KnownProductMatcher.Normalize(title);
         if (match == null) return null;
         // An accessory for a named model is not the model, across camera, bicycle and toy families.

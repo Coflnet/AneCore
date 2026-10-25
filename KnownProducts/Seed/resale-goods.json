@@ -727,6 +727,587 @@
       },
       "excludeTerms": [],
       "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg200-8",
+      "brand": "Shimano",
+      "model": "CS-HG200-8",
+      "name": "Shimano CS-HG200-8",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG200-8",
+        "CS-HG200-8"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg300-8",
+      "brand": "Shimano",
+      "model": "CS-HG300-8",
+      "name": "Shimano CS-HG300-8",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG300-8",
+        "CS-HG300-8"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg400-7",
+      "brand": "Shimano",
+      "model": "CS-HG400-7",
+      "name": "Shimano CS-HG400-7",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG400-7",
+        "CS-HG400-7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg41-7",
+      "brand": "Shimano",
+      "model": "CS-HG41-7",
+      "name": "Shimano CS-HG41-7",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG41-7",
+        "CS-HG41-7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg20-7",
+      "brand": "Shimano",
+      "model": "CS-HG20-7",
+      "name": "Shimano CS-HG20-7",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG20-7",
+        "CS-HG20-7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg210-7",
+      "brand": "Shimano",
+      "model": "CS-HG210-7",
+      "name": "Shimano CS-HG210-7",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG210-7",
+        "CS-HG210-7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "shimano-cs-hg200-7",
+      "brand": "Shimano",
+      "model": "CS-HG200-7",
+      "name": "Shimano CS-HG200-7",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradbauteile",
+        "Fahrradschaltungsteile",
+        "Fahrradkassetten"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Shimano CS-HG200-7",
+        "CS-HG200-7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle cassette"
+        ],
+        "rear_speeds": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "villeroy-boch-68350001",
+      "brand": "Villeroy & Boch",
+      "model": "68350001",
+      "name": "Villeroy & Boch 68350001",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Küchen- und Sanitärinstallationen",
+        "Zubehör für sanitäre Anlagen",
+        "Abflusskomponenten",
+        "Sanitärabläufe"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Villeroy & Boch 68350001",
+        "Villeroy Boch 68350001"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "basin outlet valve"
+        ],
+        "diameter_mm": [
+          "32"
+        ],
+        "valve_type": [
+          "unclosable"
+        ],
+        "color": [
+          "White Alpin"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "villeroy-boch-683500rw",
+      "brand": "Villeroy & Boch",
+      "model": "683500RW",
+      "name": "Villeroy & Boch 683500RW",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Küchen- und Sanitärinstallationen",
+        "Zubehör für sanitäre Anlagen",
+        "Abflusskomponenten",
+        "Sanitärabläufe"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Villeroy & Boch 683500RW",
+        "Villeroy Boch 683500RW"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "basin outlet valve"
+        ],
+        "diameter_mm": [
+          "32"
+        ],
+        "valve_type": [
+          "unclosable"
+        ],
+        "color": [
+          "Stone White CeramicPlus"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "sennheiser-mke-200",
+      "brand": "Sennheiser",
+      "model": "MKE 200",
+      "name": "Sennheiser MKE 200",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Mikrofone"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Sennheiser MKE 200"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera microphone"
+        ],
+        "channels": [
+          "1"
+        ],
+        "connector": [
+          "3.5mm"
+        ],
+        "pickup_pattern": [
+          "supercardioid"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "sennheiser-mke-440",
+      "brand": "Sennheiser",
+      "model": "MKE 440",
+      "name": "Sennheiser MKE 440",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Mikrofone"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Sennheiser MKE 440"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera microphone"
+        ],
+        "channels": [
+          "2"
+        ],
+        "connector": [
+          "3.5mm"
+        ],
+        "pickup_pattern": [
+          "stereo supercardioid"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "garmin-speed-sensor-2",
+      "brand": "Garmin",
+      "model": "Speed Sensor 2",
+      "name": "Garmin Speed Sensor 2",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrradzubehör",
+        "Zubehör für Fahrradcomputer"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Garmin Speed Sensor 2",
+        "Garmin Geschwindigkeitssensor 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "bicycle speed sensor"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "tonies-die-drei-ausrufezeichen-das-rote-phantom-de",
+      "brand": "tonies",
+      "model": "Die drei !!! Das rote Phantom",
+      "name": "tonies Die drei !!! Das rote Phantom",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Tonie Die drei !!! Das rote Phantom",
+        "Tonies Die drei !!! Das rote Phantom",
+        "Tonie Die drei Ausrufezeichen Das rote Phantom"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "audio figure"
+        ],
+        "language": [
+          "de"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-echoes-der-cocktail-de",
+      "brand": "Ravensburger",
+      "model": "echoes Der Cocktail",
+      "name": "Ravensburger echoes Der Cocktail",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger echoes Der Cocktail",
+        "echoes Der Cocktail"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "audio mystery game"
+        ],
+        "language": [
+          "de"
+        ],
+        "min_players": [
+          "1"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "min_age": [
+          "14"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-echoes-der-mikrochip-de",
+      "brand": "Ravensburger",
+      "model": "echoes Der Mikrochip",
+      "name": "Ravensburger echoes Der Mikrochip",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger echoes Der Mikrochip",
+        "echoes Der Mikrochip"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "audio mystery game"
+        ],
+        "language": [
+          "de"
+        ],
+        "min_players": [
+          "1"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "min_age": [
+          "14"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "playmobil-70206",
+      "brand": "PLAYMOBIL",
+      "model": "70206 Familienküche",
+      "name": "PLAYMOBIL 70206 Familienküche",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "PLAYMOBIL 70206",
+        "PLAYMOBIL Dollhouse Küche 70206",
+        "PLAYMOBIL Familienküche 70206"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70206"
+        ],
+        "product_kind": [
+          "play set"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-dragons-wettflug-zur-dracheninsel-de",
+      "brand": "Ravensburger",
+      "model": "Dragons Wettflug zur Dracheninsel",
+      "name": "Ravensburger Dragons Wettflug zur Dracheninsel",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger Dragons Wettflug zur Dracheninsel"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board game"
+        ],
+        "language": [
+          "de"
+        ],
+        "min_players": [
+          "2"
+        ],
+        "max_players": [
+          "4"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e403",
+      "brand": "Yamaha",
+      "model": "PSR-E403",
+      "name": "Yamaha PSR-E403",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E403",
+        "Yamaha Keyboard PSR-E403"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "sennheiser-mke-200-mobile-kit",
+      "brand": "Sennheiser",
+      "model": "MKE 200 Mobile Kit",
+      "name": "Sennheiser MKE 200 Mobile Kit",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Mikrofone"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Sennheiser MKE 200 Mobile Kit"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera microphone"
+        ],
+        "product_kind": [
+          "manufacturer kit"
+        ],
+        "connector": [
+          "3.5mm"
+        ],
+        "pickup_pattern": [
+          "supercardioid"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
     }
   ]
 }

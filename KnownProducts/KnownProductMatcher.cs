@@ -56,6 +56,8 @@ public class KnownProductMatcher
         // A-series entry before this was added; "panzerglas"/"displayglas" above cover the same concept
         // under its other common German spellings but not this one.
         "schutzglas",
+        // A microphone windscreen or cassette lockring is a subpart; existing included-extra semantics still allow it with the whole product.
+        "windschutz", "verschlussring", "lockring",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>
