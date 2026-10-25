@@ -252,3 +252,10 @@ A pinned current Rebrickable set list is used only to **reject reused numbers**,
 or other metadata. Current Rebrickable licensing was not asserted: its downloads/terms pages
 returned HTTP 403 during verification. See `tools/catalog-import/expand_lego.py` for both SHA-256 pins.
 LEGO is a trademark of the LEGO Group, which does not sponsor or endorse this project.
+
+`lego-modern.json` adds 1,618 individually numbered identities published in the
+[official LEGO US product sitemap](https://www.lego.com/sitemap-productPage-en-US0.xml)
+captured on 2026-10-25. Only factual set numbers are retained, with synthetic `LEGO <number>`
+names and exact number aliases; no merchandising descriptions, artwork, or URL-derived names
+are copied. The previous pinned Rebrickable list is used only to reject unverified or reused
+printed numbers. `tools/catalog-import/expand_lego_official.py` records both input hashes.

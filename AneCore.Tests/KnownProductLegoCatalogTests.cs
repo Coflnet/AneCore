@@ -12,7 +12,7 @@ public class KnownProductLegoCatalogTests
     public void EverySetHasAUniqueIdentityAndResolvesToItself()
     {
         var sets = Catalog.Where(p => p.Vertical == "lego").ToList();
-        Assert.That(sets, Has.Count.EqualTo(5630));
+        Assert.That(sets, Has.Count.EqualTo(7248));
         Assert.That(sets.Select(p => p.Id).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.All(p => p.PossibleAttributes["set_number"].SetEquals(new[] { p.Model })), Is.True);
         Assert.That(sets.Where(p => Matcher.Match(p.Name)?.Id != p.Id).Select(p => p.Id), Is.Empty);
@@ -27,6 +27,9 @@ public class KnownProductLegoCatalogTests
     [TestCase("LEGO 42115 mit Box", "lego-42115")]
     [TestCase("LEGO 75192 mit Originalverpackung und Anleitung", "lego-75192")]
     [TestCase("LEGO 10294 Titanic", "lego-10294")]
+    [TestCase("LEGO 10316 Rivendell gebraucht", "lego-10316")]
+    [TestCase("LEGO Set 10305 vollständig", "lego-10305")]
+    [TestCase("LEGO 10333 Barad-dûr", "lego-10333")]
     public void ExactBrandAndSetNumberMatch(string title, string expected)
     {
         Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(expected));

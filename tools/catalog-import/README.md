@@ -528,3 +528,20 @@ of the known-product fast path for ordinary extraction to retain their scope.
 
 No vinyl title/artist seed is added: these identify recordings or albums, not an exact pressing.
 Vinyl crawling and extraction can proceed without guessing country/year/format/label editions.
+
+### Current official LEGO identities (2026-10-25)
+
+`expand_lego_official.py` adds 1,618 modern identities from the official US product sitemap,
+bringing LEGO coverage to 7,248 sets. Both inputs are SHA-256 pinned. The existing Rebrickable
+snapshot is only a reused-number veto; its names and metadata are not imported. Unknown or
+reused numbers, multiple official URLs, merchandise codes, and identities already in other seed
+files are excluded. Names stay `LEGO <number>` so a catalogue expansion preserves existing
+text-derived page identities; product URL slugs are not treated as display names.
+
+```sh
+curl -L --fail https://www.lego.com/sitemap-productPage-en-US0.xml -o lego-products-en-US.xml
+python3 tools/catalog-import/expand_lego_official.py --sitemap lego-products-en-US.xml --current-sets sets.csv.gz
+python3 -m unittest discover -s tools/catalog-import -p 'test_expand_lego_official.py'
+```
+
+The rolling sitemap URL may change; retain the reviewed bytes for reproducible regeneration.

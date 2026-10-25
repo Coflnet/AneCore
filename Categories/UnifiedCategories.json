@@ -15985,7 +15985,13 @@
             },
             {
               "slug": "543543",
-              "label": "Gedruckte Bücher"
+              "label": "Gedruckte Bücher",
+              "subCategories": [
+                {
+                  "slug": "ane-comics",
+                  "label": "Comics"
+                }
+              ]
             }
           ]
         },
