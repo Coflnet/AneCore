@@ -23,6 +23,25 @@ This directory is Python 3, stdlib + nothing else (no `requests` dependency was 
 
 ## Re-running the import
 
+Audit every embedded product with the matcher's actual normalization (JSON output; nonzero exit for
+duplicate IDs or aliases claimed by different products):
+
+```bash
+dotnet run --project tools/eval-runner -- --audit
+# Or audit an exported JSON array of live KnownProduct rows:
+dotnet run --project tools/eval-runner -- --audit /path/to/catalog.json
+```
+
+Name/model and compact model collisions are review candidates, never automatic merge instructions.
+The October 2026 review found four spelling duplicates in the pinned PCPartPicker source:
+`SSD Now mS200`/`SSDNow mS200`, `K271 MK II`/`K271MKII`, `ATH-M50S`/`ATHM50S`, and
+`CV-H32`/`CVH32`. `expand_seed.py` records only these reviewed equivalences, preserving both aliases
+and source capacity options. Limited editions such as `ATHM50S/LE` retain their own identity.
+The model anchors were checked against [Kingston's mS200 datasheet](https://www.kingston.com/datasheets/SMS200S3_us.pdf),
+[AKG's K271 MKII specifications](https://www.akg.com/K271MKII.html),
+[Audio-Technica's ATH-M50s specifications](https://www.audio-technica.com/en-us/ath-m50s), and
+[Coby's CV-H32 specification sheet](https://www.manualslib.com/manual/393793/Coby-Cvh32-Headphones-Semi-Open.html).
+
 ```bash
 # 1. Fetch every source into a scratch dir (anywhere outside the repo - never vendor these).
 RAW=/path/to/scratch/catalog-research

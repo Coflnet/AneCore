@@ -261,26 +261,6 @@
       "source": "seed:docyx-pc-part-dataset-2026-10"
     },
     {
-      "id": "akg-k271-mk-ii",
-      "brand": "AKG",
-      "model": "AKG K271 MK II",
-      "name": "AKG K271 MK II",
-      "categories": [
-        "Elektronik",
-        "Audio",
-        "Audiokomponenten",
-        "Kopfhörer & Headsets",
-        "Kopfhörer"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "AKG K271 MK II"
-      ],
-      "possibleAttributes": {},
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
       "id": "akg-k271mkii",
       "brand": "AKG",
       "model": "AKG K271MKII",
@@ -294,6 +274,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "AKG K271 MK II",
         "AKG K271MKII"
       ],
       "possibleAttributes": {},
@@ -2586,10 +2567,13 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Audio-Technica ATH-M50S"
+        "Audio-Technica ATH-M50S",
+        "Audio-Technica ATHM50S"
       ],
       "possibleAttributes": {},
-      "excludeTerms": [],
+      "excludeTerms": [
+        "le"
+      ],
       "source": "seed:docyx-pc-part-dataset-2026-10"
     },
     {
@@ -3050,28 +3034,6 @@
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
-      "id": "audio-technica-athm50s",
-      "brand": "Audio-Technica",
-      "model": "Audio-Technica ATHM50S",
-      "name": "Audio-Technica ATHM50S",
-      "categories": [
-        "Elektronik",
-        "Audio",
-        "Audiokomponenten",
-        "Kopfhörer & Headsets",
-        "Kopfhörer"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "Audio-Technica ATHM50S"
-      ],
-      "possibleAttributes": {},
-      "excludeTerms": [
-        "le"
-      ],
       "source": "seed:docyx-pc-part-dataset-2026-10"
     },
     {
@@ -4395,7 +4357,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Coby CV-H32"
+        "Coby CV-H32",
+        "Coby CVH32"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -4679,26 +4642,6 @@
       "vertical": "electronics",
       "aliases": [
         "Coby CV400GRN"
-      ],
-      "possibleAttributes": {},
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
-      "id": "coby-cvh32",
-      "brand": "Coby",
-      "model": "Coby CVH32",
-      "name": "Coby CVH32",
-      "categories": [
-        "Elektronik",
-        "Audio",
-        "Audiokomponenten",
-        "Kopfhörer & Headsets",
-        "Kopfhörer"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "Coby CVH32"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],

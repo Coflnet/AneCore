@@ -27,6 +27,39 @@ class PrefixExclusionTests(unittest.TestCase):
 
 
 class ExpansionTests(unittest.TestCase):
+    def test_reviewed_storage_spelling_preserves_aliases_and_capacity_variants(self):
+        import expand_seed as expansion
+        rows = [
+            {"name": "Kingston SSD Now mS200", "capacity": 30, "type": "SSD", "form_factor": "mSATA", "interface": "mSATA"},
+            {"name": "Kingston SSDNow mS200", "capacity": 480, "type": "SSD", "form_factor": "mSATA", "interface": "mSATA"},
+            {"name": "Kingston SSDNow 200", "capacity": 120, "type": "SSD", "form_factor": "2.5", "interface": "SATA"},
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            seeds = directory / "seeds"
+            seeds.mkdir()
+            raw = json.dumps(rows).encode()
+            (directory / "pcpp-internal-hard-drive.json").write_bytes(raw)
+            inputs = {"internal-hard-drive": (hashlib.sha256(raw).hexdigest(), "storage", expansion.seed.CAT_STORAGE,
+                                             ("type", "form_factor", "interface"))}
+            with patch.object(expansion, "INPUTS", inputs), patch.object(expansion.seed, "SEED_DIR", str(seeds)):
+                expansion.expand(directory)
+                output = seeds / "storage-expanded.json"
+                first = output.read_bytes()
+                products = json.loads(first)["products"]
+                self.assertEqual(len(products), 2)
+                merged = next(p for p in products if p["id"] == "kingston-ssdnow-ms200")
+                self.assertEqual(set(merged["aliases"]), {rows[0]["name"], rows[1]["name"]})
+                self.assertEqual(merged["possibleAttributes"]["storage_size"], ["30GB", "480GB"])
+                expansion.expand(directory)
+                self.assertEqual(first, output.read_bytes())
+                rows[1]["interface"] = "SATA"  # A reviewed spelling never overrides contradictory hardware.
+                raw = json.dumps(rows).encode()
+                (directory / "pcpp-internal-hard-drive.json").write_bytes(raw)
+                inputs["internal-hard-drive"] = (hashlib.sha256(raw).hexdigest(), *inputs["internal-hard-drive"][1:])
+                expansion.expand(directory)
+                self.assertEqual([p["id"] for p in json.loads(output.read_bytes())["products"]], ["kingston-ssdnow-200"])
+
     def test_exact_models_preserve_existing_and_omit_conflicting_ram(self):
         import expand_seed as expansion
         rows = [

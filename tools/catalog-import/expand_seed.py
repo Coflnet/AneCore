@@ -30,6 +30,13 @@ INPUTS = {
 COMPOUND_BRANDS = ("Cooler Master", "Turtle Beach", "Cyber Acoustics", "Harman Kardon", "Altec Lansing",
                    "Mad Catz", "Final Audio", "Titan Army", "Western Digital", "Silicon Power", "SK Hynix",
                    "Oyen Digital", "Super Talent", "Neo Forza", "Fantom Drives", "Edge Tech")
+# Reviewed spelling variants in the pinned source; never compact arbitrary model/SKU names.
+CANONICAL_NAMES = {
+    "Kingston SSD Now mS200": "Kingston SSDNow mS200",
+    "AKG K271 MK II": "AKG K271MKII",
+    "Audio-Technica ATHM50S": "Audio-Technica ATH-M50S",
+    "Coby CVH32": "Coby CV-H32",
+}
 
 
 def expand(raw_dir):
@@ -53,7 +60,7 @@ def expand(raw_dir):
                 continue
             if source_file == "memory" and not any(c.isdigit() for c in re.sub(r"\s+\d+\s+GB$", "", name)):
                 continue  # A capacity alone does not distinguish a RAM kit's generation/speed.
-            groups[tuple(nz.matcher_tokens(name))].append(row)
+            groups[tuple(nz.matcher_tokens(CANONICAL_NAMES.get(name, name)))].append(row)
         products = []
         ambiguous = 0
         for key, rows in sorted(groups.items()):
@@ -64,7 +71,7 @@ def expand(raw_dir):
                 continue
             if source_file == "headphones" and rows[0].get("microphone") is not False:
                 continue  # Headsets need their own category/guard treatment.
-            name = sorted(r["name"].strip() for r in rows)[0]
+            name = sorted(CANONICAL_NAMES.get(r["name"].strip(), r["name"].strip()) for r in rows)[0]
             pid = nz.slugify(name)
             if pid in ids or key in aliases:
                 continue
@@ -77,7 +84,9 @@ def expand(raw_dir):
             if source_file == "memory" and rows[0].get("modules"):
                 count, capacity = rows[0]["modules"]
                 possible["ram_size"] = [nz.fmt_ram(count * capacity)]
-            product = seed.make_product(pid, brand, name, name, path, "electronics", {name}, "docyx-pc-part-dataset", possible)
+            reviewed_aliases = {name} | {r["name"].strip() for r in rows if r["name"].strip() in CANONICAL_NAMES}
+            product = seed.make_product(pid, brand, name, name, path, "electronics",
+                                        reviewed_aliases, "docyx-pc-part-dataset", possible)
             product["source"] = SOURCE
             products.append(product)
             ids.add(pid)

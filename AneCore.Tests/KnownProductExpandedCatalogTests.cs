@@ -49,9 +49,28 @@ public class KnownProductExpandedCatalogTests
     [TestCase("MSI MAG B650 TOMAHAWK WIFI", "msi-mag-b650-tomahawk-wifi")]
     [TestCase("Asus PRIME B550M-A WIFI II", "asus-prime-b550m-a-wifi-ii")]
     [TestCase("Sennheiser HD 650", "sennheiser-hd-650")]
+    [TestCase("AKG K271 MK II", "akg-k271mkii")]
+    [TestCase("AKG K271MKII", "akg-k271mkii")]
+    [TestCase("AKG K271MKII Headphones Black Used", "akg-k271mkii")]
+    [TestCase("Audio-Technica ATH-M50S", "audio-technica-ath-m50s")]
+    [TestCase("Audio-Technica ATHM50S", "audio-technica-ath-m50s")]
+    [TestCase("Audio-Technica ATHM50S/LE", "audio-technica-athm50s-le")]
+    [TestCase("Coby CV-H32", "coby-cv-h32")]
+    [TestCase("Coby CVH32", "coby-cv-h32")]
+    [TestCase("Kingston SSD Now mS200 30GB", "kingston-ssdnow-ms200")]
+    [TestCase("Kingston SSDNow mS200 480GB", "kingston-ssdnow-ms200")]
     public void RealModelCodes_MatchWithOrdinaryListingText(string model, string expectedId)
     {
         Assert.That(Matcher.Match($"{model} gebraucht OVP")?.Id, Is.EqualTo(expectedId));
+    }
+
+    [Test]
+    public void ReviewedDuplicateSpellings_PreserveStorageOptionsAndRemoveDuplicateRows()
+    {
+        Assert.That(Catalog.Single(p => p.Id == "kingston-ssdnow-ms200").PossibleAttributes["storage_size"],
+            Is.EquivalentTo(new[] { "30GB", "240GB", "480GB" }));
+        Assert.That(Catalog.Select(p => p.Id), Has.None.EqualTo("kingston-ssd-now-ms200")
+            .And.None.EqualTo("akg-k271-mk-ii").And.None.EqualTo("audio-technica-athm50s").And.None.EqualTo("coby-cvh32"));
     }
 
     [TestCase("Fujifilm X-T")]

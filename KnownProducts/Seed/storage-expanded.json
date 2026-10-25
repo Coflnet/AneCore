@@ -13033,30 +13033,6 @@
       "source": "seed:docyx-pc-part-dataset-2026-10"
     },
     {
-      "id": "kingston-ssd-now-ms200",
-      "brand": "Kingston",
-      "model": "Kingston SSD Now mS200",
-      "name": "Kingston SSD Now mS200",
-      "categories": [
-        "Elektronik",
-        "Elektronisches Zubehör",
-        "Computerkomponenten",
-        "Speichergeräte",
-        "Festplatten"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "Kingston SSD Now mS200"
-      ],
-      "possibleAttributes": {
-        "storage_size": [
-          "30GB"
-        ]
-      },
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
       "id": "kingston-ssdnow-200",
       "brand": "Kingston",
       "model": "Kingston SSDNow 200",
@@ -13350,11 +13326,13 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "Kingston SSD Now mS200",
         "Kingston SSDNow mS200"
       ],
       "possibleAttributes": {
         "storage_size": [
           "240GB",
+          "30GB",
           "480GB"
         ]
       },
