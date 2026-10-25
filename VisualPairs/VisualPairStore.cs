@@ -290,7 +290,7 @@ public class CassandraVisualPairStore : IVisualPairStore
     public async Task<(IReadOnlyList<VisualPairLabel> Labels, byte[]? NextPagingState)> GetLabelsAsync(int pageSize, byte[]? pagingState)
     {
         await InitializeAsync();
-        var query = labels.SetPageSize(pageSize);
+        var query = labels.Select(p => p).SetPageSize(pageSize);
         if (pagingState != null)
             query = query.SetPagingState(pagingState);
         var page = await query.ExecutePagedAsync();

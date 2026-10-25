@@ -89,7 +89,7 @@ public class CassandraKnownProductStore : IKnownProductStore
         byte[]? pagingState = null;
         do
         {
-            var query = table.SetPageSize(500);
+            var query = table.Select(p => p).SetPageSize(500);
             if (pagingState != null)
                 query = query.SetPagingState(pagingState);
             var page = await query.ExecutePagedAsync();
