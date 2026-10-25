@@ -1,0 +1,122 @@
+{
+  "products": [
+    {
+      "id": "krups-pro-aroma-f30908",
+      "brand": "Krups",
+      "model": "Pro Aroma F30908",
+      "name": "Krups Pro Aroma F30908",
+      "categories": [
+        "Heim & Garten",
+        "Küche & Esszimmer",
+        "Küchengeräte",
+        "Kaffee- & Espressomaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Krups F30908",
+        "Krups Pro Aroma F30908",
+        "Krups Pro Aroma Filterkaffeemaschine F30908"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "coffee maker"
+        ],
+        "capacity_l": [
+          "1.25"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-gravitrax-spiral-22424",
+      "brand": "Ravensburger",
+      "model": "GraviTrax Element Spiral",
+      "name": "Ravensburger GraviTrax Element Spiral",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "GraviTrax Element Spiral",
+        "GraviTrax Spiral",
+        "GraviTrax 22424"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "expansion"
+        ],
+        "set_number": [
+          "22424"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "playmobil-5361",
+      "brand": "PLAYMOBIL",
+      "model": "5361",
+      "name": "PLAYMOBIL Feuerwehrstation mit Alarm 5361",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "PLAYMOBIL 5361",
+        "PLAYMOBIL City Action Feuerwehrstation 5361",
+        "PLAYMOBIL Feuerwehrstation 5361"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play_set"
+        ],
+        "set_number": [
+          "5361"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "woom-2-family",
+      "brand": "woom",
+      "model": "2 (generation unknown)",
+      "name": "woom 2 (generation unknown)",
+      "categories": [
+        "Sportartikel",
+        "Outdoor-Aktivitäten",
+        "Radsport",
+        "Fahrräder"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "woom 2",
+        "woom2"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "bicycle"
+        ],
+        "wheel_size": [
+          "14"
+        ],
+        "model_generation": [
+          "unknown"
+        ],
+        "specificity": [
+          "unspecific"
+        ]
+      },
+      "excludeTerms": [
+        "original",
+        "go"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    }
+  ]
+}

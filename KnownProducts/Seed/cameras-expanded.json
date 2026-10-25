@@ -46439,11 +46439,19 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "Sony Cyber-shot DSC-H100"
+        "Sony Cyber-shot DSC-H100",
+        "Sony DSC-H100"
       ],
-      "possibleAttributes": {},
+      "possibleAttributes": {
+        "megapixels": [
+          "16.1"
+        ],
+        "optical_zoom": [
+          "21"
+        ]
+      },
       "excludeTerms": [],
-      "source": "seed:cameradatabase-2026-10"
+      "source": "seed:manufacturer-verified-2026-10-25"
     },
     {
       "id": "sony-cyber-shot-dsc-h2",

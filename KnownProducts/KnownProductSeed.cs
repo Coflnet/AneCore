@@ -81,6 +81,17 @@ public static class KnownProductSeed
                 throw new InvalidOperationException($"Embedded resource for {CoreResourceFileName} not found");
         }
 
+        return LoadResources(assembly, resourceNames);
+    }
+
+    internal static IReadOnlyList<KnownProduct> LoadNamed(params string[] files)
+    {
+        var assembly = typeof(KnownProductSeed).Assembly;
+        return LoadResources(assembly, SeedResourceNames(assembly).Where(n => files.Any(f => n.EndsWith("." + f, StringComparison.Ordinal))));
+    }
+
+    private static IReadOnlyList<KnownProduct> LoadResources(System.Reflection.Assembly assembly, IEnumerable<string> resourceNames)
+    {
         var result = new List<KnownProduct>();
         foreach (var resourceName in resourceNames)
         {

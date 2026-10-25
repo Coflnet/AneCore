@@ -27,6 +27,8 @@ public class TrainingPhoto
     /// <summary>float32 little-endian, L2 normalised, encoded with <see cref="EmbeddingBlobCodec"/>.</summary>
     public byte[]? Embedding { get; set; }
     public string ModelId { get; set; } = "";
+    /// <summary>Actual archive-response vector/JPEG/checkpoint evidence; null for legacy or unverifiable vectors.</summary>
+    public string? EmbeddingProvenanceJson { get; set; }
     public string GroupKey { get; set; } = "";
     public string Brand { get; set; } = "";
     public string GarmentType { get; set; } = "";

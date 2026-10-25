@@ -16,7 +16,7 @@ public class KnownProductSeedIntegrityTests
     private static readonly HashSet<string> AllowedAttributeKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year",
-        "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number",
+        "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
     };
 
     private IReadOnlyList<KnownProduct> seed = null!;
@@ -99,6 +99,9 @@ public class KnownProductSeedIntegrityTests
         "Elektronik>Video>Computermonitore",
         "Elektronik>Videospielkonsolen",
         "Kameras & Optik>Kameras>Digitalkameras",
+        "Heim & Garten>Küche & Esszimmer>Küchengeräte>Kaffee- & Espressomaschinen",
+        "Sportartikel>Outdoor-Aktivitäten>Radsport>Fahrräder",
+        "Spielzeuge & Spiele>Spielzeuge>Puppen, Spielkombinationen & Spielzeugfiguren",
         "Spielzeuge & Spiele>Spielzeuge>Bausteine & Bauspielzeug",
     };
 

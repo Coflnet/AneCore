@@ -21,6 +21,57 @@ public class TrainingPhotoTests
         RightsStatus = "Allowed", RightsCheckedAt = Now
     };
 
+    [Test]
+    public async Task ArchiveEvidence_IsNullableAndSurvivesLightReadsAndIdempotentAdds()
+    {
+        var store = new InMemoryTrainingPhotoStore(); var photo = Photo();
+        Assert.That(photo.EmbeddingProvenanceJson, Is.Null);
+        photo.EmbeddingProvenanceJson = "archive-response";
+        await store.AddAsync(photo);
+        var changed = Photo(); changed.EmbeddingProvenanceJson = "later-health";
+        Assert.That(await store.AddAsync(changed), Is.False);
+        Assert.That((await store.GetAsync(Platform.Kleinanzeigen,"1",0))!.EmbeddingProvenanceJson, Is.EqualTo("archive-response"));
+        var mapping = CassandraTrainingPhotoStore.BuildMapping().Get<TrainingPhoto>();
+        Assert.That(mapping.GetColumnDefinition(typeof(TrainingPhoto).GetProperty(nameof(TrainingPhoto.EmbeddingProvenanceJson))!).ColumnName,
+            Is.EqualTo("embedding_provenance_json"));
+    }
+
+    [Test, NonParallelizable]
+    public void ExistingTableService_EnsuresArchiveColumnBeforeReadingWithoutCreatingTables()
+    {
+        using var cluster = Cassandra.Cluster.Builder().AddContactPoint("127.0.0.1").Build();
+        var session = DispatchProxy.Create<Cassandra.ISession, SchemaGateSession>();
+        var proxy = (SchemaGateSession)(object)session; proxy.Cluster = cluster;
+        var initialized = typeof(CassandraTrainingPhotoStore).GetField("tablesInitialized", BindingFlags.Static | BindingFlags.NonPublic)!;
+        var previous = initialized.GetValue(null);
+        initialized.SetValue(null, false);
+        try
+        {
+            var store = new CassandraTrainingPhotoStore(session, createTables: false);
+            Assert.ThrowsAsync<InvalidOperationException>(() => store.InitializeAsync());
+            Assert.That(proxy.Queries, Has.Count.EqualTo(1));
+            Assert.That(proxy.Queries[0], Does.StartWith("SELECT column_name FROM system_schema.columns"));
+        }
+        finally { initialized.SetValue(null, previous); }
+    }
+
+    public class SchemaGateSession : DispatchProxy
+    {
+        public Cassandra.ICluster Cluster = null!;
+        public List<string> Queries = [];
+        protected override object? Invoke(MethodInfo? method, object?[]? args)
+        {
+            if (method!.Name == "get_Cluster") return Cluster;
+            if (method.Name == "get_Keyspace") return "test";
+            if (method.Name == "ExecuteAsync")
+            {
+                Queries.Add(((Cassandra.SimpleStatement)args![0]!).QueryString);
+                return Task.FromException<Cassandra.RowSet>(new InvalidOperationException("schema gate reached"));
+            }
+            throw new NotSupportedException(method.Name);
+        }
+    }
+
     // ---- rules --------------------------------------------------------------------------------------
 
     [TestCase(23, false)]

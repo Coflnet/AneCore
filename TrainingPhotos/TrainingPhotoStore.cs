@@ -1,3 +1,4 @@
+using Cassandra;
 using Cassandra.Data.Linq;
 using Cassandra.Mapping;
 using ISession = Cassandra.ISession;
@@ -42,7 +43,7 @@ public interface ITrainingPhotoStore
 public class CassandraTrainingPhotoStore : ITrainingPhotoStore
 {
     private const string LightColumns =
-        "platform, listing_id, image_index, image_url, host, width, height, sha256, embedding, model_id, group_key, brand, garment_type, " +
+        "platform, listing_id, image_index, image_url, host, width, height, sha256, embedding, model_id, embedding_provenance_json, group_key, brand, garment_type, " +
         "category, first_seen_at, verified_online_at, archived_at, rights_status, rights_checked_at, source";
     private const string FullColumns = LightColumns + ", jpeg";
 
@@ -84,6 +85,7 @@ public class CassandraTrainingPhotoStore : ITrainingPhotoStore
                 .Column(p => p.Sha256, cm => cm.WithName("sha256"))
                 .Column(p => p.Embedding, cm => cm.WithName("embedding"))
                 .Column(p => p.ModelId, cm => cm.WithName("model_id"))
+                .Column(p => p.EmbeddingProvenanceJson, cm => cm.WithName("embedding_provenance_json"))
                 .Column(p => p.GroupKey, cm => cm.WithName("group_key"))
                 .Column(p => p.Brand, cm => cm.WithName("brand"))
                 .Column(p => p.GarmentType, cm => cm.WithName("garment_type"))
@@ -113,13 +115,27 @@ public class CassandraTrainingPhotoStore : ITrainingPhotoStore
 
     public async Task InitializeAsync()
     {
-        if (tablesInitialized || !createTables) return;
+        if (tablesInitialized) return;
         await InitLock.WaitAsync();
         try
         {
             if (tablesInitialized) return;
-            await photos.CreateIfNotExistsAsync();
-            await days.CreateIfNotExistsAsync();
+            if (createTables)
+            {
+                await photos.CreateIfNotExistsAsync();
+                await days.CreateIfNotExistsAsync();
+            }
+            var lookup = new SimpleStatement(
+                "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                session.Keyspace, "training_photos", "embedding_provenance_json");
+            if (!(await session.ExecuteAsync(lookup)).Any())
+            {
+                try { await session.ExecuteAsync(new SimpleStatement("ALTER TABLE training_photos ADD embedding_provenance_json text")); }
+                catch (InvalidQueryException)
+                {
+                    if (!(await session.ExecuteAsync(lookup)).Any()) throw;
+                }
+            }
             tablesInitialized = true;
         }
         finally { InitLock.Release(); }
