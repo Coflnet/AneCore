@@ -46,7 +46,7 @@ public static class ResaleCatalog
         if (match.PossibleAttributes.ContainsKey("set_number")
             && Regex.Matches(text, @"\b\d{4,7}\b").Select(m => m.Value).Distinct().Count() > 1) return null;
         if (Matcher.Value.Match(remainder) is { } other && other.Id != match.Id) return null;
-        if (description != null && Regex.IsMatch(KnownProductMatcher.Normalize(description), @"\b(?:teile fehlen|missing parts|parts missing)\b", Options)) return null;
+        if (description != null && Regex.IsMatch(KnownProductMatcher.Normalize(description), @"\b(?:teile fehlen|missing parts|parts missing|set\s+(?:ist\s+)?nicht\s+(?:mehr\s+)?(?:ganz\s+)?vollstandig)\b", Options)) return null;
         return match;
     }
 }

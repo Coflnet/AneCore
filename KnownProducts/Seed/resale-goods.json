@@ -1308,6 +1308,617 @@
       },
       "excludeTerms": [],
       "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e413",
+      "brand": "Yamaha",
+      "model": "PSR-E413",
+      "name": "Yamaha PSR-E413",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E413",
+        "Yamaha Keyboard PSR-E413"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e423",
+      "brand": "Yamaha",
+      "model": "PSR-E423",
+      "name": "Yamaha PSR-E423",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E423",
+        "Yamaha Keyboard PSR-E423"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e433",
+      "brand": "Yamaha",
+      "model": "PSR-E433",
+      "name": "Yamaha PSR-E433",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E433",
+        "Yamaha Keyboard PSR-E433"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e443",
+      "brand": "Yamaha",
+      "model": "PSR-E443",
+      "name": "Yamaha PSR-E443",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E443",
+        "Yamaha Keyboard PSR-E443"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e453",
+      "brand": "Yamaha",
+      "model": "PSR-E453",
+      "name": "Yamaha PSR-E453",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E453",
+        "Yamaha Keyboard PSR-E453"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e463",
+      "brand": "Yamaha",
+      "model": "PSR-E463",
+      "name": "Yamaha PSR-E463",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E463",
+        "Yamaha Keyboard PSR-E463"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ],
+        "polyphony": [
+          "48"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e473",
+      "brand": "Yamaha",
+      "model": "PSR-E473",
+      "name": "Yamaha PSR-E473",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E473",
+        "Yamaha Keyboard PSR-E473"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "yamaha-psr-e483",
+      "brand": "Yamaha",
+      "model": "PSR-E483",
+      "name": "Yamaha PSR-E483",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Musikinstrumente",
+        "Elektronische Musikinstrumente",
+        "Musik-Keyboards"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Yamaha PSR-E483",
+        "Yamaha Keyboard PSR-E483"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "keyboard"
+        ],
+        "key_count": [
+          "61"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "stihl-hs-81-r",
+      "brand": "STIHL",
+      "model": "HS 81 R",
+      "name": "STIHL HS 81 R",
+      "categories": [
+        "Heim & Garten",
+        "Rasen & Garten",
+        "Gartenmaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "STIHL HS 81 R"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "hedge trimmer"
+        ],
+        "power_source": [
+          "petrol"
+        ],
+        "engine_displacement_cc": [
+          "22.7"
+        ],
+        "power_kw": [
+          "0.7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "stihl-hs-81-rc",
+      "brand": "STIHL",
+      "model": "HS 81 RC",
+      "name": "STIHL HS 81 RC",
+      "categories": [
+        "Heim & Garten",
+        "Rasen & Garten",
+        "Gartenmaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "STIHL HS 81 RC"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "hedge trimmer"
+        ],
+        "power_source": [
+          "petrol"
+        ],
+        "engine_displacement_cc": [
+          "22.7"
+        ],
+        "power_kw": [
+          "0.7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "stihl-hs-81-t",
+      "brand": "STIHL",
+      "model": "HS 81 T",
+      "name": "STIHL HS 81 T",
+      "categories": [
+        "Heim & Garten",
+        "Rasen & Garten",
+        "Gartenmaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "STIHL HS 81 T"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "hedge trimmer"
+        ],
+        "power_source": [
+          "petrol"
+        ],
+        "engine_displacement_cc": [
+          "22.7"
+        ],
+        "power_kw": [
+          "0.7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "stihl-hs-81-tc",
+      "brand": "STIHL",
+      "model": "HS 81 TC",
+      "name": "STIHL HS 81 TC",
+      "categories": [
+        "Heim & Garten",
+        "Rasen & Garten",
+        "Gartenmaschinen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "STIHL HS 81 TC"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "hedge trimmer"
+        ],
+        "power_source": [
+          "petrol"
+        ],
+        "engine_displacement_cc": [
+          "22.7"
+        ],
+        "power_kw": [
+          "0.7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ikea-brimnes-2-tuerig-weiss-78x50x190",
+      "brand": "IKEA",
+      "model": "BRIMNES 40400478",
+      "name": "IKEA BRIMNES Kleiderschrank 2-türig weiß 78x50x190 cm",
+      "categories": [
+        "Möbel",
+        "Schränke",
+        "Kleiderschränke"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "IKEA BRIMNES Kleiderschrank weiß 78x50x190",
+        "IKEA BRIMNES 40400478",
+        "IKEA 40400478"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "wardrobe"
+        ],
+        "width_cm": [
+          "78"
+        ],
+        "depth_cm": [
+          "50"
+        ],
+        "height_cm": [
+          "190"
+        ],
+        "door_count": [
+          "2"
+        ],
+        "color": [
+          "white"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "preiser-10626",
+      "brand": "Preiser",
+      "model": "10626 Weihnachtsmann, Kinder, Schneemann",
+      "name": "Preiser 10626 Weihnachtsmann, Kinder, Schneemann",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Modellbau",
+        "Modelleisenbahnzubehör"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Preiser 10626",
+        "Preiser Set 10626"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "model railway figures"
+        ],
+        "set_number": [
+          "10626"
+        ],
+        "scale": [
+          "1:87"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "preiser-10627",
+      "brand": "Preiser",
+      "model": "10627 Weihnachtsbaumverkauf",
+      "name": "Preiser 10627 Weihnachtsbaumverkauf",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Modellbau",
+        "Modelleisenbahnzubehör"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Preiser 10627",
+        "Preiser Set 10627"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "model railway figures"
+        ],
+        "set_number": [
+          "10627"
+        ],
+        "scale": [
+          "1:87"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "preiser-10629",
+      "brand": "Preiser",
+      "model": "10629 Stehende Frauen",
+      "name": "Preiser 10629 Stehende Frauen",
+      "categories": [
+        "Kunst & Unterhaltung",
+        "Hobby & Kunst",
+        "Modellbau",
+        "Modelleisenbahnzubehör"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Preiser 10629",
+        "Preiser Set 10629"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "model railway figures"
+        ],
+        "set_number": [
+          "10629"
+        ],
+        "scale": [
+          "1:87"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "schleich-42368",
+      "brand": "Schleich",
+      "model": "42368 Horse stall with Lusitano mare",
+      "name": "Schleich 42368 Horse stall with Lusitano mare",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schleich 42368",
+        "Schleich Horse Club 42368"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play set"
+        ],
+        "set_number": [
+          "42368"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "schleich-42369",
+      "brand": "Schleich",
+      "model": "42369 Horse stall with Arab horses and groom",
+      "name": "Schleich 42369 Horse stall with Arab horses and groom",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schleich 42369",
+        "Schleich Horse Club 42369"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play set"
+        ],
+        "set_number": [
+          "42369"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "schleich-42370",
+      "brand": "Schleich",
+      "model": "42370 Mobile vet with Hanoverian foal",
+      "name": "Schleich 42370 Mobile vet with Hanoverian foal",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schleich 42370",
+        "Schleich Horse Club 42370",
+        "Schleich Horse Club Mobile Tierärztin 42370"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play set"
+        ],
+        "set_number": [
+          "42370"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "schleich-42381",
+      "brand": "Schleich",
+      "model": "42381 Vet visit to the riding centre",
+      "name": "Schleich 42381 Vet visit to the riding centre",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schleich 42381",
+        "Schleich Horse Club 42381"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play set"
+        ],
+        "set_number": [
+          "42381"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "schleich-42404",
+      "brand": "Schleich",
+      "model": "42404 Wash area with horse stall",
+      "name": "Schleich 42404 Wash area with horse stall",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Puppen, Spielkombinationen & Spielzeugfiguren"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Schleich 42404",
+        "Schleich Horse Club 42404"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "play set"
+        ],
+        "set_number": [
+          "42404"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-25"
     }
   ]
 }

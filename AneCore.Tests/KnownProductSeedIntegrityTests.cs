@@ -18,7 +18,7 @@ public class KnownProductSeedIntegrityTests
         "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year",
         "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
         "channels", "microphone_inputs", "delay_time_ms", "program_count", "min_players", "max_players", "min_age",
-        "width_cm", "height_cm", "depth_cm", "drawer_count", "resolution", "supports_3d", "flash_power_ws", "camera_mount", "language", "rear_speeds", "diameter_mm", "valve_type", "connector", "pickup_pattern",
+        "width_cm", "height_cm", "depth_cm", "drawer_count", "resolution", "supports_3d", "flash_power_ws", "camera_mount", "language", "rear_speeds", "diameter_mm", "valve_type", "connector", "pickup_pattern", "key_count", "polyphony", "power_source", "engine_displacement_cc", "power_kw", "door_count", "scale",
     };
 
     private IReadOnlyList<KnownProduct> seed = null!;
@@ -111,6 +111,9 @@ public class KnownProductSeedIntegrityTests
         "Heim & Garten>Küche & Esszimmer>Küchengeräte>Speiseeismaschinen",
         "Kameras & Optik>Kamera- & Optisches Zubehör>Kamerazubehör>Kamera-Blitzgeräte",
         "Möbel>Schränke>Kommoden",
+        "Möbel>Schränke>Kleiderschränke",
+        "Heim & Garten>Rasen & Garten>Gartenmaschinen",
+        "Kunst & Unterhaltung>Hobby & Kunst>Modellbau>Modelleisenbahnzubehör",
         "Spielzeuge & Spiele>Spiele>Brettspiele",
         "Elektronik>Audio>Audiokomponenten>Mikrofone",
         "Kunst & Unterhaltung>Hobby & Kunst>Musikinstrumente>Elektronische Musikinstrumente>Musik-Keyboards",

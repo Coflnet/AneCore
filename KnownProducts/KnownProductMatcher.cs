@@ -31,6 +31,12 @@ public class KnownProductMatcher
 {
     private static readonly RegexOptions Opts = RegexOptions.Compiled | RegexOptions.CultureInvariant;
 
+    // Fixed LEGO rules must survive the listing pipeline's shared Regex-cache churn.
+    private static readonly Regex LegoIncomplete = new(@"\b(?:unvollstandig|incomplete|fehlteile|konvolut|sammlung|bundle|moc|nachbau|kompatibel|nur|ohne)\b", Opts);
+    private static readonly Regex LegoDisplayExtra = new(@"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts);
+    private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
+    private static readonly Regex LegoSetNumber = new(@"^\d{4,7}$", Opts);
+
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
     private static readonly string[] AccessoryWords =
     {
@@ -58,6 +64,8 @@ public class KnownProductMatcher
         "schutzglas",
         // A microphone windscreen or cassette lockring is a subpart; existing included-extra semantics still allow it with the whole product.
         "windschutz", "verschlussring", "lockring",
+        // Tool subparts are not the hedge trimmer; existing included-extra markers retain complete tools with spares.
+        "vergaser", "ersatzmesser", "messerabdeckung",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>
@@ -229,12 +237,13 @@ public class KnownProductMatcher
                 // A set number can also name a manual, empty box, partial set or custom build.
                 // Keep those offers on the extraction path, where their scope is preserved.
                 if (entry.Product.Vertical == "lego" &&
-                    (Regex.IsMatch(normalizedTitle, @"\b(?:unvollstandig|incomplete|fehlteile|konvolut|sammlung|bundle|moc|nachbau|kompatibel|nur|ohne)\b", Opts)
-                     || Regex.IsMatch(normalizedTitle, @"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts)
-                     || Regex.Matches(normalizedTitle, @"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts)
+                    (LegoIncomplete.IsMatch(normalizedTitle)
+                     || LegoDisplayExtra.IsMatch(normalizedTitle)
+                     || LegoExtraWords.Matches(normalizedTitle)
                          .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
-                     || titleTokens.Where(t => Regex.IsMatch(t, @"^\d{4,7}$", Opts)).Distinct().Count() > 1
-                     || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts)))
+                     || titleTokens.Where(t => LegoSetNumber.IsMatch(t)).Distinct().Count() > 1
+                     // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.
+                     || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts & ~RegexOptions.Compiled)))
                     continue;
                 matches.Add((entry.Product, aliasTokens.Length, i));
             }
