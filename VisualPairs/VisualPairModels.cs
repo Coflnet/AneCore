@@ -17,6 +17,9 @@ public sealed record VisualPairCaptureMetadata
     public string Mode { get; init; } = "";
     public string ModelId { get; init; } = "";
     public string? ModelRevision { get; init; }
+    /// <summary>Evidence from each exact winning photo vector/reference; legacy sides remain null independently.</summary>
+    public string? AEmbeddingProvenanceJson { get; init; }
+    public string? BEmbeddingProvenanceJson { get; init; }
     public int EmbeddingDimensions { get; init; }
     public double JoinThreshold { get; init; }
     public double ColorConflictExtra { get; init; }

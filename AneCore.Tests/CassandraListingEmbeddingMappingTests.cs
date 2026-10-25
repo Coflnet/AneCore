@@ -8,6 +8,15 @@ namespace AneCore.Tests;
 public class CassandraListingEmbeddingMappingTests
 {
     [Test]
+    public void ProvenanceIsOptionalScalarEvidence_WithoutChangingLegacyKeys()
+    {
+        var definition = CassandraListingEmbeddingStore.BuildMapping().Get<ListingImageEmbedding>();
+        var property = typeof(ListingImageEmbedding).GetProperty(nameof(ListingImageEmbedding.ProvenanceJson))!;
+        Assert.That(definition.GetColumnDefinition(property).ColumnName, Is.EqualTo("provenance_json"));
+        Assert.That(new ListingImageEmbedding().ProvenanceJson, Is.Null);
+    }
+
+    [Test]
     public void KeyColumns_AreBackedByPrimitiveProperties()
     {
         // Regression: the partition key (listing_id, platform) was mapped on the Platform enum.

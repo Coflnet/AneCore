@@ -44,6 +44,7 @@ public partial class CassandraListingEmbeddingStore : IListingEmbeddingStore
                 .Column(e => e.ImageUrl, cm => cm.WithName("image_url"))
                 .Column(e => e.ModelId, cm => cm.WithName("model_id"))
                 .Column(e => e.Embedding, cm => cm.WithName("embedding"))
+                .Column(e => e.ProvenanceJson, cm => cm.WithName("provenance_json"))
                 .Column(e => e.GroupKey, cm => cm.WithName("group_key"))
                 .Column(e => e.ClusterSeoId, cm => cm.WithName("cluster_seo_id"))
                 .Column(e => e.CreatedAt, cm => cm.WithName("created_at")));
@@ -59,6 +60,17 @@ public partial class CassandraListingEmbeddingStore : IListingEmbeddingStore
             await table.CreateIfNotExistsAsync();
             await session.ExecuteAsync(new SimpleStatement(
                 $"ALTER TABLE listing_image_embeddings WITH default_time_to_live = {TimeToLiveSeconds}"));
+            var lookup = new SimpleStatement(
+                "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                session.Keyspace, "listing_image_embeddings", "provenance_json");
+            if (!(await session.ExecuteAsync(lookup)).Any())
+            {
+                try { await session.ExecuteAsync(new SimpleStatement("ALTER TABLE listing_image_embeddings ADD provenance_json text")); }
+                catch (InvalidQueryException)
+                {
+                    if (!(await session.ExecuteAsync(lookup)).Any()) throw;
+                }
+            }
             tableInitialized = true;
         }
         finally

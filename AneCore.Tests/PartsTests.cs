@@ -74,6 +74,30 @@ public class PartClassRegistryTests
     [TestCase("Bing Vergaser 1/20/38", "Bing 1/20/38")]
     [TestCase("Bing 21/20/105 A Vergaser Gehäuse", "Bing 21/20/105 A")]
     [TestCase("Vergaser Bing 3/22/43 inkl. Ansaugstutzen", "Bing 3/22/43")]
+    [TestCase("Bing Vergaser 1-20-60", "Bing 1/20/60")]
+    [TestCase("origanal Bing Cobra Monza Vergaser 1/ 20 /60", "Bing 1/20/60")]
+    [TestCase("Bing Vergaser 21/ 20 /105 A", "Bing 21/20/105 A")]
+    [TestCase("Bing Vergaser 21-20-105 B", "Bing 21/20/105 B")]
+    [TestCase("Bing Vergaser 1/20", "Bing 1/20")]
+    [TestCase("Bing Vergaser 1-20", null)]
+    [TestCase("Bing Vergaser 1 x 20 x 60 mm", null)]
+    [TestCase("Bing Vergaser 1-20-60 mm", null)]
+    [TestCase("Bing Vergaser 1/20/60 mm", null)]
+    [TestCase("Bing Vergaser 1/ 20 /60 mm", null)]
+    [TestCase("Bing Vergaser 1 / 20 / 60 cm", null)]
+    [TestCase("Bing Vergaser 1/20 /60/5", null)]
+    [TestCase("Bing Vergaser 1 / 20 / 60 / 5", null)]
+    [TestCase("Bing Vergaser 1-20-60 -5", null)]
+    [TestCase("Bing Vergaser 1/20/60 A mm", null)]
+    [TestCase("Bing Vergaser 1/20/60 A /5", null)]
+    [TestCase("Bing Vergaser 1/20/60 x 5", null)]
+    [TestCase("Bing Vergaser 1/20/60 x5", null)]
+    [TestCase("Dellorto Vergaser 1-20-60", null)]
+    [TestCase("Bing Dellorto Vergaser 1-20-60", null)]
+    [TestCase("Bing Vergaser Artikel 1-20-60", null)]
+    [TestCase("Bing Vergaser 1-20-60-5", null)]
+    [TestCase("Bing Vergaser 1/20/60/5", null)]
+    [TestCase("Bing Vergaser 1-20-60ABC", null)]
     [TestCase("Bing Vergaser", null)]
     public void Carburetors_PreserveExplicitTypeWithoutInventingDimensionsOrFit(string title, string? designation)
     {
@@ -84,6 +108,13 @@ public class PartClassRegistryTests
         Assert.That(facts.Numbers(), Is.Empty);
         Assert.That(facts.Fits, Is.Empty);
     }
+
+    [TestCase("Bing Vergaser 1-20-60 Konvolut")]
+    [TestCase("Moped mit Bing Vergaser 1-20-60")]
+    [TestCase("Bing Vergaser 1/ 20 /60 Handbuch")]
+    [TestCase("Bing Vergaser 1-20-60 DVD")]
+    public void BingType_DoesNotAdmitLotsVehiclesOrMedia(string title) =>
+        Assert.That(PartTextExtractors.Extract(title, ""), Is.Null);
 
     [Test]
     public void Registry_HasAPrimaryKeyAndKeysForEveryClass()

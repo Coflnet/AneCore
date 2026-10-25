@@ -48,6 +48,7 @@ public class ClothingVisualIndex(
             .Keyword(k => k.Name(n => n.Pattern))
             .Keyword(k => k.Name(n => n.Gender))
             .Keyword(k => k.Name(n => n.ModelId))
+            .Keyword(k => k.Name(n => n.ProvenanceJson).Index(false).DocValues(false))
             .Date(d => d.Name(n => n.CreatedAt))
             .KnnVector(k => k
                 .Name(n => n.Embedding)
@@ -96,5 +97,6 @@ public record ClothingVisualDocument(
     string? Gender,
     string ModelId,
     DateTime CreatedAt,
-    float[] Embedding
+    float[] Embedding,
+    string? ProvenanceJson = null
 );

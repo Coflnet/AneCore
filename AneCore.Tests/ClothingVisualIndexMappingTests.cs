@@ -79,6 +79,10 @@ public class ClothingVisualIndexMappingTests
         AssertKeyword(props, "pattern");
         AssertKeyword(props, "gender");
         AssertKeyword(props, "modelId");
+        var provenance = props.GetProperty("provenanceJson");
+        Assert.That(provenance.GetProperty("type").GetString(), Is.EqualTo("keyword"));
+        Assert.That(provenance.GetProperty("index").GetBoolean(), Is.False);
+        Assert.That(provenance.GetProperty("doc_values").GetBoolean(), Is.False);
         Assert.That(props.GetProperty("createdAt").GetProperty("type").GetString(), Is.EqualTo("date"));
 
         var embedding = props.GetProperty("embedding");
@@ -96,6 +100,20 @@ public class ClothingVisualIndexMappingTests
 
         static void AssertKeyword(JsonElement properties, string field) =>
             Assert.That(properties.GetProperty(field).GetProperty("type").GetString(), Is.EqualTo("keyword"), $"field {field}");
+    }
+
+    [Test]
+    public async Task Initialize_AddsSourceOnlyEvidenceMappingToExistingIndex()
+    {
+        var (_, store, connection) = Build((method, path) => method == "HEAD"
+            ? (200, []) : DefaultResponse(method, path));
+        await store.InitializeAsync();
+        Assert.That(store.IsAvailable, Is.True);
+        using var mapping = JsonDocument.Parse(connection.LastBodyForPath("PUT", "ane_clothing_visual_v1/_mapping")!);
+        var provenance = mapping.RootElement.GetProperty("properties").GetProperty("provenanceJson");
+        Assert.That(provenance.GetProperty("index").GetBoolean(), Is.False);
+        Assert.That(provenance.GetProperty("doc_values").GetBoolean(), Is.False);
+        Assert.That(connection.LastBodyForPath("PUT", "ane_clothing_visual_v1"), Is.Null);
     }
 
     [Test]

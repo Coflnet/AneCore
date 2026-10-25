@@ -121,8 +121,9 @@ public static class BearingTextExtractor
 /// </summary>
 public static class PartTextExtractors
 {
-    // Slash-separated types are read only beside the explicit Bing maker; they are not inferred dimensions or OEM numbers.
-    private static readonly Regex BingDesignation = new(@"(?<![\p{L}\p{N}])bing\s+(?:vergass?er\s+)?(?<d>\d{1,2}/\d{1,2}(?:/\d{1,3})?(?:\s+[a-z](?![\p{L}\p{N}]))?)(?![\p{L}\p{N}/])", RegexOptions.Compiled | RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+    // Explicit Bing types retain their component order; separator spelling never supplies dimensions, OEM numbers or fitment.
+    // Keep a recognized full code atomic: a rejected unit/fourth component must never yield a shorter prefix.
+    private static readonly Regex BingDesignation = new(@"(?<![\p{L}\p{N}])bing\s+(?:(?:cobra\s+monza\s+)?vergass?er\s+)?(?<d>(?>(?:\d{1,2}\s*/\s*\d{1,2}(?:\s*/\s*\d{1,3})?|\d{1,2}-\d{1,2}-\d{1,3})(?:\s+(?!x\s*\d)[a-z](?![\p{L}\p{N}]))?))(?![\p{L}\p{N}]|\s*(?:[/-]|(?:mm|cm|[x×])\b|[x×]\s*\d))", RegexOptions.Compiled | RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
 
     /// <summary>The facts of a listing, or null when the title names no part class (or an excluded context).</summary>
     public static PartTextFacts? Extract(string? title, string? description)
@@ -149,7 +150,7 @@ public static class PartTextExtractors
                 {
                     Class = cls.Class, ClassEvidence = cls.Evidence,
                     CarburetorDesignation = cls.Class.Name == PartClasses.Carburetor && BingDesignation.Match(title ?? "") is { Success: true } carb
-                        ? new TextName("Bing " + carb.Groups["d"].Value.Trim().ToUpperInvariant(), 0.9, PartText.Evidence($"carburetor type: \"{carb.Value}\"") ?? "") : null,
+                        ? new TextName("Bing " + Regex.Replace(carb.Groups["d"].Value.Trim().ToUpperInvariant(), @"\s*[/-]\s*", "/"), 0.9, PartText.Evidence($"carburetor type: \"{carb.Value}\"") ?? "") : null,
                     PartNumbers = PartNumbers.Find((title ?? "") + " \n " + (description ?? "")),
                     Fits = Fitment.FindInListing(title, description),
                 };

@@ -132,6 +132,7 @@ public class ProductTableService
                 .Column(ph => ph.MinPrice, cm => cm.WithName("min_price"))
                 .Column(ph => ph.MaxPrice, cm => cm.WithName("max_price"))
                 .Column(ph => ph.SampleCount, cm => cm.WithName("sample_count"))
+                .Column(ph => ph.Currency, cm => cm.WithName("currency"))
             )
             .Define(new Map<Listing>()
                 .TableName("listings")
@@ -823,6 +824,7 @@ public class ProductTableService
     /// </summary>
     public async Task<List<PricePoint>> GetPriceHistoryAsync(string productSeoId, int days = 90)
     {
+        await EnsurePriceHistoryCurrencySchemaAsync();
         var cutoff = DateTime.UtcNow.AddDays(-days);
         var query = priceHistory
             .Where(ph => ph.ProductSeoId == productSeoId && ph.Date >= cutoff)
@@ -837,9 +839,35 @@ public class ProductTableService
     /// </summary>
     public async Task InsertPricePointAsync(PricePoint pricePoint)
     {
+        await EnsurePriceHistoryCurrencySchemaAsync();
         await priceHistory.Insert(pricePoint)
             .SetTTL(ProductDataRetention.GetPriceHistoryTtlSeconds(pricePoint))
             .ExecuteAsync();
+    }
+
+    private volatile bool priceHistoryCurrencyReady;
+
+    private async Task EnsurePriceHistoryCurrencySchemaAsync()
+    {
+        if (priceHistoryCurrencyReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (priceHistoryCurrencyReady) return;
+            var lookup = new SimpleStatement(
+                "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                session.Keyspace, "price_history", "currency");
+            if (!(await session.ExecuteAsync(lookup)).Any())
+            {
+                try { await session.ExecuteAsync(new SimpleStatement("ALTER TABLE price_history ADD currency text")); }
+                catch (InvalidQueryException)
+                {
+                    if (!(await session.ExecuteAsync(lookup)).Any()) throw;
+                }
+            }
+            priceHistoryCurrencyReady = true;
+        }
+        finally { initSemaphore.Release(); }
     }
 
     /// <summary>

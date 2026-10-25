@@ -26,7 +26,13 @@ public class OpenSearchVisualReferenceStore(
     {
         try
         {
-            await index.Client(ct);
+            var client = await index.Client(ct);
+            // Existing indices also need the additive evidence field; keep it source-only.
+            var mapping = await client.Indices.PutMappingAsync<ClothingVisualDocument>(m => m
+                .Index(index.IndexName()).Properties(p => p.Keyword(k => k
+                    .Name(n => n.ProvenanceJson).Index(false).DocValues(false))), ct);
+            if (!mapping.IsValid)
+                throw new InvalidOperationException("Failed to add visual reference provenance mapping: " + mapping.DebugInformation);
             available = true;
         }
         catch (OperationCanceledException) when (ct.IsCancellationRequested)

@@ -13,4 +13,6 @@ public class PricePoint
     public double MinPrice { get; set; }
     public double MaxPrice { get; set; }
     public int SampleCount { get; set; }
+    /// <summary>Currency recorded by the writer; null for legacy snapshots whose currency is unverified.</summary>
+    public string? Currency { get; set; }
 }

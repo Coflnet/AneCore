@@ -36,6 +36,9 @@ public class ListingImageEmbedding
     /// <summary>512-dim, L2-normalised float32 vector, little-endian - see <see cref="EmbeddingBlobCodec"/>.</summary>
     public byte[] Embedding { get; set; } = [];
 
+    /// <summary>Per-response checkpoint/photo/vector evidence; null for historical vectors. Never inferred from current health.</summary>
+    public string? ProvenanceJson { get; set; }
+
     /// <summary>Grouping key used to scope visual neighbour search (e.g. category+gender) so unrelated clothing never matches.</summary>
     public string GroupKey { get; set; } = "";
 
