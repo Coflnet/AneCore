@@ -85,8 +85,18 @@ public class CassandraKnownProductStore : IKnownProductStore
 
     public async Task<IReadOnlyList<KnownProduct>> GetAllAsync()
     {
-        var rows = await table.ExecuteAsync();
-        return rows.ToList();
+        var products = new List<KnownProduct>();
+        byte[]? pagingState = null;
+        do
+        {
+            var query = table.SetPageSize(500);
+            if (pagingState != null)
+                query = query.SetPagingState(pagingState);
+            var page = await query.ExecutePagedAsync();
+            products.AddRange(page);
+            pagingState = page.PagingState;
+        } while (pagingState != null);
+        return products;
     }
 
     public async Task<KnownProduct?> GetAsync(string id) =>
