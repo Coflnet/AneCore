@@ -1,3 +1,6 @@
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using Cassandra.Mapping;
 using Coflnet.Ane;
 using Coflnet.Ane.VisualPairs;
 
@@ -56,6 +59,12 @@ public class VisualPairStoreTests
         Assert.That(label.TableName, Is.EqualTo("visual_pair_labels"));
         Assert.That(label.PartitionKeys, Is.EquivalentTo(new[] { "pair_id" }));
         Assert.That(label.ClusteringKeys.Select(k => k.Item1), Is.EquivalentTo(new[] { "user_id" }));
+        Assert.That(candidate.GetColumnDefinition(typeof(VisualPairCandidate).GetProperty(nameof(VisualPairCandidate.CaptureMetadataJson))!).ColumnName,
+            Is.EqualTo("capture_metadata_json"));
+        Assert.That(label.GetColumnDefinition(typeof(VisualPairLabel).GetProperty(nameof(VisualPairLabel.CaptureMetadataJson))!).ColumnName,
+            Is.EqualTo("capture_metadata_json"));
+        Assert.That(label.GetColumnDefinition(typeof(VisualPairLabel).GetProperty(nameof(VisualPairLabel.ReviewMode))!).ColumnName,
+            Is.EqualTo("review_mode"));
         foreach (var property in typeof(VisualPairCandidate).GetProperties())
             if (!candidate.GetColumnDefinition(property).Ignore)
                 Assert.That(property.PropertyType.IsEnum, Is.False, $"candidate {property.Name}");
@@ -103,6 +112,100 @@ public class VisualPairStoreTests
         Assert.That(counts.ContainsKey("same_item"), Is.False);
     }
 
+    [TestCase("diagnostic", "blind", "diagnostic")]
+    [TestCase("diagnostic", null, "diagnostic")]
+    [TestCase(null, "blind", null)]
+    [TestCase("blind", null, null)]
+    [TestCase("blind", "diagnostic", "diagnostic")]
+    public async Task InMemory_StaleSubmissionPreservesExposure_WhileOverwritingAnswerAndFrozenFacts(
+        string? before, string? requested, string? expected)
+    {
+        var store = new InMemoryVisualPairStore();
+        var candidate = Candidate("a", "b", DateTime.UtcNow);
+        var stale = VisualPairLabel.From(candidate, "u", "different", DateTime.UtcNow);
+        stale.ReviewMode = requested;
+        stale.CaptureMetadataJson = "frozen stale request";
+        var earlier = VisualPairLabel.From(candidate, "u", "same_item", DateTime.UtcNow);
+        earlier.ReviewMode = before;
+        await store.AddLabelAsync(earlier);
+        await store.AddLabelAsync(stale);
+        var saved = (await store.GetLabelsForPairAsync(candidate.PairId)).Single();
+        Assert.That(saved.ReviewMode, Is.EqualTo(expected));
+        Assert.That(saved.Label, Is.EqualTo("different"));
+        Assert.That(saved.CaptureMetadataJson, Is.EqualTo("frozen stale request"));
+    }
+
+    [Test]
+    public async Task InMemory_ConcurrentSubmissionsCannotDowngradeDiagnosticExposure()
+    {
+        var store = new InMemoryVisualPairStore();
+        var candidate = Candidate("a", "b", DateTime.UtcNow);
+        using var start = new ManualResetEventSlim();
+        var writes = Enumerable.Range(0, 32).Select(i => Task.Run(async () =>
+        {
+            var label = VisualPairLabel.From(candidate, "u", "same_item", DateTime.UtcNow);
+            label.ReviewMode = i == 0 ? "diagnostic" : i % 2 == 0 ? "blind" : null;
+            start.Wait();
+            await store.AddLabelAsync(label);
+        })).ToList();
+        start.Set();
+        await Task.WhenAll(writes);
+        Assert.That((await store.GetLabelsForPairAsync(candidate.PairId)).Single().ReviewMode, Is.EqualTo("diagnostic"));
+    }
+
+    public class ContendedLabelMapper : DispatchProxy
+    {
+        public List<(string Cql, object[] Values)> Updates { get; } = [];
+        public bool InsertNulls { get; private set; }
+        protected override object? Invoke(MethodInfo? method, object?[]? args)
+        {
+            if (method!.Name == "InsertIfNotExistsAsync")
+            {
+                InsertNulls = (bool)args![1]!;
+                return Task.FromResult(new AppliedInfo<VisualPairLabel>(new VisualPairLabel { ReviewMode = null }));
+            }
+            if (method.Name == "UpdateIfAsync")
+            {
+                Updates.Add(((string)args![0]!, ((object[])args[1]!).ToArray()));
+                // Another writer records diagnostic after the initial null/unknown observation.
+                return Task.FromResult(new AppliedInfo<VisualPairLabel>(new VisualPairLabel { ReviewMode = "diagnostic" }));
+            }
+            throw new NotSupportedException(method.Name);
+        }
+    }
+
+    [Test]
+    public void Cassandra_ConditionalOverwriteBindsUnknownNull_AndRetriesObservedExposureWithoutUnsafeFallback()
+    {
+        var initialized = typeof(CassandraVisualPairStore).GetField("tablesInitialized", BindingFlags.NonPublic | BindingFlags.Static)!;
+        var wasInitialized = initialized.GetValue(null);
+        var proxy = DispatchProxy.Create<IMapper, ContendedLabelMapper>();
+        var recorder = (ContendedLabelMapper)proxy;
+        var store = (CassandraVisualPairStore)RuntimeHelpers.GetUninitializedObject(typeof(CassandraVisualPairStore));
+        typeof(CassandraVisualPairStore).GetField("mapper", BindingFlags.NonPublic | BindingFlags.Instance)!.SetValue(store, proxy);
+        var label = VisualPairLabel.From(Candidate("a", "b", DateTime.UtcNow), "u", "different", DateTime.UtcNow);
+        label.ReviewMode = "blind";
+        label.CaptureMetadataJson = "exact frozen JSON";
+        initialized.SetValue(null, true);
+        try
+        {
+            Assert.ThrowsAsync<InvalidOperationException>(() => store.AddLabelAsync(label));
+            Assert.That(recorder.InsertNulls, Is.True);
+            Assert.That(recorder.Updates, Has.Count.EqualTo(4));
+            var first = recorder.Updates[0];
+            Assert.That(first.Cql, Does.EndWith("WHERE pair_id = ? AND user_id = ? IF review_mode = ?"));
+            Assert.That(first.Cql.Count(c => c == '?'), Is.EqualTo(first.Values.Length));
+            Assert.That(first.Values[1], Is.Null); // unknown cannot be upgraded to blind
+            Assert.That(first.Values[^1], Is.Null); // a bound null, not an absent/unset comparison
+            Assert.That(first.Values[3], Is.EqualTo("exact frozen JSON"));
+            Assert.That(first.Values[^3], Is.EqualTo(label.PairId));
+            Assert.That(first.Values[^2], Is.EqualTo("u"));
+            Assert.That(recorder.Updates.Skip(1).All(u => (string)u.Values[1] == "diagnostic"
+                && (string)u.Values[^1] == "diagnostic"), Is.True);
+        }
+        finally { initialized.SetValue(null, wasInitialized); }
+    }
+
     [Test]
     public async Task InMemory_LabelsPaged_CoverEverythingOnce()
     {
@@ -131,6 +234,19 @@ public class VisualPairStoreTests
         Assert.That(label.B, Is.EqualTo(c.B));
         Assert.That(label.APlatformValue, Is.EqualTo((int)Platform.Vinted));
         Assert.That(label.Similarity, Is.EqualTo(0.85));
+    }
+
+    [Test]
+    public void LabelFreezesCaptureProvenance_AndOldRowsRemainUnknown()
+    {
+        var candidate = Candidate("1", "2", DateTime.UtcNow);
+        Assert.That(VisualPairLabel.From(candidate, "u", "same_item", DateTime.UtcNow).CaptureMetadataJson, Is.Null);
+        candidate.CaptureMetadataJson = "{\"SchemaVersion\":1,\"ASellerHash\":\"opaque-hmac\"}";
+        var label = VisualPairLabel.From(candidate, "u", "same_item", DateTime.UtcNow);
+        var captured = candidate.CaptureMetadataJson;
+        candidate.CaptureMetadataJson = null; // candidate expiry/change cannot erase label evidence
+        Assert.That(label.CaptureMetadataJson, Is.EqualTo(captured));
+        Assert.That(label.ReviewMode, Is.Null); // no automatic blind/human evidence claim
     }
 
     [Test]

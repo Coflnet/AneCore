@@ -27,7 +27,7 @@ public interface IVisualPairStore
     /// <summary>Labels of several pairs at once, keyed by pair id (pairs without labels are absent).</summary>
     Task<IReadOnlyDictionary<string, IReadOnlyList<VisualPairLabel>>> GetLabelsForPairsAsync(IEnumerable<string> pairIds);
 
-    /// <summary>Stores the label; a second call for the same user and pair overwrites the first.</summary>
+    /// <summary>Stores the label; a second call overwrites its answer and snapshot while preserving prior diagnostic/unknown review exposure atomically.</summary>
     Task AddLabelAsync(VisualPairLabel label);
 
     /// <summary>One page of all labels for the export. Labels of one pair are adjacent. Pass the returned state to continue; null state means the end.</summary>
@@ -96,6 +96,7 @@ public class CassandraVisualPairStore : IVisualPairStore
                 .Column(c => c.ClusterSeoId, cm => cm.WithName("cluster_seo_id"))
                 .Column(c => c.TextSeoId, cm => cm.WithName("text_seo_id"))
                 .Column(c => c.ModelId, cm => cm.WithName("model_id"))
+                .Column(c => c.CaptureMetadataJson, cm => cm.WithName("capture_metadata_json"))
                 .Column(c => c.Source, cm => cm.WithName("source"))
                 .Column(c => c.CreatedAt, cm => cm.WithName("created_at"))
                 .Column(c => c.A, cm => cm.Ignore())
@@ -118,8 +119,10 @@ public class CassandraVisualPairStore : IVisualPairStore
                 .ClusteringKey(l => l.UserId)
                 .Column(l => l.PairId, cm => cm.WithName("pair_id"))
                 .Column(l => l.UserId, cm => cm.WithName("user_id"))
+                .Column(l => l.ReviewMode, cm => cm.WithName("review_mode"))
                 .Column(l => l.Label, cm => cm.WithName("label"))
                 .Column(l => l.ModelId, cm => cm.WithName("model_id"))
+                .Column(l => l.CaptureMetadataJson, cm => cm.WithName("capture_metadata_json"))
                 .Column(l => l.Similarity, cm => cm.WithName("similarity"))
                 .Column(l => l.GroupKey, cm => cm.WithName("group_key"))
                 .Column(l => l.CreatedAt, cm => cm.WithName("created_at"))
@@ -148,6 +151,29 @@ public class CassandraVisualPairStore : IVisualPairStore
             foreach (var table in new[] { "visual_pair_candidates", "visual_pair_candidate_days" })
                 await session.ExecuteAsync(new global::Cassandra.SimpleStatement(
                     $"ALTER TABLE {table} WITH default_time_to_live = {CandidateTimeToLiveSeconds}"));
+            // CreateIfNotExists does not add columns to tables deployed before capture provenance.
+            foreach (var (table, column) in new[] {
+                ("visual_pair_candidates", "capture_metadata_json"),
+                ("visual_pair_labels", "capture_metadata_json"),
+                ("visual_pair_labels", "review_mode") })
+            {
+                var lookup = new global::Cassandra.SimpleStatement(
+                    "SELECT column_name FROM system_schema.columns WHERE keyspace_name = ? AND table_name = ? AND column_name = ?",
+                    session.Keyspace, table, column);
+                if (!(await session.ExecuteAsync(lookup)).Any())
+                {
+                    try
+                    {
+                        await session.ExecuteAsync(new global::Cassandra.SimpleStatement($"ALTER TABLE {table} ADD {column} text"));
+                    }
+                    catch (global::Cassandra.InvalidQueryException)
+                    {
+                        // API and Notifier can race to add the same column; prove it exists before accepting the failure.
+                        if (!(await session.ExecuteAsync(lookup)).Any())
+                            throw;
+                    }
+                }
+            }
             tablesInitialized = true;
         }
         finally { InitLock.Release(); }
@@ -237,7 +263,24 @@ public class CassandraVisualPairStore : IVisualPairStore
         await InitializeAsync();
         if (label.CreatedAt == default)
             label.CreatedAt = DateTime.UtcNow;
-        await labels.Insert(label).ExecuteAsync();
+        var requestedMode = label.ReviewMode;
+        var result = await mapper.InsertIfNotExistsAsync(label, insertNulls: true);
+        for (var attempt = 0; !result.Applied && attempt < 4; attempt++)
+        {
+            var observedMode = result.Existing.ReviewMode;
+            label.ReviewMode = VisualPairLabel.PreserveReviewMode(observedMode, requestedMode);
+            // Compare the exposure we merged, including null legacy/unknown modes, across API replicas.
+            result = await mapper.UpdateIfAsync<VisualPairLabel>(
+                "SET label = ?, review_mode = ?, model_id = ?, capture_metadata_json = ?, similarity = ?, group_key = ?, created_at = ?, " +
+                "a_platform = ?, a_listing_id = ?, a_image_index = ?, a_image_url = ?, b_platform = ?, b_listing_id = ?, b_image_index = ?, b_image_url = ? " +
+                "WHERE pair_id = ? AND user_id = ? IF review_mode = ?",
+                label.Label, label.ReviewMode, label.ModelId, label.CaptureMetadataJson, label.Similarity, label.GroupKey, label.CreatedAt,
+                label.APlatformValue, label.AListingId, label.AImageIndex, label.AImageUrl,
+                label.BPlatformValue, label.BListingId, label.BImageIndex, label.BImageUrl,
+                label.PairId, label.UserId, observedMode);
+        }
+        if (!result.Applied)
+            throw new InvalidOperationException("Label changed concurrently; retry the submission.");
         await IndexAsync(label.A, label.B, label.PairId, null);
     }
 
@@ -384,7 +427,10 @@ public class InMemoryVisualPairStore : IVisualPairStore
         {
             if (label.CreatedAt == default)
                 label.CreatedAt = DateTime.UtcNow;
-            labels[(label.PairId, label.UserId)] = label;
+            var key = (label.PairId, label.UserId);
+            if (labels.TryGetValue(key, out var previous))
+                label.ReviewMode = VisualPairLabel.PreserveReviewMode(previous.ReviewMode, label.ReviewMode);
+            labels[key] = label;
         }
         return Task.CompletedTask;
     }
