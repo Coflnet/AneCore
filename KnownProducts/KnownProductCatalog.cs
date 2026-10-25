@@ -61,12 +61,12 @@ public class KnownProductCatalog : IDisposable
         }
     }
 
-    /// <summary>Starts the periodic background refresh (no-op if already started). Does an immediate refresh first.</summary>
-    public void StartPeriodicRefresh()
+    /// <summary>Starts periodic refresh (no-op if already started). Callers that already refreshed can defer the first timer read.</summary>
+    public void StartPeriodicRefresh(bool refreshImmediately = true)
     {
         if (timer != null)
             return;
-        timer = new Timer(_ => _ = RefreshAsync(), null, TimeSpan.Zero, refreshInterval);
+        timer = new Timer(_ => _ = RefreshAsync(), null, refreshImmediately ? TimeSpan.Zero : refreshInterval, refreshInterval);
     }
 
     public void Dispose()

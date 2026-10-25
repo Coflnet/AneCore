@@ -89,10 +89,23 @@ public class CassandraKnownProductStore : IKnownProductStore
         byte[]? pagingState = null;
         do
         {
-            var query = table.Select(p => p).SetPageSize(500);
-            if (pagingState != null)
-                query = query.SetPagingState(pagingState);
-            var page = await query.ExecutePagedAsync();
+            IPage<KnownProduct> page;
+            for (var attempt = 0; ; attempt++)
+            {
+                var query = table.Select(p => p).SetPageSize(500);
+                if (pagingState != null)
+                    query = query.SetPagingState(pagingState);
+                try
+                {
+                    page = await query.ExecutePagedAsync();
+                    break;
+                }
+                catch (ReadTimeoutException) when (attempt < 2)
+                {
+                    // Preserve completed pages; retry only this cursor, with a fresh driver query.
+                    await Task.Delay(TimeSpan.FromMilliseconds(250 * (attempt + 1)));
+                }
+            }
             products.AddRange(page);
             pagingState = page.PagingState;
         } while (pagingState != null);
