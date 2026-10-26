@@ -8,6 +8,8 @@ public class FurnitureOfferRulesTests
     [TestCase("IKEA MALM Kommode / Nachttisch 2 Schubladen weiß", "Schlafzimmer", true)]
     [TestCase("IKEA Billy Regal weiß", "Wohnzimmer", true)]
     [TestCase("IKEA Schrank", "Küche & Esszimmer", true)]
+    [TestCase("IKEA Hemnes Schrank weiß 80 x 50 x 190 cm", "Schlafzimmer", true)]
+    [TestCase("IKEA Hemnes Schrank 80x50x190 cm", "Schlafzimmer", true)]
     [TestCase("IKEA Schrank", "Elektronik", false)]
     [TestCase("IKEA Schrank", "", false)]
     [TestCase("Hemnes Schrank", "Schlafzimmer", false)]

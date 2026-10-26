@@ -24,7 +24,7 @@ public static class FurnitureOfferRules
             + @"|beschl[aä]ge|schrauben|griffe|fronten|t[uü]r(?:en)?|schublade|schubladenfront\p{L}*|einlegeb[oö]den|bettvorhang|vorhang|matratze|auflage|bezug|husse|anleitung|handbuch|verpackung"
             + @"|miniatur\p{L}*|puppen\p{L}*|spielzeug|nachbau|[aä]hnlich|konvolut|sammlung|bundle|paket|set|essgruppe)\b"
             + @"|\b(?:f[uü]r|passend|wie)\s+(?:das\s+|den\s+|ein\s+)?(?:ikea|" + Furniture + @")\b"
-            + @"|\b(?:[2-9]|[1-9]\d+)\s*(?:x|st[uü]ck)\b"
+            + @"|\b(?:[2-9]|[1-9]\d+)\s*(?:x(?!\s*\d)|st[uü]ck)\b"
             + @"|(?:\+|\bund\b|\bmit\b|&)(?:\s+\p{L}+){0,2}\s*" + Furniture + @"\b", Options)
             && !Regex.IsMatch(description ?? "", @"^\s*(?:suche|gesucht|ankauf|wanted|tausche)\b|^(?:(?:ich\s+)?verkaufe|biete|selling)\b[^.\n]{0,80}\b(?:konvolut|bundle|paket|set|" + Furniture + @"\s+und\s+(?:ikea\s+)?(?:\p{L}+\s+)?" + Furniture + @")\b", Options);
     }
