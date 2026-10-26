@@ -67,6 +67,8 @@ public class KnownProductMatcher
         "windschutz", "verschlussring", "lockring",
         // Tool subparts are not the hedge trimmer; existing included-extra markers retain complete tools with spares.
         "vergaser", "ersatzmesser", "messerabdeckung",
+        // Adjustable wrench replacement jaws and knurls are parts; included spare semantics still apply.
+        "randelschraube", "ersatzbacke", "ersatzbacken", "knurl",
     };
 
     /// <summary>"für iPhone", "for iPhone", "per iPhone", "pour iPhone" - accessory context even without a named part.</summary>

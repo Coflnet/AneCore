@@ -1,0 +1,14 @@
+{
+  "method": "Python source/data audit only; no .NET runtime invoked",
+  "new_rows": 30,
+  "unique_new_ids": true,
+  "new_normalized_alias_collisions": {},
+  "per_row_downloaded_pdf_table_proof_matches": 30,
+  "seed_sha256": "a6c605a872c1e229db73bc36d6d74dec608aa0943d36998680ee3067960ea654",
+  "unchanged_existing_seed_sha256": {
+    "KnownProducts/Seed/resale-goods.json": "b22778494ef57c70a67f964688100d7153ebbb4debb871aff895f55f69db35be",
+    "KnownProducts/Seed/power-tools.json": "8f7155fd479b672ad1bbea854ed24d14c13cdce9b42fc3ec56fddb3166ceb2ef"
+  },
+  "source_sha256": "125913e000d1504ac14db748ac3a908d024be5578f9963d6497e1691cd7a0700",
+  "test_filter": "FullyQualifiedName~BahcoHandToolCatalogTests|FullyQualifiedName~KnownProductSeedIntegrityTests|FullyQualifiedName~HandToolBundleTests|FullyQualifiedName~PowerToolCatalogTests"
+}

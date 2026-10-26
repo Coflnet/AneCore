@@ -1,0 +1,1212 @@
+{
+  "products": [
+    {
+      "id": "bahco-8069",
+      "brand": "Bahco",
+      "model": "8069",
+      "name": "Bahco Rollgabelschlüssel 8069",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8069"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8069"
+        ],
+        "length_mm": [
+          "110"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8070",
+      "brand": "Bahco",
+      "model": "8070",
+      "name": "Bahco Rollgabelschlüssel 8070",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8070"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8070"
+        ],
+        "length_mm": [
+          "155"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8071",
+      "brand": "Bahco",
+      "model": "8071",
+      "name": "Bahco Rollgabelschlüssel 8071",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8071"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8071"
+        ],
+        "length_mm": [
+          "205"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8072",
+      "brand": "Bahco",
+      "model": "8072",
+      "name": "Bahco Rollgabelschlüssel 8072",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8072"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8072"
+        ],
+        "length_mm": [
+          "255"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8073",
+      "brand": "Bahco",
+      "model": "8073",
+      "name": "Bahco Rollgabelschlüssel 8073",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8073"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8073"
+        ],
+        "length_mm": [
+          "305"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8074",
+      "brand": "Bahco",
+      "model": "8074",
+      "name": "Bahco Rollgabelschlüssel 8074",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8074"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8074"
+        ],
+        "length_mm": [
+          "380"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8075",
+      "brand": "Bahco",
+      "model": "8075",
+      "name": "Bahco Rollgabelschlüssel 8075",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8075"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8075"
+        ],
+        "length_mm": [
+          "455"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8069c",
+      "brand": "Bahco",
+      "model": "8069 C",
+      "name": "Bahco Rollgabelschlüssel 8069 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8069 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8069 C"
+        ],
+        "length_mm": [
+          "110"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8070c",
+      "brand": "Bahco",
+      "model": "8070 C",
+      "name": "Bahco Rollgabelschlüssel 8070 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8070 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8070 C"
+        ],
+        "length_mm": [
+          "155"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8071c",
+      "brand": "Bahco",
+      "model": "8071 C",
+      "name": "Bahco Rollgabelschlüssel 8071 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8071 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8071 C"
+        ],
+        "length_mm": [
+          "205"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8072c",
+      "brand": "Bahco",
+      "model": "8072 C",
+      "name": "Bahco Rollgabelschlüssel 8072 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8072 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8072 C"
+        ],
+        "length_mm": [
+          "255"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8073c",
+      "brand": "Bahco",
+      "model": "8073 C",
+      "name": "Bahco Rollgabelschlüssel 8073 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8073 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8073 C"
+        ],
+        "length_mm": [
+          "305"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8074c",
+      "brand": "Bahco",
+      "model": "8074 C",
+      "name": "Bahco Rollgabelschlüssel 8074 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8074 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8074 C"
+        ],
+        "length_mm": [
+          "380"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8075c",
+      "brand": "Bahco",
+      "model": "8075 C",
+      "name": "Bahco Rollgabelschlüssel 8075 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8075 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "8075 C"
+        ],
+        "length_mm": [
+          "455"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2",
+        "v",
+        "vl",
+        "vlt",
+        "r",
+        "rc",
+        "rus",
+        "rcus"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9070",
+      "brand": "Bahco",
+      "model": "9070",
+      "name": "Bahco Rollgabelschlüssel 9070",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9070"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9070"
+        ],
+        "length_mm": [
+          "158"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9071",
+      "brand": "Bahco",
+      "model": "9071",
+      "name": "Bahco Rollgabelschlüssel 9071",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9071"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9071"
+        ],
+        "length_mm": [
+          "208"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9072",
+      "brand": "Bahco",
+      "model": "9072",
+      "name": "Bahco Rollgabelschlüssel 9072",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9072"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9072"
+        ],
+        "length_mm": [
+          "257"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9073",
+      "brand": "Bahco",
+      "model": "9073",
+      "name": "Bahco Rollgabelschlüssel 9073",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9073"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9073"
+        ],
+        "length_mm": [
+          "308"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9070p",
+      "brand": "Bahco",
+      "model": "9070 P",
+      "name": "Bahco Rollgabelschlüssel 9070 P",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9070 P"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9070 P"
+        ],
+        "length_mm": [
+          "158"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9071p",
+      "brand": "Bahco",
+      "model": "9071 P",
+      "name": "Bahco Rollgabelschlüssel 9071 P",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9071 P"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9071 P"
+        ],
+        "length_mm": [
+          "208"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9072p",
+      "brand": "Bahco",
+      "model": "9072 P",
+      "name": "Bahco Rollgabelschlüssel 9072 P",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9072 P"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9072 P"
+        ],
+        "length_mm": [
+          "257"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9073p",
+      "brand": "Bahco",
+      "model": "9073 P",
+      "name": "Bahco Rollgabelschlüssel 9073 P",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9073 P"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9073 P"
+        ],
+        "length_mm": [
+          "308"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9070c",
+      "brand": "Bahco",
+      "model": "9070 C",
+      "name": "Bahco Rollgabelschlüssel 9070 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9070 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9070 C"
+        ],
+        "length_mm": [
+          "158"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9071c",
+      "brand": "Bahco",
+      "model": "9071 C",
+      "name": "Bahco Rollgabelschlüssel 9071 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9071 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9071 C"
+        ],
+        "length_mm": [
+          "208"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9072c",
+      "brand": "Bahco",
+      "model": "9072 C",
+      "name": "Bahco Rollgabelschlüssel 9072 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9072 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9072 C"
+        ],
+        "length_mm": [
+          "257"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9073c",
+      "brand": "Bahco",
+      "model": "9073 C",
+      "name": "Bahco Rollgabelschlüssel 9073 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9073 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9073 C"
+        ],
+        "length_mm": [
+          "308"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9070pc",
+      "brand": "Bahco",
+      "model": "9070 PC",
+      "name": "Bahco Rollgabelschlüssel 9070 PC",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9070 PC"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9070 PC"
+        ],
+        "length_mm": [
+          "158"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9071pc",
+      "brand": "Bahco",
+      "model": "9071 PC",
+      "name": "Bahco Rollgabelschlüssel 9071 PC",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9071 PC"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9071 PC"
+        ],
+        "length_mm": [
+          "208"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9072pc",
+      "brand": "Bahco",
+      "model": "9072 PC",
+      "name": "Bahco Rollgabelschlüssel 9072 PC",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9072 PC"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9072 PC"
+        ],
+        "length_mm": [
+          "257"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-9073pc",
+      "brand": "Bahco",
+      "model": "9073 PC",
+      "name": "Bahco Rollgabelschlüssel 9073 PC",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 9073 PC"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "adjustable_wrench"
+        ],
+        "article_number": [
+          "9073 PC"
+        ],
+        "length_mm": [
+          "308"
+        ]
+      },
+      "excludeTerms": [
+        "c",
+        "p",
+        "pc",
+        "1",
+        "2"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    }
+  ]
+}

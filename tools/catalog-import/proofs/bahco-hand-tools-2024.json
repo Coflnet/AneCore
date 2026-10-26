@@ -1,0 +1,319 @@
+{
+  "source_url": "https://www.snapon.co.jp/documents/industrial/Bahco_2024_General_cat_English.pdf",
+  "title": "Bahco Catalogue 2024",
+  "checked_at": "2026-10-26",
+  "method": "downloaded_official_manufacturer_pdf_and_pdftotext_layout",
+  "download": "curl completed after timeout and range resume; no HTTP status code captured",
+  "sha256": "125913e000d1504ac14db748ac3a908d024be5578f9963d6497e1691cd7a0700",
+  "browser_fetch": "indexed PDF discovery; browser open refused content length (80648440 bytes), not represented as an origin HTTP failure",
+  "scope": "30 exact body article identifiers and overall lengths from printed pages 38-39. No package quantity, EAN, jaw capacity or power attributes seeded. IP entries are packaging variants and do not create additional products or imply a sale count.",
+  "products": [
+    {
+      "id": "bahco-8069",
+      "article_number": "8069",
+      "length_mm": 110,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "110mm/4” 13 mm 5 8069"
+    },
+    {
+      "id": "bahco-8070",
+      "article_number": "8070",
+      "length_mm": 155,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "155mm/6” 20 mm 5 8070"
+    },
+    {
+      "id": "bahco-8071",
+      "article_number": "8071",
+      "length_mm": 205,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "205mm/8” 27 mm 5 8071"
+    },
+    {
+      "id": "bahco-8072",
+      "article_number": "8072",
+      "length_mm": 255,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "255mm/10” 31 mm 5 8072"
+    },
+    {
+      "id": "bahco-8073",
+      "article_number": "8073",
+      "length_mm": 305,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "305mm/12” 34 mm 5 8073"
+    },
+    {
+      "id": "bahco-8074",
+      "article_number": "8074",
+      "length_mm": 380,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "380mm/15” 44 mm 3 8074"
+    },
+    {
+      "id": "bahco-8075",
+      "article_number": "8075",
+      "length_mm": 455,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80",
+      "table_row": "455mm/18” 53 mm 3 8075"
+    },
+    {
+      "id": "bahco-8069c",
+      "article_number": "8069 C",
+      "length_mm": 110,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "110mm/4” 13 mm 5 8069 C"
+    },
+    {
+      "id": "bahco-8070c",
+      "article_number": "8070 C",
+      "length_mm": 155,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "155mm/6” 20 mm 5 8070 C"
+    },
+    {
+      "id": "bahco-8071c",
+      "article_number": "8071 C",
+      "length_mm": 205,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "205mm/8” 27 mm 5 8071 C"
+    },
+    {
+      "id": "bahco-8072c",
+      "article_number": "8072 C",
+      "length_mm": 255,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "255mm/10” 31 mm 5 8072 C"
+    },
+    {
+      "id": "bahco-8073c",
+      "article_number": "8073 C",
+      "length_mm": 305,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "305mm/12” 34 mm 5 8073 C"
+    },
+    {
+      "id": "bahco-8074c",
+      "article_number": "8074 C",
+      "length_mm": 380,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "380mm/15” 44 mm 3 8074 C"
+    },
+    {
+      "id": "bahco-8075c",
+      "article_number": "8075 C",
+      "length_mm": 455,
+      "pdf_page": 41,
+      "printed_page": 39,
+      "family": "80C",
+      "table_row": "455mm/18” 53 mm 3 8075 C"
+    },
+    {
+      "id": "bahco-9070",
+      "article_number": "9070",
+      "length_mm": 158,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90",
+      "table_row": "158mm/6” 20 mm 5 9070"
+    },
+    {
+      "id": "bahco-9071",
+      "article_number": "9071",
+      "length_mm": 208,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90",
+      "table_row": "208mm/8” 27 mm 5 9071"
+    },
+    {
+      "id": "bahco-9072",
+      "article_number": "9072",
+      "length_mm": 257,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90",
+      "table_row": "257mm/10” 31 mm 5 9072"
+    },
+    {
+      "id": "bahco-9073",
+      "article_number": "9073",
+      "length_mm": 308,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90",
+      "table_row": "308mm/12” 34 mm 5 9073"
+    },
+    {
+      "id": "bahco-9070p",
+      "article_number": "9070 P",
+      "length_mm": 158,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90P",
+      "table_row": "158mm/6” 21 mm 5 9070 P"
+    },
+    {
+      "id": "bahco-9071p",
+      "article_number": "9071 P",
+      "length_mm": 208,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90P",
+      "table_row": "208mm/8” 28 mm 5 9071 P"
+    },
+    {
+      "id": "bahco-9072p",
+      "article_number": "9072 P",
+      "length_mm": 257,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90P",
+      "table_row": "257mm/10” 33 mm 5 9072 P"
+    },
+    {
+      "id": "bahco-9073p",
+      "article_number": "9073 P",
+      "length_mm": 308,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90P",
+      "table_row": "308mm/12” 35 mm 5 9073 P"
+    },
+    {
+      "id": "bahco-9070c",
+      "article_number": "9070 C",
+      "length_mm": 158,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90C",
+      "table_row": "158mm/6” 20 mm 5 9070C"
+    },
+    {
+      "id": "bahco-9071c",
+      "article_number": "9071 C",
+      "length_mm": 208,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90C",
+      "table_row": "208mm/8” 27 mm 5 9071C"
+    },
+    {
+      "id": "bahco-9072c",
+      "article_number": "9072 C",
+      "length_mm": 257,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90C",
+      "table_row": "257mm/10” 31 mm 5 9072 C"
+    },
+    {
+      "id": "bahco-9073c",
+      "article_number": "9073 C",
+      "length_mm": 308,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90C",
+      "table_row": "308mm/12” 34 mm 3 9073 C"
+    },
+    {
+      "id": "bahco-9070pc",
+      "article_number": "9070 PC",
+      "length_mm": 158,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90PC",
+      "table_row": "158mm/6” 21 mm 5 9070 PC"
+    },
+    {
+      "id": "bahco-9071pc",
+      "article_number": "9071 PC",
+      "length_mm": 208,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90PC",
+      "table_row": "208mm/8” 28 mm 5 9071 PC"
+    },
+    {
+      "id": "bahco-9072pc",
+      "article_number": "9072 PC",
+      "length_mm": 257,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90PC",
+      "table_row": "257mm/10” 33 mm 5 9072 PC"
+    },
+    {
+      "id": "bahco-9073pc",
+      "article_number": "9073 PC",
+      "length_mm": 308,
+      "pdf_page": 40,
+      "printed_page": 38,
+      "family": "90PC",
+      "table_row": "308mm/12” 35 mm 3 9073 PC"
+    }
+  ],
+  "identity_boundaries": {
+    "80": "Unsuffixed phosphate finish; C chrome finish (PDF printed page39 headings).",
+    "90": "Unsuffixed phosphate finish; C chrome finish; P/PC reversible jaw (PDF printed page38 headings).",
+    "spare_parts": "PDF printed page39 RPS: spare jaw articles -1; RPS2: spare knurl/pin/spring articles -2. Neither is a whole wrench.",
+    "packaging": "IP denotes industrial pack; same physical body remains canonical, no package quantity authored.",
+    "US_suffixes": "Manufacturer catalogue index lists80-series R US and RC US articles. Equivalence to EU bodies was not verified. Exclude r/rc and their compact rus/rcus spellings after80 aliases rather than claim either EU body; no new US records. No unsupported80 RP/RPC codes added."
+  },
+  "supplementary_indexed_manufacturer_sources": [
+    {
+      "url": "https://www.bahco.com/au_en/productpdf/download/file/id/52352/name/Central_Nut_Adjustable_Wrenches_with_Phosphate_Finish.pdf/",
+      "method": "indexed_manufacturer_product_pdf_excerpt",
+      "http_status": null,
+      "excerpt": "IP: Industrial pack",
+      "use": "Interpret IP packaging suffix only; lengths use downloaded2024 catalogue."
+    },
+    {
+      "url": "https://www.bahco.com/int_en/insulated-thumb-screw-adjustable-wrenches-pb_8070v---8074v_.html",
+      "method": "indexed_manufacturer_product_page",
+      "http_status": null,
+      "excerpt": "SKU 8070V - 8074V; Insulated Thumb Screw Adjustable Wrenches",
+      "use": "V suffix belongs to an insulated adjacent model, not the uninsulated80 body."
+    },
+    {
+      "url": "https://www.bahco.com/media/media-download/catalogue/BAHCO%20-%20Catalogo%20sicurezza%20%28Inglese%29.pdf",
+      "method": "indexed_manufacturer_catalogue",
+      "http_status": null,
+      "excerpt": "8070VL-8073VL INSULATED ADJUSTABLE WRENCH; 8071VLT - 8073VLT ADJUSTABLE WRENCH",
+      "use": "VL and VLT suffix families are insulated adjacent models; exclude from canonical80 body."
+    },
+    {
+      "url": "https://snaponindustrial.com.br/downloads/INDUSTRIAL_BRANDS_Low.pdf",
+      "method": "indexed_manufacturer_catalogue",
+      "http_status": null,
+      "excerpt": "8070 R US; 8070 RC US",
+      "use": "US suffixed articles exist outside this EU exact-body cohort; do not infer equivalence or map a chrome RC article to phosphate base."
+    }
+  ]
+}

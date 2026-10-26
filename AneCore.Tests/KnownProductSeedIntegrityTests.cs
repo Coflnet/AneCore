@@ -17,6 +17,7 @@ public class KnownProductSeedIntegrityTests
     {
         "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year",
         "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
+        "tool_type", "article_number", "length_mm", "package_scope",
         "channels", "microphone_inputs", "delay_time_ms", "program_count", "min_players", "max_players", "min_age",
         "width_cm", "height_cm", "depth_cm", "drawer_count", "resolution", "supports_3d", "flash_power_ws", "camera_mount", "language", "rear_speeds", "diameter_mm", "valve_type", "connector", "pickup_pattern", "key_count", "polyphony", "power_source", "engine_displacement_cc", "power_kw", "door_count", "scale",
     };
@@ -121,6 +122,11 @@ public class KnownProductSeedIntegrityTests
         "Kunst & Unterhaltung>Hobby & Kunst>Musikinstrumente>Elektronische Musikinstrumente>Musik-Keyboards",
         "Sportartikel>Outdoor-Aktivitäten>Radsport>Fahrradbauteile>Fahrradschaltungsteile>Fahrradkassetten",
         "Sportartikel>Outdoor-Aktivitäten>Radsport>Fahrradzubehör>Zubehör für Fahrradcomputer",
+        "Heimwerkerbedarf>Werkzeuge",
+        "Heimwerkerbedarf>Werkzeuge>Zangen",
+        "Heimwerkerbedarf>Werkzeuge>Schraubenschlüssel",
+        "Heimwerkerbedarf>Werkzeuge>Schleifmaschinen",
+        "Heimwerkerbedarf>Werkzeuge>Bohrmaschinen>Elektrische Handbohrmaschinen",
         "Heimwerkerbedarf>Küchen- und Sanitärinstallationen>Zubehör für sanitäre Anlagen>Abflusskomponenten>Sanitärabläufe",
     };
 
