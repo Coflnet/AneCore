@@ -1919,6 +1919,789 @@
       },
       "excludeTerms": [],
       "source": "seed:manufacturer-verified-2026-10-25"
+    },
+    {
+      "id": "ravensburger-das-verruckte-labyrinth-26955",
+      "brand": "Ravensburger",
+      "model": "Das verrückte Labyrinth 26955",
+      "name": "Ravensburger Das verrückte Labyrinth 26955",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26955",
+        "Ravensburger Das verrückte Labyrinth 26955",
+        "Das verrückte Labyrinth 26955"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26955"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-wer-war-s-23494",
+      "brand": "Ravensburger",
+      "model": "Wer war's? 23494",
+      "name": "Ravensburger Wer war's? 23494",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 23494",
+        "Ravensburger Wer war's? 23494",
+        "Wer war's? 23494"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "23494"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-sagaland-26424",
+      "brand": "Ravensburger",
+      "model": "Sagaland 26424",
+      "name": "Ravensburger Sagaland 26424",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26424",
+        "Ravensburger Sagaland 26424",
+        "Sagaland 26424"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26424"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-sagaland-disney-edition-25121",
+      "brand": "Ravensburger",
+      "model": "Sagaland Disney Edition 25121",
+      "name": "Ravensburger Sagaland Disney Edition 25121",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 25121",
+        "Ravensburger Sagaland Disney Edition 25121",
+        "Sagaland Disney Edition 25121"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "25121"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-make-n-break-25174",
+      "brand": "Ravensburger",
+      "model": "Make 'n' Break 25174",
+      "name": "Ravensburger Make 'n' Break 25174",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 25174",
+        "Ravensburger Make 'n' Break 25174",
+        "Make 'n' Break 25174"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "25174"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-die-maulwurf-company-26423",
+      "brand": "Ravensburger",
+      "model": "Die Maulwurf Company 26423",
+      "name": "Ravensburger Die Maulwurf Company 26423",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26423",
+        "Ravensburger Die Maulwurf Company 26423",
+        "Die Maulwurf Company 26423"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26423"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-der-zerstreute-pharao-26656",
+      "brand": "Ravensburger",
+      "model": "Der zerstreute Pharao 26656",
+      "name": "Ravensburger Der zerstreute Pharao 26656",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26656",
+        "Ravensburger Der zerstreute Pharao 26656",
+        "Der zerstreute Pharao 26656"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26656"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-fang-den-hut-26736",
+      "brand": "Ravensburger",
+      "model": "Fang den Hut! 26736",
+      "name": "Ravensburger Fang den Hut! 26736",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26736",
+        "Ravensburger Fang den Hut! 26736",
+        "Fang den Hut! 26736"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26736"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-wer-stiehlt-mir-die-show-das-spiel-buzzer-edition-25177",
+      "brand": "Ravensburger",
+      "model": "Wer stiehlt mir die Show - Das Spiel Buzzer-Edition 25177",
+      "name": "Ravensburger Wer stiehlt mir die Show - Das Spiel Buzzer-Edition 25177",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 25177",
+        "Ravensburger Wer stiehlt mir die Show - Das Spiel Buzzer-Edition 25177",
+        "Wer stiehlt mir die Show - Das Spiel Buzzer-Edition 25177"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "25177"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-collector-s-memory-schonste-reiseziele-27379",
+      "brand": "Ravensburger",
+      "model": "Collector's memory Schönste Reiseziele 27379",
+      "name": "Ravensburger Collector's memory Schönste Reiseziele 27379",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 27379",
+        "Ravensburger Collector's memory Schönste Reiseziele 27379",
+        "Collector's memory Schönste Reiseziele 27379"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "27379"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-werwolfe-kids-22692",
+      "brand": "Ravensburger",
+      "model": "Werwölfe Kids 22692",
+      "name": "Ravensburger Werwölfe Kids 22692",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 22692",
+        "Ravensburger Werwölfe Kids 22692",
+        "Werwölfe Kids 22692"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "22692"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-collector-s-memory-walt-disney-27378",
+      "brand": "Ravensburger",
+      "model": "Collector's memory Walt Disney 27378",
+      "name": "Ravensburger Collector's memory Walt Disney 27378",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 27378",
+        "Ravensburger Collector's memory Walt Disney 27378",
+        "Collector's memory Walt Disney 27378"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "27378"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-harry-potter-labyrinth-26031",
+      "brand": "Ravensburger",
+      "model": "Harry Potter Labyrinth 26031",
+      "name": "Ravensburger Harry Potter Labyrinth 26031",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26031",
+        "Ravensburger Harry Potter Labyrinth 26031",
+        "Harry Potter Labyrinth 26031"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26031"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-sagaland-wintermarchen-22460",
+      "brand": "Ravensburger",
+      "model": "Sagaland Wintermärchen 22460",
+      "name": "Ravensburger Sagaland Wintermärchen 22460",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 22460",
+        "Ravensburger Sagaland Wintermärchen 22460",
+        "Sagaland Wintermärchen 22460"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "22460"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-weltreise-26888",
+      "brand": "Ravensburger",
+      "model": "Weltreise 26888",
+      "name": "Ravensburger Weltreise 26888",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26888",
+        "Ravensburger Weltreise 26888",
+        "Weltreise 26888"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26888"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-pokemon-labyrinth-26949",
+      "brand": "Ravensburger",
+      "model": "Pokémon Labyrinth 26949",
+      "name": "Ravensburger Pokémon Labyrinth 26949",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26949",
+        "Ravensburger Pokémon Labyrinth 26949",
+        "Pokémon Labyrinth 26949"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26949"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-memory-deutschland-20883",
+      "brand": "Ravensburger",
+      "model": "memory Deutschland 20883",
+      "name": "Ravensburger memory Deutschland 20883",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 20883",
+        "Ravensburger memory Deutschland 20883",
+        "memory Deutschland 20883"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "20883"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-take-it-easy-26738",
+      "brand": "Ravensburger",
+      "model": "Take it easy! 26738",
+      "name": "Ravensburger Take it easy! 26738",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26738",
+        "Ravensburger Take it easy! 26738",
+        "Take it easy! 26738"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26738"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-das-nilpferd-in-der-achterbahn-26772",
+      "brand": "Ravensburger",
+      "model": "Das Nilpferd in der Achterbahn 26772",
+      "name": "Ravensburger Das Nilpferd in der Achterbahn 26772",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 26772",
+        "Ravensburger Das Nilpferd in der Achterbahn 26772",
+        "Das Nilpferd in der Achterbahn 26772"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "26772"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-memory-natur-20881",
+      "brand": "Ravensburger",
+      "model": "memory Natur 20881",
+      "name": "Ravensburger memory Natur 20881",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 20881",
+        "Ravensburger memory Natur 20881",
+        "memory Natur 20881"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "20881"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-junior-labyrinth-20847",
+      "brand": "Ravensburger",
+      "model": "Junior Labyrinth 20847",
+      "name": "Ravensburger Junior Labyrinth 20847",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 20847",
+        "Ravensburger Junior Labyrinth 20847",
+        "Junior Labyrinth 20847"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "20847"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-lotti-karotti-22343",
+      "brand": "Ravensburger",
+      "model": "Lotti Karotti 22343",
+      "name": "Ravensburger Lotti Karotti 22343",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 22343",
+        "Ravensburger Lotti Karotti 22343",
+        "Lotti Karotti 22343"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "22343"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-schnappt-hubi-24999",
+      "brand": "Ravensburger",
+      "model": "Schnappt Hubi! 24999",
+      "name": "Ravensburger Schnappt Hubi! 24999",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 24999",
+        "Ravensburger Schnappt Hubi! 24999",
+        "Schnappt Hubi! 24999"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "24999"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-plitsch-platsch-pinguin-21325",
+      "brand": "Ravensburger",
+      "model": "Plitsch-Platsch Pinguin 21325",
+      "name": "Ravensburger Plitsch-Platsch Pinguin 21325",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 21325",
+        "Ravensburger Plitsch-Platsch Pinguin 21325",
+        "Plitsch-Platsch Pinguin 21325"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "21325"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-max-mauseschreck-24562",
+      "brand": "Ravensburger",
+      "model": "Max Mäuseschreck 24562",
+      "name": "Ravensburger Max Mäuseschreck 24562",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 24562",
+        "Ravensburger Max Mäuseschreck 24562",
+        "Max Mäuseschreck 24562"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "24562"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-scotland-yard-27515",
+      "brand": "Ravensburger",
+      "model": "Scotland Yard 27515",
+      "name": "Ravensburger Scotland Yard 27515",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 27515",
+        "Ravensburger Scotland Yard 27515",
+        "Scotland Yard 27515"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "27515"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-disney-villainous-einfuhrung-ins-bose-22687",
+      "brand": "Ravensburger",
+      "model": "Disney Villainous Einführung ins Böse 22687",
+      "name": "Ravensburger Disney Villainous Einführung ins Böse 22687",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 22687",
+        "Ravensburger Disney Villainous Einführung ins Böse 22687",
+        "Disney Villainous Einführung ins Böse 22687"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "22687"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-carcassonne-labyrinth-25176",
+      "brand": "Ravensburger",
+      "model": "Carcassonne Labyrinth 25176",
+      "name": "Ravensburger Carcassonne Labyrinth 25176",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 25176",
+        "Ravensburger Carcassonne Labyrinth 25176",
+        "Carcassonne Labyrinth 25176"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "25176"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "ravensburger-disney-labyrinth-27460",
+      "brand": "Ravensburger",
+      "model": "Disney Labyrinth 27460",
+      "name": "Ravensburger Disney Labyrinth 27460",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spiele",
+        "Brettspiele"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Ravensburger 27460",
+        "Ravensburger Disney Labyrinth 27460",
+        "Disney Labyrinth 27460"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "board_game"
+        ],
+        "set_number": [
+          "27460"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
     }
   ]
 }
