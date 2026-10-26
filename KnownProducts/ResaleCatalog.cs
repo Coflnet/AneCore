@@ -7,7 +7,7 @@ namespace Coflnet.Ane.KnownProducts;
 public static class ResaleCatalog
 {
     private const RegexOptions Options = RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.CultureInvariant;
-    private static readonly Lazy<KnownProductMatcher> Matcher = new(() => new(KnownProductSeed.LoadNamed("cameras.json", "cameras-expanded.json", "resale-goods.json")));
+    private static readonly Lazy<KnownProductMatcher> Matcher = new(() => new(KnownProductSeed.LoadNamed("cameras.json", "cameras-expanded.json", "resale-goods.json", "power-tools.json")));
     private static readonly Regex NotOffer = new(@"\b(?:suche|gesucht|wanted|ankauf|vermiete|vermietung|rental|konvolut|sammlung|restposten|bundle|unvollstandig|incomplete|ersatzteile?|einzelteile?|nachbau|kompatibel)\b|\b(?:zu\s+vermieten|repair\s+service|reparatur(?:service)?|serviceangebot)\b", Options);
     private static readonly Regex Media = new(@"\b(?:anleitung|bedienungsanleitung|handbuch|manuals?|instructions?|katalog|poster|buch|leerkarton|leerbox)\b", Options);
     private static readonly Regex Parts = new(@"\b(?:glaskanne|kaffeekanne|filterhalter|sattel|lenker|pedale|objektiv|lens|gehause|zahnrad|stativ|tripod)\b", Options);
@@ -46,6 +46,9 @@ public static class ResaleCatalog
         if (match.PossibleAttributes.ContainsKey("set_number")
             && Regex.Matches(text, @"\b\d{4,7}\b").Select(m => m.Value).Distinct().Count() > 1) return null;
         if (Matcher.Value.Match(remainder) is { } other && other.Id != match.Id) return null;
+        // Sellers often write one manufacturer followed by several tool article numbers.
+        if (match.PossibleAttributes.ContainsKey("article_number")
+            && Matcher.Value.Match(match.Brand + " " + remainder) is { } article && article.Id != match.Id) return null;
         if (description != null && Regex.IsMatch(KnownProductMatcher.Normalize(description), @"\b(?:teile fehlen|missing parts|parts missing|set\s+(?:ist\s+)?nicht\s+(?:mehr\s+)?(?:ganz\s+)?vollstandig)\b", Options)) return null;
         return match;
     }

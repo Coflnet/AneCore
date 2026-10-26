@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": "milwaukee-m18-fsagv125xb",
+      "brand": "Milwaukee",
+      "model": "M18 FSAGV125XB",
+      "name": "Milwaukee M18 FSAGV125XB",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schleifmaschinen"
+      ],
+      "aliases": [
+        "Milwaukee M18 FSAGV125XB"
+      ],
+      "excludeTerms": [
+        "schleifscheibe",
+        "schleifscheiben",
+        "schutzhaube",
+        "ladegerat",
+        "ersatzakku",
+        "akkupack",
+        "koffer",
+        "schutzhauben"
+      ],
+      "vertical": "catalogued_goods",
+      "possibleAttributes": {
+        "product_kind": [
+          "power_tool"
+        ],
+        "tool_type": [
+          "angle_grinder"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "festool-ctlc-sys-i",
+      "brand": "Festool",
+      "model": "CTLC SYS I",
+      "name": "Festool CTLC SYS I",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "aliases": [
+        "Festool CTLC SYS I",
+        "Festool CTLC-SYS 1"
+      ],
+      "excludeTerms": [
+        "filtersack",
+        "filter",
+        "saugschlauch",
+        "ladegerat",
+        "ersatzakku",
+        "akkupack",
+        "koffer",
+        "filtersacke",
+        "saugschlauche"
+      ],
+      "vertical": "catalogued_goods",
+      "possibleAttributes": {
+        "product_kind": [
+          "power_tool"
+        ],
+        "tool_type": [
+          "dust_extractor"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "hilti-sf-121-a",
+      "brand": "Hilti",
+      "model": "SF 121-A",
+      "name": "Hilti SF 121-A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Bohrmaschinen",
+        "Elektrische Handbohrmaschinen"
+      ],
+      "aliases": [
+        "Hilti SF 121-A",
+        "Hilti SF121-A"
+      ],
+      "excludeTerms": [
+        "ladegerat",
+        "ersatzakku",
+        "akkupack",
+        "koffer"
+      ],
+      "vertical": "catalogued_goods",
+      "possibleAttributes": {
+        "product_kind": [
+          "power_tool"
+        ],
+        "tool_type": [
+          "drill_driver"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "source": "seed:manufacturer-verified-2026-10-26"
+    }
+  ]
+}

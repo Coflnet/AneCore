@@ -36,6 +36,7 @@ public class KnownProductMatcher
     private static readonly Regex LegoDisplayExtra = new(@"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts);
     private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
     private static readonly Regex LegoSetNumber = new(@"^\d{4,7}$", Opts);
+    private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
     private static readonly string[] AccessoryWords =
@@ -358,11 +359,23 @@ public class KnownProductMatcher
         return false;
     }
 
-    /// <summary>True when a token immediately after the matched alias is one of the product's exclude terms.</summary>
+    /// <summary>Reject excluded model suffixes; tool part nouns may occur anywhere unless included with the machine.</summary>
     private static bool IsExcluded(KnownProduct product, string[] titleTokens, int aliasStart, int aliasLength)
     {
         if (product.ExcludeTerms.Count == 0)
             return false;
+        if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true)
+        {
+            var title = string.Join(' ', titleTokens);
+            var position = 0;
+            foreach (var token in titleTokens)
+            {
+                if (product.ExcludeTerms.Contains(token) && !IsIncludedExtra(title, titleTokens, position, token.Length))
+                    return true;
+                position += token.Length + 1;
+            }
+            return false;
+        }
         var nextIndex = aliasStart + aliasLength;
         if (nextIndex >= titleTokens.Length)
             return false;
@@ -388,6 +401,8 @@ public class KnownProductMatcher
 
     private static bool IsAccessory(string normalizedTitle)
     {
+        // These whole-machine nouns do not offer a replacement battery.
+        normalizedTitle = CordlessToolName.Replace(normalizedTitle, "werkzeug");
         var tokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         foreach (var word in AccessoryWords)
         {
