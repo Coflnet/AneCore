@@ -39,6 +39,16 @@ CANONICAL_NAMES = {
 }
 
 
+# Manufacturer-reviewed redundant imported names (GW2255, D2343PB-BN, HP5043, HP59MICWH).
+# Keep the existing canonical row's specifications; do not synthesize conflicting provider fields.
+RETIRED_NAMES = {
+    "BenQ BENQGW2255": "BenQ GW2255",
+    "LG LG-D2343PB-BN": "LG D2343PB-BN",
+    "RCA RCAHP5043": "RCA HP5043",
+    "RCA RCAHP59MICWH": "RCA HP59MICWH",
+}
+
+
 def expand(raw_dir):
     # Keep curated aliases/attributes and stable ids intact. Expanded files are reproducible outputs,
     # never input: deleting them and running again produces exactly the same catalogue.
@@ -53,6 +63,8 @@ def expand(raw_dir):
         groups = defaultdict(list)
         for row in json.loads(data):
             name = (row.get("name") or "").strip()
+            if name in RETIRED_NAMES:
+                continue  # Exact pinned-source duplicates only; unresolved RCA models stay distinct.
             # Names without a model number are often umbrella families (LG UltraGear, HP OMEN),
             # which mix unrelated devices. Never manufacture variants from specs to fill those gaps.
             if (len(name.split()) < 2 or name.split()[0].casefold() == name.split()[1].casefold()
@@ -85,6 +97,7 @@ def expand(raw_dir):
                 count, capacity = rows[0]["modules"]
                 possible["ram_size"] = [nz.fmt_ram(count * capacity)]
             reviewed_aliases = {name} | {r["name"].strip() for r in rows if r["name"].strip() in CANONICAL_NAMES}
+            reviewed_aliases |= {alias for alias, canonical in RETIRED_NAMES.items() if canonical == name}
             product = seed.make_product(pid, brand, name, name, path, "electronics",
                                         reviewed_aliases, "docyx-pc-part-dataset", possible)
             product["source"] = SOURCE

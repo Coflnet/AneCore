@@ -14212,7 +14212,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "RCA HP5043"
+        "RCA HP5043",
+        "RCA RCAHP5043"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -14252,7 +14253,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "RCA HP59MICWH"
+        "RCA HP59MICWH",
+        "RCA RCAHP59MICWH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],
@@ -14333,46 +14335,6 @@
       "vertical": "electronics",
       "aliases": [
         "RCA RCAHP5042"
-      ],
-      "possibleAttributes": {},
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
-      "id": "rca-rcahp5043",
-      "brand": "RCA",
-      "model": "RCA RCAHP5043",
-      "name": "RCA RCAHP5043",
-      "categories": [
-        "Elektronik",
-        "Audio",
-        "Audiokomponenten",
-        "Kopfhörer & Headsets",
-        "Kopfhörer"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "RCA RCAHP5043"
-      ],
-      "possibleAttributes": {},
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
-      "id": "rca-rcahp59micwh",
-      "brand": "RCA",
-      "model": "RCA RCAHP59MICWH",
-      "name": "RCA RCAHP59MICWH",
-      "categories": [
-        "Elektronik",
-        "Audio",
-        "Audiokomponenten",
-        "Kopfhörer & Headsets",
-        "Kopfhörer"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "RCA RCAHP59MICWH"
       ],
       "possibleAttributes": {},
       "excludeTerms": [],

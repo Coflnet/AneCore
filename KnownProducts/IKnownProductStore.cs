@@ -15,6 +15,9 @@ public interface IKnownProductStore
 
     Task DeleteAsync(string id);
 
+    /// <summary>Compare-and-delete a freshly read seed row; unsupported stores fail closed.</summary>
+    Task<bool> DeleteSeedIfUnchangedAsync(KnownProduct expected) => Task.FromResult(false);
+
     /// <summary>
     /// The <see cref="KnownProductSeed.Version"/> that was last successfully applied (upserted in full)
     /// to this store, or null if never seeded. Lets a caller like AneNotifier's startup seeding skip
@@ -77,6 +80,12 @@ public class InMemoryKnownProductStore : IKnownProductStore
         products.TryRemove(id, out _);
         return Task.CompletedTask;
     }
+
+    public Task<bool> DeleteSeedIfUnchangedAsync(KnownProduct expected) => Task.FromResult(
+        expected.Source.StartsWith(KnownProductSeed.SourcePrefix, StringComparison.Ordinal)
+        && products.TryGetValue(expected.Id, out var current) && current.VerifiedAt == expected.VerifiedAt
+        && KnownProductSeed.ContentEquals(current, expected)
+        && products.TryRemove(new KeyValuePair<string, KnownProduct>(expected.Id, current)));
 
     public Task<string?> GetAppliedSeedVersionAsync() => Task.FromResult(appliedSeedVersion);
 

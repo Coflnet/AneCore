@@ -17,6 +17,7 @@ public static class KnownProductSeed
 
     /// <summary>Manifest resource name suffix identifying an embedded seed file, regardless of the SDK's chosen prefix.</summary>
     private const string ResourceMarker = "KnownProducts.Seed.";
+    private const string RetirementResource = "Coflnet.Ane.KnownProducts.RetiredSeeds.json";
 
     /// <summary>
     /// The original, hand-curated seed file - <see cref="LoadAll"/> without arguments returns only this
@@ -44,6 +45,7 @@ public static class KnownProductSeed
     {
         var assembly = typeof(KnownProductSeed).Assembly;
         var resourceNames = SeedResourceNames(assembly).OrderBy(n => n, StringComparer.Ordinal).ToList();
+        resourceNames.Add(RetirementResource);
         using var sha = SHA256.Create();
         using var buffer = new MemoryStream();
         foreach (var resourceName in resourceNames)
@@ -88,6 +90,26 @@ public static class KnownProductSeed
     {
         var assembly = typeof(KnownProductSeed).Assembly;
         return LoadResources(assembly, SeedResourceNames(assembly).Where(n => files.Any(f => n.EndsWith("." + f, StringComparison.Ordinal))));
+    }
+
+    /// <summary>Only these reviewed redundant seed rows may be retired; this resource is never a catalogue input.</summary>
+    public static IReadOnlyList<(KnownProduct Expected, KnownProduct CanonicalExpected)> LoadRetirements()
+    {
+        using var stream = typeof(KnownProductSeed).Assembly.GetManifestResourceStream(RetirementResource)!;
+        using var doc = JsonDocument.Parse(stream);
+        return doc.RootElement.EnumerateArray().Select(r => (ParseProduct(r.GetProperty("expected")), ParseProduct(r.GetProperty("canonicalExpected")))).ToList();
+    }
+
+    /// <summary>Exact authored content, excluding the timestamp generated when loading a seed.</summary>
+    public static bool ContentEquals(KnownProduct current, KnownProduct seed)
+    {
+        static bool SameSet(HashSet<string> a, HashSet<string> b) => a.Count == b.Count && a.All(v => b.Contains(v, StringComparer.Ordinal));
+        return current.Id == seed.Id && current.Brand == seed.Brand && current.Model == seed.Model
+            && current.Name == seed.Name && current.Vertical == seed.Vertical && current.Source == seed.Source
+            && current.Categories.SequenceEqual(seed.Categories, StringComparer.Ordinal)
+            && SameSet(current.Aliases, seed.Aliases) && SameSet(current.ExcludeTerms, seed.ExcludeTerms)
+            && current.PossibleAttributes.Count == seed.PossibleAttributes.Count
+            && current.PossibleAttributes.All(p => seed.PossibleAttributes.Any(q => p.Key == q.Key && SameSet(p.Value, q.Value)));
     }
 
     private static IReadOnlyList<KnownProduct> LoadResources(System.Reflection.Assembly assembly, IEnumerable<string> resourceNames)

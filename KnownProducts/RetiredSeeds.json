@@ -1,0 +1,180 @@
+[
+  {
+    "expected": {
+      "id": "benq-benqgw2255",
+      "brand": "BenQ",
+      "model": "BenQ BENQGW2255",
+      "name": "BenQ BENQGW2255",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "BenQ BENQGW2255"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "21.5\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    "canonicalExpected": {
+      "id": "benq-gw2255",
+      "brand": "BenQ",
+      "model": "BenQ GW2255",
+      "name": "BenQ GW2255",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "BenQ GW2255"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "21.5\""
+        ]
+      },
+      "excludeTerms": [
+        "hm"
+      ],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    }
+  },
+  {
+    "expected": {
+      "id": "lg-lg-d2343pb-bn",
+      "brand": "LG",
+      "model": "LG LG-D2343PB-BN",
+      "name": "LG LG-D2343PB-BN",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "LG LG-D2343PB-BN"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    "canonicalExpected": {
+      "id": "lg-d2343pb-bn",
+      "brand": "LG",
+      "model": "LG D2343PB-BN",
+      "name": "LG D2343PB-BN",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Computermonitore"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "LG D2343PB-BN"
+      ],
+      "possibleAttributes": {
+        "screen_size": [
+          "23\""
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    }
+  },
+  {
+    "expected": {
+      "id": "rca-rcahp5043",
+      "brand": "RCA",
+      "model": "RCA RCAHP5043",
+      "name": "RCA RCAHP5043",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "RCA RCAHP5043"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    "canonicalExpected": {
+      "id": "rca-hp5043",
+      "brand": "RCA",
+      "model": "RCA HP5043",
+      "name": "RCA HP5043",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "RCA HP5043"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    }
+  },
+  {
+    "expected": {
+      "id": "rca-rcahp59micwh",
+      "brand": "RCA",
+      "model": "RCA RCAHP59MICWH",
+      "name": "RCA RCAHP59MICWH",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "RCA RCAHP59MICWH"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    },
+    "canonicalExpected": {
+      "id": "rca-hp59micwh",
+      "brand": "RCA",
+      "model": "RCA HP59MICWH",
+      "name": "RCA HP59MICWH",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audiokomponenten",
+        "Kopfhörer & Headsets",
+        "Kopfhörer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "RCA HP59MICWH"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:docyx-pc-part-dataset-2026-10"
+    }
+  }
+]

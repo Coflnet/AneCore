@@ -19,6 +19,7 @@
     <Content Include="Categories/UnifiedCategories.json" CopyToOutputDirectory="PreserveNewest" />
     <EmbeddedResource Include="Categories/CategoryScope.json" LogicalName="Coflnet.Ane.Categories.CategoryScope.json" />
     <EmbeddedResource Include="KnownProducts/Seed/*.json" />
+    <EmbeddedResource Include="KnownProducts/RetiredSeeds.json" LogicalName="Coflnet.Ane.KnownProducts.RetiredSeeds.json" />
     <EmbeddedResource Include="Phones/PhoneSpecs.tsv" LogicalName="Coflnet.Ane.Phones.PhoneSpecs.tsv" />
   </ItemGroup>
 

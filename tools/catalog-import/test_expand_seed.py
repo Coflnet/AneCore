@@ -127,3 +127,45 @@ class RemainingFamilyExpansionTests(unittest.TestCase):
                 (directory / "camera_data.csv").write_bytes(cameras + b" ")
                 with self.assertRaisesRegex(ValueError, "input differs from pinned dataset"):
                     expansion.expand(directory)
+
+
+class ReviewedDuplicateTests(unittest.TestCase):
+    def test_four_reviewed_pairs_keep_canonical_specs_aliases_and_suffix_guards(self):
+        import expand_seed as expansion
+        rows_by_type = {
+            "monitor": [
+                {"name": "BenQ GW2255", "screen_size": 21.5, "resolution": [1920, 1080], "refresh_rate": 60},
+                {"name": "BenQ BENQGW2255", "screen_size": 21.5, "resolution": [1920, 1080], "refresh_rate": 60, "panel_type": "TN"},
+                {"name": "BenQ GW2255 HM", "screen_size": 21.5, "resolution": [1920, 1080], "refresh_rate": 60},
+                {"name": "LG D2343PB-BN", "screen_size": 23, "resolution": [1920, 1080], "refresh_rate": None},
+                {"name": "LG LG-D2343PB-BN", "screen_size": 23, "resolution": [1920, 1080], "refresh_rate": 60},
+                {"name": "LG D2343P-BN", "screen_size": 23, "resolution": [1920, 1080], "refresh_rate": 60},
+            ],
+            "headphones": [{"name": name, "wireless": False, "microphone": False, "type": coupling, "enclosure_type": "Closed"}
+                           for name, coupling in [("RCA HP5043", "Supra-aural"), ("RCA RCAHP5043", "Circumaural"),
+                                                  ("RCA HP59MICWH", "In Ear"), ("RCA RCAHP59MICWH", "In Ear"),
+                                                  ("RCA HP5042", "Supra-aural"), ("RCA RCAHP5042", "Circumaural"),
+                                                  ("RCA HP60A", "In Ear"), ("RCA RCAHP60A", "In Ear")]],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            seeds = directory / "seeds"
+            seeds.mkdir()
+            inputs = {}
+            for key, rows in rows_by_type.items():
+                raw = json.dumps(rows).encode()
+                (directory / f"pcpp-{key}.json").write_bytes(raw)
+                inputs[key] = (hashlib.sha256(raw).hexdigest(), *expansion.INPUTS[key][1:])
+            with patch.object(expansion, "INPUTS", inputs), patch.object(expansion.seed, "SEED_DIR", str(seeds)):
+                expansion.expand(directory)
+                products = {p["id"]: p for f in seeds.glob("*.json") for p in json.loads(f.read_bytes())["products"]}
+                for old_name, canonical in expansion.RETIRED_NAMES.items():
+                    self.assertNotIn(nz.slugify(old_name), products)
+                    self.assertIn(old_name, products[nz.slugify(canonical)]["aliases"])
+                self.assertEqual(products["benq-gw2255"]["excludeTerms"], ["hm"])
+                self.assertEqual(products["lg-d2343pb-bn"]["possibleAttributes"], {"screen_size": ['23"']})
+                for model in ("rca-hp5042", "rca-rcahp5042", "rca-hp60a", "rca-rcahp60a", "lg-d2343p-bn"):
+                    self.assertIn(model, products)
+                first = {f.name: f.read_bytes() for f in seeds.glob("*.json")}
+                expansion.expand(directory)
+                self.assertEqual(first, {f.name: f.read_bytes() for f in seeds.glob("*.json")})

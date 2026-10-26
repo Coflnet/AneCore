@@ -259,3 +259,16 @@ captured on 2026-10-25. Only factual set numbers are retained, with synthetic `L
 names and exact number aliases; no merchandising descriptions, artwork, or URL-derived names
 are copied. The previous pinned Rebrickable list is used only to reject unverified or reused
 printed numbers. `tools/catalog-import/expand_lego_official.py` records both input hashes.
+
+## Reviewed repeated-brand names (2026-10-26)
+
+Four exact docyx spellings are retained as aliases of their existing canonical rows:
+`BenQ BENQGW2255`, `LG LG-D2343PB-BN`, `RCA RCAHP5043`, and `RCA RCAHP59MICWH`.
+Manufacturer evidence: [BenQ GW2255 data sheet](https://benqimage.blob.core.windows.net/driver-us-file/GW2255_SpecSheet_BQus_Jan2013.pdf),
+[LG D2343PB-BN support](https://www.lg.com/us/support/product/lg-D2343PB-BN.AUS),
+[RCA HP5043](https://rca.com.ar/producto/HP5043), and [RCA HP59MICWH](https://rca.com.ar/producto/HP59MICWH).
+Keep the chosen canonical records' existing attributes and BenQ's `hm` exclusion; conflicting upstream
+panel, response-time, ear-coupling and microphone fields are not new verified variants or filters.
+`RCA RCAHP5042` and `RCA RCAHP60A` remain separate candidates pending manufacturer verification.
+`KnownProducts/RetiredSeeds.json` freezes the old and canonical preimages for conditional retirement
+of only these four seed-owned catalogue rows. It is not a catalogue input or a product/history merge.

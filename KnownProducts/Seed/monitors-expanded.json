@@ -27048,28 +27048,6 @@
       "source": "seed:docyx-pc-part-dataset-2026-10"
     },
     {
-      "id": "benq-benqgw2255",
-      "brand": "BenQ",
-      "model": "BenQ BENQGW2255",
-      "name": "BenQ BENQGW2255",
-      "categories": [
-        "Elektronik",
-        "Video",
-        "Computermonitore"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "BenQ BENQGW2255"
-      ],
-      "possibleAttributes": {
-        "screen_size": [
-          "21.5\""
-        ]
-      },
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
       "id": "benq-bl2201pu",
       "brand": "BenQ",
       "model": "BenQ BL2201PU",
@@ -28234,6 +28212,7 @@
       ],
       "vertical": "electronics",
       "aliases": [
+        "BenQ BENQGW2255",
         "BenQ GW2255"
       ],
       "possibleAttributes": {
@@ -64068,7 +64047,8 @@
       ],
       "vertical": "electronics",
       "aliases": [
-        "LG D2343PB-BN"
+        "LG D2343PB-BN",
+        "LG LG-D2343PB-BN"
       ],
       "possibleAttributes": {
         "screen_size": [
@@ -65241,28 +65221,6 @@
       "possibleAttributes": {
         "screen_size": [
           "23.5\""
-        ]
-      },
-      "excludeTerms": [],
-      "source": "seed:docyx-pc-part-dataset-2026-10"
-    },
-    {
-      "id": "lg-lg-d2343pb-bn",
-      "brand": "LG",
-      "model": "LG LG-D2343PB-BN",
-      "name": "LG LG-D2343PB-BN",
-      "categories": [
-        "Elektronik",
-        "Video",
-        "Computermonitore"
-      ],
-      "vertical": "electronics",
-      "aliases": [
-        "LG LG-D2343PB-BN"
-      ],
-      "possibleAttributes": {
-        "screen_size": [
-          "23\""
         ]
       },
       "excludeTerms": [],

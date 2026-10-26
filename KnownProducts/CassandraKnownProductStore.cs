@@ -121,6 +121,20 @@ public class CassandraKnownProductStore : IKnownProductStore
     public async Task DeleteAsync(string id) =>
         await table.Where(p => p.Id == id).Delete().ExecuteAsync();
 
+    /// <summary>Every field is compared atomically; empty multi-cell collections are stored as null.</summary>
+    public static SimpleStatement BuildSeedDeleteStatement(KnownProduct p) => new(
+        "DELETE FROM known_products WHERE id = ? IF source = ? AND verified_at = ? AND brand = ? AND model = ? AND name = ? AND vertical = ? AND categories = ? AND aliases = ? AND possible_attributes = ? AND exclude_terms = ?",
+        p.Id, p.Source, p.VerifiedAt, p.Brand, p.Model, p.Name, p.Vertical,
+        p.Categories.Count == 0 ? null : p.Categories, p.Aliases.Count == 0 ? null : p.Aliases,
+        p.PossibleAttributes.Count == 0 ? null : p.PossibleAttributes, p.ExcludeTerms.Count == 0 ? null : p.ExcludeTerms);
+
+    public async Task<bool> DeleteSeedIfUnchangedAsync(KnownProduct expected)
+    {
+        if (!expected.Source.StartsWith(KnownProductSeed.SourcePrefix, StringComparison.Ordinal)) return false;
+        var result = await session.ExecuteAsync(BuildSeedDeleteStatement(expected));
+        return result.FirstOrDefault()?.GetValue<bool>("[applied]") == true;
+    }
+
     public async Task<string?> GetAppliedSeedVersionAsync()
     {
         var statement = new SimpleStatement("SELECT value FROM known_products_meta WHERE key = ?", SeedVersionRowKey);
