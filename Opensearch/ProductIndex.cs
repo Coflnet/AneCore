@@ -69,6 +69,11 @@ public class ProductIndex(
             .Keyword(k => k.Name(n => n.ImageUrl))
             .GeoPoint(g => g.Name(n => n.Locations))
             .Keyword(k => k.Name(n => n.Countries))
+            .Keyword(k => k.Name(n => n.Platforms))
+            .Date(k => k.Name(n => n.PlatformsUpdatedAt))
+            .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
+                .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
+                    .Keyword(field => field.Name(n => n.Country))))
             .Keyword(k => k.Name(n => n.CanonicalSeoId))
             .Keyword(k => k.Name(n => n.RelatedSeoIds))
         );
@@ -81,7 +86,7 @@ public class ProductIndex(
 
     /// <summary>
     /// Additive migrations only (the existing backing indices keep their old mapping until they expire):
-    /// adds <c>offersFound</c> to indices that predate it, via a mapping put (no reindex needed).
+    /// adds offer-count and marketplace fields via a mapping put; existing documents are populated separately.
     /// </summary>
     protected override async Task UpdateExistingIndexMappings(
         OpenSearchClient client,
@@ -101,12 +106,18 @@ public class ProductIndex(
 
         foreach (var (index, state) in mappings.Indices)
         {
-            if (state.Mappings?.Properties?.ContainsKey("offersFound") == true)
+            if (new[] { "offersFound", "platforms", "platformsUpdatedAt", "marketplaceSources" }
+                .All(field => state.Mappings?.Properties?.ContainsKey(field) == true))
                 continue;
             var response = await client.Indices.PutMappingAsync<ProductDocument>(m => m
                 .Index(index)
                 .Properties(p => p
-                    .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))),
+                    .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))
+                    .Keyword(k => k.Name(n => n.Platforms))
+                    .Date(k => k.Name(n => n.PlatformsUpdatedAt))
+                    .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
+                        .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
+                            .Keyword(field => field.Name(n => n.Country))))),
                 stoppingToken);
             if (response.IsValid)
                 continue;
@@ -116,7 +127,7 @@ public class ProductIndex(
                 return;
             }
             throw new InvalidOperationException(
-                $"Failed to add offersFound mapping to product index {index.Name}: {response.DebugInformation}");
+                $"Failed to add product search mappings to index {index.Name}: {response.DebugInformation}");
         }
     }
 
@@ -198,8 +209,13 @@ public record ProductDocument(
     List<GeoLocation>? Locations,
     List<string>? Countries,
     string? CanonicalSeoId,
-    List<string> RelatedSeoIds
+    List<string> RelatedSeoIds,
+    List<string>? Platforms = null,
+    DateTime? PlatformsUpdatedAt = null,
+    List<ProductMarketplaceSource>? MarketplaceSources = null
 );
+
+public record ProductMarketplaceSource(string Platform, string? Country);
 
 public record ProductAttribute(
     string Key,
