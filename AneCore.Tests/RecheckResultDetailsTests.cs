@@ -50,4 +50,23 @@ public sealed class RecheckResultDetailsTests
         Assert.That(back.SnapshotRecoveryId, Is.EqualTo(request.SnapshotRecoveryId));
         Assert.That(back.Snapshot!.Description, Is.EqualTo(message.Snapshot.Description));
     }
+    [Test]
+    public void CrowdDiscoveryUsesAppendedKeyAndSurvivesTheMessagePackRoundTrip()
+    {
+        var bytes = MessagePackSerializer.Serialize(new object?[] { "2656147978", "https://www.kleinanzeigen.de/s-anzeige/shaft/2656147978-306-3062", (int)Platform.Kleinanzeigen, "", null, null, true });
+        var request = MessagePackSerializer.Deserialize<RecrawlRequest>(bytes);
+        var back = MessagePackSerializer.Deserialize<RecrawlRequest>(MessagePackSerializer.Serialize(request));
+        Assert.That(typeof(RecrawlRequest).GetProperty("IsDiscovery")?.GetValue(back), Is.True, "appended key6 must carry explicit discovery intent");
+        Assert.That(back.SnapshotRecoveryId, Is.Null);
+    }
+
+    [TestCase(4)]
+    [TestCase(6)]
+    public void LegacyRecrawlRequestsNeverBecomeDiscovery(int fields)
+    {
+        var bytes = MessagePackSerializer.Serialize(new object?[] { "42", null, (int)Platform.Kleinanzeigen, "product", null, null }.Take(fields).ToArray());
+        var request = MessagePackSerializer.Deserialize<RecrawlRequest>(bytes);
+        Assert.That(typeof(RecrawlRequest).GetProperty("IsDiscovery")?.GetValue(request), Is.False, "legacy availability and snapshot-recovery shapes must default discovery tofalse");
+    }
+
 }

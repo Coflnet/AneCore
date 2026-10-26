@@ -18,4 +18,8 @@ public class RecrawlRequest
     public string? SnapshotRecoveryId { get; set; }
     [Key(5)]
     public DateTime? SnapshotRecoveryExpiresAt { get; set; }
+    /// <summary>Explicit crowd-origin Kleinanzeigen detail discovery; legacy requests remain availability-only.</summary>
+    [Key(6)]
+    public bool IsDiscovery { get; set; }
+
 }
