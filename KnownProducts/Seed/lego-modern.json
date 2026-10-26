@@ -37213,6 +37213,29 @@
       },
       "excludeTerms": [],
       "source": "seed:lego-official-sitemap-2026-10"
+    },
+    {
+      "id": "lego-75305",
+      "brand": "LEGO",
+      "model": "75305",
+      "name": "LEGO 75305",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75305",
+        "LEGO Set 75305"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75305"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
     }
   ]
 }

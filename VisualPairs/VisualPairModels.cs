@@ -143,9 +143,17 @@ public class VisualPairLabel
         set { BPlatformValue = (int)value.Platform; BListingId = value.ListingId; BImageIndex = value.ImageIndex; BImageUrl = value.ImageUrl; }
     }
 
+    internal const string PendingReviewMode = "pending";
+
+    internal static VisualPairLabel NormalizePendingReviewMode(VisualPairLabel label)
+    {
+        if (label.ReviewMode == PendingReviewMode) label.ReviewMode = null;
+        return label;
+    }
+
     /// <summary>A later submission cannot erase diagnostic or unknown exposure already recorded for this reviewer.</summary>
     internal static string? PreserveReviewMode(string? previous, string? requested) =>
-        previous == "diagnostic" || requested == "diagnostic" ? "diagnostic" : previous == null ? null : requested;
+        previous == "diagnostic" || requested == "diagnostic" ? "diagnostic" : previous is null or PendingReviewMode ? null : requested;
 
     public static VisualPairLabel From(VisualPairCandidate candidate, string userId, string label, DateTime now) => new()
     {
@@ -153,4 +161,15 @@ public class VisualPairLabel
         Similarity = candidate.Similarity, GroupKey = candidate.GroupKey, CreatedAt = now,
         A = candidate.A, B = candidate.B, CaptureMetadataJson = candidate.CaptureMetadataJson
     };
+}
+
+/// <summary>Durable diagnostic exposure, separate from votes; retains only takedown listing references.</summary>
+public class VisualPairDiagnosticExposure
+{
+    public string PairId { get; set; } = "";
+    public string UserId { get; set; } = "";
+    public int APlatformValue { get; set; }
+    public string AListingId { get; set; } = "";
+    public int BPlatformValue { get; set; }
+    public string BListingId { get; set; } = "";
 }

@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": "yamaha-mdx595",
+      "brand": "Yamaha",
+      "model": "MDX595",
+      "name": "Yamaha MDX595",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "MiniDisc-Player"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Yamaha MDX-595",
+        "Yamaha Natural Sound MiniDisc Recorder MDX-595",
+        "Yamaha Natural Sound Mini Disc Recorder MDX-595"
+      ],
+      "possibleAttributes": {},
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    }
+  ]
+}

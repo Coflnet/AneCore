@@ -13,7 +13,7 @@ public class KnownProductRetirementTests
     {
         var active = KnownProductSeed.LoadAll(true).ToDictionary(p => p.Id);
         var retired = KnownProductSeed.LoadRetirements();
-        Assert.That(active, Has.Count.EqualTo(26197));
+        Assert.That(active, Has.Count.EqualTo(26229));
         Assert.That(retired.Select(p => p.Expected.Id), Is.EquivalentTo(new[] { "benq-benqgw2255", "lg-lg-d2343pb-bn", "rca-rcahp5043", "rca-rcahp59micwh" }));
         foreach (var (expected, canonical) in retired)
         {

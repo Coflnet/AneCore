@@ -1,0 +1,713 @@
+{
+  "products": [
+    {
+      "id": "pocketbook-301",
+      "brand": "PocketBook",
+      "model": "301",
+      "name": "PocketBook 301",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 301"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-302",
+      "brand": "PocketBook",
+      "model": "302",
+      "name": "PocketBook 302",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 302"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-602",
+      "brand": "PocketBook",
+      "model": "602",
+      "name": "PocketBook Pro 602",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 602",
+        "PocketBook Pro 602"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-603",
+      "brand": "PocketBook",
+      "model": "603",
+      "name": "PocketBook Pro 603",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 603",
+        "PocketBook Pro 603"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-611",
+      "brand": "PocketBook",
+      "model": "611",
+      "name": "PocketBook Basic 611",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 611",
+        "PocketBook Basic 611"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-612",
+      "brand": "PocketBook",
+      "model": "612",
+      "name": "PocketBook Pro 612",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 612",
+        "PocketBook Pro 612"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-613",
+      "brand": "PocketBook",
+      "model": "613",
+      "name": "PocketBook Basic 613",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 613",
+        "PocketBook Basic 613"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-622",
+      "brand": "PocketBook",
+      "model": "622",
+      "name": "PocketBook Touch 622",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 622",
+        "PocketBook Touch 622"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-623",
+      "brand": "PocketBook",
+      "model": "623",
+      "name": "PocketBook Touch Lux 623",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 623",
+        "PocketBook Touch Lux 623"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-624",
+      "brand": "PocketBook",
+      "model": "624",
+      "name": "PocketBook Basic Touch 624",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 624",
+        "PocketBook Basic Touch 624"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-625",
+      "brand": "PocketBook",
+      "model": "625",
+      "name": "PocketBook Basic Touch 2 625",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 625",
+        "PocketBook Basic Touch 2 625"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-615",
+      "brand": "PocketBook",
+      "model": "615",
+      "name": "PocketBook Basic Lux 615",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 615",
+        "PocketBook Basic Lux 615"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-640",
+      "brand": "PocketBook",
+      "model": "640",
+      "name": "PocketBook Aqua 640",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 640",
+        "PocketBook Aqua 640"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-630",
+      "brand": "PocketBook",
+      "model": "630",
+      "name": "PocketBook Sense 630",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 630",
+        "PocketBook Sense 630"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-650",
+      "brand": "PocketBook",
+      "model": "650",
+      "name": "PocketBook Ultra 650",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 650",
+        "PocketBook Ultra 650"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-801",
+      "brand": "PocketBook",
+      "model": "801",
+      "name": "PocketBook Color Lux 801",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 801",
+        "PocketBook Color Lux 801"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-902",
+      "brand": "PocketBook",
+      "model": "902",
+      "name": "PocketBook Pro 902",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 902",
+        "PocketBook Pro 902"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-903",
+      "brand": "PocketBook",
+      "model": "903",
+      "name": "PocketBook Pro 903",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 903",
+        "PocketBook Pro 903"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-912",
+      "brand": "PocketBook",
+      "model": "912",
+      "name": "PocketBook Pro 912 Education",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 912",
+        "PocketBook Pro 912 Education",
+        "PocketBook Pro 912"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-515",
+      "brand": "PocketBook",
+      "model": "515",
+      "name": "PocketBook Mini 515",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook 515",
+        "PocketBook Mini 515"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-2",
+      "brand": "PocketBook",
+      "model": "Basic 2",
+      "name": "PocketBook Basic 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-3",
+      "brand": "PocketBook",
+      "model": "Basic 3",
+      "name": "PocketBook Basic 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-4",
+      "brand": "PocketBook",
+      "model": "Basic 4",
+      "name": "PocketBook Basic 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-lux-2",
+      "brand": "PocketBook",
+      "model": "Basic Lux 2",
+      "name": "PocketBook Basic Lux 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic Lux 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-lux-3",
+      "brand": "PocketBook",
+      "model": "Basic Lux 3",
+      "name": "PocketBook Basic Lux 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic Lux 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-basic-lux-4",
+      "brand": "PocketBook",
+      "model": "Basic Lux 4",
+      "name": "PocketBook Basic Lux 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Basic Lux 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-touch-lux-2",
+      "brand": "PocketBook",
+      "model": "Touch Lux 2",
+      "name": "PocketBook Touch Lux 2",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Touch Lux 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-touch-lux-3",
+      "brand": "PocketBook",
+      "model": "Touch Lux 3",
+      "name": "PocketBook Touch Lux 3",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Touch Lux 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-touch-lux-4",
+      "brand": "PocketBook",
+      "model": "Touch Lux 4",
+      "name": "PocketBook Touch Lux 4",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Touch Lux 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "pocketbook-touch-lux-5",
+      "brand": "PocketBook",
+      "model": "Touch Lux 5",
+      "name": "PocketBook Touch Lux 5",
+      "categories": [
+        "Elektronik",
+        "Computer",
+        "E-Book-Reader & Handheld-Computer",
+        "E-Book-Reader"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PocketBook Touch Lux 5"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "e-reader"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:manufacturer-verified-2026-10-26"
+    }
+  ]
+}

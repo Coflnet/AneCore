@@ -92,6 +92,8 @@ public class KnownProductSeedIntegrityTests
         "Elektronik>Computer>Desktop-Computer",
         "Elektronik>Computer>Laptops",
         "Elektronik>Computer>Tablet-PCs",
+        "Elektronik>Computer>E-Book-Reader & Handheld-Computer>E-Book-Reader",
+        "Elektronik>Audio>Audioplayer & -rekorder>MiniDisc-Player",
         "Elektronik>Elektronische Leiterplatten & Bauteile>Leiterplatten>Computer-Leiterplatten>Motherboards",
         "Elektronik>Elektronisches Zubehör>Computerkomponenten>Computer-Steckkarten>Grafikkarten & Videoadapter",
         "Elektronik>Elektronisches Zubehör>Computerkomponenten>Prozessoren",

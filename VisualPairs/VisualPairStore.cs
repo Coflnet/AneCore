@@ -30,6 +30,10 @@ public interface IVisualPairStore
     /// <summary>Stores the label; a second call overwrites its answer and snapshot while preserving prior diagnostic/unknown review exposure atomically.</summary>
     Task AddLabelAsync(VisualPairLabel label);
 
+    /// <summary>Records diagnostic exposure without creating a vote; failures must prevent disclosure.</summary>
+    Task MarkDiagnosticExposureAsync(VisualPairCandidate candidate, string userId) =>
+        throw new NotSupportedException("Durable diagnostic exposure is unavailable.");
+
     /// <summary>One page of all labels for the export. Labels of one pair are adjacent. Pass the returned state to continue; null state means the end.</summary>
     Task<(IReadOnlyList<VisualPairLabel> Labels, byte[]? NextPagingState)> GetLabelsAsync(int pageSize, byte[]? pagingState);
 
@@ -57,6 +61,7 @@ public class CassandraVisualPairStore : IVisualPairStore
     private readonly Table<VisualPairCandidateLocation> locations;
     private readonly Table<VisualPairLabel> labels;
     private readonly Table<VisualPairByListing> byListing;
+    private readonly Table<VisualPairDiagnosticExposure> exposures;
     private readonly IMapper mapper;
     private static bool tablesInitialized;
     private static readonly SemaphoreSlim InitLock = new(1, 1);
@@ -69,6 +74,7 @@ public class CassandraVisualPairStore : IVisualPairStore
         locations = new Table<VisualPairCandidateLocation>(session, mapping);
         labels = new Table<VisualPairLabel>(session, mapping);
         byListing = new Table<VisualPairByListing>(session, mapping);
+        exposures = new Table<VisualPairDiagnosticExposure>(session, mapping);
         mapper = new Mapper(session, mapping);
     }
 
@@ -113,6 +119,16 @@ public class CassandraVisualPairStore : IVisualPairStore
                 .Column(l => l.PlatformValue, cm => cm.WithName("platform"))
                 .Column(l => l.ListingId, cm => cm.WithName("listing_id"))
                 .Column(l => l.PairId, cm => cm.WithName("pair_id")))
+            .Define(new Map<VisualPairDiagnosticExposure>()
+                .TableName("visual_pair_diagnostic_exposures")
+                .PartitionKey(e => e.PairId)
+                .ClusteringKey(e => e.UserId)
+                .Column(e => e.PairId, cm => cm.WithName("pair_id"))
+                .Column(e => e.UserId, cm => cm.WithName("user_id"))
+                .Column(e => e.APlatformValue, cm => cm.WithName("a_platform"))
+                .Column(e => e.AListingId, cm => cm.WithName("a_listing_id"))
+                .Column(e => e.BPlatformValue, cm => cm.WithName("b_platform"))
+                .Column(e => e.BListingId, cm => cm.WithName("b_listing_id")))
             .Define(new Map<VisualPairLabel>()
                 .TableName("visual_pair_labels")
                 .PartitionKey(l => l.PairId)
@@ -148,6 +164,7 @@ public class CassandraVisualPairStore : IVisualPairStore
             await locations.CreateIfNotExistsAsync();
             await labels.CreateIfNotExistsAsync();
             await byListing.CreateIfNotExistsAsync();
+            await exposures.CreateIfNotExistsAsync();
             foreach (var table in new[] { "visual_pair_candidates", "visual_pair_candidate_days" })
                 await session.ExecuteAsync(new global::Cassandra.SimpleStatement(
                     $"ALTER TABLE {table} WITH default_time_to_live = {CandidateTimeToLiveSeconds}"));
@@ -202,11 +219,10 @@ public class CassandraVisualPairStore : IVisualPairStore
     {
         foreach (var side in new[] { a, b }.DistinctBy(i => (i.Platform, i.ListingId)))
         {
-            var insert = byListing.Insert(new VisualPairByListing { PlatformValue = (int)side.Platform, ListingId = side.ListingId, PairId = pairId });
-            if (ttlSeconds != null)
-                await insert.SetTTL(ttlSeconds.Value).ExecuteAsync();
-            else
-                await insert.ExecuteAsync();
+            var cql = "INSERT INTO visual_pairs_by_listing (platform, listing_id, pair_id) VALUES (?, ?, ?)";
+            await mapper.ExecuteAsync(ttlSeconds is { } ttl
+                ? Cql.New(cql + " USING TTL ?", (int)side.Platform, side.ListingId, pairId, ttl)
+                : Cql.New(cql, (int)side.Platform, side.ListingId, pairId));
         }
     }
 
@@ -243,7 +259,8 @@ public class CassandraVisualPairStore : IVisualPairStore
     public async Task<IReadOnlyList<VisualPairLabel>> GetLabelsForPairAsync(string pairId)
     {
         await InitializeAsync();
-        return (await labels.Where(l => l.PairId == pairId).ExecuteAsync()).ToList();
+        return (await mapper.FetchAsync<VisualPairLabel>("SELECT * FROM visual_pair_labels WHERE pair_id = ?", pairId))
+            .Select(VisualPairLabel.NormalizePendingReviewMode).ToList();
     }
 
     public async Task<IReadOnlyDictionary<string, IReadOnlyList<VisualPairLabel>>> GetLabelsForPairsAsync(IEnumerable<string> pairIds)
@@ -264,7 +281,10 @@ public class CassandraVisualPairStore : IVisualPairStore
         if (label.CreatedAt == default)
             label.CreatedAt = DateTime.UtcNow;
         var requestedMode = label.ReviewMode;
+        // A first blind vote stays unknown until its exposure check succeeds, including lost acknowledgements.
+        if (requestedMode == "blind") label.ReviewMode = VisualPairLabel.PendingReviewMode;
         var result = await mapper.InsertIfNotExistsAsync(label, insertNulls: true);
+        var firstBlind = result.Applied && requestedMode == "blind";
         for (var attempt = 0; !result.Applied && attempt < 4; attempt++)
         {
             var observedMode = result.Existing.ReviewMode;
@@ -282,7 +302,33 @@ public class CassandraVisualPairStore : IVisualPairStore
         if (!result.Applied)
             throw new InvalidOperationException("Label changed concurrently; retry the submission.");
         await IndexAsync(label.A, label.B, label.PairId, null);
+        // The marker check follows the vote write. MarkDiagnosticExposureAsync also upgrades existing
+        // votes, covering either ordering of an exposure and an in-flight blind submission.
+        var exposure = await mapper.FetchAsync<VisualPairDiagnosticExposure>(Cql.New(
+            "SELECT * FROM visual_pair_diagnostic_exposures WHERE pair_id = ? AND user_id = ?", label.PairId, label.UserId)
+            .WithOptions(o => o.SetConsistencyLevel(global::Cassandra.ConsistencyLevel.Quorum)));
+        if (exposure.Any())
+            await UpgradeLabelExposureAsync(label.PairId, label.UserId);
+        else if (firstBlind)
+            await mapper.UpdateIfAsync<VisualPairLabel>("SET review_mode = ? WHERE pair_id = ? AND user_id = ? IF review_mode = ?",
+                "blind", label.PairId, label.UserId, VisualPairLabel.PendingReviewMode);
     }
+
+    public async Task MarkDiagnosticExposureAsync(VisualPairCandidate candidate, string userId)
+    {
+        await InitializeAsync();
+        // Retain both lookup entries even if the candidate expires without receiving a vote.
+        await IndexAsync(candidate.A, candidate.B, candidate.PairId, null);
+        await mapper.ExecuteAsync(Cql.New(
+            "INSERT INTO visual_pair_diagnostic_exposures (pair_id, user_id, a_platform, a_listing_id, b_platform, b_listing_id) VALUES (?, ?, ?, ?, ?, ?)",
+            candidate.PairId, userId, candidate.APlatformValue, candidate.AListingId, candidate.BPlatformValue, candidate.BListingId)
+            .WithOptions(o => o.SetConsistencyLevel(global::Cassandra.ConsistencyLevel.Quorum)));
+        await UpgradeLabelExposureAsync(candidate.PairId, userId);
+    }
+
+    private Task<AppliedInfo<VisualPairLabel>> UpgradeLabelExposureAsync(string pairId, string userId) =>
+        mapper.UpdateIfAsync<VisualPairLabel>("SET review_mode = ? WHERE pair_id = ? AND user_id = ? IF EXISTS",
+            "diagnostic", pairId, userId);
 
     public async Task<(int Candidates, int Labels)> DeleteForListingAsync(Platform platform, string listingId)
     {
@@ -306,8 +352,13 @@ public class CassandraVisualPairStore : IVisualPairStore
         {
             var pairLabels = (await labels.Where(l => l.PairId == pairId).ExecuteAsync()).ToList();
             var candidate = await GetCandidateAsync(pairId);
+            var pairExposures = (await mapper.FetchAsync<VisualPairDiagnosticExposure>(
+                "SELECT * FROM visual_pair_diagnostic_exposures WHERE pair_id = ?", pairId)).ToList();
             var sides = candidate != null ? new[] { candidate.A, candidate.B }
-                : pairLabels.Count > 0 ? new[] { pairLabels[0].A, pairLabels[0].B } : [];
+                : pairLabels.Count > 0 ? new[] { pairLabels[0].A, pairLabels[0].B }
+                : pairExposures.Count > 0 ? new[] {
+                    new VisualPairImage((Platform)pairExposures[0].APlatformValue, pairExposures[0].AListingId, 0, ""),
+                    new VisualPairImage((Platform)pairExposures[0].BPlatformValue, pairExposures[0].BListingId, 0, "") } : [];
             if (candidate != null)
             {
                 await mapper.ExecuteAsync("DELETE FROM visual_pair_candidates WHERE day = ? AND shard = ? AND pair_id = ?",
@@ -317,6 +368,7 @@ public class CassandraVisualPairStore : IVisualPairStore
             await mapper.ExecuteAsync("DELETE FROM visual_pair_candidate_days WHERE pair_id = ?", pairId);
             if (pairLabels.Count > 0)
                 await mapper.ExecuteAsync("DELETE FROM visual_pair_labels WHERE pair_id = ?", pairId);
+            await mapper.ExecuteAsync("DELETE FROM visual_pair_diagnostic_exposures WHERE pair_id = ?", pairId);
             removedLabels += pairLabels.Count;
             foreach (var side in sides)
             {
@@ -333,11 +385,12 @@ public class CassandraVisualPairStore : IVisualPairStore
     public async Task<(IReadOnlyList<VisualPairLabel> Labels, byte[]? NextPagingState)> GetLabelsAsync(int pageSize, byte[]? pagingState)
     {
         await InitializeAsync();
-        var query = labels.Select(p => p).SetPageSize(pageSize);
-        if (pagingState != null)
-            query = query.SetPagingState(pagingState);
-        var page = await query.ExecutePagedAsync();
-        return (page.ToList(), page.PagingState);
+        var query = Cql.New("SELECT * FROM visual_pair_labels").WithOptions(o => {
+            o.SetPageSize(pageSize);
+            if (pagingState != null) o.SetPagingState(pagingState);
+        });
+        var page = await mapper.FetchPageAsync<VisualPairLabel>(query);
+        return (page.Select(VisualPairLabel.NormalizePendingReviewMode).ToList(), page.PagingState);
     }
 
     public async Task<IReadOnlyDictionary<string, long>> CountLabelsAsync()
@@ -361,6 +414,7 @@ public class InMemoryVisualPairStore : IVisualPairStore
     private readonly object gate = new();
     private readonly Dictionary<string, VisualPairCandidate> candidates = new();
     private readonly Dictionary<(string PairId, string UserId), VisualPairLabel> labels = new();
+    private readonly Dictionary<(string PairId, string UserId), VisualPairDiagnosticExposure> exposures = new();
 
     public Task InitializeAsync() => Task.CompletedTask;
 
@@ -430,7 +484,24 @@ public class InMemoryVisualPairStore : IVisualPairStore
             var key = (label.PairId, label.UserId);
             if (labels.TryGetValue(key, out var previous))
                 label.ReviewMode = VisualPairLabel.PreserveReviewMode(previous.ReviewMode, label.ReviewMode);
+            if (exposures.ContainsKey(key))
+                label.ReviewMode = "diagnostic";
             labels[key] = label;
+        }
+        return Task.CompletedTask;
+    }
+
+    public Task MarkDiagnosticExposureAsync(VisualPairCandidate candidate, string userId)
+    {
+        lock (gate)
+        {
+            var key = (candidate.PairId, userId);
+            exposures[key] = new VisualPairDiagnosticExposure {
+                PairId = candidate.PairId, UserId = userId,
+                APlatformValue = candidate.APlatformValue, AListingId = candidate.AListingId,
+                BPlatformValue = candidate.BPlatformValue, BListingId = candidate.BListingId };
+            if (labels.TryGetValue(key, out var label))
+                label.ReviewMode = "diagnostic";
         }
         return Task.CompletedTask;
     }
@@ -455,6 +526,10 @@ public class InMemoryVisualPairStore : IVisualPairStore
         {
             var candidateIds = candidates.Values.Where(c => Refs(c.A) || Refs(c.B)).Select(c => c.PairId).ToList();
             var labelKeys = labels.Where(kv => Refs(kv.Value.A) || Refs(kv.Value.B)).Select(kv => kv.Key).ToList();
+            var exposedPairs = exposures.Values.Where(e =>
+                ((Platform)e.APlatformValue == platform && e.AListingId == listingId)
+                || ((Platform)e.BPlatformValue == platform && e.BListingId == listingId)).Select(e => e.PairId).ToHashSet();
+            foreach (var key in exposures.Keys.Where(k => exposedPairs.Contains(k.PairId)).ToList()) exposures.Remove(key);
             foreach (var id in candidateIds) candidates.Remove(id);
             foreach (var key in labelKeys) labels.Remove(key);
             return Task.FromResult((candidateIds.Count, labelKeys.Count));

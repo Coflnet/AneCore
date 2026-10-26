@@ -55,6 +55,10 @@ public class VisualPairStoreTests
         Assert.That(candidate.TableName, Is.EqualTo("visual_pair_candidates"));
         Assert.That(candidate.PartitionKeys, Is.EquivalentTo(new[] { "day", "shard" }));
         Assert.That(candidate.ClusteringKeys.Select(k => k.Item1), Is.EquivalentTo(new[] { "pair_id" }));
+        var exposure = mapping.Get<VisualPairDiagnosticExposure>();
+        Assert.That(exposure.TableName, Is.EqualTo("visual_pair_diagnostic_exposures"));
+        Assert.That(exposure.PartitionKeys, Is.EquivalentTo(new[] { "pair_id" }));
+        Assert.That(exposure.ClusteringKeys.Select(k => k.Item1), Is.EquivalentTo(new[] { "user_id" }));
         var label = mapping.Get<VisualPairLabel>();
         Assert.That(label.TableName, Is.EqualTo("visual_pair_labels"));
         Assert.That(label.PartitionKeys, Is.EquivalentTo(new[] { "pair_id" }));
@@ -115,6 +119,8 @@ public class VisualPairStoreTests
     [TestCase("diagnostic", "blind", "diagnostic")]
     [TestCase("diagnostic", null, "diagnostic")]
     [TestCase(null, "blind", null)]
+    [TestCase("pending", "blind", null)]
+    [TestCase("pending", "diagnostic", "diagnostic")]
     [TestCase("blind", null, null)]
     [TestCase("blind", "diagnostic", "diagnostic")]
     public async Task InMemory_StaleSubmissionPreservesExposure_WhileOverwritingAnswerAndFrozenFacts(
@@ -151,6 +157,206 @@ public class VisualPairStoreTests
         start.Set();
         await Task.WhenAll(writes);
         Assert.That((await store.GetLabelsForPairAsync(candidate.PairId)).Single().ReviewMode, Is.EqualTo("diagnostic"));
+    }
+
+    [Test]
+    public async Task InMemory_ExposureWithoutVoteIsReviewerScopedAndUpgradesExistingVotes()
+    {
+        var store = new InMemoryVisualPairStore();
+        var c = Candidate("exposure-a", "exposure-b", DateTime.UtcNow);
+        await store.MarkDiagnosticExposureAsync(c, "exposed");
+        Assert.That(await store.GetLabelsForPairAsync(c.PairId), Is.Empty);
+        foreach (var user in new[] { "exposed", "other" })
+        {
+            var label = VisualPairLabel.From(c, user, "different", DateTime.UtcNow);
+            label.ReviewMode = "blind";
+            await store.AddLabelAsync(label);
+        }
+        var votes = await store.GetLabelsForPairAsync(c.PairId);
+        Assert.That(votes.Single(v => v.UserId == "exposed").ReviewMode, Is.EqualTo("diagnostic"));
+        Assert.That(votes.Single(v => v.UserId == "other").ReviewMode, Is.EqualTo("blind"));
+        await store.MarkDiagnosticExposureAsync(c, "other");
+        Assert.That(votes.Single(v => v.UserId == "other").ReviewMode, Is.EqualTo("diagnostic"));
+        await store.DeleteForListingAsync(c.A.Platform, c.A.ListingId);
+        var fresh = VisualPairLabel.From(c, "exposed", "different", DateTime.UtcNow);
+        fresh.ReviewMode = "blind";
+        await store.AddLabelAsync(fresh);
+        Assert.That((await store.GetLabelsForPairAsync(c.PairId)).Single().ReviewMode, Is.EqualTo("blind"), "takedown also removes exposure");
+    }
+
+    [Test]
+    public async Task InMemory_TakedownRemovesExposureWithoutCandidateOrVote()
+    {
+        var store = new InMemoryVisualPairStore();
+        var c = Candidate("expired-a", "expired-b", DateTime.UtcNow);
+        // No candidate or vote remains: exposure must retain both takedown references itself.
+        await store.MarkDiagnosticExposureAsync(c, "user");
+        Assert.That(await store.DeleteForListingAsync(c.B.Platform, c.B.ListingId), Is.EqualTo((0, 0)));
+        var label = VisualPairLabel.From(c, "user", "different", DateTime.UtcNow);
+        label.ReviewMode = "blind";
+        await store.AddLabelAsync(label);
+        Assert.That((await store.GetLabelsForPairAsync(c.PairId)).Single().ReviewMode, Is.EqualTo("blind"));
+    }
+
+    public sealed class LabelPage(IEnumerable<VisualPairLabel> rows) : List<VisualPairLabel>(rows), IPage<VisualPairLabel>
+    {
+        public byte[]? CurrentPagingState => null;
+        public byte[]? PagingState => null;
+    }
+
+    [TestCase("blind")]
+    [TestCase(null)]
+    [TestCase("diagnostic")]
+    public async Task Cassandra_FirstBlindFinalizationCannotEraseConcurrentUnknownOrDiagnostic(string? concurrent)
+    {
+        var initialized = typeof(CassandraVisualPairStore).GetField("tablesInitialized", BindingFlags.NonPublic | BindingFlags.Static)!;
+        var previous = initialized.GetValue(null);
+        var mapper = DispatchProxy.Create<IMapper, ExposureRaceMapper>();
+        var race = (ExposureRaceMapper)mapper;
+        var store = (CassandraVisualPairStore)RuntimeHelpers.GetUninitializedObject(typeof(CassandraVisualPairStore));
+        typeof(CassandraVisualPairStore).GetField("mapper", BindingFlags.NonPublic | BindingFlags.Instance)!.SetValue(store, mapper);
+        initialized.SetValue(null, true);
+        try
+        {
+            var c = Candidate("a", "b", DateTime.UtcNow); c.PairId = "pair";
+            var first = VisualPairLabel.From(c, "user", "different", DateTime.UtcNow); first.ReviewMode = "blind";
+            var pending = store.AddLabelAsync(first);
+            await race.Paused.Task.WaitAsync(TimeSpan.FromSeconds(5));
+            if (concurrent != "blind")
+            {
+                var other = VisualPairLabel.From(c, "user", "same_item", DateTime.UtcNow); other.ReviewMode = concurrent;
+                await store.AddLabelAsync(other);
+            }
+            race.Continue.SetResult();
+            await pending;
+            Assert.That(race.Vote!.ReviewMode, Is.EqualTo(concurrent));
+            Assert.That((await store.GetLabelsForPairAsync("pair")).Single().ReviewMode, Is.EqualTo(concurrent));
+        }
+        finally { race.Continue.TrySetResult(); initialized.SetValue(null, previous); }
+    }
+
+    public class ExposureRaceMapper : DispatchProxy
+    {
+        public bool PauseBeforeVote { get; set; }
+        public bool FailMarkerRead { get; set; }
+        public TaskCompletionSource Paused { get; } = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        public TaskCompletionSource Continue { get; } = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        public VisualPairLabel? Vote { get; private set; }
+        public bool Exposed { get; private set; }
+        public List<Cql> MarkerQueries { get; } = [];
+        public List<Cql> IndexWrites { get; } = [];
+        public int ConditionalUpgrades { get; private set; }
+
+        private async Task<AppliedInfo<VisualPairLabel>> Insert(VisualPairLabel label)
+        {
+            if (Vote != null) return new AppliedInfo<VisualPairLabel>(CopyVote());
+            if (PauseBeforeVote) { Paused.SetResult(); await Continue.Task; }
+            Vote = new VisualPairLabel { PairId = label.PairId, UserId = label.UserId, Label = label.Label, ReviewMode = label.ReviewMode };
+            return new AppliedInfo<VisualPairLabel>(true);
+        }
+
+        private VisualPairLabel CopyVote() => new() { PairId = Vote!.PairId, UserId = Vote.UserId, Label = Vote.Label, ReviewMode = Vote.ReviewMode };
+
+        private async Task<IEnumerable<VisualPairDiagnosticExposure>> Read(Cql cql)
+        {
+            MarkerQueries.Add(cql);
+            if (FailMarkerRead) throw new InvalidOperationException("marker read unavailable");
+            var snapshot = Exposed ? new[] { new VisualPairDiagnosticExposure() } : [];
+            if (!PauseBeforeVote && !Paused.Task.IsCompleted) { Paused.SetResult(); await Continue.Task; }
+            return snapshot;
+        }
+
+        protected override object? Invoke(MethodInfo? method, object?[]? args)
+        {
+            if (method!.Name == "InsertIfNotExistsAsync") return Insert((VisualPairLabel)args![0]!);
+            if (method.Name == "FetchAsync")
+                return method.GetGenericArguments()[0] == typeof(VisualPairLabel)
+                    ? Task.FromResult<IEnumerable<VisualPairLabel>>(Vote == null ? [] : [CopyVote()])
+                    : Read((Cql)args![0]!);
+            if (method.Name == "FetchPageAsync")
+                return Task.FromResult<IPage<VisualPairLabel>>(new LabelPage(Vote == null ? [] : [CopyVote()]));
+            if (method.Name == "ExecuteAsync")
+            {
+                var cql = (Cql)args![0]!;
+                if (cql.Statement.Contains("visual_pair_diagnostic_exposures")) { MarkerQueries.Add(cql); Exposed = true; }
+                else IndexWrites.Add(cql);
+                return Task.CompletedTask;
+            }
+            if (method.Name == "UpdateIfAsync")
+            {
+                var cql = (string)args![0]!;
+                var values = (object[])args[1]!;
+                if (cql.EndsWith("IF EXISTS"))
+                {
+                    Assert.That(values, Is.EqualTo(new object[] { "diagnostic", "pair", "user" }));
+                    ConditionalUpgrades++;
+                    if (Vote != null) Vote.ReviewMode = "diagnostic";
+                    return Task.FromResult(new AppliedInfo<VisualPairLabel>(Vote != null));
+                }
+                Assert.That(cql, Does.EndWith("IF review_mode = ?"));
+                if (Vote == null || Vote.ReviewMode != (string?)values[^1])
+                    return Task.FromResult(new AppliedInfo<VisualPairLabel>(CopyVote()));
+                if (cql.StartsWith("SET label =")) { Vote.Label = (string)values[0]; Vote.ReviewMode = (string?)values[1]; }
+                else Vote.ReviewMode = (string?)values[0];
+                return Task.FromResult(new AppliedInfo<VisualPairLabel>(true));
+            }
+            throw new NotSupportedException(method.Name);
+        }
+    }
+
+    [TestCase(true, false)]
+    [TestCase(false, false)]
+    [TestCase(true, true)]
+    public async Task Cassandra_ExposureAndBlindVoteHandshakeCoversBothInterleavings(bool pauseBeforeVote, bool failMarkerRead)
+    {
+        var initialized = typeof(CassandraVisualPairStore).GetField("tablesInitialized", BindingFlags.NonPublic | BindingFlags.Static)!;
+        var previous = initialized.GetValue(null);
+        var mapper = DispatchProxy.Create<IMapper, ExposureRaceMapper>();
+        var race = (ExposureRaceMapper)mapper;
+        race.PauseBeforeVote = pauseBeforeVote;
+        race.FailMarkerRead = failMarkerRead;
+        var store = (CassandraVisualPairStore)RuntimeHelpers.GetUninitializedObject(typeof(CassandraVisualPairStore));
+        typeof(CassandraVisualPairStore).GetField("mapper", BindingFlags.NonPublic | BindingFlags.Instance)!.SetValue(store, mapper);
+        initialized.SetValue(null, true);
+        try
+        {
+            var c = Candidate("a", "b", DateTime.UtcNow);
+            c.PairId = "pair";
+            var vote = VisualPairLabel.From(c, "user", "different", DateTime.UtcNow);
+            vote.ReviewMode = "blind";
+            var pending = store.AddLabelAsync(vote);
+            await race.Paused.Task.WaitAsync(TimeSpan.FromSeconds(5));
+            await store.MarkDiagnosticExposureAsync(c, "user");
+            if (pauseBeforeVote) Assert.That(race.Vote, Is.Null, "IF EXISTS must not create a placeholder vote");
+            race.Continue.SetResult();
+            if (failMarkerRead)
+            {
+                Assert.ThrowsAsync<InvalidOperationException>(async () => await pending);
+                Assert.That(race.Vote!.ReviewMode, Is.EqualTo("pending"), "a failed marker read must not leave a false blind vote");
+                Assert.That(race.IndexWrites, Has.Count.EqualTo(4), "both vote and exposure keep durable takedown indices before the failed read");
+                Assert.That((await store.GetLabelsForPairAsync("pair")).Single().ReviewMode, Is.Null);
+                Assert.That((await store.GetLabelsForPairsAsync(["pair"]))["pair"].Single().ReviewMode, Is.Null);
+                Assert.That((await store.GetLabelsAsync(10, null)).Labels.Single().ReviewMode, Is.Null, "the paged export path must normalize pending to unknown");
+                Assert.That(race.Vote.ReviewMode, Is.EqualTo("pending"), "normalizing read copies must not mutate persisted CAS state");
+                return;
+            }
+            await pending;
+            Assert.That(race.Vote!.ReviewMode, Is.EqualTo("diagnostic"));
+            Assert.That(race.ConditionalUpgrades, Is.EqualTo(pauseBeforeVote ? 2 : 1));
+            Assert.That(race.MarkerQueries, Has.Count.EqualTo(2));
+            foreach (var cql in race.MarkerQueries)
+            {
+                var statement = new global::Cassandra.SimpleStatement(cql.Statement);
+                var options = typeof(Cql).GetProperty("QueryOptions", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)!.GetValue(cql)!;
+                options.GetType().GetMethod("CopyOptionsToStatement", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)!.Invoke(options, [statement]);
+                Assert.That(statement.ConsistencyLevel, Is.EqualTo(global::Cassandra.ConsistencyLevel.Quorum));
+                Assert.That(cql.Statement, Does.Not.Contain("TTL"));
+            }
+            Assert.That(race.IndexWrites, Has.Count.EqualTo(4));
+            Assert.That(race.IndexWrites.All(cql => !cql.Statement.Contains("TTL")), Is.True);
+            Assert.That(race.IndexWrites.Select(cql => cql.Arguments[1]).Distinct(), Is.EquivalentTo(new[] { "a", "b" }));
+        }
+        finally { race.Continue.TrySetResult(); initialized.SetValue(null, previous); }
     }
 
     public class ContendedLabelMapper : DispatchProxy

@@ -272,3 +272,17 @@ panel, response-time, ear-coupling and microphone fields are not new verified va
 `RCA RCAHP5042` and `RCA RCAHP60A` remain separate candidates pending manufacturer verification.
 `KnownProducts/RetiredSeeds.json` freezes the old and canonical preimages for conditional retirement
 of only these four seed-owned catalogue rows. It is not a catalogue input or a product/history merge.
+
+## Readers and recorder identities (2026-10-26)
+
+`e-readers.json` adds 30 PocketBook models from the manufacturer's
+[Swiss archive](https://pocketbook.ch/en-ch/catalog/archive),
+[German archive](https://company.pocketbook.de/de-de/catalog/supportproducts-de), and
+[support selector](https://pocketbook.ch/en-ch/support).
+Shared numeric identifiers such as 626, 631 and 840 do not identify one generation;
+the corresponding numeric-only aliases are omitted. Storage and colour are unspecified.
+
+`hifi-recorders.json` records Yamaha MDX-595 from its
+[official manual](https://data.yamaha.com/files/download/other_assets/5/315865/MDX-595_j.pdf).
+`lego-modern.json` also adds the retired [LEGO 75305 Scout Trooper Helmet](https://www.lego.com/en-us/product/scout-trooper-helmet-75305).
+Only factual model/set identifiers and short names are recorded; no descriptions or images are copied.
