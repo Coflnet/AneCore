@@ -27,9 +27,9 @@ public static class PartNumbers
     // the value: code characters, and a space only when the next segment holds a digit ("1 619 P08 924"), never into a prose word
     private const string Value = @"(?<pn>[A-Z0-9](?:[A-Z0-9\-./]|\s(?=[A-Z0-9]{0,3}\d[A-Z0-9]{0,3}(?![A-Z0-9])))*[A-Z0-9])(?![\p{L}\p{N}])";
 
-    // "Teile-Nr.", "Teilenummer", "Ersatzteilnummer", "Art.-Nr.", "Artikelnummer", "Bestellnummer", "Sachnummer", "Part No", "Part Number", "Part #", "P/N", "PN", "Ref.", "Référence", "Codice", "Referencia", "Order No", "OEM", "MPN"
+    // "Teile-Nr.", "Teilenummer", "Ersatzteilnummer", "Et.No.", "Et.Nr.", "Art.-Nr.", "Artikelnummer", "Bestellnummer", "Sachnummer", "Part No", "Part Number", "Part #", "P/N", "PN", "Ref.", "Référence", "Codice", "Referencia", "Order No", "OEM", "MPN"
     private static readonly Regex Labelled = new(
-        @"(?<![\p{L}\p{N}])(?:(?:ersatz)?teile?[\s.\-]*(?:nr|nummer|no)|art(?:ikel)?[\s.\-]*(?:nr|nummer|no)|bestell[\s.\-]*(?:nr|nummer)|sach[\s.\-]*(?:nr|nummer)|material[\s.\-]*(?:nr|nummer)|" +
+        @"(?<![\p{L}\p{N}])(?:(?:ersatz)?teile?[\s.\-]*(?:nr|nummer|no)|et[\s.\-]*(?:nr|no)|art(?:ikel)?[\s.\-]*(?:nr|nummer|no)|bestell[\s.\-]*(?:nr|nummer)|sach[\s.\-]*(?:nr|nummer)|material[\s.\-]*(?:nr|nummer)|" +
         @"part[\s.\-]*(?:no|number|nr|#)|p/n|pn|ref(?:erence|érence|erenz)?|codice|referencia|order[\s.\-]*(?:no|number)|oem[\s.\-]*(?:no|nr|number)?|mpn)" +
         @"(?![\p{L}])\.?\s*[:#]?\s*" + Value,
         Opts);

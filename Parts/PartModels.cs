@@ -16,6 +16,7 @@ public static class PartClasses
     public const string Brush = "brush";
     public const string Blade = "blade";
     public const string Nozzle = "nozzle";
+    public const string Shaft = "shaft";
     /// <summary>A spare part of no known class that states a labelled part number.</summary>
     public const string Generic = "generic";
 
@@ -101,7 +102,10 @@ public static class PartClassRegistry
         [PartAttributeKeys.PartNumber],
         @"ersatzteil(?:e)?|spare\s?parts?|replacement\s?parts?|pieces?\s?(?:detachees?|de\s?rechange)|ricambi[o]?|repuestos?|onderdeel|onderdelen", true);
 
-    public static readonly IReadOnlyList<PartClassDefinition> All = [Gear, Bearing, Carburetor, Pulley, Sprocket, Belt, Seal, Filter, Brush, Blade, Nozzle, Generic];
+    public static readonly PartClassDefinition Shaft = new(PartClasses.Shaft, PartAttributeKeys.PartNumber,
+        [PartAttributeKeys.PartNumber], @"abtriebswellen?", true);
+
+    public static readonly IReadOnlyList<PartClassDefinition> All = [Gear, Bearing, Carburetor, Pulley, Sprocket, Belt, Seal, Filter, Brush, Blade, Nozzle, Shaft, Generic];
 
     // contexts in which the part nouns do not name a part: games and media, wearables, bicycles, cameras, phones, vehicles with the noun in their model name
     private static readonly Regex Excluded = new(
@@ -125,6 +129,7 @@ public static class PartClassRegistry
     private static readonly Regex CarburetorNonPart = new(
         @"(?<![\p{L}\p{N}])(?:suche|gesucht|tausche|wanted|service|reparaturservice|reinigung|instandsetzung|sammlung|konvolut|teilepaket|teiletrager|schlachtfest|diverse\s+teile|buch|bucher|handbuch|anleitung|prospekt\p{L}*|katalog|zeitschrift|magazin|poster|aufkleber|modellbau|spielzeug|schmuck|ringe?|uhr\p{L}*|watch|helm|handschuhe|fahrbereit|fahrzeug|baujahr|erstzulassung|papiere)(?![\p{L}\p{N}])|(?:moped|motorrad|mofa|roller)\s+mit\b", Opts);
     private static readonly Regex CarburetorVehicleContext = new(@"^(?:kawasaki|yamaha|honda|suzuki|bmw|audi|vw|mercedes|ford|opel|toyota|skoda)$", Opts);
+    private static readonly Regex ShaftTool = new(@"(?<![\p{L}\p{N}])(?:abzieher|werkzeug\p{L}*|pullers?|tools?)(?![\p{L}\p{N}])", Opts);
 
     public static PartClassDefinition? Find(string? name) => name == null ? null : All.FirstOrDefault(c => string.Equals(c.Name, name, StringComparison.Ordinal));
 
@@ -142,6 +147,8 @@ public static class PartClassRegistry
             && Excluded.Matches(folded).Cast<Match>().All(m => CarburetorVehicleContext.IsMatch(m.Value)))
             return new PartClassMatch(Carburetor, carb.Value);
         if (Excluded.IsMatch(folded) || CarburetorNonPart.IsMatch(folded) && Carburetor.NounRegex.IsMatch(folded))
+            return null;
+        if (Shaft.NounRegex.IsMatch(folded) && (CarburetorNonPart.IsMatch(folded) || ShaftTool.IsMatch(folded)))
             return null;
         foreach (var cls in All)
         {

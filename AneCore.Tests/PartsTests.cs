@@ -139,6 +139,29 @@ public class PartClassRegistryTests
         Assert.That(facts.Class.Name, Is.EqualTo(PartClasses.Generic));
         Assert.That(PartTextExtractors.PrimaryKey(facts, null, 0)!.Value.Value, Is.EqualTo("5091740"));
     }
+
+    [TestCase("original Zündapp 314 KS80 K80 SX80 Abtriebswelle 314-05.211 NEU")]
+    [TestCase("Zündapp Abtriebswellen")]
+    public void ZundappShaft_RetainsOnlyExplicitNumberWithoutDimensionsOrFit(string title)
+    {
+        var facts = PartTextExtractors.Extract(title, "Zündapp Et.No. : 314-05.211")!;
+        Assert.That(facts, Is.Not.Null);
+        Assert.That(facts.Class.Name, Is.EqualTo("shaft"));
+        Assert.That(facts.LabelledPartNumber?.Value, Is.EqualTo("314-05.211"));
+        Assert.That(PartTextExtractors.PrimaryKey(facts, null, 0)?.Value, Is.EqualTo("31405211"));
+        Assert.That(facts.Numbers(), Is.Empty);
+        Assert.That(facts.Fits, Is.Empty);
+    }
+
+    [TestCase("Zündapp Abtriebswellenabzieher")]
+    [TestCase("Zündapp Abtriebswelle Abzieher")]
+    [TestCase("Werkzeug für Zündapp Abtriebswelle")]
+    [TestCase("Handbuch Zündapp Abtriebswelle")]
+    [TestCase("Zündapp Abtriebswelle Reparaturservice")]
+    [TestCase("Zündapp Moped mit Abtriebswelle")]
+    [TestCase("Zündapp Abtriebswelle Konvolut")]
+    public void ShaftNoun_DoesNotAdmitToolsMediaServicesVehiclesOrLots(string title) =>
+        Assert.That(PartTextExtractors.Extract(title, "Zündapp Et.No. : 314-05.211"), Is.Null);
 }
 
 [TestFixture]
@@ -319,6 +342,24 @@ public class BearingTextExtractorTests
 [TestFixture]
 public class PartNumbersTests
 {
+    [TestCase("Zündapp Et.No. : 314-05.211")]
+    [TestCase("Zündapp Et.Nr. 314-05.211")]
+    public void ExplicitSparePartAbbreviation_IsLabelledSellerEvidence(string text)
+    {
+        var number = PartNumbers.Find(text).Single();
+        Assert.That(number.Value, Is.EqualTo("314-05.211"));
+        Assert.That(number.Key, Is.EqualTo("31405211"));
+        Assert.That(number.Labelled, Is.True);
+    }
+
+    [TestCase("Zündapp 314-05.211")]
+    [TestCase("Zündapp 31405211")]
+    [TestCase("Kontakt: Et.No. 314-05.211")]
+    [TestCase("Et.No. 31405 EUR")]
+    [TestCase("Internet.No. 314-05.211")]
+    public void SparePartLabel_DoesNotPromoteBareNumbersContactsPricesOrWordSuffixes(string text) =>
+        Assert.That(PartNumbers.Find(text), Is.Empty);
+
     [Test]
     public void Labelled_HasHighConfidence()
     {
