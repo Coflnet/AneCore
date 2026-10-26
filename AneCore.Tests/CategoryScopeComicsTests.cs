@@ -32,8 +32,8 @@ public class CategoryScopeComicsTests
         Assert.That(CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Marktplaats, category)?.Vertical?.Key, Is.Not.EqualTo("comics"));
 
     [Test]
-    public void BroaderBooksCategoryDoesNotBecomeAnUnboundedCrawl() =>
-        Assert.That(CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Kleinanzeigen, "76")!.IsOutOfScope, Is.True);
+    public void BroaderBooksCategoryKeepsItsSeparatePhysicalBookScope() =>
+        Assert.That(CategoryScopeCatalog.Shared.ResolvePlatform(Platform.Kleinanzeigen, "76")!.Vertical!.Key, Is.EqualTo("books"));
 
     [Test]
     public void InternalComicLeafDoesNotClaimAllPrintedBooks()
