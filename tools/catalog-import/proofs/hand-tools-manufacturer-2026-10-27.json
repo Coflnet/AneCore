@@ -1,0 +1,475 @@
+{
+  "checked_at": "2026-10-27",
+  "scope": "Twelve exact hand-tool bodies and eight manufacturer-proven packaging aliases. Factual identifiers, body length and short normalized tool labels only; no pricing, marketing text, images or offer quantities.",
+  "method": "Reviewed public primary manufacturer product/family pages and indexed official PDF article tables; packaging identity supported by explicit manufacturer FAQs and matched exact specifications.",
+  "sources": {
+    "knipex-xs": {
+      "url": "https://www.knipex.com/en-uk/products/pipe-wrenches-and-water-pump-pliers/pliers-wrenches-xs-pliers-and-a-wrench-in-a-single-tool/pliers-wrenches-xs-pliers-and-wrench-single-tool/8604100"
+    },
+    "cobra-xs": {
+      "url": "https://www.knipex.com/knipex-cobra-xs?sku=&v="
+    },
+    "pliers-family": {
+      "url": "https://www.knipex.com/en-uk/products/pipe-wrenches-and-water-pump-pliers/pliers-wrenches-pliers-and-a-wrench-in-a-single-tool/pliers-wrenches-pliers-and-wrench-single-tool/8603250"
+    },
+    "cobra-family": {
+      "url": "https://www.knipex.com/products/pipe-wrenches-and-water-pump-pliers/knipex-cobra-high-tech-water-pump-pliers"
+    },
+    "bahco-family": {
+      "url": "https://www.bahco.com/es_es/tenazas-articuladas--de-apertura-multiple-ergotm-con-mangos-bi-componente-y-acabado-fosfatado-pb_8223---8226_.html"
+    },
+    "wera-a": {
+      "url": "https://www.wera.de/de/werkzeuge/8000-a-zyklop-speed-knarre-mit-1-4-antrieb/"
+    },
+    "wera-b": {
+      "url": "https://www.wera.de/en/tools/8000-b-zyklop-speed-ratchet-with-3-8-drive/"
+    },
+    "wera-c": {
+      "url": "https://www.wera.de/en/tools/8000-c-zyklop-speed-ratchet-with-1-2-drive/"
+    },
+    "sb-policy": {
+      "url": "https://knowledge.knipex.com/en/what-does-the-sb-at-the-end-of-the-item-number-mean",
+      "fact": "Manufacturer says SB is self-service packaging and product is identical.",
+      "access": "official page opened"
+    },
+    "bk-policy": {
+      "url": "https://knowledge.knipex.com/en/what-does-the-sb-at-the-end-of-the-part-number-mean",
+      "fact": "Despite historical URL slug saying sb, page title/body are BK. Manufacturer identifies blister packaging and says product identical.",
+      "access": "official page opened"
+    },
+    "86-02-pairs": {
+      "url": "https://web-assets.knipex.com/sites/default/files/2020-12/KNIPEX_L201%2000055%20EN-01_Sanitary_RZ20201214_s.pdf",
+      "fact": "Exact base/SB paired article rows for86 02 180 and86 02 250 have same physical-tool specification columns.",
+      "access": "official PDF indexed table retrieved"
+    },
+    "86-04-bk": {
+      "url": "https://web-assets.knipex.com/sites/default/files/2021-10/KNIPEX_DE_PliersWrenchXS_86er_Product-Data-Sheets.pdf",
+      "fact": "Exact86 04 100 and86 04 100 BK:100mm,70g,10adjustments,21mm capacity, same textured grips and chrome finish.",
+      "access": "official PDF indexed table retrieved"
+    },
+    "87-00-bk": {
+      "url": "https://web-assets.knipex.com/sites/default/files/2021-03/KNIPEX_EN_87%2000%20100_CobraXS_Product-Data-Sheet.pdf",
+      "fact": "Exact87 00 100 andBK share100mm/tool finish/grips/11adjustments/28mm pipe and24mm nut capacity; rows list62g vs87g. Explicit BK policy, not weight equality, establishes identical tool.",
+      "access": "official PDF indexed table retrieved"
+    },
+    "87-03-sb-existence": {
+      "url": "https://web-assets.knipex.com/sites/default/files/2025-02/KNIPEX_Pricelist_2025-26_EN-EUR_XS_7.pdf",
+      "fact": "Official article index lists87 03 250 and87 03 250 SB; no prices retained. Combine exact SKU existence with explicit SB identical-product policy.",
+      "access": "official PDF indexed article text retrieved"
+    },
+    "bahco-pairs": {
+      "url": "https://www.bahco.com/nl_nl/waterpomptangen-ergotm--tweecomponentengrepen--gefosfateerd-pb_8223---8226_.html",
+      "fact": "IP explicitly means industrial packaging. Exact8223/8224/8225 and corresponding IP rows have identical nine specification values:adjustments,length,head length/head width/head thickness,jaw width,tip height,grip capacity,weight. Phosphate finish and bi-component grips shared.",
+      "access": "official page opened; technical table rows682-688"
+    },
+    "bahco-kit-contrast": {
+      "url": "https://www.bahco.com/int_en/fit-go-1-3-foam-inlay-pliers-set---3-pcs-retail-pack-pb_ff1e4003eh_.html",
+      "fact": "Actual FF1E4003EH is expressly3pcs, listing8224 IP as one component plus two other tools; this multi-tool set is not the single8224/IP body.",
+      "access": "official page search-indexed content retrieved"
+    },
+    "t-distinction": {
+      "url": "https://blog.knipex.com/en/en/blog/knipex-itemnumbers",
+      "fact": "Manufacturer distinguishes T tether-attachment capability from BK blister packaging. Do not strip all letters indiscriminately.",
+      "access": "official manufacturer blog search-indexed content retrieved"
+    }
+  },
+  "products": [
+    {
+      "id": "knipex-8604100",
+      "brand": "KNIPEX",
+      "model": "86 04 100",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 04 100"
+        ],
+        "length_mm": [
+          "100"
+        ]
+      },
+      "source_ref": "knipex-xs"
+    },
+    {
+      "id": "knipex-8700100",
+      "brand": "KNIPEX",
+      "model": "87 00 100",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 00 100"
+        ],
+        "length_mm": [
+          "100"
+        ]
+      },
+      "source_ref": "cobra-xs"
+    },
+    {
+      "id": "knipex-8602180",
+      "brand": "KNIPEX",
+      "model": "86 02 180",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 02 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "source_ref": "pliers-family"
+    },
+    {
+      "id": "knipex-8602250",
+      "brand": "KNIPEX",
+      "model": "86 02 250",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 02 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "source_ref": "pliers-family"
+    },
+    {
+      "id": "knipex-8703180",
+      "brand": "KNIPEX",
+      "model": "87 03 180",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 03 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "source_ref": "cobra-family"
+    },
+    {
+      "id": "knipex-8703250",
+      "brand": "KNIPEX",
+      "model": "87 03 250",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 03 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "source_ref": "cobra-family"
+    },
+    {
+      "id": "bahco-8223",
+      "brand": "Bahco",
+      "model": "8223",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8223"
+        ],
+        "length_mm": [
+          "210"
+        ]
+      },
+      "source_ref": "bahco-family"
+    },
+    {
+      "id": "bahco-8224",
+      "brand": "Bahco",
+      "model": "8224",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8224"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "source_ref": "bahco-family"
+    },
+    {
+      "id": "bahco-8225",
+      "brand": "Bahco",
+      "model": "8225",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8225"
+        ],
+        "length_mm": [
+          "315"
+        ]
+      },
+      "source_ref": "bahco-family"
+    },
+    {
+      "id": "wera-05003500001",
+      "brand": "Wera",
+      "model": "8000 A",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003500001"
+        ],
+        "length_mm": [
+          "152"
+        ]
+      },
+      "source_ref": "wera-a"
+    },
+    {
+      "id": "wera-05003550001",
+      "brand": "Wera",
+      "model": "8000 B",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003550001"
+        ],
+        "length_mm": [
+          "199"
+        ]
+      },
+      "source_ref": "wera-b"
+    },
+    {
+      "id": "wera-05003600001",
+      "brand": "Wera",
+      "model": "8000 C",
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003600001"
+        ],
+        "length_mm": [
+          "277"
+        ]
+      },
+      "source_ref": "wera-c"
+    }
+  ],
+  "same_body_packaging_aliases": [
+    {
+      "id": "knipex-8604100",
+      "alias": "KNIPEX 86 04 100 BK",
+      "sources": [
+        "bk-policy",
+        "86-04-bk"
+      ],
+      "comparison": {
+        "length_mm": 100,
+        "finish": "chrome plated",
+        "grips": "embossed rough surface",
+        "adjustments": 10,
+        "nut_capacity_mm": 21,
+        "brochure_body_weight_g": 70
+      }
+    },
+    {
+      "id": "knipex-8700100",
+      "alias": "KNIPEX 87 00 100 BK",
+      "sources": [
+        "bk-policy",
+        "87-00-bk"
+      ],
+      "comparison": {
+        "length_mm": 100,
+        "finish": "grey atramentized; polished head",
+        "grips": "embossed rough surface",
+        "adjustments": 11,
+        "pipe_capacity_mm": 28,
+        "nut_capacity_mm": 24,
+        "listed_weight_g": {
+          "base": 62,
+          "BK": 87
+        },
+        "weightInterpretation": "Difference does not establish different tool; manufacturer explicitly says BK identical product. Do not use packed values as body attributes."
+      }
+    },
+    {
+      "id": "knipex-8602180",
+      "alias": "KNIPEX 86 02 180 SB",
+      "sources": [
+        "sb-policy",
+        "86-02-pairs"
+      ],
+      "comparison": {
+        "length_mm": 180,
+        "finish": "grey atramentized; polished head",
+        "grips": "multi-component",
+        "adjustments": 15,
+        "nut_capacity_mm": 40,
+        "weight_g": 240,
+        "baseEqualsSB": true
+      }
+    },
+    {
+      "id": "knipex-8602250",
+      "alias": "KNIPEX 86 02 250 SB",
+      "sources": [
+        "sb-policy",
+        "86-02-pairs"
+      ],
+      "comparison": {
+        "length_mm": 250,
+        "finish": "grey atramentized; polished head",
+        "grips": "multi-component",
+        "adjustments": 19,
+        "nut_capacity_mm": 52,
+        "weight_g": 468,
+        "baseEqualsSB": true
+      }
+    },
+    {
+      "id": "knipex-8703250",
+      "alias": "KNIPEX 87 03 250 SB",
+      "sources": [
+        "sb-policy",
+        "87-03-sb-existence"
+      ],
+      "comparison": {
+        "sameBody": "Explicit manufacturer SB policy plus exact paired SKU existence; retain existing250mm/chrome/plastic-grip body metadata. No packaging size copied."
+      }
+    },
+    {
+      "id": "bahco-8223",
+      "alias": "Bahco 8223 IP",
+      "sources": [
+        "bahco-pairs",
+        "bahco-kit-contrast"
+      ],
+      "comparison": {
+        "adjustments": 11,
+        "length_mm": 210,
+        "head_length_mm": 37.25,
+        "head_width_mm": 46,
+        "head_thickness_mm": 12,
+        "jaw_width_mm": 5.2,
+        "tip_height_mm": 7.5,
+        "grip_capacity_mm": 37,
+        "weight_g": 270,
+        "baseEqualsIP": true,
+        "finish": "phosphate",
+        "grips": "bi-component"
+      }
+    },
+    {
+      "id": "bahco-8224",
+      "alias": "Bahco 8224 IP",
+      "sources": [
+        "bahco-pairs",
+        "bahco-kit-contrast"
+      ],
+      "comparison": {
+        "adjustments": 11,
+        "length_mm": 250,
+        "head_length_mm": 41.85,
+        "head_width_mm": 51,
+        "head_thickness_mm": 12,
+        "jaw_width_mm": 6,
+        "tip_height_mm": 8.5,
+        "grip_capacity_mm": 45,
+        "weight_g": 350,
+        "baseEqualsIP": true,
+        "finish": "phosphate",
+        "grips": "bi-component"
+      }
+    },
+    {
+      "id": "bahco-8225",
+      "alias": "Bahco 8225 IP",
+      "sources": [
+        "bahco-pairs",
+        "bahco-kit-contrast"
+      ],
+      "comparison": {
+        "adjustments": 13,
+        "length_mm": 315,
+        "head_length_mm": 53.5,
+        "head_width_mm": 63,
+        "head_thickness_mm": 12.5,
+        "jaw_width_mm": 7,
+        "tip_height_mm": 10,
+        "grip_capacity_mm": 55,
+        "weight_g": 550,
+        "baseEqualsIP": true,
+        "finish": "phosphate",
+        "grips": "bi-component"
+      }
+    }
+  ],
+  "limits": [
+    "SB and BK equivalence follows explicit KNIPEX identical-product policy, confirmed exact suffix SKU existence. Never infer different tools from packaging dimensions or packed weights.",
+    "Bahco8223/8224/8225 IP rows match corresponding phosphate/bi-component body specifications; IP means industrial packaging.",
+    "Numeric wholesale pack quantity not exposed in reviewed rows. No actual listing quantity, condition, completeness or kit scope inferred.",
+    "T tethered forms, differing finish/grips/lengths and explicit multi-tool sets stay distinct. SBA/unseen suffix combinations and WeraSB equivalence were not verified.",
+    "Two directly guessed KNIPEX variant product URLs were inaccessible. No fresh successful response is claimed for those URLs; public manufacturer FAQs and exact article documents supply the proof."
+  ]
+}

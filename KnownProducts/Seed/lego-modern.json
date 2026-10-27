@@ -18,6 +18,9 @@
       "possibleAttributes": {
         "set_number": [
           "10280"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -41,6 +44,9 @@
       "possibleAttributes": {
         "set_number": [
           "10281"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -248,6 +254,9 @@
       "possibleAttributes": {
         "set_number": [
           "10309"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -271,6 +280,9 @@
       "possibleAttributes": {
         "set_number": [
           "10311"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -28860,6 +28872,9 @@
       "possibleAttributes": {
         "set_number": [
           "75304"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -37232,6 +37247,9 @@
       "possibleAttributes": {
         "set_number": [
           "75305"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],

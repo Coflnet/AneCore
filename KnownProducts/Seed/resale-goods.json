@@ -4032,6 +4032,386 @@
       },
       "excludeTerms": [],
       "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "knipex-8604100",
+      "brand": "KNIPEX",
+      "model": "86 04 100",
+      "name": "KNIPEX Zangenschlüssel XS 86 04 100",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 86 04 100",
+        "KNIPEX 8604100",
+        "KNIPEX 86 04 100 BK"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 04 100"
+        ],
+        "length_mm": [
+          "100"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sb",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-8700100",
+      "brand": "KNIPEX",
+      "model": "87 00 100",
+      "name": "KNIPEX Cobra XS Wasserpumpenzange 87 00 100",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 87 00 100",
+        "KNIPEX 8700100",
+        "KNIPEX 87 00 100 BK"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 00 100"
+        ],
+        "length_mm": [
+          "100"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sb",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-8602180",
+      "brand": "KNIPEX",
+      "model": "86 02 180",
+      "name": "KNIPEX Zangenschlüssel 86 02 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 86 02 180",
+        "KNIPEX 8602180",
+        "KNIPEX 86 02 180 SB"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 02 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-8602250",
+      "brand": "KNIPEX",
+      "model": "86 02 250",
+      "name": "KNIPEX Zangenschlüssel 86 02 250",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 86 02 250",
+        "KNIPEX 8602250",
+        "KNIPEX 86 02 250 SB"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "pliers_wrench"
+        ],
+        "article_number": [
+          "86 02 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-8703180",
+      "brand": "KNIPEX",
+      "model": "87 03 180",
+      "name": "KNIPEX Cobra Wasserpumpenzange 87 03 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 87 03 180",
+        "KNIPEX 8703180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 03 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sb",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-8703250",
+      "brand": "KNIPEX",
+      "model": "87 03 250",
+      "name": "KNIPEX Cobra Wasserpumpenzange 87 03 250",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 87 03 250",
+        "KNIPEX 8703250",
+        "KNIPEX 87 03 250 SB"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "87 03 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "sba",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "wera-05003500001",
+      "brand": "Wera",
+      "model": "8000 A",
+      "name": "Wera Zyklop Speed-Knarre 8000 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Wera 05003500001",
+        "Wera 8000 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003500001"
+        ],
+        "length_mm": [
+          "152"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb",
+        "8100",
+        "9722",
+        "9721",
+        "9720"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "wera-05003550001",
+      "brand": "Wera",
+      "model": "8000 B",
+      "name": "Wera Zyklop Speed-Knarre 8000 B",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Wera 05003550001",
+        "Wera 8000 B"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003550001"
+        ],
+        "length_mm": [
+          "199"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb",
+        "8100",
+        "9722",
+        "9721",
+        "9720"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "wera-05003600001",
+      "brand": "Wera",
+      "model": "8000 C",
+      "name": "Wera Zyklop Speed-Knarre 8000 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Wera 05003600001",
+        "Wera 8000 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet"
+        ],
+        "article_number": [
+          "05003600001"
+        ],
+        "length_mm": [
+          "277"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb",
+        "8100",
+        "9722",
+        "9721",
+        "9720"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
     }
   ]
 }

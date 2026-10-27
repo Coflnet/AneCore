@@ -1207,6 +1207,129 @@
         "2"
       ],
       "source": "seed:manufacturer-verified-2026-10-26"
+    },
+    {
+      "id": "bahco-8223",
+      "brand": "Bahco",
+      "model": "8223",
+      "name": "Bahco ERGO Wasserpumpenzange 8223",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8223",
+        "Bahco 8223 IP"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8223"
+        ],
+        "length_mm": [
+          "210"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "c",
+        "t6",
+        "t7",
+        "t8"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "bahco-8224",
+      "brand": "Bahco",
+      "model": "8224",
+      "name": "Bahco ERGO Wasserpumpenzange 8224",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8224",
+        "Bahco 8224 IP"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8224"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "c",
+        "t6",
+        "t7",
+        "t8"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "bahco-8225",
+      "brand": "Bahco",
+      "model": "8225",
+      "name": "Bahco ERGO Wasserpumpenzange 8225",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 8225",
+        "Bahco 8225 IP"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "water_pump_pliers"
+        ],
+        "article_number": [
+          "8225"
+        ],
+        "length_mm": [
+          "315"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "c",
+        "t6",
+        "t7",
+        "t8"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
     }
   ]
 }

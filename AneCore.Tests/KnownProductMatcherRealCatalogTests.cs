@@ -551,11 +551,14 @@ public class KnownProductMatcherRealCatalogTests
     [TestCase("Apple AirPods Pro 2. Generation mit MagSafe Ladecase", "apple-airpods-pro-2nd-generation")]
     [TestCase("Nintendo Switch ohne Controller", "nintendo-switch")]
     [TestCase("Nintendo Switch Zubehör inklusive", "nintendo-switch")]
+    [TestCase("Canon EOS R6 camera bag included", "canon-eos-r6")]
     public void AccessoryWordThatIsAnIncludedExtra_StillMatchesTheDevice(string title, string expectedId)
     {
         Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expectedId), title);
     }
 
+    [TestCase("Canon EOS R6 camera bag")]
+    [TestCase("Camera bag for Canon EOS R6")]
     [TestCase("Nintendo Switch Zubehör Set")]
     [TestCase("Zubehör für Nintendo Switch")]
     [TestCase("Hülle mit Ständer für PlayStation 5 Controller")]

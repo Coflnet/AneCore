@@ -20,6 +20,28 @@ public class KnownProductLegoCatalogTests
         Assert.That(KnownProductSeed.LoadAll().Any(p => p.Vertical == "lego"), Is.False);
     }
 
+    [TestCase("10280")]
+    [TestCase("10281")]
+    [TestCase("10309")]
+    [TestCase("10311")]
+    [TestCase("75304")]
+    [TestCase("75305")]
+    [TestCase("42115")]
+    [TestCase("42143")]
+    public void OfficialAdultAgeMetadataRetainsSetIdentityAndOfferBoundaries(string number)
+    {
+        var id = $"lego-{number}";
+        var set = Catalog.Single(p => p.Id == id);
+        Assert.That(set.Model, Is.EqualTo(number));
+        Assert.That(set.PossibleAttributes["set_number"], Is.EquivalentTo(new[] { number }));
+        Assert.That(set.PossibleAttributes["min_age"], Is.EquivalentTo(new[] { "18" }));
+        Assert.That(set.Aliases, Is.SupersetOf(new[] { $"LEGO {number}", $"LEGO Set {number}" }));
+        foreach (var alias in set.Aliases)
+            Assert.That(Matcher.Match(alias)?.Id, Is.EqualTo(id), alias);
+        Assert.That(Matcher.Match($"LEGO {number} unvollständig"), Is.Null);
+        Assert.That(Matcher.Match(number), Is.Null);
+    }
+
     [Test]
     public void RetiredSpeedChampionsBatchResolvesEverySetNumber()
     {

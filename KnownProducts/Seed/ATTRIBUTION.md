@@ -327,3 +327,30 @@ these part types; this creates no cross-model fit or compatibility assertion.
 The existing included-extra check preserves complete turntables offered with these parts.
 These exclusions follow seven demonstrated matcher false joins in the pre-fix controls;
 they add no global accessory words or product-category heuristics.
+
+## Hand-tool bodies and packaging aliases (2026-10-27)
+
+Twelve exact bodies in `resale-goods.json` and `bahco-hand-tools.json` use verified
+KNIPEX, Bahco and Wera article identities and overall lengths. Their individual manufacturer
+URLs and eight proven packaging aliases are recorded in
+`tools/catalog-import/proofs/hand-tools-manufacturer-2026-10-27.json`.
+The [KNIPEX SB FAQ](https://knowledge.knipex.com/en/what-does-the-sb-at-the-end-of-the-item-number-mean)
+and [BK FAQ](https://knowledge.knipex.com/en/what-does-the-sb-at-the-end-of-the-part-number-mean)
+explicitly establish identical tools in different packaging; the latter URL's historic slug
+says SB but its page title and content concern BK. The
+[Bahco family table](https://www.bahco.com/nl_nl/waterpomptangen-ergotm--tweecomponentengrepen--gefosfateerd-pb_8223---8226_.html)
+identifies IP as industrial packaging and gives matching body specifications for each paired
+article. [Wera manufacturer data](https://www.wera.de/en/tools/8000-c-zyklop-speed-ratchet-with-1-2-drive/)
+identifies the single ratchets; separate sets and unverified suffix variants are not equivalents.
+Packed dimensions/weights and jaw capacity are not used as physical body dimensions.
+No offer quantity, price, completeness, condition or compatibility is inferred.
+
+## LEGO manufacturer recommended age (2026-10-27)
+
+Eight existing set rows (10280, 10281, 10309, 10311, 75304, 75305, 42115, 42143)
+gain only `min_age=18`, from the explicit 18+ product-panel label on their official
+LEGO pages, such as [LEGO 75305](https://www.lego.com/en-us/product/scout-trooper-helmet-75305).
+Per-set URLs and locales are retained in
+`tools/catalog-import/proofs/lego-recommended-age-2026-10-27.json`.
+This recommended builder age asserts no used-offer completeness or contents and changes no
+set identity, alias, theme or piece-count schema. No prices or marketing descriptions are copied.

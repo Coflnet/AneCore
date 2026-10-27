@@ -42568,6 +42568,9 @@
       "possibleAttributes": {
         "set_number": [
           "42115"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],
@@ -42660,6 +42663,9 @@
       "possibleAttributes": {
         "set_number": [
           "42143"
+        ],
+        "min_age": [
+          "18"
         ]
       },
       "excludeTerms": [],

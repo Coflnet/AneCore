@@ -185,6 +185,54 @@ public class KnownProductMatcher
         return index;
     }
 
+    private IEnumerable<(AliasEntry Entry, int Start)> FindAliases(string[] titleTokens)
+    {
+        for (var i = 0; i < titleTokens.Length; i++)
+        {
+            IEnumerable<AliasEntry> candidates = Enumerable.Empty<AliasEntry>();
+            if (aliasIndex.TryGetValue((titleTokens[i], null, null), out var singleToken))
+                candidates = singleToken;
+            if (i + 1 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], null), out var pair))
+                candidates = candidates.Concat(pair);
+            if (i + 2 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], titleTokens[i + 2]), out var triple))
+                candidates = candidates.Concat(triple);
+
+            foreach (var entry in candidates)
+            {
+                var aliasTokens = entry.Tokens;
+                if (i + aliasTokens.Length > titleTokens.Length)
+                    continue;
+                var ok = true;
+                for (var j = 1; j < aliasTokens.Length; j++)
+                {
+                    if (titleTokens[i + j] != aliasTokens[j])
+                    {
+                        ok = false;
+                        break;
+                    }
+                }
+                if (!ok)
+                    continue;
+                yield return (entry, i);
+            }
+        }
+    }
+
+    /// <summary>Names a verified hand tool as part of the primary offer, without proving a single body,
+    /// article variant, compatibility or quantity. Sets and related physical parts may contain a reference.</summary>
+    public bool HasHandToolReference(string? title, IReadOnlyList<string>? categoryPath = null)
+    {
+        var normalized = Normalize(title ?? "");
+        var tokens = normalized.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        // A set may name its contents after "mit"; other products merely including a tool stay separate.
+        var setOffer = tokens.TakeWhile(token => !IncludedMarkers.Contains(token))
+            .Any(token => token is "set" or "werkzeugset" or "toolset" or "satz" or "kit" or "bundle" or "konvolut" or "sammlung" or "restposten");
+        return FindAliases(tokens).Any(hit =>
+            hit.Entry.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
+            && IsCategoryCompatible(hit.Entry.Product, categoryPath)
+            && (setOffer || !tokens.Take(hit.Start).TakeLast(3).Any(IncludedMarkers.Contains)));
+    }
+
     /// <summary>
     /// Returns the matching known product, or null when there is no match, the title looks like an
     /// accessory rather than the device, the match is ambiguous between two equally-specific products,
@@ -217,54 +265,30 @@ public class KnownProductMatcher
             return null;
 
         var matches = new List<(KnownProduct Product, int TokenCount, int StartIndex)>();
-        for (var i = 0; i < titleTokens.Length; i++)
+        foreach (var (entry, i) in FindAliases(titleTokens))
         {
-            IEnumerable<AliasEntry> candidates = Enumerable.Empty<AliasEntry>();
-            if (aliasIndex.TryGetValue((titleTokens[i], null, null), out var singleToken))
-                candidates = singleToken;
-            if (i + 1 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], null), out var pair))
-                candidates = candidates.Concat(pair);
-            if (i + 2 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], titleTokens[i + 2]), out var triple))
-                candidates = candidates.Concat(triple);
-
-            foreach (var entry in candidates)
-            {
-                var aliasTokens = entry.Tokens;
-                if (i + aliasTokens.Length > titleTokens.Length)
-                    continue;
-                var ok = true;
-                for (var j = 1; j < aliasTokens.Length; j++)
-                {
-                    if (titleTokens[i + j] != aliasTokens[j])
-                    {
-                        ok = false;
-                        break;
-                    }
-                }
-                if (!ok)
-                    continue;
-                // A vetted LEGO alias can name Dodge Charger; accessory words outside that span still veto it.
-                if (accessory && (entry.Product.Vertical != "lego"
-                    || IsAccessory(string.Join(" ", titleTokens.Take(i).Concat(titleTokens.Skip(i + aliasTokens.Length))))))
-                    continue;
-                if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
-                    continue;
-                if (!IsCategoryCompatible(entry.Product, categoryPath))
-                    continue;
-                // A set number can also name a manual, empty box, partial set or custom build.
-                // Keep those offers on the extraction path, where their scope is preserved.
-                if (entry.Product.Vertical == "lego" &&
-                    (LegoIncomplete.IsMatch(normalizedTitle)
-                     || LegoDisplayExtra.IsMatch(normalizedTitle)
-                     || LegoExtraWords.Matches(normalizedTitle)
-                         .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
-                     // A verified full alias can explain vehicle model/year numbers inside its own span.
-                     || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model, title)
-                     // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.
-                     || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts & ~RegexOptions.Compiled)))
-                    continue;
-                matches.Add((entry.Product, aliasTokens.Length, i));
-            }
+            var aliasTokens = entry.Tokens;
+            // A vetted LEGO alias can name Dodge Charger; accessory words outside that span still veto it.
+            if (accessory && (entry.Product.Vertical != "lego"
+                || IsAccessory(string.Join(" ", titleTokens.Take(i).Concat(titleTokens.Skip(i + aliasTokens.Length))))))
+                continue;
+            if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
+                continue;
+            if (!IsCategoryCompatible(entry.Product, categoryPath))
+                continue;
+            // A set number can also name a manual, empty box, partial set or custom build.
+            // Keep those offers on the extraction path, where their scope is preserved.
+            if (entry.Product.Vertical == "lego" &&
+                (LegoIncomplete.IsMatch(normalizedTitle)
+                 || LegoDisplayExtra.IsMatch(normalizedTitle)
+                 || LegoExtraWords.Matches(normalizedTitle)
+                     .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
+                 // A verified full alias can explain vehicle model/year numbers inside its own span.
+                 || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model, title)
+                 // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.
+                 || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts & ~RegexOptions.Compiled)))
+                continue;
+            matches.Add((entry.Product, aliasTokens.Length, i));
         }
 
         if (matches.Count == 0)
@@ -401,15 +425,24 @@ public class KnownProductMatcher
         if (product.ExcludeTerms.Count == 0)
             return false;
         if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true
+            || product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
             || product.PossibleAttributes.GetValueOrDefault("device_type")?.Contains("turntable") == true)
         {
             var title = string.Join(' ', titleTokens);
-            var position = 0;
-            foreach (var token in titleTokens)
+            foreach (var exclusion in product.ExcludeTerms)
             {
-                if (product.ExcludeTerms.Contains(token) && !IsIncludedExtra(title, titleTokens, position, token.Length))
-                    return true;
-                position += token.Length + 1;
+                var term = Normalize(exclusion);
+                if (term.Length == 0) continue;
+                var terms = term.Split(' ');
+                var position = 0;
+                for (var i = 0; i + terms.Length <= titleTokens.Length; i++)
+                {
+                    if ((i < aliasStart || i + terms.Length > aliasStart + aliasLength)
+                        && titleTokens.AsSpan(i, terms.Length).SequenceEqual(terms)
+                        && !IsIncludedExtra(title, titleTokens, position, term.Length))
+                        return true;
+                    position += titleTokens[i].Length + 1;
+                }
             }
             return false;
         }
@@ -484,7 +517,14 @@ public class KnownProductMatcher
                 return true;
         }
 
-        var after = tokenIndex + 1 < tokens.Length ? tokens[tokenIndex + 1] : null;
+        var afterIndex = tokenIndex + 1;
+        var afterPosition = start + tokens[tokenIndex].Length + 1;
+        while (afterIndex < tokens.Length && afterPosition < index + length)
+        {
+            afterPosition += tokens[afterIndex].Length + 1;
+            afterIndex++;
+        }
+        var after = afterIndex < tokens.Length ? tokens[afterIndex] : null;
         return after != null && IncludedAfterMarkers.Contains(after);
     }
 

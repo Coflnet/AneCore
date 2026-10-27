@@ -8,7 +8,8 @@ public static class ResaleCatalog
 {
     private const RegexOptions Options = RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.CultureInvariant;
     private static readonly Lazy<KnownProductMatcher> Matcher = new(() => new(KnownProductSeed.LoadNamed("cameras.json", "cameras-expanded.json", "resale-goods.json", "power-tools.json", "bahco-hand-tools.json", "turntables.json")));
-    private static readonly Regex NotOffer = new(@"\b(?:suche|gesucht|wanted|ankauf|vermiete|vermietung|rental|konvolut|sammlung|restposten|bundle|unvollstandig|incomplete|ersatzteile?|einzelteile?|nachbau|kompatibel)\b|\b(?:zu\s+vermieten|repair\s+service|reparatur(?:service)?|serviceangebot)\b", Options);
+    private static readonly Regex NonSale = new(@"\b(?:suche|gesucht|wanted|ankauf|vermiete|vermietung|rental)\b|\b(?:zu\s+vermieten|repair\s+service|reparatur(?:service)?|serviceangebot)\b", Options);
+    private static readonly Regex NotOffer = new(@"\b(?:konvolut|sammlung|restposten|bundle|unvollstandig|incomplete|ersatzteile?|einzelteile?|nachbau|kompatibel)\b", Options);
     private static readonly Regex Media = new(@"\b(?:anleitung|bedienungsanleitung|handbuch|manuals?|instructions?|katalog|poster|buch|leerkarton|leerbox)\b", Options);
     private static readonly Regex Parts = new(@"\b(?:glaskanne|kaffeekanne|filterhalter|sattel|lenker|pedale|objektiv|lens|gehause|zahnrad|stativ|tripod)\b", Options);
     private static readonly Regex AccessoryFor = new(@"\b(?:fur|fuer|for|pour|per)\s+(.+)$", Options);
@@ -17,11 +18,22 @@ public static class ResaleCatalog
 
     private static readonly Regex KeyboardExtras = new(@"\s*,?\s*\b(?:mit|inkl\.?|incl\.?|inklusive|with)\s+(?:netzteil|power\s+adapter|ständer|staender|stand)(?:\s*(?:&|und|and)\s*(?:netzteil|power\s+adapter|ständer|staender|stand))*\s*$", Options);
 
+    /// <summary>Admits a physical hand-tool-related offer naming a verified tool, including sets,
+    /// article variants and parts. This title reference proves no whole model, compatibility, quantity
+    /// or description contents; consumers must retain independent offer identities and scope.</summary>
+    public static bool IsHandToolOffer(string? title, string? description = null, IReadOnlyList<string>? categoryPath = null)
+    {
+        if (string.IsNullOrWhiteSpace(title)) return false;
+        var text = KnownProductMatcher.Normalize(title);
+        return !NonSale.IsMatch(text) && !Media.IsMatch(IncludedManual.Replace(text, ""))
+            && Matcher.Value.HasHandToolReference(title, categoryPath);
+    }
+
     public static KnownProduct? Match(string? title, string? description = null, IReadOnlyList<string>? categoryPath = null)
     {
         if (string.IsNullOrWhiteSpace(title)) return null;
         var text = KnownProductMatcher.Normalize(title);
-        if (NotOffer.IsMatch(text) || Media.IsMatch(IncludedManual.Replace(text, ""))) return null;
+        if (NonSale.IsMatch(text) || NotOffer.IsMatch(text) || Media.IsMatch(IncludedManual.Replace(text, ""))) return null;
         var cameraExtras = CameraExtras.IsMatch(title);
         if (cameraExtras) title = CameraExtras.Replace(title, "");
         if (Parts.IsMatch(KnownProductMatcher.Normalize(title))) return null;
@@ -39,6 +51,8 @@ public static class ResaleCatalog
         var remainder = " " + KnownProductMatcher.Normalize(title) + " ";
         foreach (var alias in match.Aliases.OrderByDescending(a => a.Length))
             remainder = remainder.Replace(" " + KnownProductMatcher.Normalize(alias) + " ", " ", StringComparison.Ordinal);
+        if (match.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
+            && Regex.IsMatch(remainder, @"\b(?:werkzeugset|toolset)\b|\b(?:[2-9]|[1-9]\d+)\s*(?:x\b(?!\s*\d)|(?:stuck|stueck|stk|pieces?|pcs|er\s*set)\b)", Options)) return null;
         if (title.Contains('+') || Regex.IsMatch(remainder, @"\b(?:und|and)\b", Options)) return null;
         if (match.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("expansion") == true
             && Regex.IsMatch(text, @"\bstarter(?:set|\s+set|\s+pack)\b", Options)) return null;

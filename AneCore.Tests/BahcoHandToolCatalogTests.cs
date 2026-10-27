@@ -8,7 +8,8 @@ public class BahcoHandToolCatalogTests
     [Test]
     public void ExactManufacturerArticlesKeepDistinctBodiesAndKnownLengths()
     {
-        var rows = KnownProductSeed.LoadAll(includeExpandedCatalog: true).Where(p => p.Brand == "Bahco").ToList();
+        var rows = KnownProductSeed.LoadAll(includeExpandedCatalog: true).Where(p => p.Brand == "Bahco"
+            && p.PossibleAttributes.GetValueOrDefault("tool_type")?.Contains("adjustable_wrench") == true).ToList();
         Assert.That(rows, Has.Count.EqualTo(30));
         foreach (var row in rows)
         {

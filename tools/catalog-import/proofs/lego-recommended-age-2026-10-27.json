@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-10-27",
+  "scope": "Official recommended lower age only for eight existing exact LEGO set rows; min_age18 parsed from explicit18+ label. Existing set identities and aliases unchanged.",
+  "method": "Reviewed product-specific age panel on official LEGO product pages; no global-navigation age inference.",
+  "products": [
+    {
+      "id": "lego-10280",
+      "set_number": "10280",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/flower-bouquet-10280",
+      "locale": "US"
+    },
+    {
+      "id": "lego-10281",
+      "set_number": "10281",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/bonsai-tree-10281",
+      "locale": "US"
+    },
+    {
+      "id": "lego-10309",
+      "set_number": "10309",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/succulents-10309",
+      "locale": "US"
+    },
+    {
+      "id": "lego-10311",
+      "set_number": "10311",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-ca/product/orchid-10311",
+      "locale": "CA"
+    },
+    {
+      "id": "lego-75304",
+      "set_number": "75304",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/darth-vader-helmet-75304",
+      "locale": "US"
+    },
+    {
+      "id": "lego-75305",
+      "set_number": "75305",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/scout-trooper-helmet-75305",
+      "locale": "US"
+    },
+    {
+      "id": "lego-42115",
+      "set_number": "42115",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/lamborghini-sian-fkp-37-42115",
+      "locale": "US"
+    },
+    {
+      "id": "lego-42143",
+      "set_number": "42143",
+      "min_age": 18,
+      "official_age_label": "18+",
+      "source_url": "https://www.lego.com/en-us/product/ferrari-daytona-sp3-42143",
+      "locale": "US"
+    }
+  ],
+  "limits": [
+    "Manufacturer age recommendation is not a statutory age restriction.",
+    "Catalogue age does not assert that an offered used set is complete, genuine, includes box/manuals or has a stated piece quantity.",
+    "No piece_count/theme schema, prices or availability added.",
+    "US Orchid product page timed out initially; official Canadian page was retrieved and used."
+  ]
+}

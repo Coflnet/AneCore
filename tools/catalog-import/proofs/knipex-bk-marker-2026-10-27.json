@@ -1,0 +1,15 @@
+{
+  "reviewedUtc": "2026-10-27T19:44:43.567970+00:00",
+  "source": "https://knowledge.knipex.com/en/what-does-the-sb-at-the-end-of-the-part-number-mean",
+  "actualSourceTitle": "What does the BK at the end of the part number mean?",
+  "scope": "Manufacturer-wide BK modifier means blister packaging with identical physical product. Existing verified body article IDs remain canonical; this does not assert that every unseen packaged SKU is manufactured/available or has any particular ordering quantity.",
+  "additionalBodyRowsWithBKNeutrality": [
+    "knipex-8602180",
+    "knipex-8602250",
+    "knipex-8703180",
+    "knipex-8703250"
+  ],
+  "identitiesAndBodyFactsChanged": false,
+  "SB": "Only separately verified product-table variants are admitted; the English FAQ currently defines BK, not generic SB",
+  "unitQuantity": "Unknown and absent; explicit multi-unit titles rejected as one comparable body"
+}
