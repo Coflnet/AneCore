@@ -12,6 +12,8 @@ public class ProductIndex(
 {
     public override string IndexName() => "ane_products_index";
 
+    public const int MarketplaceSourcesVersion = 1;
+
     protected override string RetentionPolicyId() => "ane_products_retention_policy";
 
     protected override string IndexTemplateName() => "ane_products_index_template";
@@ -69,8 +71,7 @@ public class ProductIndex(
             .Keyword(k => k.Name(n => n.ImageUrl))
             .GeoPoint(g => g.Name(n => n.Locations))
             .Keyword(k => k.Name(n => n.Countries))
-            .Keyword(k => k.Name(n => n.Platforms))
-            .Date(k => k.Name(n => n.PlatformsUpdatedAt))
+            .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
             .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                 .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
                     .Keyword(field => field.Name(n => n.Country))))
@@ -106,15 +107,14 @@ public class ProductIndex(
 
         foreach (var (index, state) in mappings.Indices)
         {
-            if (new[] { "offersFound", "platforms", "platformsUpdatedAt", "marketplaceSources" }
+            if (new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }
                 .All(field => state.Mappings?.Properties?.ContainsKey(field) == true))
                 continue;
             var response = await client.Indices.PutMappingAsync<ProductDocument>(m => m
                 .Index(index)
                 .Properties(p => p
                     .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))
-                    .Keyword(k => k.Name(n => n.Platforms))
-                    .Date(k => k.Name(n => n.PlatformsUpdatedAt))
+                    .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
                     .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                         .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
                             .Keyword(field => field.Name(n => n.Country))))),
@@ -210,8 +210,7 @@ public record ProductDocument(
     List<string>? Countries,
     string? CanonicalSeoId,
     List<string> RelatedSeoIds,
-    List<string>? Platforms = null,
-    DateTime? PlatformsUpdatedAt = null,
+    int? MarketplaceSourcesVersion = null,
     List<ProductMarketplaceSource>? MarketplaceSources = null
 );
 

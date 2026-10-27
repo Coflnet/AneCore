@@ -12,18 +12,19 @@ namespace AneCore.Tests;
 public class ProductMarketplaceMappingTests
 {
     [Test]
-    public void ProductMapping_IndexesMembershipAndRefreshDate_WithoutExcludingThemFromSource()
+    public void ProductMapping_IndexesMembershipAndVersion_WithoutExcludingThemFromSource()
     {
         var client = Client(new InMemoryConnection());
         using var json = JsonDocument.Parse(client.RequestResponseSerializer.SerializeToString(
             ProductIndex.Mapping(new TypeMappingDescriptor<ProductDocument>())));
         var properties = json.RootElement.GetProperty("properties");
-        Assert.That(properties.GetProperty("platforms").GetProperty("type").GetString(), Is.EqualTo("keyword"));
-        Assert.That(properties.GetProperty("platformsUpdatedAt").GetProperty("type").GetString(), Is.EqualTo("date"));
+        Assert.That(properties.TryGetProperty("platforms", out _), Is.False);
+        Assert.That(properties.TryGetProperty("platformsUpdatedAt", out _), Is.False);
+        Assert.That(ProductIndex.MarketplaceSourcesVersion, Is.EqualTo(1));
+        Assert.That(properties.GetProperty("marketplaceSourcesVersion").GetProperty("type").GetString(), Is.EqualTo("integer"));
         AssertMarketplaceSources(properties);
         Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("marketplaceSources"));
-        Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("platforms"));
-        Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("platformsUpdatedAt"));
+        Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("marketplaceSourcesVersion"));
     }
 
     [Test]
@@ -37,14 +38,12 @@ public class ProductMarketplaceMappingTests
         var product = client.SourceSerializer.Deserialize<ProductDocument>(legacy);
         Assert.That(product.SeoId, Is.EqualTo("legacy-camera"));
         Assert.That(product.OffersFound, Is.EqualTo(3));
-        Assert.That(product.Platforms, Is.Null);
-        Assert.That(product.PlatformsUpdatedAt, Is.Null);
+        Assert.That(product.MarketplaceSourcesVersion, Is.Null);
         Assert.That(product.MarketplaceSources, Is.Null);
 
         var updated = product with
         {
-            Platforms = ["Ebay", "Vinted"],
-            PlatformsUpdatedAt = new DateTime(2026, 10, 27, 12, 0, 0, DateTimeKind.Utc),
+            MarketplaceSourcesVersion = ProductIndex.MarketplaceSourcesVersion,
             MarketplaceSources = [new ProductMarketplaceSource("Ebay", "DE"),
                 new ProductMarketplaceSource("Vinted", "FR"), new ProductMarketplaceSource("Vinted", null)]
         };
@@ -52,19 +51,18 @@ public class ProductMarketplaceMappingTests
         client.SourceSerializer.Serialize(updated, source);
         source.Position = 0;
         var restored = client.SourceSerializer.Deserialize<ProductDocument>(source);
-        Assert.That(restored.Platforms, Is.EqualTo(updated.Platforms));
-        Assert.That(restored.PlatformsUpdatedAt, Is.EqualTo(updated.PlatformsUpdatedAt));
+        Assert.That(restored.MarketplaceSourcesVersion, Is.EqualTo(ProductIndex.MarketplaceSourcesVersion));
         Assert.That(restored.MarketplaceSources, Is.EqualTo(updated.MarketplaceSources));
         Assert.That(restored.Name, Is.EqualTo(product.Name));
         Assert.That(restored.OffersFound, Is.EqualTo(product.OffersFound));
     }
 
-    [TestCase(1)]
-    [TestCase(3)]
-    [TestCase(4)]
-    public async Task ExistingIndexMigration_RequiresAllMetadataFields_AndPutsOnlyAdditiveMappings(int metadataFields)
+    [TestCase("offers-only")]
+    [TestCase("legacy-flat")]
+    [TestCase("complete")]
+    public async Task ExistingIndexMigration_RequiresAllMetadataFields_AndPutsOnlyAdditiveMappings(string fixture)
     {
-        var connection = new MappingConnection(metadataFields);
+        var connection = new MappingConnection(fixture);
         var index = new ProductIndex(NullLogger<ProductIndex>.Instance, null!);
         var migration = typeof(ProductIndex).GetMethod("UpdateExistingIndexMappings",
             BindingFlags.Instance | BindingFlags.NonPublic)!;
@@ -72,18 +70,17 @@ public class ProductMarketplaceMappingTests
 
         Assert.That(connection.Calls.Count(call => call.Method == "GET"), Is.EqualTo(1));
         var puts = connection.Calls.Where(call => call.Method == "PUT").ToList();
-        Assert.That(puts, Has.Count.EqualTo(metadataFields == 4 ? 0 : 1));
-        if (metadataFields == 4) return;
+        Assert.That(puts, Has.Count.EqualTo(fixture == "complete" ? 0 : 1));
+        if (fixture == "complete") return;
 
         Assert.That(puts[0].Path, Is.EqualTo("/ane-products-index-000001/_mapping"));
         using var body = JsonDocument.Parse(puts[0].Body!);
         Assert.That(body.RootElement.EnumerateObject().Select(property => property.Name), Is.EqualTo(new[] { "properties" }));
         var properties = body.RootElement.GetProperty("properties");
         Assert.That(properties.EnumerateObject().Select(property => property.Name),
-            Is.EquivalentTo(new[] { "offersFound", "platforms", "platformsUpdatedAt", "marketplaceSources" }));
+            Is.EquivalentTo(new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }));
         Assert.That(properties.GetProperty("offersFound").GetProperty("type").GetString(), Is.EqualTo("integer"));
-        Assert.That(properties.GetProperty("platforms").GetProperty("type").GetString(), Is.EqualTo("keyword"));
-        Assert.That(properties.GetProperty("platformsUpdatedAt").GetProperty("type").GetString(), Is.EqualTo("date"));
+        Assert.That(properties.GetProperty("marketplaceSourcesVersion").GetProperty("type").GetString(), Is.EqualTo("integer"));
         AssertMarketplaceSources(properties);
     }
 
@@ -101,7 +98,7 @@ public class ProductMarketplaceMappingTests
         new ConnectionSettings(new SingleNodeConnectionPool(new Uri("http://localhost:9200")), connection)
             .DisablePing().DisableDirectStreaming());
 
-    private sealed class MappingConnection(int metadataFields) : InMemoryConnection
+    private sealed class MappingConnection(string fixture) : InMemoryConnection
     {
         public List<(string Method, string Path, byte[]? Body)> Calls { get; } = [];
 
@@ -118,10 +115,12 @@ public class ProductMarketplaceMappingTests
             var method = requestData.Method.ToString();
             Calls.Add((method, requestData.Uri.AbsolutePath, body));
             var properties = "\"offersFound\":{\"type\":\"integer\"}";
-            if (metadataFields >= 3)
+            if (fixture == "legacy-flat")
                 properties += ""","platforms":{"type":"keyword"},"platformsUpdatedAt":{"type":"date"}""";
-            if (metadataFields == 4)
+            if (fixture != "offers-only")
                 properties += ""","marketplaceSources":{"type":"nested","properties":{"platform":{"type":"keyword"},"country":{"type":"keyword"}}}""";
+            if (fixture == "complete")
+                properties += ""","marketplaceSourcesVersion":{"type":"integer"}""";
             var response = method == "GET"
                 ? "{\"ane-products-index-000001\":{\"mappings\":{\"properties\":{\"name\":{\"type\":\"text\"}," + properties + "}}}}"
                 : "{\"acknowledged\":true}";
