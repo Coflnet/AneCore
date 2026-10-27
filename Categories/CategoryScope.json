@@ -136,12 +136,12 @@
       "kleinanzeigen": {
         "ids": [78],
         "labels": ["Musik & CDs"],
-        "titleKeywords": ["schallplatte", "vinyl", "lp", "langspielplatte", "45 rpm", "33 rpm"]
+        "titleKeywords": ["schallplatte", "vinyl", "lp", "langspielplatte", "45 rpm", "33 rpm", "12 inch"]
       },
       "vinted": {"ids": [3041]},
       "willhaben": {
         "ids": [2978],
-        "titleKeywords": ["schallplatte", "vinyl", "lp", "langspielplatte", "45 rpm", "33 rpm"]
+        "titleKeywords": ["schallplatte", "vinyl", "lp", "langspielplatte", "45 rpm", "33 rpm", "12 inch"]
       }
     },
     "books": {

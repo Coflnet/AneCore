@@ -18,6 +18,11 @@ public static class ResaleCatalog
 
     private static readonly Regex KeyboardExtras = new(@"\s*,?\s*\b(?:mit|inkl\.?|incl\.?|inklusive|with)\s+(?:netzteil|power\s+adapter|ständer|staender|stand)(?:\s*(?:&|und|and)\s*(?:netzteil|power\s+adapter|ständer|staender|stand))*\s*$", Options);
 
+    private static readonly Regex HandToolSet = new(@"\b(?:werkzeugset|toolset)\b|\b(?:[2-9]|[1-9]\d+)\s*(?:x\b(?!\s*\d)|(?:stuck|stueck|stk|pieces?|pcs|er\s*set)\b)", Options);
+    private static readonly Regex Conjunction = new(@"\b(?:und|and)\b", Options);
+    private static readonly Regex ExpansionStarter = new(@"\bstarter(?:set|\s+set|\s+pack)\b", Options);
+    private static readonly Regex IncompleteDescription = new(@"\b(?:teile fehlen|missing parts|parts missing|set\s+(?:ist\s+)?nicht\s+(?:mehr\s+)?(?:ganz\s+)?vollstandig)\b", Options);
+
     /// <summary>Admits a physical hand-tool-related offer naming a verified tool, including sets,
     /// article variants and parts. This title reference proves no whole model, compatibility, quantity
     /// or description contents; consumers must retain independent offer identities and scope.</summary>
@@ -48,14 +53,14 @@ public static class ResaleCatalog
         if (match.PossibleAttributes.GetValueOrDefault("specificity")?.Contains("unspecific") == true
             && match.ExcludeTerms.Any(term => (" " + text + " ").Contains(" " + term + " ", StringComparison.Ordinal))) return null;
         // Reuse the same matcher after removing this model's aliases to detect another named model.
-        var remainder = " " + KnownProductMatcher.Normalize(title) + " ";
+        var remainder = " " + text + " ";
         foreach (var alias in match.Aliases.OrderByDescending(a => a.Length))
             remainder = remainder.Replace(" " + KnownProductMatcher.Normalize(alias) + " ", " ", StringComparison.Ordinal);
         if (match.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
-            && Regex.IsMatch(remainder, @"\b(?:werkzeugset|toolset)\b|\b(?:[2-9]|[1-9]\d+)\s*(?:x\b(?!\s*\d)|(?:stuck|stueck|stk|pieces?|pcs|er\s*set)\b)", Options)) return null;
-        if (title.Contains('+') || Regex.IsMatch(remainder, @"\b(?:und|and)\b", Options)) return null;
+            && HandToolSet.IsMatch(remainder)) return null;
+        if (title.Contains('+') || Conjunction.IsMatch(remainder)) return null;
         if (match.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("expansion") == true
-            && Regex.IsMatch(text, @"\bstarter(?:set|\s+set|\s+pack)\b", Options)) return null;
+            && ExpansionStarter.IsMatch(text)) return null;
         // A listing of several numbered play sets is not the first single set's page.
         if (match.PossibleAttributes.ContainsKey("set_number")
             && Regex.Matches(text, @"\b\d{4,7}\b").Select(m => m.Value).Distinct().Count() > 1) return null;
@@ -63,7 +68,7 @@ public static class ResaleCatalog
         // Sellers often write one manufacturer followed by several tool article numbers.
         if (match.PossibleAttributes.ContainsKey("article_number")
             && Matcher.Value.Match(match.Brand + " " + remainder) is { } article && article.Id != match.Id) return null;
-        if (description != null && Regex.IsMatch(KnownProductMatcher.Normalize(description), @"\b(?:teile fehlen|missing parts|parts missing|set\s+(?:ist\s+)?nicht\s+(?:mehr\s+)?(?:ganz\s+)?vollstandig)\b", Options)) return null;
+        if (description != null && IncompleteDescription.IsMatch(KnownProductMatcher.Normalize(description))) return null;
         return match;
     }
 }
