@@ -56,6 +56,34 @@ public class HandToolBundleTests
     public void NonPhysicalAndMerelyIncludedToolReferencesDoNotAdmitAnOffer(string? title)
         => Assert.That(ResaleCatalog.IsHandToolOffer(title), Is.False);
 
+    [TestCase("KNIPEX Seitenschneider")]
+    [TestCase("Wera Schraubendreher")]
+    [TestCase("Bahco Rollgabelschlüssel")]
+    [TestCase("2x KNIPEX Seitenschneider")]
+    [TestCase("Set mit Wera Schraubendreher")]
+    [TestCase("Wera Schraubendreher mit Tasche")]
+    public void PrimaryBrandedToolWithoutArticleIsOnlyAnIndependentOffer(string title)
+    {
+        Assert.That(ResaleCatalog.Match(title), Is.Null);
+        Assert.That(ResaleCatalog.IsHandToolOffer(title), Is.True);
+        Assert.That(ResaleCatalog.IsHandToolOffer(title, categoryPath: new[] { "Bekleidung & Accessoires", "Schuhe" }), Is.False);
+    }
+
+    [TestCase("KNIPEX")]
+    [TestCase("Acme Seitenschneider")]
+    [TestCase("Knipexig Seitenschneider")]
+    [TestCase("KNIPEX Seitenschneidertasche")]
+    [TestCase("Kamera mit KNIPEX Seitenschneider")]
+    [TestCase("Handy with Wera Schraubendreher")]
+    [TestCase("Tasche für KNIPEX Seitenschneider")]
+    [TestCase("KNIPEX Seitenschneider Tasche")]
+    [TestCase("Suche KNIPEX Seitenschneider")]
+    [TestCase("Wera Schraubendreher Reparaturservice")]
+    [TestCase("Handbuch Bahco Rollgabelschlüssel")]
+    [TestCase("KNIPEX Seitenschneider Poster")]
+    public void GenericToolAdmissionRequiresAPhysicalPrimaryToolFromAKnownBrand(string title)
+        => Assert.That(ResaleCatalog.IsHandToolOffer(title), Is.False);
+
     [Test]
     public void ToolReferenceHonorsKnownIncompatibleCategoryAndDoesNotInferContents()
     {

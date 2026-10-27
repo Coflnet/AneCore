@@ -37,6 +37,7 @@ public class KnownProductMatcher
     private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
     private static readonly Regex LegoSetNumber = new(@"^\d{3,7}$", Opts);
     private static readonly Regex LegoCompletenessPercent = new(@"(?<![\p{L}\d])(?:(?<negative>not|nicht|non|pas)\s+)?(?<percent>\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:completo|complete|vollst[äa]ndig)\b", Opts | RegexOptions.IgnoreCase);
+    private static readonly Regex PrimaryHandTool = new(@"^(?:(?:[1-9]\d*\s*(?:x|stuck|stueck|stk)|(?:werkzeugset|toolset|set|satz)(?:\s+mit)?)\s+)*(?<brand>[a-z]+)\s+(?:seitenschneider|schraubendreher|rollgabelschlussel)\b", Opts);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
@@ -218,8 +219,8 @@ public class KnownProductMatcher
         }
     }
 
-    /// <summary>Names a verified hand tool as part of the primary offer, without proving a single body,
-    /// article variant, compatibility or quantity. Sets and related physical parts may contain a reference.</summary>
+    /// <summary>Names a verified hand tool reference or a primary branded tool kind, without proving a single body,
+    /// article variant, compatibility or quantity. Sets and related physical parts may contain a verified reference.</summary>
     public bool HasHandToolReference(string? title, IReadOnlyList<string>? categoryPath = null)
     {
         var normalized = Normalize(title ?? "");
@@ -227,10 +228,17 @@ public class KnownProductMatcher
         // A set may name its contents after "mit"; other products merely including a tool stay separate.
         var setOffer = tokens.TakeWhile(token => !IncludedMarkers.Contains(token))
             .Any(token => token is "set" or "werkzeugset" or "toolset" or "satz" or "kit" or "bundle" or "konvolut" or "sammlung" or "restposten");
-        return FindAliases(tokens).Any(hit =>
+        if (FindAliases(tokens).Any(hit =>
             hit.Entry.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
             && IsCategoryCompatible(hit.Entry.Product, categoryPath)
-            && (setOffer || !tokens.Take(hit.Start).TakeLast(3).Any(IncludedMarkers.Contains)));
+            && (setOffer || !tokens.Take(hit.Start).TakeLast(3).Any(IncludedMarkers.Contains)))) return true;
+
+        // No SKU is needed for an independent offer, but the tool must be the primary item.
+        var primary = PrimaryHandTool.Match(normalized);
+        return primary.Success && !IsAccessory(normalized)
+            && products.Any(product => product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
+                && Normalize(product.Brand) == primary.Groups["brand"].Value
+                && IsCategoryCompatible(product, categoryPath));
     }
 
     /// <summary>
