@@ -20,7 +20,8 @@ public class ProductMarketplaceMappingTests
         var properties = json.RootElement.GetProperty("properties");
         Assert.That(properties.TryGetProperty("platforms", out _), Is.False);
         Assert.That(properties.TryGetProperty("platformsUpdatedAt", out _), Is.False);
-        Assert.That(ProductIndex.MarketplaceSourcesVersion, Is.EqualTo(1));
+        Assert.That(ProductIndex.MarketplaceSourcesPresenceVersion, Is.EqualTo(1));
+        Assert.That(ProductIndex.MarketplaceSourcesVersion, Is.EqualTo(2));
         Assert.That(properties.GetProperty("marketplaceSourcesVersion").GetProperty("type").GetString(), Is.EqualTo("integer"));
         AssertMarketplaceSources(properties);
         Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("marketplaceSources"));
@@ -40,11 +41,13 @@ public class ProductMarketplaceMappingTests
         Assert.That(product.OffersFound, Is.EqualTo(3));
         Assert.That(product.MarketplaceSourcesVersion, Is.Null);
         Assert.That(product.MarketplaceSources, Is.Null);
+        Assert.That(product.ScopedMinPrice, Is.Null);
+        Assert.That(product.ScopedPriceCurrency, Is.Null);
 
         var updated = product with
         {
             MarketplaceSourcesVersion = ProductIndex.MarketplaceSourcesVersion,
-            MarketplaceSources = [new ProductMarketplaceSource("Ebay", "DE"),
+            MarketplaceSources = [new ProductMarketplaceSource("Ebay", "DE", "EUR", 12, 99),
                 new ProductMarketplaceSource("Vinted", "FR"), new ProductMarketplaceSource("Vinted", null)]
         };
         using var source = new MemoryStream();
@@ -57,8 +60,33 @@ public class ProductMarketplaceMappingTests
         Assert.That(restored.OffersFound, Is.EqualTo(product.OffersFound));
     }
 
+    [TestCase(" eur ", "EUR")]
+    [TestCase("gbp", "GBP")]
+    [TestCase("SEK", "SEK")]
+    [TestCase("PLN", "PLN")]
+    [TestCase("ABC", null)]
+    [TestCase("XXX", null)]
+    [TestCase("€", null)]
+    [TestCase("", null)]
+    [TestCase(null, null)]
+    public void NativeCurrencyRequiresAnExplicitKnownCode(string? input, string? expected) =>
+        Assert.That(Coflnet.Ane.NativePriceCurrency.Normalize(input), Is.EqualTo(expected));
+
+    [Test]
+    public void PresenceVersionOneSourceRemainsReadableWithoutPrices()
+    {
+        var client = Client(new InMemoryConnection());
+        using var source = new MemoryStream(Encoding.UTF8.GetBytes("""
+            {"seoId":"v1","marketplaceSourcesVersion":1,"marketplaceSources":[{"platform":"Ebay","country":"DE"}]}
+            """));
+        var product = client.SourceSerializer.Deserialize<ProductDocument>(source);
+        Assert.That(product.MarketplaceSourcesVersion, Is.EqualTo(ProductIndex.MarketplaceSourcesPresenceVersion));
+        Assert.That(product.MarketplaceSources, Is.EqualTo(new[] { new ProductMarketplaceSource("Ebay", "DE") }));
+    }
+
     [TestCase("offers-only")]
     [TestCase("legacy-flat")]
+    [TestCase("presence-v1")]
     [TestCase("complete")]
     public async Task ExistingIndexMigration_RequiresAllMetadataFields_AndPutsOnlyAdditiveMappings(string fixture)
     {
@@ -89,9 +117,12 @@ public class ProductMarketplaceMappingTests
         var sources = properties.GetProperty("marketplaceSources");
         Assert.That(sources.GetProperty("type").GetString(), Is.EqualTo("nested"));
         var fields = sources.GetProperty("properties");
-        Assert.That(fields.EnumerateObject().Select(property => property.Name), Is.EquivalentTo(new[] { "platform", "country" }));
+        Assert.That(fields.EnumerateObject().Select(property => property.Name), Is.EquivalentTo(new[] { "platform", "country", "sourceCurrency", "minPrice", "maxPrice" }));
         Assert.That(fields.GetProperty("platform").GetProperty("type").GetString(), Is.EqualTo("keyword"));
         Assert.That(fields.GetProperty("country").GetProperty("type").GetString(), Is.EqualTo("keyword"));
+        Assert.That(fields.GetProperty("sourceCurrency").GetProperty("type").GetString(), Is.EqualTo("keyword"));
+        Assert.That(fields.GetProperty("minPrice").GetProperty("type").GetString(), Is.EqualTo("double"));
+        Assert.That(fields.GetProperty("maxPrice").GetProperty("type").GetString(), Is.EqualTo("double"));
     }
 
     private static OpenSearchClient Client(IConnection connection) => new(
@@ -119,8 +150,11 @@ public class ProductMarketplaceMappingTests
                 properties += ""","platforms":{"type":"keyword"},"platformsUpdatedAt":{"type":"date"}""";
             if (fixture != "offers-only")
                 properties += ""","marketplaceSources":{"type":"nested","properties":{"platform":{"type":"keyword"},"country":{"type":"keyword"}}}""";
-            if (fixture == "complete")
+            if (fixture is "presence-v1" or "complete")
                 properties += ""","marketplaceSourcesVersion":{"type":"integer"}""";
+            if (fixture == "complete")
+                properties = properties.Replace("\"country\":{\"type\":\"keyword\"}",
+                    "\"country\":{\"type\":\"keyword\"},\"sourceCurrency\":{\"type\":\"keyword\"},\"minPrice\":{\"type\":\"double\"},\"maxPrice\":{\"type\":\"double\"}");
             var response = method == "GET"
                 ? "{\"ane-products-index-000001\":{\"mappings\":{\"properties\":{\"name\":{\"type\":\"text\"}," + properties + "}}}}"
                 : "{\"acknowledged\":true}";

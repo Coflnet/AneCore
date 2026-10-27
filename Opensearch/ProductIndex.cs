@@ -12,7 +12,8 @@ public class ProductIndex(
 {
     public override string IndexName() => "ane_products_index";
 
-    public const int MarketplaceSourcesVersion = 1;
+    public const int MarketplaceSourcesPresenceVersion = 1;
+    public const int MarketplaceSourcesVersion = 2;
 
     protected override string RetentionPolicyId() => "ane_products_retention_policy";
 
@@ -74,7 +75,10 @@ public class ProductIndex(
             .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
             .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                 .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
-                    .Keyword(field => field.Name(n => n.Country))))
+                    .Keyword(field => field.Name(n => n.Country))
+                    .Keyword(field => field.Name(n => n.SourceCurrency))
+                    .Number(field => field.Name(n => n.MinPrice).Type(NumberType.Double))
+                    .Number(field => field.Name(n => n.MaxPrice).Type(NumberType.Double))))
             .Keyword(k => k.Name(n => n.CanonicalSeoId))
             .Keyword(k => k.Name(n => n.RelatedSeoIds))
         );
@@ -108,7 +112,9 @@ public class ProductIndex(
         foreach (var (index, state) in mappings.Indices)
         {
             if (new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }
-                .All(field => state.Mappings?.Properties?.ContainsKey(field) == true))
+                .All(field => state.Mappings?.Properties?.ContainsKey(field) == true)
+                && state.Mappings?.Properties?["marketplaceSources"] is INestedProperty sources
+                && new[] { "sourceCurrency", "minPrice", "maxPrice" }.All(field => sources.Properties?.ContainsKey(field) == true))
                 continue;
             var response = await client.Indices.PutMappingAsync<ProductDocument>(m => m
                 .Index(index)
@@ -117,7 +123,10 @@ public class ProductIndex(
                     .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
                     .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                         .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
-                            .Keyword(field => field.Name(n => n.Country))))),
+                            .Keyword(field => field.Name(n => n.Country))
+                            .Keyword(field => field.Name(n => n.SourceCurrency))
+                            .Number(field => field.Name(n => n.MinPrice).Type(NumberType.Double))
+                            .Number(field => field.Name(n => n.MaxPrice).Type(NumberType.Double))))),
                 stoppingToken);
             if (response.IsValid)
                 continue;
@@ -211,10 +220,13 @@ public record ProductDocument(
     string? CanonicalSeoId,
     List<string> RelatedSeoIds,
     int? MarketplaceSourcesVersion = null,
-    List<ProductMarketplaceSource>? MarketplaceSources = null
+    List<ProductMarketplaceSource>? MarketplaceSources = null,
+    double? ScopedMinPrice = null,
+    string? ScopedPriceCurrency = null
 );
 
-public record ProductMarketplaceSource(string Platform, string? Country);
+public record ProductMarketplaceSource(string Platform, string? Country, string? SourceCurrency = null,
+    double? MinPrice = null, double? MaxPrice = null);
 
 public record ProductAttribute(
     string Key,
