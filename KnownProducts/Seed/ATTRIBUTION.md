@@ -354,3 +354,20 @@ Per-set URLs and locales are retained in
 `tools/catalog-import/proofs/lego-recommended-age-2026-10-27.json`.
 This recommended builder age asserts no used-offer completeness or contents and changes no
 set identity, alias, theme or piece-count schema. No prices or marketing descriptions are copied.
+
+## Additional KNIPEX cutter bodies (2026-10-27, R31)
+
+`resale-goods.json` adds 30 previously absent exact articles under
+`seed:manufacturer-verified-2026-10-27-r31`: 19 diagonal cutters and 11 snipe-nose
+side-cutting pliers. Article/explicit length rows come from the official
+[diagonal-cutter family](https://www.knipex.com/products/cutting-pliers/diagonal-cutters)
+and [combination/multifunction family](https://www.knipex.com/en-uk/products/combination-and-multifunctional-pliers/industry)
+results. Full selected rows and corroborating product URLs are recorded in
+`tools/catalog-import/proofs/hand-tools-r31-manufacturer-2026-10-27.json`.
+Direct family opens returned403/cache miss; evidence is the manufacturer's indexed
+variant data, without a claimed fresh successful origin download. Names are exact body
+titles plus full articles and also indexed aliases. Only existing tool/article/length
+attributes are added. Handles, finishes and jaw variants remain separate by article;
+no fit, package quantity, contents, prices or cutting capacities are inferred.
+SB/BK packaging does not imply a different tool. Unverified S8 scope remains unresolved;
+explicit sets and tethered/accessory scopes are not promoted to a single body.

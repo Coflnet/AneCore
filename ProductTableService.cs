@@ -447,6 +447,26 @@ public class ProductTableService
             await session.ExecuteAsync(new SimpleStatement("DELETE attributes['game_language'] FROM products WHERE seo_id = ?", seoId));
     }
 
+    /// <summary>Fills only missing explicit vinyl-offer format while the observed identity and name are unchanged.</summary>
+    public async Task<bool> TryFillVinylOfferFormatAsync(Product expected, string format, CancellationToken ct = default)
+    {
+        var rows = await session.ExecuteAsync(BuildVinylOfferFormatStatement(expected, format,
+            ProductDataRetention.GetProductTtlSeconds(expected))).WaitAsync(ct);
+        return rows.FirstOrDefault()?.GetValue<bool>("[applied]") == true;
+    }
+
+    public static SimpleStatement BuildVinylOfferFormatStatement(Product expected, string format, int ttlSeconds)
+    {
+        if (format is not ("LP" or "2LP" or "3LP") || ttlSeconds <= 0
+            || expected.IdentifierType != "vinyl_offer" || string.IsNullOrWhiteSpace(expected.IdentifierValue)
+            || !string.IsNullOrEmpty(expected.CanonicalSeoId) || expected.Attributes?.GetValueOrDefault("product_kind") != "vinyl_offer"
+            || expected.Attributes.ContainsKey("format"))
+            throw new ArgumentException("Only an unchanged vinyl offer with missing explicit format can be enriched");
+        return new SimpleStatement(
+            $"UPDATE products USING TTL {ttlSeconds} SET attributes['format'] = ? WHERE seo_id = ? IF name = ? AND identifier_type = ? AND identifier_value = ? AND canonical_seo_id = ? AND attributes['product_kind'] = ? AND attributes['format'] = null",
+            format, expected.SeoId, expected.Name, expected.IdentifierType, expected.IdentifierValue, expected.CanonicalSeoId, expected.Attributes["product_kind"]);
+    }
+
     /// <summary>
     /// Writes only the given attribute cells of a product (a targeted UPDATE, so a concurrent whole-row write of other fields is not overwritten): <paramref name="set"/> is merged into <c>attributes</c>,
     /// the keys in <paramref name="remove"/> are deleted from it. Used for catalogue attributes (phone specs) that are computed from brand and model, not from a listing.

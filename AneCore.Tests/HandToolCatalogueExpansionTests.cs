@@ -35,6 +35,63 @@ public class HandToolCatalogueExpansionTests
         }
     }
 
+    [Test]
+    public void AdditionalCutterBodiesResolveEveryManufacturerNameAndArticleThroughAdmission()
+    {
+        var additions = Products.Where(p => p.Source == "seed:manufacturer-verified-2026-10-27-r31").ToList();
+        Assert.That(additions, Has.Count.EqualTo(30));
+        foreach (var product in additions)
+        {
+            Assert.That(product.PossibleAttributes["product_kind"], Is.EquivalentTo(new[] { "hand_tool" }));
+            Assert.That(product.PossibleAttributes["article_number"], Is.EquivalentTo(new[] { product.Model }));
+            Assert.That(product.PossibleAttributes["length_mm"], Has.Count.EqualTo(1));
+            Assert.That(product.Aliases, Does.Contain(product.Name));
+            foreach (var alias in product.Aliases)
+            {
+                Assert.That(Matcher.Match(alias)?.Id, Is.EqualTo(product.Id), alias);
+                Assert.That(ResaleCatalog.Match(alias)?.Id, Is.EqualTo(product.Id), alias);
+                Assert.That(ResaleCatalog.IsHandToolOffer(alias), Is.True, alias);
+            }
+        }
+    }
+
+    [TestCase("KNIPEX 70 01 110", "knipex-7001110", "110")]
+    [TestCase("KNIPEX 70 02 180", "knipex-7002180", "180")]
+    [TestCase("KNIPEX 70 05 160", "knipex-7005160", "160")]
+    [TestCase("KNIPEX 70 06 160", "knipex-7006160", "160")]
+    [TestCase("KNIPEX 70 07 160", "knipex-7007160", "160")]
+    [TestCase("KNIPEX 70 11 110", "knipex-7011110", "110")]
+    [TestCase("KNIPEX 70 15 110", "knipex-7015110", "110")]
+    [TestCase("KNIPEX 70 26 160", "knipex-7026160", "160")]
+    [TestCase("KNIPEX 26 11 200", "knipex-2611200", "200")]
+    [TestCase("KNIPEX 26 21 200", "knipex-2621200", "200")]
+    [TestCase("KNIPEX 26 26 200", "knipex-2626200", "200")]
+    public void CutterLengthGripAndJawArticlesRemainDistinct(string title, string id, string length)
+    {
+        var product = ResaleCatalog.Match(title)!;
+        Assert.That(product, Is.Not.Null);
+        Assert.That(product.Id, Is.EqualTo(id));
+        Assert.That(product.PossibleAttributes["length_mm"], Is.EquivalentTo(new[] { length }));
+    }
+
+    [TestCase("Set KNIPEX 70 06 160")]
+    [TestCase("KNIPEX 26 11 200 und KNIPEX 26 21 200")]
+    [TestCase("KNIPEX 70 06 160 T")]
+    [TestCase("KNIPEX 26 26 200 T")]
+    [TestCase("KNIPEX 70 02 160 S8")]
+    public void CutterSetsAndUnverifiedVariantScopesStayPhysicalOffersWithoutClaimingOneBody(string title)
+    {
+        Assert.That(ResaleCatalog.Match(title), Is.Null);
+        Assert.That(ResaleCatalog.IsHandToolOffer(title), Is.True);
+    }
+
+    [TestCase("KNIPEX Diagonal Cutter")]
+    [TestCase("KNIPEX Snipe Nose Side Cutting Pliers")]
+    [TestCase("KNIPEX 70 06 161")]
+    [TestCase("KNIPEX 26 11 201")]
+    public void MissingOrUnknownCutterArticleDoesNotSelectANeighbour(string title)
+        => Assert.That(ResaleCatalog.Match(title), Is.Null);
+
     [TestCase("KNIPEX Cobra")]
     [TestCase("KNIPEX Zangenschlüssel")]
     [TestCase("Wera Zyklop")]

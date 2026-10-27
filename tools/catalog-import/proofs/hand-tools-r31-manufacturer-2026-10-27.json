@@ -1,0 +1,302 @@
+{
+  "checked_at": "2026-10-27",
+  "source": "seed:manufacturer-verified-2026-10-27-r31",
+  "scope": "Thirty new complete KNIPEX bodies, no catalogue duplicates. Exact full article, manufacturer body title and explicit family-row overall length only.",
+  "sources": {
+    "diagonal": {
+      "url": "https://www.knipex.com/products/cutting-pliers/diagonal-cutters",
+      "method": "Public manufacturer search-indexed product-family article rows; explicit Length field for each selected article. Direct open returned403; no successful fresh origin fetch claimed.",
+      "models": [
+        "70 01 110",
+        "70 01 180",
+        "70 02 125",
+        "70 02 140",
+        "70 02 160",
+        "70 02 180",
+        "70 05 125",
+        "70 05 140",
+        "70 05 160",
+        "70 05 180",
+        "70 06 125",
+        "70 06 140",
+        "70 06 160",
+        "70 06 180",
+        "70 07 160",
+        "70 07 180",
+        "70 11 110",
+        "70 15 110",
+        "70 26 160"
+      ],
+      "lengths_mm": [
+        110,
+        180,
+        125,
+        140,
+        160,
+        180,
+        125,
+        140,
+        160,
+        180,
+        125,
+        140,
+        160,
+        180,
+        160,
+        180,
+        110,
+        110,
+        160
+      ],
+      "retrieved_at": "2026-10-27"
+    },
+    "snipe": {
+      "url": "https://www.knipex.com/en-uk/products/combination-and-multifunctional-pliers/industry",
+      "method": "Public manufacturer search-indexed family variation rows; explicit Length200mm for each selected article. Direct open cache miss; no successful fresh origin fetch claimed.",
+      "models": [
+        "26 11 200",
+        "26 12 200",
+        "26 13 200",
+        "26 15 200",
+        "26 16 200",
+        "26 17 200",
+        "26 21 200",
+        "26 22 200",
+        "26 25 200",
+        "26 26 200",
+        "26 27 200"
+      ],
+      "length_mm": 200,
+      "retrieved_at": "2026-10-27"
+    },
+    "snipe_body": {
+      "url": "https://www.knipex.com/products/combination-and-multifunctional-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/2611200",
+      "method": "Manufacturer indexed product detail corroborates full body name,26 11 200 and200mm dimension.",
+      "retrieved_at": "2026-10-27"
+    },
+    "diagonal_body": {
+      "url": "https://www.knipex.com/en-uk/products/cutting-pliers/diagonal-cutters/diagonal-cutters/7002160",
+      "method": "Manufacturer indexed product detail corroborates full body name,70 02 160 and160mm dimension.",
+      "retrieved_at": "2026-10-27"
+    }
+  },
+  "products": [
+    {
+      "id": "knipex-7001110",
+      "article_number": "70 01 110",
+      "length_mm": 110,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 01 110; Length: 110 mm"
+    },
+    {
+      "id": "knipex-7001180",
+      "article_number": "70 01 180",
+      "length_mm": 180,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 01 180; Length: 180 mm"
+    },
+    {
+      "id": "knipex-7002125",
+      "article_number": "70 02 125",
+      "length_mm": 125,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 02 125; Length: 125 mm"
+    },
+    {
+      "id": "knipex-7002140",
+      "article_number": "70 02 140",
+      "length_mm": 140,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 02 140; Length: 140 mm"
+    },
+    {
+      "id": "knipex-7002160",
+      "article_number": "70 02 160",
+      "length_mm": 160,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 02 160; Length: 160 mm"
+    },
+    {
+      "id": "knipex-7002180",
+      "article_number": "70 02 180",
+      "length_mm": 180,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 02 180; Length: 180 mm"
+    },
+    {
+      "id": "knipex-7005125",
+      "article_number": "70 05 125",
+      "length_mm": 125,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 05 125; Length: 125 mm"
+    },
+    {
+      "id": "knipex-7005140",
+      "article_number": "70 05 140",
+      "length_mm": 140,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 05 140; Length: 140 mm"
+    },
+    {
+      "id": "knipex-7005160",
+      "article_number": "70 05 160",
+      "length_mm": 160,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 05 160; Length: 160 mm"
+    },
+    {
+      "id": "knipex-7005180",
+      "article_number": "70 05 180",
+      "length_mm": 180,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 05 180; Length: 180 mm"
+    },
+    {
+      "id": "knipex-7006125",
+      "article_number": "70 06 125",
+      "length_mm": 125,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 06 125; Length: 125 mm"
+    },
+    {
+      "id": "knipex-7006140",
+      "article_number": "70 06 140",
+      "length_mm": 140,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 06 140; Length: 140 mm"
+    },
+    {
+      "id": "knipex-7006160",
+      "article_number": "70 06 160",
+      "length_mm": 160,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 06 160; Length: 160 mm"
+    },
+    {
+      "id": "knipex-7006180",
+      "article_number": "70 06 180",
+      "length_mm": 180,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 06 180; Length: 180 mm"
+    },
+    {
+      "id": "knipex-7007160",
+      "article_number": "70 07 160",
+      "length_mm": 160,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 07 160; Length: 160 mm"
+    },
+    {
+      "id": "knipex-7007180",
+      "article_number": "70 07 180",
+      "length_mm": 180,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 07 180; Length: 180 mm"
+    },
+    {
+      "id": "knipex-7011110",
+      "article_number": "70 11 110",
+      "length_mm": 110,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 11 110; Length: 110 mm"
+    },
+    {
+      "id": "knipex-7015110",
+      "article_number": "70 15 110",
+      "length_mm": 110,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 15 110; Length: 110 mm"
+    },
+    {
+      "id": "knipex-7026160",
+      "article_number": "70 26 160",
+      "length_mm": 160,
+      "source_ref": "diagonal",
+      "source_row_fact": "70 26 160; Length: 160 mm"
+    },
+    {
+      "id": "knipex-2611200",
+      "article_number": "26 11 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 11 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2612200",
+      "article_number": "26 12 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 12 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2613200",
+      "article_number": "26 13 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 13 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2615200",
+      "article_number": "26 15 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 15 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2616200",
+      "article_number": "26 16 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 16 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2617200",
+      "article_number": "26 17 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 17 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2621200",
+      "article_number": "26 21 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 21 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2622200",
+      "article_number": "26 22 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 22 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2625200",
+      "article_number": "26 25 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 25 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2626200",
+      "article_number": "26 26 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 26 200; Length: 200 mm"
+    },
+    {
+      "id": "knipex-2627200",
+      "article_number": "26 27 200",
+      "length_mm": 200,
+      "source_ref": "snipe",
+      "source_row_fact": "26 27 200; Length: 200 mm"
+    }
+  ],
+  "limits": [
+    "Handle, finish, jaw angle and length variants retain full seven-digit article identity; no different articles are merged.",
+    "No unsupported keys: existing product_kind/tool_type/article_number/length_mm only. snipe_nose_side_cutting_pliers is a descriptive string in existing tool_type field, not a new schema key.",
+    "No dimensions other than explicit length, package quantity, compatibility, price, cutting capacity or manufacture date inferred.",
+    "No suffixed packaging SKU aliases are added. Only exact base article, compact article and manufacturer body-name aliases are authored; no hypothetical SB/BK articles or order quantities inferred.",
+    "T tethered/S02/V01 scopes and unverified limited S8 promotional scope are kept outside exact single-body matching via seed exclusions; reference admission remains available for physical tool offers. S8 body equivalence is unresolved; no claim packaging makes a different physical body."
+  ]
+}

@@ -4412,6 +4412,1296 @@
         "9720"
       ],
       "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "knipex-7001110",
+      "brand": "KNIPEX",
+      "model": "70 01 110",
+      "name": "KNIPEX Diagonal Cutter 70 01 110",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 01 110",
+        "KNIPEX 7001110",
+        "KNIPEX Diagonal Cutter 70 01 110"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 01 110"
+        ],
+        "length_mm": [
+          "110"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7001180",
+      "brand": "KNIPEX",
+      "model": "70 01 180",
+      "name": "KNIPEX Diagonal Cutter 70 01 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 01 180",
+        "KNIPEX 7001180",
+        "KNIPEX Diagonal Cutter 70 01 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 01 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7002125",
+      "brand": "KNIPEX",
+      "model": "70 02 125",
+      "name": "KNIPEX Diagonal Cutter 70 02 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 02 125",
+        "KNIPEX 7002125",
+        "KNIPEX Diagonal Cutter 70 02 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 02 125"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7002140",
+      "brand": "KNIPEX",
+      "model": "70 02 140",
+      "name": "KNIPEX Diagonal Cutter 70 02 140",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 02 140",
+        "KNIPEX 7002140",
+        "KNIPEX Diagonal Cutter 70 02 140"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 02 140"
+        ],
+        "length_mm": [
+          "140"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7002160",
+      "brand": "KNIPEX",
+      "model": "70 02 160",
+      "name": "KNIPEX Diagonal Cutter 70 02 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 02 160",
+        "KNIPEX 7002160",
+        "KNIPEX Diagonal Cutter 70 02 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 02 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7002180",
+      "brand": "KNIPEX",
+      "model": "70 02 180",
+      "name": "KNIPEX Diagonal Cutter 70 02 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 02 180",
+        "KNIPEX 7002180",
+        "KNIPEX Diagonal Cutter 70 02 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 02 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7005125",
+      "brand": "KNIPEX",
+      "model": "70 05 125",
+      "name": "KNIPEX Diagonal Cutter 70 05 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 05 125",
+        "KNIPEX 7005125",
+        "KNIPEX Diagonal Cutter 70 05 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 05 125"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7005140",
+      "brand": "KNIPEX",
+      "model": "70 05 140",
+      "name": "KNIPEX Diagonal Cutter 70 05 140",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 05 140",
+        "KNIPEX 7005140",
+        "KNIPEX Diagonal Cutter 70 05 140"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 05 140"
+        ],
+        "length_mm": [
+          "140"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7005160",
+      "brand": "KNIPEX",
+      "model": "70 05 160",
+      "name": "KNIPEX Diagonal Cutter 70 05 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 05 160",
+        "KNIPEX 7005160",
+        "KNIPEX Diagonal Cutter 70 05 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 05 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7005180",
+      "brand": "KNIPEX",
+      "model": "70 05 180",
+      "name": "KNIPEX Diagonal Cutter 70 05 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 05 180",
+        "KNIPEX 7005180",
+        "KNIPEX Diagonal Cutter 70 05 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 05 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7006125",
+      "brand": "KNIPEX",
+      "model": "70 06 125",
+      "name": "KNIPEX Diagonal Cutter 70 06 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 06 125",
+        "KNIPEX 7006125",
+        "KNIPEX Diagonal Cutter 70 06 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 06 125"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7006140",
+      "brand": "KNIPEX",
+      "model": "70 06 140",
+      "name": "KNIPEX Diagonal Cutter 70 06 140",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 06 140",
+        "KNIPEX 7006140",
+        "KNIPEX Diagonal Cutter 70 06 140"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 06 140"
+        ],
+        "length_mm": [
+          "140"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7006160",
+      "brand": "KNIPEX",
+      "model": "70 06 160",
+      "name": "KNIPEX Diagonal Cutter 70 06 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 06 160",
+        "KNIPEX 7006160",
+        "KNIPEX Diagonal Cutter 70 06 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 06 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7006180",
+      "brand": "KNIPEX",
+      "model": "70 06 180",
+      "name": "KNIPEX Diagonal Cutter 70 06 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 06 180",
+        "KNIPEX 7006180",
+        "KNIPEX Diagonal Cutter 70 06 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 06 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7007160",
+      "brand": "KNIPEX",
+      "model": "70 07 160",
+      "name": "KNIPEX Diagonal Cutter 70 07 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 07 160",
+        "KNIPEX 7007160",
+        "KNIPEX Diagonal Cutter 70 07 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 07 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7007180",
+      "brand": "KNIPEX",
+      "model": "70 07 180",
+      "name": "KNIPEX Diagonal Cutter 70 07 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 07 180",
+        "KNIPEX 7007180",
+        "KNIPEX Diagonal Cutter 70 07 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 07 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7011110",
+      "brand": "KNIPEX",
+      "model": "70 11 110",
+      "name": "KNIPEX Diagonal Cutter 70 11 110",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 11 110",
+        "KNIPEX 7011110",
+        "KNIPEX Diagonal Cutter 70 11 110"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 11 110"
+        ],
+        "length_mm": [
+          "110"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7015110",
+      "brand": "KNIPEX",
+      "model": "70 15 110",
+      "name": "KNIPEX Diagonal Cutter 70 15 110",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 15 110",
+        "KNIPEX 7015110",
+        "KNIPEX Diagonal Cutter 70 15 110"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 15 110"
+        ],
+        "length_mm": [
+          "110"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-7026160",
+      "brand": "KNIPEX",
+      "model": "70 26 160",
+      "name": "KNIPEX Diagonal Cutter 70 26 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 70 26 160",
+        "KNIPEX 7026160",
+        "KNIPEX Diagonal Cutter 70 26 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "diagonal_cutter"
+        ],
+        "article_number": [
+          "70 26 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2611200",
+      "brand": "KNIPEX",
+      "model": "26 11 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 11 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 11 200",
+        "KNIPEX 2611200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 11 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 11 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2612200",
+      "brand": "KNIPEX",
+      "model": "26 12 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 12 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 12 200",
+        "KNIPEX 2612200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 12 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 12 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2613200",
+      "brand": "KNIPEX",
+      "model": "26 13 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 13 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 13 200",
+        "KNIPEX 2613200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 13 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 13 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2615200",
+      "brand": "KNIPEX",
+      "model": "26 15 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 15 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 15 200",
+        "KNIPEX 2615200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 15 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 15 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2616200",
+      "brand": "KNIPEX",
+      "model": "26 16 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 16 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 16 200",
+        "KNIPEX 2616200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 16 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 16 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2617200",
+      "brand": "KNIPEX",
+      "model": "26 17 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 17 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 17 200",
+        "KNIPEX 2617200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 17 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 17 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2621200",
+      "brand": "KNIPEX",
+      "model": "26 21 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 21 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 21 200",
+        "KNIPEX 2621200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 21 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 21 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2622200",
+      "brand": "KNIPEX",
+      "model": "26 22 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 22 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 22 200",
+        "KNIPEX 2622200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 22 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 22 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2625200",
+      "brand": "KNIPEX",
+      "model": "26 25 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 25 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 25 200",
+        "KNIPEX 2625200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 25 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 25 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2626200",
+      "brand": "KNIPEX",
+      "model": "26 26 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 26 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 26 200",
+        "KNIPEX 2626200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 26 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 26 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "knipex-2627200",
+      "brand": "KNIPEX",
+      "model": "26 27 200",
+      "name": "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 27 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 26 27 200",
+        "KNIPEX 2627200",
+        "KNIPEX Snipe Nose Side Cutting Pliers (Stork Beak Pliers) 26 27 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "snipe_nose_side_cutting_pliers"
+        ],
+        "article_number": [
+          "26 27 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "s8",
+        "s02",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27-r31"
     }
   ]
 }
