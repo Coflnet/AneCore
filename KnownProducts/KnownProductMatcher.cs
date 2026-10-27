@@ -36,6 +36,7 @@ public class KnownProductMatcher
     private static readonly Regex LegoDisplayExtra = new(@"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts);
     private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
     private static readonly Regex LegoSetNumber = new(@"^\d{3,7}$", Opts);
+    private static readonly Regex LegoCompletenessPercent = new(@"(?<![\p{L}\d])(?:(?<negative>not|nicht|non|pas)\s+)?(?<percent>\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:completo|complete|vollst[äa]ndig)\b", Opts | RegexOptions.IgnoreCase);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
@@ -258,7 +259,7 @@ public class KnownProductMatcher
                      || LegoExtraWords.Matches(normalizedTitle)
                          .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
                      // A verified full alias can explain vehicle model/year numbers inside its own span.
-                     || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model)
+                     || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model, title)
                      // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.
                      || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts & ~RegexOptions.Compiled)))
                     continue;
@@ -290,12 +291,22 @@ public class KnownProductMatcher
         return candidate;
     }
 
-    private static bool HasOtherLegoNumber(string[] tokens, int start, int length, string model)
+    private static bool HasOtherLegoNumber(string[] tokens, int start, int length, string model, string title)
     {
+        var completeHundreds = 0;
+        if (title.Contains('%'))
+        {
+            var completeness = LegoCompletenessPercent.Matches(title);
+            if (completeness.Any(m => m.Groups["negative"].Success || m.Groups["percent"].Value != "100")) return true;
+            completeHundreds = completeness.Count;
+        }
         for (var position = 0; position < tokens.Length; position++)
             if ((position < start || position >= start + length)
                 && LegoSetNumber.IsMatch(tokens[position]) && tokens[position] != model)
+            {
+                if (tokens[position] == "100" && completeHundreds-- > 0) continue;
                 return true;
+            }
         return false;
     }
 
@@ -384,12 +395,13 @@ public class KnownProductMatcher
         return false;
     }
 
-    /// <summary>Reject excluded model suffixes; tool part nouns may occur anywhere unless included with the machine.</summary>
+    /// <summary>Reject excluded model suffixes; scoped tool/turntable parts may occur anywhere unless included with the device.</summary>
     private static bool IsExcluded(KnownProduct product, string[] titleTokens, int aliasStart, int aliasLength)
     {
         if (product.ExcludeTerms.Count == 0)
             return false;
-        if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true)
+        if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true
+            || product.PossibleAttributes.GetValueOrDefault("device_type")?.Contains("turntable") == true)
         {
             var title = string.Join(' ', titleTokens);
             var position = 0;

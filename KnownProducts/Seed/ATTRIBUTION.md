@@ -300,3 +300,30 @@ models/years from other sets. No name-only aliases, inferred attributes, descrip
 are copied. All 33 numbers occur exactly once in the existing pinned reused-number veto
 (SHA-256 `877c7b7b0c86a86cd9d334c96c0932163d948244bc04f7da38dfe90cd2657fed`);
 that input supplies no product metadata.
+
+## Turntable model identities (2026-10-27)
+
+`turntables.json` adds 41 exact complete-device identities: eight Dual CS models,
+12 Thorens TD models and 21 Technics SL models, including older SL-1200 generations.
+The factual model names were checked against the official [Dual product index](https://dual.de/produkte/)
+and [support index](https://dual.de/en/service-support/),
+[Thorens turntable index](https://www.thorens.com/en/items/products/turntables.html),
+[Technics comparison table](https://www.technics.com/content/dam/Panasonic/technics-nz/en/PDF/Technics-Turntable-Comparison.pdf),
+[SL-100C operating instructions](https://www.technics.com/content/dam/Panasonic/technics-au/en/pdf/Operating-Instructions-SL-100CEB-K.pdf)
+and [Technics heritage gallery](https://www.technics.com/global/home/sl1200/50th-anniversary.html).
+The grouped exact model/source manifest is `tools/catalog-import/proofs/turntables-manufacturer-2026-10-27.json`;
+`python3 tools/catalog-import/expand_turntables.py --check` reproduces and validates the seed without network access.
+Only `device_type=turntable` is asserted. No cartridge, fitted tonearm, colour, production year,
+compatibility, condition, serviceability or technical specifications are inferred. All aliases require
+the brand and complete model; punctuation/letter-digit spacing is handled by the existing matcher.
+Existing sibling-prefix exclusion generation distinguishes SL-1200 generations. No manufacturer
+marketing descriptions or images are copied.
+The Technics comparison table was available in the manufacturer's search-indexed result;
+direct PDF open returned 404 during primary review, so no fresh origin HTTP200 is claimed.
+The per-product part exclusions cover belt/stylus replacements, cartridges, tonearms,
+platters, headshells and dust covers, scoped to complete turntable identities. The
+[official Dual CS329 spare list](https://shop.dual.de/en/spare-parts/cs-329/) verifies
+these part types; this creates no cross-model fit or compatibility assertion.
+The existing included-extra check preserves complete turntables offered with these parts.
+These exclusions follow seven demonstrated matcher false joins in the pre-fix controls;
+they add no global accessory words or product-category heuristics.

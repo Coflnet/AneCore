@@ -1,0 +1,1488 @@
+{
+  "products": [
+    {
+      "id": "dual-cs-329",
+      "brand": "Dual",
+      "model": "CS 329",
+      "name": "Dual CS 329",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 329"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-418",
+      "brand": "Dual",
+      "model": "CS 418",
+      "name": "Dual CS 418",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 418"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-429",
+      "brand": "Dual",
+      "model": "CS 429",
+      "name": "Dual CS 429",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 429"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-518",
+      "brand": "Dual",
+      "model": "CS 518",
+      "name": "Dual CS 518",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 518"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-529",
+      "brand": "Dual",
+      "model": "CS 529",
+      "name": "Dual CS 529",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 529"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-618q",
+      "brand": "Dual",
+      "model": "CS 618Q",
+      "name": "Dual CS 618Q",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 618Q"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-629q",
+      "brand": "Dual",
+      "model": "CS 629Q",
+      "name": "Dual CS 629Q",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 629Q"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "dual-cs-718q",
+      "brand": "Dual",
+      "model": "CS 718Q",
+      "name": "Dual CS 718Q",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Dual CS 718Q"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1000r",
+      "brand": "Technics",
+      "model": "SL-1000R",
+      "name": "Technics SL-1000R",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1000R"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-100c",
+      "brand": "Technics",
+      "model": "SL-100C",
+      "name": "Technics SL-100C",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-100C"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200",
+      "brand": "Technics",
+      "model": "SL-1200",
+      "name": "Technics SL-1200",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "g",
+        "gae",
+        "gr",
+        "headshell",
+        "ltd",
+        "mk",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200g",
+      "brand": "Technics",
+      "model": "SL-1200G",
+      "name": "Technics SL-1200G",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200G"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200gae",
+      "brand": "Technics",
+      "model": "SL-1200GAE",
+      "name": "Technics SL-1200GAE",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200GAE"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200gr",
+      "brand": "Technics",
+      "model": "SL-1200GR",
+      "name": "Technics SL-1200GR",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200GR"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200gr2",
+      "brand": "Technics",
+      "model": "SL-1200GR2",
+      "name": "Technics SL-1200GR2",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200GR2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200ltd",
+      "brand": "Technics",
+      "model": "SL-1200LTD",
+      "name": "Technics SL-1200LTD",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200LTD"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk2",
+      "brand": "Technics",
+      "model": "SL-1200MK2",
+      "name": "Technics SL-1200MK2",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk3",
+      "brand": "Technics",
+      "model": "SL-1200MK3",
+      "name": "Technics SL-1200MK3",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "d",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk3d",
+      "brand": "Technics",
+      "model": "SL-1200MK3D",
+      "name": "Technics SL-1200MK3D",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK3D"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk5",
+      "brand": "Technics",
+      "model": "SL-1200MK5",
+      "name": "Technics SL-1200MK5",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK5"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "g",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk5g",
+      "brand": "Technics",
+      "model": "SL-1200MK5G",
+      "name": "Technics SL-1200MK5G",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK5G"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1200mk7",
+      "brand": "Technics",
+      "model": "SL-1200MK7",
+      "name": "Technics SL-1200MK7",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1200MK7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1210g",
+      "brand": "Technics",
+      "model": "SL-1210G",
+      "name": "Technics SL-1210G",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1210G"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1210gae",
+      "brand": "Technics",
+      "model": "SL-1210GAE",
+      "name": "Technics SL-1210GAE",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1210GAE"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1210gr2",
+      "brand": "Technics",
+      "model": "SL-1210GR2",
+      "name": "Technics SL-1210GR2",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1210GR2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1210mk7",
+      "brand": "Technics",
+      "model": "SL-1210MK7",
+      "name": "Technics SL-1210MK7",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1210MK7"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1300g",
+      "brand": "Technics",
+      "model": "SL-1300G",
+      "name": "Technics SL-1300G",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1300G"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-1500c",
+      "brand": "Technics",
+      "model": "SL-1500C",
+      "name": "Technics SL-1500C",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-1500C"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "technics-sl-40cbt",
+      "brand": "Technics",
+      "model": "SL-40CBT",
+      "name": "Technics SL-40CBT",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Technics SL-40CBT"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-101-a",
+      "brand": "Thorens",
+      "model": "TD 101 A",
+      "name": "Thorens TD 101 A",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 101 A"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-102-a",
+      "brand": "Thorens",
+      "model": "TD 102 A",
+      "name": "Thorens TD 102 A",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 102 A"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-124-dd",
+      "brand": "Thorens",
+      "model": "TD 124 DD",
+      "name": "Thorens TD 124 DD",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 124 DD"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-1500",
+      "brand": "Thorens",
+      "model": "TD 1500",
+      "name": "Thorens TD 1500",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 1500"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-1600",
+      "brand": "Thorens",
+      "model": "TD 1600",
+      "name": "Thorens TD 1600",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 1600"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-1601",
+      "brand": "Thorens",
+      "model": "TD 1601",
+      "name": "Thorens TD 1601",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 1601"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-201",
+      "brand": "Thorens",
+      "model": "TD 201",
+      "name": "Thorens TD 201",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 201"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-202",
+      "brand": "Thorens",
+      "model": "TD 202",
+      "name": "Thorens TD 202",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 202"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-204",
+      "brand": "Thorens",
+      "model": "TD 204",
+      "name": "Thorens TD 204",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 204"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-402-dd",
+      "brand": "Thorens",
+      "model": "TD 402 DD",
+      "name": "Thorens TD 402 DD",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 402 DD"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-403-dd",
+      "brand": "Thorens",
+      "model": "TD 403 DD",
+      "name": "Thorens TD 403 DD",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 403 DD"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "thorens-td-404-dd",
+      "brand": "Thorens",
+      "model": "TD 404 DD",
+      "name": "Thorens TD 404 DD",
+      "categories": [
+        "Elektronik",
+        "Audio",
+        "Audioplayer & -rekorder",
+        "Plattenspieler"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Thorens TD 404 DD"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "turntable"
+        ]
+      },
+      "excludeTerms": [
+        "belt",
+        "cartridge",
+        "ersatznadel",
+        "ersatzriemen",
+        "headshell",
+        "nadel",
+        "plattenteller",
+        "riemen",
+        "staubschutzhaube",
+        "stylus",
+        "tonabnehmer",
+        "tonarm"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-27"
+    }
+  ]
+}

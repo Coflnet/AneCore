@@ -68,6 +68,19 @@ public class KnownProductLegoCatalogTests
         Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(expected));
     }
 
+    [TestCase("100% completo", true)]
+    [TestCase("100% Completo", true)]
+    [TestCase("100% COMPLETE", true)]
+    [TestCase("100% VOLLSTÄNDIG", true)]
+    [TestCase("80% Completo", false)]
+    [TestCase("99% COMPLETE", false)]
+    [TestCase("not 100% COMPLETE", false)]
+    public void DirectCatalogueMatchingRespectsCompletenessBeforeFoldingCase(string claim, bool complete)
+    {
+        var product = Matcher.Match($"LEGO 75895 1974 Porsche 911 Turbo 3.0 ({claim})");
+        Assert.That(product?.Id, Is.EqualTo(complete ? "lego-75895" : null));
+    }
+
     [TestCase("LEGO 75893 2018 Dodge Challenger SRT Demon and 1970 Dodge Charger R/T charger")]
     [TestCase("charger LEGO 75893 2018 Dodge Challenger SRT Demon and 1970 Dodge Charger R/T")]
     [TestCase("LEGO 75893 2018 Dodge Challenger SRT Demon and 1970 Dodge Charger R/T Hülle")]

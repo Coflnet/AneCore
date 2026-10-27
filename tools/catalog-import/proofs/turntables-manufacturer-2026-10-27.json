@@ -1,0 +1,99 @@
+{
+  "checked_at": "2026-10-27",
+  "method": "Reviewed official manufacturer product indices, model comparison, manual and heritage gallery via web retrieval. Only factual model identities and device type transcribed; no descriptions/specifications copied.",
+  "scope": "Complete turntables; no components, compatibility, dates, dimensions, speed/cartridge/colour variants, or claim of serviceability. Thorens TD1600/1601 are model families regardless of fitted tonearm, not tonearm products.",
+  "groups": [
+    {
+      "brand": "Dual",
+      "source_url": "https://dual.de/produkte/",
+      "models": [
+        "CS 329",
+        "CS 418",
+        "CS 429",
+        "CS 518",
+        "CS 529",
+        "CS 618Q",
+        "CS 629Q",
+        "CS 718Q"
+      ],
+      "support_url": "https://dual.de/en/service-support/",
+      "access_note": "German product URL resolves through manufacturer redirect to /en/products/ in delegated web retrieval; primary review could not access /en/products/ directly. Product index and support navigation each name all eight exact CS models; support has no CS629Q manual, so no manual is claimed for it."
+    },
+    {
+      "brand": "Thorens",
+      "source_url": "https://www.thorens.com/en/items/products/turntables.html",
+      "models": [
+        "TD 101 A",
+        "TD 102 A",
+        "TD 201",
+        "TD 202",
+        "TD 204",
+        "TD 402 DD",
+        "TD 403 DD",
+        "TD 404 DD",
+        "TD 124 DD",
+        "TD 1500",
+        "TD 1600",
+        "TD 1601"
+      ]
+    },
+    {
+      "brand": "Technics",
+      "source_url": "https://www.technics.com/content/dam/Panasonic/technics-nz/en/PDF/Technics-Turntable-Comparison.pdf",
+      "models": [
+        "SL-1000R",
+        "SL-1200G",
+        "SL-1210G",
+        "SL-1300G",
+        "SL-1200GR2",
+        "SL-1210GR2",
+        "SL-1500C",
+        "SL-40CBT",
+        "SL-1200MK7",
+        "SL-1210MK7"
+      ],
+      "access_note": "Manufacturer search-indexed complete comparison table verifies these ten model identities. Direct PDF open returned 404 in primary review; no fresh origin HTTP200 or downloaded PDF is claimed."
+    },
+    {
+      "brand": "Technics",
+      "source_url": "https://www.technics.com/content/dam/Panasonic/technics-au/en/pdf/Operating-Instructions-SL-100CEB-K.pdf",
+      "models": [
+        "SL-100C"
+      ]
+    },
+    {
+      "brand": "Technics",
+      "source_url": "https://www.technics.com/global/home/sl1200/50th-anniversary.html",
+      "models": [
+        "SL-1200",
+        "SL-1200MK2",
+        "SL-1200MK3",
+        "SL-1200MK3D",
+        "SL-1200MK5",
+        "SL-1200MK5G",
+        "SL-1200LTD",
+        "SL-1200GR",
+        "SL-1200GAE",
+        "SL-1210GAE"
+      ]
+    }
+  ],
+  "part_scope": {
+    "source_url": "https://shop.dual.de/en/spare-parts/cs-329/",
+    "evidence": "Official CS329 spare list identifies cartridge, aluminium platter, belt and tonearm subparts. Root-requested regression vocabulary also includes stylus as English needle terminology. These nouns describe parts, not complete turntables; they add no cross-model compatibility assertion.",
+    "terms": [
+      "riemen",
+      "ersatzriemen",
+      "nadel",
+      "ersatznadel",
+      "headshell",
+      "staubschutzhaube",
+      "tonabnehmer",
+      "cartridge",
+      "tonarm",
+      "plattenteller",
+      "stylus",
+      "belt"
+    ]
+  }
+}
