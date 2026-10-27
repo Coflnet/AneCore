@@ -20,9 +20,9 @@ namespace Coflnet.Ane.KnownProducts;
 /// own thing for the rule-extraction path.
 /// </para>
 /// <para>
-/// Performance: the constructor builds a first-token index once per catalogue snapshot (see
+/// Performance: the constructor builds a first-three-token index once per catalogue snapshot (see
 /// <see cref="BuildIndex"/>) instead of the naive "scan every product's every alias on every call"
-/// approach. <see cref="Match"/> then only ever looks at aliases that start with a token actually present
+/// approach. <see cref="Match"/> then only ever looks at aliases whose first tokens occur consecutively
 /// in the title, which keeps it fast even with tens of thousands of products. Build one instance per
 /// snapshot and reuse it - see <see cref="KnownProductCatalog.Matcher"/>, which does exactly that.
 /// </para>
@@ -35,7 +35,7 @@ public class KnownProductMatcher
     private static readonly Regex LegoIncomplete = new(@"\b(?:unvollstandig|incomplete|fehlteile|konvolut|sammlung|bundle|moc|nachbau|kompatibel|nur|ohne)\b", Opts);
     private static readonly Regex LegoDisplayExtra = new(@"\b(?:mit|inkl|inklusive|with|including|avec)\s+(?:hangar\s+(?:(?:und|and)\s+)?)?(?:tisch|table|vitrine)\b", Opts);
     private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
-    private static readonly Regex LegoSetNumber = new(@"^\d{4,7}$", Opts);
+    private static readonly Regex LegoSetNumber = new(@"^\d{3,7}$", Opts);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
@@ -102,7 +102,7 @@ public class KnownProductMatcher
     };
 
     private readonly IReadOnlyList<KnownProduct> products;
-    private readonly Dictionary<string, List<AliasEntry>> aliasIndex;
+    private readonly Dictionary<(string First, string? Second, string? Third), List<AliasEntry>> aliasIndex;
 
     private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
 
@@ -156,12 +156,12 @@ public class KnownProductMatcher
     }
 
     /// <summary>
-    /// Builds the first-token -> candidate-aliases index once. Products/aliases with an empty normalized
-    /// alias are skipped (nothing to index).
+    /// Builds the first-three-token index once (nulls for missing tokens in shorter aliases).
+    /// Products/aliases with an empty normalized alias are skipped (nothing to index).
     /// </summary>
-    private static Dictionary<string, List<AliasEntry>> BuildIndex(IReadOnlyList<KnownProduct> products)
+    private static Dictionary<(string First, string? Second, string? Third), List<AliasEntry>> BuildIndex(IReadOnlyList<KnownProduct> products)
     {
-        var index = new Dictionary<string, List<AliasEntry>>(StringComparer.Ordinal);
+        var index = new Dictionary<(string First, string? Second, string? Third), List<AliasEntry>>();
         foreach (var product in products)
         {
             foreach (var alias in product.Aliases)
@@ -172,10 +172,11 @@ public class KnownProductMatcher
                 var aliasTokens = normalizedAlias.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 if (aliasTokens.Length == 0)
                     continue;
-                if (!index.TryGetValue(aliasTokens[0], out var list))
+                var key = (aliasTokens[0], aliasTokens.Length > 1 ? aliasTokens[1] : null, aliasTokens.Length > 2 ? aliasTokens[2] : null);
+                if (!index.TryGetValue(key, out var list))
                 {
                     list = new List<AliasEntry>();
-                    index[aliasTokens[0]] = list;
+                    index[key] = list;
                 }
                 list.Add(new AliasEntry(product, aliasTokens));
             }
@@ -206,16 +207,24 @@ public class KnownProductMatcher
             return null;
 
         var normalizedTitle = Normalize(title);
-        if (normalizedTitle.Length == 0 || IsAccessory(normalizedTitle))
+        if (normalizedTitle.Length == 0)
             return null;
 
         var titleTokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        var accessory = IsAccessory(normalizedTitle);
+        if (accessory && !titleTokens.Contains("lego", StringComparer.Ordinal))
+            return null;
 
         var matches = new List<(KnownProduct Product, int TokenCount, int StartIndex)>();
         for (var i = 0; i < titleTokens.Length; i++)
         {
-            if (!aliasIndex.TryGetValue(titleTokens[i], out var candidates))
-                continue;
+            IEnumerable<AliasEntry> candidates = Enumerable.Empty<AliasEntry>();
+            if (aliasIndex.TryGetValue((titleTokens[i], null, null), out var singleToken))
+                candidates = singleToken;
+            if (i + 1 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], null), out var pair))
+                candidates = candidates.Concat(pair);
+            if (i + 2 < titleTokens.Length && aliasIndex.TryGetValue((titleTokens[i], titleTokens[i + 1], titleTokens[i + 2]), out var triple))
+                candidates = candidates.Concat(triple);
 
             foreach (var entry in candidates)
             {
@@ -233,6 +242,10 @@ public class KnownProductMatcher
                 }
                 if (!ok)
                     continue;
+                // A vetted LEGO alias can name Dodge Charger; accessory words outside that span still veto it.
+                if (accessory && (entry.Product.Vertical != "lego"
+                    || IsAccessory(string.Join(" ", titleTokens.Take(i).Concat(titleTokens.Skip(i + aliasTokens.Length))))))
+                    continue;
                 if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
                     continue;
                 if (!IsCategoryCompatible(entry.Product, categoryPath))
@@ -244,7 +257,8 @@ public class KnownProductMatcher
                      || LegoDisplayExtra.IsMatch(normalizedTitle)
                      || LegoExtraWords.Matches(normalizedTitle)
                          .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
-                     || titleTokens.Where(t => LegoSetNumber.IsMatch(t)).Distinct().Count() > 1
+                     // A verified full alias can explain vehicle model/year numbers inside its own span.
+                     || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model)
                      // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.
                      || Regex.IsMatch(title, @"(?<!\d)" + Regex.Escape(entry.Product.Model) + @"-(?!1\b)\d+\b", Opts & ~RegexOptions.Compiled)))
                     continue;
@@ -274,6 +288,15 @@ public class KnownProductMatcher
         }
 
         return candidate;
+    }
+
+    private static bool HasOtherLegoNumber(string[] tokens, int start, int length, string model)
+    {
+        for (var position = 0; position < tokens.Length; position++)
+            if ((position < start || position >= start + length)
+                && LegoSetNumber.IsMatch(tokens[position]) && tokens[position] != model)
+                return true;
+        return false;
     }
 
     /// <summary>

@@ -286,3 +286,17 @@ the corresponding numeric-only aliases are omitted. Storage and colour are unspe
 [official manual](https://data.yamaha.com/files/download/other_assets/5/315865/MDX-595_j.pdf).
 `lego-modern.json` also adds the retired [LEGO 75305 Scout Trooper Helmet](https://www.lego.com/en-us/product/scout-trooper-helmet-75305).
 Only factual model/set identifiers and short names are recorded; no descriptions or images are copied.
+
+## Retired Speed Champions exact set identities (2026-10-27)
+
+`lego-speed-champions.json` adds 33 previously missing 2015–2019 identities:
+75870–75895, 75899 and 75908–75913. Each number was individually checked on the
+[official LEGO building instructions service](https://www.lego.com/en-us/service/building-instructions/75870),
+whose per-set page is `https://www.lego.com/en-us/service/building-instructions/<number>`.
+Only factual set numbers are retained, with synthetic `LEGO <number>` names and exact
+brand/number aliases. Eleven aliases additionally include the individually verified official
+full product title, prefixed with LEGO and the exact set number, to distinguish numeric vehicle
+models/years from other sets. No name-only aliases, inferred attributes, descriptions or images
+are copied. All 33 numbers occur exactly once in the existing pinned reused-number veto
+(SHA-256 `877c7b7b0c86a86cd9d334c96c0932163d948244bc04f7da38dfe90cd2657fed`);
+that input supplies no product metadata.

@@ -1,0 +1,774 @@
+{
+  "products": [
+    {
+      "id": "lego-75870",
+      "brand": "LEGO",
+      "model": "75870",
+      "name": "LEGO 75870",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75870",
+        "LEGO Set 75870"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75870"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75871",
+      "brand": "LEGO",
+      "model": "75871",
+      "name": "LEGO 75871",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75871",
+        "LEGO Set 75871"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75871"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75872",
+      "brand": "LEGO",
+      "model": "75872",
+      "name": "LEGO 75872",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75872",
+        "LEGO Set 75872"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75872"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75873",
+      "brand": "LEGO",
+      "model": "75873",
+      "name": "LEGO 75873",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75873",
+        "LEGO Set 75873"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75873"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75874",
+      "brand": "LEGO",
+      "model": "75874",
+      "name": "LEGO 75874",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75874",
+        "LEGO Set 75874"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75874"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75875",
+      "brand": "LEGO",
+      "model": "75875",
+      "name": "LEGO 75875",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75875",
+        "LEGO Set 75875"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75875"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75876",
+      "brand": "LEGO",
+      "model": "75876",
+      "name": "LEGO 75876",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75876",
+        "LEGO 75876 Porsche 919 Hybrid and 917K Pit Lane",
+        "LEGO Set 75876"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75876"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75877",
+      "brand": "LEGO",
+      "model": "75877",
+      "name": "LEGO 75877",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75877",
+        "LEGO Set 75877"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75877"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75878",
+      "brand": "LEGO",
+      "model": "75878",
+      "name": "LEGO 75878",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75878",
+        "LEGO Set 75878"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75878"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75879",
+      "brand": "LEGO",
+      "model": "75879",
+      "name": "LEGO 75879",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75879",
+        "LEGO Set 75879"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75879"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75880",
+      "brand": "LEGO",
+      "model": "75880",
+      "name": "LEGO 75880",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75880",
+        "LEGO Set 75880"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75880"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75881",
+      "brand": "LEGO",
+      "model": "75881",
+      "name": "LEGO 75881",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75881",
+        "LEGO 75881 2016 Ford GT & 1966 Ford GT40",
+        "LEGO Set 75881"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75881"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75882",
+      "brand": "LEGO",
+      "model": "75882",
+      "name": "LEGO 75882",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75882",
+        "LEGO Set 75882"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75882"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75883",
+      "brand": "LEGO",
+      "model": "75883",
+      "name": "LEGO 75883",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75883",
+        "LEGO Set 75883"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75883"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75884",
+      "brand": "LEGO",
+      "model": "75884",
+      "name": "LEGO 75884",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75884",
+        "LEGO 75884 1968 Ford Mustang Fastback",
+        "LEGO Set 75884"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75884"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75885",
+      "brand": "LEGO",
+      "model": "75885",
+      "name": "LEGO 75885",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75885",
+        "LEGO Set 75885"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75885"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75886",
+      "brand": "LEGO",
+      "model": "75886",
+      "name": "LEGO 75886",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75886",
+        "LEGO 75886 Ferrari 488 GT3 “Scuderia Corsa”",
+        "LEGO Set 75886"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75886"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75887",
+      "brand": "LEGO",
+      "model": "75887",
+      "name": "LEGO 75887",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75887",
+        "LEGO 75887 Porsche 919 Hybrid",
+        "LEGO Set 75887"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75887"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75888",
+      "brand": "LEGO",
+      "model": "75888",
+      "name": "LEGO 75888",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75888",
+        "LEGO 75888 Porsche 911 RSR and 911 Turbo 3.0",
+        "LEGO Set 75888"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75888"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75889",
+      "brand": "LEGO",
+      "model": "75889",
+      "name": "LEGO 75889",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75889",
+        "LEGO Set 75889"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75889"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75890",
+      "brand": "LEGO",
+      "model": "75890",
+      "name": "LEGO 75890",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75890",
+        "LEGO Set 75890"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75890"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75891",
+      "brand": "LEGO",
+      "model": "75891",
+      "name": "LEGO 75891",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75891",
+        "LEGO Set 75891"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75891"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75892",
+      "brand": "LEGO",
+      "model": "75892",
+      "name": "LEGO 75892",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75892",
+        "LEGO Set 75892"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75892"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75893",
+      "brand": "LEGO",
+      "model": "75893",
+      "name": "LEGO 75893",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75893",
+        "LEGO 75893 2018 Dodge Challenger SRT Demon and 1970 Dodge Charger R/T",
+        "LEGO Set 75893"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75893"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75894",
+      "brand": "LEGO",
+      "model": "75894",
+      "name": "LEGO 75894",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75894",
+        "LEGO 75894 1967 Mini Cooper S Rally and 2018 MINI John Cooper Works Buggy",
+        "LEGO Set 75894"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75894"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75895",
+      "brand": "LEGO",
+      "model": "75895",
+      "name": "LEGO 75895",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75895",
+        "LEGO 75895 1974 Porsche 911 Turbo 3.0",
+        "LEGO Set 75895"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75895"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75899",
+      "brand": "LEGO",
+      "model": "75899",
+      "name": "LEGO 75899",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75899",
+        "LEGO Set 75899"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75899"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75908",
+      "brand": "LEGO",
+      "model": "75908",
+      "name": "LEGO 75908",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75908",
+        "LEGO 75908 458 Italia GT2",
+        "LEGO Set 75908"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75908"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75909",
+      "brand": "LEGO",
+      "model": "75909",
+      "name": "LEGO 75909",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75909",
+        "LEGO Set 75909"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75909"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75910",
+      "brand": "LEGO",
+      "model": "75910",
+      "name": "LEGO 75910",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75910",
+        "LEGO 75910 Porsche 918 Spyder",
+        "LEGO Set 75910"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75910"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75911",
+      "brand": "LEGO",
+      "model": "75911",
+      "name": "LEGO 75911",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75911",
+        "LEGO Set 75911"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75911"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75912",
+      "brand": "LEGO",
+      "model": "75912",
+      "name": "LEGO 75912",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75912",
+        "LEGO Set 75912"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75912"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    },
+    {
+      "id": "lego-75913",
+      "brand": "LEGO",
+      "model": "75913",
+      "name": "LEGO 75913",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75913",
+        "LEGO Set 75913"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75913"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-speed-champions-2026-10"
+    }
+  ]
+}
