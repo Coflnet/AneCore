@@ -46,7 +46,10 @@ public class KnownProductReaderRecorderTests
             Assert.That(product.PossibleAttributes.Keys, Is.EquivalentTo(new[] { "device_type" }));
             Assert.That(product.Categories, Is.EqualTo(new[] { "Elektronik", "Audio", "Audioplayer & -rekorder", "Plattenspieler" }));
             foreach (var alias in product.Aliases)
+            {
                 Assert.That(Matcher.Match(alias)?.Id, Is.EqualTo(product.Id), alias);
+                Assert.That(ResaleCatalog.Match(alias)?.Id, Is.EqualTo(product.Id), alias);
+            }
         }
     }
 
