@@ -1,0 +1,744 @@
+{
+  "checked_at": "2026-10-29",
+  "method": "Official LEGO building-instruction pages retrieved with the web tool; exact heading and printed number/age panel reviewed for every selected identity. The web tool may use indexed/cached pages; no fresh origin HTTP200 or complete theme enumeration is claimed.",
+  "scope": "Previously absent numbered sets from Technic, City and train instruction panels. All identity aliases require LEGO plus the exact printed number; official full names are additional number-anchored aliases. No name-only identity, edition suffix, package contents, completeness, language, GTIN, production year, pressing, fit or compatibility is inferred. Recommended minimum builder ages are the explicit panel lower bounds. Piece count is source evidence only, never an offer attribute.",
+  "omitted_unavailable": [
+    "42085",
+    "60070",
+    "60094"
+  ],
+  "facts": [
+    {
+      "number": "10194",
+      "name": "Emerald Night",
+      "metadata": "14+ | #10194 | 1087 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/10194"
+    },
+    {
+      "number": "10254",
+      "name": "Winter Holiday Train",
+      "metadata": "12+ | #10254 | 734 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/10254"
+    },
+    {
+      "number": "10277",
+      "name": "Crocodile Locomotive",
+      "metadata": "18+ | #10277 | 1271 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/10277"
+    },
+    {
+      "number": "42000",
+      "name": "Racer",
+      "metadata": "11-16 | #42000 | 1141 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42000"
+    },
+    {
+      "number": "42008",
+      "name": "Service Truck",
+      "metadata": "10-16 | #42008 | 1276 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42008"
+    },
+    {
+      "number": "42028",
+      "name": "Bulldozer",
+      "metadata": "9-16 | #42028 | 617 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42028"
+    },
+    {
+      "number": "42029",
+      "name": "Customized Pick up Truck",
+      "metadata": "10-16 | #42029 | 1063 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42029"
+    },
+    {
+      "number": "42030",
+      "name": "Remote-Controlled VOLVO L350F Wheel Loader",
+      "metadata": "11-16 | #42030 | 1636 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42030"
+    },
+    {
+      "number": "42050",
+      "name": "Drag Racer",
+      "metadata": "10-16 | #42050 | 647 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42050"
+    },
+    {
+      "number": "42073",
+      "name": "BASH!",
+      "metadata": "7-14 | #42073 | 139 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42073"
+    },
+    {
+      "number": "42076",
+      "name": "Hovercraft",
+      "metadata": "9-16 | #42076 | 1020 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42076"
+    },
+    {
+      "number": "42081",
+      "name": "Volvo Concept Wheel Loader ZEUX",
+      "metadata": "10-16 | #42081 | 1167 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42081"
+    },
+    {
+      "number": "42084",
+      "name": "Hook Loader",
+      "metadata": "7-14 | #42084 | 176 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42084"
+    },
+    {
+      "number": "42089",
+      "name": "Power Boat",
+      "metadata": "8+ | #42089 | 174 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42089"
+    },
+    {
+      "number": "42090",
+      "name": "Getaway Truck",
+      "metadata": "7+ | #42090 | 128 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42090"
+    },
+    {
+      "number": "60050",
+      "name": "Train Station",
+      "metadata": "5-12 | #60050 | 423 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60050"
+    },
+    {
+      "number": "60051",
+      "name": "High-speed Passenger Train",
+      "metadata": "6-12 | #60051 | 610 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60051"
+    },
+    {
+      "number": "60052",
+      "name": "Cargo Train",
+      "metadata": "6-12 | #60052 | 888 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60052"
+    },
+    {
+      "number": "60064",
+      "name": "Arctic Supply Plane",
+      "metadata": "6-12 | #60064 | 374 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60064"
+    },
+    {
+      "number": "60065",
+      "name": "ATV Patrol",
+      "metadata": "5-12 | #60065 | 59 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60065"
+    },
+    {
+      "number": "60066",
+      "name": "Swamp Police Starter Set",
+      "metadata": "5-12 | #60066 | 78 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60066"
+    },
+    {
+      "number": "60067",
+      "name": "Helicopter Pursuit",
+      "metadata": "5-12 | #60067 | 253 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60067"
+    },
+    {
+      "number": "60068",
+      "name": "Crooks' Hideout",
+      "metadata": "5-12 | #60068 | 473 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60068"
+    },
+    {
+      "number": "60069",
+      "name": "Swamp Police Station",
+      "metadata": "6-12 | #60069 | 707 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60069"
+    },
+    {
+      "number": "60071",
+      "name": "Hovercraft Arrest",
+      "metadata": "5-12 | #60071 | 331 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60071"
+    },
+    {
+      "number": "60072",
+      "name": "Demolition Starter Set",
+      "metadata": "5-12 | #60072 | 85 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60072"
+    },
+    {
+      "number": "60073",
+      "name": "Service Truck",
+      "metadata": "5-12 | #60073 | 233 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60073"
+    },
+    {
+      "number": "60074",
+      "name": "Bulldozer",
+      "metadata": "6-12 | #60074 | 384 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60074"
+    },
+    {
+      "number": "60075",
+      "name": "Excavator and Truck",
+      "metadata": "5-12 | #60075 | 311 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60075"
+    },
+    {
+      "number": "60076",
+      "name": "Demolition Site",
+      "metadata": "6-12 | #60076 | 776 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60076"
+    },
+    {
+      "number": "60077",
+      "name": "Space Starter Set",
+      "metadata": "5-12 | #60077 | 107 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60077"
+    },
+    {
+      "number": "60078",
+      "name": "Utility Shuttle",
+      "metadata": "5-12 | #60078 | 155 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60078"
+    },
+    {
+      "number": "60079",
+      "name": "Training Jet Transporter",
+      "metadata": "5-12 | #60079 | 448 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60079"
+    },
+    {
+      "number": "60080",
+      "name": "Spaceport",
+      "metadata": "6-12 | #60080 | 586 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60080"
+    },
+    {
+      "number": "60081",
+      "name": "Pickup Tow Truck",
+      "metadata": "5-12 | #60081 | 209 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60081"
+    },
+    {
+      "number": "60082",
+      "name": "Dune Buggy Trailer",
+      "metadata": "5-12 | #60082 | 222 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60082"
+    },
+    {
+      "number": "60083",
+      "name": "Snowplow Truck",
+      "metadata": "5-12 | #60083 | 196 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60083"
+    },
+    {
+      "number": "60084",
+      "name": "Racing Bike Transporter",
+      "metadata": "5-12 | #60084 | 178 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60084"
+    },
+    {
+      "number": "60085",
+      "name": "4x4 with Powerboat",
+      "metadata": "5-12 | #60085 | 301 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60085"
+    },
+    {
+      "number": "60086",
+      "name": "LEGO® City Starter Set",
+      "metadata": "5-12 | #60086 | 242 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60086"
+    },
+    {
+      "number": "60088",
+      "name": "Fire Starter Set",
+      "metadata": "5-12 | #60088 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60088"
+    },
+    {
+      "number": "60090",
+      "name": "Deep Sea Scuba Scooter",
+      "metadata": "5-12 | #60090 | 42 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60090"
+    },
+    {
+      "number": "60091",
+      "name": "Deep Sea Starter Set",
+      "metadata": "5-12 | #60091 | 90 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60091"
+    },
+    {
+      "number": "60092",
+      "name": "Deep Sea Submarine",
+      "metadata": "6-12 | #60092 | 274 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60092"
+    },
+    {
+      "number": "60093",
+      "name": "Deep Sea Helicopter",
+      "metadata": "7-12 | #60093 | 388 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60093"
+    },
+    {
+      "number": "60095",
+      "name": "Deep Sea Exploration Vessel",
+      "metadata": "8-12 | #60095 | 717 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60095"
+    },
+    {
+      "number": "60096",
+      "name": "Deep Sea Operation Base",
+      "metadata": "7-12 | #60096 | 907 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60096"
+    },
+    {
+      "number": "60097",
+      "name": "City Square",
+      "metadata": "6-12 | #60097 | 1683 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60097"
+    },
+    {
+      "number": "60098",
+      "name": "Heavy-Haul Train",
+      "metadata": "6-12 | #60098 | 984 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60098"
+    },
+    {
+      "number": "60099",
+      "name": "LEGO® City Advent Calendar",
+      "metadata": "5-12 | #60099 | 278 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60099"
+    },
+    {
+      "number": "60100",
+      "name": "Airport Starter Set",
+      "metadata": "5-12 | #60100 | 81 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60100"
+    },
+    {
+      "number": "60101",
+      "name": "Airport Cargo Plane",
+      "metadata": "5-12 | #60101 | 157 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60101"
+    },
+    {
+      "number": "60102",
+      "name": "Airport VIP Service",
+      "metadata": "5-12 | #60102 | 364 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60102"
+    },
+    {
+      "number": "60103",
+      "name": "Airport Air Show",
+      "metadata": "6-12 | #60103 | 670 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60103"
+    },
+    {
+      "number": "60104",
+      "name": "Airport Passenger Terminal",
+      "metadata": "6-12 | #60104 | 694 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60104"
+    },
+    {
+      "number": "60105",
+      "name": "Fire ATV",
+      "metadata": "5-12 | #60105 | 64 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60105"
+    },
+    {
+      "number": "60106",
+      "name": "Fire Starter Set",
+      "metadata": "5-12 | #60106 | 90 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60106"
+    },
+    {
+      "number": "60107",
+      "name": "Fire Ladder Truck",
+      "metadata": "5-12 | #60107 | 214 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60107"
+    },
+    {
+      "number": "60108",
+      "name": "Fire Response Unit",
+      "metadata": "5-12 | #60108 | 257 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60108"
+    },
+    {
+      "number": "60109",
+      "name": "Fire Boat",
+      "metadata": "6-12 | #60109 | 412 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60109"
+    },
+    {
+      "number": "60110",
+      "name": "Fire Station",
+      "metadata": "6-12 | #60110 | 919 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60110"
+    },
+    {
+      "number": "60111",
+      "name": "Fire Utility Truck",
+      "metadata": "5-12 | #60111 | 368 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60111"
+    },
+    {
+      "number": "60112",
+      "name": "Fire Engine",
+      "metadata": "5-12 | #60112 | 376 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60112"
+    },
+    {
+      "number": "60113",
+      "name": "Rally Car",
+      "metadata": "5-12 | #60113 | 104 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60113"
+    },
+    {
+      "number": "60114",
+      "name": "Race Boat",
+      "metadata": "5-12 | #60114 | 95 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60114"
+    },
+    {
+      "number": "60115",
+      "name": "4 x 4 Off Roader",
+      "metadata": "5-12 | #60115 | 176 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60115"
+    },
+    {
+      "number": "60116",
+      "name": "Ambulance Plane",
+      "metadata": "5-12 | #60116 | 183 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60116"
+    },
+    {
+      "number": "60117",
+      "name": "Van & Caravan",
+      "metadata": "5-12 | #60117 | 250 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60117"
+    },
+    {
+      "number": "60118",
+      "name": "Garbage Truck",
+      "metadata": "5-12 | #60118 | 248 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60118"
+    },
+    {
+      "number": "60119",
+      "name": "Ferry",
+      "metadata": "6-12 | #60119 | 301 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60119"
+    },
+    {
+      "number": "60120",
+      "name": "Volcano Starter Set",
+      "metadata": "5-12 | #60120 | 83 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60120"
+    },
+    {
+      "number": "60121",
+      "name": "Volcano Exploration Truck",
+      "metadata": "5-12 | #60121 | 175 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60121"
+    },
+    {
+      "number": "60122",
+      "name": "Volcano Crawler",
+      "metadata": "6-12 | #60122 | 324 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60122"
+    },
+    {
+      "number": "60123",
+      "name": "Volcano Supply Helicopter",
+      "metadata": "7-12 | #60123 | 330 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60123"
+    },
+    {
+      "number": "60124",
+      "name": "Volcano Exploration Base",
+      "metadata": "8-12 | #60124 | 824 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60124"
+    },
+    {
+      "number": "60125",
+      "name": "Volcano Heavy-lift Helicopter",
+      "metadata": "8-12 | #60125 | 1277 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60125"
+    },
+    {
+      "number": "60126",
+      "name": "Tire Escape",
+      "metadata": "5-12 | #60126 | 47 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60126"
+    },
+    {
+      "number": "60127",
+      "name": "Prison Island Starter Set",
+      "metadata": "5-12 | #60127 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60127"
+    },
+    {
+      "number": "60128",
+      "name": "Police Pursuit",
+      "metadata": "5-12 | #60128 | 184 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60128"
+    },
+    {
+      "number": "60129",
+      "name": "Police Patrol Boat",
+      "metadata": "5-12 | #60129 | 200 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60129"
+    },
+    {
+      "number": "60130",
+      "name": "Prison Island",
+      "metadata": "6-12 | #60130 | 754 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60130"
+    },
+    {
+      "number": "60131",
+      "name": "Crooks Island",
+      "metadata": "5-12 | #60131 | 244 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60131"
+    },
+    {
+      "number": "60132",
+      "name": "Service Station",
+      "metadata": "7-12 | #60132 | 515 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60132"
+    },
+    {
+      "number": "60133",
+      "name": "LEGO® City Advent Calendar",
+      "metadata": "5-12 | #60133 | 290 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60133"
+    },
+    {
+      "number": "60134",
+      "name": "Fun in the park - City People Pack",
+      "metadata": "5-12 | #60134 | 157 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60134"
+    },
+    {
+      "number": "60135",
+      "name": "ATV Arrest",
+      "metadata": "5-12 | #60135 | 47 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60135"
+    },
+    {
+      "number": "60136",
+      "name": "Police Starter Set",
+      "metadata": "5-12 | #60136 | 80 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60136"
+    },
+    {
+      "number": "60137",
+      "name": "Tow Truck Trouble",
+      "metadata": "5-12 | #60137 | 144 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60137"
+    },
+    {
+      "number": "60138",
+      "name": "High-speed Chase",
+      "metadata": "5-12 | #60138 | 294 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60138"
+    },
+    {
+      "number": "60139",
+      "name": "Mobile Command Center",
+      "metadata": "6-12 | #60139 | 374 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60139"
+    },
+    {
+      "number": "60140",
+      "name": "Bulldozer Break-in",
+      "metadata": "5-12 | #60140 | 561 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60140"
+    },
+    {
+      "number": "60141",
+      "name": "Police Station",
+      "metadata": "6-12 | #60141 | 894 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60141"
+    },
+    {
+      "number": "60142",
+      "name": "Money Transporter",
+      "metadata": "5-12 | #60142 | 138 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60142"
+    },
+    {
+      "number": "60143",
+      "name": "Auto Transport Heist",
+      "metadata": "5-12 | #60143 | 403 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60143"
+    },
+    {
+      "number": "60144",
+      "name": "Race Plane",
+      "metadata": "5-12 | #60144 | 89 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60144"
+    },
+    {
+      "number": "60145",
+      "name": "Buggy",
+      "metadata": "5-12 | #60145 | 81 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60145"
+    },
+    {
+      "number": "60146",
+      "name": "Stunt Truck",
+      "metadata": "5-12 | #60146 | 91 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60146"
+    },
+    {
+      "number": "60147",
+      "name": "Fishing Boat",
+      "metadata": "5-12 | #60147 | 144 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60147"
+    },
+    {
+      "number": "60148",
+      "name": "ATV Race Team",
+      "metadata": "5-12 | #60148 | 239 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60148"
+    },
+    {
+      "number": "60149",
+      "name": "4x4 with Catamaran",
+      "metadata": "5-12 | #60149 | 198 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60149"
+    },
+    {
+      "number": "60150",
+      "name": "Pizza Van",
+      "metadata": "5-12 | #60150 | 249 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60150"
+    },
+    {
+      "number": "60151",
+      "name": "Dragster Transporter",
+      "metadata": "5-12 | #60151 | 333 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60151"
+    },
+    {
+      "number": "60152",
+      "name": "Sweeper & Excavator",
+      "metadata": "5-12 | #60152 | 299 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60152"
+    },
+    {
+      "number": "60153",
+      "name": "People pack – Fun at the beach",
+      "metadata": "5-12 | #60153 | 169 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60153"
+    },
+    {
+      "number": "60154",
+      "name": "Bus Station",
+      "metadata": "5-12 | #60154 | 337 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60154"
+    },
+    {
+      "number": "60155",
+      "name": "LEGO® City Advent Calendar",
+      "metadata": "5-12 | #60155 | 248 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60155"
+    },
+    {
+      "number": "60156",
+      "name": "Jungle Buggy",
+      "metadata": "5-12 | #60156 | 53 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60156"
+    },
+    {
+      "number": "60157",
+      "name": "Jungle Starter Set",
+      "metadata": "5-12 | #60157 | 88 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60157"
+    },
+    {
+      "number": "60158",
+      "name": "Jungle Cargo Helicopter",
+      "metadata": "6-12 | #60158 | 201 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60158"
+    },
+    {
+      "number": "60159",
+      "name": "Jungle Halftrack Mission",
+      "metadata": "6-12 | #60159 | 378 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60159"
+    },
+    {
+      "number": "60160",
+      "name": "Jungle Mobile Lab",
+      "metadata": "7-12 | #60160 | 426 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60160"
+    },
+    {
+      "number": "60161",
+      "name": "Jungle Exploration Site",
+      "metadata": "8-12 | #60161 | 813 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60161"
+    },
+    {
+      "number": "60162",
+      "name": "Jungle Air Drop Helicopter",
+      "metadata": "8-12 | #60162 | 1250 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60162"
+    },
+    {
+      "number": "60163",
+      "name": "Coast Guard Starter Set",
+      "metadata": "5-12 | #60163 | 76 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60163"
+    },
+    {
+      "number": "60164",
+      "name": "Sea Rescue Plane",
+      "metadata": "5-12 | #60164 | 141 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60164"
+    },
+    {
+      "number": "60165",
+      "name": "4 x 4 Response Unit",
+      "metadata": "5-12 | #60165 | 347 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60165"
+    },
+    {
+      "number": "60166",
+      "name": "Heavy-duty Rescue Helicopter",
+      "metadata": "6-12 | #60166 | 415 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60166"
+    },
+    {
+      "number": "60167",
+      "name": "Coast Guard Head Quarters",
+      "metadata": "6-12 | #60167 | 792 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60167"
+    },
+    {
+      "number": "60168",
+      "name": "Sailboat Rescue",
+      "metadata": "5-12 | #60168 | 195 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60168"
+    },
+    {
+      "number": "60169",
+      "name": "Cargo Terminal",
+      "metadata": "6-12 | #60169 | 740 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60169"
+    },
+    {
+      "number": "60197",
+      "name": "Passenger Train",
+      "metadata": "6-12 | #60197 | 677 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60197"
+    },
+    {
+      "number": "60198",
+      "name": "Cargo Train",
+      "metadata": "6-12 | #60198 | 1226 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/60198"
+    }
+  ]
+}

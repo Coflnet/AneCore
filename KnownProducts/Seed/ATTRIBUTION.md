@@ -423,3 +423,31 @@ package contents, offer condition or compatibility is inferred. Unavailable page
 omitted; this is a selected supplement, not a complete theme enumeration. Public web-tool
 retrieval may use its index/cache; no fresh origin HTTP200 is claimed. No manufacturer
 descriptions, images or inventories are copied.
+
+## LEGO City, Technic and train instruction panels (2026-10-29, R41)
+
+`lego-city-technic-instructions.json` adds 122 previously absent numbered set identities.
+Official LEGO instruction headings and printed age/number panels are the only identity
+and recommended-age sources, including [10194 Emerald Night](https://www.lego.com/en-us/service/building-instructions/10194),
+[10254 Winter Holiday Train](https://www.lego.com/en-us/service/building-instructions/10254),
+[10277 Crocodile Locomotive](https://www.lego.com/en-us/service/building-instructions/10277),
+[42030 wheel loader](https://www.lego.com/en-us/service/building-instructions/42030),
+[60051 passenger train](https://www.lego.com/en-us/service/building-instructions/60051),
+[60052 cargo train](https://www.lego.com/en-us/service/building-instructions/60052) and
+[60198 cargo train](https://www.lego.com/en-us/service/building-instructions/60198).
+Each selected heading, panel and primary URL is retained in
+`tools/catalog-import/proofs/lego-city-technic-instructions-2026-10-29-r41.json`.
+The offline `expand_lego_city_technic.py --check` command verifies the authored seed
+against that proof and rejects cross-file IDs and normalized-alias collisions.
+All 44 previous JSON seed files remain byte-identical.
+
+Only set number and the explicitly printed minimum recommended builder age are attributes.
+All aliases require LEGO and the exact full printed number; full official names are
+additional number-anchored aliases, never name-only identities. Shared names such as
+Cargo Train and Bulldozer do not imply set equivalence. Instruction-only, box-only,
+partial, compatible, custom-build and multiple-code offers retain existing exclusions.
+Piece counts remain source-panel evidence, without any used-offer completeness claim.
+No GTIN, year, edition, suffix, language, packaging, contents, fit or compatibility is
+inferred. Unavailable pages 42085, 60070 and 60094 are omitted; this is not a complete
+theme enumeration. Public web-tool retrieval may use indexed/cached evidence; no fresh
+origin HTTP200 is claimed. No manufacturer descriptions, images or inventories are copied.

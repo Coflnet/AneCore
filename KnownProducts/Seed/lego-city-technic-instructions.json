@@ -1,0 +1,3298 @@
+{
+  "products": [
+    {
+      "id": "lego-10194",
+      "brand": "LEGO",
+      "model": "10194",
+      "name": "LEGO 10194",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 10194",
+        "LEGO 10194 Emerald Night",
+        "LEGO Set 10194"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "10194"
+        ],
+        "min_age": [
+          "14"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-10254",
+      "brand": "LEGO",
+      "model": "10254",
+      "name": "LEGO 10254",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 10254",
+        "LEGO 10254 Winter Holiday Train",
+        "LEGO Set 10254"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "10254"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-10277",
+      "brand": "LEGO",
+      "model": "10277",
+      "name": "LEGO 10277",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 10277",
+        "LEGO 10277 Crocodile Locomotive",
+        "LEGO Set 10277"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "10277"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42000",
+      "brand": "LEGO",
+      "model": "42000",
+      "name": "LEGO 42000",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42000",
+        "LEGO 42000 Racer",
+        "LEGO Set 42000"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42000"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42008",
+      "brand": "LEGO",
+      "model": "42008",
+      "name": "LEGO 42008",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42008",
+        "LEGO 42008 Service Truck",
+        "LEGO Set 42008"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42008"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42028",
+      "brand": "LEGO",
+      "model": "42028",
+      "name": "LEGO 42028",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42028",
+        "LEGO 42028 Bulldozer",
+        "LEGO Set 42028"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42028"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42029",
+      "brand": "LEGO",
+      "model": "42029",
+      "name": "LEGO 42029",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42029",
+        "LEGO 42029 Customized Pick up Truck",
+        "LEGO Set 42029"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42029"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42030",
+      "brand": "LEGO",
+      "model": "42030",
+      "name": "LEGO 42030",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42030",
+        "LEGO 42030 Remote-Controlled VOLVO L350F Wheel Loader",
+        "LEGO Set 42030"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42030"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42050",
+      "brand": "LEGO",
+      "model": "42050",
+      "name": "LEGO 42050",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42050",
+        "LEGO 42050 Drag Racer",
+        "LEGO Set 42050"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42050"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42073",
+      "brand": "LEGO",
+      "model": "42073",
+      "name": "LEGO 42073",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42073",
+        "LEGO 42073 BASH!",
+        "LEGO Set 42073"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42073"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42076",
+      "brand": "LEGO",
+      "model": "42076",
+      "name": "LEGO 42076",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42076",
+        "LEGO 42076 Hovercraft",
+        "LEGO Set 42076"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42076"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42081",
+      "brand": "LEGO",
+      "model": "42081",
+      "name": "LEGO 42081",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42081",
+        "LEGO 42081 Volvo Concept Wheel Loader ZEUX",
+        "LEGO Set 42081"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42081"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42084",
+      "brand": "LEGO",
+      "model": "42084",
+      "name": "LEGO 42084",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42084",
+        "LEGO 42084 Hook Loader",
+        "LEGO Set 42084"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42084"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42089",
+      "brand": "LEGO",
+      "model": "42089",
+      "name": "LEGO 42089",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42089",
+        "LEGO 42089 Power Boat",
+        "LEGO Set 42089"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42089"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-42090",
+      "brand": "LEGO",
+      "model": "42090",
+      "name": "LEGO 42090",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42090",
+        "LEGO 42090 Getaway Truck",
+        "LEGO Set 42090"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42090"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60050",
+      "brand": "LEGO",
+      "model": "60050",
+      "name": "LEGO 60050",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60050",
+        "LEGO 60050 Train Station",
+        "LEGO Set 60050"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60050"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60051",
+      "brand": "LEGO",
+      "model": "60051",
+      "name": "LEGO 60051",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60051",
+        "LEGO 60051 High-speed Passenger Train",
+        "LEGO Set 60051"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60051"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60052",
+      "brand": "LEGO",
+      "model": "60052",
+      "name": "LEGO 60052",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60052",
+        "LEGO 60052 Cargo Train",
+        "LEGO Set 60052"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60052"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60064",
+      "brand": "LEGO",
+      "model": "60064",
+      "name": "LEGO 60064",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60064",
+        "LEGO 60064 Arctic Supply Plane",
+        "LEGO Set 60064"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60064"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60065",
+      "brand": "LEGO",
+      "model": "60065",
+      "name": "LEGO 60065",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60065",
+        "LEGO 60065 ATV Patrol",
+        "LEGO Set 60065"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60065"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60066",
+      "brand": "LEGO",
+      "model": "60066",
+      "name": "LEGO 60066",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60066",
+        "LEGO 60066 Swamp Police Starter Set",
+        "LEGO Set 60066"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60066"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60067",
+      "brand": "LEGO",
+      "model": "60067",
+      "name": "LEGO 60067",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60067",
+        "LEGO 60067 Helicopter Pursuit",
+        "LEGO Set 60067"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60067"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60068",
+      "brand": "LEGO",
+      "model": "60068",
+      "name": "LEGO 60068",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60068",
+        "LEGO 60068 Crooks' Hideout",
+        "LEGO Set 60068"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60068"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60069",
+      "brand": "LEGO",
+      "model": "60069",
+      "name": "LEGO 60069",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60069",
+        "LEGO 60069 Swamp Police Station",
+        "LEGO Set 60069"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60069"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60071",
+      "brand": "LEGO",
+      "model": "60071",
+      "name": "LEGO 60071",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60071",
+        "LEGO 60071 Hovercraft Arrest",
+        "LEGO Set 60071"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60071"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60072",
+      "brand": "LEGO",
+      "model": "60072",
+      "name": "LEGO 60072",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60072",
+        "LEGO 60072 Demolition Starter Set",
+        "LEGO Set 60072"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60072"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60073",
+      "brand": "LEGO",
+      "model": "60073",
+      "name": "LEGO 60073",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60073",
+        "LEGO 60073 Service Truck",
+        "LEGO Set 60073"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60073"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60074",
+      "brand": "LEGO",
+      "model": "60074",
+      "name": "LEGO 60074",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60074",
+        "LEGO 60074 Bulldozer",
+        "LEGO Set 60074"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60074"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60075",
+      "brand": "LEGO",
+      "model": "60075",
+      "name": "LEGO 60075",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60075",
+        "LEGO 60075 Excavator and Truck",
+        "LEGO Set 60075"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60075"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60076",
+      "brand": "LEGO",
+      "model": "60076",
+      "name": "LEGO 60076",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60076",
+        "LEGO 60076 Demolition Site",
+        "LEGO Set 60076"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60076"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60077",
+      "brand": "LEGO",
+      "model": "60077",
+      "name": "LEGO 60077",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60077",
+        "LEGO 60077 Space Starter Set",
+        "LEGO Set 60077"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60077"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60078",
+      "brand": "LEGO",
+      "model": "60078",
+      "name": "LEGO 60078",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60078",
+        "LEGO 60078 Utility Shuttle",
+        "LEGO Set 60078"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60078"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60079",
+      "brand": "LEGO",
+      "model": "60079",
+      "name": "LEGO 60079",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60079",
+        "LEGO 60079 Training Jet Transporter",
+        "LEGO Set 60079"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60079"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60080",
+      "brand": "LEGO",
+      "model": "60080",
+      "name": "LEGO 60080",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60080",
+        "LEGO 60080 Spaceport",
+        "LEGO Set 60080"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60080"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60081",
+      "brand": "LEGO",
+      "model": "60081",
+      "name": "LEGO 60081",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60081",
+        "LEGO 60081 Pickup Tow Truck",
+        "LEGO Set 60081"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60081"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60082",
+      "brand": "LEGO",
+      "model": "60082",
+      "name": "LEGO 60082",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60082",
+        "LEGO 60082 Dune Buggy Trailer",
+        "LEGO Set 60082"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60082"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60083",
+      "brand": "LEGO",
+      "model": "60083",
+      "name": "LEGO 60083",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60083",
+        "LEGO 60083 Snowplow Truck",
+        "LEGO Set 60083"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60083"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60084",
+      "brand": "LEGO",
+      "model": "60084",
+      "name": "LEGO 60084",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60084",
+        "LEGO 60084 Racing Bike Transporter",
+        "LEGO Set 60084"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60084"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60085",
+      "brand": "LEGO",
+      "model": "60085",
+      "name": "LEGO 60085",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60085",
+        "LEGO 60085 4x4 with Powerboat",
+        "LEGO Set 60085"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60085"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60086",
+      "brand": "LEGO",
+      "model": "60086",
+      "name": "LEGO 60086",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60086",
+        "LEGO 60086 LEGO® City Starter Set",
+        "LEGO Set 60086"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60086"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60088",
+      "brand": "LEGO",
+      "model": "60088",
+      "name": "LEGO 60088",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60088",
+        "LEGO 60088 Fire Starter Set",
+        "LEGO Set 60088"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60088"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60090",
+      "brand": "LEGO",
+      "model": "60090",
+      "name": "LEGO 60090",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60090",
+        "LEGO 60090 Deep Sea Scuba Scooter",
+        "LEGO Set 60090"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60090"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60091",
+      "brand": "LEGO",
+      "model": "60091",
+      "name": "LEGO 60091",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60091",
+        "LEGO 60091 Deep Sea Starter Set",
+        "LEGO Set 60091"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60091"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60092",
+      "brand": "LEGO",
+      "model": "60092",
+      "name": "LEGO 60092",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60092",
+        "LEGO 60092 Deep Sea Submarine",
+        "LEGO Set 60092"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60092"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60093",
+      "brand": "LEGO",
+      "model": "60093",
+      "name": "LEGO 60093",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60093",
+        "LEGO 60093 Deep Sea Helicopter",
+        "LEGO Set 60093"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60093"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60095",
+      "brand": "LEGO",
+      "model": "60095",
+      "name": "LEGO 60095",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60095",
+        "LEGO 60095 Deep Sea Exploration Vessel",
+        "LEGO Set 60095"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60095"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60096",
+      "brand": "LEGO",
+      "model": "60096",
+      "name": "LEGO 60096",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60096",
+        "LEGO 60096 Deep Sea Operation Base",
+        "LEGO Set 60096"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60096"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60097",
+      "brand": "LEGO",
+      "model": "60097",
+      "name": "LEGO 60097",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60097",
+        "LEGO 60097 City Square",
+        "LEGO Set 60097"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60097"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60098",
+      "brand": "LEGO",
+      "model": "60098",
+      "name": "LEGO 60098",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60098",
+        "LEGO 60098 Heavy-Haul Train",
+        "LEGO Set 60098"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60098"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60099",
+      "brand": "LEGO",
+      "model": "60099",
+      "name": "LEGO 60099",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60099",
+        "LEGO 60099 LEGO® City Advent Calendar",
+        "LEGO Set 60099"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60099"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60100",
+      "brand": "LEGO",
+      "model": "60100",
+      "name": "LEGO 60100",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60100",
+        "LEGO 60100 Airport Starter Set",
+        "LEGO Set 60100"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60100"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60101",
+      "brand": "LEGO",
+      "model": "60101",
+      "name": "LEGO 60101",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60101",
+        "LEGO 60101 Airport Cargo Plane",
+        "LEGO Set 60101"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60101"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60102",
+      "brand": "LEGO",
+      "model": "60102",
+      "name": "LEGO 60102",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60102",
+        "LEGO 60102 Airport VIP Service",
+        "LEGO Set 60102"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60102"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60103",
+      "brand": "LEGO",
+      "model": "60103",
+      "name": "LEGO 60103",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60103",
+        "LEGO 60103 Airport Air Show",
+        "LEGO Set 60103"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60103"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60104",
+      "brand": "LEGO",
+      "model": "60104",
+      "name": "LEGO 60104",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60104",
+        "LEGO 60104 Airport Passenger Terminal",
+        "LEGO Set 60104"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60104"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60105",
+      "brand": "LEGO",
+      "model": "60105",
+      "name": "LEGO 60105",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60105",
+        "LEGO 60105 Fire ATV",
+        "LEGO Set 60105"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60105"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60106",
+      "brand": "LEGO",
+      "model": "60106",
+      "name": "LEGO 60106",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60106",
+        "LEGO 60106 Fire Starter Set",
+        "LEGO Set 60106"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60106"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60107",
+      "brand": "LEGO",
+      "model": "60107",
+      "name": "LEGO 60107",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60107",
+        "LEGO 60107 Fire Ladder Truck",
+        "LEGO Set 60107"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60107"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60108",
+      "brand": "LEGO",
+      "model": "60108",
+      "name": "LEGO 60108",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60108",
+        "LEGO 60108 Fire Response Unit",
+        "LEGO Set 60108"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60108"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60109",
+      "brand": "LEGO",
+      "model": "60109",
+      "name": "LEGO 60109",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60109",
+        "LEGO 60109 Fire Boat",
+        "LEGO Set 60109"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60109"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60110",
+      "brand": "LEGO",
+      "model": "60110",
+      "name": "LEGO 60110",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60110",
+        "LEGO 60110 Fire Station",
+        "LEGO Set 60110"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60110"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60111",
+      "brand": "LEGO",
+      "model": "60111",
+      "name": "LEGO 60111",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60111",
+        "LEGO 60111 Fire Utility Truck",
+        "LEGO Set 60111"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60111"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60112",
+      "brand": "LEGO",
+      "model": "60112",
+      "name": "LEGO 60112",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60112",
+        "LEGO 60112 Fire Engine",
+        "LEGO Set 60112"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60112"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60113",
+      "brand": "LEGO",
+      "model": "60113",
+      "name": "LEGO 60113",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60113",
+        "LEGO 60113 Rally Car",
+        "LEGO Set 60113"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60113"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60114",
+      "brand": "LEGO",
+      "model": "60114",
+      "name": "LEGO 60114",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60114",
+        "LEGO 60114 Race Boat",
+        "LEGO Set 60114"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60114"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60115",
+      "brand": "LEGO",
+      "model": "60115",
+      "name": "LEGO 60115",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60115",
+        "LEGO 60115 4 x 4 Off Roader",
+        "LEGO Set 60115"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60115"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60116",
+      "brand": "LEGO",
+      "model": "60116",
+      "name": "LEGO 60116",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60116",
+        "LEGO 60116 Ambulance Plane",
+        "LEGO Set 60116"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60116"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60117",
+      "brand": "LEGO",
+      "model": "60117",
+      "name": "LEGO 60117",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60117",
+        "LEGO 60117 Van & Caravan",
+        "LEGO Set 60117"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60117"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60118",
+      "brand": "LEGO",
+      "model": "60118",
+      "name": "LEGO 60118",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60118",
+        "LEGO 60118 Garbage Truck",
+        "LEGO Set 60118"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60118"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60119",
+      "brand": "LEGO",
+      "model": "60119",
+      "name": "LEGO 60119",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60119",
+        "LEGO 60119 Ferry",
+        "LEGO Set 60119"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60119"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60120",
+      "brand": "LEGO",
+      "model": "60120",
+      "name": "LEGO 60120",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60120",
+        "LEGO 60120 Volcano Starter Set",
+        "LEGO Set 60120"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60120"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60121",
+      "brand": "LEGO",
+      "model": "60121",
+      "name": "LEGO 60121",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60121",
+        "LEGO 60121 Volcano Exploration Truck",
+        "LEGO Set 60121"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60121"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60122",
+      "brand": "LEGO",
+      "model": "60122",
+      "name": "LEGO 60122",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60122",
+        "LEGO 60122 Volcano Crawler",
+        "LEGO Set 60122"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60122"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60123",
+      "brand": "LEGO",
+      "model": "60123",
+      "name": "LEGO 60123",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60123",
+        "LEGO 60123 Volcano Supply Helicopter",
+        "LEGO Set 60123"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60123"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60124",
+      "brand": "LEGO",
+      "model": "60124",
+      "name": "LEGO 60124",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60124",
+        "LEGO 60124 Volcano Exploration Base",
+        "LEGO Set 60124"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60124"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60125",
+      "brand": "LEGO",
+      "model": "60125",
+      "name": "LEGO 60125",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60125",
+        "LEGO 60125 Volcano Heavy-lift Helicopter",
+        "LEGO Set 60125"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60125"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60126",
+      "brand": "LEGO",
+      "model": "60126",
+      "name": "LEGO 60126",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60126",
+        "LEGO 60126 Tire Escape",
+        "LEGO Set 60126"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60126"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60127",
+      "brand": "LEGO",
+      "model": "60127",
+      "name": "LEGO 60127",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60127",
+        "LEGO 60127 Prison Island Starter Set",
+        "LEGO Set 60127"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60127"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60128",
+      "brand": "LEGO",
+      "model": "60128",
+      "name": "LEGO 60128",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60128",
+        "LEGO 60128 Police Pursuit",
+        "LEGO Set 60128"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60128"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60129",
+      "brand": "LEGO",
+      "model": "60129",
+      "name": "LEGO 60129",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60129",
+        "LEGO 60129 Police Patrol Boat",
+        "LEGO Set 60129"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60129"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60130",
+      "brand": "LEGO",
+      "model": "60130",
+      "name": "LEGO 60130",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60130",
+        "LEGO 60130 Prison Island",
+        "LEGO Set 60130"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60130"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60131",
+      "brand": "LEGO",
+      "model": "60131",
+      "name": "LEGO 60131",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60131",
+        "LEGO 60131 Crooks Island",
+        "LEGO Set 60131"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60131"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60132",
+      "brand": "LEGO",
+      "model": "60132",
+      "name": "LEGO 60132",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60132",
+        "LEGO 60132 Service Station",
+        "LEGO Set 60132"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60132"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60133",
+      "brand": "LEGO",
+      "model": "60133",
+      "name": "LEGO 60133",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60133",
+        "LEGO 60133 LEGO® City Advent Calendar",
+        "LEGO Set 60133"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60133"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60134",
+      "brand": "LEGO",
+      "model": "60134",
+      "name": "LEGO 60134",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60134",
+        "LEGO 60134 Fun in the park - City People Pack",
+        "LEGO Set 60134"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60134"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60135",
+      "brand": "LEGO",
+      "model": "60135",
+      "name": "LEGO 60135",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60135",
+        "LEGO 60135 ATV Arrest",
+        "LEGO Set 60135"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60135"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60136",
+      "brand": "LEGO",
+      "model": "60136",
+      "name": "LEGO 60136",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60136",
+        "LEGO 60136 Police Starter Set",
+        "LEGO Set 60136"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60136"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60137",
+      "brand": "LEGO",
+      "model": "60137",
+      "name": "LEGO 60137",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60137",
+        "LEGO 60137 Tow Truck Trouble",
+        "LEGO Set 60137"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60137"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60138",
+      "brand": "LEGO",
+      "model": "60138",
+      "name": "LEGO 60138",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60138",
+        "LEGO 60138 High-speed Chase",
+        "LEGO Set 60138"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60138"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60139",
+      "brand": "LEGO",
+      "model": "60139",
+      "name": "LEGO 60139",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60139",
+        "LEGO 60139 Mobile Command Center",
+        "LEGO Set 60139"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60139"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60140",
+      "brand": "LEGO",
+      "model": "60140",
+      "name": "LEGO 60140",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60140",
+        "LEGO 60140 Bulldozer Break-in",
+        "LEGO Set 60140"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60140"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60141",
+      "brand": "LEGO",
+      "model": "60141",
+      "name": "LEGO 60141",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60141",
+        "LEGO 60141 Police Station",
+        "LEGO Set 60141"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60141"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60142",
+      "brand": "LEGO",
+      "model": "60142",
+      "name": "LEGO 60142",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60142",
+        "LEGO 60142 Money Transporter",
+        "LEGO Set 60142"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60142"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60143",
+      "brand": "LEGO",
+      "model": "60143",
+      "name": "LEGO 60143",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60143",
+        "LEGO 60143 Auto Transport Heist",
+        "LEGO Set 60143"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60143"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60144",
+      "brand": "LEGO",
+      "model": "60144",
+      "name": "LEGO 60144",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60144",
+        "LEGO 60144 Race Plane",
+        "LEGO Set 60144"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60144"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60145",
+      "brand": "LEGO",
+      "model": "60145",
+      "name": "LEGO 60145",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60145",
+        "LEGO 60145 Buggy",
+        "LEGO Set 60145"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60145"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60146",
+      "brand": "LEGO",
+      "model": "60146",
+      "name": "LEGO 60146",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60146",
+        "LEGO 60146 Stunt Truck",
+        "LEGO Set 60146"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60146"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60147",
+      "brand": "LEGO",
+      "model": "60147",
+      "name": "LEGO 60147",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60147",
+        "LEGO 60147 Fishing Boat",
+        "LEGO Set 60147"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60147"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60148",
+      "brand": "LEGO",
+      "model": "60148",
+      "name": "LEGO 60148",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60148",
+        "LEGO 60148 ATV Race Team",
+        "LEGO Set 60148"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60148"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60149",
+      "brand": "LEGO",
+      "model": "60149",
+      "name": "LEGO 60149",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60149",
+        "LEGO 60149 4x4 with Catamaran",
+        "LEGO Set 60149"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60149"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60150",
+      "brand": "LEGO",
+      "model": "60150",
+      "name": "LEGO 60150",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60150",
+        "LEGO 60150 Pizza Van",
+        "LEGO Set 60150"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60150"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60151",
+      "brand": "LEGO",
+      "model": "60151",
+      "name": "LEGO 60151",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60151",
+        "LEGO 60151 Dragster Transporter",
+        "LEGO Set 60151"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60151"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60152",
+      "brand": "LEGO",
+      "model": "60152",
+      "name": "LEGO 60152",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60152",
+        "LEGO 60152 Sweeper & Excavator",
+        "LEGO Set 60152"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60152"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60153",
+      "brand": "LEGO",
+      "model": "60153",
+      "name": "LEGO 60153",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60153",
+        "LEGO 60153 People pack – Fun at the beach",
+        "LEGO Set 60153"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60153"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60154",
+      "brand": "LEGO",
+      "model": "60154",
+      "name": "LEGO 60154",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60154",
+        "LEGO 60154 Bus Station",
+        "LEGO Set 60154"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60154"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60155",
+      "brand": "LEGO",
+      "model": "60155",
+      "name": "LEGO 60155",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60155",
+        "LEGO 60155 LEGO® City Advent Calendar",
+        "LEGO Set 60155"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60155"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60156",
+      "brand": "LEGO",
+      "model": "60156",
+      "name": "LEGO 60156",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60156",
+        "LEGO 60156 Jungle Buggy",
+        "LEGO Set 60156"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60156"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60157",
+      "brand": "LEGO",
+      "model": "60157",
+      "name": "LEGO 60157",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60157",
+        "LEGO 60157 Jungle Starter Set",
+        "LEGO Set 60157"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60157"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60158",
+      "brand": "LEGO",
+      "model": "60158",
+      "name": "LEGO 60158",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60158",
+        "LEGO 60158 Jungle Cargo Helicopter",
+        "LEGO Set 60158"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60158"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60159",
+      "brand": "LEGO",
+      "model": "60159",
+      "name": "LEGO 60159",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60159",
+        "LEGO 60159 Jungle Halftrack Mission",
+        "LEGO Set 60159"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60159"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60160",
+      "brand": "LEGO",
+      "model": "60160",
+      "name": "LEGO 60160",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60160",
+        "LEGO 60160 Jungle Mobile Lab",
+        "LEGO Set 60160"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60160"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60161",
+      "brand": "LEGO",
+      "model": "60161",
+      "name": "LEGO 60161",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60161",
+        "LEGO 60161 Jungle Exploration Site",
+        "LEGO Set 60161"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60161"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60162",
+      "brand": "LEGO",
+      "model": "60162",
+      "name": "LEGO 60162",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60162",
+        "LEGO 60162 Jungle Air Drop Helicopter",
+        "LEGO Set 60162"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60162"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60163",
+      "brand": "LEGO",
+      "model": "60163",
+      "name": "LEGO 60163",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60163",
+        "LEGO 60163 Coast Guard Starter Set",
+        "LEGO Set 60163"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60163"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60164",
+      "brand": "LEGO",
+      "model": "60164",
+      "name": "LEGO 60164",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60164",
+        "LEGO 60164 Sea Rescue Plane",
+        "LEGO Set 60164"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60164"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60165",
+      "brand": "LEGO",
+      "model": "60165",
+      "name": "LEGO 60165",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60165",
+        "LEGO 60165 4 x 4 Response Unit",
+        "LEGO Set 60165"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60165"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60166",
+      "brand": "LEGO",
+      "model": "60166",
+      "name": "LEGO 60166",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60166",
+        "LEGO 60166 Heavy-duty Rescue Helicopter",
+        "LEGO Set 60166"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60166"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60167",
+      "brand": "LEGO",
+      "model": "60167",
+      "name": "LEGO 60167",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60167",
+        "LEGO 60167 Coast Guard Head Quarters",
+        "LEGO Set 60167"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60167"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60168",
+      "brand": "LEGO",
+      "model": "60168",
+      "name": "LEGO 60168",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60168",
+        "LEGO 60168 Sailboat Rescue",
+        "LEGO Set 60168"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60168"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60169",
+      "brand": "LEGO",
+      "model": "60169",
+      "name": "LEGO 60169",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60169",
+        "LEGO 60169 Cargo Terminal",
+        "LEGO Set 60169"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60169"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60197",
+      "brand": "LEGO",
+      "model": "60197",
+      "name": "LEGO 60197",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60197",
+        "LEGO 60197 Passenger Train",
+        "LEGO Set 60197"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60197"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    },
+    {
+      "id": "lego-60198",
+      "brand": "LEGO",
+      "model": "60198",
+      "name": "LEGO 60198",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 60198",
+        "LEGO 60198 Cargo Train",
+        "LEGO Set 60198"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "60198"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-city-technic-instructions-2026-10-29-r41"
+    }
+  ]
+}

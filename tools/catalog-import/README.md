@@ -566,3 +566,28 @@ regressions cover every new body, repeated names, instruction/box/partial offers
 compatible scopes and accessory words inside versus outside official names. Minimum age
 comes from the explicit age-panel lower bound; no edition, language, package or completeness
 facts are inferred. Unavailable official pages are omitted, not filled from number ranges.
+
+### Retired LEGO City, Technic and trains (2026-10-29, R41)
+
+`lego-city-technic-instructions.json` adds 122 absent numbered sets from individually
+reviewed official instruction panels, including Emerald Night, Winter Holiday Train,
+Crocodile Locomotive, City passenger/cargo trains and Technic construction vehicles.
+The expanded catalogue contains 27,230 rows, including 7,754 LEGO identities; all 44
+previous JSON seed files remain byte-identical. Exact headings, number/age panels and
+individual primary URLs are recorded in `proofs/lego-city-technic-instructions-2026-10-29-r41.json`.
+
+```sh
+python3 tools/catalog-import/expand_lego_city_technic.py
+python3 tools/catalog-import/expand_lego_city_technic.py --check
+```
+
+This offline generator checks the proof shape and rejects cross-file IDs and normalized
+alias collisions. Only set number and the explicit panel's minimum recommended age are
+attributes. All three aliases require LEGO and the complete printed number; the official
+name is included only in a number-anchored alias. Repeated names remain separate sets,
+and unnumbered names remain unspecific. Existing instruction, box, partial, compatible,
+custom-build and multiple-code offer exclusions remain in effect. No GTIN, production
+year, edition, package contents, completeness or compatibility is inferred. Source-panel
+piece counts remain evidence only. Unavailable pages 42085, 60070 and 60094 are omitted;
+this is a selected supplement, not a complete theme enumeration. Web-tool evidence may
+use indexed/cached pages; no fresh origin HTTP200 is claimed.
