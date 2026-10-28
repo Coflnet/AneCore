@@ -385,3 +385,16 @@ does not establish body-only contents or kit completeness. Aliases require DJI a
 No GTIN, retailer SKU, camera specifications, package contents, fitted accessories, compatibility,
 condition or edition are inferred. Gimbals, remotes, batteries, microphones and combo packages
 are not additional device rows. No manufacturer marketing descriptions or images are copied.
+
+## KNIPEX cable and wire-rope cutting tools (2026-10-28, R39)
+
+`resale-goods.json` adds 39 exact cable/shear tool bodies from the official
+[KNIPEX cable and wire-rope shears variant table](https://www.knipex.com/products/cable-and-wire-rope-shears?items_per_page=100).
+Only article/model, displayed tool name/type and explicit Length cells are authored.
+Lengths are table facts, not decoded from article numbers (95 32 060 is 630 mm;
+95 32 100 is 680 mm). SB-only rows, unselected T/TC variants, spare blades,
+springs, heads and repair kits are excluded; no packaging/body equivalence is inferred.
+The manufacturer's indexed table was available; direct category and 95 32 320
+data-sheet opens returned 403, without retry or bypass. No fresh origin HTTP200 is claimed.
+No GTIN, fit, interchangeability, cutting capacity, price, insulation rating,
+package contents, quantity, production year or offer condition is inferred.

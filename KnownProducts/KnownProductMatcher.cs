@@ -264,11 +264,7 @@ public class KnownProductMatcher
 
         // No SKU is needed for an independent offer, but the tool must be the primary item.
         var primary = PrimaryHandTool.Match(normalized);
-        var kind = primary.Groups["kind"];
-        // Swedish cable cutters are tools; the "kabel" substring must not veto their primary name.
-        var accessoryTitle = kind.Value == "kabelsax"
-            ? normalized[..kind.Index] + "werkzeug" + normalized[(kind.Index + kind.Length)..] : normalized;
-        return primary.Success && !IsAccessory(accessoryTitle)
+        return primary.Success && !IsAccessory(normalized)
             && products.Any(product => product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
                 && Normalize(product.Brand) == primary.Groups["brand"].Value
                 && IsCategoryCompatible(product, categoryPath));
@@ -314,6 +310,12 @@ public class KnownProductMatcher
                 || IsAccessory(string.Join(" ", titleTokens.Take(i).Concat(titleTokens.Skip(i + aliasTokens.Length))))))
                 continue;
             if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
+                continue;
+            if (entry.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
+                && !entry.Product.PossibleAttributes.ContainsKey("socket_size_mm")
+                && entry.Product.PossibleAttributes.GetValueOrDefault("article_number") is { Count: 1 } articles
+                && Regex.IsMatch(title, @"(?<!\d)" + string.Join(@"[^a-z0-9]*", Normalize(articles.Single()).Split(' ').Select(Regex.Escape))
+                    + @"(?:(?:[-_.,/]\s*)[\p{L}\d]|(?!(?:mm)\b)[\p{L}\d])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
                 continue;
             if (entry.Product.Brand.Equals("DJI", StringComparison.OrdinalIgnoreCase)
                 && entry.Product.PossibleAttributes.GetValueOrDefault("device_type")?.Any(t => t is "drone" or "camera") == true
@@ -521,8 +523,13 @@ public class KnownProductMatcher
         "dabei", "included", "inklusive", "inkl", "gratis", "inbegrepen", "inclus", "incluso", "inclusa",
     };
 
-    private static bool IsAccessory(string normalizedTitle)
+    private bool IsAccessory(string normalizedTitle)
     {
+        var primary = PrimaryHandTool.Match(normalizedTitle);
+        var kind = primary.Groups["kind"];
+        // A recognized tool maker's primary Swedish cable cutter is not a cable accessory.
+        if (kind.Value == "kabelsax" && handToolArticles.Any(article => article.Brand == primary.Groups["brand"].Value))
+            normalizedTitle = normalizedTitle[..kind.Index] + "werkzeug" + normalizedTitle[(kind.Index + kind.Length)..];
         // These whole-machine nouns do not offer a replacement battery.
         normalizedTitle = CordlessToolName.Replace(normalizedTitle, "werkzeug");
         var tokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);

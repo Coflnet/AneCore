@@ -9030,6 +9030,2034 @@
         "thermal"
       ],
       "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "knipex-9511160",
+      "brand": "KNIPEX",
+      "model": "95 11 160",
+      "name": "KNIPEX StepCut® Cable Shears 95 11 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 11 160",
+        "KNIPEX 9511160",
+        "KNIPEX StepCut® Cable Shears 95 11 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 11 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9512160",
+      "brand": "KNIPEX",
+      "model": "95 12 160",
+      "name": "KNIPEX StepCut® Cable Shears 95 12 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 12 160",
+        "KNIPEX 9512160",
+        "KNIPEX StepCut® Cable Shears 95 12 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 12 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9516160",
+      "brand": "KNIPEX",
+      "model": "95 16 160",
+      "name": "KNIPEX StepCut® Cable Shears 95 16 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 16 160",
+        "KNIPEX 9516160",
+        "KNIPEX StepCut® Cable Shears 95 16 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 16 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9511225",
+      "brand": "KNIPEX",
+      "model": "95 11 225",
+      "name": "KNIPEX StepCut® XL Cable shears with step cut 95 11 225",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 11 225",
+        "KNIPEX 9511225",
+        "KNIPEX StepCut® XL Cable shears with step cut 95 11 225"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 11 225"
+        ],
+        "length_mm": [
+          "225"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9512225",
+      "brand": "KNIPEX",
+      "model": "95 12 225",
+      "name": "KNIPEX StepCut® XL Cable shears with step cut 95 12 225",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 12 225",
+        "KNIPEX 9512225",
+        "KNIPEX StepCut® XL Cable shears with step cut 95 12 225"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 12 225"
+        ],
+        "length_mm": [
+          "225"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9518225",
+      "brand": "KNIPEX",
+      "model": "95 18 225",
+      "name": "KNIPEX StepCut® XL Cable shears with step cut 95 18 225",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 18 225",
+        "KNIPEX 9518225",
+        "KNIPEX StepCut® XL Cable shears with step cut 95 18 225"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 18 225"
+        ],
+        "length_mm": [
+          "225"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9511165",
+      "brand": "KNIPEX",
+      "model": "95 11 165",
+      "name": "KNIPEX Cable Shears 95 11 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 11 165",
+        "KNIPEX 9511165",
+        "KNIPEX Cable Shears 95 11 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 11 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9512165",
+      "brand": "KNIPEX",
+      "model": "95 12 165",
+      "name": "KNIPEX Cable Shears 95 12 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 12 165",
+        "KNIPEX 9512165",
+        "KNIPEX Cable Shears 95 12 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 12 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9516165",
+      "brand": "KNIPEX",
+      "model": "95 16 165",
+      "name": "KNIPEX Cable Shears 95 16 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 16 165",
+        "KNIPEX 9516165",
+        "KNIPEX Cable Shears 95 16 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 16 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9541165",
+      "brand": "KNIPEX",
+      "model": "95 41 165",
+      "name": "KNIPEX Cable Shears 95 41 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 41 165",
+        "KNIPEX 9541165",
+        "KNIPEX Cable Shears 95 41 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 41 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9521165",
+      "brand": "KNIPEX",
+      "model": "95 21 165",
+      "name": "KNIPEX Cable Shears With opening spring 95 21 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 21 165",
+        "KNIPEX 9521165",
+        "KNIPEX Cable Shears With opening spring 95 21 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 21 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9522165",
+      "brand": "KNIPEX",
+      "model": "95 22 165",
+      "name": "KNIPEX Cable Shears With opening spring 95 22 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 22 165",
+        "KNIPEX 9522165",
+        "KNIPEX Cable Shears With opening spring 95 22 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 22 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9526165",
+      "brand": "KNIPEX",
+      "model": "95 26 165",
+      "name": "KNIPEX Cable Shears With opening spring 95 26 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 26 165",
+        "KNIPEX 9526165",
+        "KNIPEX Cable Shears With opening spring 95 26 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 26 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9511200",
+      "brand": "KNIPEX",
+      "model": "95 11 200",
+      "name": "KNIPEX Cable Shears With twin cutting edge 95 11 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 11 200",
+        "KNIPEX 9511200",
+        "KNIPEX Cable Shears With twin cutting edge 95 11 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 11 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9512200",
+      "brand": "KNIPEX",
+      "model": "95 12 200",
+      "name": "KNIPEX Cable Shears With twin cutting edge 95 12 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 12 200",
+        "KNIPEX 9512200",
+        "KNIPEX Cable Shears With twin cutting edge 95 12 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 12 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9516200",
+      "brand": "KNIPEX",
+      "model": "95 16 200",
+      "name": "KNIPEX Cable Shears With twin cutting edge 95 16 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 16 200",
+        "KNIPEX 9516200",
+        "KNIPEX Cable Shears With twin cutting edge 95 16 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 16 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9517200",
+      "brand": "KNIPEX",
+      "model": "95 17 200",
+      "name": "KNIPEX Cable Shears With twin cutting edge 95 17 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 17 200",
+        "KNIPEX 9517200",
+        "KNIPEX Cable Shears With twin cutting edge 95 17 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 17 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9531250",
+      "brand": "KNIPEX",
+      "model": "95 31 250",
+      "name": "KNIPEX Cable Cutter (ratchet action) 95 31 250",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 31 250",
+        "KNIPEX 9531250",
+        "KNIPEX Cable Cutter (ratchet action) 95 31 250"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 31 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9531280",
+      "brand": "KNIPEX",
+      "model": "95 31 280",
+      "name": "KNIPEX Cable Cutter (ratchet action) 95 31 280",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 31 280",
+        "KNIPEX 9531280",
+        "KNIPEX Cable Cutter (ratchet action) 95 31 280"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 31 280"
+        ],
+        "length_mm": [
+          "280"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9536250",
+      "brand": "KNIPEX",
+      "model": "95 36 250",
+      "name": "KNIPEX Cable Cutter (ratchet action) 95 36 250",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 36 250",
+        "KNIPEX 9536250",
+        "KNIPEX Cable Cutter (ratchet action) 95 36 250"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 36 250"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9536280",
+      "brand": "KNIPEX",
+      "model": "95 36 280",
+      "name": "KNIPEX Cable Cutter (ratchet action) 95 36 280",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 36 280",
+        "KNIPEX 9536280",
+        "KNIPEX Cable Cutter (ratchet action) 95 36 280"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 36 280"
+        ],
+        "length_mm": [
+          "280"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532320",
+      "brand": "KNIPEX",
+      "model": "95 32 320",
+      "name": "KNIPEX Cable Cutter (ratchet principle, 3-stage) 95 32 320",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 320",
+        "KNIPEX 9532320",
+        "KNIPEX Cable Cutter (ratchet principle, 3-stage) 95 32 320"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 32 320"
+        ],
+        "length_mm": [
+          "320"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9536320",
+      "brand": "KNIPEX",
+      "model": "95 36 320",
+      "name": "KNIPEX Cable Cutter (ratchet principle, 3-stage) 95 36 320",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 36 320",
+        "KNIPEX 9536320",
+        "KNIPEX Cable Cutter (ratchet principle, 3-stage) 95 36 320"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 36 320"
+        ],
+        "length_mm": [
+          "320"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532060",
+      "brand": "KNIPEX",
+      "model": "95 32 060",
+      "name": "KNIPEX Cable Cutter (ratchet action) With telescopic handles 95 32 060",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 060",
+        "KNIPEX 9532060",
+        "KNIPEX Cable Cutter (ratchet action) With telescopic handles 95 32 060"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 32 060"
+        ],
+        "length_mm": [
+          "630"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532100",
+      "brand": "KNIPEX",
+      "model": "95 32 100",
+      "name": "KNIPEX Cable Cutter (ratchet action) With telescopic handles 95 32 100",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 100",
+        "KNIPEX 9532100",
+        "KNIPEX Cable Cutter (ratchet action) With telescopic handles 95 32 100"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 32 100"
+        ],
+        "length_mm": [
+          "680"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532315a",
+      "brand": "KNIPEX",
+      "model": "95 32 315 A",
+      "name": "KNIPEX Cable Cutter (ratchet action) For steel wire armoured cables (SWA cable) 95 32 315 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 315 A",
+        "KNIPEX 9532315A",
+        "KNIPEX Cable Cutter (ratchet action) For steel wire armoured cables (SWA cable) 95 32 315 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 32 315 A"
+        ],
+        "length_mm": [
+          "315"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9536315a",
+      "brand": "KNIPEX",
+      "model": "95 36 315 A",
+      "name": "KNIPEX Cable Cutter (ratchet action) For steel wire armoured cables (SWA cable) 95 36 315 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 36 315 A",
+        "KNIPEX 9536315A",
+        "KNIPEX Cable Cutter (ratchet action) For steel wire armoured cables (SWA cable) 95 36 315 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 36 315 A"
+        ],
+        "length_mm": [
+          "315"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9561190",
+      "brand": "KNIPEX",
+      "model": "95 61 190",
+      "name": "KNIPEX Wire Rope Cutter Forged 95 61 190",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 61 190",
+        "KNIPEX 9561190",
+        "KNIPEX Wire Rope Cutter Forged 95 61 190"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_rope_cutter"
+        ],
+        "article_number": [
+          "95 61 190"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9562190",
+      "brand": "KNIPEX",
+      "model": "95 62 190",
+      "name": "KNIPEX Wire Rope Cutter Forged 95 62 190",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 62 190",
+        "KNIPEX 9562190",
+        "KNIPEX Wire Rope Cutter Forged 95 62 190"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_rope_cutter"
+        ],
+        "article_number": [
+          "95 62 190"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9562160",
+      "brand": "KNIPEX",
+      "model": "95 62 160",
+      "name": "KNIPEX Wire Rope Cutter Also for high-strength wire rope 95 62 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 62 160",
+        "KNIPEX 9562160",
+        "KNIPEX Wire Rope Cutter Also for high-strength wire rope 95 62 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_rope_cutter"
+        ],
+        "article_number": [
+          "95 62 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9505165",
+      "brand": "KNIPEX",
+      "model": "95 05 165",
+      "name": "KNIPEX Cable Shears Handles extrusion plastic-coated 95 05 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 05 165",
+        "KNIPEX 9505165",
+        "KNIPEX Cable Shears Handles extrusion plastic-coated 95 05 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 05 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9506230",
+      "brand": "KNIPEX",
+      "model": "95 06 230",
+      "name": "KNIPEX Cable Shears Handles extrusion plastic-coated 95 06 230",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 06 230",
+        "KNIPEX 9506230",
+        "KNIPEX Cable Shears Handles extrusion plastic-coated 95 06 230"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 06 230"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9561150",
+      "brand": "KNIPEX",
+      "model": "95 61 150",
+      "name": "KNIPEX Bowden Cable Cutter 95 61 150",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 61 150",
+        "KNIPEX 9561150",
+        "KNIPEX Bowden Cable Cutter 95 61 150"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "bowden_cable_cutter"
+        ],
+        "article_number": [
+          "95 61 150"
+        ],
+        "length_mm": [
+          "150"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9512500",
+      "brand": "KNIPEX",
+      "model": "95 12 500",
+      "name": "KNIPEX Cable Shears 95 12 500",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 12 500",
+        "KNIPEX 9512500",
+        "KNIPEX Cable Shears 95 12 500"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 12 500"
+        ],
+        "length_mm": [
+          "500"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9517500",
+      "brand": "KNIPEX",
+      "model": "95 17 500",
+      "name": "KNIPEX Cable Shears 95 17 500",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 17 500",
+        "KNIPEX 9517500",
+        "KNIPEX Cable Shears 95 17 500"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 17 500"
+        ],
+        "length_mm": [
+          "500"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9527600",
+      "brand": "KNIPEX",
+      "model": "95 27 600",
+      "name": "KNIPEX Cable Shears For two-hand operation 95 27 600",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 27 600",
+        "KNIPEX 9527600",
+        "KNIPEX Cable Shears For two-hand operation 95 27 600"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_shears"
+        ],
+        "article_number": [
+          "95 27 600"
+        ],
+        "length_mm": [
+          "600"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9455200",
+      "brand": "KNIPEX",
+      "model": "94 55 200",
+      "name": "KNIPEX Anvil Shears 94 55 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 94 55 200",
+        "KNIPEX 9455200",
+        "KNIPEX Anvil Shears 94 55 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "anvil_shears"
+        ],
+        "article_number": [
+          "94 55 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532038",
+      "brand": "KNIPEX",
+      "model": "95 32 038",
+      "name": "KNIPEX Cable Shears (ratchet action) With telescopic handles 95 32 038",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 038",
+        "KNIPEX 9532038",
+        "KNIPEX Cable Shears (ratchet action) With telescopic handles 95 32 038"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_shears"
+        ],
+        "article_number": [
+          "95 32 038"
+        ],
+        "length_mm": [
+          "570"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
+    },
+    {
+      "id": "knipex-9532340sr",
+      "brand": "KNIPEX",
+      "model": "95 32 340 SR",
+      "name": "KNIPEX ACSR Cable Cutter (ratchet action) For cables with a steel core 95 32 340 SR",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 95 32 340 SR",
+        "KNIPEX 9532340SR",
+        "KNIPEX ACSR Cable Cutter (ratchet action) For cables with a steel core 95 32 340 SR"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratchet_cable_cutter"
+        ],
+        "article_number": [
+          "95 32 340 SR"
+        ],
+        "length_mm": [
+          "340"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "t",
+        "tc",
+        "sb",
+        "sba",
+        "s8",
+        "s02",
+        "v01",
+        "repair",
+        "spare",
+        "blade",
+        "blades",
+        "spring",
+        "ersatzklinge",
+        "reparatursatz"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r39-knipex-cable"
     }
   ]
 }
