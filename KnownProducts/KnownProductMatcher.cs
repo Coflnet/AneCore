@@ -282,6 +282,11 @@ public class KnownProductMatcher
                 continue;
             if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
                 continue;
+            // Socket decimal sizes and attached article suffixes must not select a shorter catalogue SKU.
+            if (entry.Product.PossibleAttributes.ContainsKey("socket_size_mm")
+                && Regex.IsMatch(title, @"(?<!\d)" + string.Join(@"[^a-z0-9]*", Normalize(entry.Product.Model).Split(' ').Select(Regex.Escape))
+                    + @"(?:[.,]\d|/\w|(?!(?:mm)\b)\p{L})", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+                continue;
             if (!IsCategoryCompatible(entry.Product, categoryPath))
                 continue;
             // A set number can also name a manual, empty box, partial set or custom build.
