@@ -306,13 +306,11 @@ public class KnownProductMatcher
         if (matches.Count == 0)
             return null;
 
-        var maxTokens = matches.Max(m => m.TokenCount);
-        var best = matches.Where(m => m.TokenCount == maxTokens).ToList();
-        var distinctProducts = best.Select(m => m.Product.Id).Distinct().ToList();
-        if (distinctProducts.Count > 1)
+        var best = matches.MaxBy(m => m.TokenCount);
+        if (matches.Any(m => m.TokenCount == best.TokenCount && m.Product.Id != best.Product.Id))
             return null; // ambiguous: two different products matched with equally-specific aliases
 
-        var candidate = best[0].Product;
+        var candidate = best.Product;
 
         if (!string.IsNullOrWhiteSpace(brand) && !string.IsNullOrWhiteSpace(candidate.Brand)
             && !string.Equals(Normalize(brand), Normalize(candidate.Brand), StringComparison.Ordinal))

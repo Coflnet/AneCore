@@ -1,0 +1,4432 @@
+{
+  "products": [
+    {
+      "id": "lego-21020",
+      "brand": "LEGO",
+      "model": "21020",
+      "name": "LEGO 21020",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21020",
+        "LEGO Set 21020",
+        "LEGO 21020 Trevi Fountain"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21020"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21026",
+      "brand": "LEGO",
+      "model": "21026",
+      "name": "LEGO 21026",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21026",
+        "LEGO Set 21026",
+        "LEGO 21026 Venice, Italy"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21026"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21027",
+      "brand": "LEGO",
+      "model": "21027",
+      "name": "LEGO 21027",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21027",
+        "LEGO Set 21027",
+        "LEGO 21027 Berlin, Germany"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21027"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21028",
+      "brand": "LEGO",
+      "model": "21028",
+      "name": "LEGO 21028",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21028",
+        "LEGO Set 21028",
+        "LEGO 21028 New York City, USA"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21028"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21029",
+      "brand": "LEGO",
+      "model": "21029",
+      "name": "LEGO 21029",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21029",
+        "LEGO Set 21029",
+        "LEGO 21029 Buckingham Palace"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21029"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21031",
+      "brand": "LEGO",
+      "model": "21031",
+      "name": "LEGO 21031",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21031",
+        "LEGO Set 21031",
+        "LEGO 21031 Burj Khalifa, Dubai"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21031"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21032",
+      "brand": "LEGO",
+      "model": "21032",
+      "name": "LEGO 21032",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21032",
+        "LEGO Set 21032",
+        "LEGO 21032 Sydney"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21032"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21033",
+      "brand": "LEGO",
+      "model": "21033",
+      "name": "LEGO 21033",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21033",
+        "LEGO Set 21033",
+        "LEGO 21033 Chicago"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21033"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21036",
+      "brand": "LEGO",
+      "model": "21036",
+      "name": "LEGO 21036",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21036",
+        "LEGO Set 21036",
+        "LEGO 21036 Arc de Triomphe"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21036"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21037",
+      "brand": "LEGO",
+      "model": "21037",
+      "name": "LEGO 21037",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21037",
+        "LEGO Set 21037",
+        "LEGO 21037 LEGO® House"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21037"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21039",
+      "brand": "LEGO",
+      "model": "21039",
+      "name": "LEGO 21039",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21039",
+        "LEGO Set 21039",
+        "LEGO 21039 Shanghai"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21039"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21043",
+      "brand": "LEGO",
+      "model": "21043",
+      "name": "LEGO 21043",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21043",
+        "LEGO Set 21043",
+        "LEGO 21043 San Francisco"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21043"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21045",
+      "brand": "LEGO",
+      "model": "21045",
+      "name": "LEGO 21045",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21045",
+        "LEGO Set 21045",
+        "LEGO 21045 Trafalgar Square"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21045"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21046",
+      "brand": "LEGO",
+      "model": "21046",
+      "name": "LEGO 21046",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21046",
+        "LEGO Set 21046",
+        "LEGO 21046 Empire State Building"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21046"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21047",
+      "brand": "LEGO",
+      "model": "21047",
+      "name": "LEGO 21047",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21047",
+        "LEGO Set 21047",
+        "LEGO 21047 Las Vegas"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21047"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21051",
+      "brand": "LEGO",
+      "model": "21051",
+      "name": "LEGO 21051",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21051",
+        "LEGO Set 21051",
+        "LEGO 21051 Tokyo"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21051"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21052",
+      "brand": "LEGO",
+      "model": "21052",
+      "name": "LEGO 21052",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21052",
+        "LEGO Set 21052",
+        "LEGO 21052 Dubai"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21052"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21054",
+      "brand": "LEGO",
+      "model": "21054",
+      "name": "LEGO 21054",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21054",
+        "LEGO Set 21054",
+        "LEGO 21054 The White House"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21054"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21055",
+      "brand": "LEGO",
+      "model": "21055",
+      "name": "LEGO 21055",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21055",
+        "LEGO Set 21055",
+        "LEGO 21055 Burj Khalifa"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21055"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21056",
+      "brand": "LEGO",
+      "model": "21056",
+      "name": "LEGO 21056",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21056",
+        "LEGO Set 21056",
+        "LEGO 21056 Taj Mahal"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21056"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21057",
+      "brand": "LEGO",
+      "model": "21057",
+      "name": "LEGO 21057",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21057",
+        "LEGO Set 21057",
+        "LEGO 21057 Singapore"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21057"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21301",
+      "brand": "LEGO",
+      "model": "21301",
+      "name": "LEGO 21301",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21301",
+        "LEGO Set 21301",
+        "LEGO 21301 Birds"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21301"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21302",
+      "brand": "LEGO",
+      "model": "21302",
+      "name": "LEGO 21302",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21302",
+        "LEGO Set 21302",
+        "LEGO 21302 The Big Bang Theory"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21302"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21303",
+      "brand": "LEGO",
+      "model": "21303",
+      "name": "LEGO 21303",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21303",
+        "LEGO Set 21303",
+        "LEGO 21303 WALL-E"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21303"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21304",
+      "brand": "LEGO",
+      "model": "21304",
+      "name": "LEGO 21304",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21304",
+        "LEGO Set 21304",
+        "LEGO 21304 Doctor Who"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21304"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21305",
+      "brand": "LEGO",
+      "model": "21305",
+      "name": "LEGO 21305",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21305",
+        "LEGO Set 21305",
+        "LEGO 21305 Maze"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21305"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21306",
+      "brand": "LEGO",
+      "model": "21306",
+      "name": "LEGO 21306",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21306",
+        "LEGO Set 21306",
+        "LEGO 21306 Yellow Submarine"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21306"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21308",
+      "brand": "LEGO",
+      "model": "21308",
+      "name": "LEGO 21308",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21308",
+        "LEGO Set 21308",
+        "LEGO 21308 Adventure Time™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21308"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21309",
+      "brand": "LEGO",
+      "model": "21309",
+      "name": "LEGO 21309",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21309",
+        "LEGO Set 21309",
+        "LEGO 21309 LEGO® NASA Apollo Saturn V"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21309"
+        ],
+        "min_age": [
+          "14"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21310",
+      "brand": "LEGO",
+      "model": "21310",
+      "name": "LEGO 21310",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21310",
+        "LEGO Set 21310",
+        "LEGO 21310 Old Fishing Store"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21310"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21311",
+      "brand": "LEGO",
+      "model": "21311",
+      "name": "LEGO 21311",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21311",
+        "LEGO Set 21311",
+        "LEGO 21311 Voltron"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21311"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21312",
+      "brand": "LEGO",
+      "model": "21312",
+      "name": "LEGO 21312",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21312",
+        "LEGO Set 21312",
+        "LEGO 21312 Women of NASA"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21312"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21313",
+      "brand": "LEGO",
+      "model": "21313",
+      "name": "LEGO 21313",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21313",
+        "LEGO Set 21313",
+        "LEGO 21313 Ship in a Bottle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21313"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21314",
+      "brand": "LEGO",
+      "model": "21314",
+      "name": "LEGO 21314",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21314",
+        "LEGO Set 21314",
+        "LEGO 21314 TRON: Legacy"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21314"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21315",
+      "brand": "LEGO",
+      "model": "21315",
+      "name": "LEGO 21315",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21315",
+        "LEGO Set 21315",
+        "LEGO 21315 Pop-Up Book"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21315"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21317",
+      "brand": "LEGO",
+      "model": "21317",
+      "name": "LEGO 21317",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21317",
+        "LEGO Set 21317",
+        "LEGO 21317 Steamboat Willie"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21317"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21318",
+      "brand": "LEGO",
+      "model": "21318",
+      "name": "LEGO 21318",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21318",
+        "LEGO Set 21318",
+        "LEGO 21318 Tree House"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21318"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21319",
+      "brand": "LEGO",
+      "model": "21319",
+      "name": "LEGO 21319",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21319",
+        "LEGO Set 21319",
+        "LEGO 21319 Central Perk"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21319"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21320",
+      "brand": "LEGO",
+      "model": "21320",
+      "name": "LEGO 21320",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21320",
+        "LEGO Set 21320",
+        "LEGO 21320 Dinosaur Fossils"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21320"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21321",
+      "brand": "LEGO",
+      "model": "21321",
+      "name": "LEGO 21321",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21321",
+        "LEGO Set 21321",
+        "LEGO 21321 International Space Station"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21321"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21322",
+      "brand": "LEGO",
+      "model": "21322",
+      "name": "LEGO 21322",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21322",
+        "LEGO Set 21322",
+        "LEGO 21322 Pirates of Barracuda Bay"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21322"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21324",
+      "brand": "LEGO",
+      "model": "21324",
+      "name": "LEGO 21324",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21324",
+        "LEGO Set 21324",
+        "LEGO 21324 123 Sesame Street"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21324"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21325",
+      "brand": "LEGO",
+      "model": "21325",
+      "name": "LEGO 21325",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21325",
+        "LEGO Set 21325",
+        "LEGO 21325 Blacksmith"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21325"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21326",
+      "brand": "LEGO",
+      "model": "21326",
+      "name": "LEGO 21326",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21326",
+        "LEGO Set 21326",
+        "LEGO 21326 Winnie the Pooh"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21326"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21327",
+      "brand": "LEGO",
+      "model": "21327",
+      "name": "LEGO 21327",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21327",
+        "LEGO Set 21327",
+        "LEGO 21327 Typewriter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21327"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21328",
+      "brand": "LEGO",
+      "model": "21328",
+      "name": "LEGO 21328",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21328",
+        "LEGO Set 21328",
+        "LEGO 21328 Seinfeld"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21328"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21329",
+      "brand": "LEGO",
+      "model": "21329",
+      "name": "LEGO 21329",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21329",
+        "LEGO Set 21329",
+        "LEGO 21329 Fender® Stratocaster™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21329"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21331",
+      "brand": "LEGO",
+      "model": "21331",
+      "name": "LEGO 21331",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21331",
+        "LEGO Set 21331",
+        "LEGO 21331 Sonic the Hedgehog™ – Green Hill Zone"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21331"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21332",
+      "brand": "LEGO",
+      "model": "21332",
+      "name": "LEGO 21332",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21332",
+        "LEGO Set 21332",
+        "LEGO 21332 The Globe"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21332"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21334",
+      "brand": "LEGO",
+      "model": "21334",
+      "name": "LEGO 21334",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21334",
+        "LEGO Set 21334",
+        "LEGO 21334 Jazz Quartet"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21334"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21336",
+      "brand": "LEGO",
+      "model": "21336",
+      "name": "LEGO 21336",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21336",
+        "LEGO Set 21336",
+        "LEGO 21336 The Office"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21336"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21337",
+      "brand": "LEGO",
+      "model": "21337",
+      "name": "LEGO 21337",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21337",
+        "LEGO Set 21337",
+        "LEGO 21337 Table Football"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21337"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21338",
+      "brand": "LEGO",
+      "model": "21338",
+      "name": "LEGO 21338",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21338",
+        "LEGO Set 21338",
+        "LEGO 21338 A-Frame Cabin"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21338"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21340",
+      "brand": "LEGO",
+      "model": "21340",
+      "name": "LEGO 21340",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21340",
+        "LEGO Set 21340",
+        "LEGO 21340 Tales of the Space Age"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21340"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-21341",
+      "brand": "LEGO",
+      "model": "21341",
+      "name": "LEGO 21341",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 21341",
+        "LEGO Set 21341",
+        "LEGO 21341 Disney Hocus Pocus: The Sanderson Sisters' Cottage"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "21341"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42031",
+      "brand": "LEGO",
+      "model": "42031",
+      "name": "LEGO 42031",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42031",
+        "LEGO Set 42031",
+        "LEGO 42031 Cherry Picker"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42031"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42032",
+      "brand": "LEGO",
+      "model": "42032",
+      "name": "LEGO 42032",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42032",
+        "LEGO Set 42032",
+        "LEGO 42032 Compact Tracked Loader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42032"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42033",
+      "brand": "LEGO",
+      "model": "42033",
+      "name": "LEGO 42033",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42033",
+        "LEGO Set 42033",
+        "LEGO 42033 Record Breaker"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42033"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42034",
+      "brand": "LEGO",
+      "model": "42034",
+      "name": "LEGO 42034",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42034",
+        "LEGO Set 42034",
+        "LEGO 42034 Quad Bike"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42034"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42035",
+      "brand": "LEGO",
+      "model": "42035",
+      "name": "LEGO 42035",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42035",
+        "LEGO Set 42035",
+        "LEGO 42035 Mining Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42035"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42036",
+      "brand": "LEGO",
+      "model": "42036",
+      "name": "LEGO 42036",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42036",
+        "LEGO Set 42036",
+        "LEGO 42036 Street Motorcycle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42036"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42037",
+      "brand": "LEGO",
+      "model": "42037",
+      "name": "LEGO 42037",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42037",
+        "LEGO Set 42037",
+        "LEGO 42037 Formula Off-Roader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42037"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42038",
+      "brand": "LEGO",
+      "model": "42038",
+      "name": "LEGO 42038",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42038",
+        "LEGO Set 42038",
+        "LEGO 42038 Arctic Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42038"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42039",
+      "brand": "LEGO",
+      "model": "42039",
+      "name": "LEGO 42039",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42039",
+        "LEGO Set 42039",
+        "LEGO 42039 24 Hours Race Car"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42039"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42040",
+      "brand": "LEGO",
+      "model": "42040",
+      "name": "LEGO 42040",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42040",
+        "LEGO Set 42040",
+        "LEGO 42040 Fire Plane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42040"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42042",
+      "brand": "LEGO",
+      "model": "42042",
+      "name": "LEGO 42042",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42042",
+        "LEGO Set 42042",
+        "LEGO 42042 Crawler Crane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42042"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42043",
+      "brand": "LEGO",
+      "model": "42043",
+      "name": "LEGO 42043",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42043",
+        "LEGO Set 42043",
+        "LEGO 42043 Mercedes-Benz Arocs 3245"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42043"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42044",
+      "brand": "LEGO",
+      "model": "42044",
+      "name": "LEGO 42044",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42044",
+        "LEGO Set 42044",
+        "LEGO 42044 Display Team Jet"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42044"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42045",
+      "brand": "LEGO",
+      "model": "42045",
+      "name": "LEGO 42045",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42045",
+        "LEGO Set 42045",
+        "LEGO 42045 Hydroplane Racer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42045"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42046",
+      "brand": "LEGO",
+      "model": "42046",
+      "name": "LEGO 42046",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42046",
+        "LEGO Set 42046",
+        "LEGO 42046 Getaway Racer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42046"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42047",
+      "brand": "LEGO",
+      "model": "42047",
+      "name": "LEGO 42047",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42047",
+        "LEGO Set 42047",
+        "LEGO 42047 Police Interceptor"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42047"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42049",
+      "brand": "LEGO",
+      "model": "42049",
+      "name": "LEGO 42049",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42049",
+        "LEGO Set 42049",
+        "LEGO 42049 Mine Loader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42049"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42052",
+      "brand": "LEGO",
+      "model": "42052",
+      "name": "LEGO 42052",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42052",
+        "LEGO Set 42052",
+        "LEGO 42052 Heavy Lift Helicopter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42052"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42053",
+      "brand": "LEGO",
+      "model": "42053",
+      "name": "LEGO 42053",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42053",
+        "LEGO Set 42053",
+        "LEGO 42053 Volvo EW160E"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42053"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42054",
+      "brand": "LEGO",
+      "model": "42054",
+      "name": "LEGO 42054",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42054",
+        "LEGO Set 42054",
+        "LEGO 42054 CLAAS XERION 5000 TRAC VC"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42054"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42055",
+      "brand": "LEGO",
+      "model": "42055",
+      "name": "LEGO 42055",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42055",
+        "LEGO Set 42055",
+        "LEGO 42055 Bucket Wheel Excavator"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42055"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42056",
+      "brand": "LEGO",
+      "model": "42056",
+      "name": "LEGO 42056",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42056",
+        "LEGO Set 42056",
+        "LEGO 42056 Porsche 911 GT3 RS"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42056"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42057",
+      "brand": "LEGO",
+      "model": "42057",
+      "name": "LEGO 42057",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42057",
+        "LEGO Set 42057",
+        "LEGO 42057 Ultralight Helicopter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42057"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42058",
+      "brand": "LEGO",
+      "model": "42058",
+      "name": "LEGO 42058",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42058",
+        "LEGO Set 42058",
+        "LEGO 42058 Stunt Bike"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42058"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42059",
+      "brand": "LEGO",
+      "model": "42059",
+      "name": "LEGO 42059",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42059",
+        "LEGO Set 42059",
+        "LEGO 42059 Stunt Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42059"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42060",
+      "brand": "LEGO",
+      "model": "42060",
+      "name": "LEGO 42060",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42060",
+        "LEGO Set 42060",
+        "LEGO 42060 Roadwork Crew"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42060"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42061",
+      "brand": "LEGO",
+      "model": "42061",
+      "name": "LEGO 42061",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42061",
+        "LEGO Set 42061",
+        "LEGO 42061 Telehandler"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42061"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42062",
+      "brand": "LEGO",
+      "model": "42062",
+      "name": "LEGO 42062",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42062",
+        "LEGO Set 42062",
+        "LEGO 42062 Container Yard"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42062"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42063",
+      "brand": "LEGO",
+      "model": "42063",
+      "name": "LEGO 42063",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42063",
+        "LEGO Set 42063",
+        "LEGO 42063 BMW R 1200 GS Adventure"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42063"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42064",
+      "brand": "LEGO",
+      "model": "42064",
+      "name": "LEGO 42064",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42064",
+        "LEGO Set 42064",
+        "LEGO 42064 Ocean Explorer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42064"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42065",
+      "brand": "LEGO",
+      "model": "42065",
+      "name": "LEGO 42065",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42065",
+        "LEGO Set 42065",
+        "LEGO 42065 RC Tracked Racer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42065"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42066",
+      "brand": "LEGO",
+      "model": "42066",
+      "name": "LEGO 42066",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42066",
+        "LEGO Set 42066",
+        "LEGO 42066 Air Race Jet"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42066"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42068",
+      "brand": "LEGO",
+      "model": "42068",
+      "name": "LEGO 42068",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42068",
+        "LEGO Set 42068",
+        "LEGO 42068 Airport Rescue Vehicle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42068"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42069",
+      "brand": "LEGO",
+      "model": "42069",
+      "name": "LEGO 42069",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42069",
+        "LEGO Set 42069",
+        "LEGO 42069 Extreme Adventure"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42069"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42070",
+      "brand": "LEGO",
+      "model": "42070",
+      "name": "LEGO 42070",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42070",
+        "LEGO Set 42070",
+        "LEGO 42070 6x6 All Terrain Tow Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42070"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42071",
+      "brand": "LEGO",
+      "model": "42071",
+      "name": "LEGO 42071",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42071",
+        "LEGO Set 42071",
+        "LEGO 42071 Dozer Compactor"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42071"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42072",
+      "brand": "LEGO",
+      "model": "42072",
+      "name": "LEGO 42072",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42072",
+        "LEGO Set 42072",
+        "LEGO 42072 WHACK!"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42072"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42074",
+      "brand": "LEGO",
+      "model": "42074",
+      "name": "LEGO 42074",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42074",
+        "LEGO Set 42074",
+        "LEGO 42074 Racing Yacht"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42074"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42075",
+      "brand": "LEGO",
+      "model": "42075",
+      "name": "LEGO 42075",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42075",
+        "LEGO Set 42075",
+        "LEGO 42075 First Responder"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42075"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42077",
+      "brand": "LEGO",
+      "model": "42077",
+      "name": "LEGO 42077",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42077",
+        "LEGO Set 42077",
+        "LEGO 42077 Rally Car"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42077"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42078",
+      "brand": "LEGO",
+      "model": "42078",
+      "name": "LEGO 42078",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42078",
+        "LEGO Set 42078",
+        "LEGO 42078 Mack Anthem"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42078"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42079",
+      "brand": "LEGO",
+      "model": "42079",
+      "name": "LEGO 42079",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42079",
+        "LEGO Set 42079",
+        "LEGO 42079 Heavy Duty Forklift"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42079"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42080",
+      "brand": "LEGO",
+      "model": "42080",
+      "name": "LEGO 42080",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42080",
+        "LEGO Set 42080",
+        "LEGO 42080 Forest Machine"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42080"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42082",
+      "brand": "LEGO",
+      "model": "42082",
+      "name": "LEGO 42082",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42082",
+        "LEGO Set 42082",
+        "LEGO 42082 Rough Terrain Crane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42082"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42083",
+      "brand": "LEGO",
+      "model": "42083",
+      "name": "LEGO 42083",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42083",
+        "LEGO Set 42083",
+        "LEGO 42083 Bugatti Chiron"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42083"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42088",
+      "brand": "LEGO",
+      "model": "42088",
+      "name": "LEGO 42088",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42088",
+        "LEGO Set 42088",
+        "LEGO 42088 Cherry Picker"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42088"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42091",
+      "brand": "LEGO",
+      "model": "42091",
+      "name": "LEGO 42091",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42091",
+        "LEGO Set 42091",
+        "LEGO 42091 Police Pursuit"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42091"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42092",
+      "brand": "LEGO",
+      "model": "42092",
+      "name": "LEGO 42092",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42092",
+        "LEGO Set 42092",
+        "LEGO 42092 Rescue Helicopter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42092"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42093",
+      "brand": "LEGO",
+      "model": "42093",
+      "name": "LEGO 42093",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42093",
+        "LEGO Set 42093",
+        "LEGO 42093 Chevrolet Corvette ZR1"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42093"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42094",
+      "brand": "LEGO",
+      "model": "42094",
+      "name": "LEGO 42094",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42094",
+        "LEGO Set 42094",
+        "LEGO 42094 Tracked Loader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42094"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42095",
+      "brand": "LEGO",
+      "model": "42095",
+      "name": "LEGO 42095",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42095",
+        "LEGO Set 42095",
+        "LEGO 42095 Remote-Controlled Stunt Racer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42095"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42096",
+      "brand": "LEGO",
+      "model": "42096",
+      "name": "LEGO 42096",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42096",
+        "LEGO Set 42096",
+        "LEGO 42096 Porsche 911 RSR"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42096"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42097",
+      "brand": "LEGO",
+      "model": "42097",
+      "name": "LEGO 42097",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42097",
+        "LEGO Set 42097",
+        "LEGO 42097 Compact Crawler Crane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42097"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42098",
+      "brand": "LEGO",
+      "model": "42098",
+      "name": "LEGO 42098",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42098",
+        "LEGO Set 42098",
+        "LEGO 42098 Car Transporter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42098"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42099",
+      "brand": "LEGO",
+      "model": "42099",
+      "name": "LEGO 42099",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42099",
+        "LEGO Set 42099",
+        "LEGO 42099 4X4 X-treme Off-Roader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42099"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42100",
+      "brand": "LEGO",
+      "model": "42100",
+      "name": "LEGO 42100",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42100",
+        "LEGO Set 42100",
+        "LEGO 42100 Liebherr R 9800 Excavator"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42100"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42101",
+      "brand": "LEGO",
+      "model": "42101",
+      "name": "LEGO 42101",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42101",
+        "LEGO Set 42101",
+        "LEGO 42101 Buggy"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42101"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42102",
+      "brand": "LEGO",
+      "model": "42102",
+      "name": "LEGO 42102",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42102",
+        "LEGO Set 42102",
+        "LEGO 42102 Mini CLAAS XERION"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42102"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42103",
+      "brand": "LEGO",
+      "model": "42103",
+      "name": "LEGO 42103",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42103",
+        "LEGO Set 42103",
+        "LEGO 42103 Dragster"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42103"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42104",
+      "brand": "LEGO",
+      "model": "42104",
+      "name": "LEGO 42104",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42104",
+        "LEGO Set 42104",
+        "LEGO 42104 Race Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42104"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42105",
+      "brand": "LEGO",
+      "model": "42105",
+      "name": "LEGO 42105",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42105",
+        "LEGO Set 42105",
+        "LEGO 42105 Catamaran"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42105"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42106",
+      "brand": "LEGO",
+      "model": "42106",
+      "name": "LEGO 42106",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42106",
+        "LEGO Set 42106",
+        "LEGO 42106 Stunt Show Truck & Bike"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42106"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42107",
+      "brand": "LEGO",
+      "model": "42107",
+      "name": "LEGO 42107",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42107",
+        "LEGO Set 42107",
+        "LEGO 42107 Ducati Panigale V4 R"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42107"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42108",
+      "brand": "LEGO",
+      "model": "42108",
+      "name": "LEGO 42108",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42108",
+        "LEGO Set 42108",
+        "LEGO 42108 Mobile Crane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42108"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42109",
+      "brand": "LEGO",
+      "model": "42109",
+      "name": "LEGO 42109",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42109",
+        "LEGO Set 42109",
+        "LEGO 42109 App-Controlled Top Gear Rally Car"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42109"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42110",
+      "brand": "LEGO",
+      "model": "42110",
+      "name": "LEGO 42110",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42110",
+        "LEGO Set 42110",
+        "LEGO 42110 Land Rover Defender"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42110"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42111",
+      "brand": "LEGO",
+      "model": "42111",
+      "name": "LEGO 42111",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42111",
+        "LEGO Set 42111",
+        "LEGO 42111 Dom's Dodge Charger"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42111"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42112",
+      "brand": "LEGO",
+      "model": "42112",
+      "name": "LEGO 42112",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42112",
+        "LEGO Set 42112",
+        "LEGO 42112 Concrete Mixer Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42112"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42114",
+      "brand": "LEGO",
+      "model": "42114",
+      "name": "LEGO 42114",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42114",
+        "LEGO Set 42114",
+        "LEGO 42114 6x6 Volvo Articulated Hauler"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42114"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42116",
+      "brand": "LEGO",
+      "model": "42116",
+      "name": "LEGO 42116",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42116",
+        "LEGO Set 42116",
+        "LEGO 42116 Skid Steer Loader"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42116"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42117",
+      "brand": "LEGO",
+      "model": "42117",
+      "name": "LEGO 42117",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42117",
+        "LEGO Set 42117",
+        "LEGO 42117 Racing Plane"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42117"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42118",
+      "brand": "LEGO",
+      "model": "42118",
+      "name": "LEGO 42118",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42118",
+        "LEGO Set 42118",
+        "LEGO 42118 Monster Jam™ Grave Digger™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42118"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42119",
+      "brand": "LEGO",
+      "model": "42119",
+      "name": "LEGO 42119",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42119",
+        "LEGO Set 42119",
+        "LEGO 42119 Monster Jam™ Max-D™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42119"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42120",
+      "brand": "LEGO",
+      "model": "42120",
+      "name": "LEGO 42120",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42120",
+        "LEGO Set 42120",
+        "LEGO 42120 Rescue Hovercraft"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42120"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42121",
+      "brand": "LEGO",
+      "model": "42121",
+      "name": "LEGO 42121",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42121",
+        "LEGO Set 42121",
+        "LEGO 42121 Heavy-Duty Excavator"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42121"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42122",
+      "brand": "LEGO",
+      "model": "42122",
+      "name": "LEGO 42122",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42122",
+        "LEGO Set 42122",
+        "LEGO 42122 Jeep® Wrangler"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42122"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42123",
+      "brand": "LEGO",
+      "model": "42123",
+      "name": "LEGO 42123",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42123",
+        "LEGO Set 42123",
+        "LEGO 42123 McLaren Senna GTR™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42123"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42124",
+      "brand": "LEGO",
+      "model": "42124",
+      "name": "LEGO 42124",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42124",
+        "LEGO Set 42124",
+        "LEGO 42124 Off-Road Buggy"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42124"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42125",
+      "brand": "LEGO",
+      "model": "42125",
+      "name": "LEGO 42125",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42125",
+        "LEGO Set 42125",
+        "LEGO 42125 Ferrari 488 GTE “AF Corse #51”"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42125"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42126",
+      "brand": "LEGO",
+      "model": "42126",
+      "name": "LEGO 42126",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42126",
+        "LEGO Set 42126",
+        "LEGO 42126 Ford® F-150 Raptor"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42126"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42127",
+      "brand": "LEGO",
+      "model": "42127",
+      "name": "LEGO 42127",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42127",
+        "LEGO Set 42127",
+        "LEGO 42127 THE BATMAN - BATMOBILE™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42127"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42128",
+      "brand": "LEGO",
+      "model": "42128",
+      "name": "LEGO 42128",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42128",
+        "LEGO Set 42128",
+        "LEGO 42128 Heavy-duty Tow Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42128"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42129",
+      "brand": "LEGO",
+      "model": "42129",
+      "name": "LEGO 42129",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42129",
+        "LEGO Set 42129",
+        "LEGO 42129 App-Controlled Mercedes-Benz Zetros Trial Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42129"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42130",
+      "brand": "LEGO",
+      "model": "42130",
+      "name": "LEGO 42130",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42130",
+        "LEGO Set 42130",
+        "LEGO 42130 BMW M 1000 RR"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42130"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42131",
+      "brand": "LEGO",
+      "model": "42131",
+      "name": "LEGO 42131",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42131",
+        "LEGO Set 42131",
+        "LEGO 42131 App-Controlled Cat® D11 Bulldozer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42131"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42132",
+      "brand": "LEGO",
+      "model": "42132",
+      "name": "LEGO 42132",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42132",
+        "LEGO Set 42132",
+        "LEGO 42132 Motorcycle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42132"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42133",
+      "brand": "LEGO",
+      "model": "42133",
+      "name": "LEGO 42133",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42133",
+        "LEGO Set 42133",
+        "LEGO 42133 Telehandler"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42133"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42134",
+      "brand": "LEGO",
+      "model": "42134",
+      "name": "LEGO 42134",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42134",
+        "LEGO Set 42134",
+        "LEGO 42134 Monster Jam™ Megalodon™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42134"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42135",
+      "brand": "LEGO",
+      "model": "42135",
+      "name": "LEGO 42135",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42135",
+        "LEGO Set 42135",
+        "LEGO 42135 Monster Jam™ El Toro Loco™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42135"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42136",
+      "brand": "LEGO",
+      "model": "42136",
+      "name": "LEGO 42136",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42136",
+        "LEGO Set 42136",
+        "LEGO 42136 John Deere 9620R 4WD Tractor"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42136"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42137",
+      "brand": "LEGO",
+      "model": "42137",
+      "name": "LEGO 42137",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42137",
+        "LEGO Set 42137",
+        "LEGO 42137 Formula E® Porsche 99X Electric"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42137"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42138",
+      "brand": "LEGO",
+      "model": "42138",
+      "name": "LEGO 42138",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42138",
+        "LEGO Set 42138",
+        "LEGO 42138 Ford Mustang Shelby® GT500®"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42138"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42139",
+      "brand": "LEGO",
+      "model": "42139",
+      "name": "LEGO 42139",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42139",
+        "LEGO Set 42139",
+        "LEGO 42139 All-Terrain Vehicle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42139"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42140",
+      "brand": "LEGO",
+      "model": "42140",
+      "name": "LEGO 42140",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42140",
+        "LEGO Set 42140",
+        "LEGO 42140 App-Controlled Transformation Vehicle"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42140"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42141",
+      "brand": "LEGO",
+      "model": "42141",
+      "name": "LEGO 42141",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42141",
+        "LEGO Set 42141",
+        "LEGO 42141 McLaren Formula 1™ Race Car"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42141"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42144",
+      "brand": "LEGO",
+      "model": "42144",
+      "name": "LEGO 42144",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42144",
+        "LEGO Set 42144",
+        "LEGO 42144 Material Handler"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42144"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42145",
+      "brand": "LEGO",
+      "model": "42145",
+      "name": "LEGO 42145",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42145",
+        "LEGO Set 42145",
+        "LEGO 42145 Airbus H175 Rescue Helicopter"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42145"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42146",
+      "brand": "LEGO",
+      "model": "42146",
+      "name": "LEGO 42146",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42146",
+        "LEGO Set 42146",
+        "LEGO 42146 Liebherr Crawler Crane LR 13000"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42146"
+        ],
+        "min_age": [
+          "18"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42147",
+      "brand": "LEGO",
+      "model": "42147",
+      "name": "LEGO 42147",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42147",
+        "LEGO Set 42147",
+        "LEGO 42147 Dump Truck"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42147"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42148",
+      "brand": "LEGO",
+      "model": "42148",
+      "name": "LEGO 42148",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42148",
+        "LEGO Set 42148",
+        "LEGO 42148 Snow Groomer"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42148"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42149",
+      "brand": "LEGO",
+      "model": "42149",
+      "name": "LEGO 42149",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42149",
+        "LEGO Set 42149",
+        "LEGO 42149 Monster Jam™ Dragon™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42149"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42150",
+      "brand": "LEGO",
+      "model": "42150",
+      "name": "LEGO 42150",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42150",
+        "LEGO Set 42150",
+        "LEGO 42150 Monster Jam™ Monster Mutt™ Dalmatian"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42150"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42151",
+      "brand": "LEGO",
+      "model": "42151",
+      "name": "LEGO 42151",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42151",
+        "LEGO Set 42151",
+        "LEGO 42151 Bugatti Bolide"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42151"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42152",
+      "brand": "LEGO",
+      "model": "42152",
+      "name": "LEGO 42152",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42152",
+        "LEGO Set 42152",
+        "LEGO 42152 Firefighter Aircraft"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42152"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42153",
+      "brand": "LEGO",
+      "model": "42153",
+      "name": "LEGO 42153",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42153",
+        "LEGO Set 42153",
+        "LEGO 42153 NASCAR® Next Gen Chevrolet Camaro ZL1"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42153"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42155",
+      "brand": "LEGO",
+      "model": "42155",
+      "name": "LEGO 42155",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42155",
+        "LEGO Set 42155",
+        "LEGO 42155 THE BATMAN – BATCYCLE™"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42155"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42157",
+      "brand": "LEGO",
+      "model": "42157",
+      "name": "LEGO 42157",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42157",
+        "LEGO Set 42157",
+        "LEGO 42157 John Deere 948L-II Skidder"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42157"
+        ],
+        "min_age": [
+          "11"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42160",
+      "brand": "LEGO",
+      "model": "42160",
+      "name": "LEGO 42160",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42160",
+        "LEGO Set 42160",
+        "LEGO 42160 Audi RS Q e-tron"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42160"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    },
+    {
+      "id": "lego-42162",
+      "brand": "LEGO",
+      "model": "42162",
+      "name": "LEGO 42162",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42162",
+        "LEGO Set 42162",
+        "LEGO 42162 Bugatti Bolide Agile Blue"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42162"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-instructions-2026-10-28"
+    }
+  ]
+}

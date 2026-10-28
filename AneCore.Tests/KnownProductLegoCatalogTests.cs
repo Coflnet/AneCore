@@ -12,7 +12,7 @@ public class KnownProductLegoCatalogTests
     public void EverySetHasAUniqueIdentityAndResolvesToItself()
     {
         var sets = Catalog.Where(p => p.Vertical == "lego").ToList();
-        Assert.That(sets, Has.Count.EqualTo(7282));
+        Assert.That(sets, Has.Count.EqualTo(7446));
         Assert.That(sets.Select(p => p.Id).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.Select(p => p.Model).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.All(p => p.PossibleAttributes["set_number"].SetEquals(new[] { p.Model })), Is.True);
@@ -54,6 +54,43 @@ public class KnownProductLegoCatalogTests
             Assert.That(Matcher.Match($"LEGO Set {set.Model} gebraucht vollständig")?.Id, Is.EqualTo(set.Id));
         }
     }
+
+    [Test]
+    public void OfficialInstructionBatchAddsDistinctRetiredSetsConsumedByTheMatcher()
+    {
+        // Names, set numbers and ages: official LEGO instruction pages; seller phrases are synthetic.
+        var sets = Catalog.Where(p => p.Source == "seed:lego-official-instructions-2026-10-28").ToList();
+        Assert.That(sets, Has.Count.EqualTo(164));
+        foreach (var set in sets)
+        {
+            Assert.That(Catalog.Count(p => p.Id == set.Id || p.Vertical == "lego" && p.Model == set.Model), Is.EqualTo(1), set.Id);
+            Assert.That(set.PossibleAttributes["set_number"], Is.EquivalentTo(new[] { set.Model }));
+            foreach (var alias in set.Aliases)
+                Assert.That(Matcher.Match(alias)?.Id, Is.EqualTo(set.Id), alias);
+            Assert.That(Matcher.Match($"LEGO Set {set.Model} gebraucht vollständig")?.Id, Is.EqualTo(set.Id));
+        }
+    }
+
+    [TestCase("LEGO 42056 Porsche 911 GT3 RS", "lego-42056")]
+    [TestCase("LEGO 42083 Bugatti Chiron", "lego-42083")]
+    [TestCase("LEGO 42100 Liebherr R 9800 Excavator", "lego-42100")]
+    [TestCase("LEGO 42043 Mercedes-Benz Arocs 3245", "lego-42043")]
+    [TestCase("LEGO 42111 Dom's Dodge Charger", "lego-42111")]
+    [TestCase("LEGO 21318 Tree House", "lego-21318")]
+    [TestCase("LEGO 21028 New York City, USA", "lego-21028")]
+    public void RetiredInstructionModelsResolveExactNumberAndOfficialName(string title, string id) =>
+        Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(id));
+
+    [TestCase("42056")]
+    [TestCase("Porsche 911 GT3 RS")]
+    [TestCase("LEGO 42056-2")]
+    [TestCase("LEGO 42056 Bauanleitung")]
+    [TestCase("LEGO 42100 nur OVP")]
+    [TestCase("LEGO 21318 unvollständig")]
+    [TestCase("LEGO 42056 und 42100")]
+    [TestCase("LEGO 42083 Ersatzteile")]
+    public void RetiredInstructionCatalogueDoesNotTurnPartsVariantsOrLotsIntoWholeSets(string title) =>
+        Assert.That(Matcher.Match(title), Is.Null);
 
     [TestCase("LEGO 75876 Porsche 919 Hybrid and 917K Pit Lane", "lego-75876")]
     [TestCase("LEGO 75881 2016 Ford GT & 1966 Ford GT40", "lego-75881")]
