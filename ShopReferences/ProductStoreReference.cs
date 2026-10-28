@@ -22,10 +22,11 @@ public static class ProductStoreReferencePolicy
 
     public static bool IsCandidate(Product product) => string.IsNullOrWhiteSpace(product.CanonicalSeoId)
         && !product.SeoId.StartsWith("unspecific-", StringComparison.OrdinalIgnoreCase)
+        && !product.SeoId.StartsWith("media-offer-", StringComparison.OrdinalIgnoreCase)
         && !product.SeoId.EndsWith("-unspecific", StringComparison.OrdinalIgnoreCase)
         && product.Attributes?.Any(attribute => string.Equals(attribute.Key, "specificity", StringComparison.OrdinalIgnoreCase)
             && string.Equals(attribute.Value?.Trim(), "unspecific", StringComparison.OrdinalIgnoreCase)) != true
-        && product.IdentifierType != "hand_tool_offer"
+        && product.IdentifierType is not ("hand_tool_offer" or "media_offer")
         && (string.Equals(product.Brand, "KNIPEX", StringComparison.OrdinalIgnoreCase) || string.Equals(product.Brand, "Bahco", StringComparison.OrdinalIgnoreCase))
         && !string.IsNullOrWhiteSpace(product.Model) && product.Model.Any(char.IsAsciiDigit)
         && !Bundle.IsMatch(product.Name ?? "")

@@ -335,7 +335,9 @@ public class KnownProductMatcher
                 (LegoIncomplete.IsMatch(normalizedTitle)
                  || LegoDisplayExtra.IsMatch(normalizedTitle)
                  || LegoExtraWords.Matches(normalizedTitle)
-                     .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))
+                     .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length)
+                         && (m.Index < titleTokens.Take(i).Sum(t => t.Length + 1)
+                             || m.Index >= titleTokens.Take(i + aliasTokens.Length).Sum(t => t.Length + 1)))
                  // A verified full alias can explain vehicle model/year numbers inside its own span.
                  || HasOtherLegoNumber(titleTokens, i, aliasTokens.Length, entry.Product.Model, title)
                  // A model-specific pattern is cheaper to interpret than repeatedly compile after eviction.

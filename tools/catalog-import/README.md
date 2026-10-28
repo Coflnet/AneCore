@@ -545,3 +545,24 @@ python3 -m unittest discover -s tools/catalog-import -p 'test_expand_lego_offici
 ```
 
 The rolling sitemap URL may change; retain the reviewed bytes for reproducible regeneration.
+
+### Retired LEGO resale themes (2026-10-28, R40)
+
+`lego-resale-instructions.json` fills 186 selected retired-set gaps using individually
+reviewed official LEGO instruction panels: 151 Ninjago, 19 Chima and 16 Disney sets,
+including Frozen. The catalogue now has 27,108 rows, including 7,632 LEGO sets;
+all earlier seed files remain unchanged. Per-set names, printed numbers, age panels and
+primary source URLs live in `proofs/lego-resale-instructions-2026-10-28-r40.json`.
+
+```sh
+python3 tools/catalog-import/expand_lego_resale.py
+python3 tools/catalog-import/expand_lego_resale.py --check
+```
+
+The generator requires no network and rejects ID/normalized-alias conflicts with any other
+seed file. Aliases always retain LEGO and the printed number, including when two numbered
+sets share a name. No unnumbered theme offer is assigned a guessed identity. The matcher
+regressions cover every new body, repeated names, instruction/box/partial offers, lots,
+compatible scopes and accessory words inside versus outside official names. Minimum age
+comes from the explicit age-panel lower bound; no edition, language, package or completeness
+facts are inferred. Unavailable official pages are omitted, not filled from number ranges.

@@ -1,0 +1,5026 @@
+{
+  "products": [
+    {
+      "id": "lego-41062",
+      "brand": "LEGO",
+      "model": "41062",
+      "name": "LEGO 41062",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41062",
+        "LEGO 41062 Elsa's Sparkling Ice Castle",
+        "LEGO Set 41062"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41062"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41066",
+      "brand": "LEGO",
+      "model": "41066",
+      "name": "LEGO 41066",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41066",
+        "LEGO 41066 Anna & Kristoff's Sleigh Adventure",
+        "LEGO Set 41066"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41066"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41147",
+      "brand": "LEGO",
+      "model": "41147",
+      "name": "LEGO 41147",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41147",
+        "LEGO 41147 Anna's Snow Adventure",
+        "LEGO Set 41147"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41147"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41148",
+      "brand": "LEGO",
+      "model": "41148",
+      "name": "LEGO 41148",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41148",
+        "LEGO 41148 Elsa's Magical Ice Palace",
+        "LEGO Set 41148"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41148"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41155",
+      "brand": "LEGO",
+      "model": "41155",
+      "name": "LEGO 41155",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41155",
+        "LEGO 41155 Elsa's Market Adventure",
+        "LEGO Set 41155"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41155"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41165",
+      "brand": "LEGO",
+      "model": "41165",
+      "name": "LEGO 41165",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41165",
+        "LEGO 41165 Anna's Canoe Expedition",
+        "LEGO Set 41165"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41165"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41166",
+      "brand": "LEGO",
+      "model": "41166",
+      "name": "LEGO 41166",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41166",
+        "LEGO 41166 Elsa's Wagon Adventure",
+        "LEGO Set 41166"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41166"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41167",
+      "brand": "LEGO",
+      "model": "41167",
+      "name": "LEGO 41167",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41167",
+        "LEGO 41167 Arendelle Castle Village",
+        "LEGO Set 41167"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41167"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41168",
+      "brand": "LEGO",
+      "model": "41168",
+      "name": "LEGO 41168",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41168",
+        "LEGO 41168 Elsa's Jewelry Box Creation",
+        "LEGO Set 41168"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41168"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-41169",
+      "brand": "LEGO",
+      "model": "41169",
+      "name": "LEGO 41169",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41169",
+        "LEGO 41169 Olaf",
+        "LEGO Set 41169"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41169"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43172",
+      "brand": "LEGO",
+      "model": "43172",
+      "name": "LEGO 43172",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43172",
+        "LEGO 43172 Elsa's Magical Ice Palace",
+        "LEGO Set 43172"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43172"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43175",
+      "brand": "LEGO",
+      "model": "43175",
+      "name": "LEGO 43175",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43175",
+        "LEGO 43175 Anna and Elsa’s Storybook Adventures",
+        "LEGO Set 43175"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43175"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43176",
+      "brand": "LEGO",
+      "model": "43176",
+      "name": "LEGO 43176",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43176",
+        "LEGO 43176 Ariel's Storybook Adventures",
+        "LEGO Set 43176"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43176"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43186",
+      "brand": "LEGO",
+      "model": "43186",
+      "name": "LEGO 43186",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43186",
+        "LEGO 43186 Bruni the Salamander Buildable Character",
+        "LEGO Set 43186"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43186"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43189",
+      "brand": "LEGO",
+      "model": "43189",
+      "name": "LEGO 43189",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43189",
+        "LEGO 43189 Elsa and the Nokk Storybook Adventures",
+        "LEGO Set 43189"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43189"
+        ],
+        "min_age": [
+          "5"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-43204",
+      "brand": "LEGO",
+      "model": "43204",
+      "name": "LEGO 43204",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 43204",
+        "LEGO 43204 Anna and Olaf's Castle Fun",
+        "LEGO Set 43204"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "43204"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70141",
+      "brand": "LEGO",
+      "model": "70141",
+      "name": "LEGO 70141",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70141",
+        "LEGO 70141 Vardy's Ice Vulture Glider",
+        "LEGO Set 70141"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70141"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70142",
+      "brand": "LEGO",
+      "model": "70142",
+      "name": "LEGO 70142",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70142",
+        "LEGO 70142 Eris' Fire Eagle Flyer",
+        "LEGO Set 70142"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70142"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70143",
+      "brand": "LEGO",
+      "model": "70143",
+      "name": "LEGO 70143",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70143",
+        "LEGO 70143 Sir Fangar's Saber-tooth Walker",
+        "LEGO Set 70143"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70143"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70144",
+      "brand": "LEGO",
+      "model": "70144",
+      "name": "LEGO 70144",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70144",
+        "LEGO 70144 Laval's Fire Lion",
+        "LEGO Set 70144"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70144"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70145",
+      "brand": "LEGO",
+      "model": "70145",
+      "name": "LEGO 70145",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70145",
+        "LEGO 70145 Maula's Ice Mammoth Stomper",
+        "LEGO Set 70145"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70145"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70146",
+      "brand": "LEGO",
+      "model": "70146",
+      "name": "LEGO 70146",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70146",
+        "LEGO 70146 Flying Phoenix Fire Temple",
+        "LEGO Set 70146"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70146"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70147",
+      "brand": "LEGO",
+      "model": "70147",
+      "name": "LEGO 70147",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70147",
+        "LEGO 70147 Sir Fangar's Ice Fortress",
+        "LEGO Set 70147"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70147"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70220",
+      "brand": "LEGO",
+      "model": "70220",
+      "name": "LEGO 70220",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70220",
+        "LEGO 70220 Strainor's Saber Cycle",
+        "LEGO Set 70220"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70220"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70221",
+      "brand": "LEGO",
+      "model": "70221",
+      "name": "LEGO 70221",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70221",
+        "LEGO 70221 Flinx's Ultimate Phoenix",
+        "LEGO Set 70221"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70221"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70222",
+      "brand": "LEGO",
+      "model": "70222",
+      "name": "LEGO 70222",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70222",
+        "LEGO 70222 Tormak's Shadow Blazer",
+        "LEGO Set 70222"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70222"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70223",
+      "brand": "LEGO",
+      "model": "70223",
+      "name": "LEGO 70223",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70223",
+        "LEGO 70223 Icebite's Claw Driller",
+        "LEGO Set 70223"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70223"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70224",
+      "brand": "LEGO",
+      "model": "70224",
+      "name": "LEGO 70224",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70224",
+        "LEGO 70224 Tiger's Mobile Command",
+        "LEGO Set 70224"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70224"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70225",
+      "brand": "LEGO",
+      "model": "70225",
+      "name": "LEGO 70225",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70225",
+        "LEGO 70225 Bladvic's Rumble Bear",
+        "LEGO Set 70225"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70225"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70226",
+      "brand": "LEGO",
+      "model": "70226",
+      "name": "LEGO 70226",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70226",
+        "LEGO 70226 Mammoth's Frozen Stronghold",
+        "LEGO Set 70226"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70226"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70227",
+      "brand": "LEGO",
+      "model": "70227",
+      "name": "LEGO 70227",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70227",
+        "LEGO 70227 King Crominus' Rescue",
+        "LEGO Set 70227"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70227"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70228",
+      "brand": "LEGO",
+      "model": "70228",
+      "name": "LEGO 70228",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70228",
+        "LEGO 70228 Vultrix's Sky Scavenger",
+        "LEGO Set 70228"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70228"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70229",
+      "brand": "LEGO",
+      "model": "70229",
+      "name": "LEGO 70229",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70229",
+        "LEGO 70229 Lion Tribe Pack",
+        "LEGO Set 70229"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70229"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70230",
+      "brand": "LEGO",
+      "model": "70230",
+      "name": "LEGO 70230",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70230",
+        "LEGO 70230 Ice Bear Tribe Pack",
+        "LEGO Set 70230"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70230"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70231",
+      "brand": "LEGO",
+      "model": "70231",
+      "name": "LEGO 70231",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70231",
+        "LEGO 70231 Crocodile Tribe Pack",
+        "LEGO Set 70231"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70231"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70600",
+      "brand": "LEGO",
+      "model": "70600",
+      "name": "LEGO 70600",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70600",
+        "LEGO 70600 Ninja Bike Chase",
+        "LEGO Set 70600"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70600"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70601",
+      "brand": "LEGO",
+      "model": "70601",
+      "name": "LEGO 70601",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70601",
+        "LEGO 70601 Sky Shark",
+        "LEGO Set 70601"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70601"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70602",
+      "brand": "LEGO",
+      "model": "70602",
+      "name": "LEGO 70602",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70602",
+        "LEGO 70602 Jay's Elemental Dragon",
+        "LEGO Set 70602"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70602"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70603",
+      "brand": "LEGO",
+      "model": "70603",
+      "name": "LEGO 70603",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70603",
+        "LEGO 70603 Raid Zeppelin",
+        "LEGO Set 70603"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70603"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70604",
+      "brand": "LEGO",
+      "model": "70604",
+      "name": "LEGO 70604",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70604",
+        "LEGO 70604 Tiger Widow Island",
+        "LEGO Set 70604"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70604"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70605",
+      "brand": "LEGO",
+      "model": "70605",
+      "name": "LEGO 70605",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70605",
+        "LEGO 70605 Misfortune's Keep",
+        "LEGO Set 70605"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70605"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70606",
+      "brand": "LEGO",
+      "model": "70606",
+      "name": "LEGO 70606",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70606",
+        "LEGO 70606 Spinjitzu Training",
+        "LEGO Set 70606"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70606"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70607",
+      "brand": "LEGO",
+      "model": "70607",
+      "name": "LEGO 70607",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70607",
+        "LEGO 70607 NINJAGO® City Chase",
+        "LEGO Set 70607"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70607"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70608",
+      "brand": "LEGO",
+      "model": "70608",
+      "name": "LEGO 70608",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70608",
+        "LEGO 70608 Master Falls",
+        "LEGO Set 70608"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70608"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70609",
+      "brand": "LEGO",
+      "model": "70609",
+      "name": "LEGO 70609",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70609",
+        "LEGO 70609 Manta Ray Bomber",
+        "LEGO Set 70609"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70609"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70610",
+      "brand": "LEGO",
+      "model": "70610",
+      "name": "LEGO 70610",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70610",
+        "LEGO 70610 Flying Jelly Sub",
+        "LEGO Set 70610"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70610"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70611",
+      "brand": "LEGO",
+      "model": "70611",
+      "name": "LEGO 70611",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70611",
+        "LEGO 70611 Water Strider",
+        "LEGO Set 70611"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70611"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70612",
+      "brand": "LEGO",
+      "model": "70612",
+      "name": "LEGO 70612",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70612",
+        "LEGO 70612 Green Ninja Mech Dragon",
+        "LEGO Set 70612"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70612"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70613",
+      "brand": "LEGO",
+      "model": "70613",
+      "name": "LEGO 70613",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70613",
+        "LEGO 70613 Garma Mecha Man",
+        "LEGO Set 70613"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70613"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70614",
+      "brand": "LEGO",
+      "model": "70614",
+      "name": "LEGO 70614",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70614",
+        "LEGO 70614 Lightning Jet",
+        "LEGO Set 70614"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70614"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70615",
+      "brand": "LEGO",
+      "model": "70615",
+      "name": "LEGO 70615",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70615",
+        "LEGO 70615 Fire Mech",
+        "LEGO Set 70615"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70615"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70616",
+      "brand": "LEGO",
+      "model": "70616",
+      "name": "LEGO 70616",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70616",
+        "LEGO 70616 Ice Tank",
+        "LEGO Set 70616"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70616"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70617",
+      "brand": "LEGO",
+      "model": "70617",
+      "name": "LEGO 70617",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70617",
+        "LEGO 70617 Temple of The Ultimate Ultimate Weapon",
+        "LEGO Set 70617"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70617"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70618",
+      "brand": "LEGO",
+      "model": "70618",
+      "name": "LEGO 70618",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70618",
+        "LEGO 70618 Destiny's Bounty",
+        "LEGO Set 70618"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70618"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70620",
+      "brand": "LEGO",
+      "model": "70620",
+      "name": "LEGO 70620",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70620",
+        "LEGO 70620 NINJAGO® City",
+        "LEGO Set 70620"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70620"
+        ],
+        "min_age": [
+          "16"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70621",
+      "brand": "LEGO",
+      "model": "70621",
+      "name": "LEGO 70621",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70621",
+        "LEGO 70621 The Vermillion Attack",
+        "LEGO Set 70621"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70621"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70622",
+      "brand": "LEGO",
+      "model": "70622",
+      "name": "LEGO 70622",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70622",
+        "LEGO 70622 Desert Lightning",
+        "LEGO Set 70622"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70622"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70623",
+      "brand": "LEGO",
+      "model": "70623",
+      "name": "LEGO 70623",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70623",
+        "LEGO 70623 Destiny's Shadow",
+        "LEGO Set 70623"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70623"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70624",
+      "brand": "LEGO",
+      "model": "70624",
+      "name": "LEGO 70624",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70624",
+        "LEGO 70624 Vermillion Invader",
+        "LEGO Set 70624"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70624"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70625",
+      "brand": "LEGO",
+      "model": "70625",
+      "name": "LEGO 70625",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70625",
+        "LEGO 70625 Samurai VXL",
+        "LEGO Set 70625"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70625"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70626",
+      "brand": "LEGO",
+      "model": "70626",
+      "name": "LEGO 70626",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70626",
+        "LEGO 70626 Dawn of Iron Doom",
+        "LEGO Set 70626"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70626"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70627",
+      "brand": "LEGO",
+      "model": "70627",
+      "name": "LEGO 70627",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70627",
+        "LEGO 70627 Dragon's Forge",
+        "LEGO Set 70627"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70627"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70628",
+      "brand": "LEGO",
+      "model": "70628",
+      "name": "LEGO 70628",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70628",
+        "LEGO 70628 Lloyd - Spinjitzu Master",
+        "LEGO Set 70628"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70628"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70629",
+      "brand": "LEGO",
+      "model": "70629",
+      "name": "LEGO 70629",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70629",
+        "LEGO 70629 Piranha Attack",
+        "LEGO Set 70629"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70629"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70631",
+      "brand": "LEGO",
+      "model": "70631",
+      "name": "LEGO 70631",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70631",
+        "LEGO 70631 Garmadon's Volcano Lair",
+        "LEGO Set 70631"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70631"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70632",
+      "brand": "LEGO",
+      "model": "70632",
+      "name": "LEGO 70632",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70632",
+        "LEGO 70632 Quake Mech",
+        "LEGO Set 70632"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70632"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70633",
+      "brand": "LEGO",
+      "model": "70633",
+      "name": "LEGO 70633",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70633",
+        "LEGO 70633 Kai - Spinjitzu Master",
+        "LEGO Set 70633"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70633"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70634",
+      "brand": "LEGO",
+      "model": "70634",
+      "name": "LEGO 70634",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70634",
+        "LEGO 70634 Nya - Spinjitzu Master",
+        "LEGO Set 70634"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70634"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70635",
+      "brand": "LEGO",
+      "model": "70635",
+      "name": "LEGO 70635",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70635",
+        "LEGO 70635 Jay - Spinjitzu Master",
+        "LEGO Set 70635"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70635"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70636",
+      "brand": "LEGO",
+      "model": "70636",
+      "name": "LEGO 70636",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70636",
+        "LEGO 70636 Zane - Spinjitzu Master",
+        "LEGO Set 70636"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70636"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70637",
+      "brand": "LEGO",
+      "model": "70637",
+      "name": "LEGO 70637",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70637",
+        "LEGO 70637 Cole - Spinjitzu Master",
+        "LEGO Set 70637"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70637"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70638",
+      "brand": "LEGO",
+      "model": "70638",
+      "name": "LEGO 70638",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70638",
+        "LEGO 70638 Katana V11",
+        "LEGO Set 70638"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70638"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70639",
+      "brand": "LEGO",
+      "model": "70639",
+      "name": "LEGO 70639",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70639",
+        "LEGO 70639 Street Race of Snake Jaguar",
+        "LEGO Set 70639"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70639"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70640",
+      "brand": "LEGO",
+      "model": "70640",
+      "name": "LEGO 70640",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70640",
+        "LEGO 70640 S.O.G. Headquarters",
+        "LEGO Set 70640"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70640"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70641",
+      "brand": "LEGO",
+      "model": "70641",
+      "name": "LEGO 70641",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70641",
+        "LEGO 70641 Ninja Nightcrawler",
+        "LEGO Set 70641"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70641"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70642",
+      "brand": "LEGO",
+      "model": "70642",
+      "name": "LEGO 70642",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70642",
+        "LEGO 70642 Killow vs. Samurai X",
+        "LEGO Set 70642"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70642"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70643",
+      "brand": "LEGO",
+      "model": "70643",
+      "name": "LEGO 70643",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70643",
+        "LEGO 70643 Temple of Resurrection",
+        "LEGO Set 70643"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70643"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70644",
+      "brand": "LEGO",
+      "model": "70644",
+      "name": "LEGO 70644",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70644",
+        "LEGO 70644 Golden Dragon Master",
+        "LEGO Set 70644"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70644"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70645",
+      "brand": "LEGO",
+      "model": "70645",
+      "name": "LEGO 70645",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70645",
+        "LEGO 70645 Cole - Dragon Master",
+        "LEGO Set 70645"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70645"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70646",
+      "brand": "LEGO",
+      "model": "70646",
+      "name": "LEGO 70646",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70646",
+        "LEGO 70646 Jay - Dragon Master",
+        "LEGO Set 70646"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70646"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70647",
+      "brand": "LEGO",
+      "model": "70647",
+      "name": "LEGO 70647",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70647",
+        "LEGO 70647 Kai - Dragon Master",
+        "LEGO Set 70647"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70647"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70648",
+      "brand": "LEGO",
+      "model": "70648",
+      "name": "LEGO 70648",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70648",
+        "LEGO 70648 Zane - Dragon Master",
+        "LEGO Set 70648"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70648"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70650",
+      "brand": "LEGO",
+      "model": "70650",
+      "name": "LEGO 70650",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70650",
+        "LEGO 70650 Destiny's Wing",
+        "LEGO Set 70650"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70650"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70651",
+      "brand": "LEGO",
+      "model": "70651",
+      "name": "LEGO 70651",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70651",
+        "LEGO 70651 Throne Room Showdown",
+        "LEGO Set 70651"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70651"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70652",
+      "brand": "LEGO",
+      "model": "70652",
+      "name": "LEGO 70652",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70652",
+        "LEGO 70652 Stormbringer",
+        "LEGO Set 70652"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70652"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70653",
+      "brand": "LEGO",
+      "model": "70653",
+      "name": "LEGO 70653",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70653",
+        "LEGO 70653 Firstbourne",
+        "LEGO Set 70653"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70653"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70654",
+      "brand": "LEGO",
+      "model": "70654",
+      "name": "LEGO 70654",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70654",
+        "LEGO 70654 Dieselnaut",
+        "LEGO Set 70654"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70654"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70655",
+      "brand": "LEGO",
+      "model": "70655",
+      "name": "LEGO 70655",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70655",
+        "LEGO 70655 Dragon Pit",
+        "LEGO Set 70655"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70655"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70656",
+      "brand": "LEGO",
+      "model": "70656",
+      "name": "LEGO 70656",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70656",
+        "LEGO 70656 garmadon, Garmadon, GARMADON!",
+        "LEGO Set 70656"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70656"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70657",
+      "brand": "LEGO",
+      "model": "70657",
+      "name": "LEGO 70657",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70657",
+        "LEGO 70657 NINJAGO® City Docks",
+        "LEGO Set 70657"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70657"
+        ],
+        "min_age": [
+          "12"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70658",
+      "brand": "LEGO",
+      "model": "70658",
+      "name": "LEGO 70658",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70658",
+        "LEGO 70658 Oni Titan",
+        "LEGO Set 70658"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70658"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70659",
+      "brand": "LEGO",
+      "model": "70659",
+      "name": "LEGO 70659",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70659",
+        "LEGO 70659 Spinjitzu Kai",
+        "LEGO Set 70659"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70659"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70660",
+      "brand": "LEGO",
+      "model": "70660",
+      "name": "LEGO 70660",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70660",
+        "LEGO 70660 Spinjitzu Jay",
+        "LEGO Set 70660"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70660"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70661",
+      "brand": "LEGO",
+      "model": "70661",
+      "name": "LEGO 70661",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70661",
+        "LEGO 70661 Spinjitzu Zane",
+        "LEGO Set 70661"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70661"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70662",
+      "brand": "LEGO",
+      "model": "70662",
+      "name": "LEGO 70662",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70662",
+        "LEGO 70662 Spinjitzu Cole",
+        "LEGO Set 70662"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70662"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70663",
+      "brand": "LEGO",
+      "model": "70663",
+      "name": "LEGO 70663",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70663",
+        "LEGO 70663 Spinjitzu Nya & Wu",
+        "LEGO Set 70663"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70663"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70664",
+      "brand": "LEGO",
+      "model": "70664",
+      "name": "LEGO 70664",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70664",
+        "LEGO 70664 Spinjitzu Lloyd vs. Garmadon",
+        "LEGO Set 70664"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70664"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70665",
+      "brand": "LEGO",
+      "model": "70665",
+      "name": "LEGO 70665",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70665",
+        "LEGO 70665 The Samurai Mech",
+        "LEGO Set 70665"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70665"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70666",
+      "brand": "LEGO",
+      "model": "70666",
+      "name": "LEGO 70666",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70666",
+        "LEGO 70666 The Golden Dragon",
+        "LEGO Set 70666"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70666"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70667",
+      "brand": "LEGO",
+      "model": "70667",
+      "name": "LEGO 70667",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70667",
+        "LEGO 70667 Kai's Blade Cycle & Zane's Snowmobile",
+        "LEGO Set 70667"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70667"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70668",
+      "brand": "LEGO",
+      "model": "70668",
+      "name": "LEGO 70668",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70668",
+        "LEGO 70668 Jay's Storm Fighter",
+        "LEGO Set 70668"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70668"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70669",
+      "brand": "LEGO",
+      "model": "70669",
+      "name": "LEGO 70669",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70669",
+        "LEGO 70669 Cole's Earth Driller",
+        "LEGO Set 70669"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70669"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70670",
+      "brand": "LEGO",
+      "model": "70670",
+      "name": "LEGO 70670",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70670",
+        "LEGO 70670 Monastery of Spinjitzu",
+        "LEGO Set 70670"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70670"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70671",
+      "brand": "LEGO",
+      "model": "70671",
+      "name": "LEGO 70671",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70671",
+        "LEGO 70671 Lloyd's Journey",
+        "LEGO Set 70671"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70671"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70672",
+      "brand": "LEGO",
+      "model": "70672",
+      "name": "LEGO 70672",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70672",
+        "LEGO 70672 Cole's Dirt Bike",
+        "LEGO Set 70672"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70672"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70673",
+      "brand": "LEGO",
+      "model": "70673",
+      "name": "LEGO 70673",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70673",
+        "LEGO 70673 ShuriCopter",
+        "LEGO Set 70673"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70673"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70674",
+      "brand": "LEGO",
+      "model": "70674",
+      "name": "LEGO 70674",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70674",
+        "LEGO 70674 Fire Fang",
+        "LEGO Set 70674"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70674"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70675",
+      "brand": "LEGO",
+      "model": "70675",
+      "name": "LEGO 70675",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70675",
+        "LEGO 70675 Katana 4x4",
+        "LEGO Set 70675"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70675"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70676",
+      "brand": "LEGO",
+      "model": "70676",
+      "name": "LEGO 70676",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70676",
+        "LEGO 70676 Lloyd's Titan Mech",
+        "LEGO Set 70676"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70676"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70677",
+      "brand": "LEGO",
+      "model": "70677",
+      "name": "LEGO 70677",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70677",
+        "LEGO 70677 Land Bounty",
+        "LEGO Set 70677"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70677"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70678",
+      "brand": "LEGO",
+      "model": "70678",
+      "name": "LEGO 70678",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70678",
+        "LEGO 70678 Castle of the Forsaken Emperor",
+        "LEGO Set 70678"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70678"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70679",
+      "brand": "LEGO",
+      "model": "70679",
+      "name": "LEGO 70679",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70679",
+        "LEGO 70679 The Ultra Dragon",
+        "LEGO Set 70679"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70679"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70680",
+      "brand": "LEGO",
+      "model": "70680",
+      "name": "LEGO 70680",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70680",
+        "LEGO 70680 Monastery Training",
+        "LEGO Set 70680"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70680"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70681",
+      "brand": "LEGO",
+      "model": "70681",
+      "name": "LEGO 70681",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70681",
+        "LEGO 70681 Spinjitzu Slam - Lloyd",
+        "LEGO Set 70681"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70681"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70682",
+      "brand": "LEGO",
+      "model": "70682",
+      "name": "LEGO 70682",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70682",
+        "LEGO 70682 Spinjitzu Slam - Jay",
+        "LEGO Set 70682"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70682"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70683",
+      "brand": "LEGO",
+      "model": "70683",
+      "name": "LEGO 70683",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70683",
+        "LEGO 70683 Spinjitzu Slam - Zane",
+        "LEGO Set 70683"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70683"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-70684",
+      "brand": "LEGO",
+      "model": "70684",
+      "name": "LEGO 70684",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 70684",
+        "LEGO 70684 Spinjitzu Slam - Kai vs. Samurai",
+        "LEGO Set 70684"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "70684"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71700",
+      "brand": "LEGO",
+      "model": "71700",
+      "name": "LEGO 71700",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71700",
+        "LEGO 71700 Jungle Raider",
+        "LEGO Set 71700"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71700"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71701",
+      "brand": "LEGO",
+      "model": "71701",
+      "name": "LEGO 71701",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71701",
+        "LEGO 71701 Kai's Fire Dragon",
+        "LEGO Set 71701"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71701"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71702",
+      "brand": "LEGO",
+      "model": "71702",
+      "name": "LEGO 71702",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71702",
+        "LEGO 71702 Golden Mech",
+        "LEGO Set 71702"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71702"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71703",
+      "brand": "LEGO",
+      "model": "71703",
+      "name": "LEGO 71703",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71703",
+        "LEGO 71703 Storm Fighter Battle",
+        "LEGO Set 71703"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71703"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71704",
+      "brand": "LEGO",
+      "model": "71704",
+      "name": "LEGO 71704",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71704",
+        "LEGO 71704 Kai Fighter",
+        "LEGO Set 71704"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71704"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71705",
+      "brand": "LEGO",
+      "model": "71705",
+      "name": "LEGO 71705",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71705",
+        "LEGO 71705 Destiny's Bounty",
+        "LEGO Set 71705"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71705"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71706",
+      "brand": "LEGO",
+      "model": "71706",
+      "name": "LEGO 71706",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71706",
+        "LEGO 71706 Cole's Speeder Car",
+        "LEGO Set 71706"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71706"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71707",
+      "brand": "LEGO",
+      "model": "71707",
+      "name": "LEGO 71707",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71707",
+        "LEGO 71707 Kai's Mech Jet",
+        "LEGO Set 71707"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71707"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71708",
+      "brand": "LEGO",
+      "model": "71708",
+      "name": "LEGO 71708",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71708",
+        "LEGO 71708 Gamer's Market",
+        "LEGO Set 71708"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71708"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71709",
+      "brand": "LEGO",
+      "model": "71709",
+      "name": "LEGO 71709",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71709",
+        "LEGO 71709 Jay and Lloyd's Velocity Racers",
+        "LEGO Set 71709"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71709"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71710",
+      "brand": "LEGO",
+      "model": "71710",
+      "name": "LEGO 71710",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71710",
+        "LEGO 71710 Ninja Tuner Car",
+        "LEGO Set 71710"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71710"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71711",
+      "brand": "LEGO",
+      "model": "71711",
+      "name": "LEGO 71711",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71711",
+        "LEGO 71711 Jay's Cyber Dragon",
+        "LEGO Set 71711"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71711"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71712",
+      "brand": "LEGO",
+      "model": "71712",
+      "name": "LEGO 71712",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71712",
+        "LEGO 71712 Empire Temple of Madness",
+        "LEGO Set 71712"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71712"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71713",
+      "brand": "LEGO",
+      "model": "71713",
+      "name": "LEGO 71713",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71713",
+        "LEGO 71713 Empire Dragon",
+        "LEGO Set 71713"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71713"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71714",
+      "brand": "LEGO",
+      "model": "71714",
+      "name": "LEGO 71714",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71714",
+        "LEGO 71714 Kai Avatar - Arcade Pod",
+        "LEGO Set 71714"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71714"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71715",
+      "brand": "LEGO",
+      "model": "71715",
+      "name": "LEGO 71715",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71715",
+        "LEGO 71715 Jay Avatar - Arcade Pod",
+        "LEGO Set 71715"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71715"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71716",
+      "brand": "LEGO",
+      "model": "71716",
+      "name": "LEGO 71716",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71716",
+        "LEGO 71716 Lloyd Avatar - Arcade Pod",
+        "LEGO Set 71716"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71716"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71717",
+      "brand": "LEGO",
+      "model": "71717",
+      "name": "LEGO 71717",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71717",
+        "LEGO 71717 Journey to the Skull Dungeons",
+        "LEGO Set 71717"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71717"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71718",
+      "brand": "LEGO",
+      "model": "71718",
+      "name": "LEGO 71718",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71718",
+        "LEGO 71718 Wu's Battle Dragon",
+        "LEGO Set 71718"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71718"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71719",
+      "brand": "LEGO",
+      "model": "71719",
+      "name": "LEGO 71719",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71719",
+        "LEGO 71719 Zane's Mino Creature",
+        "LEGO Set 71719"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71719"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71720",
+      "brand": "LEGO",
+      "model": "71720",
+      "name": "LEGO 71720",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71720",
+        "LEGO 71720 Fire Stone Mech",
+        "LEGO Set 71720"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71720"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71721",
+      "brand": "LEGO",
+      "model": "71721",
+      "name": "LEGO 71721",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71721",
+        "LEGO 71721 Skull Sorcerer's Dragon",
+        "LEGO Set 71721"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71721"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71722",
+      "brand": "LEGO",
+      "model": "71722",
+      "name": "LEGO 71722",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71722",
+        "LEGO 71722 Skull Sorcerer's Dungeons",
+        "LEGO Set 71722"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71722"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71730",
+      "brand": "LEGO",
+      "model": "71730",
+      "name": "LEGO 71730",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71730",
+        "LEGO 71730 Epic Battle Set - Kai vs. Skulkin",
+        "LEGO Set 71730"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71730"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71731",
+      "brand": "LEGO",
+      "model": "71731",
+      "name": "LEGO 71731",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71731",
+        "LEGO 71731 Epic Battle Set - Zane vs. Nindroid",
+        "LEGO Set 71731"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71731"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71732",
+      "brand": "LEGO",
+      "model": "71732",
+      "name": "LEGO 71732",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71732",
+        "LEGO 71732 Epic Battle Set - Jay vs. Serpentine",
+        "LEGO Set 71732"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71732"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71733",
+      "brand": "LEGO",
+      "model": "71733",
+      "name": "LEGO 71733",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71733",
+        "LEGO 71733 Epic Battle Set - Cole vs. Ghost Warrior",
+        "LEGO Set 71733"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71733"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71734",
+      "brand": "LEGO",
+      "model": "71734",
+      "name": "LEGO 71734",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71734",
+        "LEGO 71734 Kai's Blade Cycle",
+        "LEGO Set 71734"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71734"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71735",
+      "brand": "LEGO",
+      "model": "71735",
+      "name": "LEGO 71735",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71735",
+        "LEGO 71735 Tournament of Elements",
+        "LEGO Set 71735"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71735"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71736",
+      "brand": "LEGO",
+      "model": "71736",
+      "name": "LEGO 71736",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71736",
+        "LEGO 71736 Boulder Blaster",
+        "LEGO Set 71736"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71736"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71737",
+      "brand": "LEGO",
+      "model": "71737",
+      "name": "LEGO 71737",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71737",
+        "LEGO 71737 X-1 Ninja Charger",
+        "LEGO Set 71737"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71737"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71738",
+      "brand": "LEGO",
+      "model": "71738",
+      "name": "LEGO 71738",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71738",
+        "LEGO 71738 Zane's Titan Mech Battle",
+        "LEGO Set 71738"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71738"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71739",
+      "brand": "LEGO",
+      "model": "71739",
+      "name": "LEGO 71739",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71739",
+        "LEGO 71739 Ultra Sonic Raider",
+        "LEGO Set 71739"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71739"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71740",
+      "brand": "LEGO",
+      "model": "71740",
+      "name": "LEGO 71740",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71740",
+        "LEGO 71740 Jay's Electro Mech",
+        "LEGO Set 71740"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71740"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71741",
+      "brand": "LEGO",
+      "model": "71741",
+      "name": "LEGO 71741",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71741",
+        "LEGO 71741 NINJAGO® City Gardens",
+        "LEGO Set 71741"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71741"
+        ],
+        "min_age": [
+          "14"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71742",
+      "brand": "LEGO",
+      "model": "71742",
+      "name": "LEGO 71742",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71742",
+        "LEGO 71742 Overlord Dragon",
+        "LEGO Set 71742"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71742"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71745",
+      "brand": "LEGO",
+      "model": "71745",
+      "name": "LEGO 71745",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71745",
+        "LEGO 71745 Lloyd's Jungle Chopper Bike",
+        "LEGO Set 71745"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71745"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71746",
+      "brand": "LEGO",
+      "model": "71746",
+      "name": "LEGO 71746",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71746",
+        "LEGO 71746 Jungle Dragon",
+        "LEGO Set 71746"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71746"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71747",
+      "brand": "LEGO",
+      "model": "71747",
+      "name": "LEGO 71747",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71747",
+        "LEGO 71747 The Keepers' Village",
+        "LEGO Set 71747"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71747"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71748",
+      "brand": "LEGO",
+      "model": "71748",
+      "name": "LEGO 71748",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71748",
+        "LEGO 71748 Catamaran Sea Battle",
+        "LEGO Set 71748"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71748"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71749",
+      "brand": "LEGO",
+      "model": "71749",
+      "name": "LEGO 71749",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71749",
+        "LEGO 71749 Final Flight of Destiny's Bounty",
+        "LEGO Set 71749"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71749"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71750",
+      "brand": "LEGO",
+      "model": "71750",
+      "name": "LEGO 71750",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71750",
+        "LEGO 71750 Lloyd's Hydro Mech",
+        "LEGO Set 71750"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71750"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71752",
+      "brand": "LEGO",
+      "model": "71752",
+      "name": "LEGO 71752",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71752",
+        "LEGO 71752 Ninja Sub Speeder",
+        "LEGO Set 71752"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71752"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71753",
+      "brand": "LEGO",
+      "model": "71753",
+      "name": "LEGO 71753",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71753",
+        "LEGO 71753 Fire Dragon Attack",
+        "LEGO Set 71753"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71753"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71754",
+      "brand": "LEGO",
+      "model": "71754",
+      "name": "LEGO 71754",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71754",
+        "LEGO 71754 Water Dragon",
+        "LEGO Set 71754"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71754"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71755",
+      "brand": "LEGO",
+      "model": "71755",
+      "name": "LEGO 71755",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71755",
+        "LEGO 71755 Temple of the Endless Sea",
+        "LEGO Set 71755"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71755"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71756",
+      "brand": "LEGO",
+      "model": "71756",
+      "name": "LEGO 71756",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71756",
+        "LEGO 71756 Hydro Bounty",
+        "LEGO Set 71756"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71756"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71757",
+      "brand": "LEGO",
+      "model": "71757",
+      "name": "LEGO 71757",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71757",
+        "LEGO 71757 Lloyd's Ninja Mech",
+        "LEGO Set 71757"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71757"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71759",
+      "brand": "LEGO",
+      "model": "71759",
+      "name": "LEGO 71759",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71759",
+        "LEGO 71759 Ninja Dragon Temple",
+        "LEGO Set 71759"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71759"
+        ],
+        "min_age": [
+          "4"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71760",
+      "brand": "LEGO",
+      "model": "71760",
+      "name": "LEGO 71760",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71760",
+        "LEGO 71760 Jay’s Thunder Dragon EVO",
+        "LEGO Set 71760"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71760"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71761",
+      "brand": "LEGO",
+      "model": "71761",
+      "name": "LEGO 71761",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71761",
+        "LEGO 71761 Zane’s Power Up Mech EVO",
+        "LEGO Set 71761"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71761"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71762",
+      "brand": "LEGO",
+      "model": "71762",
+      "name": "LEGO 71762",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71762",
+        "LEGO 71762 Kai’s Fire Dragon EVO",
+        "LEGO Set 71762"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71762"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71763",
+      "brand": "LEGO",
+      "model": "71763",
+      "name": "LEGO 71763",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71763",
+        "LEGO 71763 Lloyd’s Race Car EVO",
+        "LEGO Set 71763"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71763"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71764",
+      "brand": "LEGO",
+      "model": "71764",
+      "name": "LEGO 71764",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71764",
+        "LEGO 71764 Ninja Training Center",
+        "LEGO Set 71764"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71764"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71765",
+      "brand": "LEGO",
+      "model": "71765",
+      "name": "LEGO 71765",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71765",
+        "LEGO 71765 Ninja Ultra Combo Mech",
+        "LEGO Set 71765"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71765"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71766",
+      "brand": "LEGO",
+      "model": "71766",
+      "name": "LEGO 71766",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71766",
+        "LEGO 71766 Lloyd’s Legendary Dragon",
+        "LEGO Set 71766"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71766"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71767",
+      "brand": "LEGO",
+      "model": "71767",
+      "name": "LEGO 71767",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71767",
+        "LEGO 71767 Ninja Dojo Temple",
+        "LEGO Set 71767"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71767"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71768",
+      "brand": "LEGO",
+      "model": "71768",
+      "name": "LEGO 71768",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71768",
+        "LEGO 71768 Jay's Golden Dragon Motorbike",
+        "LEGO Set 71768"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71768"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71769",
+      "brand": "LEGO",
+      "model": "71769",
+      "name": "LEGO 71769",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71769",
+        "LEGO 71769 Cole’s Dragon Cruiser",
+        "LEGO Set 71769"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71769"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71770",
+      "brand": "LEGO",
+      "model": "71770",
+      "name": "LEGO 71770",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71770",
+        "LEGO 71770 Zane's Golden Dragon Jet",
+        "LEGO Set 71770"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71770"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71771",
+      "brand": "LEGO",
+      "model": "71771",
+      "name": "LEGO 71771",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71771",
+        "LEGO 71771 The Crystal King Temple",
+        "LEGO Set 71771"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71771"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71772",
+      "brand": "LEGO",
+      "model": "71772",
+      "name": "LEGO 71772",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71772",
+        "LEGO 71772 The Crystal King",
+        "LEGO Set 71772"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71772"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71773",
+      "brand": "LEGO",
+      "model": "71773",
+      "name": "LEGO 71773",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71773",
+        "LEGO 71773 Kai’s Golden Dragon Raider",
+        "LEGO Set 71773"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71773"
+        ],
+        "min_age": [
+          "8"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71774",
+      "brand": "LEGO",
+      "model": "71774",
+      "name": "LEGO 71774",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71774",
+        "LEGO 71774 Lloyd’s Golden Ultra Dragon",
+        "LEGO Set 71774"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71774"
+        ],
+        "min_age": [
+          "9"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71775",
+      "brand": "LEGO",
+      "model": "71775",
+      "name": "LEGO 71775",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71775",
+        "LEGO 71775 Nya's Samurai X MECH",
+        "LEGO Set 71775"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71775"
+        ],
+        "min_age": [
+          "10"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71776",
+      "brand": "LEGO",
+      "model": "71776",
+      "name": "LEGO 71776",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71776",
+        "LEGO 71776 Jay and Nya's Race Car EVO",
+        "LEGO Set 71776"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71776"
+        ],
+        "min_age": [
+          "7"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71777",
+      "brand": "LEGO",
+      "model": "71777",
+      "name": "LEGO 71777",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71777",
+        "LEGO 71777 Kai’s Dragon Power Spinjitzu Flip",
+        "LEGO Set 71777"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71777"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71778",
+      "brand": "LEGO",
+      "model": "71778",
+      "name": "LEGO 71778",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71778",
+        "LEGO 71778 Nya's Dragon Power Spinjitzu Drift",
+        "LEGO Set 71778"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71778"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    },
+    {
+      "id": "lego-71779",
+      "brand": "LEGO",
+      "model": "71779",
+      "name": "LEGO 71779",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 71779",
+        "LEGO 71779 Lloyd's Dragon Power Spinjitzu Spin",
+        "LEGO Set 71779"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "71779"
+        ],
+        "min_age": [
+          "6"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-resale-instructions-2026-10-28-r40"
+    }
+  ]
+}

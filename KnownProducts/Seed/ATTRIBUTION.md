@@ -398,3 +398,28 @@ The manufacturer's indexed table was available; direct category and 95 32 320
 data-sheet opens returned 403, without retry or bypass. No fresh origin HTTP200 is claimed.
 No GTIN, fit, interchangeability, cutting capacity, price, insulation rating,
 package contents, quantity, production year or offer condition is inferred.
+
+## Retired LEGO Ninjago, Chima and Disney sets (2026-10-28, R40)
+
+`lego-resale-instructions.json` adds 186 previously absent set identities: 151 Ninjago,
+19 Chima and 16 Disney sets, including Frozen. The official LEGO instruction panels
+provide each exact printed set number, display name and recommended minimum builder age,
+for example [70618](https://www.lego.com/en-us/service/building-instructions/70618),
+[71705](https://www.lego.com/en-us/service/building-instructions/71705),
+[70146](https://www.lego.com/en-us/service/building-instructions/70146),
+[41148](https://www.lego.com/en-us/service/building-instructions/41148) and
+[43172](https://www.lego.com/en-us/service/building-instructions/43172).
+Each selected panel and individual primary URL is retained in
+`tools/catalog-import/proofs/lego-resale-instructions-2026-10-28-r40.json`.
+`python3 tools/catalog-import/expand_lego_resale.py --check` checks the authored seed
+against that proof and rejects cross-file ID or normalized-alias collisions offline.
+All 43 previous seed files remain byte-identical. All aliases require LEGO and the full
+printed number; repeated official names do not establish set equivalence. Generic
+Ninjago, Chima and Frozen offers stay unspecific. Instructions, empty boxes, partial sets,
+compatible/custom builds and lots retain their existing matcher exclusions.
+Only set number and minimum age are asserted as attributes. Source-panel piece counts
+are evidence, not a used-offer completeness claim. No language, edition, suffix, GTIN,
+package contents, offer condition or compatibility is inferred. Unavailable pages are
+omitted; this is a selected supplement, not a complete theme enumeration. Public web-tool
+retrieval may use its index/cache; no fresh origin HTTP200 is claimed. No manufacturer
+descriptions, images or inventories are copied.

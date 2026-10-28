@@ -1,0 +1,1127 @@
+{
+  "checked_at": "2026-10-28",
+  "method": "Official LEGO building-instruction pages retrieved with the web tool; exact heading and printed number/age panel transcribed for each selected identity. Names and recommended builder ages are public manufacturer facts. Not a claim of a fresh origin HTTP200 or complete theme enumeration.",
+  "scope": "Previously absent complete-set identities only. All aliases require LEGO plus the exact printed set number; no name-only matching. No edition suffix, package contents, completeness, language, GTIN, pressing, fit or compatibility is inferred. Piece count is retained only inside the source-panel evidence, not asserted as an offer attribute.",
+  "demand_evidence": "Retained public R38 grouping/fresh-public-50.json: generic Ninjago, Chima and Frozen titles; those unspecific titles remain unspecific. Records lack pressing identifiers, so no guessed record editions were added.",
+  "facts": [
+    {
+      "number": "41062",
+      "name": "Elsa's Sparkling Ice Castle",
+      "metadata": "6-12 | #41062 | 292 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41062"
+    },
+    {
+      "number": "41066",
+      "name": "Anna & Kristoff's Sleigh Adventure",
+      "metadata": "5-12 | #41066 | 174 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41066"
+    },
+    {
+      "number": "41147",
+      "name": "Anna's Snow Adventure",
+      "metadata": "5-12 | #41147 | 153 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41147"
+    },
+    {
+      "number": "41148",
+      "name": "Elsa's Magical Ice Palace",
+      "metadata": "6-12 | #41148 | 701 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41148"
+    },
+    {
+      "number": "41155",
+      "name": "Elsa's Market Adventure",
+      "metadata": "5-12 | #41155 | 125 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41155"
+    },
+    {
+      "number": "41165",
+      "name": "Anna's Canoe Expedition",
+      "metadata": "4+ | #41165 | 108 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41165"
+    },
+    {
+      "number": "41166",
+      "name": "Elsa's Wagon Adventure",
+      "metadata": "4+ | #41166 | 116 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41166"
+    },
+    {
+      "number": "41167",
+      "name": "Arendelle Castle Village",
+      "metadata": "5+ | #41167 | 521 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41167"
+    },
+    {
+      "number": "41168",
+      "name": "Elsa's Jewelry Box Creation",
+      "metadata": "6+ | #41168 | 300 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41168"
+    },
+    {
+      "number": "41169",
+      "name": "Olaf",
+      "metadata": "6+ | #41169 | 122 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41169"
+    },
+    {
+      "number": "43172",
+      "name": "Elsa's Magical Ice Palace",
+      "metadata": "6+ | #43172 | 701 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43172"
+    },
+    {
+      "number": "43175",
+      "name": "Anna and Elsa’s Storybook Adventures",
+      "metadata": "5+ | #43175 | 133 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43175"
+    },
+    {
+      "number": "43176",
+      "name": "Ariel's Storybook Adventures",
+      "metadata": "5+ | #43176 | 105 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43176"
+    },
+    {
+      "number": "43186",
+      "name": "Bruni the Salamander Buildable Character",
+      "metadata": "6+ | #43186 | 96 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43186"
+    },
+    {
+      "number": "43189",
+      "name": "Elsa and the Nokk Storybook Adventures",
+      "metadata": "5+ | #43189 | 125 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43189"
+    },
+    {
+      "number": "43204",
+      "name": "Anna and Olaf's Castle Fun",
+      "metadata": "4+ | #43204 | 108 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/43204"
+    },
+    {
+      "number": "70141",
+      "name": "Vardy's Ice Vulture Glider",
+      "metadata": "7-14 | #70141 | 217 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70141"
+    },
+    {
+      "number": "70142",
+      "name": "Eris' Fire Eagle Flyer",
+      "metadata": "8-14 | #70142 | 330 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70142"
+    },
+    {
+      "number": "70143",
+      "name": "Sir Fangar's Saber-tooth Walker",
+      "metadata": "8-14 | #70143 | 415 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70143"
+    },
+    {
+      "number": "70144",
+      "name": "Laval's Fire Lion",
+      "metadata": "8-14 | #70144 | 450 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70144"
+    },
+    {
+      "number": "70145",
+      "name": "Maula's Ice Mammoth Stomper",
+      "metadata": "8-14 | #70145 | 604 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70145"
+    },
+    {
+      "number": "70146",
+      "name": "Flying Phoenix Fire Temple",
+      "metadata": "9-14 | #70146 | 1301 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70146"
+    },
+    {
+      "number": "70147",
+      "name": "Sir Fangar's Ice Fortress",
+      "metadata": "8-14 | #70147 | 670 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70147"
+    },
+    {
+      "number": "70220",
+      "name": "Strainor's Saber Cycle",
+      "metadata": "7-14 | #70220 | 161 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70220"
+    },
+    {
+      "number": "70221",
+      "name": "Flinx's Ultimate Phoenix",
+      "metadata": "7-14 | #70221 | 172 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70221"
+    },
+    {
+      "number": "70222",
+      "name": "Tormak's Shadow Blazer",
+      "metadata": "7-14 | #70222 | 311 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70222"
+    },
+    {
+      "number": "70223",
+      "name": "Icebite's Claw Driller",
+      "metadata": "8-14 | #70223 | 629 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70223"
+    },
+    {
+      "number": "70224",
+      "name": "Tiger's Mobile Command",
+      "metadata": "8-14 | #70224 | 712 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70224"
+    },
+    {
+      "number": "70225",
+      "name": "Bladvic's Rumble Bear",
+      "metadata": "8-14 | #70225 | 415 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70225"
+    },
+    {
+      "number": "70226",
+      "name": "Mammoth's Frozen Stronghold",
+      "metadata": "7-14 | #70226 | 621 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70226"
+    },
+    {
+      "number": "70227",
+      "name": "King Crominus' Rescue",
+      "metadata": "9-14 | #70227 | 863 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70227"
+    },
+    {
+      "number": "70228",
+      "name": "Vultrix's Sky Scavenger",
+      "metadata": "8-14 | #70228 | 480 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70228"
+    },
+    {
+      "number": "70229",
+      "name": "Lion Tribe Pack",
+      "metadata": "7-14 | #70229 | 78 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70229"
+    },
+    {
+      "number": "70230",
+      "name": "Ice Bear Tribe Pack",
+      "metadata": "7-14 | #70230 | 75 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70230"
+    },
+    {
+      "number": "70231",
+      "name": "Crocodile Tribe Pack",
+      "metadata": "7-14 | #70231 | 72 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70231"
+    },
+    {
+      "number": "70600",
+      "name": "Ninja Bike Chase",
+      "metadata": "7-14 | #70600 | 231 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70600"
+    },
+    {
+      "number": "70601",
+      "name": "Sky Shark",
+      "metadata": "7-14 | #70601 | 221 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70601"
+    },
+    {
+      "number": "70602",
+      "name": "Jay's Elemental Dragon",
+      "metadata": "7-14 | #70602 | 350 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70602"
+    },
+    {
+      "number": "70603",
+      "name": "Raid Zeppelin",
+      "metadata": "7-14 | #70603 | 294 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70603"
+    },
+    {
+      "number": "70604",
+      "name": "Tiger Widow Island",
+      "metadata": "8-14 | #70604 | 450 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70604"
+    },
+    {
+      "number": "70605",
+      "name": "Misfortune's Keep",
+      "metadata": "9-14 | #70605 | 754 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70605"
+    },
+    {
+      "number": "70606",
+      "name": "Spinjitzu Training",
+      "metadata": "6-14 | #70606 | 109 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70606"
+    },
+    {
+      "number": "70607",
+      "name": "NINJAGO® City Chase",
+      "metadata": "7-14 | #70607 | 233 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70607"
+    },
+    {
+      "number": "70608",
+      "name": "Master Falls",
+      "metadata": "7-14 | #70608 | 312 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70608"
+    },
+    {
+      "number": "70609",
+      "name": "Manta Ray Bomber",
+      "metadata": "7-14 | #70609 | 341 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70609"
+    },
+    {
+      "number": "70610",
+      "name": "Flying Jelly Sub",
+      "metadata": "8-14 | #70610 | 341 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70610"
+    },
+    {
+      "number": "70611",
+      "name": "Water Strider",
+      "metadata": "8-14 | #70611 | 494 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70611"
+    },
+    {
+      "number": "70612",
+      "name": "Green Ninja Mech Dragon",
+      "metadata": "8-14 | #70612 | 544 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70612"
+    },
+    {
+      "number": "70613",
+      "name": "Garma Mecha Man",
+      "metadata": "8-14 | #70613 | 747 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70613"
+    },
+    {
+      "number": "70614",
+      "name": "Lightning Jet",
+      "metadata": "9-14 | #70614 | 876 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70614"
+    },
+    {
+      "number": "70615",
+      "name": "Fire Mech",
+      "metadata": "9-14 | #70615 | 944 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70615"
+    },
+    {
+      "number": "70616",
+      "name": "Ice Tank",
+      "metadata": "9-14 | #70616 | 914 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70616"
+    },
+    {
+      "number": "70617",
+      "name": "Temple of The Ultimate Ultimate Weapon",
+      "metadata": "9-14 | #70617 | 1403 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70617"
+    },
+    {
+      "number": "70618",
+      "name": "Destiny's Bounty",
+      "metadata": "9-14 | #70618 | 2295 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70618"
+    },
+    {
+      "number": "70620",
+      "name": "NINJAGO® City",
+      "metadata": "16+ | #70620 | 4867 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70620"
+    },
+    {
+      "number": "70621",
+      "name": "The Vermillion Attack",
+      "metadata": "6-14 | #70621 | 83 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70621"
+    },
+    {
+      "number": "70622",
+      "name": "Desert Lightning",
+      "metadata": "7-14 | #70622 | 201 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70622"
+    },
+    {
+      "number": "70623",
+      "name": "Destiny's Shadow",
+      "metadata": "7-14 | #70623 | 360 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70623"
+    },
+    {
+      "number": "70624",
+      "name": "Vermillion Invader",
+      "metadata": "8-14 | #70624 | 313 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70624"
+    },
+    {
+      "number": "70625",
+      "name": "Samurai VXL",
+      "metadata": "7-14 | #70625 | 428 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70625"
+    },
+    {
+      "number": "70626",
+      "name": "Dawn of Iron Doom",
+      "metadata": "8-14 | #70626 | 704 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70626"
+    },
+    {
+      "number": "70627",
+      "name": "Dragon's Forge",
+      "metadata": "8-14 | #70627 | 1137 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70627"
+    },
+    {
+      "number": "70628",
+      "name": "Lloyd - Spinjitzu Master",
+      "metadata": "6-14 | #70628 | 48 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70628"
+    },
+    {
+      "number": "70629",
+      "name": "Piranha Attack",
+      "metadata": "7-14 | #70629 | 217 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70629"
+    },
+    {
+      "number": "70631",
+      "name": "Garmadon's Volcano Lair",
+      "metadata": "8-14 | #70631 | 521 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70631"
+    },
+    {
+      "number": "70632",
+      "name": "Quake Mech",
+      "metadata": "9-14 | #70632 | 1202 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70632"
+    },
+    {
+      "number": "70633",
+      "name": "Kai - Spinjitzu Master",
+      "metadata": "6-14 | #70633 | 61 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70633"
+    },
+    {
+      "number": "70634",
+      "name": "Nya - Spinjitzu Master",
+      "metadata": "6-14 | #70634 | 69 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70634"
+    },
+    {
+      "number": "70635",
+      "name": "Jay - Spinjitzu Master",
+      "metadata": "6-14 | #70635 | 68 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70635"
+    },
+    {
+      "number": "70636",
+      "name": "Zane - Spinjitzu Master",
+      "metadata": "6-14 | #70636 | 69 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70636"
+    },
+    {
+      "number": "70637",
+      "name": "Cole - Spinjitzu Master",
+      "metadata": "6-14 | #70637 | 73 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70637"
+    },
+    {
+      "number": "70638",
+      "name": "Katana V11",
+      "metadata": "7-14 | #70638 | 257 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70638"
+    },
+    {
+      "number": "70639",
+      "name": "Street Race of Snake Jaguar",
+      "metadata": "7-14 | #70639 | 308 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70639"
+    },
+    {
+      "number": "70640",
+      "name": "S.O.G. Headquarters",
+      "metadata": "8-14 | #70640 | 530 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70640"
+    },
+    {
+      "number": "70641",
+      "name": "Ninja Nightcrawler",
+      "metadata": "9-14 | #70641 | 552 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70641"
+    },
+    {
+      "number": "70642",
+      "name": "Killow vs. Samurai X",
+      "metadata": "8-14 | #70642 | 556 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70642"
+    },
+    {
+      "number": "70643",
+      "name": "Temple of Resurrection",
+      "metadata": "8-14 | #70643 | 765 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70643"
+    },
+    {
+      "number": "70644",
+      "name": "Golden Dragon Master",
+      "metadata": "8-14 | #70644 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70644"
+    },
+    {
+      "number": "70645",
+      "name": "Cole - Dragon Master",
+      "metadata": "8-14 | #70645 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70645"
+    },
+    {
+      "number": "70646",
+      "name": "Jay - Dragon Master",
+      "metadata": "8-14 | #70646 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70646"
+    },
+    {
+      "number": "70647",
+      "name": "Kai - Dragon Master",
+      "metadata": "8-14 | #70647 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70647"
+    },
+    {
+      "number": "70648",
+      "name": "Zane - Dragon Master",
+      "metadata": "8-14 | #70648 | 92 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70648"
+    },
+    {
+      "number": "70650",
+      "name": "Destiny's Wing",
+      "metadata": "6-14 | #70650 | 181 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70650"
+    },
+    {
+      "number": "70651",
+      "name": "Throne Room Showdown",
+      "metadata": "6-14 | #70651 | 221 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70651"
+    },
+    {
+      "number": "70652",
+      "name": "Stormbringer",
+      "metadata": "8-14 | #70652 | 493 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70652"
+    },
+    {
+      "number": "70653",
+      "name": "Firstbourne",
+      "metadata": "9-14 | #70653 | 882 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70653"
+    },
+    {
+      "number": "70654",
+      "name": "Dieselnaut",
+      "metadata": "9-14 | #70654 | 1179 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70654"
+    },
+    {
+      "number": "70655",
+      "name": "Dragon Pit",
+      "metadata": "9-14 | #70655 | 1660 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70655"
+    },
+    {
+      "number": "70656",
+      "name": "garmadon, Garmadon, GARMADON!",
+      "metadata": "9-14 | #70656 | 830 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70656"
+    },
+    {
+      "number": "70657",
+      "name": "NINJAGO® City Docks",
+      "metadata": "12+ | #70657 | 3553 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70657"
+    },
+    {
+      "number": "70658",
+      "name": "Oni Titan",
+      "metadata": "8-14 | #70658 | 522 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70658"
+    },
+    {
+      "number": "70659",
+      "name": "Spinjitzu Kai",
+      "metadata": "7+ | #70659 | 97 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70659"
+    },
+    {
+      "number": "70660",
+      "name": "Spinjitzu Jay",
+      "metadata": "7+ | #70660 | 97 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70660"
+    },
+    {
+      "number": "70661",
+      "name": "Spinjitzu Zane",
+      "metadata": "7+ | #70661 | 109 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70661"
+    },
+    {
+      "number": "70662",
+      "name": "Spinjitzu Cole",
+      "metadata": "7+ | #70662 | 117 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70662"
+    },
+    {
+      "number": "70663",
+      "name": "Spinjitzu Nya & Wu",
+      "metadata": "7+ | #70663 | 227 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70663"
+    },
+    {
+      "number": "70664",
+      "name": "Spinjitzu Lloyd vs. Garmadon",
+      "metadata": "7+ | #70664 | 208 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70664"
+    },
+    {
+      "number": "70665",
+      "name": "The Samurai Mech",
+      "metadata": "7+ | #70665 | 154 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70665"
+    },
+    {
+      "number": "70666",
+      "name": "The Golden Dragon",
+      "metadata": "7+ | #70666 | 171 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70666"
+    },
+    {
+      "number": "70667",
+      "name": "Kai's Blade Cycle & Zane's Snowmobile",
+      "metadata": "8+ | #70667 | 376 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70667"
+    },
+    {
+      "number": "70668",
+      "name": "Jay's Storm Fighter",
+      "metadata": "9+ | #70668 | 490 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70668"
+    },
+    {
+      "number": "70669",
+      "name": "Cole's Earth Driller",
+      "metadata": "8+ | #70669 | 587 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70669"
+    },
+    {
+      "number": "70670",
+      "name": "Monastery of Spinjitzu",
+      "metadata": "9+ | #70670 | 1070 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70670"
+    },
+    {
+      "number": "70671",
+      "name": "Lloyd's Journey",
+      "metadata": "6+ | #70671 | 81 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70671"
+    },
+    {
+      "number": "70672",
+      "name": "Cole's Dirt Bike",
+      "metadata": "8+ | #70672 | 212 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70672"
+    },
+    {
+      "number": "70673",
+      "name": "ShuriCopter",
+      "metadata": "8+ | #70673 | 361 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70673"
+    },
+    {
+      "number": "70674",
+      "name": "Fire Fang",
+      "metadata": "8+ | #70674 | 463 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70674"
+    },
+    {
+      "number": "70675",
+      "name": "Katana 4x4",
+      "metadata": "8+ | #70675 | 450 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70675"
+    },
+    {
+      "number": "70676",
+      "name": "Lloyd's Titan Mech",
+      "metadata": "9+ | #70676 | 876 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70676"
+    },
+    {
+      "number": "70677",
+      "name": "Land Bounty",
+      "metadata": "9+ | #70677 | 1178 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70677"
+    },
+    {
+      "number": "70678",
+      "name": "Castle of the Forsaken Emperor",
+      "metadata": "9+ | #70678 | 1218 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70678"
+    },
+    {
+      "number": "70679",
+      "name": "The Ultra Dragon",
+      "metadata": "9+ | #70679 | 951 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70679"
+    },
+    {
+      "number": "70680",
+      "name": "Monastery Training",
+      "metadata": "6+ | #70680 | 122 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70680"
+    },
+    {
+      "number": "70681",
+      "name": "Spinjitzu Slam - Lloyd",
+      "metadata": "7+ | #70681 | 70 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70681"
+    },
+    {
+      "number": "70682",
+      "name": "Spinjitzu Slam - Jay",
+      "metadata": "7+ | #70682 | 72 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70682"
+    },
+    {
+      "number": "70683",
+      "name": "Spinjitzu Slam - Zane",
+      "metadata": "7+ | #70683 | 63 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70683"
+    },
+    {
+      "number": "70684",
+      "name": "Spinjitzu Slam - Kai vs. Samurai",
+      "metadata": "8+ | #70684 | 164 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/70684"
+    },
+    {
+      "number": "71700",
+      "name": "Jungle Raider",
+      "metadata": "7+ | #71700 | 127 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71700"
+    },
+    {
+      "number": "71701",
+      "name": "Kai's Fire Dragon",
+      "metadata": "4+ | #71701 | 81 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71701"
+    },
+    {
+      "number": "71702",
+      "name": "Golden Mech",
+      "metadata": "8+ | #71702 | 489 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71702"
+    },
+    {
+      "number": "71703",
+      "name": "Storm Fighter Battle",
+      "metadata": "4+ | #71703 | 165 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71703"
+    },
+    {
+      "number": "71704",
+      "name": "Kai Fighter",
+      "metadata": "8+ | #71704 | 513 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71704"
+    },
+    {
+      "number": "71705",
+      "name": "Destiny's Bounty",
+      "metadata": "9+ | #71705 | 1781 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71705"
+    },
+    {
+      "number": "71706",
+      "name": "Cole's Speeder Car",
+      "metadata": "4+ | #71706 | 52 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71706"
+    },
+    {
+      "number": "71707",
+      "name": "Kai's Mech Jet",
+      "metadata": "7+ | #71707 | 217 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71707"
+    },
+    {
+      "number": "71708",
+      "name": "Gamer's Market",
+      "metadata": "7+ | #71708 | 218 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71708"
+    },
+    {
+      "number": "71709",
+      "name": "Jay and Lloyd's Velocity Racers",
+      "metadata": "7+ | #71709 | 322 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71709"
+    },
+    {
+      "number": "71710",
+      "name": "Ninja Tuner Car",
+      "metadata": "8+ | #71710 | 419 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71710"
+    },
+    {
+      "number": "71711",
+      "name": "Jay's Cyber Dragon",
+      "metadata": "8+ | #71711 | 518 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71711"
+    },
+    {
+      "number": "71712",
+      "name": "Empire Temple of Madness",
+      "metadata": "9+ | #71712 | 810 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71712"
+    },
+    {
+      "number": "71713",
+      "name": "Empire Dragon",
+      "metadata": "8+ | #71713 | 286 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71713"
+    },
+    {
+      "number": "71714",
+      "name": "Kai Avatar - Arcade Pod",
+      "metadata": "7+ | #71714 | 49 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71714"
+    },
+    {
+      "number": "71715",
+      "name": "Jay Avatar - Arcade Pod",
+      "metadata": "7+ | #71715 | 47 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71715"
+    },
+    {
+      "number": "71716",
+      "name": "Lloyd Avatar - Arcade Pod",
+      "metadata": "7+ | #71716 | 48 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71716"
+    },
+    {
+      "number": "71717",
+      "name": "Journey to the Skull Dungeons",
+      "metadata": "7+ | #71717 | 401 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71717"
+    },
+    {
+      "number": "71718",
+      "name": "Wu's Battle Dragon",
+      "metadata": "7+ | #71718 | 321 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71718"
+    },
+    {
+      "number": "71719",
+      "name": "Zane's Mino Creature",
+      "metadata": "8+ | #71719 | 616 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71719"
+    },
+    {
+      "number": "71720",
+      "name": "Fire Stone Mech",
+      "metadata": "9+ | #71720 | 968 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71720"
+    },
+    {
+      "number": "71721",
+      "name": "Skull Sorcerer's Dragon",
+      "metadata": "9+ | #71721 | 1016 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71721"
+    },
+    {
+      "number": "71722",
+      "name": "Skull Sorcerer's Dungeons",
+      "metadata": "9+ | #71722 | 1171 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71722"
+    },
+    {
+      "number": "71730",
+      "name": "Epic Battle Set - Kai vs. Skulkin",
+      "metadata": "6+ | #71730 | 61 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71730"
+    },
+    {
+      "number": "71731",
+      "name": "Epic Battle Set - Zane vs. Nindroid",
+      "metadata": "6+ | #71731 | 57 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71731"
+    },
+    {
+      "number": "71732",
+      "name": "Epic Battle Set - Jay vs. Serpentine",
+      "metadata": "6+ | #71732 | 69 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71732"
+    },
+    {
+      "number": "71733",
+      "name": "Epic Battle Set - Cole vs. Ghost Warrior",
+      "metadata": "6+ | #71733 | 51 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71733"
+    },
+    {
+      "number": "71734",
+      "name": "Kai's Blade Cycle",
+      "metadata": "4+ | #71734 | 54 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71734"
+    },
+    {
+      "number": "71735",
+      "name": "Tournament of Elements",
+      "metadata": "6+ | #71735 | 283 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71735"
+    },
+    {
+      "number": "71736",
+      "name": "Boulder Blaster",
+      "metadata": "8+ | #71736 | 449 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71736"
+    },
+    {
+      "number": "71737",
+      "name": "X-1 Ninja Charger",
+      "metadata": "8+ | #71737 | 599 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71737"
+    },
+    {
+      "number": "71738",
+      "name": "Zane's Titan Mech Battle",
+      "metadata": "9+ | #71738 | 840 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71738"
+    },
+    {
+      "number": "71739",
+      "name": "Ultra Sonic Raider",
+      "metadata": "9+ | #71739 | 725 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71739"
+    },
+    {
+      "number": "71740",
+      "name": "Jay's Electro Mech",
+      "metadata": "4+ | #71740 | 106 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71740"
+    },
+    {
+      "number": "71741",
+      "name": "NINJAGO® City Gardens",
+      "metadata": "14+ | #71741 | 5686 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71741"
+    },
+    {
+      "number": "71742",
+      "name": "Overlord Dragon",
+      "metadata": "7+ | #71742 | 372 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71742"
+    },
+    {
+      "number": "71745",
+      "name": "Lloyd's Jungle Chopper Bike",
+      "metadata": "7+ | #71745 | 183 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71745"
+    },
+    {
+      "number": "71746",
+      "name": "Jungle Dragon",
+      "metadata": "8+ | #71746 | 506 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71746"
+    },
+    {
+      "number": "71747",
+      "name": "The Keepers' Village",
+      "metadata": "8+ | #71747 | 632 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71747"
+    },
+    {
+      "number": "71748",
+      "name": "Catamaran Sea Battle",
+      "metadata": "9+ | #71748 | 780 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71748"
+    },
+    {
+      "number": "71749",
+      "name": "Final Flight of Destiny's Bounty",
+      "metadata": "4+ | #71749 | 147 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71749"
+    },
+    {
+      "number": "71750",
+      "name": "Lloyd's Hydro Mech",
+      "metadata": "7+ | #71750 | 228 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71750"
+    },
+    {
+      "number": "71752",
+      "name": "Ninja Sub Speeder",
+      "metadata": "8+ | #71752 | 356 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71752"
+    },
+    {
+      "number": "71753",
+      "name": "Fire Dragon Attack",
+      "metadata": "8+ | #71753 | 563 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71753"
+    },
+    {
+      "number": "71754",
+      "name": "Water Dragon",
+      "metadata": "9+ | #71754 | 737 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71754"
+    },
+    {
+      "number": "71755",
+      "name": "Temple of the Endless Sea",
+      "metadata": "9+ | #71755 | 1060 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71755"
+    },
+    {
+      "number": "71756",
+      "name": "Hydro Bounty",
+      "metadata": "9+ | #71756 | 1159 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71756"
+    },
+    {
+      "number": "71757",
+      "name": "Lloyd's Ninja Mech",
+      "metadata": "4+ | #71757 | 57 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71757"
+    },
+    {
+      "number": "71759",
+      "name": "Ninja Dragon Temple",
+      "metadata": "4+ | #71759 | 161 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71759"
+    },
+    {
+      "number": "71760",
+      "name": "Jay’s Thunder Dragon EVO",
+      "metadata": "6+ | #71760 | 140 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71760"
+    },
+    {
+      "number": "71761",
+      "name": "Zane’s Power Up Mech EVO",
+      "metadata": "6+ | #71761 | 95 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71761"
+    },
+    {
+      "number": "71762",
+      "name": "Kai’s Fire Dragon EVO",
+      "metadata": "6+ | #71762 | 204 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71762"
+    },
+    {
+      "number": "71763",
+      "name": "Lloyd’s Race Car EVO",
+      "metadata": "6+ | #71763 | 279 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71763"
+    },
+    {
+      "number": "71764",
+      "name": "Ninja Training Center",
+      "metadata": "7+ | #71764 | 524 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71764"
+    },
+    {
+      "number": "71765",
+      "name": "Ninja Ultra Combo Mech",
+      "metadata": "9+ | #71765 | 1104 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71765"
+    },
+    {
+      "number": "71766",
+      "name": "Lloyd’s Legendary Dragon",
+      "metadata": "8+ | #71766 | 747 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71766"
+    },
+    {
+      "number": "71767",
+      "name": "Ninja Dojo Temple",
+      "metadata": "8+ | #71767 | 1394 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71767"
+    },
+    {
+      "number": "71768",
+      "name": "Jay's Golden Dragon Motorbike",
+      "metadata": "7+ | #71768 | 137 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71768"
+    },
+    {
+      "number": "71769",
+      "name": "Cole’s Dragon Cruiser",
+      "metadata": "8+ | #71769 | 384 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71769"
+    },
+    {
+      "number": "71770",
+      "name": "Zane's Golden Dragon Jet",
+      "metadata": "7+ | #71770 | 258 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71770"
+    },
+    {
+      "number": "71771",
+      "name": "The Crystal King Temple",
+      "metadata": "8+ | #71771 | 703 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71771"
+    },
+    {
+      "number": "71772",
+      "name": "The Crystal King",
+      "metadata": "9+ | #71772 | 722 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71772"
+    },
+    {
+      "number": "71773",
+      "name": "Kai’s Golden Dragon Raider",
+      "metadata": "8+ | #71773 | 624 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71773"
+    },
+    {
+      "number": "71774",
+      "name": "Lloyd’s Golden Ultra Dragon",
+      "metadata": "9+ | #71774 | 989 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71774"
+    },
+    {
+      "number": "71775",
+      "name": "Nya's Samurai X MECH",
+      "metadata": "10+ | #71775 | 1003 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71775"
+    },
+    {
+      "number": "71776",
+      "name": "Jay and Nya's Race Car EVO",
+      "metadata": "7+ | #71776 | 536 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71776"
+    },
+    {
+      "number": "71777",
+      "name": "Kai’s Dragon Power Spinjitzu Flip",
+      "metadata": "6+ | #71777 | 72 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71777"
+    },
+    {
+      "number": "71778",
+      "name": "Nya's Dragon Power Spinjitzu Drift",
+      "metadata": "6+ | #71778 | 57 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71778"
+    },
+    {
+      "number": "71779",
+      "name": "Lloyd's Dragon Power Spinjitzu Spin",
+      "metadata": "6+ | #71779 | 56 pieces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/71779"
+    }
+  ],
+  "omitted_existing": [
+    "71780: primary fact verified but existing row is preserved exactly"
+  ]
+}

@@ -12,7 +12,7 @@ public class KnownProductLegoCatalogTests
     public void EverySetHasAUniqueIdentityAndResolvesToItself()
     {
         var sets = Catalog.Where(p => p.Vertical == "lego").ToList();
-        Assert.That(sets, Has.Count.EqualTo(7446));
+        Assert.That(sets, Has.Count.EqualTo(7632));
         Assert.That(sets.Select(p => p.Id).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.Select(p => p.Model).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.All(p => p.PossibleAttributes["set_number"].SetEquals(new[] { p.Model })), Is.True);
@@ -70,6 +70,63 @@ public class KnownProductLegoCatalogTests
             Assert.That(Matcher.Match($"LEGO Set {set.Model} gebraucht vollständig")?.Id, Is.EqualTo(set.Id));
         }
     }
+
+    [Test]
+    public void ResaleInstructionBatchResolvesEveryVerifiedBodyAndPreservesOfferScope()
+    {
+        var sets = Catalog.Where(p => p.Source == "seed:lego-official-resale-instructions-2026-10-28-r40").ToList();
+        Assert.That(sets, Has.Count.EqualTo(186));
+        Assert.Multiple(() =>
+        {
+            foreach (var set in sets)
+            {
+                Assert.That(set.PossibleAttributes.Keys, Is.EquivalentTo(new[] { "set_number", "min_age" }));
+                Assert.That(set.PossibleAttributes["set_number"], Is.EquivalentTo(new[] { set.Model }));
+                foreach (var alias in set.Aliases)
+                    Assert.That(Matcher.Match(alias)?.Id, Is.EqualTo(set.Id), alias);
+                Assert.That(Matcher.Match($"LEGO Set {set.Model} gebraucht vollständig")?.Id, Is.EqualTo(set.Id));
+                Assert.That(Matcher.Match($"LEGO {set.Model} Bauanleitung"), Is.Null);
+                Assert.That(Matcher.Match($"LEGO {set.Model} nur OVP"), Is.Null);
+                Assert.That(Matcher.Match($"LEGO {set.Model} unvollständig"), Is.Null);
+                Assert.That(Matcher.Match(set.Model), Is.Null);
+            }
+        });
+    }
+
+    [TestCase("LEGO 41168", "lego-41168")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation", "lego-41168")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation gebraucht", "lego-41168")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation mit Box", "lego-41168")]
+    [TestCase("LEGO 70618 Destiny's Bounty", "lego-70618")]
+    [TestCase("LEGO 71705 Destiny's Bounty", "lego-71705")]
+    [TestCase("LEGO 41148 Elsa's Magical Ice Palace", "lego-41148")]
+    [TestCase("LEGO 43172 Elsa's Magical Ice Palace", "lego-43172")]
+    [TestCase("LEGO 71737 X-1 Ninja Charger", "lego-71737")]
+    [TestCase("LEGO 71765 Ninja Ultra Combo Mech", "lego-71765")]
+    [TestCase("LEGO 70146 Flying Phoenix Fire Temple", "lego-70146")]
+    [TestCase("LEGO 70226 Mammoth's Frozen Stronghold", "lego-70226")]
+    public void RetiredThemeBodiesKeepPrintedNumbersEvenWhenOfficialNamesRepeat(string title, string id) =>
+        Assert.That(Matcher.Match(title)?.Id, Is.EqualTo(id));
+
+    [TestCase("LEGO 70618 Destiny's Bounty und 71705")]
+    [TestCase("LEGO 41168 Box")]
+    [TestCase("Box LEGO 41168 Elsa's Jewelry Box Creation")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation Box")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation Bauanleitung")]
+    [TestCase("LEGO 41168 Elsa's Jewelry Box Creation nur OVP")]
+    [TestCase("LEGO 41148 Elsa's Magical Ice Palace 43172")]
+    [TestCase("LEGO 71765 Ninja Ultra Combo Mech bundle")]
+    [TestCase("LEGO 71737 X-1 Ninja Charger charger")]
+    [TestCase("LEGO 70146 Ersatzteile")]
+    [TestCase("LEGO 70226 kompatibel")]
+    [TestCase("LEGO 70618-2")]
+    [TestCase("LEGO Destiny's Bounty")]
+    [TestCase("Lego ninjago QG des ninjas")]
+    [TestCase("Lego reine des neige")]
+    [TestCase("Lego Chima")]
+    [TestCase("Bauanleitung Lego Star Wars Nr 75000")]
+    public void NewThemeCoverageDoesNotGuessSetsOrPoolObservedInstructionAndUnspecificOffers(string title) =>
+        Assert.That(Matcher.Match(title), Is.Null);
 
     [TestCase("LEGO 42056 Porsche 911 GT3 RS", "lego-42056")]
     [TestCase("LEGO 42083 Bugatti Chiron", "lego-42083")]
