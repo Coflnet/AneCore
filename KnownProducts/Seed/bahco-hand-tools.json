@@ -1330,6 +1330,4557 @@
         "t8"
       ],
       "source": "seed:manufacturer-verified-2026-10-27"
+    },
+    {
+      "id": "bahco-10rm-10",
+      "brand": "Bahco",
+      "model": "10RM-10",
+      "name": "Bahco 10RM-10 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-10"
+        ],
+        "length_mm": [
+          "95"
+        ],
+        "wrench_size_mm": [
+          "10"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-10rm-13",
+      "brand": "Bahco",
+      "model": "10RM-13",
+      "name": "Bahco 10RM-13 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-13"
+        ],
+        "length_mm": [
+          "108"
+        ],
+        "wrench_size_mm": [
+          "13"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-10rm-14",
+      "brand": "Bahco",
+      "model": "10RM-14",
+      "name": "Bahco 10RM-14 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-14"
+        ],
+        "length_mm": [
+          "115"
+        ],
+        "wrench_size_mm": [
+          "14"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-10rm-17",
+      "brand": "Bahco",
+      "model": "10RM-17",
+      "name": "Bahco 10RM-17 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-17"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-17"
+        ],
+        "length_mm": [
+          "127"
+        ],
+        "wrench_size_mm": [
+          "17"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-10rm-19",
+      "brand": "Bahco",
+      "model": "10RM-19",
+      "name": "Bahco 10RM-19 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-19"
+        ],
+        "length_mm": [
+          "139"
+        ],
+        "wrench_size_mm": [
+          "19"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-10rm-8",
+      "brand": "Bahco",
+      "model": "10RM-8",
+      "name": "Bahco 10RM-8 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 10RM-8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "10RM-8"
+        ],
+        "length_mm": [
+          "90"
+        ],
+        "wrench_size_mm": [
+          "8"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-10",
+      "brand": "Bahco",
+      "model": "111M-10",
+      "name": "Bahco 111M-10 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-10"
+        ],
+        "length_mm": [
+          "144"
+        ],
+        "wrench_size_mm": [
+          "10"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-11",
+      "brand": "Bahco",
+      "model": "111M-11",
+      "name": "Bahco 111M-11 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-11"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-11"
+        ],
+        "length_mm": [
+          "153"
+        ],
+        "wrench_size_mm": [
+          "11"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-12",
+      "brand": "Bahco",
+      "model": "111M-12",
+      "name": "Bahco 111M-12 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-12"
+        ],
+        "length_mm": [
+          "160"
+        ],
+        "wrench_size_mm": [
+          "12"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-13",
+      "brand": "Bahco",
+      "model": "111M-13",
+      "name": "Bahco 111M-13 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-13"
+        ],
+        "length_mm": [
+          "169"
+        ],
+        "wrench_size_mm": [
+          "13"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-14",
+      "brand": "Bahco",
+      "model": "111M-14",
+      "name": "Bahco 111M-14 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-14"
+        ],
+        "length_mm": [
+          "177"
+        ],
+        "wrench_size_mm": [
+          "14"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-15",
+      "brand": "Bahco",
+      "model": "111M-15",
+      "name": "Bahco 111M-15 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-15"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-15"
+        ],
+        "length_mm": [
+          "185"
+        ],
+        "wrench_size_mm": [
+          "15"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-16",
+      "brand": "Bahco",
+      "model": "111M-16",
+      "name": "Bahco 111M-16 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-16"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-16"
+        ],
+        "length_mm": [
+          "195"
+        ],
+        "wrench_size_mm": [
+          "16"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-17",
+      "brand": "Bahco",
+      "model": "111M-17",
+      "name": "Bahco 111M-17 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-17"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-17"
+        ],
+        "length_mm": [
+          "200"
+        ],
+        "wrench_size_mm": [
+          "17"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-18",
+      "brand": "Bahco",
+      "model": "111M-18",
+      "name": "Bahco 111M-18 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-18"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-18"
+        ],
+        "length_mm": [
+          "208"
+        ],
+        "wrench_size_mm": [
+          "18"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-19",
+      "brand": "Bahco",
+      "model": "111M-19",
+      "name": "Bahco 111M-19 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-19"
+        ],
+        "length_mm": [
+          "218"
+        ],
+        "wrench_size_mm": [
+          "19"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-20",
+      "brand": "Bahco",
+      "model": "111M-20",
+      "name": "Bahco 111M-20 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-20"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-20"
+        ],
+        "length_mm": [
+          "240"
+        ],
+        "wrench_size_mm": [
+          "20"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-21",
+      "brand": "Bahco",
+      "model": "111M-21",
+      "name": "Bahco 111M-21 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-21"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-21"
+        ],
+        "length_mm": [
+          "250"
+        ],
+        "wrench_size_mm": [
+          "21"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-22",
+      "brand": "Bahco",
+      "model": "111M-22",
+      "name": "Bahco 111M-22 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-22"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-22"
+        ],
+        "length_mm": [
+          "250"
+        ],
+        "wrench_size_mm": [
+          "22"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-23",
+      "brand": "Bahco",
+      "model": "111M-23",
+      "name": "Bahco 111M-23 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-23"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-23"
+        ],
+        "length_mm": [
+          "280"
+        ],
+        "wrench_size_mm": [
+          "23"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-24",
+      "brand": "Bahco",
+      "model": "111M-24",
+      "name": "Bahco 111M-24 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-24"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-24"
+        ],
+        "length_mm": [
+          "270"
+        ],
+        "wrench_size_mm": [
+          "24"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-25",
+      "brand": "Bahco",
+      "model": "111M-25",
+      "name": "Bahco 111M-25 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-25"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-25"
+        ],
+        "length_mm": [
+          "290"
+        ],
+        "wrench_size_mm": [
+          "25"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-26",
+      "brand": "Bahco",
+      "model": "111M-26",
+      "name": "Bahco 111M-26 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-26"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-26"
+        ],
+        "length_mm": [
+          "290"
+        ],
+        "wrench_size_mm": [
+          "26"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-27",
+      "brand": "Bahco",
+      "model": "111M-27",
+      "name": "Bahco 111M-27 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-27"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-27"
+        ],
+        "length_mm": [
+          "310"
+        ],
+        "wrench_size_mm": [
+          "27"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-28",
+      "brand": "Bahco",
+      "model": "111M-28",
+      "name": "Bahco 111M-28 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-28"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-28"
+        ],
+        "length_mm": [
+          "310"
+        ],
+        "wrench_size_mm": [
+          "28"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-29",
+      "brand": "Bahco",
+      "model": "111M-29",
+      "name": "Bahco 111M-29 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-29"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-29"
+        ],
+        "length_mm": [
+          "330"
+        ],
+        "wrench_size_mm": [
+          "29"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-30",
+      "brand": "Bahco",
+      "model": "111M-30",
+      "name": "Bahco 111M-30 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-30"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-30"
+        ],
+        "length_mm": [
+          "330"
+        ],
+        "wrench_size_mm": [
+          "30"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-32",
+      "brand": "Bahco",
+      "model": "111M-32",
+      "name": "Bahco 111M-32 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-32"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-32"
+        ],
+        "length_mm": [
+          "350"
+        ],
+        "wrench_size_mm": [
+          "32"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-33",
+      "brand": "Bahco",
+      "model": "111M-33",
+      "name": "Bahco 111M-33 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-33"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-33"
+        ],
+        "length_mm": [
+          "350"
+        ],
+        "wrench_size_mm": [
+          "33"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-34",
+      "brand": "Bahco",
+      "model": "111M-34",
+      "name": "Bahco 111M-34 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-34"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-34"
+        ],
+        "length_mm": [
+          "350"
+        ],
+        "wrench_size_mm": [
+          "34"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-36",
+      "brand": "Bahco",
+      "model": "111M-36",
+      "name": "Bahco 111M-36 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-36"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-36"
+        ],
+        "length_mm": [
+          "410"
+        ],
+        "wrench_size_mm": [
+          "36"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-38",
+      "brand": "Bahco",
+      "model": "111M-38",
+      "name": "Bahco 111M-38 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-38"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-38"
+        ],
+        "length_mm": [
+          "410"
+        ],
+        "wrench_size_mm": [
+          "38"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-41",
+      "brand": "Bahco",
+      "model": "111M-41",
+      "name": "Bahco 111M-41 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-41"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-41"
+        ],
+        "length_mm": [
+          "480"
+        ],
+        "wrench_size_mm": [
+          "41"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-46",
+      "brand": "Bahco",
+      "model": "111M-46",
+      "name": "Bahco 111M-46 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-46"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-46"
+        ],
+        "length_mm": [
+          "506"
+        ],
+        "wrench_size_mm": [
+          "46"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-5-5",
+      "brand": "Bahco",
+      "model": "111M-5.5",
+      "name": "Bahco 111M-5.5 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-5.5"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-5.5"
+        ],
+        "length_mm": [
+          "112"
+        ],
+        "wrench_size_mm": [
+          "5.5"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-50",
+      "brand": "Bahco",
+      "model": "111M-50",
+      "name": "Bahco 111M-50 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-50"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-50"
+        ],
+        "length_mm": [
+          "540"
+        ],
+        "wrench_size_mm": [
+          "50"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-55",
+      "brand": "Bahco",
+      "model": "111M-55",
+      "name": "Bahco 111M-55 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-55"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-55"
+        ],
+        "length_mm": [
+          "560"
+        ],
+        "wrench_size_mm": [
+          "55"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-6",
+      "brand": "Bahco",
+      "model": "111M-6",
+      "name": "Bahco 111M-6 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-6"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-6"
+        ],
+        "length_mm": [
+          "112"
+        ],
+        "wrench_size_mm": [
+          "6"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-60",
+      "brand": "Bahco",
+      "model": "111M-60",
+      "name": "Bahco 111M-60 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-60"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-60"
+        ],
+        "length_mm": [
+          "600"
+        ],
+        "wrench_size_mm": [
+          "60"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-65",
+      "brand": "Bahco",
+      "model": "111M-65",
+      "name": "Bahco 111M-65 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-65"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-65"
+        ],
+        "length_mm": [
+          "680"
+        ],
+        "wrench_size_mm": [
+          "65"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-7",
+      "brand": "Bahco",
+      "model": "111M-7",
+      "name": "Bahco 111M-7 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-7"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-7"
+        ],
+        "length_mm": [
+          "120"
+        ],
+        "wrench_size_mm": [
+          "7"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-70",
+      "brand": "Bahco",
+      "model": "111M-70",
+      "name": "Bahco 111M-70 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-70"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-70"
+        ],
+        "length_mm": [
+          "680"
+        ],
+        "wrench_size_mm": [
+          "70"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-75",
+      "brand": "Bahco",
+      "model": "111M-75",
+      "name": "Bahco 111M-75 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-75"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-75"
+        ],
+        "length_mm": [
+          "730"
+        ],
+        "wrench_size_mm": [
+          "75"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-8",
+      "brand": "Bahco",
+      "model": "111M-8",
+      "name": "Bahco 111M-8 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-8"
+        ],
+        "length_mm": [
+          "130"
+        ],
+        "wrench_size_mm": [
+          "8"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-111m-9",
+      "brand": "Bahco",
+      "model": "111M-9",
+      "name": "Bahco 111M-9 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 111M-9"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "111M-9"
+        ],
+        "length_mm": [
+          "136"
+        ],
+        "wrench_size_mm": [
+          "9"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-10",
+      "brand": "Bahco",
+      "model": "1952M-10",
+      "name": "Bahco 1952M-10 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-10"
+        ],
+        "length_mm": [
+          "150"
+        ],
+        "wrench_size_mm": [
+          "10"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-11",
+      "brand": "Bahco",
+      "model": "1952M-11",
+      "name": "Bahco 1952M-11 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-11"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-11"
+        ],
+        "length_mm": [
+          "160"
+        ],
+        "wrench_size_mm": [
+          "11"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-12",
+      "brand": "Bahco",
+      "model": "1952M-12",
+      "name": "Bahco 1952M-12 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-12"
+        ],
+        "length_mm": [
+          "167"
+        ],
+        "wrench_size_mm": [
+          "12"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-13",
+      "brand": "Bahco",
+      "model": "1952M-13",
+      "name": "Bahco 1952M-13 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-13"
+        ],
+        "length_mm": [
+          "175"
+        ],
+        "wrench_size_mm": [
+          "13"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-14",
+      "brand": "Bahco",
+      "model": "1952M-14",
+      "name": "Bahco 1952M-14 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-14"
+        ],
+        "length_mm": [
+          "185"
+        ],
+        "wrench_size_mm": [
+          "14"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-15",
+      "brand": "Bahco",
+      "model": "1952M-15",
+      "name": "Bahco 1952M-15 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-15"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-15"
+        ],
+        "length_mm": [
+          "195"
+        ],
+        "wrench_size_mm": [
+          "15"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-16",
+      "brand": "Bahco",
+      "model": "1952M-16",
+      "name": "Bahco 1952M-16 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-16"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-16"
+        ],
+        "length_mm": [
+          "210"
+        ],
+        "wrench_size_mm": [
+          "16"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-17",
+      "brand": "Bahco",
+      "model": "1952M-17",
+      "name": "Bahco 1952M-17 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-17"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-17"
+        ],
+        "length_mm": [
+          "225"
+        ],
+        "wrench_size_mm": [
+          "17"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-18",
+      "brand": "Bahco",
+      "model": "1952M-18",
+      "name": "Bahco 1952M-18 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-18"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-18"
+        ],
+        "length_mm": [
+          "237"
+        ],
+        "wrench_size_mm": [
+          "18"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-19",
+      "brand": "Bahco",
+      "model": "1952M-19",
+      "name": "Bahco 1952M-19 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-19"
+        ],
+        "length_mm": [
+          "250"
+        ],
+        "wrench_size_mm": [
+          "19"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-20",
+      "brand": "Bahco",
+      "model": "1952M-20",
+      "name": "Bahco 1952M-20 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-20"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-20"
+        ],
+        "length_mm": [
+          "267"
+        ],
+        "wrench_size_mm": [
+          "20"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-21",
+      "brand": "Bahco",
+      "model": "1952M-21",
+      "name": "Bahco 1952M-21 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-21"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-21"
+        ],
+        "length_mm": [
+          "283"
+        ],
+        "wrench_size_mm": [
+          "21"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-22",
+      "brand": "Bahco",
+      "model": "1952M-22",
+      "name": "Bahco 1952M-22 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-22"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-22"
+        ],
+        "length_mm": [
+          "295"
+        ],
+        "wrench_size_mm": [
+          "22"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-23",
+      "brand": "Bahco",
+      "model": "1952M-23",
+      "name": "Bahco 1952M-23 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-23"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-23"
+        ],
+        "length_mm": [
+          "295"
+        ],
+        "wrench_size_mm": [
+          "23"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-24",
+      "brand": "Bahco",
+      "model": "1952M-24",
+      "name": "Bahco 1952M-24 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-24"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-24"
+        ],
+        "length_mm": [
+          "329"
+        ],
+        "wrench_size_mm": [
+          "24"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-25",
+      "brand": "Bahco",
+      "model": "1952M-25",
+      "name": "Bahco 1952M-25 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-25"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-25"
+        ],
+        "length_mm": [
+          "329"
+        ],
+        "wrench_size_mm": [
+          "25"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-26",
+      "brand": "Bahco",
+      "model": "1952M-26",
+      "name": "Bahco 1952M-26 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-26"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-26"
+        ],
+        "length_mm": [
+          "360"
+        ],
+        "wrench_size_mm": [
+          "26"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-27",
+      "brand": "Bahco",
+      "model": "1952M-27",
+      "name": "Bahco 1952M-27 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-27"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-27"
+        ],
+        "length_mm": [
+          "360"
+        ],
+        "wrench_size_mm": [
+          "27"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-28",
+      "brand": "Bahco",
+      "model": "1952M-28",
+      "name": "Bahco 1952M-28 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-28"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-28"
+        ],
+        "length_mm": [
+          "360"
+        ],
+        "wrench_size_mm": [
+          "28"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-29",
+      "brand": "Bahco",
+      "model": "1952M-29",
+      "name": "Bahco 1952M-29 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-29"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-29"
+        ],
+        "length_mm": [
+          "394"
+        ],
+        "wrench_size_mm": [
+          "29"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-30",
+      "brand": "Bahco",
+      "model": "1952M-30",
+      "name": "Bahco 1952M-30 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-30"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-30"
+        ],
+        "length_mm": [
+          "394"
+        ],
+        "wrench_size_mm": [
+          "30"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-32",
+      "brand": "Bahco",
+      "model": "1952M-32",
+      "name": "Bahco 1952M-32 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-32"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-32"
+        ],
+        "length_mm": [
+          "435"
+        ],
+        "wrench_size_mm": [
+          "32"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-34",
+      "brand": "Bahco",
+      "model": "1952M-34",
+      "name": "Bahco 1952M-34 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-34"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-34"
+        ],
+        "length_mm": [
+          "468"
+        ],
+        "wrench_size_mm": [
+          "34"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-36",
+      "brand": "Bahco",
+      "model": "1952M-36",
+      "name": "Bahco 1952M-36 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-36"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-36"
+        ],
+        "length_mm": [
+          "468"
+        ],
+        "wrench_size_mm": [
+          "36"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-41",
+      "brand": "Bahco",
+      "model": "1952M-41",
+      "name": "Bahco 1952M-41 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-41"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-41"
+        ],
+        "length_mm": [
+          "510"
+        ],
+        "wrench_size_mm": [
+          "41"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-46",
+      "brand": "Bahco",
+      "model": "1952M-46",
+      "name": "Bahco 1952M-46 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-46"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-46"
+        ],
+        "length_mm": [
+          "520"
+        ],
+        "wrench_size_mm": [
+          "46"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-50",
+      "brand": "Bahco",
+      "model": "1952M-50",
+      "name": "Bahco 1952M-50 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-50"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-50"
+        ],
+        "length_mm": [
+          "560"
+        ],
+        "wrench_size_mm": [
+          "50"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-55",
+      "brand": "Bahco",
+      "model": "1952M-55",
+      "name": "Bahco 1952M-55 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-55"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-55"
+        ],
+        "length_mm": [
+          "570"
+        ],
+        "wrench_size_mm": [
+          "55"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-6",
+      "brand": "Bahco",
+      "model": "1952M-6",
+      "name": "Bahco 1952M-6 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-6"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-6"
+        ],
+        "length_mm": [
+          "110"
+        ],
+        "wrench_size_mm": [
+          "6"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-60",
+      "brand": "Bahco",
+      "model": "1952M-60",
+      "name": "Bahco 1952M-60 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-60"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-60"
+        ],
+        "length_mm": [
+          "660"
+        ],
+        "wrench_size_mm": [
+          "60"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-65",
+      "brand": "Bahco",
+      "model": "1952M-65",
+      "name": "Bahco 1952M-65 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-65"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-65"
+        ],
+        "length_mm": [
+          "710"
+        ],
+        "wrench_size_mm": [
+          "65"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-7",
+      "brand": "Bahco",
+      "model": "1952M-7",
+      "name": "Bahco 1952M-7 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-7"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-7"
+        ],
+        "length_mm": [
+          "120"
+        ],
+        "wrench_size_mm": [
+          "7"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-70",
+      "brand": "Bahco",
+      "model": "1952M-70",
+      "name": "Bahco 1952M-70 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-70"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-70"
+        ],
+        "length_mm": [
+          "760"
+        ],
+        "wrench_size_mm": [
+          "70"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-75",
+      "brand": "Bahco",
+      "model": "1952M-75",
+      "name": "Bahco 1952M-75 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-75"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-75"
+        ],
+        "length_mm": [
+          "810"
+        ],
+        "wrench_size_mm": [
+          "75"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-8",
+      "brand": "Bahco",
+      "model": "1952M-8",
+      "name": "Bahco 1952M-8 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-8"
+        ],
+        "length_mm": [
+          "130"
+        ],
+        "wrench_size_mm": [
+          "8"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-80",
+      "brand": "Bahco",
+      "model": "1952M-80",
+      "name": "Bahco 1952M-80 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-80"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-80"
+        ],
+        "length_mm": [
+          "860"
+        ],
+        "wrench_size_mm": [
+          "80"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1952m-9",
+      "brand": "Bahco",
+      "model": "1952M-9",
+      "name": "Bahco 1952M-9 Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1952M-9"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "combination_wrench"
+        ],
+        "article_number": [
+          "1952M-9"
+        ],
+        "length_mm": [
+          "140"
+        ],
+        "wrench_size_mm": [
+          "9"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-10",
+      "brand": "Bahco",
+      "model": "1RM-10",
+      "name": "Bahco 1RM-10 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-10"
+        ],
+        "length_mm": [
+          "159"
+        ],
+        "wrench_size_mm": [
+          "10"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-11",
+      "brand": "Bahco",
+      "model": "1RM-11",
+      "name": "Bahco 1RM-11 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-11"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-11"
+        ],
+        "length_mm": [
+          "165"
+        ],
+        "wrench_size_mm": [
+          "11"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-12",
+      "brand": "Bahco",
+      "model": "1RM-12",
+      "name": "Bahco 1RM-12 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-12"
+        ],
+        "length_mm": [
+          "172"
+        ],
+        "wrench_size_mm": [
+          "12"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-13",
+      "brand": "Bahco",
+      "model": "1RM-13",
+      "name": "Bahco 1RM-13 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-13"
+        ],
+        "length_mm": [
+          "178"
+        ],
+        "wrench_size_mm": [
+          "13"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-14",
+      "brand": "Bahco",
+      "model": "1RM-14",
+      "name": "Bahco 1RM-14 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-14"
+        ],
+        "length_mm": [
+          "191"
+        ],
+        "wrench_size_mm": [
+          "14"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-15",
+      "brand": "Bahco",
+      "model": "1RM-15",
+      "name": "Bahco 1RM-15 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-15"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-15"
+        ],
+        "length_mm": [
+          "200"
+        ],
+        "wrench_size_mm": [
+          "15"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-16",
+      "brand": "Bahco",
+      "model": "1RM-16",
+      "name": "Bahco 1RM-16 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-16"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-16"
+        ],
+        "length_mm": [
+          "208"
+        ],
+        "wrench_size_mm": [
+          "16"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-17",
+      "brand": "Bahco",
+      "model": "1RM-17",
+      "name": "Bahco 1RM-17 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-17"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-17"
+        ],
+        "length_mm": [
+          "226"
+        ],
+        "wrench_size_mm": [
+          "17"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-18",
+      "brand": "Bahco",
+      "model": "1RM-18",
+      "name": "Bahco 1RM-18 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-18"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-18"
+        ],
+        "length_mm": [
+          "237"
+        ],
+        "wrench_size_mm": [
+          "18"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-19",
+      "brand": "Bahco",
+      "model": "1RM-19",
+      "name": "Bahco 1RM-19 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-19"
+        ],
+        "length_mm": [
+          "248"
+        ],
+        "wrench_size_mm": [
+          "19"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-21",
+      "brand": "Bahco",
+      "model": "1RM-21",
+      "name": "Bahco 1RM-21 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-21"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-21"
+        ],
+        "length_mm": [
+          "290"
+        ],
+        "wrench_size_mm": [
+          "21"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-22",
+      "brand": "Bahco",
+      "model": "1RM-22",
+      "name": "Bahco 1RM-22 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-22"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-22"
+        ],
+        "length_mm": [
+          "290"
+        ],
+        "wrench_size_mm": [
+          "22"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-24",
+      "brand": "Bahco",
+      "model": "1RM-24",
+      "name": "Bahco 1RM-24 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-24"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-24"
+        ],
+        "length_mm": [
+          "323"
+        ],
+        "wrench_size_mm": [
+          "24"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-27",
+      "brand": "Bahco",
+      "model": "1RM-27",
+      "name": "Bahco 1RM-27 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-27"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-27"
+        ],
+        "length_mm": [
+          "359"
+        ],
+        "wrench_size_mm": [
+          "27"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-30",
+      "brand": "Bahco",
+      "model": "1RM-30",
+      "name": "Bahco 1RM-30 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-30"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-30"
+        ],
+        "length_mm": [
+          "393"
+        ],
+        "wrench_size_mm": [
+          "30"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-32",
+      "brand": "Bahco",
+      "model": "1RM-32",
+      "name": "Bahco 1RM-32 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-32"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-32"
+        ],
+        "length_mm": [
+          "425"
+        ],
+        "wrench_size_mm": [
+          "32"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-6",
+      "brand": "Bahco",
+      "model": "1RM-6",
+      "name": "Bahco 1RM-6 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-6"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-6"
+        ],
+        "length_mm": [
+          "128"
+        ],
+        "wrench_size_mm": [
+          "6"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-7",
+      "brand": "Bahco",
+      "model": "1RM-7",
+      "name": "Bahco 1RM-7 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-7"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-7"
+        ],
+        "length_mm": [
+          "140"
+        ],
+        "wrench_size_mm": [
+          "7"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-8",
+      "brand": "Bahco",
+      "model": "1RM-8",
+      "name": "Bahco 1RM-8 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-8"
+        ],
+        "length_mm": [
+          "140"
+        ],
+        "wrench_size_mm": [
+          "8"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-1rm-9",
+      "brand": "Bahco",
+      "model": "1RM-9",
+      "name": "Bahco 1RM-9 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 1RM-9"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "1RM-9"
+        ],
+        "length_mm": [
+          "150"
+        ],
+        "wrench_size_mm": [
+          "9"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-10",
+      "brand": "Bahco",
+      "model": "41RM-10",
+      "name": "Bahco 41RM-10 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-10"
+        ],
+        "length_mm": [
+          "136"
+        ],
+        "wrench_size_mm": [
+          "10"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-11",
+      "brand": "Bahco",
+      "model": "41RM-11",
+      "name": "Bahco 41RM-11 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-11"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-11"
+        ],
+        "length_mm": [
+          "141"
+        ],
+        "wrench_size_mm": [
+          "11"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-12",
+      "brand": "Bahco",
+      "model": "41RM-12",
+      "name": "Bahco 41RM-12 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-12"
+        ],
+        "length_mm": [
+          "148"
+        ],
+        "wrench_size_mm": [
+          "12"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-13",
+      "brand": "Bahco",
+      "model": "41RM-13",
+      "name": "Bahco 41RM-13 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-13"
+        ],
+        "length_mm": [
+          "154"
+        ],
+        "wrench_size_mm": [
+          "13"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-14",
+      "brand": "Bahco",
+      "model": "41RM-14",
+      "name": "Bahco 41RM-14 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-14"
+        ],
+        "length_mm": [
+          "160"
+        ],
+        "wrench_size_mm": [
+          "14"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-17",
+      "brand": "Bahco",
+      "model": "41RM-17",
+      "name": "Bahco 41RM-17 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-17"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-17"
+        ],
+        "length_mm": [
+          "190"
+        ],
+        "wrench_size_mm": [
+          "17"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-19",
+      "brand": "Bahco",
+      "model": "41RM-19",
+      "name": "Bahco 41RM-19 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-19"
+        ],
+        "length_mm": [
+          "215"
+        ],
+        "wrench_size_mm": [
+          "19"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-21",
+      "brand": "Bahco",
+      "model": "41RM-21",
+      "name": "Bahco 41RM-21 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-21"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-21"
+        ],
+        "length_mm": [
+          "274"
+        ],
+        "wrench_size_mm": [
+          "21"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
+    },
+    {
+      "id": "bahco-41rm-8",
+      "brand": "Bahco",
+      "model": "41RM-8",
+      "name": "Bahco 41RM-8 Ratschen-Ringmaulschlüssel",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Schraubenschlüssel"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "Bahco 41RM-8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "ratcheting_combination_wrench"
+        ],
+        "article_number": [
+          "41RM-8"
+        ],
+        "length_mm": [
+          "127"
+        ],
+        "wrench_size_mm": [
+          "8"
+        ]
+      },
+      "excludeTerms": [
+        "set",
+        "satz",
+        "kit",
+        "koffer",
+        "coffret",
+        "sb"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r35"
     }
   ]
 }
