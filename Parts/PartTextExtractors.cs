@@ -97,6 +97,13 @@ public static class BearingTextExtractor
             outer = new TextValue<double>(b, 0.85, quote);
             width = new TextValue<double>(c, 0.85, quote);
         }
+        else if (ManufacturerBearingCatalog.Match(title) is { } reference)
+        {
+            var quote = $"SKF {reference.Article}, manufacturer catalogue p. {reference.SourcePage}: {ManufacturerBearingCatalog.SourceUrl}";
+            inner = new TextValue<double>(reference.InnerDiameterMm, 0.7, quote);
+            outer = new TextValue<double>(reference.OuterDiameterMm, 0.7, quote);
+            width = new TextValue<double>(reference.WidthMm, 0.7, quote);
+        }
         else if (designation != null && KnownDimensions.TryGetValue(designation.Value.Split('-')[0], out var known))
         {
             var quote = $"from designation {designation.Value}";

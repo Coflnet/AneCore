@@ -128,7 +128,7 @@ public class PartClassRegistryTests
         Assert.That(PartAttributeKeys.IsIndexKey("gear_teeth"), Is.True);
         Assert.That(PartAttributeKeys.IsIndexKey("part_fits"), Is.True);
         Assert.That(PartAttributeKeys.IsIndexKey("color"), Is.False);
-        Assert.That(PartAttributeKeys.Searchable, Has.Count.EqualTo(4), "searchable part facts include the explicit carburetor designation");
+        Assert.That(PartAttributeKeys.Searchable, Has.Count.EqualTo(7), "searchable part facts include the explicit carburetor designation and coherent bearing dimensions");
     }
 
     [Test]

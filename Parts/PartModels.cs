@@ -157,6 +157,10 @@ public static class PartClassRegistry
             if (m.Success)
                 return new PartClassMatch(cls, m.Value.Trim());
         }
+        // An exact manufacturer article alone names a bearing; other title context still needs its part noun.
+        if (folded.StartsWith("skf ", StringComparison.Ordinal)
+            && ManufacturerBearingCatalog.Match(title) is { } reference && folded == "skf " + reference.Article)
+            return new PartClassMatch(Bearing, "SKF " + reference.Article);
         return null;
     }
 }
@@ -203,8 +207,8 @@ public static class PartAttributeKeys
     /// <summary>Belt length in millimetres.</summary>
     public const string BeltLengthMm = "belt_length_mm";
 
-    /// <summary>The keys that are written to the product (the search index): class, primary key, labelled number and explicit carburetor designation.</summary>
-    public static readonly IReadOnlyList<string> Searchable = [PartClass, PartKey, PartNumber, CarburetorDesignation];
+    /// <summary>The keys eligible for the product search index; bearing dimensions require a coherent text vote in the recorder.</summary>
+    public static readonly IReadOnlyList<string> Searchable = [PartClass, PartKey, PartNumber, CarburetorDesignation, InnerDiameterMm, OuterDiameterMm, WidthMm];
 
     /// <summary>Every key the index may write to <c>part_measurements</c> or remove from a product.</summary>
     public static readonly IReadOnlyList<string> All =
