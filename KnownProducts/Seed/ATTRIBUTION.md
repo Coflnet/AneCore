@@ -371,3 +371,17 @@ attributes are added. Handles, finishes and jaw variants remain separate by arti
 no fit, package quantity, contents, prices or cutting capacities are inferred.
 SB/BK packaging does not imply a different tool. Unverified S8 scope remains unresolved;
 explicit sets and tethered/accessory scopes are not promoted to a single body.
+
+## DJI device models (2026-10-28, R38)
+
+`resale-goods.json` adds 53 exact DJI models (41 camera drones and 12 handheld cameras),
+verified against the official [aircraft model/specification index](https://repair.dji.com/help/content?customId=01700006554&lang=en&paperDocType=ARTICLE&re=US&spaceId=17),
+[current/retired drone families](https://www.dji.com/products/camera-drones),
+[Mavic Pro Platinum support](https://www.dji.com/support/product/mavic-pro-platinum),
+[handheld camera families](https://www.dji.com/products/handheld-imaging-devices)
+and [Osmo Pocket 4 page](https://www.dji.com/uk/osmo-pocket-4).
+Only exact model names and drone/camera device types are asserted; `package_scope=unspecified`
+does not establish body-only contents or kit completeness. Aliases require DJI and the full model.
+No GTIN, retailer SKU, camera specifications, package contents, fitted accessories, compatibility,
+condition or edition are inferred. Gimbals, remotes, batteries, microphones and combo packages
+are not additional device rows. No manufacturer marketing descriptions or images are copied.

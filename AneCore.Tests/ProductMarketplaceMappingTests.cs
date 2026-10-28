@@ -24,8 +24,10 @@ public class ProductMarketplaceMappingTests
         Assert.That(ProductIndex.MarketplaceSourcesVersion, Is.EqualTo(2));
         Assert.That(properties.GetProperty("marketplaceSourcesVersion").GetProperty("type").GetString(), Is.EqualTo("integer"));
         AssertMarketplaceSources(properties);
+        AssertStoreReferences(properties);
         Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("marketplaceSources"));
         Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("marketplaceSourcesVersion"));
+        Assert.That(ProductIndex.SourceExcludes, Does.Not.Contain("storeReferences"));
     }
 
     [Test]
@@ -87,6 +89,7 @@ public class ProductMarketplaceMappingTests
     [TestCase("offers-only")]
     [TestCase("legacy-flat")]
     [TestCase("presence-v1")]
+    [TestCase("marketplace-complete")]
     [TestCase("complete")]
     public async Task ExistingIndexMigration_RequiresAllMetadataFields_AndPutsOnlyAdditiveMappings(string fixture)
     {
@@ -106,10 +109,11 @@ public class ProductMarketplaceMappingTests
         Assert.That(body.RootElement.EnumerateObject().Select(property => property.Name), Is.EqualTo(new[] { "properties" }));
         var properties = body.RootElement.GetProperty("properties");
         Assert.That(properties.EnumerateObject().Select(property => property.Name),
-            Is.EquivalentTo(new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }));
+            Is.EquivalentTo(new[] { "offersFound", "storeReferences", "marketplaceSourcesVersion", "marketplaceSources" }));
         Assert.That(properties.GetProperty("offersFound").GetProperty("type").GetString(), Is.EqualTo("integer"));
         Assert.That(properties.GetProperty("marketplaceSourcesVersion").GetProperty("type").GetString(), Is.EqualTo("integer"));
         AssertMarketplaceSources(properties);
+        AssertStoreReferences(properties);
     }
 
     private static void AssertMarketplaceSources(JsonElement properties)
@@ -123,6 +127,22 @@ public class ProductMarketplaceMappingTests
         Assert.That(fields.GetProperty("sourceCurrency").GetProperty("type").GetString(), Is.EqualTo("keyword"));
         Assert.That(fields.GetProperty("minPrice").GetProperty("type").GetString(), Is.EqualTo("double"));
         Assert.That(fields.GetProperty("maxPrice").GetProperty("type").GetString(), Is.EqualTo("double"));
+    }
+
+    private static Dictionary<string, object> StoreFields() => new[]
+        { "knownProductId", "provider", "url", "merchantSku", "brand", "mpn", "gtin", "price", "currency", "availability", "condition", "observedAt", "expiresAt" }
+        .ToDictionary(key => key, key => (object)new { type = key is "observedAt" or "expiresAt" ? "date" : key == "price" ? "double" : "keyword" });
+
+    private static void AssertStoreReferences(JsonElement properties)
+    {
+        var references = properties.GetProperty("storeReferences");
+        Assert.That(references.GetProperty("type").GetString(), Is.EqualTo("nested"));
+        var fields = references.GetProperty("properties");
+        Assert.That(fields.EnumerateObject().Select(property => property.Name), Is.EquivalentTo(StoreFields().Keys));
+        Assert.That(fields.GetProperty("price").GetProperty("type").GetString(), Is.EqualTo("double"));
+        Assert.That(fields.GetProperty("expiresAt").GetProperty("type").GetString(), Is.EqualTo("date"));
+        Assert.That(fields.GetProperty("observedAt").GetProperty("type").GetString(), Is.EqualTo("date"));
+        Assert.That(fields.GetProperty("knownProductId").GetProperty("type").GetString(), Is.EqualTo("keyword"));
     }
 
     private static OpenSearchClient Client(IConnection connection) => new(
@@ -150,11 +170,13 @@ public class ProductMarketplaceMappingTests
                 properties += ""","platforms":{"type":"keyword"},"platformsUpdatedAt":{"type":"date"}""";
             if (fixture != "offers-only")
                 properties += ""","marketplaceSources":{"type":"nested","properties":{"platform":{"type":"keyword"},"country":{"type":"keyword"}}}""";
-            if (fixture is "presence-v1" or "complete")
+            if (fixture is "presence-v1" or "complete" or "marketplace-complete")
                 properties += ""","marketplaceSourcesVersion":{"type":"integer"}""";
-            if (fixture == "complete")
+            if (fixture is "complete" or "marketplace-complete")
                 properties = properties.Replace("\"country\":{\"type\":\"keyword\"}",
                     "\"country\":{\"type\":\"keyword\"},\"sourceCurrency\":{\"type\":\"keyword\"},\"minPrice\":{\"type\":\"double\"},\"maxPrice\":{\"type\":\"double\"}");
+            if (fixture == "complete")
+                properties += ",\"storeReferences\":{\"type\":\"nested\",\"properties\":" + JsonSerializer.Serialize(StoreFields()) + "}";
             var response = method == "GET"
                 ? "{\"ane-products-index-000001\":{\"mappings\":{\"properties\":{\"name\":{\"type\":\"text\"}," + properties + "}}}}"
                 : "{\"acknowledged\":true}";

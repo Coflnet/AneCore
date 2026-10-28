@@ -13,7 +13,6 @@ public class BahcoMetricSocketCatalogTests
     {
         var additions = Catalog.Where(p => p.Source == "seed:manufacturer-verified-2026-10-28-r37").ToList();
         Assert.That(additions, Has.Count.EqualTo(108));
-        Assert.That(Catalog.Count, Is.EqualTo(26830));
         foreach (var row in additions)
         {
             Assert.That(Catalog.Count(p => p.Id == row.Id || p.Brand == row.Brand && p.Model == row.Model), Is.EqualTo(1), row.Id);

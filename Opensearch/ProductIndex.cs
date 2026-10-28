@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using OpenSearch.Client;
 using OpenSearch.Net;
+using Coflnet.Ane.ShopReferences;
 
 // ReSharper disable once CheckNamespace
 namespace Coflnet.Ane.Opensearch;
@@ -79,9 +80,25 @@ public class ProductIndex(
                     .Keyword(field => field.Name(n => n.SourceCurrency))
                     .Number(field => field.Name(n => n.MinPrice).Type(NumberType.Double))
                     .Number(field => field.Name(n => n.MaxPrice).Type(NumberType.Double))))
+            .Nested<ProductStoreReference>(nested => nested.Name(n => n.StoreReferences).Properties(StoreReferenceFields))
             .Keyword(k => k.Name(n => n.CanonicalSeoId))
             .Keyword(k => k.Name(n => n.RelatedSeoIds))
         );
+
+    private static IPromise<IProperties> StoreReferenceFields(PropertiesDescriptor<ProductStoreReference> fields) => fields
+        .Keyword(field => field.Name(n => n.KnownProductId))
+        .Keyword(field => field.Name(n => n.Provider))
+        .Keyword(field => field.Name(n => n.Url))
+        .Keyword(field => field.Name(n => n.MerchantSku))
+        .Keyword(field => field.Name(n => n.Brand))
+        .Keyword(field => field.Name(n => n.Mpn))
+        .Keyword(field => field.Name(n => n.Gtin))
+        .Number(field => field.Name(n => n.Price).Type(NumberType.Double))
+        .Keyword(field => field.Name(n => n.Currency))
+        .Keyword(field => field.Name(n => n.Availability))
+        .Keyword(field => field.Name(n => n.Condition))
+        .Date(field => field.Name(n => n.ObservedAt))
+        .Date(field => field.Name(n => n.ExpiresAt));
 
     protected override Func<PutIndexTemplateDescriptor, IPutIndexTemplateRequest> IndexTemplateFunc() =>
         t => t
@@ -114,12 +131,17 @@ public class ProductIndex(
             if (new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }
                 .All(field => state.Mappings?.Properties?.ContainsKey(field) == true)
                 && state.Mappings?.Properties?["marketplaceSources"] is INestedProperty sources
-                && new[] { "sourceCurrency", "minPrice", "maxPrice" }.All(field => sources.Properties?.ContainsKey(field) == true))
+                && new[] { "sourceCurrency", "minPrice", "maxPrice" }.All(field => sources.Properties?.ContainsKey(field) == true)
+                && state.Mappings?.Properties?.ContainsKey("storeReferences") == true
+                && state.Mappings.Properties["storeReferences"] is INestedProperty references
+                && new[] { "knownProductId", "provider", "url", "merchantSku", "brand", "mpn", "gtin", "price", "currency", "availability", "condition", "observedAt", "expiresAt" }
+                    .All(field => references.Properties?.ContainsKey(field) == true))
                 continue;
             var response = await client.Indices.PutMappingAsync<ProductDocument>(m => m
                 .Index(index)
                 .Properties(p => p
                     .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))
+                    .Nested<ProductStoreReference>(nested => nested.Name(n => n.StoreReferences).Properties(StoreReferenceFields))
                     .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
                     .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                         .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
@@ -222,7 +244,8 @@ public record ProductDocument(
     int? MarketplaceSourcesVersion = null,
     List<ProductMarketplaceSource>? MarketplaceSources = null,
     double? ScopedMinPrice = null,
-    string? ScopedPriceCurrency = null
+    string? ScopedPriceCurrency = null,
+    List<ProductStoreReference>? StoreReferences = null
 );
 
 public record ProductMarketplaceSource(string Platform, string? Country, string? SourceCurrency = null,

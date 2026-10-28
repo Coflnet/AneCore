@@ -37,8 +37,10 @@ public class KnownProductMatcher
     private static readonly Regex LegoExtraWords = new(@"\b(?:bauanleitung|anleitung|manual|instructions?|karton|verpackung|box|beleuchtung|light|led|lighting)\b", Opts);
     private static readonly Regex LegoSetNumber = new(@"^\d{3,7}$", Opts);
     private static readonly Regex LegoCompletenessPercent = new(@"(?<![\p{L}\d])(?:(?<negative>not|nicht|non|pas)\s+)?(?<percent>\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:completo|complete|vollst[äa]ndig)\b", Opts | RegexOptions.IgnoreCase);
-    private static readonly Regex PrimaryHandTool = new(@"^(?:(?:[1-9]\d*\s*(?:x|stuck|stueck|stk)|(?:werkzeugset|toolset|set|satz)(?:\s+mit)?)\s+)*(?<brand>[a-z]+)\s+(?:seitenschneider|schraubendreher|rollgabelschlussel)\b", Opts);
+    private static readonly Regex PrimaryHandTool = new(@"^(?:(?:[1-9]\d*\s*(?:x|stuck|stueck|stk)|(?:werkzeugset|toolset|set|satz)(?:\s+mit)?)\s+)*(?<brand>[a-z]+)\s+(?<kind>seitenschneider|schraubendreher|rollgabelschlussel|pinces?|tanger|kabelsax)\b", Opts);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
+    private static readonly Regex DjiPackage = new(@"\b(?:combo|fly\s+more)\b", Opts);
+    private static readonly Regex DjiAccessory = new(@"\b(?:batter(?:y|ies)|propellers?|gimbal|remote(?:\s+controller)?|controller|bedienungsanleitung|manuals?)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
     private static readonly string[] AccessoryWords =
@@ -105,6 +107,8 @@ public class KnownProductMatcher
 
     private readonly IReadOnlyList<KnownProduct> products;
     private readonly Dictionary<(string First, string? Second, string? Third), List<AliasEntry>> aliasIndex;
+    private readonly List<(KnownProduct Product, string Brand, Regex Pattern)> handToolArticles;
+    private readonly string[] knownBrands;
 
     private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
 
@@ -155,6 +159,14 @@ public class KnownProductMatcher
     {
         this.products = products;
         aliasIndex = BuildIndex(products);
+        knownBrands = products.Select(p => p.Brand).Distinct().Where(b => !string.IsNullOrWhiteSpace(b)).Select(Normalize).Distinct().ToArray();
+        handToolArticles = products.Where(p => p.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
+                && !string.IsNullOrWhiteSpace(p.Brand)
+                && p.PossibleAttributes.GetValueOrDefault("article_number") is { Count: 1 } articles && articles.Single().Any(char.IsDigit))
+            .GroupBy(p => (Normalize(p.Brand), Regex.Replace(p.PossibleAttributes["article_number"].Single(), @"\s+", "").ToLowerInvariant()))
+            .Where(g => g.Select(p => p.Id).Distinct().Count() == 1)
+            .Select(g => (g.First(), g.Key.Item1, new Regex(@"(?<![\p{L}\d])" + Regex.Escape(g.First().PossibleAttributes["article_number"].Single()).Replace(@"\ ", @"\s*")
+                + @"(?!(?:[-_.,/]\s*)?[\p{L}\d])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))).ToList();
     }
 
     /// <summary>
@@ -219,6 +231,23 @@ public class KnownProductMatcher
         }
     }
 
+    // A descriptor may separate the verified brand and exact article. Preserve the raw article
+    // boundary before normalizing, so truncated numbers, decimal sizes and attached variants cannot match.
+    private IEnumerable<(AliasEntry Entry, int Start)> FindHandToolArticles(string title, string normalizedTitle)
+    {
+        var padded = " " + normalizedTitle + " ";
+        foreach (var article in handToolArticles)
+        {
+            if (!padded.Contains(" " + article.Brand + " ", StringComparison.Ordinal)) continue;
+            var match = article.Pattern.Match(title);
+            if (!match.Success) continue;
+            if (knownBrands.Any(b => b != article.Brand && padded.Contains(" " + b + " ", StringComparison.Ordinal))) yield break;
+            var tokens = Normalize(match.Value).Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var start = Normalize(title[..match.Index]).Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
+            yield return (new AliasEntry(article.Product, tokens), start);
+        }
+    }
+
     /// <summary>Names a verified hand tool reference or a primary branded tool kind, without proving a single body,
     /// article variant, compatibility or quantity. Sets and related physical parts may contain a verified reference.</summary>
     public bool HasHandToolReference(string? title, IReadOnlyList<string>? categoryPath = null)
@@ -228,14 +257,18 @@ public class KnownProductMatcher
         // A set may name its contents after "mit"; other products merely including a tool stay separate.
         var setOffer = tokens.TakeWhile(token => !IncludedMarkers.Contains(token))
             .Any(token => token is "set" or "werkzeugset" or "toolset" or "satz" or "kit" or "bundle" or "konvolut" or "sammlung" or "restposten");
-        if (FindAliases(tokens).Any(hit =>
+        if (FindAliases(tokens).Concat(FindHandToolArticles(title ?? "", normalized)).Any(hit =>
             hit.Entry.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
             && IsCategoryCompatible(hit.Entry.Product, categoryPath)
             && (setOffer || !tokens.Take(hit.Start).TakeLast(3).Any(IncludedMarkers.Contains)))) return true;
 
         // No SKU is needed for an independent offer, but the tool must be the primary item.
         var primary = PrimaryHandTool.Match(normalized);
-        return primary.Success && !IsAccessory(normalized)
+        var kind = primary.Groups["kind"];
+        // Swedish cable cutters are tools; the "kabel" substring must not veto their primary name.
+        var accessoryTitle = kind.Value == "kabelsax"
+            ? normalized[..kind.Index] + "werkzeug" + normalized[(kind.Index + kind.Length)..] : normalized;
+        return primary.Success && !IsAccessory(accessoryTitle)
             && products.Any(product => product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
                 && Normalize(product.Brand) == primary.Groups["brand"].Value
                 && IsCategoryCompatible(product, categoryPath));
@@ -273,7 +306,7 @@ public class KnownProductMatcher
             return null;
 
         var matches = new List<(KnownProduct Product, int TokenCount, int StartIndex)>();
-        foreach (var (entry, i) in FindAliases(titleTokens))
+        foreach (var (entry, i) in FindAliases(titleTokens).Concat(FindHandToolArticles(title, normalizedTitle)))
         {
             var aliasTokens = entry.Tokens;
             // A vetted LEGO alias can name Dodge Charger; accessory words outside that span still veto it.
@@ -281,6 +314,11 @@ public class KnownProductMatcher
                 || IsAccessory(string.Join(" ", titleTokens.Take(i).Concat(titleTokens.Skip(i + aliasTokens.Length))))))
                 continue;
             if (IsExcluded(entry.Product, titleTokens, i, aliasTokens.Length))
+                continue;
+            if (entry.Product.Brand.Equals("DJI", StringComparison.OrdinalIgnoreCase)
+                && entry.Product.PossibleAttributes.GetValueOrDefault("device_type")?.Any(t => t is "drone" or "camera") == true
+                && (DjiPackage.IsMatch(normalizedTitle) || DjiAccessory.Matches(normalizedTitle)
+                    .Any(m => !IsIncludedExtra(normalizedTitle, titleTokens, m.Index, m.Length))))
                 continue;
             // Socket decimal sizes and attached article suffixes must not select a shorter catalogue SKU.
             if (entry.Product.PossibleAttributes.ContainsKey("socket_size_mm")
@@ -306,6 +344,9 @@ public class KnownProductMatcher
 
         if (matches.Count == 0)
             return null;
+
+        if (matches.Where(m => m.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true)
+            .Select(m => m.Product.Id).Distinct().Skip(1).Any()) return null;
 
         matches = ApplyContainerVeto(matches, titleTokens, normalizedTitle, title);
         if (matches.Count == 0)

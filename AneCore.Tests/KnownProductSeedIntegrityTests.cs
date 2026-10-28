@@ -104,6 +104,8 @@ public class KnownProductSeedIntegrityTests
         "Elektronik>Kommunikationsgeräte>Telefone>Mobiltelefone",
         "Elektronik>Video>Computermonitore",
         "Elektronik>Videospielkonsolen",
+        "Kameras & Optik",
+        "Kameras & Optik>Kameras>Videokameras",
         "Kameras & Optik>Kameras>Digitalkameras",
         "Heim & Garten>Küche & Esszimmer>Küchengeräte>Kaffee- & Espressomaschinen",
         "Sportartikel>Outdoor-Aktivitäten>Radsport>Fahrräder",

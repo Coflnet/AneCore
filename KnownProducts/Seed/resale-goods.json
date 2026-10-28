@@ -5702,6 +5702,3334 @@
         "v01"
       ],
       "source": "seed:manufacturer-verified-2026-10-27-r31"
+    },
+    {
+      "id": "dji-mavic-4-pro",
+      "brand": "DJI",
+      "model": "Mavic 4 Pro",
+      "name": "DJI Mavic 4 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 4 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-3-pro",
+      "brand": "DJI",
+      "model": "Mavic 3 Pro",
+      "name": "DJI Mavic 3 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 3 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-3-classic",
+      "brand": "DJI",
+      "model": "Mavic 3 Classic",
+      "name": "DJI Mavic 3 Classic",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 3 Classic"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-3",
+      "brand": "DJI",
+      "model": "Mavic 3",
+      "name": "DJI Mavic 3",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "classic",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "pro",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-2-pro",
+      "brand": "DJI",
+      "model": "Mavic 2 Pro",
+      "name": "DJI Mavic 2 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 2 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-2-zoom",
+      "brand": "DJI",
+      "model": "Mavic 2 Zoom",
+      "name": "DJI Mavic 2 Zoom",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic 2 Zoom"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-pro",
+      "brand": "DJI",
+      "model": "Mavic Pro",
+      "name": "DJI Mavic Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "platinum",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-pro-platinum",
+      "brand": "DJI",
+      "model": "Mavic Pro Platinum",
+      "name": "DJI Mavic Pro Platinum",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic Pro Platinum"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-air-3s",
+      "brand": "DJI",
+      "model": "Air 3S",
+      "name": "DJI Air 3S",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Air 3S"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-air-3",
+      "brand": "DJI",
+      "model": "Air 3",
+      "name": "DJI Air 3",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Air 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "s",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-air-2s",
+      "brand": "DJI",
+      "model": "Air 2S",
+      "name": "DJI Air 2S",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Air 2S"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-air-2",
+      "brand": "DJI",
+      "model": "Mavic Air 2",
+      "name": "DJI Mavic Air 2",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic Air 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-air",
+      "brand": "DJI",
+      "model": "Mavic Air",
+      "name": "DJI Mavic Air",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic Air"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-5-pro",
+      "brand": "DJI",
+      "model": "Mini 5 Pro",
+      "name": "DJI Mini 5 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 5 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-4-pro",
+      "brand": "DJI",
+      "model": "Mini 4 Pro",
+      "name": "DJI Mini 4 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 4 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-4k",
+      "brand": "DJI",
+      "model": "Mini 4K",
+      "name": "DJI Mini 4K",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 4K"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-3-pro",
+      "brand": "DJI",
+      "model": "Mini 3 Pro",
+      "name": "DJI Mini 3 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 3 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-3",
+      "brand": "DJI",
+      "model": "Mini 3",
+      "name": "DJI Mini 3",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "pro",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-2-se",
+      "brand": "DJI",
+      "model": "Mini 2 SE",
+      "name": "DJI Mini 2 SE",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 2 SE"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-2",
+      "brand": "DJI",
+      "model": "Mini 2",
+      "name": "DJI Mini 2",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "se",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mini-se",
+      "brand": "DJI",
+      "model": "Mini SE",
+      "name": "DJI Mini SE",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mini SE"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-mavic-mini",
+      "brand": "DJI",
+      "model": "Mavic Mini",
+      "name": "DJI Mavic Mini",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Mavic Mini"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-spark",
+      "brand": "DJI",
+      "model": "Spark",
+      "name": "DJI Spark",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Spark"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-flip",
+      "brand": "DJI",
+      "model": "Flip",
+      "name": "DJI Flip",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Flip"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-neo-2",
+      "brand": "DJI",
+      "model": "Neo 2",
+      "name": "DJI Neo 2",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Neo 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-neo",
+      "brand": "DJI",
+      "model": "Neo",
+      "name": "DJI Neo",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Neo"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-avata-2",
+      "brand": "DJI",
+      "model": "Avata 2",
+      "name": "DJI Avata 2",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Avata 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-avata",
+      "brand": "DJI",
+      "model": "Avata",
+      "name": "DJI Avata",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Avata"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-fpv",
+      "brand": "DJI",
+      "model": "FPV",
+      "name": "DJI FPV",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI FPV"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-inspire-3",
+      "brand": "DJI",
+      "model": "Inspire 3",
+      "name": "DJI Inspire 3",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Inspire 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-inspire-2",
+      "brand": "DJI",
+      "model": "Inspire 2",
+      "name": "DJI Inspire 2",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Inspire 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-inspire-1",
+      "brand": "DJI",
+      "model": "Inspire 1",
+      "name": "DJI Inspire 1",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Inspire 1"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-4-pro-v2-0",
+      "brand": "DJI",
+      "model": "Phantom 4 Pro V2.0",
+      "name": "DJI Phantom 4 Pro V2.0",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 4 Pro V2.0"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-4-pro",
+      "brand": "DJI",
+      "model": "Phantom 4 Pro",
+      "name": "DJI Phantom 4 Pro",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 4 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal",
+        "v"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-4-advanced",
+      "brand": "DJI",
+      "model": "Phantom 4 Advanced",
+      "name": "DJI Phantom 4 Advanced",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 4 Advanced"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-4",
+      "brand": "DJI",
+      "model": "Phantom 4",
+      "name": "DJI Phantom 4",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "advanced",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "pro",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-3-standard",
+      "brand": "DJI",
+      "model": "Phantom 3 Standard",
+      "name": "DJI Phantom 3 Standard",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 3 Standard"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-3-se",
+      "brand": "DJI",
+      "model": "Phantom 3 SE",
+      "name": "DJI Phantom 3 SE",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 3 SE"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-3-advanced",
+      "brand": "DJI",
+      "model": "Phantom 3 Advanced",
+      "name": "DJI Phantom 3 Advanced",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 3 Advanced"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-3-professional",
+      "brand": "DJI",
+      "model": "Phantom 3 Professional",
+      "name": "DJI Phantom 3 Professional",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 3 Professional"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-phantom-3-4k",
+      "brand": "DJI",
+      "model": "Phantom 3 4K",
+      "name": "DJI Phantom 3 4K",
+      "categories": [
+        "Kameras & Optik"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Phantom 3 4K"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "drone"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-action-6",
+      "brand": "DJI",
+      "model": "Osmo Action 6",
+      "name": "DJI Osmo Action 6",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Action 6"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-action-5-pro",
+      "brand": "DJI",
+      "model": "Osmo Action 5 Pro",
+      "name": "DJI Osmo Action 5 Pro",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Action 5 Pro"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-action-4",
+      "brand": "DJI",
+      "model": "Osmo Action 4",
+      "name": "DJI Osmo Action 4",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Action 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-action-3",
+      "brand": "DJI",
+      "model": "Osmo Action 3",
+      "name": "DJI Osmo Action 3",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Action 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-action-2",
+      "brand": "DJI",
+      "model": "Action 2",
+      "name": "DJI Action 2",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Action 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-action",
+      "brand": "DJI",
+      "model": "Osmo Action",
+      "name": "DJI Osmo Action",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Action"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-360",
+      "brand": "DJI",
+      "model": "Osmo 360",
+      "name": "DJI Osmo 360",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo 360"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-nano",
+      "brand": "DJI",
+      "model": "Osmo Nano",
+      "name": "DJI Osmo Nano",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Nano"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-pocket-4",
+      "brand": "DJI",
+      "model": "Osmo Pocket 4",
+      "name": "DJI Osmo Pocket 4",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Pocket 4"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-pocket-3",
+      "brand": "DJI",
+      "model": "Osmo Pocket 3",
+      "name": "DJI Osmo Pocket 3",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Pocket 3"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-pocket-2",
+      "brand": "DJI",
+      "model": "Pocket 2",
+      "name": "DJI Pocket 2",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Pocket 2"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
+    },
+    {
+      "id": "dji-osmo-pocket",
+      "brand": "DJI",
+      "model": "Osmo Pocket",
+      "name": "DJI Osmo Pocket",
+      "categories": [
+        "Kameras & Optik",
+        "Kameras",
+        "Videokameras"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "DJI Osmo Pocket"
+      ],
+      "possibleAttributes": {
+        "device_type": [
+          "camera"
+        ],
+        "package_scope": [
+          "unspecified"
+        ]
+      },
+      "excludeTerms": [
+        "3",
+        "4",
+        "adventure",
+        "akku",
+        "akkus",
+        "batteries",
+        "battery",
+        "case",
+        "charger",
+        "charging",
+        "cine",
+        "cinema",
+        "combo",
+        "controller",
+        "cover",
+        "creator",
+        "dual",
+        "enterprise",
+        "ersatz",
+        "ersatzteil",
+        "essential",
+        "filter",
+        "filters",
+        "fly",
+        "gehause",
+        "gimbal",
+        "intelligent",
+        "ladegerat",
+        "multispectral",
+        "power",
+        "premium",
+        "propeller",
+        "propellers",
+        "rc",
+        "remote",
+        "replacement",
+        "rtk",
+        "schutzhaube",
+        "standard",
+        "thermal"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-28-r38-dji"
     }
   ]
 }
