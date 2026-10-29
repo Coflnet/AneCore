@@ -16,6 +16,7 @@ public class ProductTableService
     private readonly Table<Product> products;
     private readonly Table<ProductListing> productListings;
     private readonly Table<PricePoint> priceHistory;
+    private readonly Table<PricePoint> nativePriceHistory;
     private readonly Table<Listing> listings;
     private readonly Table<SitemapEntry> sitemapEntries;
     private readonly Table<FlipReport> flipReports;
@@ -220,6 +221,19 @@ public class ProductTableService
         products = new Table<Product>(session, mapping);
         productListings = new Table<ProductListing>(session, mapping);
         priceHistory = new Table<PricePoint>(session, mapping);
+        nativePriceHistory = new Table<PricePoint>(session, new MappingConfiguration().Define(new Map<PricePoint>()
+            .TableName("price_history_native")
+            .PartitionKey(ph => ph.ProductSeoId)
+            .ClusteringKey(ph => ph.Date, SortOrder.Descending)
+            .ClusteringKey(ph => ph.Currency, SortOrder.Ascending)
+            .Column(ph => ph.ProductSeoId, cm => cm.WithName("product_seo_id"))
+            .Column(ph => ph.Date, cm => cm.WithName("date"))
+            .Column(ph => ph.Currency, cm => cm.WithName("currency"))
+            .Column(ph => ph.AveragePrice, cm => cm.WithName("average_price"))
+            .Column(ph => ph.MedianPrice, cm => cm.WithName("median_price"))
+            .Column(ph => ph.MinPrice, cm => cm.WithName("min_price"))
+            .Column(ph => ph.MaxPrice, cm => cm.WithName("max_price"))
+            .Column(ph => ph.SampleCount, cm => cm.WithName("sample_count"))));
         listings = new Table<Listing>(session, mapping);
         sitemapEntries = new Table<SitemapEntry>(session, mapping);
         flipReports = new Table<FlipReport>(session, mapping);
@@ -245,6 +259,7 @@ public class ProductTableService
             await products.CreateIfNotExistsAsync();
             await productListings.CreateIfNotExistsAsync();
             await priceHistory.CreateIfNotExistsAsync();
+            await CreateNativePriceHistoryTableAsync();
             await listings.CreateIfNotExistsAsync();
             await sitemapEntries.CreateIfNotExistsAsync();
             await flipReports.CreateIfNotExistsAsync();
@@ -863,6 +878,60 @@ public class ProductTableService
         await priceHistory.Insert(pricePoint)
             .SetTTL(ProductDataRetention.GetPriceHistoryTtlSeconds(pricePoint))
             .ExecuteAsync();
+    }
+
+    /// <summary>Reads every recorded native-currency cohort in a bounded date window, without changing legacy comparison readers.</summary>
+    public async Task<List<PricePoint>> GetNativePriceHistoryAsync(string productSeoId, int days = 90)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(productSeoId);
+        await EnsureNativePriceHistorySchemaAsync();
+        var now = DateTime.UtcNow;
+        var cutoff = now.AddDays(-Math.Clamp(days, 1, 365));
+        return (await nativePriceHistory.Where(ph => ph.ProductSeoId == productSeoId && ph.Date >= cutoff && ph.Date <= now)
+            .OrderByDescending(ph => ph.Date).ExecuteAsync()).ToList();
+    }
+
+    /// <summary>Upserts one UTC day's explicitly recorded currency; no platform or country inference. Expiry remains anchored to that day.</summary>
+    public async Task InsertNativePricePointAsync(PricePoint pricePoint)
+    {
+        ArgumentNullException.ThrowIfNull(pricePoint);
+        var currency = NativePriceCurrency.Normalize(pricePoint.Currency);
+        if (string.IsNullOrWhiteSpace(pricePoint.ProductSeoId) || currency == null
+            || pricePoint.Date == default || pricePoint.Date.Kind != DateTimeKind.Utc || pricePoint.Date != pricePoint.Date.Date
+            || pricePoint.SampleCount <= 0
+            || new[] { pricePoint.AveragePrice, pricePoint.MedianPrice, pricePoint.MinPrice, pricePoint.MaxPrice }
+                .Any(price => !double.IsFinite(price) || price <= 0))
+            throw new ArgumentException("A product, UTC daily date, recorded currency and positive finite price samples are required.", nameof(pricePoint));
+        var normalized = new PricePoint
+        {
+            ProductSeoId = pricePoint.ProductSeoId, Date = pricePoint.Date, Currency = currency,
+            AveragePrice = pricePoint.AveragePrice, MedianPrice = pricePoint.MedianPrice,
+            MinPrice = pricePoint.MinPrice, MaxPrice = pricePoint.MaxPrice, SampleCount = pricePoint.SampleCount
+        };
+        await EnsureNativePriceHistorySchemaAsync();
+        await nativePriceHistory.Insert(normalized).SetTTL(ProductDataRetention.GetPriceHistoryTtlSeconds(normalized)).ExecuteAsync();
+    }
+
+    private volatile bool nativePriceHistoryReady;
+
+    private async Task EnsureNativePriceHistorySchemaAsync()
+    {
+        if (nativePriceHistoryReady) return;
+        await initSemaphore.WaitAsync();
+        try
+        {
+            if (!nativePriceHistoryReady) await CreateNativePriceHistoryTableAsync();
+        }
+        finally { initSemaphore.Release(); }
+    }
+
+    // Called while initSemaphore is held, including by normal table initialization.
+    private async Task CreateNativePriceHistoryTableAsync()
+    {
+        if (nativePriceHistoryReady) return;
+        await session.ExecuteAsync(new SimpleStatement(
+            $"CREATE TABLE IF NOT EXISTS price_history_native (product_seo_id text, date timestamp, currency text, average_price double, median_price double, min_price double, max_price double, sample_count int, PRIMARY KEY ((product_seo_id), date, currency)) WITH CLUSTERING ORDER BY (date DESC, currency ASC) AND default_time_to_live = {ProductDataRetention.PriceHistoryTtlSeconds}"));
+        nativePriceHistoryReady = true;
     }
 
     private volatile bool priceHistoryCurrencyReady;
