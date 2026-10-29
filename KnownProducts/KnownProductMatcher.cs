@@ -40,7 +40,7 @@ public class KnownProductMatcher
     private static readonly Regex PrimaryHandTool = new(@"^(?:(?:[1-9]\d*\s*(?:x|stuck|stueck|stk)|(?:werkzeugset|toolset|set|satz)(?:\s+mit)?)\s+)*(?<brand>[a-z]+)\s+(?<kind>seitenschneider|schraubendreher|rollgabelschlussel|pinces?|tanger|kabelsax)\b", Opts);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
     private static readonly Regex DjiPackage = new(@"\b(?:combo|fly\s+more)\b", Opts);
-    private static readonly Regex DjiAccessory = new(@"\b(?:batter(?:y|ies)|propellers?|gimbal|remote(?:\s+controller)?|controller|bedienungsanleitung|manuals?)\b", Opts);
+    private static readonly Regex DjiAccessory = new(@"\b(?:batter(?:y|ies)|propellers?|gimbal|filters?|remote(?:\s+controller)?|controller|bedienungsanleitung|manuals?)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
     private static readonly string[] AccessoryWords =

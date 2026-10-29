@@ -37,4 +37,29 @@ public class DjiOfferBoundaryTests
         Assert.That(existing, Is.Not.Null);
         Assert.That(Matcher.Match("Sony A7 III Creator Combo")?.Id, Is.EqualTo(existing!.Id));
     }
+
+    [TestCase("CPL ND filter kit voor DJI Osmo Action 5 Pro (4 stuks)")]
+    [TestCase("ND filters DJI Osmo Action 5 Pro")]
+    [TestCase("DJI Osmo Action 5 Pro ND filter kit")]
+    [TestCase("DJI Osmo Action 5 Pro camera ND filters")]
+    public void FilterOffersDoNotClaimTheCamera(string title)
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(Matcher.Match(title), Is.Null, title);
+            Assert.That(ResaleCatalog.Match(title), Is.Null, title);
+        });
+    }
+
+    [TestCase("DJI Osmo Action 5 Pro")]
+    [TestCase("DJI Osmo Action 5 Pro met ND filter")]
+    [TestCase("DJI Osmo Action 5 Pro with filters")]
+    public void CameraWithIncludedFiltersStillNamesTheCamera(string title)
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(Matcher.Match(title)?.Id, Is.EqualTo("dji-osmo-action-5-pro"));
+            Assert.That(ResaleCatalog.Match(title)?.Id, Is.EqualTo("dji-osmo-action-5-pro"));
+        });
+    }
 }
