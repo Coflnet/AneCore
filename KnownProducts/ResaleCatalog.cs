@@ -7,7 +7,7 @@ namespace Coflnet.Ane.KnownProducts;
 public static class ResaleCatalog
 {
     private const RegexOptions Options = RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.CultureInvariant;
-    private static readonly Lazy<KnownProductMatcher> Matcher = new(() => new(KnownProductSeed.LoadNamed("cameras.json", "cameras-expanded.json", "resale-goods.json", "power-tools.json", "bahco-hand-tools.json", "knipex-circlip-pliers.json", "turntables.json")));
+    private static readonly Lazy<KnownProductMatcher> Matcher = new(() => new(KnownProductSeed.LoadNamed("cameras.json", "cameras-expanded.json", "resale-goods.json", "power-tools.json", "bahco-hand-tools.json", "knipex-circlip-pliers.json", "knipex-wire-preparation.json", "turntables.json")));
     private static readonly Regex NonSale = new(@"\b(?:suche|gesucht|wanted|ankauf|vermiete|vermietung|rental)\b|\b(?:zu\s+vermieten|repair\s+service|reparatur(?:service)?|serviceangebot)\b", Options);
     private static readonly Regex NotOffer = new(@"\b(?:konvolut|sammlung|restposten|bundle|unvollstandig|incomplete|ersatzteile?|einzelteile?|nachbau|kompatibel)\b", Options);
     private static readonly Regex Media = new(@"\b(?:anleitung|bedienungsanleitung|handbuch|manuals?|instructions?|katalog|poster|buch|leerkarton|leerbox)\b", Options);

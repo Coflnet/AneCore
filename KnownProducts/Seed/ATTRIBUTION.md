@@ -480,3 +480,44 @@ inferred. Existing mechanical-parts evidence and fitment remain separate. Retail
 Zündapp catalogue mirrors and OEM claims did not establish a selected manufacturer-verified
 cohort in this bounded review; no Zündapp OEM or fitment data is authored here. No
 manufacturer marketing descriptions or images are copied.
+
+## KNIPEX manual wire-preparation tools (2026-10-29, R45)
+
+`knipex-wire-preparation.json` supplements the catalogue with 109 previously absent full
+manufacturer articles: 62 manual crimping pliers, 37 wire-stripping pliers, three
+electricians' pliers, five electrical-installation pliers and two cable-sheath tools.
+Only exact articles and explicit Length cells from the official
+[crimping tables](https://www.knipex.com/products/crimping-pliers),
+[UK crimping table](https://www.knipex.com/en-uk/products/crimping-pliers),
+[four-mandrel family](https://www.knipex.com/products/crimping-pliers/four-mandrel-crimping-pliers-for-turned-contacts),
+[wire-stripping table](https://www.knipex.com/products/wire-strippers-and-stripping-tools?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number)
+and [electrical-installation results](https://www.knipex.com/en-uk/products/crimping/181-250-mm)
+are authored. Selected rows, source URLs and exclusions are frozen in
+`tools/catalog-import/proofs/knipex-wire-preparation-2026-10-29-r45.json`.
+Lengths are not inferred from article suffixes: 12 74 180 is explicitly 175 mm and
+16 45 220 is 225 mm. Generic German tool-class names are project labels, not copied
+manufacturer descriptions. Every alias requires KNIPEX and the complete article;
+two additionally retain the manufacturer's number-anchored Twistor T name.
+The separately published E01 spare-blade articles for 12 64 180, 12 74 180 and
+16 45 220 are excluded only from those three complete-tool rows. No E02 or general
+suffix relationship is inferred; these are negative part controls, not new products.
+
+`python3 tools/catalog-import/expand_knipex_wire_preparation.py --check` reproduces the
+reviewed seed offline and rejects cross-file IDs and normalized-alias collisions.
+The existing prefix-exclusion helper distinguishes full A/B/C/DG/EVO article variants.
+All 46 prior embedded seed JSON files remain byte-identical. The original curated-only
+loader contract is preserved; shared resale admission names this supplement explicitly.
+
+Evidence is the manufacturer's public indexed/cached variant tables. Direct category
+opens returned HTTP 403; no successful fresh origin download, bypass or exhaustive
+catalogue coverage is claimed. Dies, locators, spare blades/stops/springs, repair and
+mounting kits, powered eCrimp tools, empty/unselected exchangeable-die frames,
+MultiCrimp magazine configurations and SB/BK/T/TC package/tether variants are omitted.
+Unresolved primary length conflicts or ambiguous selected-variant snippets for
+12 62 180, 11 82 130 and 97 52 65 DG are recorded in the proof and excluded from this batch.
+Only the existing `product_kind`, `tool_type`, `article_number` and `length_mm` attributes
+are asserted. No GTIN, OEM fit, interchangeability, wire/contact capacity, die compatibility,
+finish, insulation rating, generation, year, weight, price, package contents, quantity,
+used-offer completeness or condition is inferred. Related physical parts and lots retain
+independent offer scope. No marketplace listings, photos, manufacturer artwork, marketing
+descriptions or inventories are collected or copied.

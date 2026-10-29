@@ -1,0 +1,641 @@
+{
+  "checked_at": "2026-10-29",
+  "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation",
+  "scope": "109 previously absent exact complete manual KNIPEX crimping, wire-stripping and electrician tool articles. Distinct full manufacturer articles, not alias or packaging counts.",
+  "retrieval": "Official manufacturer search-indexed variant-table facts; direct crimping and stripping category opens returned HTTP403. No fresh origin HTTP200, circumvention, full-catalogue completeness, downloaded images or marketing descriptions claimed.",
+  "columns": [
+    "manufacturer_article",
+    "length_mm"
+  ],
+  "groups": [
+    {
+      "source_urls": [
+        "https://www.knipex.com/products/crimping-pliers",
+        "https://www.knipex.com/products/crimping-pliers?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number",
+        "https://www.knipex.com/products/crimping-pliers?f%5B0%5D=category%3A7045&page=1"
+      ],
+      "manufacturer_family": "Crimping pliers: selected complete manual tools",
+      "tool_type": "crimping_pliers",
+      "name_kind": "Crimpzange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "97 68 145 A",
+          145
+        ],
+        [
+          "97 53 18",
+          200
+        ],
+        [
+          "97 53 19",
+          200
+        ],
+        [
+          "97 55 04",
+          180
+        ],
+        [
+          "97 62 145 A",
+          145
+        ],
+        [
+          "97 78 180",
+          180
+        ],
+        [
+          "97 52 67 DT",
+          230
+        ],
+        [
+          "97 21 215",
+          230
+        ],
+        [
+          "97 21 215 B",
+          230
+        ],
+        [
+          "97 32 240",
+          240
+        ],
+        [
+          "97 21 215 C",
+          230
+        ],
+        [
+          "97 22 240",
+          240
+        ],
+        [
+          "97 71 180",
+          180
+        ],
+        [
+          "97 72 180",
+          180
+        ],
+        [
+          "97 53 04",
+          180
+        ],
+        [
+          "97 53 14",
+          180
+        ],
+        [
+          "97 55 14",
+          180
+        ],
+        [
+          "97 51 12",
+          200
+        ],
+        [
+          "97 51 10",
+          190
+        ],
+        [
+          "97 51 13",
+          190
+        ],
+        [
+          "97 52 30",
+          220
+        ],
+        [
+          "97 52 33",
+          220
+        ],
+        [
+          "97 52 34",
+          220
+        ],
+        [
+          "97 52 35",
+          220
+        ],
+        [
+          "97 52 36",
+          220
+        ],
+        [
+          "97 52 37",
+          220
+        ],
+        [
+          "97 52 38",
+          220
+        ],
+        [
+          "97 52 42",
+          220
+        ],
+        [
+          "97 52 50",
+          220
+        ],
+        [
+          "97 61 145 A",
+          145
+        ],
+        [
+          "97 61 145 F",
+          145
+        ],
+        [
+          "97 53 08",
+          190
+        ],
+        [
+          "97 53 09",
+          190
+        ],
+        [
+          "97 52 20",
+          195
+        ],
+        [
+          "97 52 14",
+          195
+        ],
+        [
+          "97 54 26",
+          190
+        ],
+        [
+          "97 54 25",
+          190
+        ],
+        [
+          "97 54 24",
+          190
+        ],
+        [
+          "97 81 180",
+          180
+        ],
+        [
+          "97 50 01",
+          155
+        ],
+        [
+          "97 43 66 EVO",
+          200
+        ],
+        [
+          "97 43 66",
+          200
+        ],
+        [
+          "97 43 06",
+          200
+        ],
+        [
+          "97 43 05",
+          200
+        ],
+        [
+          "97 52 23",
+          250
+        ],
+        [
+          "97 52 19",
+          250
+        ],
+        [
+          "97 52 18",
+          250
+        ],
+        [
+          "97 52 13",
+          250
+        ],
+        [
+          "97 52 10",
+          250
+        ],
+        [
+          "97 52 09",
+          250
+        ],
+        [
+          "97 52 08",
+          250
+        ],
+        [
+          "97 52 06",
+          250
+        ],
+        [
+          "97 52 05",
+          250
+        ],
+        [
+          "97 52 04",
+          250
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/en-uk/products/crimping-pliers"
+      ],
+      "manufacturer_family": "Current A-suffix four-mandrel tools and complete PreciForce article",
+      "tool_type": "crimping_pliers",
+      "name_kind": "Crimpzange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "97 52 63 A",
+          175
+        ],
+        [
+          "97 52 63 DG A",
+          175
+        ],
+        [
+          "97 52 65 A",
+          230
+        ],
+        [
+          "97 52 65 DG A",
+          240
+        ],
+        [
+          "97 52 42 6",
+          220
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/products/crimping-pliers/four-mandrel-crimping-pliers-for-turned-contacts"
+      ],
+      "manufacturer_family": "Four-mandrel complete manual crimping pliers",
+      "tool_type": "crimping_pliers",
+      "name_kind": "Crimpzange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "97 52 63",
+          175
+        ],
+        [
+          "97 52 63 DG",
+          195
+        ],
+        [
+          "97 52 65",
+          230
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number",
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools/automatic-stripping-pliers"
+      ],
+      "manufacturer_family": "Selected manual wire and insulation stripping pliers",
+      "tool_type": "wire_stripper",
+      "name_kind": "Abisolierzange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "12 42 195",
+          195
+        ],
+        [
+          "12 52 195",
+          190
+        ],
+        [
+          "12 40 200",
+          200
+        ],
+        [
+          "11 01 160",
+          160
+        ],
+        [
+          "11 02 160",
+          160
+        ],
+        [
+          "11 05 160",
+          160
+        ],
+        [
+          "11 06 160",
+          160
+        ],
+        [
+          "11 07 160",
+          160
+        ],
+        [
+          "11 12 160",
+          160
+        ],
+        [
+          "14 22 160",
+          160
+        ],
+        [
+          "14 25 160",
+          160
+        ],
+        [
+          "14 26 160",
+          160
+        ],
+        [
+          "13 71 8",
+          200
+        ],
+        [
+          "13 72 8",
+          200
+        ],
+        [
+          "13 71 200 ME",
+          200
+        ],
+        [
+          "13 72 200 ME",
+          200
+        ],
+        [
+          "13 76 200 ME",
+          200
+        ],
+        [
+          "13 62 180",
+          180
+        ],
+        [
+          "13 66 180",
+          180
+        ],
+        [
+          "12 72 190",
+          190
+        ],
+        [
+          "11 92 140",
+          140
+        ],
+        [
+          "15 81 160",
+          160
+        ],
+        [
+          "15 61 160",
+          160
+        ],
+        [
+          "15 51 160",
+          160
+        ],
+        [
+          "12 64 180",
+          180
+        ],
+        [
+          "12 12 14",
+          195
+        ],
+        [
+          "12 12 13",
+          195
+        ],
+        [
+          "12 12 12",
+          195
+        ],
+        [
+          "12 12 11",
+          195
+        ],
+        [
+          "12 12 10",
+          195
+        ],
+        [
+          "12 12 06",
+          195
+        ],
+        [
+          "12 12 02",
+          195
+        ],
+        [
+          "12 21 180",
+          180
+        ],
+        [
+          "12 11 180",
+          180
+        ],
+        [
+          "13 46 165",
+          165
+        ],
+        [
+          "13 42 165",
+          165
+        ],
+        [
+          "12 74 180",
+          175
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number"
+      ],
+      "manufacturer_family": "Electricians' pliers",
+      "tool_type": "electricians_pliers",
+      "name_kind": "Elektrikerzange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "13 01 160",
+          160
+        ],
+        [
+          "13 02 160",
+          160
+        ],
+        [
+          "13 05 160",
+          160
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/en-uk/products/crimping/181-250-mm"
+      ],
+      "manufacturer_family": "Pliers for electrical installation",
+      "tool_type": "installation_pliers",
+      "name_kind": "Installationszange",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "rows": [
+        [
+          "13 81 200",
+          200
+        ],
+        [
+          "13 82 200",
+          200
+        ],
+        [
+          "13 86 200",
+          200
+        ],
+        [
+          "13 92 200",
+          200
+        ],
+        [
+          "13 96 200",
+          200
+        ]
+      ]
+    },
+    {
+      "source_urls": [
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number",
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools/knipex-stx60-stripping-tool-for-longitudinal-and-round-cuts/knipex-stx60-stripping-tool-longitudinal-and-round-cuts/1645220"
+      ],
+      "manufacturer_family": "Complete manual cable-sheath stripping tools",
+      "tool_type": "cable_stripper",
+      "name_kind": "Abmantelungswerkzeug",
+      "category": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "rows": [
+        [
+          "16 40 150",
+          150
+        ],
+        [
+          "16 45 220",
+          225
+        ]
+      ]
+    }
+  ],
+  "article_exclude_terms": {
+    "12 74 180": ["e01"],
+    "12 64 180": ["e01"],
+    "16 45 220": ["e01"]
+  },
+  "part_prefix_evidence": [
+    {"body_article": "12 74 180", "part_article": "12 74 180 E01", "scope": "spare blade set, not the complete tool", "source_url": "https://www.knipex.com/products/wire-strippers-and-stripping-tools/automatic-stripping-pliers/automatic-stripping-pliers/1274180"},
+    {"body_article": "12 64 180", "part_article": "12 64 180 E01", "scope": "spare blade set, not the complete tool", "source_url": "https://www.knipex.com/products/wire-strippers-and-stripping-tools?items_per_page=100&search_api_fulltext=&sort_by=field_sort_number"},
+    {"body_article": "16 45 220", "part_article": "16 45 220 E01", "scope": "spare blades, not the complete tool", "source_url": "https://www.knipex.com/products/wire-strippers-and-stripping-tools/knipex-stx60-stripping-tool-for-longitudinal-and-round-cuts/knipex-stx60-stripping-tool-longitudinal-and-round-cuts/1645220"}
+  ],
+  "extra_aliases": {
+    "97 53 19": [
+      "KNIPEX Twistor T 97 53 19",
+      "KNIPEX 97 53 19 Twistor T"
+    ]
+  },
+  "extra_alias_source": "https://www.knipex.com/products/crimping-pliers",
+  "exclude_terms": [
+    "set",
+    "satz",
+    "kit",
+    "koffer",
+    "coffret",
+    "bundle",
+    "sb",
+    "bk",
+    "t",
+    "tc",
+    "s8",
+    "s02",
+    "v01",
+    "ersatzteil",
+    "ersatzteile",
+    "spare",
+    "spares",
+    "repair",
+    "reparatursatz",
+    "die set",
+    "crimp die",
+    "crimp dies",
+    "crimping die",
+    "crimping dies",
+    "locator",
+    "locators",
+    "gesenk",
+    "crimpeinsatz",
+    "presseinsatz",
+    "matrize",
+    "matrizen",
+    "ersatzmesser",
+    "ersatzklinge",
+    "ersatzbacken",
+    "ersatzfeder",
+    "spring"
+  ],
+  "excluded_scope": "Dies, locators, spare blades/stops/springs, repair kits, mounting sets, eCrimp powered tools, the empty 97 33 LE tool and unselected 97 43 200/A exchangeable-die frames, MultiCrimp configurations with changer magazines, SB/BK packaging-only and T/TC tether variants are not counted. No body/packaging equivalence is inferred.",
+  "unresolved_primary_attribute_conflicts": [
+    {
+      "article": "12 62 180",
+      "omitted": true,
+      "reason": "Indexed current ComStrip family table says165mm, while manufacturer2025 operating manual says180mm; no generation-specific length inferred.",
+      "sources": [
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools/automatic-insulation-stripper",
+        "https://web-assets.knipex.com/sites/default/files/documents/KNIPEX_EN_1262180_BA_A4_V01_RZ20250507.PDF"
+      ]
+    },
+    {
+      "article": "11 82 130",
+      "omitted": true,
+      "reason": "Manufacturer selected technical dimensions and category table say140mm, but the same page's descriptive paragraph says130mm; no scalar length selected.",
+      "sources": [
+        "https://www.knipex.com/products/wire-strippers-and-stripping-tools/electronics-wire-stripping-shears/electronics-wire-stripping-shears/1182130"
+      ]
+    },
+    {
+      "article": "97 52 65 DG",
+      "omitted": true,
+      "reason": "Category table says240mm; an individual indexed result exposes a175mm Length snippet with ambiguous variant scope. Omitted pending authoritative selected-row clarification.",
+      "sources": [
+        "https://www.knipex.com/products/crimping-pliers/four-mandrel-crimping-pliers-for-turned-contacts",
+        "https://www.knipex.com/products/crimping-pliers/four-mandrel-crimping-pliers-for-turned-contacts/four-mandrel-crimping-pliers-turned-contacts/975265DG"
+      ]
+    }
+  ],
+  "limits": "Only full article/model and explicit manufacturer Length cells, generic factual tool class and existing hand_tool schema are authored. No GTIN, OEM interchangeability, fit, wire/contact capacity, die compatibility, finish, insulation rating, weight, production year, generation, offer quantity, packaging contents, completeness, price or condition is inferred. Synthetic seller phrases in tests are not marketplace acquisitions."
+}

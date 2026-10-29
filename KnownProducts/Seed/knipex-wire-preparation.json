@@ -1,0 +1,7648 @@
+{
+  "products": [
+    {
+      "id": "knipex-1101160",
+      "brand": "KNIPEX",
+      "model": "11 01 160",
+      "name": "KNIPEX Abisolierzange 11 01 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 01 160",
+        "KNIPEX 1101160",
+        "KNIPEX Abisolierzange 11 01 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 01 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1102160",
+      "brand": "KNIPEX",
+      "model": "11 02 160",
+      "name": "KNIPEX Abisolierzange 11 02 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 02 160",
+        "KNIPEX 1102160",
+        "KNIPEX Abisolierzange 11 02 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 02 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1105160",
+      "brand": "KNIPEX",
+      "model": "11 05 160",
+      "name": "KNIPEX Abisolierzange 11 05 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 05 160",
+        "KNIPEX 1105160",
+        "KNIPEX Abisolierzange 11 05 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 05 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1106160",
+      "brand": "KNIPEX",
+      "model": "11 06 160",
+      "name": "KNIPEX Abisolierzange 11 06 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 06 160",
+        "KNIPEX 1106160",
+        "KNIPEX Abisolierzange 11 06 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 06 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1107160",
+      "brand": "KNIPEX",
+      "model": "11 07 160",
+      "name": "KNIPEX Abisolierzange 11 07 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 07 160",
+        "KNIPEX 1107160",
+        "KNIPEX Abisolierzange 11 07 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 07 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1112160",
+      "brand": "KNIPEX",
+      "model": "11 12 160",
+      "name": "KNIPEX Abisolierzange 11 12 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 12 160",
+        "KNIPEX 1112160",
+        "KNIPEX Abisolierzange 11 12 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 12 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1192140",
+      "brand": "KNIPEX",
+      "model": "11 92 140",
+      "name": "KNIPEX Abisolierzange 11 92 140",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 11 92 140",
+        "KNIPEX 1192140",
+        "KNIPEX Abisolierzange 11 92 140"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "11 92 140"
+        ],
+        "length_mm": [
+          "140"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1211180",
+      "brand": "KNIPEX",
+      "model": "12 11 180",
+      "name": "KNIPEX Abisolierzange 12 11 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 11 180",
+        "KNIPEX 1211180",
+        "KNIPEX Abisolierzange 12 11 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 11 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121202",
+      "brand": "KNIPEX",
+      "model": "12 12 02",
+      "name": "KNIPEX Abisolierzange 12 12 02",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 02",
+        "KNIPEX 121202",
+        "KNIPEX Abisolierzange 12 12 02"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 02"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121206",
+      "brand": "KNIPEX",
+      "model": "12 12 06",
+      "name": "KNIPEX Abisolierzange 12 12 06",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 06",
+        "KNIPEX 121206",
+        "KNIPEX Abisolierzange 12 12 06"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 06"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121210",
+      "brand": "KNIPEX",
+      "model": "12 12 10",
+      "name": "KNIPEX Abisolierzange 12 12 10",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 10",
+        "KNIPEX 121210",
+        "KNIPEX Abisolierzange 12 12 10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 10"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121211",
+      "brand": "KNIPEX",
+      "model": "12 12 11",
+      "name": "KNIPEX Abisolierzange 12 12 11",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 11",
+        "KNIPEX 121211",
+        "KNIPEX Abisolierzange 12 12 11"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 11"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121212",
+      "brand": "KNIPEX",
+      "model": "12 12 12",
+      "name": "KNIPEX Abisolierzange 12 12 12",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 12",
+        "KNIPEX 121212",
+        "KNIPEX Abisolierzange 12 12 12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 12"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121213",
+      "brand": "KNIPEX",
+      "model": "12 12 13",
+      "name": "KNIPEX Abisolierzange 12 12 13",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 13",
+        "KNIPEX 121213",
+        "KNIPEX Abisolierzange 12 12 13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 13"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-121214",
+      "brand": "KNIPEX",
+      "model": "12 12 14",
+      "name": "KNIPEX Abisolierzange 12 12 14",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 12 14",
+        "KNIPEX 121214",
+        "KNIPEX Abisolierzange 12 12 14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 12 14"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1221180",
+      "brand": "KNIPEX",
+      "model": "12 21 180",
+      "name": "KNIPEX Abisolierzange 12 21 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 21 180",
+        "KNIPEX 1221180",
+        "KNIPEX Abisolierzange 12 21 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 21 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1240200",
+      "brand": "KNIPEX",
+      "model": "12 40 200",
+      "name": "KNIPEX Abisolierzange 12 40 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 40 200",
+        "KNIPEX 1240200",
+        "KNIPEX Abisolierzange 12 40 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 40 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1242195",
+      "brand": "KNIPEX",
+      "model": "12 42 195",
+      "name": "KNIPEX Abisolierzange 12 42 195",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 42 195",
+        "KNIPEX 1242195",
+        "KNIPEX Abisolierzange 12 42 195"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 42 195"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1252195",
+      "brand": "KNIPEX",
+      "model": "12 52 195",
+      "name": "KNIPEX Abisolierzange 12 52 195",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 52 195",
+        "KNIPEX 1252195",
+        "KNIPEX Abisolierzange 12 52 195"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 52 195"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1264180",
+      "brand": "KNIPEX",
+      "model": "12 64 180",
+      "name": "KNIPEX Abisolierzange 12 64 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 64 180",
+        "KNIPEX 1264180",
+        "KNIPEX Abisolierzange 12 64 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 64 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "e01",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1272190",
+      "brand": "KNIPEX",
+      "model": "12 72 190",
+      "name": "KNIPEX Abisolierzange 12 72 190",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 72 190",
+        "KNIPEX 1272190",
+        "KNIPEX Abisolierzange 12 72 190"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 72 190"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1274180",
+      "brand": "KNIPEX",
+      "model": "12 74 180",
+      "name": "KNIPEX Abisolierzange 12 74 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 12 74 180",
+        "KNIPEX 1274180",
+        "KNIPEX Abisolierzange 12 74 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "12 74 180"
+        ],
+        "length_mm": [
+          "175"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "e01",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1301160",
+      "brand": "KNIPEX",
+      "model": "13 01 160",
+      "name": "KNIPEX Elektrikerzange 13 01 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 01 160",
+        "KNIPEX 1301160",
+        "KNIPEX Elektrikerzange 13 01 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "electricians_pliers"
+        ],
+        "article_number": [
+          "13 01 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1302160",
+      "brand": "KNIPEX",
+      "model": "13 02 160",
+      "name": "KNIPEX Elektrikerzange 13 02 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 02 160",
+        "KNIPEX 1302160",
+        "KNIPEX Elektrikerzange 13 02 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "electricians_pliers"
+        ],
+        "article_number": [
+          "13 02 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1305160",
+      "brand": "KNIPEX",
+      "model": "13 05 160",
+      "name": "KNIPEX Elektrikerzange 13 05 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 05 160",
+        "KNIPEX 1305160",
+        "KNIPEX Elektrikerzange 13 05 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "electricians_pliers"
+        ],
+        "article_number": [
+          "13 05 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1342165",
+      "brand": "KNIPEX",
+      "model": "13 42 165",
+      "name": "KNIPEX Abisolierzange 13 42 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 42 165",
+        "KNIPEX 1342165",
+        "KNIPEX Abisolierzange 13 42 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 42 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1346165",
+      "brand": "KNIPEX",
+      "model": "13 46 165",
+      "name": "KNIPEX Abisolierzange 13 46 165",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 46 165",
+        "KNIPEX 1346165",
+        "KNIPEX Abisolierzange 13 46 165"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 46 165"
+        ],
+        "length_mm": [
+          "165"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1362180",
+      "brand": "KNIPEX",
+      "model": "13 62 180",
+      "name": "KNIPEX Abisolierzange 13 62 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 62 180",
+        "KNIPEX 1362180",
+        "KNIPEX Abisolierzange 13 62 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 62 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1366180",
+      "brand": "KNIPEX",
+      "model": "13 66 180",
+      "name": "KNIPEX Abisolierzange 13 66 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 66 180",
+        "KNIPEX 1366180",
+        "KNIPEX Abisolierzange 13 66 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 66 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1371200me",
+      "brand": "KNIPEX",
+      "model": "13 71 200 ME",
+      "name": "KNIPEX Abisolierzange 13 71 200 ME",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 71 200 ME",
+        "KNIPEX 1371200ME",
+        "KNIPEX Abisolierzange 13 71 200 ME"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 71 200 ME"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-13718",
+      "brand": "KNIPEX",
+      "model": "13 71 8",
+      "name": "KNIPEX Abisolierzange 13 71 8",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 71 8",
+        "KNIPEX 13718",
+        "KNIPEX Abisolierzange 13 71 8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 71 8"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1372200me",
+      "brand": "KNIPEX",
+      "model": "13 72 200 ME",
+      "name": "KNIPEX Abisolierzange 13 72 200 ME",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 72 200 ME",
+        "KNIPEX 1372200ME",
+        "KNIPEX Abisolierzange 13 72 200 ME"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 72 200 ME"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-13728",
+      "brand": "KNIPEX",
+      "model": "13 72 8",
+      "name": "KNIPEX Abisolierzange 13 72 8",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 72 8",
+        "KNIPEX 13728",
+        "KNIPEX Abisolierzange 13 72 8"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 72 8"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1376200me",
+      "brand": "KNIPEX",
+      "model": "13 76 200 ME",
+      "name": "KNIPEX Abisolierzange 13 76 200 ME",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 76 200 ME",
+        "KNIPEX 1376200ME",
+        "KNIPEX Abisolierzange 13 76 200 ME"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "13 76 200 ME"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1381200",
+      "brand": "KNIPEX",
+      "model": "13 81 200",
+      "name": "KNIPEX Installationszange 13 81 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 81 200",
+        "KNIPEX 1381200",
+        "KNIPEX Installationszange 13 81 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "installation_pliers"
+        ],
+        "article_number": [
+          "13 81 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1382200",
+      "brand": "KNIPEX",
+      "model": "13 82 200",
+      "name": "KNIPEX Installationszange 13 82 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 82 200",
+        "KNIPEX 1382200",
+        "KNIPEX Installationszange 13 82 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "installation_pliers"
+        ],
+        "article_number": [
+          "13 82 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1386200",
+      "brand": "KNIPEX",
+      "model": "13 86 200",
+      "name": "KNIPEX Installationszange 13 86 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 86 200",
+        "KNIPEX 1386200",
+        "KNIPEX Installationszange 13 86 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "installation_pliers"
+        ],
+        "article_number": [
+          "13 86 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1392200",
+      "brand": "KNIPEX",
+      "model": "13 92 200",
+      "name": "KNIPEX Installationszange 13 92 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 92 200",
+        "KNIPEX 1392200",
+        "KNIPEX Installationszange 13 92 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "installation_pliers"
+        ],
+        "article_number": [
+          "13 92 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1396200",
+      "brand": "KNIPEX",
+      "model": "13 96 200",
+      "name": "KNIPEX Installationszange 13 96 200",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 13 96 200",
+        "KNIPEX 1396200",
+        "KNIPEX Installationszange 13 96 200"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "installation_pliers"
+        ],
+        "article_number": [
+          "13 96 200"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1422160",
+      "brand": "KNIPEX",
+      "model": "14 22 160",
+      "name": "KNIPEX Abisolierzange 14 22 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 14 22 160",
+        "KNIPEX 1422160",
+        "KNIPEX Abisolierzange 14 22 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "14 22 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1425160",
+      "brand": "KNIPEX",
+      "model": "14 25 160",
+      "name": "KNIPEX Abisolierzange 14 25 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 14 25 160",
+        "KNIPEX 1425160",
+        "KNIPEX Abisolierzange 14 25 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "14 25 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1426160",
+      "brand": "KNIPEX",
+      "model": "14 26 160",
+      "name": "KNIPEX Abisolierzange 14 26 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 14 26 160",
+        "KNIPEX 1426160",
+        "KNIPEX Abisolierzange 14 26 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "14 26 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1551160",
+      "brand": "KNIPEX",
+      "model": "15 51 160",
+      "name": "KNIPEX Abisolierzange 15 51 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 15 51 160",
+        "KNIPEX 1551160",
+        "KNIPEX Abisolierzange 15 51 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "15 51 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1561160",
+      "brand": "KNIPEX",
+      "model": "15 61 160",
+      "name": "KNIPEX Abisolierzange 15 61 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 15 61 160",
+        "KNIPEX 1561160",
+        "KNIPEX Abisolierzange 15 61 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "15 61 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1581160",
+      "brand": "KNIPEX",
+      "model": "15 81 160",
+      "name": "KNIPEX Abisolierzange 15 81 160",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 15 81 160",
+        "KNIPEX 1581160",
+        "KNIPEX Abisolierzange 15 81 160"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "wire_stripper"
+        ],
+        "article_number": [
+          "15 81 160"
+        ],
+        "length_mm": [
+          "160"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1640150",
+      "brand": "KNIPEX",
+      "model": "16 40 150",
+      "name": "KNIPEX Abmantelungswerkzeug 16 40 150",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 16 40 150",
+        "KNIPEX 1640150",
+        "KNIPEX Abmantelungswerkzeug 16 40 150"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_stripper"
+        ],
+        "article_number": [
+          "16 40 150"
+        ],
+        "length_mm": [
+          "150"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-1645220",
+      "brand": "KNIPEX",
+      "model": "16 45 220",
+      "name": "KNIPEX Abmantelungswerkzeug 16 45 220",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 16 45 220",
+        "KNIPEX 1645220",
+        "KNIPEX Abmantelungswerkzeug 16 45 220"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "cable_stripper"
+        ],
+        "article_number": [
+          "16 45 220"
+        ],
+        "length_mm": [
+          "225"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "e01",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9721215",
+      "brand": "KNIPEX",
+      "model": "97 21 215",
+      "name": "KNIPEX Crimpzange 97 21 215",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 21 215",
+        "KNIPEX 9721215",
+        "KNIPEX Crimpzange 97 21 215"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 21 215"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "b",
+        "bk",
+        "bundle",
+        "c",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9721215b",
+      "brand": "KNIPEX",
+      "model": "97 21 215 B",
+      "name": "KNIPEX Crimpzange 97 21 215 B",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 21 215 B",
+        "KNIPEX 9721215B",
+        "KNIPEX Crimpzange 97 21 215 B"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 21 215 B"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9721215c",
+      "brand": "KNIPEX",
+      "model": "97 21 215 C",
+      "name": "KNIPEX Crimpzange 97 21 215 C",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 21 215 C",
+        "KNIPEX 9721215C",
+        "KNIPEX Crimpzange 97 21 215 C"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 21 215 C"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9722240",
+      "brand": "KNIPEX",
+      "model": "97 22 240",
+      "name": "KNIPEX Crimpzange 97 22 240",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 22 240",
+        "KNIPEX 9722240",
+        "KNIPEX Crimpzange 97 22 240"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 22 240"
+        ],
+        "length_mm": [
+          "240"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9732240",
+      "brand": "KNIPEX",
+      "model": "97 32 240",
+      "name": "KNIPEX Crimpzange 97 32 240",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 32 240",
+        "KNIPEX 9732240",
+        "KNIPEX Crimpzange 97 32 240"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 32 240"
+        ],
+        "length_mm": [
+          "240"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-974305",
+      "brand": "KNIPEX",
+      "model": "97 43 05",
+      "name": "KNIPEX Crimpzange 97 43 05",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 43 05",
+        "KNIPEX 974305",
+        "KNIPEX Crimpzange 97 43 05"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 43 05"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-974306",
+      "brand": "KNIPEX",
+      "model": "97 43 06",
+      "name": "KNIPEX Crimpzange 97 43 06",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 43 06",
+        "KNIPEX 974306",
+        "KNIPEX Crimpzange 97 43 06"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 43 06"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-974366",
+      "brand": "KNIPEX",
+      "model": "97 43 66",
+      "name": "KNIPEX Crimpzange 97 43 66",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 43 66",
+        "KNIPEX 974366",
+        "KNIPEX Crimpzange 97 43 66"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 43 66"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "evo",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-974366evo",
+      "brand": "KNIPEX",
+      "model": "97 43 66 EVO",
+      "name": "KNIPEX Crimpzange 97 43 66 EVO",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 43 66 EVO",
+        "KNIPEX 974366EVO",
+        "KNIPEX Crimpzange 97 43 66 EVO"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 43 66 EVO"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975001",
+      "brand": "KNIPEX",
+      "model": "97 50 01",
+      "name": "KNIPEX Crimpzange 97 50 01",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 50 01",
+        "KNIPEX 975001",
+        "KNIPEX Crimpzange 97 50 01"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 50 01"
+        ],
+        "length_mm": [
+          "155"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975110",
+      "brand": "KNIPEX",
+      "model": "97 51 10",
+      "name": "KNIPEX Crimpzange 97 51 10",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 51 10",
+        "KNIPEX 975110",
+        "KNIPEX Crimpzange 97 51 10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 51 10"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975112",
+      "brand": "KNIPEX",
+      "model": "97 51 12",
+      "name": "KNIPEX Crimpzange 97 51 12",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 51 12",
+        "KNIPEX 975112",
+        "KNIPEX Crimpzange 97 51 12"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 51 12"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975113",
+      "brand": "KNIPEX",
+      "model": "97 51 13",
+      "name": "KNIPEX Crimpzange 97 51 13",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 51 13",
+        "KNIPEX 975113",
+        "KNIPEX Crimpzange 97 51 13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 51 13"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975204",
+      "brand": "KNIPEX",
+      "model": "97 52 04",
+      "name": "KNIPEX Crimpzange 97 52 04",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 04",
+        "KNIPEX 975204",
+        "KNIPEX Crimpzange 97 52 04"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 04"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975205",
+      "brand": "KNIPEX",
+      "model": "97 52 05",
+      "name": "KNIPEX Crimpzange 97 52 05",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 05",
+        "KNIPEX 975205",
+        "KNIPEX Crimpzange 97 52 05"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 05"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975206",
+      "brand": "KNIPEX",
+      "model": "97 52 06",
+      "name": "KNIPEX Crimpzange 97 52 06",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 06",
+        "KNIPEX 975206",
+        "KNIPEX Crimpzange 97 52 06"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 06"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975208",
+      "brand": "KNIPEX",
+      "model": "97 52 08",
+      "name": "KNIPEX Crimpzange 97 52 08",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 08",
+        "KNIPEX 975208",
+        "KNIPEX Crimpzange 97 52 08"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 08"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975209",
+      "brand": "KNIPEX",
+      "model": "97 52 09",
+      "name": "KNIPEX Crimpzange 97 52 09",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 09",
+        "KNIPEX 975209",
+        "KNIPEX Crimpzange 97 52 09"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 09"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975210",
+      "brand": "KNIPEX",
+      "model": "97 52 10",
+      "name": "KNIPEX Crimpzange 97 52 10",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 10",
+        "KNIPEX 975210",
+        "KNIPEX Crimpzange 97 52 10"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 10"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975213",
+      "brand": "KNIPEX",
+      "model": "97 52 13",
+      "name": "KNIPEX Crimpzange 97 52 13",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 13",
+        "KNIPEX 975213",
+        "KNIPEX Crimpzange 97 52 13"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 13"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975214",
+      "brand": "KNIPEX",
+      "model": "97 52 14",
+      "name": "KNIPEX Crimpzange 97 52 14",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 14",
+        "KNIPEX 975214",
+        "KNIPEX Crimpzange 97 52 14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 14"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975218",
+      "brand": "KNIPEX",
+      "model": "97 52 18",
+      "name": "KNIPEX Crimpzange 97 52 18",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 18",
+        "KNIPEX 975218",
+        "KNIPEX Crimpzange 97 52 18"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 18"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975219",
+      "brand": "KNIPEX",
+      "model": "97 52 19",
+      "name": "KNIPEX Crimpzange 97 52 19",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 19",
+        "KNIPEX 975219",
+        "KNIPEX Crimpzange 97 52 19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 19"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975220",
+      "brand": "KNIPEX",
+      "model": "97 52 20",
+      "name": "KNIPEX Crimpzange 97 52 20",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 20",
+        "KNIPEX 975220",
+        "KNIPEX Crimpzange 97 52 20"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 20"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975223",
+      "brand": "KNIPEX",
+      "model": "97 52 23",
+      "name": "KNIPEX Crimpzange 97 52 23",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 23",
+        "KNIPEX 975223",
+        "KNIPEX Crimpzange 97 52 23"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 23"
+        ],
+        "length_mm": [
+          "250"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975230",
+      "brand": "KNIPEX",
+      "model": "97 52 30",
+      "name": "KNIPEX Crimpzange 97 52 30",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 30",
+        "KNIPEX 975230",
+        "KNIPEX Crimpzange 97 52 30"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 30"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975233",
+      "brand": "KNIPEX",
+      "model": "97 52 33",
+      "name": "KNIPEX Crimpzange 97 52 33",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 33",
+        "KNIPEX 975233",
+        "KNIPEX Crimpzange 97 52 33"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 33"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975234",
+      "brand": "KNIPEX",
+      "model": "97 52 34",
+      "name": "KNIPEX Crimpzange 97 52 34",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 34",
+        "KNIPEX 975234",
+        "KNIPEX Crimpzange 97 52 34"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 34"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975235",
+      "brand": "KNIPEX",
+      "model": "97 52 35",
+      "name": "KNIPEX Crimpzange 97 52 35",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 35",
+        "KNIPEX 975235",
+        "KNIPEX Crimpzange 97 52 35"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 35"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975236",
+      "brand": "KNIPEX",
+      "model": "97 52 36",
+      "name": "KNIPEX Crimpzange 97 52 36",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 36",
+        "KNIPEX 975236",
+        "KNIPEX Crimpzange 97 52 36"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 36"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975237",
+      "brand": "KNIPEX",
+      "model": "97 52 37",
+      "name": "KNIPEX Crimpzange 97 52 37",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 37",
+        "KNIPEX 975237",
+        "KNIPEX Crimpzange 97 52 37"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 37"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975238",
+      "brand": "KNIPEX",
+      "model": "97 52 38",
+      "name": "KNIPEX Crimpzange 97 52 38",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 38",
+        "KNIPEX 975238",
+        "KNIPEX Crimpzange 97 52 38"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 38"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975242",
+      "brand": "KNIPEX",
+      "model": "97 52 42",
+      "name": "KNIPEX Crimpzange 97 52 42",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 42",
+        "KNIPEX 975242",
+        "KNIPEX Crimpzange 97 52 42"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 42"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "6",
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9752426",
+      "brand": "KNIPEX",
+      "model": "97 52 42 6",
+      "name": "KNIPEX Crimpzange 97 52 42 6",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 42 6",
+        "KNIPEX 9752426",
+        "KNIPEX Crimpzange 97 52 42 6"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 42 6"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975250",
+      "brand": "KNIPEX",
+      "model": "97 52 50",
+      "name": "KNIPEX Crimpzange 97 52 50",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 50",
+        "KNIPEX 975250",
+        "KNIPEX Crimpzange 97 52 50"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 50"
+        ],
+        "length_mm": [
+          "220"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975263",
+      "brand": "KNIPEX",
+      "model": "97 52 63",
+      "name": "KNIPEX Crimpzange 97 52 63",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 63",
+        "KNIPEX 975263",
+        "KNIPEX Crimpzange 97 52 63"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 63"
+        ],
+        "length_mm": [
+          "175"
+        ]
+      },
+      "excludeTerms": [
+        "a",
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "dg",
+        "dga",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975263a",
+      "brand": "KNIPEX",
+      "model": "97 52 63 A",
+      "name": "KNIPEX Crimpzange 97 52 63 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 63 A",
+        "KNIPEX 975263A",
+        "KNIPEX Crimpzange 97 52 63 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 63 A"
+        ],
+        "length_mm": [
+          "175"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975263dg",
+      "brand": "KNIPEX",
+      "model": "97 52 63 DG",
+      "name": "KNIPEX Crimpzange 97 52 63 DG",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 63 DG",
+        "KNIPEX 975263DG",
+        "KNIPEX Crimpzange 97 52 63 DG"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 63 DG"
+        ],
+        "length_mm": [
+          "195"
+        ]
+      },
+      "excludeTerms": [
+        "a",
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975263dga",
+      "brand": "KNIPEX",
+      "model": "97 52 63 DG A",
+      "name": "KNIPEX Crimpzange 97 52 63 DG A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 63 DG A",
+        "KNIPEX 975263DGA",
+        "KNIPEX Crimpzange 97 52 63 DG A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 63 DG A"
+        ],
+        "length_mm": [
+          "175"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975265",
+      "brand": "KNIPEX",
+      "model": "97 52 65",
+      "name": "KNIPEX Crimpzange 97 52 65",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 65",
+        "KNIPEX 975265",
+        "KNIPEX Crimpzange 97 52 65"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 65"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "a",
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "dg",
+        "dga",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975265a",
+      "brand": "KNIPEX",
+      "model": "97 52 65 A",
+      "name": "KNIPEX Crimpzange 97 52 65 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 65 A",
+        "KNIPEX 975265A",
+        "KNIPEX Crimpzange 97 52 65 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 65 A"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975265dga",
+      "brand": "KNIPEX",
+      "model": "97 52 65 DG A",
+      "name": "KNIPEX Crimpzange 97 52 65 DG A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 65 DG A",
+        "KNIPEX 975265DGA",
+        "KNIPEX Crimpzange 97 52 65 DG A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 65 DG A"
+        ],
+        "length_mm": [
+          "240"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975267dt",
+      "brand": "KNIPEX",
+      "model": "97 52 67 DT",
+      "name": "KNIPEX Crimpzange 97 52 67 DT",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 52 67 DT",
+        "KNIPEX 975267DT",
+        "KNIPEX Crimpzange 97 52 67 DT"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 52 67 DT"
+        ],
+        "length_mm": [
+          "230"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975304",
+      "brand": "KNIPEX",
+      "model": "97 53 04",
+      "name": "KNIPEX Crimpzange 97 53 04",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 04",
+        "KNIPEX 975304",
+        "KNIPEX Crimpzange 97 53 04"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 04"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975308",
+      "brand": "KNIPEX",
+      "model": "97 53 08",
+      "name": "KNIPEX Crimpzange 97 53 08",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 08",
+        "KNIPEX 975308",
+        "KNIPEX Crimpzange 97 53 08"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 08"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975309",
+      "brand": "KNIPEX",
+      "model": "97 53 09",
+      "name": "KNIPEX Crimpzange 97 53 09",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 09",
+        "KNIPEX 975309",
+        "KNIPEX Crimpzange 97 53 09"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 09"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975314",
+      "brand": "KNIPEX",
+      "model": "97 53 14",
+      "name": "KNIPEX Crimpzange 97 53 14",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 14",
+        "KNIPEX 975314",
+        "KNIPEX Crimpzange 97 53 14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 14"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975318",
+      "brand": "KNIPEX",
+      "model": "97 53 18",
+      "name": "KNIPEX Crimpzange 97 53 18",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 18",
+        "KNIPEX 975318",
+        "KNIPEX Crimpzange 97 53 18"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 18"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975319",
+      "brand": "KNIPEX",
+      "model": "97 53 19",
+      "name": "KNIPEX Crimpzange 97 53 19",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 53 19",
+        "KNIPEX 97 53 19 Twistor T",
+        "KNIPEX 975319",
+        "KNIPEX Crimpzange 97 53 19",
+        "KNIPEX Twistor T 97 53 19"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 53 19"
+        ],
+        "length_mm": [
+          "200"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975424",
+      "brand": "KNIPEX",
+      "model": "97 54 24",
+      "name": "KNIPEX Crimpzange 97 54 24",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 54 24",
+        "KNIPEX 975424",
+        "KNIPEX Crimpzange 97 54 24"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 54 24"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975425",
+      "brand": "KNIPEX",
+      "model": "97 54 25",
+      "name": "KNIPEX Crimpzange 97 54 25",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 54 25",
+        "KNIPEX 975425",
+        "KNIPEX Crimpzange 97 54 25"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 54 25"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975426",
+      "brand": "KNIPEX",
+      "model": "97 54 26",
+      "name": "KNIPEX Crimpzange 97 54 26",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 54 26",
+        "KNIPEX 975426",
+        "KNIPEX Crimpzange 97 54 26"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 54 26"
+        ],
+        "length_mm": [
+          "190"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975504",
+      "brand": "KNIPEX",
+      "model": "97 55 04",
+      "name": "KNIPEX Crimpzange 97 55 04",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 55 04",
+        "KNIPEX 975504",
+        "KNIPEX Crimpzange 97 55 04"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 55 04"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-975514",
+      "brand": "KNIPEX",
+      "model": "97 55 14",
+      "name": "KNIPEX Crimpzange 97 55 14",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 55 14",
+        "KNIPEX 975514",
+        "KNIPEX Crimpzange 97 55 14"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 55 14"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9761145a",
+      "brand": "KNIPEX",
+      "model": "97 61 145 A",
+      "name": "KNIPEX Crimpzange 97 61 145 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 61 145 A",
+        "KNIPEX 9761145A",
+        "KNIPEX Crimpzange 97 61 145 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 61 145 A"
+        ],
+        "length_mm": [
+          "145"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9761145f",
+      "brand": "KNIPEX",
+      "model": "97 61 145 F",
+      "name": "KNIPEX Crimpzange 97 61 145 F",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 61 145 F",
+        "KNIPEX 9761145F",
+        "KNIPEX Crimpzange 97 61 145 F"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 61 145 F"
+        ],
+        "length_mm": [
+          "145"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9762145a",
+      "brand": "KNIPEX",
+      "model": "97 62 145 A",
+      "name": "KNIPEX Crimpzange 97 62 145 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 62 145 A",
+        "KNIPEX 9762145A",
+        "KNIPEX Crimpzange 97 62 145 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 62 145 A"
+        ],
+        "length_mm": [
+          "145"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9768145a",
+      "brand": "KNIPEX",
+      "model": "97 68 145 A",
+      "name": "KNIPEX Crimpzange 97 68 145 A",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 68 145 A",
+        "KNIPEX 9768145A",
+        "KNIPEX Crimpzange 97 68 145 A"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 68 145 A"
+        ],
+        "length_mm": [
+          "145"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9771180",
+      "brand": "KNIPEX",
+      "model": "97 71 180",
+      "name": "KNIPEX Crimpzange 97 71 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 71 180",
+        "KNIPEX 9771180",
+        "KNIPEX Crimpzange 97 71 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 71 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9772180",
+      "brand": "KNIPEX",
+      "model": "97 72 180",
+      "name": "KNIPEX Crimpzange 97 72 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 72 180",
+        "KNIPEX 9772180",
+        "KNIPEX Crimpzange 97 72 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 72 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9778180",
+      "brand": "KNIPEX",
+      "model": "97 78 180",
+      "name": "KNIPEX Crimpzange 97 78 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 78 180",
+        "KNIPEX 9778180",
+        "KNIPEX Crimpzange 97 78 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 78 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    },
+    {
+      "id": "knipex-9781180",
+      "brand": "KNIPEX",
+      "model": "97 81 180",
+      "name": "KNIPEX Crimpzange 97 81 180",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 97 81 180",
+        "KNIPEX 9781180",
+        "KNIPEX Crimpzange 97 81 180"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "tool_type": [
+          "crimping_pliers"
+        ],
+        "article_number": [
+          "97 81 180"
+        ],
+        "length_mm": [
+          "180"
+        ]
+      },
+      "excludeTerms": [
+        "bk",
+        "bundle",
+        "coffret",
+        "crimp die",
+        "crimp dies",
+        "crimpeinsatz",
+        "crimping die",
+        "crimping dies",
+        "die set",
+        "ersatzbacken",
+        "ersatzfeder",
+        "ersatzklinge",
+        "ersatzmesser",
+        "ersatzteil",
+        "ersatzteile",
+        "gesenk",
+        "kit",
+        "koffer",
+        "locator",
+        "locators",
+        "matrize",
+        "matrizen",
+        "presseinsatz",
+        "repair",
+        "reparatursatz",
+        "s02",
+        "s8",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "v01"
+      ],
+      "source": "seed:manufacturer-verified-2026-10-29-r45-wire-preparation"
+    }
+  ]
+}
