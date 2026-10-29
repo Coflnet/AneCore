@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-29",
+  "source": "seed:manufacturer-verified-2026-10-29-r43-circlip",
+  "scope": "46 selected complete circlip pliers, 23 internal and 23 external; exact full manufacturer article and explicit Length cells only.",
+  "retrieval": "Public web-tool search-indexed manufacturer family tables. Direct category open returned403. No successful fresh origin fetch, bypass or catalogue completeness claimed.",
+  "columns": ["manufacturer_article", "length_mm"],
+  "groups": [
+    {
+      "source_url": "https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-internal-circlips-in-bore-holes",
+      "manufacturer_family": "Circlip Pliers For internal circlips in bore holes",
+      "tool_type": "internal_circlip_pliers",
+      "rows": [
+        ["44 11 J0", 140],
+        ["44 11 J1", 140],
+        ["44 11 J2", 180],
+        ["44 11 J3", 225],
+        ["44 11 J4", 320],
+        ["44 13 J0", 140],
+        ["44 13 J1", 140],
+        ["44 13 J2", 180],
+        ["44 13 J3", 225],
+        ["44 13 J4", 320],
+        ["44 21 J01", 130],
+        ["44 21 J11", 130],
+        ["44 21 J21", 170],
+        ["44 21 J31", 215],
+        ["44 21 J41", 300],
+        ["44 23 J11", 130],
+        ["44 23 J21", 170],
+        ["44 23 J31", 215],
+        ["44 31 J02", 140],
+        ["44 31 J12", 140],
+        ["44 31 J22", 180],
+        ["44 31 J32", 225],
+        ["44 31 J42", 310]
+      ]
+    },
+    {
+      "source_url": "https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-external-circlips-on-shafts",
+      "manufacturer_family": "Circlip Pliers For external circlips on shafts",
+      "tool_type": "external_circlip_pliers",
+      "rows": [
+        ["46 11 A0", 140],
+        ["46 11 A1", 140],
+        ["46 11 A2", 180],
+        ["46 11 A3", 210],
+        ["46 11 A4", 320],
+        ["46 13 A0", 140],
+        ["46 13 A1", 140],
+        ["46 13 A2", 180],
+        ["46 13 A3", 210],
+        ["46 21 A01", 125],
+        ["46 21 A11", 125],
+        ["46 21 A21", 170],
+        ["46 21 A31", 200],
+        ["46 21 A41", 300],
+        ["46 23 A01", 125],
+        ["46 23 A11", 125],
+        ["46 23 A21", 170],
+        ["46 23 A31", 200],
+        ["46 31 A02", 130],
+        ["46 31 A12", 130],
+        ["46 31 A22", 185],
+        ["46 31 A32", 210],
+        ["46 31 A42", 310]
+      ]
+    }
+  ],
+  "corroborating_details": [
+    {
+      "url": "https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-internal-circlips-in-bore-holes/circlip-pliers-internal-circlips-bore-holes/4431J42",
+      "article": "44 31 J42",
+      "length_mm": 310
+    },
+    {
+      "url": "https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-external-circlips-on-shafts/circlip-pliers-external-circlips-shafts/4623A31",
+      "articles": ["46 23 A31", "46 31 A22", "46 31 A42"],
+      "lengths_mm": [200, 185, 310]
+    }
+  ],
+  "exclude_terms": [
+    "set", "satz", "kit", "koffer", "coffret", "t", "tc", "sb", "sba", "s8", "s02", "v01",
+    "repair", "spare", "spares", "tip", "tips", "spring", "ersatzspitze", "ersatzspitzen", "ersatzfeder", "reparatursatz"
+  ],
+  "limits": "Whole tools only. Spare tips, replacement springs, unselected articles, sets, packaging variants and precision-series tools are excluded. No GTIN, OEM fitment, machinery compatibility, ring capacity, tip dimension, finish, insulation rating, year, age, package contents, quantity or condition is inferred. No manufacturer descriptions or images are copied.",
+  "parts_review": "Existing typed Parts classes, explicit OEM/part-number evidence and separate fitment evidence are not hand_tool identities. Bounded Zundapp search found retailer historical catalogue mirrors/claims, without verified manufacturer authority for a selected exact cohort; no Zundapp OEM or fitment data is authored."
+}

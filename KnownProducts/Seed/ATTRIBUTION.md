@@ -451,3 +451,32 @@ No GTIN, year, edition, suffix, language, packaging, contents, fit or compatibil
 inferred. Unavailable pages 42085, 60070 and 60094 are omitted; this is not a complete
 theme enumeration. Public web-tool retrieval may use indexed/cached evidence; no fresh
 origin HTTP200 is claimed. No manufacturer descriptions, images or inventories are copied.
+
+## KNIPEX internal and external circlip pliers (2026-10-29, R43)
+
+`knipex-circlip-pliers.json` adds 46 previously absent complete tool articles: 23 internal
+and 23 external circlip pliers, from the official manufacturer
+[internal family table](https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-internal-circlips-in-bore-holes)
+and [external family table](https://www.knipex.com/products/circlip-pliers/circlip-pliers-for-external-circlips-on-shafts).
+Full printed article numbers and explicit Length cells are retained in
+`tools/catalog-import/proofs/knipex-circlip-pliers-2026-10-29-r43.json`.
+Lengths are table facts, not decoded from article suffixes; for example 44 31 J42 is
+310 mm and 46 31 A22 is 185 mm. Generic German names describe the tool class;
+manufacturer plus exact full article anchors every alias. Internal/external tool types
+remain distinct, with existing `product_kind=hand_tool` and no new attribute schema.
+
+`python3 tools/catalog-import/expand_knipex_circlip.py --check` verifies the authored seed
+against the reviewed proof and rejects duplicate IDs and normalized-alias collisions
+offline. All previous embedded seed JSON files remain byte-identical.
+
+Public manufacturer evidence was retrieved through the web tool's index/cache; a direct
+category open returned 403. No successful fresh origin HTTP200, bypass, production-year
+coverage or complete catalogue enumeration is claimed. Precision-series tools, spare tips,
+replacement springs, unselected articles, sets and unreviewed packaging variants are
+excluded. Related physical offers retain independent scope rather than claiming the
+whole tool. No GTIN, OEM fitment, machinery compatibility, ring capacity, tip dimension,
+finish, insulation rating, year, age, package contents, quantity or offer condition is
+inferred. Existing mechanical-parts evidence and fitment remain separate. Retailer-hosted
+Zündapp catalogue mirrors and OEM claims did not establish a selected manufacturer-verified
+cohort in this bounded review; no Zündapp OEM or fitment data is authored here. No
+manufacturer marketing descriptions or images are copied.

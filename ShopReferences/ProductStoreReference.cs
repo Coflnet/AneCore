@@ -40,9 +40,9 @@ public static class ProductStoreReferencePolicy
         && Uri.TryCreate(reference.Url, UriKind.Absolute, out var url) && url.Scheme == "https"
         && url.IsDefaultPort && url.UserInfo.Length == 0 && url.Query.Length == 0 && url.Fragment.Length == 0
         && (reference.Provider == "Lefeld" && url.Host == "www.lefeld.de" && Regex.IsMatch(url.AbsolutePath, @"^/(?:knipex|bahco)-[a-zA-Z0-9%-]+$")
-            || reference.Provider == "GoTools" && reference.Url == "https://www.gotools.de/werkstattbedarf/handwerkzeuge/zangen/knipex-kombizange-laenge-160-mm-poliert-kunststoffueberzug_144938_35930"
-                && reference.KnownProductId == "knipex-0301160" && reference.Brand == "KNIPEX" && Article(reference.Mpn) == "0301160"
-                && reference.MerchantSku == "35930" && reference.Gtin == "4003773013235");
+            || reference.Provider == "GoTools" && GoToolsArticles.ForProduct(reference.KnownProductId) is { } article
+                && reference.Url == article.Url && reference.Brand == "KNIPEX" && Article(reference.Mpn) == Article(article.Mpn)
+                && reference.MerchantSku == article.MerchantSku && reference.Gtin == article.Gtin);
 
     public static bool IsEligible(ProductStoreReference reference, Product product, IReadOnlyList<KnownProduct> catalogue, DateTimeOffset now)
     {

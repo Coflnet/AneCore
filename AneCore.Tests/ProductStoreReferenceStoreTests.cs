@@ -17,6 +17,8 @@ public class ProductStoreReferenceStoreTests
     private const string GoToolsUrl = "https://www.gotools.de/werkstattbedarf/handwerkzeuge/zangen/knipex-kombizange-laenge-160-mm-poliert-kunststoffueberzug_144938_35930";
     private static ProductStoreReference GoToolsQuote(DateTimeOffset observed) => Quote(observed) with
     { Provider = "GoTools", Url = GoToolsUrl, MerchantSku = "35930", Gtin = "4003773013235" };
+    private const string CobraUrl = "https://www.gotools.de/marken/knipex/knipex-wasserpumpenzange-cobra-laenge-250-mm-spannweite-46-mm-poliert_127452_18450";
+    private const string WrenchUrl = "https://www.gotools.de/werkstattbedarf/handwerkzeuge/sanitaerwerkzeuge/zangenschluessel/knipex-zangenschluessel-laenge-250-mm-spannweite-52-mm-verchromt-kunststoffueberzug_127591_18589";
 
     // The installed driver's generic GetValue<T>(string) is virtual; no wire serializer is needed.
     private sealed class FixtureRow(string column, object value) : Row
@@ -212,5 +214,23 @@ public class ProductStoreReferenceStoreTests
             _ => throw new ArgumentException(reason)
         };
         Assert.That(ProductStoreReferencePolicy.IsFresh(quote, now), Is.False, reason);
+    }
+
+    [TestCase("knipex-8701250", "87 01 250", "4003773022022", "18450", CobraUrl)]
+    [TestCase("knipex-8603250", "86 03 250", "4003773033837", "18589", WrenchUrl)]
+    public void ExpandedGoToolsArticlesRequireTheirOwnCompleteVerifiedTuple(string id, string mpn, string gtin, string sku, string url)
+    {
+        var now = DateTimeOffset.UtcNow;
+        var known = KnownProductSeed.LoadAll(includeExpandedCatalog: true).Single(k => k.Id == id);
+        var reference = GoToolsQuote(now.AddMinutes(-1)) with { KnownProductId = id, Mpn = mpn, Gtin = gtin, MerchantSku = sku, Url = url };
+        var product = new Product { SeoId = id, Name = known.Name, Brand = known.Brand, Model = known.Model };
+        Assert.That(ProductStoreReferencePolicy.IsEligible(reference, product, [known], now), Is.True);
+        foreach (var mixed in new[]
+        {
+            reference with { Url = GoToolsUrl }, reference with { Gtin = "4003773013235" },
+            reference with { MerchantSku = "35930" }, reference with { Mpn = "03 01 160" },
+            reference with { KnownProductId = Tool.Id }, reference with { Url = url + "?tracking=1" },
+            reference with { Mpn = mpn + " SB" }, reference with { Availability = "Unknown" }
+        }) Assert.That(ProductStoreReferencePolicy.IsFresh(mixed, now), Is.False, "approved articles cannot borrow one another's identity fields");
     }
 }
