@@ -32,15 +32,17 @@ public static class ProductStoreReferencePolicy
         && !Bundle.IsMatch(product.Name ?? "")
         && (product.Attributes?.TryGetValue("product_kind", out var kind) != true || kind == "hand_tool");
 
-    public static bool IsFresh(ProductStoreReference reference, DateTimeOffset now) => reference.Provider == "Lefeld"
-        && reference.Price > 0 && reference.Currency == "EUR" && reference.Availability is "InStock" or "LimitedAvailability"
+    public static bool IsFresh(ProductStoreReference reference, DateTimeOffset now) => reference.Price > 0 && reference.Currency == "EUR" && reference.Availability is "InStock" or "LimitedAvailability"
         && reference.Condition is "new" or "unknown" && reference.ObservedAt <= now && reference.ExpiresAt > now
         && reference.ExpiresAt == reference.ObservedAt.AddMinutes(15)
         && !string.IsNullOrWhiteSpace(reference.KnownProductId) && !string.IsNullOrWhiteSpace(reference.MerchantSku)
         && !string.IsNullOrWhiteSpace(reference.Brand) && !string.IsNullOrWhiteSpace(reference.Mpn)
-        && Uri.TryCreate(reference.Url, UriKind.Absolute, out var url) && url.Scheme == "https" && url.Host == "www.lefeld.de"
+        && Uri.TryCreate(reference.Url, UriKind.Absolute, out var url) && url.Scheme == "https"
         && url.IsDefaultPort && url.UserInfo.Length == 0 && url.Query.Length == 0 && url.Fragment.Length == 0
-        && Regex.IsMatch(url.AbsolutePath, @"^/(?:knipex|bahco)-[a-zA-Z0-9%-]+$");
+        && (reference.Provider == "Lefeld" && url.Host == "www.lefeld.de" && Regex.IsMatch(url.AbsolutePath, @"^/(?:knipex|bahco)-[a-zA-Z0-9%-]+$")
+            || reference.Provider == "GoTools" && reference.Url == "https://www.gotools.de/werkstattbedarf/handwerkzeuge/zangen/knipex-kombizange-laenge-160-mm-poliert-kunststoffueberzug_144938_35930"
+                && reference.KnownProductId == "knipex-0301160" && reference.Brand == "KNIPEX" && Article(reference.Mpn) == "0301160"
+                && reference.MerchantSku == "35930" && reference.Gtin == "4003773013235");
 
     public static bool IsEligible(ProductStoreReference reference, Product product, IReadOnlyList<KnownProduct> catalogue, DateTimeOffset now)
     {

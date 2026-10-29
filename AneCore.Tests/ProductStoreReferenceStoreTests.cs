@@ -14,6 +14,9 @@ public class ProductStoreReferenceStoreTests
         "https://www.lefeld.de/knipex-kombizange-03-01-160", "PUBLIC-FIXTURE", Tool.Brand, Tool.Model, null,
         10.07m, "EUR", "LimitedAvailability", "unknown", observed, observed.AddMinutes(15));
     private static string Payload(ProductStoreReference reference) => JsonSerializer.Serialize(reference);
+    private const string GoToolsUrl = "https://www.gotools.de/werkstattbedarf/handwerkzeuge/zangen/knipex-kombizange-laenge-160-mm-poliert-kunststoffueberzug_144938_35930";
+    private static ProductStoreReference GoToolsQuote(DateTimeOffset observed) => Quote(observed) with
+    { Provider = "GoTools", Url = GoToolsUrl, MerchantSku = "35930", Gtin = "4003773013235" };
 
     // The installed driver's generic GetValue<T>(string) is virtual; no wire serializer is needed.
     private sealed class FixtureRow(string column, object value) : Row
@@ -144,5 +147,70 @@ public class ProductStoreReferenceStoreTests
         current.IdentifierValue = Tool.Id;
         Assert.That(ProductStoreReferencePolicy.IsEligible(quote, current, [Tool], quote.ExpiresAt), Is.False);
         Assert.That(ProductStoreReferencePolicy.IsEligible(quote with { ExpiresAt = quote.ExpiresAt.AddSeconds(1) }, current, [Tool], now), Is.False);
+    }
+
+    [Test]
+    public void BothRetailersProveTheSameVerifiedArticleIndependently()
+    {
+        var now = DateTimeOffset.UtcNow;
+        var product = new Product { SeoId = Tool.Id, Name = Tool.Name, Brand = Tool.Brand, Model = Tool.Model,
+            IdentifierType = "catalogued_goods", IdentifierValue = Tool.Id };
+        foreach (var quote in new[] { Quote(now.AddMinutes(-1)), GoToolsQuote(now.AddMinutes(-1)) })
+        {
+            Assert.That(ProductStoreReferencePolicy.IsFresh(quote, now), Is.True, quote.Provider);
+            Assert.That(ProductStoreReferencePolicy.IsEligible(quote, product, [Tool], now), Is.True, quote.Provider);
+        }
+        product.Model = "03 01 160 EAN";
+        Assert.That(ProductStoreReferencePolicy.IsEligible(GoToolsQuote(now.AddMinutes(-1)), product, [Tool], now), Is.False,
+            "the base article quote cannot prove a differently packaged manufacturer article");
+    }
+
+    [TestCase("different GTIN")]
+    [TestCase("missing GTIN")]
+    [TestCase("different SKU")]
+    [TestCase("other manufacturer article")]
+    [TestCase("other brand")]
+    [TestCase("unknown provider")]
+    [TestCase("different product path")]
+    [TestCase("query")]
+    [TestCase("fragment")]
+    [TestCase("credentials")]
+    [TestCase("port")]
+    [TestCase("HTTP")]
+    [TestCase("merchant mismatch")]
+    [TestCase("expired")]
+    [TestCase("future")]
+    [TestCase("extended TTL")]
+    [TestCase("non-EUR")]
+    [TestCase("stock unknown")]
+    [TestCase("used")]
+    public void GoToolsCoverageCannotEscapeItsSingleVerifiedArticleAndFreshOffer(string reason)
+    {
+        var now = DateTimeOffset.UtcNow;
+        var quote = GoToolsQuote(now.AddMinutes(-1));
+        quote = reason switch
+        {
+            "different GTIN" => quote with { Gtin = "4003773022787" },
+            "missing GTIN" => quote with { Gtin = null },
+            "different SKU" => quote with { MerchantSku = "35931" },
+            "other manufacturer article" => quote with { Mpn = "03 01 160 EAN" },
+            "other brand" => quote with { Brand = "Bahco" },
+            "unknown provider" => quote with { Provider = "Unknown" },
+            "different product path" => quote with { Url = GoToolsUrl.Replace("_144938_35930", "_144938_35931") },
+            "query" => quote with { Url = GoToolsUrl + "?referrer=1" },
+            "fragment" => quote with { Url = GoToolsUrl + "#offer" },
+            "credentials" => quote with { Url = GoToolsUrl.Replace("https://", "https://someone@") },
+            "port" => quote with { Url = GoToolsUrl.Replace("www.gotools.de", "www.gotools.de:444") },
+            "HTTP" => quote with { Url = GoToolsUrl.Replace("https://", "http://") },
+            "merchant mismatch" => quote with { Url = GoToolsUrl.Replace("www.gotools.de", "www.lefeld.de") },
+            "expired" => quote with { ObservedAt = now.AddMinutes(-15), ExpiresAt = now },
+            "future" => GoToolsQuote(now.AddSeconds(1)),
+            "extended TTL" => quote with { ExpiresAt = quote.ExpiresAt.AddSeconds(1) },
+            "non-EUR" => quote with { Currency = "SEK" },
+            "stock unknown" => quote with { Availability = "Unknown" },
+            "used" => quote with { Condition = "used" },
+            _ => throw new ArgumentException(reason)
+        };
+        Assert.That(ProductStoreReferencePolicy.IsFresh(quote, now), Is.False, reason);
     }
 }
