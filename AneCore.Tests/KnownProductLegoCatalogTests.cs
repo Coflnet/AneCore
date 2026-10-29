@@ -12,7 +12,7 @@ public class KnownProductLegoCatalogTests
     public void EverySetHasAUniqueIdentityAndResolvesToItself()
     {
         var sets = Catalog.Where(p => p.Vertical == "lego").ToList();
-        Assert.That(sets, Has.Count.EqualTo(7754));
+        Assert.That(sets, Has.Count.EqualTo(7895));
         Assert.That(sets.Select(p => p.Id).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.Select(p => p.Model).Distinct().Count(), Is.EqualTo(sets.Count));
         Assert.That(sets.All(p => p.PossibleAttributes["set_number"].SetEquals(new[] { p.Model })), Is.True);

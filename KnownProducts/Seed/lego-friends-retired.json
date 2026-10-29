@@ -1,0 +1,3529 @@
+{
+  "products": [
+    {
+      "id": "lego-41300",
+      "brand": "LEGO",
+      "model": "41300",
+      "name": "LEGO 41300",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41300",
+        "LEGO 41300 Puppy Championship",
+        "LEGO Friends 41300",
+        "LEGO Set 41300"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41300"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41301",
+      "brand": "LEGO",
+      "model": "41301",
+      "name": "LEGO 41301",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41301",
+        "LEGO 41301 Puppy Parade",
+        "LEGO Friends 41301",
+        "LEGO Set 41301"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41301"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41302",
+      "brand": "LEGO",
+      "model": "41302",
+      "name": "LEGO 41302",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41302",
+        "LEGO 41302 Puppy Pampering",
+        "LEGO Friends 41302",
+        "LEGO Set 41302"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41302"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41303",
+      "brand": "LEGO",
+      "model": "41303",
+      "name": "LEGO 41303",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41303",
+        "LEGO 41303 Puppy Playground",
+        "LEGO Friends 41303",
+        "LEGO Set 41303"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41303"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41304",
+      "brand": "LEGO",
+      "model": "41304",
+      "name": "LEGO 41304",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41304",
+        "LEGO 41304 Puppy Treats & Tricks",
+        "LEGO Friends 41304",
+        "LEGO Set 41304"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41304"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41305",
+      "brand": "LEGO",
+      "model": "41305",
+      "name": "LEGO 41305",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41305",
+        "LEGO 41305 Emma's Photo Studio",
+        "LEGO Friends 41305",
+        "LEGO Set 41305"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41305"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41306",
+      "brand": "LEGO",
+      "model": "41306",
+      "name": "LEGO 41306",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41306",
+        "LEGO 41306 Mia's Beach Scooter",
+        "LEGO Friends 41306",
+        "LEGO Set 41306"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41306"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41307",
+      "brand": "LEGO",
+      "model": "41307",
+      "name": "LEGO 41307",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41307",
+        "LEGO 41307 Olivia's Creative Lab",
+        "LEGO Friends 41307",
+        "LEGO Set 41307"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41307"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41308",
+      "brand": "LEGO",
+      "model": "41308",
+      "name": "LEGO 41308",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41308",
+        "LEGO 41308 Stephanie's Friendship Cakes",
+        "LEGO Friends 41308",
+        "LEGO Set 41308"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41308"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41309",
+      "brand": "LEGO",
+      "model": "41309",
+      "name": "LEGO 41309",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41309",
+        "LEGO 41309 Andrea's Musical Duet",
+        "LEGO Friends 41309",
+        "LEGO Set 41309"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41309"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41310",
+      "brand": "LEGO",
+      "model": "41310",
+      "name": "LEGO 41310",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41310",
+        "LEGO 41310 Heartlake Gift Delivery",
+        "LEGO Friends 41310",
+        "LEGO Set 41310"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41310"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41311",
+      "brand": "LEGO",
+      "model": "41311",
+      "name": "LEGO 41311",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41311",
+        "LEGO 41311 Heartlake Pizzeria",
+        "LEGO Friends 41311",
+        "LEGO Set 41311"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41311"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41312",
+      "brand": "LEGO",
+      "model": "41312",
+      "name": "LEGO 41312",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41312",
+        "LEGO 41312 Heartlake Sports Center",
+        "LEGO Friends 41312",
+        "LEGO Set 41312"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41312"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41313",
+      "brand": "LEGO",
+      "model": "41313",
+      "name": "LEGO 41313",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41313",
+        "LEGO 41313 Heartlake Summer Pool",
+        "LEGO Friends 41313",
+        "LEGO Set 41313"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41313"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41314",
+      "brand": "LEGO",
+      "model": "41314",
+      "name": "LEGO 41314",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41314",
+        "LEGO 41314 Stephanie's House",
+        "LEGO Friends 41314",
+        "LEGO Set 41314"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41314"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41315",
+      "brand": "LEGO",
+      "model": "41315",
+      "name": "LEGO 41315",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41315",
+        "LEGO 41315 Heartlake Surf Shop",
+        "LEGO Friends 41315",
+        "LEGO Set 41315"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41315"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41316",
+      "brand": "LEGO",
+      "model": "41316",
+      "name": "LEGO 41316",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41316",
+        "LEGO 41316 Andrea's Speedboat Transporter",
+        "LEGO Friends 41316",
+        "LEGO Set 41316"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41316"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41317",
+      "brand": "LEGO",
+      "model": "41317",
+      "name": "LEGO 41317",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41317",
+        "LEGO 41317 Sunshine Catamaran",
+        "LEGO Friends 41317",
+        "LEGO Set 41317"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41317"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41318",
+      "brand": "LEGO",
+      "model": "41318",
+      "name": "LEGO 41318",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41318",
+        "LEGO 41318 Heartlake Hospital",
+        "LEGO Friends 41318",
+        "LEGO Set 41318"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41318"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41319",
+      "brand": "LEGO",
+      "model": "41319",
+      "name": "LEGO 41319",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41319",
+        "LEGO 41319 Snow Resort Hot Chocolate Van",
+        "LEGO Friends 41319",
+        "LEGO Set 41319"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41319"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41320",
+      "brand": "LEGO",
+      "model": "41320",
+      "name": "LEGO 41320",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41320",
+        "LEGO 41320 Heartlake Frozen Yogurt Shop",
+        "LEGO Friends 41320",
+        "LEGO Set 41320"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41320"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41321",
+      "brand": "LEGO",
+      "model": "41321",
+      "name": "LEGO 41321",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41321",
+        "LEGO 41321 Snow Resort Off-Roader",
+        "LEGO Friends 41321",
+        "LEGO Set 41321"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41321"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41322",
+      "brand": "LEGO",
+      "model": "41322",
+      "name": "LEGO 41322",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41322",
+        "LEGO 41322 Snow Resort Ice Rink",
+        "LEGO Friends 41322",
+        "LEGO Set 41322"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41322"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41323",
+      "brand": "LEGO",
+      "model": "41323",
+      "name": "LEGO 41323",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41323",
+        "LEGO 41323 Snow Resort Chalet",
+        "LEGO Friends 41323",
+        "LEGO Set 41323"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41323"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41324",
+      "brand": "LEGO",
+      "model": "41324",
+      "name": "LEGO 41324",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41324",
+        "LEGO 41324 Snow Resort Ski Lift",
+        "LEGO Friends 41324",
+        "LEGO Set 41324"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41324"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41325",
+      "brand": "LEGO",
+      "model": "41325",
+      "name": "LEGO 41325",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41325",
+        "LEGO 41325 Heartlake City Playground",
+        "LEGO Friends 41325",
+        "LEGO Set 41325"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41325"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41326",
+      "brand": "LEGO",
+      "model": "41326",
+      "name": "LEGO 41326",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41326",
+        "LEGO 41326 LEGO® Friends Advent Calendar",
+        "LEGO Friends 41326",
+        "LEGO Set 41326"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41326"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41327",
+      "brand": "LEGO",
+      "model": "41327",
+      "name": "LEGO 41327",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41327",
+        "LEGO 41327 Mia's Bedroom",
+        "LEGO Friends 41327",
+        "LEGO Set 41327"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41327"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41328",
+      "brand": "LEGO",
+      "model": "41328",
+      "name": "LEGO 41328",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41328",
+        "LEGO 41328 Stephanie's Bedroom",
+        "LEGO Friends 41328",
+        "LEGO Set 41328"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41328"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41329",
+      "brand": "LEGO",
+      "model": "41329",
+      "name": "LEGO 41329",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41329",
+        "LEGO 41329 Olivia's Deluxe Bedroom",
+        "LEGO Friends 41329",
+        "LEGO Set 41329"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41329"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41330",
+      "brand": "LEGO",
+      "model": "41330",
+      "name": "LEGO 41330",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41330",
+        "LEGO 41330 Stephanie's Soccer Practice",
+        "LEGO Friends 41330",
+        "LEGO Set 41330"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41330"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41332",
+      "brand": "LEGO",
+      "model": "41332",
+      "name": "LEGO 41332",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41332",
+        "LEGO 41332 Emma's Art Stand",
+        "LEGO Friends 41332",
+        "LEGO Set 41332"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41332"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41333",
+      "brand": "LEGO",
+      "model": "41333",
+      "name": "LEGO 41333",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41333",
+        "LEGO 41333 Olivia's Mission Vehicle",
+        "LEGO Friends 41333",
+        "LEGO Set 41333"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41333"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41334",
+      "brand": "LEGO",
+      "model": "41334",
+      "name": "LEGO 41334",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41334",
+        "LEGO 41334 Andrea's Park Performance",
+        "LEGO Friends 41334",
+        "LEGO Set 41334"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41334"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41335",
+      "brand": "LEGO",
+      "model": "41335",
+      "name": "LEGO 41335",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41335",
+        "LEGO 41335 Mia's Tree House",
+        "LEGO Friends 41335",
+        "LEGO Set 41335"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41335"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41336",
+      "brand": "LEGO",
+      "model": "41336",
+      "name": "LEGO 41336",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41336",
+        "LEGO 41336 Emma's Art Café",
+        "LEGO Friends 41336",
+        "LEGO Set 41336"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41336"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41337",
+      "brand": "LEGO",
+      "model": "41337",
+      "name": "LEGO 41337",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41337",
+        "LEGO 41337 Underwater Loop",
+        "LEGO Friends 41337",
+        "LEGO Set 41337"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41337"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41338",
+      "brand": "LEGO",
+      "model": "41338",
+      "name": "LEGO 41338",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41338",
+        "LEGO 41338 Stephanie's Sports Arena",
+        "LEGO Friends 41338",
+        "LEGO Set 41338"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41338"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41339",
+      "brand": "LEGO",
+      "model": "41339",
+      "name": "LEGO 41339",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41339",
+        "LEGO 41339 Mia's Camper Van",
+        "LEGO Friends 41339",
+        "LEGO Set 41339"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41339"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41340",
+      "brand": "LEGO",
+      "model": "41340",
+      "name": "LEGO 41340",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41340",
+        "LEGO 41340 Friendship House",
+        "LEGO Friends 41340",
+        "LEGO Set 41340"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41340"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41341",
+      "brand": "LEGO",
+      "model": "41341",
+      "name": "LEGO 41341",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41341",
+        "LEGO 41341 Andrea's Bedroom",
+        "LEGO Friends 41341",
+        "LEGO Set 41341"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41341"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41342",
+      "brand": "LEGO",
+      "model": "41342",
+      "name": "LEGO 41342",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41342",
+        "LEGO 41342 Emma's Deluxe Bedroom",
+        "LEGO Friends 41342",
+        "LEGO Set 41342"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41342"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41343",
+      "brand": "LEGO",
+      "model": "41343",
+      "name": "LEGO 41343",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41343",
+        "LEGO 41343 Heartlake City Airplane Tour",
+        "LEGO Friends 41343",
+        "LEGO Set 41343"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41343"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41344",
+      "brand": "LEGO",
+      "model": "41344",
+      "name": "LEGO 41344",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41344",
+        "LEGO 41344 Andrea's Accessories Store",
+        "LEGO Friends 41344",
+        "LEGO Set 41344"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41344"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41345",
+      "brand": "LEGO",
+      "model": "41345",
+      "name": "LEGO 41345",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41345",
+        "LEGO 41345 Heartlake City Pet Center",
+        "LEGO Friends 41345",
+        "LEGO Set 41345"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41345"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41346",
+      "brand": "LEGO",
+      "model": "41346",
+      "name": "LEGO 41346",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41346",
+        "LEGO 41346 Friendship Box",
+        "LEGO Friends 41346",
+        "LEGO Set 41346"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41346"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41347",
+      "brand": "LEGO",
+      "model": "41347",
+      "name": "LEGO 41347",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41347",
+        "LEGO 41347 Heartlake City Resort",
+        "LEGO Friends 41347",
+        "LEGO Set 41347"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41347"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41348",
+      "brand": "LEGO",
+      "model": "41348",
+      "name": "LEGO 41348",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41348",
+        "LEGO 41348 Service & Care Truck",
+        "LEGO Friends 41348",
+        "LEGO Set 41348"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41348"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41349",
+      "brand": "LEGO",
+      "model": "41349",
+      "name": "LEGO 41349",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41349",
+        "LEGO 41349 Drifting Diner",
+        "LEGO Friends 41349",
+        "LEGO Set 41349"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41349"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41350",
+      "brand": "LEGO",
+      "model": "41350",
+      "name": "LEGO 41350",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41350",
+        "LEGO 41350 Spinning Brushes Car Wash",
+        "LEGO Friends 41350",
+        "LEGO Set 41350"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41350"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41351",
+      "brand": "LEGO",
+      "model": "41351",
+      "name": "LEGO 41351",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41351",
+        "LEGO 41351 Creative Tuning Shop",
+        "LEGO Friends 41351",
+        "LEGO Set 41351"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41351"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41352",
+      "brand": "LEGO",
+      "model": "41352",
+      "name": "LEGO 41352",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41352",
+        "LEGO 41352 The Big Race Day",
+        "LEGO Friends 41352",
+        "LEGO Set 41352"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41352"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41353",
+      "brand": "LEGO",
+      "model": "41353",
+      "name": "LEGO 41353",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41353",
+        "LEGO 41353 LEGO® Friends Advent Calendar",
+        "LEGO Friends 41353",
+        "LEGO Set 41353"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41353"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41354",
+      "brand": "LEGO",
+      "model": "41354",
+      "name": "LEGO 41354",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41354",
+        "LEGO 41354 Andrea's Heart Box",
+        "LEGO Friends 41354",
+        "LEGO Set 41354"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41354"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41355",
+      "brand": "LEGO",
+      "model": "41355",
+      "name": "LEGO 41355",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41355",
+        "LEGO 41355 Emma's Heart Box",
+        "LEGO Friends 41355",
+        "LEGO Set 41355"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41355"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41356",
+      "brand": "LEGO",
+      "model": "41356",
+      "name": "LEGO 41356",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41356",
+        "LEGO 41356 Stephanie's Heart Box",
+        "LEGO Friends 41356",
+        "LEGO Set 41356"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41356"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41357",
+      "brand": "LEGO",
+      "model": "41357",
+      "name": "LEGO 41357",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41357",
+        "LEGO 41357 Olivia's Heart Box",
+        "LEGO Friends 41357",
+        "LEGO Set 41357"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41357"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41358",
+      "brand": "LEGO",
+      "model": "41358",
+      "name": "LEGO 41358",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41358",
+        "LEGO 41358 Mia's Heart Box",
+        "LEGO Friends 41358",
+        "LEGO Set 41358"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41358"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41359",
+      "brand": "LEGO",
+      "model": "41359",
+      "name": "LEGO 41359",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41359",
+        "LEGO 41359 Heart Box Friendship Pack",
+        "LEGO Friends 41359",
+        "LEGO Set 41359"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41359"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41360",
+      "brand": "LEGO",
+      "model": "41360",
+      "name": "LEGO 41360",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41360",
+        "LEGO 41360 Emma's Mobile Vet Clinic",
+        "LEGO Friends 41360",
+        "LEGO Set 41360"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41360"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41361",
+      "brand": "LEGO",
+      "model": "41361",
+      "name": "LEGO 41361",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41361",
+        "LEGO 41361 Mia's Foal Stable",
+        "LEGO Friends 41361",
+        "LEGO Set 41361"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41361"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41362",
+      "brand": "LEGO",
+      "model": "41362",
+      "name": "LEGO 41362",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41362",
+        "LEGO 41362 Heartlake City Supermarket",
+        "LEGO Friends 41362",
+        "LEGO Set 41362"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41362"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41363",
+      "brand": "LEGO",
+      "model": "41363",
+      "name": "LEGO 41363",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41363",
+        "LEGO 41363 Mia's Forest Adventure",
+        "LEGO Friends 41363",
+        "LEGO Set 41363"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41363"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41364",
+      "brand": "LEGO",
+      "model": "41364",
+      "name": "LEGO 41364",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41364",
+        "LEGO 41364 Stephanie's Buggy & Trailer",
+        "LEGO Friends 41364",
+        "LEGO Set 41364"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41364"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41365",
+      "brand": "LEGO",
+      "model": "41365",
+      "name": "LEGO 41365",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41365",
+        "LEGO 41365 Emma's Art Studio",
+        "LEGO Friends 41365",
+        "LEGO Set 41365"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41365"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41366",
+      "brand": "LEGO",
+      "model": "41366",
+      "name": "LEGO 41366",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41366",
+        "LEGO 41366 Olivia's Cupcake Café",
+        "LEGO Friends 41366",
+        "LEGO Set 41366"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41366"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41367",
+      "brand": "LEGO",
+      "model": "41367",
+      "name": "LEGO 41367",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41367",
+        "LEGO 41367 Stephanie's Horse Jumping",
+        "LEGO Friends 41367",
+        "LEGO Set 41367"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41367"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41368",
+      "brand": "LEGO",
+      "model": "41368",
+      "name": "LEGO 41368",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41368",
+        "LEGO 41368 Andrea's Talent Show",
+        "LEGO Friends 41368",
+        "LEGO Set 41368"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41368"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41369",
+      "brand": "LEGO",
+      "model": "41369",
+      "name": "LEGO 41369",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41369",
+        "LEGO 41369 Mia's House",
+        "LEGO Friends 41369",
+        "LEGO Set 41369"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41369"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41371",
+      "brand": "LEGO",
+      "model": "41371",
+      "name": "LEGO 41371",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41371",
+        "LEGO 41371 Mia's Horse Trailer",
+        "LEGO Friends 41371",
+        "LEGO Set 41371"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41371"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41372",
+      "brand": "LEGO",
+      "model": "41372",
+      "name": "LEGO 41372",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41372",
+        "LEGO 41372 Stephanie's Gymnastics Show",
+        "LEGO Friends 41372",
+        "LEGO Set 41372"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41372"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41373",
+      "brand": "LEGO",
+      "model": "41373",
+      "name": "LEGO 41373",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41373",
+        "LEGO 41373 Funny Octopus Ride",
+        "LEGO Friends 41373",
+        "LEGO Set 41373"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41373"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41374",
+      "brand": "LEGO",
+      "model": "41374",
+      "name": "LEGO 41374",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41374",
+        "LEGO 41374 Andrea's Pool Party",
+        "LEGO Friends 41374",
+        "LEGO Set 41374"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41374"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41375",
+      "brand": "LEGO",
+      "model": "41375",
+      "name": "LEGO 41375",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41375",
+        "LEGO 41375 Heartlake City Amusement Pier",
+        "LEGO Friends 41375",
+        "LEGO Set 41375"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41375"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41376",
+      "brand": "LEGO",
+      "model": "41376",
+      "name": "LEGO 41376",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41376",
+        "LEGO 41376 Turtles Rescue Mission",
+        "LEGO Friends 41376",
+        "LEGO Set 41376"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41376"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41378",
+      "brand": "LEGO",
+      "model": "41378",
+      "name": "LEGO 41378",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41378",
+        "LEGO 41378 Dolphins Rescue Mission",
+        "LEGO Friends 41378",
+        "LEGO Set 41378"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41378"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41379",
+      "brand": "LEGO",
+      "model": "41379",
+      "name": "LEGO 41379",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41379",
+        "LEGO 41379 Heartlake City Restaurant",
+        "LEGO Friends 41379",
+        "LEGO Set 41379"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41379"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41380",
+      "brand": "LEGO",
+      "model": "41380",
+      "name": "LEGO 41380",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41380",
+        "LEGO 41380 Lighthouse Rescue Center",
+        "LEGO Friends 41380",
+        "LEGO Set 41380"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41380"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41381",
+      "brand": "LEGO",
+      "model": "41381",
+      "name": "LEGO 41381",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41381",
+        "LEGO 41381 Rescue Mission Boat",
+        "LEGO Friends 41381",
+        "LEGO Set 41381"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41381"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41382",
+      "brand": "LEGO",
+      "model": "41382",
+      "name": "LEGO 41382",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41382",
+        "LEGO 41382 LEGO® Friends Advent Calendar",
+        "LEGO Friends 41382",
+        "LEGO Set 41382"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41382"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41383",
+      "brand": "LEGO",
+      "model": "41383",
+      "name": "LEGO 41383",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41383",
+        "LEGO 41383 Olivia's Hamster Playground",
+        "LEGO Friends 41383",
+        "LEGO Set 41383"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41383"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41384",
+      "brand": "LEGO",
+      "model": "41384",
+      "name": "LEGO 41384",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41384",
+        "LEGO 41384 Andrea's Summer Heart Box",
+        "LEGO Friends 41384",
+        "LEGO Set 41384"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41384"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41385",
+      "brand": "LEGO",
+      "model": "41385",
+      "name": "LEGO 41385",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41385",
+        "LEGO 41385 Emma's Summer Heart Box",
+        "LEGO Friends 41385",
+        "LEGO Set 41385"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41385"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41386",
+      "brand": "LEGO",
+      "model": "41386",
+      "name": "LEGO 41386",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41386",
+        "LEGO 41386 Stephanie's Summer Heart Box",
+        "LEGO Friends 41386",
+        "LEGO Set 41386"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41386"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41387",
+      "brand": "LEGO",
+      "model": "41387",
+      "name": "LEGO 41387",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41387",
+        "LEGO 41387 Olivia's Summer Heart Box",
+        "LEGO Friends 41387",
+        "LEGO Set 41387"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41387"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41388",
+      "brand": "LEGO",
+      "model": "41388",
+      "name": "LEGO 41388",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41388",
+        "LEGO 41388 Mia's Summer Heart Box",
+        "LEGO Friends 41388",
+        "LEGO Set 41388"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41388"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41389",
+      "brand": "LEGO",
+      "model": "41389",
+      "name": "LEGO 41389",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41389",
+        "LEGO 41389 Ice Cream Cart",
+        "LEGO Friends 41389",
+        "LEGO Set 41389"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41389"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41390",
+      "brand": "LEGO",
+      "model": "41390",
+      "name": "LEGO 41390",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41390",
+        "LEGO 41390 Andrea's Car & Stage",
+        "LEGO Friends 41390",
+        "LEGO Set 41390"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41390"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41391",
+      "brand": "LEGO",
+      "model": "41391",
+      "name": "LEGO 41391",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41391",
+        "LEGO 41391 Heartlake City Hair Salon",
+        "LEGO Friends 41391",
+        "LEGO Set 41391"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41391"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41392",
+      "brand": "LEGO",
+      "model": "41392",
+      "name": "LEGO 41392",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41392",
+        "LEGO 41392 Nature Glamping",
+        "LEGO Friends 41392",
+        "LEGO Set 41392"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41392"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41393",
+      "brand": "LEGO",
+      "model": "41393",
+      "name": "LEGO 41393",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41393",
+        "LEGO 41393 Baking Competition",
+        "LEGO Friends 41393",
+        "LEGO Set 41393"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41393"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41394",
+      "brand": "LEGO",
+      "model": "41394",
+      "name": "LEGO 41394",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41394",
+        "LEGO 41394 Heartlake City Hospital",
+        "LEGO Friends 41394",
+        "LEGO Set 41394"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41394"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41395",
+      "brand": "LEGO",
+      "model": "41395",
+      "name": "LEGO 41395",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41395",
+        "LEGO 41395 Friendship Bus",
+        "LEGO Friends 41395",
+        "LEGO Set 41395"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41395"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41396",
+      "brand": "LEGO",
+      "model": "41396",
+      "name": "LEGO 41396",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41396",
+        "LEGO 41396 Puppy Playground",
+        "LEGO Friends 41396",
+        "LEGO Set 41396"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41396"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41397",
+      "brand": "LEGO",
+      "model": "41397",
+      "name": "LEGO 41397",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41397",
+        "LEGO 41397 Juice Truck",
+        "LEGO Friends 41397",
+        "LEGO Set 41397"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41397"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41398",
+      "brand": "LEGO",
+      "model": "41398",
+      "name": "LEGO 41398",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41398",
+        "LEGO 41398 4+ Stephanie's House",
+        "LEGO Friends 41398",
+        "LEGO Set 41398"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41398"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41400",
+      "brand": "LEGO",
+      "model": "41400",
+      "name": "LEGO 41400",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41400",
+        "LEGO 41400 Andrea's Play Cube",
+        "LEGO Friends 41400",
+        "LEGO Set 41400"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41400"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41401",
+      "brand": "LEGO",
+      "model": "41401",
+      "name": "LEGO 41401",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41401",
+        "LEGO 41401 Stephanie's Play Cube",
+        "LEGO Friends 41401",
+        "LEGO Set 41401"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41401"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41402",
+      "brand": "LEGO",
+      "model": "41402",
+      "name": "LEGO 41402",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41402",
+        "LEGO 41402 Olivia's Play Cube",
+        "LEGO Friends 41402",
+        "LEGO Set 41402"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41402"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41403",
+      "brand": "LEGO",
+      "model": "41403",
+      "name": "LEGO 41403",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41403",
+        "LEGO 41403 Mia's Play Cube",
+        "LEGO Friends 41403",
+        "LEGO Set 41403"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41403"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41404",
+      "brand": "LEGO",
+      "model": "41404",
+      "name": "LEGO 41404",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41404",
+        "LEGO 41404 Emma's Play Cube",
+        "LEGO Friends 41404",
+        "LEGO Set 41404"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41404"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41405",
+      "brand": "LEGO",
+      "model": "41405",
+      "name": "LEGO 41405",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41405",
+        "LEGO 41405 Andrea's Shopping Play Cube",
+        "LEGO Friends 41405",
+        "LEGO Set 41405"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41405"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41406",
+      "brand": "LEGO",
+      "model": "41406",
+      "name": "LEGO 41406",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41406",
+        "LEGO 41406 Stephanie's Shopping Play Cube",
+        "LEGO Friends 41406",
+        "LEGO Set 41406"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41406"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41407",
+      "brand": "LEGO",
+      "model": "41407",
+      "name": "LEGO 41407",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41407",
+        "LEGO 41407 Olivia's Shopping Play Cube",
+        "LEGO Friends 41407",
+        "LEGO Set 41407"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41407"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41408",
+      "brand": "LEGO",
+      "model": "41408",
+      "name": "LEGO 41408",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41408",
+        "LEGO 41408 Mia's Shopping Play Cube",
+        "LEGO Friends 41408",
+        "LEGO Set 41408"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41408"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41409",
+      "brand": "LEGO",
+      "model": "41409",
+      "name": "LEGO 41409",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41409",
+        "LEGO 41409 Emma's Shopping Play Cube",
+        "LEGO Friends 41409",
+        "LEGO Set 41409"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41409"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41410",
+      "brand": "LEGO",
+      "model": "41410",
+      "name": "LEGO 41410",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41410",
+        "LEGO 41410 Andrea's Summer Play Cube",
+        "LEGO Friends 41410",
+        "LEGO Set 41410"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41410"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41411",
+      "brand": "LEGO",
+      "model": "41411",
+      "name": "LEGO 41411",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41411",
+        "LEGO 41411 Stephanie's Summer Play Cube",
+        "LEGO Friends 41411",
+        "LEGO Set 41411"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41411"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41412",
+      "brand": "LEGO",
+      "model": "41412",
+      "name": "LEGO 41412",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41412",
+        "LEGO 41412 Olivia's Summer Play Cube",
+        "LEGO Friends 41412",
+        "LEGO Set 41412"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41412"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41413",
+      "brand": "LEGO",
+      "model": "41413",
+      "name": "LEGO 41413",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41413",
+        "LEGO 41413 Mia's Summer Play Cube",
+        "LEGO Friends 41413",
+        "LEGO Set 41413"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41413"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41414",
+      "brand": "LEGO",
+      "model": "41414",
+      "name": "LEGO 41414",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41414",
+        "LEGO 41414 Emma's Summer Play Cube",
+        "LEGO Friends 41414",
+        "LEGO Set 41414"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41414"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41421",
+      "brand": "LEGO",
+      "model": "41421",
+      "name": "LEGO 41421",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41421",
+        "LEGO 41421 Baby Elephant Jungle Rescue",
+        "LEGO Friends 41421",
+        "LEGO Set 41421"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41421"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41422",
+      "brand": "LEGO",
+      "model": "41422",
+      "name": "LEGO 41422",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41422",
+        "LEGO 41422 Panda Jungle Tree House",
+        "LEGO Friends 41422",
+        "LEGO Set 41422"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41422"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41423",
+      "brand": "LEGO",
+      "model": "41423",
+      "name": "LEGO 41423",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41423",
+        "LEGO 41423 Tiger Hot Air Balloon Jungle Rescue",
+        "LEGO Friends 41423",
+        "LEGO Set 41423"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41423"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41424",
+      "brand": "LEGO",
+      "model": "41424",
+      "name": "LEGO 41424",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41424",
+        "LEGO 41424 Jungle Rescue Base",
+        "LEGO Friends 41424",
+        "LEGO Set 41424"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41424"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41425",
+      "brand": "LEGO",
+      "model": "41425",
+      "name": "LEGO 41425",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41425",
+        "LEGO 41425 Olivia's Flower Garden",
+        "LEGO Friends 41425",
+        "LEGO Set 41425"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41425"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41426",
+      "brand": "LEGO",
+      "model": "41426",
+      "name": "LEGO 41426",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41426",
+        "LEGO 41426 Heartlake City Park Café",
+        "LEGO Friends 41426",
+        "LEGO Set 41426"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41426"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41427",
+      "brand": "LEGO",
+      "model": "41427",
+      "name": "LEGO 41427",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41427",
+        "LEGO 41427 Emma's Fashion Shop",
+        "LEGO Friends 41427",
+        "LEGO Set 41427"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41427"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41428",
+      "brand": "LEGO",
+      "model": "41428",
+      "name": "LEGO 41428",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41428",
+        "LEGO 41428 Beach House",
+        "LEGO Friends 41428",
+        "LEGO Set 41428"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41428"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41429",
+      "brand": "LEGO",
+      "model": "41429",
+      "name": "LEGO 41429",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41429",
+        "LEGO 41429 Heartlake City Airplane",
+        "LEGO Friends 41429",
+        "LEGO Set 41429"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41429"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41430",
+      "brand": "LEGO",
+      "model": "41430",
+      "name": "LEGO 41430",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41430",
+        "LEGO 41430 Summer Fun Water Park",
+        "LEGO Friends 41430",
+        "LEGO Set 41430"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41430"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41431",
+      "brand": "LEGO",
+      "model": "41431",
+      "name": "LEGO 41431",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41431",
+        "LEGO 41431 Heartlake City Brick Box",
+        "LEGO Friends 41431",
+        "LEGO Set 41431"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41431"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41432",
+      "brand": "LEGO",
+      "model": "41432",
+      "name": "LEGO 41432",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41432",
+        "LEGO 41432 Alpaca Mountain Jungle Rescue",
+        "LEGO Friends 41432",
+        "LEGO Set 41432"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41432"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41433",
+      "brand": "LEGO",
+      "model": "41433",
+      "name": "LEGO 41433",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41433",
+        "LEGO 41433 Party Boat",
+        "LEGO Friends 41433",
+        "LEGO Set 41433"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41433"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41434",
+      "brand": "LEGO",
+      "model": "41434",
+      "name": "LEGO 41434",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41434",
+        "LEGO 41434 Andrea's Jungle Play Cube",
+        "LEGO Friends 41434",
+        "LEGO Set 41434"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41434"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41435",
+      "brand": "LEGO",
+      "model": "41435",
+      "name": "LEGO 41435",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41435",
+        "LEGO 41435 Stephanie's Jungle Play Cube",
+        "LEGO Friends 41435",
+        "LEGO Set 41435"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41435"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41436",
+      "brand": "LEGO",
+      "model": "41436",
+      "name": "LEGO 41436",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41436",
+        "LEGO 41436 Olivia's Jungle Play Cube",
+        "LEGO Friends 41436",
+        "LEGO Set 41436"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41436"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41437",
+      "brand": "LEGO",
+      "model": "41437",
+      "name": "LEGO 41437",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41437",
+        "LEGO 41437 Mia's Jungle Play Cube",
+        "LEGO Friends 41437",
+        "LEGO Set 41437"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41437"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41438",
+      "brand": "LEGO",
+      "model": "41438",
+      "name": "LEGO 41438",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41438",
+        "LEGO 41438 Emma's Jungle Play Cube",
+        "LEGO Friends 41438",
+        "LEGO Set 41438"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41438"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41439",
+      "brand": "LEGO",
+      "model": "41439",
+      "name": "LEGO 41439",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41439",
+        "LEGO 41439 Cat Grooming Car",
+        "LEGO Friends 41439",
+        "LEGO Set 41439"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41439"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41440",
+      "brand": "LEGO",
+      "model": "41440",
+      "name": "LEGO 41440",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41440",
+        "LEGO 41440 Heartlake City Bakery",
+        "LEGO Friends 41440",
+        "LEGO Set 41440"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41440"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41441",
+      "brand": "LEGO",
+      "model": "41441",
+      "name": "LEGO 41441",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41441",
+        "LEGO 41441 Horse Training and Trailer",
+        "LEGO Friends 41441",
+        "LEGO Set 41441"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41441"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41442",
+      "brand": "LEGO",
+      "model": "41442",
+      "name": "LEGO 41442",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41442",
+        "LEGO 41442 Vet Clinic Rescue Buggy",
+        "LEGO Friends 41442",
+        "LEGO Set 41442"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41442"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41443",
+      "brand": "LEGO",
+      "model": "41443",
+      "name": "LEGO 41443",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41443",
+        "LEGO 41443 Olivia's Electric Car",
+        "LEGO Friends 41443",
+        "LEGO Set 41443"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41443"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41444",
+      "brand": "LEGO",
+      "model": "41444",
+      "name": "LEGO 41444",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41444",
+        "LEGO 41444 Heartlake City Organic Café",
+        "LEGO Friends 41444",
+        "LEGO Set 41444"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41444"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41445",
+      "brand": "LEGO",
+      "model": "41445",
+      "name": "LEGO 41445",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41445",
+        "LEGO 41445 Vet Clinic Ambulance",
+        "LEGO Friends 41445",
+        "LEGO Set 41445"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41445"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41446",
+      "brand": "LEGO",
+      "model": "41446",
+      "name": "LEGO 41446",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41446",
+        "LEGO 41446 Heartlake City Vet Clinic",
+        "LEGO Friends 41446",
+        "LEGO Set 41446"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41446"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41447",
+      "brand": "LEGO",
+      "model": "41447",
+      "name": "LEGO 41447",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41447",
+        "LEGO 41447 Heartlake City Park",
+        "LEGO Friends 41447",
+        "LEGO Set 41447"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41447"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41448",
+      "brand": "LEGO",
+      "model": "41448",
+      "name": "LEGO 41448",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41448",
+        "LEGO 41448 Heartlake City Movie Theater",
+        "LEGO Friends 41448",
+        "LEGO Set 41448"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41448"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41449",
+      "brand": "LEGO",
+      "model": "41449",
+      "name": "LEGO 41449",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41449",
+        "LEGO 41449 Andrea's Family House",
+        "LEGO Friends 41449",
+        "LEGO Set 41449"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41449"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    },
+    {
+      "id": "lego-41450",
+      "brand": "LEGO",
+      "model": "41450",
+      "name": "LEGO 41450",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 41450",
+        "LEGO 41450 Heartlake City Shopping Mall",
+        "LEGO Friends 41450",
+        "LEGO Set 41450"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "41450"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-friends-retired-2026-10-29-r48"
+    }
+  ]
+}

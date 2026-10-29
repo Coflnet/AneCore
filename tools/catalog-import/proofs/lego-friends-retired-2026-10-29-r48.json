@@ -1,0 +1,1500 @@
+{
+  "checked_at": "2026-10-29",
+  "method": "Official LEGO English instruction panels and retired product identity headers retrieved via normal public web-tool index/cache access. No fresh originHTTP200 or complete theme/range enumeration claimed. Product body descriptions are not identity evidence; exact H1 plus printed number/theme header only.",
+  "scope": "Missing LEGO Friends printed set identities, one row per exact number; no locale-edition duplicates. Names are factual source titles used only as number-anchored aliases. Only set_number is a product attribute: no GTIN, age/year, fit, inventory, offer completeness, condition or pricing inferred. Panel ages/pieces remain evidence only.",
+  "omitted_unverified": [
+    "41331",
+    "41370",
+    "41377",
+    "41399",
+    "41415",
+    "41416",
+    "41417",
+    "41418",
+    "41419",
+    "41420"
+  ],
+  "omission_limit": "These identifiers were not imported; unsuccessful public retrieval is not a claim that they do not exist.",
+  "facts": [
+    {
+      "number": "41300",
+      "name": "Puppy Championship",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41300",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Championship",
+        "printed_number": "#41300",
+        "panel": "5-12 | #41300 | 185 pieces"
+      }
+    },
+    {
+      "number": "41301",
+      "name": "Puppy Parade",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41301",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Parade",
+        "printed_number": "#41301",
+        "panel": "5-12 | #41301 | 145 pieces"
+      }
+    },
+    {
+      "number": "41302",
+      "name": "Puppy Pampering",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41302",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Pampering",
+        "printed_number": "#41302",
+        "panel": "5-12 | #41302 | 45 pieces"
+      }
+    },
+    {
+      "number": "41303",
+      "name": "Puppy Playground",
+      "source_url": "https://www.lego.com/en-ie/service/buildinginstructions/41303",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Playground",
+        "printed_number": "#41303",
+        "panel": "5-12 | #41303 | 62 pieces"
+      }
+    },
+    {
+      "number": "41304",
+      "name": "Puppy Treats & Tricks",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41304",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Treats & Tricks",
+        "printed_number": "#41304",
+        "panel": "5-12 | #41304 | 45 pieces"
+      }
+    },
+    {
+      "number": "41305",
+      "name": "Emma's Photo Studio",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41305",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Emma's Photo Studio",
+        "printed_number": "#41305",
+        "panel": "5-12 | #41305 | 96 pieces"
+      }
+    },
+    {
+      "number": "41306",
+      "name": "Mia's Beach Scooter",
+      "source_url": "https://www.lego.com/en-us/product/mias-beach-scooter-41306?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Beach Scooter",
+        "theme_and_printed_number": "Friends#41306"
+      }
+    },
+    {
+      "number": "41307",
+      "name": "Olivia's Creative Lab",
+      "source_url": "https://www.lego.com/en-us/product/olivias-creative-lab-41307",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Creative Lab",
+        "theme_and_printed_number": "Friends#41307"
+      }
+    },
+    {
+      "number": "41308",
+      "name": "Stephanie's Friendship Cakes",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-friendship-cakes-41308?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's Friendship Cakes",
+        "theme_and_printed_number": "Friends#41308"
+      }
+    },
+    {
+      "number": "41309",
+      "name": "Andrea's Musical Duet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41309",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Musical Duet",
+        "printed_number": "#41309",
+        "panel": "5-12 | #41309 | 86 pieces"
+      }
+    },
+    {
+      "number": "41310",
+      "name": "Heartlake Gift Delivery",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41310",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake Gift Delivery",
+        "printed_number": "#41310",
+        "panel": "6-12 | #41310 | 185 pieces"
+      }
+    },
+    {
+      "number": "41311",
+      "name": "Heartlake Pizzeria",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41311",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake Pizzeria",
+        "printed_number": "#41311",
+        "panel": "6-12 | #41311 | 289 pieces"
+      }
+    },
+    {
+      "number": "41312",
+      "name": "Heartlake Sports Center",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-sports-center-41312",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake Sports Center",
+        "theme_and_printed_number": "Friends#41312"
+      }
+    },
+    {
+      "number": "41313",
+      "name": "Heartlake Summer Pool",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-summer-pool-41313",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake Summer Pool",
+        "theme_and_printed_number": "Friends#41313"
+      }
+    },
+    {
+      "number": "41314",
+      "name": "Stephanie's House",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-house-41314?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's House",
+        "theme_and_printed_number": "Friends#41314"
+      }
+    },
+    {
+      "number": "41315",
+      "name": "Heartlake Surf Shop",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-surf-shop-41315",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake Surf Shop",
+        "theme_and_printed_number": "Friends#41315"
+      }
+    },
+    {
+      "number": "41316",
+      "name": "Andrea's Speedboat Transporter",
+      "source_url": "https://www.lego.com/en-gb/product/andreas-speedboat-transporter-41316",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Andrea's Speedboat Transporter",
+        "theme_and_printed_number": "Friends#41316"
+      }
+    },
+    {
+      "number": "41317",
+      "name": "Sunshine Catamaran",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41317?age-gate=grown_up",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sunshine Catamaran",
+        "printed_number": "#41317",
+        "panel": "7-12 | #41317 | 603 pieces"
+      }
+    },
+    {
+      "number": "41318",
+      "name": "Heartlake Hospital",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41318",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake Hospital",
+        "printed_number": "#41318",
+        "panel": "7-12 | #41318 | 871 pieces"
+      }
+    },
+    {
+      "number": "41319",
+      "name": "Snow Resort Hot Chocolate Van",
+      "source_url": "https://www.lego.com/en-us/product/snow-resort-hot-chocolate-van-41319",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Snow Resort Hot Chocolate Van",
+        "theme_and_printed_number": "Friends#41319"
+      }
+    },
+    {
+      "number": "41320",
+      "name": "Heartlake Frozen Yogurt Shop",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-frozen-yogurt-shop-41320?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake Frozen Yogurt Shop",
+        "theme_and_printed_number": "Friends#41320"
+      }
+    },
+    {
+      "number": "41321",
+      "name": "Snow Resort Off-Roader",
+      "source_url": "https://www.lego.com/en-us/product/snow-resort-off-roader-41321",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Snow Resort Off-Roader",
+        "theme_and_printed_number": "Friends#41321"
+      }
+    },
+    {
+      "number": "41322",
+      "name": "Snow Resort Ice Rink",
+      "source_url": "https://www.lego.com/en-us/product/snow-resort-ice-rink-41322?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Snow Resort Ice Rink",
+        "theme_and_printed_number": "Friends#41322"
+      }
+    },
+    {
+      "number": "41323",
+      "name": "Snow Resort Chalet",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41323",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Snow Resort Chalet",
+        "printed_number": "#41323",
+        "panel": "7-12 | #41323 | 402 pieces"
+      }
+    },
+    {
+      "number": "41324",
+      "name": "Snow Resort Ski Lift",
+      "source_url": "https://www.lego.com/en-us/product/snow-resort-ski-lift-41324",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Snow Resort Ski Lift",
+        "theme_and_printed_number": "Friends#41324"
+      }
+    },
+    {
+      "number": "41325",
+      "name": "Heartlake City Playground",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-playground-41325",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Playground",
+        "theme_and_printed_number": "Friends#41325"
+      }
+    },
+    {
+      "number": "41326",
+      "name": "LEGO® Friends Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41326?opt-out-modal=show",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Friends Advent Calendar",
+        "printed_number": "#41326",
+        "panel": "5-12 | #41326 | 217 pieces"
+      }
+    },
+    {
+      "number": "41327",
+      "name": "Mia's Bedroom",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41327",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Bedroom",
+        "printed_number": "#41327",
+        "panel": "6-12 | #41327 | 86 pieces"
+      }
+    },
+    {
+      "number": "41328",
+      "name": "Stephanie's Bedroom",
+      "source_url": "https://www.lego.com/en-nl/product/stephanies-bedroom-41328",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's Bedroom",
+        "theme_and_printed_number": "Friends#41328"
+      }
+    },
+    {
+      "number": "41329",
+      "name": "Olivia's Deluxe Bedroom",
+      "source_url": "https://www.lego.com/en-us/product/olivias-deluxe-bedroom-41329",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Deluxe Bedroom",
+        "theme_and_printed_number": "Friends#41329"
+      }
+    },
+    {
+      "number": "41330",
+      "name": "Stephanie's Soccer Practice",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-soccer-practice-41330?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's Soccer Practice",
+        "theme_and_printed_number": "Friends#41330"
+      }
+    },
+    {
+      "number": "41332",
+      "name": "Emma's Art Stand",
+      "source_url": "https://www.lego.com/en-us/product/emmas-art-stand-41332",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Art Stand",
+        "theme_and_printed_number": "Friends#41332"
+      }
+    },
+    {
+      "number": "41333",
+      "name": "Olivia's Mission Vehicle",
+      "source_url": "https://www.lego.com/en-us/product/olivias-mission-vehicle-41333",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Mission Vehicle",
+        "theme_and_printed_number": "Friends#41333"
+      }
+    },
+    {
+      "number": "41334",
+      "name": "Andrea's Park Performance",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41334",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Park Performance",
+        "printed_number": "#41334",
+        "panel": "6-12 | #41334 | 229 pieces"
+      }
+    },
+    {
+      "number": "41335",
+      "name": "Mia's Tree House",
+      "source_url": "https://www.lego.com/en-us/product/mia-s-tree-house-41335",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Tree House",
+        "theme_and_printed_number": "Friends#41335"
+      }
+    },
+    {
+      "number": "41336",
+      "name": "Emma's Art Café",
+      "source_url": "https://www.lego.com/en-us/product/emmas-art-cafe-41336?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Art Café",
+        "theme_and_printed_number": "Friends#41336"
+      }
+    },
+    {
+      "number": "41337",
+      "name": "Underwater Loop",
+      "source_url": "https://www.lego.com/en-us/service/buildinginstructions/41337",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Underwater Loop",
+        "printed_number": "#41337",
+        "panel": "7+ | #41337 | 389 pieces"
+      }
+    },
+    {
+      "number": "41338",
+      "name": "Stephanie's Sports Arena",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-sports-arena-41338?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's Sports Arena",
+        "theme_and_printed_number": "Friends#41338"
+      }
+    },
+    {
+      "number": "41339",
+      "name": "Mia's Camper Van",
+      "source_url": "https://www.lego.com/en-us/product/mias-camper-van-41339",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Camper Van",
+        "theme_and_printed_number": "Friends#41339"
+      }
+    },
+    {
+      "number": "41340",
+      "name": "Friendship House",
+      "source_url": "https://www.lego.com/en-us/product/friendship-house-41340",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Friendship House",
+        "theme_and_printed_number": "Friends#41340"
+      }
+    },
+    {
+      "number": "41341",
+      "name": "Andrea's Bedroom",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41341?opt-out-modal=show",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Bedroom",
+        "printed_number": "#41341",
+        "panel": "6-12 | #41341 | 85 pieces"
+      }
+    },
+    {
+      "number": "41342",
+      "name": "Emma's Deluxe Bedroom",
+      "source_url": "https://www.lego.com/en-us/product/emmas-deluxe-bedroom-41342",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Deluxe Bedroom",
+        "theme_and_printed_number": "Friends#41342"
+      }
+    },
+    {
+      "number": "41343",
+      "name": "Heartlake City Airplane Tour",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41343",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Airplane Tour",
+        "printed_number": "#41343",
+        "panel": "6-12 | #41343 | 323 pieces"
+      }
+    },
+    {
+      "number": "41344",
+      "name": "Andrea's Accessories Store",
+      "source_url": "https://www.lego.com/en-us/product/andreas-accessories-store-41344?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Andrea's Accessories Store",
+        "theme_and_printed_number": "Friends#41344"
+      }
+    },
+    {
+      "number": "41345",
+      "name": "Heartlake City Pet Center",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-pet-center-41345?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Pet Center",
+        "theme_and_printed_number": "Friends#41345"
+      }
+    },
+    {
+      "number": "41346",
+      "name": "Friendship Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41346",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Friendship Box",
+        "printed_number": "#41346",
+        "panel": "6-12 | #41346 | 563 pieces"
+      }
+    },
+    {
+      "number": "41347",
+      "name": "Heartlake City Resort",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-resort-41347",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Resort",
+        "theme_and_printed_number": "Friends#41347"
+      }
+    },
+    {
+      "number": "41348",
+      "name": "Service & Care Truck",
+      "source_url": "https://www.lego.com/en-us/product/service-care-truck-41348",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Service & Care Truck",
+        "theme_and_printed_number": "Friends#41348"
+      }
+    },
+    {
+      "number": "41349",
+      "name": "Drifting Diner",
+      "source_url": "https://www.lego.com/en-gb/product/drifting-diner-41349",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Drifting Diner",
+        "theme_and_printed_number": "Friends#41349"
+      }
+    },
+    {
+      "number": "41350",
+      "name": "Spinning Brushes Car Wash",
+      "source_url": "https://www.lego.com/en-us/product/spinning-brushes-car-wash-41350",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Spinning Brushes Car Wash",
+        "theme_and_printed_number": "Friends#41350"
+      }
+    },
+    {
+      "number": "41351",
+      "name": "Creative Tuning Shop",
+      "source_url": "https://www.lego.com/en-us/product/creative-tuning-shop-41351",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41351",
+        "h1": "Creative Tuning Shop"
+      }
+    },
+    {
+      "number": "41352",
+      "name": "The Big Race Day",
+      "source_url": "https://www.lego.com/en-us/product/the-big-race-day-41352?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41352",
+        "h1": "The Big Race Day"
+      }
+    },
+    {
+      "number": "41353",
+      "name": "LEGO® Friends Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41353",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Friends Advent Calendar",
+        "printed_number": "#41353",
+        "panel": "6-12 | #41353 | 500 pieces"
+      }
+    },
+    {
+      "number": "41354",
+      "name": "Andrea's Heart Box",
+      "source_url": "https://www.lego.com/en-us/product/andreas-heart-box-41354",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41354",
+        "h1": "Andrea's Heart Box"
+      }
+    },
+    {
+      "number": "41355",
+      "name": "Emma's Heart Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41355",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Emma's Heart Box",
+        "printed_number": "#41355",
+        "panel": "6+ | #41355 | 85 pieces"
+      }
+    },
+    {
+      "number": "41356",
+      "name": "Stephanie's Heart Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41356?opt-out-modal=show",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Heart Box",
+        "printed_number": "#41356",
+        "panel": "6+ | #41356 | 85 pieces"
+      }
+    },
+    {
+      "number": "41357",
+      "name": "Olivia's Heart Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41357",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Olivia's Heart Box",
+        "printed_number": "#41357",
+        "panel": "6+ | #41357 | 85 pieces"
+      }
+    },
+    {
+      "number": "41358",
+      "name": "Mia's Heart Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41358",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Heart Box",
+        "printed_number": "#41358",
+        "panel": "6+ | #41358 | 83 pieces"
+      }
+    },
+    {
+      "number": "41359",
+      "name": "Heart Box Friendship Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41359",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heart Box Friendship Pack",
+        "printed_number": "#41359",
+        "panel": "6+ | #41359 | 199 pieces"
+      }
+    },
+    {
+      "number": "41360",
+      "name": "Emma's Mobile Vet Clinic",
+      "source_url": "https://www.lego.com/en-us/product/emmas-mobile-vet-clinic-41360",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41360",
+        "h1": "Emma's Mobile Vet Clinic"
+      }
+    },
+    {
+      "number": "41361",
+      "name": "Mia's Foal Stable",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41361",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Foal Stable",
+        "printed_number": "#41361",
+        "panel": "4+ | #41361 | 118 pieces"
+      }
+    },
+    {
+      "number": "41362",
+      "name": "Heartlake City Supermarket",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41362",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Supermarket",
+        "printed_number": "#41362",
+        "panel": "4+ | #41362 | 140 pieces"
+      }
+    },
+    {
+      "number": "41363",
+      "name": "Mia's Forest Adventure",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41363",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Forest Adventure",
+        "printed_number": "#41363",
+        "panel": "6+ | #41363 | 134 pieces"
+      }
+    },
+    {
+      "number": "41364",
+      "name": "Stephanie's Buggy & Trailer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41364",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Buggy & Trailer",
+        "printed_number": "#41364",
+        "panel": "6+ | #41364 | 166 pieces"
+      }
+    },
+    {
+      "number": "41365",
+      "name": "Emma's Art Studio",
+      "source_url": "https://www.lego.com/en-us/product/emmas-art-studio-41365?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41365",
+        "h1": "Emma's Art Studio"
+      }
+    },
+    {
+      "number": "41366",
+      "name": "Olivia's Cupcake Café",
+      "source_url": "https://www.lego.com/en-us/product/olivias-cupcake-cafe-41366?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41366",
+        "h1": "Olivia's Cupcake Café"
+      }
+    },
+    {
+      "number": "41367",
+      "name": "Stephanie's Horse Jumping",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-horse-jumping-41367?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41367",
+        "h1": "Stephanie's Horse Jumping"
+      }
+    },
+    {
+      "number": "41368",
+      "name": "Andrea's Talent Show",
+      "source_url": "https://www.lego.com/en-us/product/andreas-talent-show-41368?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41368",
+        "h1": "Andrea's Talent Show"
+      }
+    },
+    {
+      "number": "41369",
+      "name": "Mia's House",
+      "source_url": "https://www.lego.com/en-ca/service/building-instructions/41369",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's House",
+        "printed_number": "#41369",
+        "panel": "6+ | #41369 | 715 pieces"
+      }
+    },
+    {
+      "number": "41371",
+      "name": "Mia's Horse Trailer",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41371",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Horse Trailer",
+        "printed_number": "#41371",
+        "panel": "6+ | #41371 | 216 pieces"
+      }
+    },
+    {
+      "number": "41372",
+      "name": "Stephanie's Gymnastics Show",
+      "source_url": "https://www.lego.com/en-us/product/stephanies-gymnastics-show-41372",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41372",
+        "h1": "Stephanie's Gymnastics Show"
+      }
+    },
+    {
+      "number": "41373",
+      "name": "Funny Octopus Ride",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41373",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Funny Octopus Ride",
+        "printed_number": "#41373",
+        "panel": "7+ | #41373 | 324 pieces"
+      }
+    },
+    {
+      "number": "41374",
+      "name": "Andrea's Pool Party",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41374",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Pool Party",
+        "printed_number": "#41374",
+        "panel": "6+ | #41374 | 468 pieces"
+      }
+    },
+    {
+      "number": "41375",
+      "name": "Heartlake City Amusement Pier",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-amusement-pier-41375",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41375",
+        "h1": "Heartlake City Amusement Pier"
+      }
+    },
+    {
+      "number": "41376",
+      "name": "Turtles Rescue Mission",
+      "source_url": "https://www.lego.com/en-us/product/turtles-rescue-mission-41376?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41376",
+        "h1": "Turtles Rescue Mission"
+      }
+    },
+    {
+      "number": "41378",
+      "name": "Dolphins Rescue Mission",
+      "source_url": "https://www.lego.com/en-us/product/dolphins-rescue-mission-41378?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41378",
+        "h1": "Dolphins Rescue Mission"
+      }
+    },
+    {
+      "number": "41379",
+      "name": "Heartlake City Restaurant",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-restaurant-41379?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41379",
+        "h1": "Heartlake City Restaurant"
+      }
+    },
+    {
+      "number": "41380",
+      "name": "Lighthouse Rescue Center",
+      "source_url": "https://www.lego.com/en-us/product/lighthouse-rescue-center-41380?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41380",
+        "h1": "Lighthouse Rescue Center"
+      }
+    },
+    {
+      "number": "41381",
+      "name": "Rescue Mission Boat",
+      "source_url": "https://www.lego.com/en-hk/service/building-instructions/41381",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Rescue Mission Boat",
+        "printed_number": "#41381",
+        "panel": "7+ | #41381 | 908 pieces"
+      }
+    },
+    {
+      "number": "41382",
+      "name": "LEGO® Friends Advent Calendar",
+      "source_url": "https://www.lego.com/en-nz/product/lego-friends-advent-calendar-41382",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41382",
+        "h1": "LEGO® Friends Advent Calendar"
+      }
+    },
+    {
+      "number": "41383",
+      "name": "Olivia's Hamster Playground",
+      "source_url": "https://www.lego.com/en-us/product/olivias-hamster-playground-41383?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41383",
+        "h1": "Olivia's Hamster Playground"
+      }
+    },
+    {
+      "number": "41384",
+      "name": "Andrea's Summer Heart Box",
+      "source_url": "https://www.lego.com/en-us/product/andreas-summer-heart-box-41384",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41384",
+        "h1": "Andrea's Summer Heart Box"
+      }
+    },
+    {
+      "number": "41385",
+      "name": "Emma's Summer Heart Box",
+      "source_url": "https://www.lego.com/en-us/product/emmas-summer-heart-box-41385",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41385",
+        "h1": "Emma's Summer Heart Box"
+      }
+    },
+    {
+      "number": "41386",
+      "name": "Stephanie's Summer Heart Box",
+      "source_url": "https://www.lego.com/en-my/service/building-instructions/41386",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Summer Heart Box",
+        "printed_number": "#41386",
+        "panel": "6+ | #41386 | 95 pieces"
+      }
+    },
+    {
+      "number": "41387",
+      "name": "Olivia's Summer Heart Box",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41387",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Olivia's Summer Heart Box",
+        "printed_number": "#41387",
+        "panel": "6+ | #41387 | 93 pieces"
+      }
+    },
+    {
+      "number": "41388",
+      "name": "Mia's Summer Heart Box",
+      "source_url": "https://www.lego.com/en-gr/service/building-instructions/41388",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Summer Heart Box",
+        "printed_number": "#41388",
+        "panel": "6+ | #41388 | 85 pieces"
+      }
+    },
+    {
+      "number": "41389",
+      "name": "Ice Cream Cart",
+      "source_url": "https://www.lego.com/en-us/product/ice-cream-cart-41389",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41389",
+        "h1": "Ice Cream Cart"
+      }
+    },
+    {
+      "number": "41390",
+      "name": "Andrea's Car & Stage",
+      "source_url": "https://www.lego.com/en-us/product/andreas-car-stage-41390",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41390",
+        "h1": "Andrea's Car & Stage"
+      }
+    },
+    {
+      "number": "41391",
+      "name": "Heartlake City Hair Salon",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41391",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Hair Salon",
+        "printed_number": "#41391",
+        "panel": "6+ | #41391 | 235 pieces"
+      }
+    },
+    {
+      "number": "41392",
+      "name": "Nature Glamping",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41392",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Nature Glamping",
+        "printed_number": "#41392",
+        "panel": "6+ | #41392 | 241 pieces"
+      }
+    },
+    {
+      "number": "41393",
+      "name": "Baking Competition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41393",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Baking Competition",
+        "printed_number": "#41393",
+        "panel": "6+ | #41393 | 361 pieces"
+      }
+    },
+    {
+      "number": "41394",
+      "name": "Heartlake City Hospital",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41394",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Hospital",
+        "printed_number": "#41394",
+        "panel": "6+ | #41394 | 380 pieces"
+      }
+    },
+    {
+      "number": "41395",
+      "name": "Friendship Bus",
+      "source_url": "https://www.lego.com/en-us/product/friendship-bus-41395",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "theme_and_printed_number": "Friends#41395",
+        "h1": "Friendship Bus"
+      }
+    },
+    {
+      "number": "41396",
+      "name": "Puppy Playground",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41396",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Puppy Playground",
+        "printed_number": "#41396",
+        "panel": "4+ | #41396 | 57 pieces"
+      }
+    },
+    {
+      "number": "41397",
+      "name": "Juice Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41397",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Juice Truck",
+        "printed_number": "#41397",
+        "panel": "4+ | #41397 | 103 pieces"
+      }
+    },
+    {
+      "number": "41398",
+      "name": "4+ Stephanie's House",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41398",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "4+ Stephanie's House",
+        "printed_number": "#41398",
+        "panel": "4+ | #41398 | 170 pieces"
+      }
+    },
+    {
+      "number": "41400",
+      "name": "Andrea's Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41400",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Play Cube",
+        "printed_number": "#41400",
+        "panel": "6+ | #41400 | 49 pieces"
+      }
+    },
+    {
+      "number": "41401",
+      "name": "Stephanie's Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/buildinginstructions/41401",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Play Cube",
+        "printed_number": "#41401",
+        "panel": "6+ | #41401 | 44 pieces"
+      }
+    },
+    {
+      "number": "41402",
+      "name": "Olivia's Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/olivias-play-cube-41402?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Play Cube",
+        "theme_and_printed_number": "Friends#41402"
+      }
+    },
+    {
+      "number": "41403",
+      "name": "Mia's Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/mias-play-cube-41403",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Play Cube",
+        "theme_and_printed_number": "Friends#41403"
+      }
+    },
+    {
+      "number": "41404",
+      "name": "Emma's Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/emmas-play-cube-41404",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Play Cube",
+        "theme_and_printed_number": "Friends#41404"
+      }
+    },
+    {
+      "number": "41405",
+      "name": "Andrea's Shopping Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/andreas-shopping-play-cube-41405",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Andrea's Shopping Play Cube",
+        "theme_and_printed_number": "Friends#41405"
+      }
+    },
+    {
+      "number": "41406",
+      "name": "Stephanie's Shopping Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41406",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Shopping Play Cube",
+        "printed_number": "#41406",
+        "panel": "6+ | #41406 | 44 pieces"
+      }
+    },
+    {
+      "number": "41407",
+      "name": "Olivia's Shopping Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/olivias-shopping-play-cube-41407",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Shopping Play Cube",
+        "theme_and_printed_number": "Friends#41407"
+      }
+    },
+    {
+      "number": "41408",
+      "name": "Mia's Shopping Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/mias-shopping-play-cube-41408",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Shopping Play Cube",
+        "theme_and_printed_number": "Friends#41408"
+      }
+    },
+    {
+      "number": "41409",
+      "name": "Emma's Shopping Play Cube",
+      "source_url": "https://www.lego.com/en-us/product/emmas-shopping-play-cube-41409",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Shopping Play Cube",
+        "theme_and_printed_number": "Friends#41409"
+      }
+    },
+    {
+      "number": "41410",
+      "name": "Andrea's Summer Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41410",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Summer Play Cube",
+        "printed_number": "#41410",
+        "panel": "6+ | #41410 | 43 pieces"
+      }
+    },
+    {
+      "number": "41411",
+      "name": "Stephanie's Summer Play Cube",
+      "source_url": "https://www.lego.com/en-gb/product/stephanies-summer-play-cube-41411",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Stephanie's Summer Play Cube",
+        "theme_and_printed_number": "Friends#41411"
+      }
+    },
+    {
+      "number": "41412",
+      "name": "Olivia's Summer Play Cube",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41412",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Olivia's Summer Play Cube",
+        "printed_number": "#41412",
+        "panel": "6+ | #41412 | 48 pieces"
+      }
+    },
+    {
+      "number": "41413",
+      "name": "Mia's Summer Play Cube",
+      "source_url": "https://www.lego.com/en-gb/product/mias-summer-play-cube-41413",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Mia's Summer Play Cube",
+        "theme_and_printed_number": "Friends#41413"
+      }
+    },
+    {
+      "number": "41414",
+      "name": "Emma's Summer Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41414",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Emma's Summer Play Cube",
+        "printed_number": "#41414",
+        "panel": "6+ | #41414 | 51 pieces"
+      }
+    },
+    {
+      "number": "41421",
+      "name": "Baby Elephant Jungle Rescue",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41421",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Baby Elephant Jungle Rescue",
+        "printed_number": "#41421",
+        "panel": "6+ | #41421 | 203 pieces"
+      }
+    },
+    {
+      "number": "41422",
+      "name": "Panda Jungle Tree House",
+      "source_url": "https://www.lego.com/en-us/product/panda-jungle-tree-house-41422",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Panda Jungle Tree House",
+        "theme_and_printed_number": "Friends#41422"
+      }
+    },
+    {
+      "number": "41423",
+      "name": "Tiger Hot Air Balloon Jungle Rescue",
+      "source_url": "https://www.lego.com/en-us/product/tiger-hot-air-balloon-jungle-rescue-41423?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Tiger Hot Air Balloon Jungle Rescue",
+        "theme_and_printed_number": "Friends#41423"
+      }
+    },
+    {
+      "number": "41424",
+      "name": "Jungle Rescue Base",
+      "source_url": "https://www.lego.com/en-gb/service/building-instructions/41424",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Jungle Rescue Base",
+        "printed_number": "#41424",
+        "panel": "8+ | #41424 | 648 pieces"
+      }
+    },
+    {
+      "number": "41425",
+      "name": "Olivia's Flower Garden",
+      "source_url": "https://www.lego.com/en-us/product/olivias-flower-garden-41425?opt-out-modal=show",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Flower Garden",
+        "theme_and_printed_number": "Friends#41425"
+      }
+    },
+    {
+      "number": "41426",
+      "name": "Heartlake City Park Café",
+      "source_url": "https://www.lego.com/en-us/product/heartlake-city-park-cafe-41426",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Park Café",
+        "theme_and_printed_number": "Friends#41426"
+      }
+    },
+    {
+      "number": "41427",
+      "name": "Emma's Fashion Shop",
+      "source_url": "https://www.lego.com/en-us/product/emmas-fashion-shop-41427",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Emma's Fashion Shop",
+        "theme_and_printed_number": "Friends#41427"
+      }
+    },
+    {
+      "number": "41428",
+      "name": "Beach House",
+      "source_url": "https://www.lego.com/en-us/product/beach-house-41428",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Beach House",
+        "theme_and_printed_number": "Friends#41428"
+      }
+    },
+    {
+      "number": "41429",
+      "name": "Heartlake City Airplane",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41429",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Airplane",
+        "printed_number": "#41429",
+        "panel": "7+ | #41429 | 574 pieces"
+      }
+    },
+    {
+      "number": "41430",
+      "name": "Summer Fun Water Park",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41430",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Summer Fun Water Park",
+        "printed_number": "#41430",
+        "panel": "8+ | #41430 | 1001 pieces"
+      }
+    },
+    {
+      "number": "41431",
+      "name": "Heartlake City Brick Box",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41431",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Brick Box",
+        "printed_number": "#41431",
+        "panel": "5+ | #41431 | 321 pieces"
+      }
+    },
+    {
+      "number": "41432",
+      "name": "Alpaca Mountain Jungle Rescue",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41432",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Alpaca Mountain Jungle Rescue",
+        "printed_number": "#41432",
+        "panel": "7+ | #41432 | 512 pieces"
+      }
+    },
+    {
+      "number": "41433",
+      "name": "Party Boat",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41433",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Party Boat",
+        "printed_number": "#41433",
+        "panel": "7+ | #41433 | 640 pieces"
+      }
+    },
+    {
+      "number": "41434",
+      "name": "Andrea's Jungle Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41434",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Jungle Play Cube",
+        "printed_number": "#41434",
+        "panel": "6+ | #41434 | 47 pieces"
+      }
+    },
+    {
+      "number": "41435",
+      "name": "Stephanie's Jungle Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41435",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stephanie's Jungle Play Cube",
+        "printed_number": "#41435",
+        "panel": "6+ | #41435 | 41 pieces"
+      }
+    },
+    {
+      "number": "41436",
+      "name": "Olivia's Jungle Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41436",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Olivia's Jungle Play Cube",
+        "printed_number": "#41436",
+        "panel": "6+ | #41436 | 51 pieces"
+      }
+    },
+    {
+      "number": "41437",
+      "name": "Mia's Jungle Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41437",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mia's Jungle Play Cube",
+        "printed_number": "#41437",
+        "panel": "6+ | #41437 | 43 pieces"
+      }
+    },
+    {
+      "number": "41438",
+      "name": "Emma's Jungle Play Cube",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41438",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Emma's Jungle Play Cube",
+        "printed_number": "#41438",
+        "panel": "6+ | #41438 | 50 pieces"
+      }
+    },
+    {
+      "number": "41439",
+      "name": "Cat Grooming Car",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41439",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Cat Grooming Car",
+        "printed_number": "#41439",
+        "panel": "4+ | #41439 | 60 pieces"
+      }
+    },
+    {
+      "number": "41440",
+      "name": "Heartlake City Bakery",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41440",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Bakery",
+        "printed_number": "#41440",
+        "panel": "4+ | #41440 | 99 pieces"
+      }
+    },
+    {
+      "number": "41441",
+      "name": "Horse Training and Trailer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41441?opt-out-modal=show",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Horse Training and Trailer",
+        "printed_number": "#41441",
+        "panel": "4+ | #41441 | 148 pieces"
+      }
+    },
+    {
+      "number": "41442",
+      "name": "Vet Clinic Rescue Buggy",
+      "source_url": "https://www.lego.com/en-us/product/vet-clinic-rescue-buggy-41442",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Vet Clinic Rescue Buggy",
+        "theme_and_printed_number": "Friends#41442"
+      }
+    },
+    {
+      "number": "41443",
+      "name": "Olivia's Electric Car",
+      "source_url": "https://www.lego.com/en-us/product/olivias-electric-car-41443",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Olivia's Electric Car",
+        "theme_and_printed_number": "Friends#41443"
+      }
+    },
+    {
+      "number": "41444",
+      "name": "Heartlake City Organic Café",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41444",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Organic Café",
+        "printed_number": "#41444",
+        "panel": "6+ | #41444 | 314 pieces"
+      }
+    },
+    {
+      "number": "41445",
+      "name": "Vet Clinic Ambulance",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41445",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Vet Clinic Ambulance",
+        "printed_number": "#41445",
+        "panel": "6+ | #41445 | 304 pieces"
+      }
+    },
+    {
+      "number": "41446",
+      "name": "Heartlake City Vet Clinic",
+      "source_url": "https://www.lego.com/en-ca/product/heartlake-city-vet-clinic-41446",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Vet Clinic",
+        "theme_and_printed_number": "Friends#41446"
+      }
+    },
+    {
+      "number": "41447",
+      "name": "Heartlake City Park",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41447",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Park",
+        "printed_number": "#41447",
+        "panel": "6+ | #41447 | 432 pieces"
+      }
+    },
+    {
+      "number": "41448",
+      "name": "Heartlake City Movie Theater",
+      "source_url": "https://www.lego.com/en-ca/product/heartlake-city-movie-theater-41448",
+      "evidence_type": "official_product_page",
+      "metadata": {
+        "h1": "Heartlake City Movie Theater",
+        "theme_and_printed_number": "Friends#41448"
+      }
+    },
+    {
+      "number": "41449",
+      "name": "Andrea's Family House",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/41449",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Andrea's Family House",
+        "printed_number": "#41449",
+        "panel": "6+ | #41449 | 802 pieces"
+      }
+    },
+    {
+      "number": "41450",
+      "name": "Heartlake City Shopping Mall",
+      "source_url": "https://www.lego.com/en-in/service/building-instructions/41450",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Heartlake City Shopping Mall",
+        "printed_number": "#41450",
+        "panel": "8+ | #41450 | 1032 pieces"
+      }
+    }
+  ]
+}

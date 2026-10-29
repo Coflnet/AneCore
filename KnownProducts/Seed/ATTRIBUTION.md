@@ -521,3 +521,31 @@ finish, insulation rating, generation, year, weight, price, package contents, qu
 used-offer completeness or condition is inferred. Related physical parts and lots retain
 independent offer scope. No marketplace listings, photos, manufacturer artwork, marketing
 descriptions or inventories are collected or copied.
+
+## LEGO Friends official identity headers (2026-10-29, R48)
+
+`lego-friends-retired.json` adds 141 previously absent printed Friends set identities.
+The proof in `tools/catalog-import/proofs/lego-friends-retired-2026-10-29-r48.json`
+records 70 official instruction panels and 71 official product identity headers,
+including [41333 Olivia's Mission Vehicle](https://www.lego.com/en-us/product/olivias-mission-vehicle-41333),
+[41348 Service & Care Truck](https://www.lego.com/en-us/product/service-care-truck-41348),
+[41357 Olivia's Heart Box](https://www.lego.com/en-us/service/building-instructions/41357),
+[41398 4+ Stephanie's House](https://www.lego.com/en-gb/service/building-instructions/41398)
+and [41431 Heartlake City Brick Box](https://www.lego.com/en-us/service/building-instructions/41431).
+Only the exact printed number and official heading identify a product. Marketing body
+text, recommendations and locale variants do not establish additional products.
+
+All four aliases require LEGO and the complete number; the Friends theme and official
+name provide additional numbered forms. Canonical names remain `LEGO <number>`.
+Only `set_number` is an attribute. Panel ages/piece counts remain source evidence;
+no GTIN, age, year, edition, fit, inventory, offer contents, completeness, condition,
+availability or pricing is inferred. Manual, empty-box, parts, incomplete and multiple-set
+offers retain their existing scope boundaries; a reviewed whole set whose name includes
+Box or Service still requires its printed identity. All 47 previous seed JSON files are
+byte-identical. Existing LEGO intake and wildcard seed loading already admit the family;
+no new vertical or shared resale admission change is required.
+
+Evidence uses normal public web-tool indexed/cached official pages. No fresh origin
+HTTP200, complete range/theme coverage or absence inference from unavailable pages is
+claimed. No descriptions, images, artwork or inventories are copied. Reproduction is
+offline with `tools/catalog-import/expand_lego_friends_retired.py` and its `--check` mode.

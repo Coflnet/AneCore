@@ -591,3 +591,24 @@ year, edition, package contents, completeness or compatibility is inferred. Sour
 piece counts remain evidence only. Unavailable pages 42085, 60070 and 60094 are omitted;
 this is a selected supplement, not a complete theme enumeration. Web-tool evidence may
 use indexed/cached pages; no fresh origin HTTP200 is claimed.
+
+### LEGO Friends identity headers (2026-10-29, R48)
+
+`expand_lego_friends_retired.py` adds 141 distinct missing printed identities from
+70 official instruction panels and 71 official product headers. The expanded catalogue
+has 27,526 products, including 7,895 LEGO identities; all 47 previous seed JSON files
+remain byte-identical.
+
+```sh
+python3 tools/catalog-import/expand_lego_friends_retired.py
+python3 tools/catalog-import/expand_lego_friends_retired.py --check
+```
+
+The importer validates the official English URL, heading and exact printed-number
+evidence, then rejects duplicate IDs and cross-file normalized alias collisions.
+Only `set_number` is an attribute; panel ages and piece counts are evidence only.
+All four aliases retain LEGO plus the full number, including theme/name forms.
+Canonical names stay `LEGO <number>`; no unnumbered identity, locale-edition clone,
+GTIN, age, year, fit, inventory or offer completeness is inferred. Body descriptions
+and cross-product recommendations are not identity sources. The existing LEGO intake,
+catalogue loader and offer boundaries apply; no new vertical is introduced.

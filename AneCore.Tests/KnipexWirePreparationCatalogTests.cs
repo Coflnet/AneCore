@@ -144,8 +144,8 @@ public class KnipexWirePreparationCatalogTests
         var added = Catalog.Where(product => product.Source == Source).ToList();
         Assert.That(added, Has.Count.EqualTo(109));
         Assert.That(added.Select(product => product.Model), Is.EquivalentTo(ManufacturerRows.Select(row => (string)row[0])));
-        Assert.That(Catalog.Count(product => product.Source != Source), Is.EqualTo(27276));
-        Assert.That(Catalog.Count(product => product.Vertical == "lego"), Is.EqualTo(7754));
+        Assert.That(Catalog.Count(product => product.Source != Source), Is.EqualTo(27417));
+        Assert.That(Catalog.Count(product => product.Vertical == "lego"), Is.EqualTo(7895));
         Assert.That(KnownProductSeed.LoadAll().Count, Is.EqualTo(23), "the original curated-only loader contract stays unchanged");
         var previousAliases = Catalog.Where(product => product.Source != Source).SelectMany(product => product.Aliases)
             .Select(KnownProductMatcher.Normalize).ToHashSet();
