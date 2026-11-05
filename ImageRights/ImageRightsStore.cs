@@ -23,6 +23,9 @@ public class ImageRightsRecord
     /// </summary>
     public DateTime? StatusSince { get; set; }
 
+    /// <summary>Versioned fetched policy context; null on legacy rows.</summary>
+    public string? PolicyContext { get; set; }
+
     /// <summary>Not a column: <see cref="Status"/> parsed, Unknown for anything unrecognised.</summary>
     public ImageRightsStatus StatusValue =>
         Enum.TryParse<ImageRightsStatus>(Status, out var s) ? s : ImageRightsStatus.Unknown;
@@ -67,6 +70,7 @@ public class CassandraImageRightsStore : IImageRightsStore
             .Column(r => r.CheckedAt, cm => cm.WithName("checked_at"))
             .Column(r => r.RobotsHash, cm => cm.WithName("robots_hash"))
             .Column(r => r.StatusSince, cm => cm.WithName("status_since"))
+            .Column(r => r.PolicyContext, cm => cm.WithName("policy_context"))
             .Column(r => r.StatusValue, cm => cm.Ignore()));
 
     public async Task InitializeAsync()
@@ -79,6 +83,9 @@ public class CassandraImageRightsStore : IImageRightsStore
             await table.CreateIfNotExistsAsync();
             // additive column of tables created before it existed
             try { await session.ExecuteAsync(new global::Cassandra.SimpleStatement("ALTER TABLE image_rights_status ADD status_since timestamp")); }
+            catch (global::Cassandra.InvalidQueryException e) when (e.Message.Contains("already exists", StringComparison.OrdinalIgnoreCase)
+                                                                    || e.Message.Contains("conflicts", StringComparison.OrdinalIgnoreCase)) { }
+            try { await session.ExecuteAsync(new global::Cassandra.SimpleStatement("ALTER TABLE image_rights_status ADD policy_context text")); }
             catch (global::Cassandra.InvalidQueryException e) when (e.Message.Contains("already exists", StringComparison.OrdinalIgnoreCase)
                                                                     || e.Message.Contains("conflicts", StringComparison.OrdinalIgnoreCase)) { }
             tableInitialized = true;

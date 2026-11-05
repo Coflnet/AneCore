@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -56,11 +57,19 @@ public class ImageRightsRefresher : BackgroundService
             {
                 var previous = await store.GetAsync(entry.ImageHost);
                 var record = await BuildRecordAsync(entry, cache, token);
+                record.PolicyContext = ImageRightsContext.Merge(entry.ImageHost, previous?.PolicyContext, record.PolicyContext,
+                    previous?.StatusValue == ImageRightsStatus.Revoked ? previous.Evidence : null);
                 if (previous != null && ImageRightsPolicy.IsObsoleteConfigurationDenial(previous, options)) previous = null;
                 if (previous?.StatusValue == ImageRightsStatus.Revoked)
                 {
-                    if (record.StatusValue != ImageRightsStatus.Revoked || previous.Evidence is not { Count: > 0 }) continue;
-                    record.Evidence = previous.Evidence.Concat(record.Evidence).Distinct().ToList();
+                    if (record.StatusValue != ImageRightsStatus.Revoked)
+                    {
+                        record.CheckedAt = previous.CheckedAt;
+                        record.RobotsHash = previous.RobotsHash;
+                    }
+                    record.Evidence = previous.Evidence is not { Count: > 0 } ? previous.Evidence ?? []
+                        : previous.Evidence.Concat(record.StatusValue == ImageRightsStatus.Revoked ? record.Evidence : []).Distinct().ToList();
+                    record.Status = nameof(ImageRightsStatus.Revoked);
                 }
                 record.StatusSince = ResolveStatusSince(previous, record.Status, record.CheckedAt);
                 await store.UpsertAsync(record);
@@ -92,6 +101,8 @@ public class ImageRightsRefresher : BackgroundService
             UserAgent: http.DefaultRequestHeaders.UserAgent.ToString()));
         if (result.Status != ImageRightsStatus.Revoked && (imageTdm.State == FetchState.Failed || siteTdm.State == FetchState.Failed))
             result = new ImageRightsResult(ImageRightsStatus.Unknown, ["tdmrep.json could not be fetched completely"]);
+        var context = new ImageRightsPolicySnapshot(entry.ImageHost, entry.SiteHost, imageRobots, siteRobots,
+            imageTdm, siteTdm, http.DefaultRequestHeaders.UserAgent.ToString());
         return new ImageRightsRecord
         {
             Host = entry.ImageHost,
@@ -99,7 +110,9 @@ public class ImageRightsRefresher : BackgroundService
             Status = result.Status.ToString(),
             Evidence = result.Evidence.ToList(),
             CheckedAt = DateTime.UtcNow,
-            RobotsHash = Hash(imageRobots.Text, siteRobots.Text)
+            RobotsHash = Hash(imageRobots.Text, siteRobots.Text),
+            PolicyContext = JsonSerializer.Serialize(new ImageRightsContext(1, [context],
+                context.RootCrawlerCause() is { } cause ? [cause] : []))
         };
     }
 

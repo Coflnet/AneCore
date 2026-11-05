@@ -76,6 +76,38 @@ public static class ImageRightsPolicy
         return new(ImageRightsStatus.Allowed, stored?.Evidence ?? [$"no recorded {purpose} opt-out for {host}"], stored?.CheckedAt);
     }
 
+    /// <summary>Comparison can narrow proven crawler rules; training keeps every existing host denial.</summary>
+    public static ImageRightsDecision ResolveImage(string? imageUrl, ImageRightsRecord? stored, DateTime nowUtc,
+        ImageRightsOptions options, ImageRightsPurpose purpose = ImageRightsPurpose.Training)
+    {
+        var host = ImageHostMapping.HostOf(imageUrl);
+        var summary = Resolve(host, stored, nowUtc, options, purpose);
+        if (purpose == ImageRightsPurpose.Training && summary.Status == ImageRightsStatus.Revoked) return summary;
+        if (host == null || stored == null || DenialEvidence(host, options) != null
+            || !Uri.TryCreate(imageUrl?.StartsWith("//", StringComparison.Ordinal) == true ? "https:" + imageUrl : imageUrl, UriKind.Absolute, out var uri)
+            || ImageRightsContext.Read(stored.PolicyContext, host) is not { } context) return summary;
+
+        var preserved = summary;
+        if (purpose == ImageRightsPurpose.Comparison)
+        {
+            var proof = (context.ProvenRootCauses ?? []).ToHashSet(StringComparer.Ordinal);
+            var residual = stored.Evidence?.Where(e => !proof.Contains(e)).ToList();
+            preserved = Resolve(host, new ImageRightsRecord
+            {
+                Host = stored.Host, Status = stored.StatusValue == ImageRightsStatus.Revoked
+                    && stored.Evidence is { Count: > 0 } && residual is { Count: 0 } ? nameof(ImageRightsStatus.Allowed) : stored.Status,
+                Evidence = residual ?? [], CheckedAt = stored.CheckedAt
+            }, nowUtc, options, purpose);
+        }
+        if (preserved.Status == ImageRightsStatus.Revoked) return preserved;
+        var path = uri.GetComponents(UriComponents.PathAndQuery, UriFormat.UriEscaped);
+        var results = context.Snapshots.Select(s => s.Evaluate(path)).Where(r => r.Status == ImageRightsStatus.Revoked).ToList();
+        var decision = Resolve(host, new ImageRightsRecord { Host = host,
+            Status = results.Count > 0 ? nameof(ImageRightsStatus.Revoked) : nameof(ImageRightsStatus.Allowed),
+            Evidence = results.SelectMany(r => r.Evidence).Distinct().ToList(), CheckedAt = stored.CheckedAt }, nowUtc, options, purpose);
+        return decision.Status == ImageRightsStatus.Revoked ? decision : preserved;
+    }
+
     /// <summary>Only exact machine configuration evidence whose current override was removed is obsolete.</summary>
     public static bool IsObsoleteConfigurationDenial(ImageRightsRecord row, ImageRightsOptions options) =>
         row.StatusValue == ImageRightsStatus.Revoked && row.Evidence is { Count: > 0 } && DenialEvidence(row.Host, options) == null

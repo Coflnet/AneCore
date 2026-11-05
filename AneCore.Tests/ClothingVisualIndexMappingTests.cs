@@ -6,6 +6,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using OpenSearch.Client;
 using OpenSearch.Net;
+using Coflnet.Ane.ImageRights;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AneCore.Tests;
 
@@ -19,7 +21,7 @@ namespace AneCore.Tests;
 public class ClothingVisualIndexMappingTests
 {
     private static (ClothingVisualIndex Index, OpenSearchVisualReferenceStore Store, RecordingConnection Connection) Build(
-        Func<string, string, (int Status, byte[] Body)>? respond = null, bool existingIndexOnly = false)
+        Func<string, string, (int Status, byte[] Body)>? respond = null, bool existingIndexOnly = false, ImageRightsOptions? imageRights = null)
     {
         var connection = new RecordingConnection(respond);
         var config = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
@@ -31,7 +33,7 @@ public class ClothingVisualIndexMappingTests
 
         var openSearch = new FakeOpenSearch(config, NullLogger<Coflnet.Ane.Opensearch.OpenSearch>.Instance, connection);
         var index = new ClothingVisualIndex(NullLogger<ClothingVisualIndex>.Instance, openSearch);
-        var store = new OpenSearchVisualReferenceStore(index, NullLogger<OpenSearchVisualReferenceStore>.Instance, existingIndexOnly);
+        var store = new OpenSearchVisualReferenceStore(index, NullLogger<OpenSearchVisualReferenceStore>.Instance, existingIndexOnly, imageRights);
         return (index, store, connection);
     }
 
@@ -149,9 +151,26 @@ public class ClothingVisualIndexMappingTests
     }
 
     [Test]
+    public async Task Search_UsesRegisteredRightsOptionsFromDependencyInjection()
+    {
+        var (index, _, connection) = Build();
+        using var provider = new ServiceCollection().AddLogging().AddSingleton(index)
+            .AddSingleton(ImageRightsOptions.Parse("Ebay", null))
+            .AddSingleton<IVisualReferenceStore, OpenSearchVisualReferenceStore>().BuildServiceProvider();
+        var store = provider.GetRequiredService<IVisualReferenceStore>();
+        await store.InitializeAsync();
+        await store.SearchAsync(SampleVector(), 20, "group", "model", "own");
+        using var doc = JsonDocument.Parse(connection.LastBodyForPath("POST", "ane_clothing_visual_v1/_search")!);
+        var exclusions = doc.RootElement.GetProperty("query").GetProperty("knn").GetProperty("embedding")
+            .GetProperty("filter").GetProperty("bool").GetProperty("must_not");
+        Assert.That(exclusions[1].GetProperty("terms").GetProperty("platform").EnumerateArray().Select(p => p.GetString()),
+            Is.EqualTo(new[] { "Ebay" }));
+    }
+
+    [Test]
     public async Task Search_RequestBody_IsFilteredKnnQueryExcludingListing()
     {
-        var (_, store, connection) = Build();
+        var (_, store, connection) = Build(imageRights: ImageRightsOptions.Parse("", null));
         await store.InitializeAsync();
 
         await store.SearchAsync(SampleVector(), k: 7, groupKey: "women/tops", modelId: "fashion-clip-v1", excludeListingId: "l1", default);
@@ -174,6 +193,37 @@ public class ClothingVisualIndexMappingTests
         Assert.That(mustNot.GetProperty("term").GetProperty("listingId").GetProperty("value").GetString(), Is.EqualTo("l1"));
 
         Assert.That(doc.RootElement.GetProperty("size").GetInt32(), Is.EqualTo(7));
+    }
+
+    [TestCase(null, "Vinted,Willhaben")]
+    [TestCase("", "")]
+    [TestCase("Kleinanzeigen,Ebay", "Ebay,Kleinanzeigen")]
+    public async Task Search_DeniedPlatformsAreInsideKnnBeforeTopK(string? configuredPlatforms, string expected)
+    {
+        // null exercises constructor defaults; empty is an explicit removal of platform exclusions.
+        var options = configuredPlatforms == null ? null : ImageRightsOptions.Parse(configuredPlatforms, "img.example.test");
+        var (_, store, connection) = Build(imageRights: options);
+        await store.InitializeAsync();
+        await store.SearchAsync(SampleVector(), 20, "nike|jacket|used|m", "fashion-clip-v1", "own", default);
+        using var doc = JsonDocument.Parse(connection.LastBodyForPath("POST", "ane_clothing_visual_v1/_search")!);
+        Assert.That(doc.RootElement.GetProperty("size").GetInt32(), Is.EqualTo(20));
+        var knn = doc.RootElement.GetProperty("query").GetProperty("knn").GetProperty("embedding");
+        Assert.That(knn.GetProperty("k").GetInt32(), Is.EqualTo(20));
+        var filter = knn.GetProperty("filter").GetProperty("bool");
+        var required = filter.GetProperty("filter").EnumerateArray().ToList();
+        Assert.That(required, Has.Count.EqualTo(2));
+        Assert.That(required[0].GetProperty("term").GetProperty("groupKey").GetProperty("value").GetString(), Is.EqualTo("nike|jacket|used|m"));
+        Assert.That(required[1].GetProperty("term").GetProperty("modelId").GetProperty("value").GetString(), Is.EqualTo("fashion-clip-v1"));
+        var denied = filter.GetProperty("must_not").EnumerateArray().ToList();
+        Assert.That(denied[0].GetProperty("term").GetProperty("listingId").GetProperty("value").GetString(), Is.EqualTo("own"));
+        if (expected.Length == 0)
+            Assert.That(denied, Has.Count.EqualTo(1), "host-only exclusions must not become platform exclusions");
+        else
+        {
+            Assert.That(denied, Has.Count.EqualTo(2));
+            Assert.That(denied[1].GetProperty("terms").GetProperty("platform").EnumerateArray().Select(e => e.GetString()),
+                Is.EqualTo(expected.Split(',')));
+        }
     }
 
     [Test]

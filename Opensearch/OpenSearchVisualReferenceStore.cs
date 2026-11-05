@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using OpenSearch.Client;
 using OpenSearch.Net;
+using Coflnet.Ane.ImageRights;
 
 // ReSharper disable once CheckNamespace
 namespace Coflnet.Ane.Opensearch;
@@ -11,8 +12,10 @@ namespace Coflnet.Ane.Opensearch;
 /// </summary>
 public class OpenSearchVisualReferenceStore(
     ClothingVisualIndex index,
-    ILogger<OpenSearchVisualReferenceStore> logger, bool existingIndexOnly = false) : IVisualReferenceStore
+    ILogger<OpenSearchVisualReferenceStore> logger, bool existingIndexOnly = false, ImageRightsOptions? imageRights = null) : IVisualReferenceStore
 {
+    private readonly string[] deniedPlatforms = (imageRights ?? ImageRightsOptions.Parse(null, null)).DenyPlatforms
+        .Select(p => p.ToString()).OrderBy(p => p, StringComparer.Ordinal).ToArray();
     private volatile bool available;
 
     public bool IsAvailable => available;
@@ -106,7 +109,9 @@ public class OpenSearchVisualReferenceStore(
                     .Filter(
                         ff => ff.Term(t => t.Field(x => x.GroupKey).Value(groupKey)),
                         ff => ff.Term(t => t.Field(x => x.ModelId).Value(modelId)))
-                    .MustNot(mn => mn.Term(t => t.Field(x => x.ListingId).Value(excludeListingId))))))),
+                    .MustNot(
+                        mn => mn.Term(t => t.Field(x => x.ListingId).Value(excludeListingId)),
+                        mn => mn.Terms(t => t.Field(x => x.Platform).Terms(deniedPlatforms))))))),
             ct);
         if (!response.IsValid)
             throw new InvalidOperationException($"Clothing visual kNN search failed: {response.DebugInformation}");
