@@ -660,3 +660,27 @@ years, ages and piece counts remain proof rather than release/edition/completene
 metadata. Existing intake and offer eligibility stay unchanged. The combined
 catalogue contains 27,725 products, including 8,094 LEGO identities; all 49 previous
 seed JSON files, including R57 Creator, remain byte-identical.
+
+
+### Additional LEGO Star Wars instruction identities (2026-11-05)
+
+`expand_lego_star_wars_additional_instructions.py` adds 147 missing printed sets
+75215–75405 from official LEGO instruction H1 and printed-number panels pinned in
+`proofs/lego-star-wars-additional-instructions-2026-11-05.json`. Every shortlisted
+identity was verified; this is not a complete theme inventory or a fresh origin
+HTTP200 guarantee. Rebuild offline with:
+
+```sh
+python3 tools/catalog-import/expand_lego_star_wars_additional_instructions.py
+python3 tools/catalog-import/expand_lego_star_wars_additional_instructions.py --check
+```
+
+The importer checks every other seed for printed numbers, LEGO models, IDs and
+normalized alias collisions, excluding only its own output on rerun. Canonical
+names remain `LEGO <number>`; all three aliases contain LEGO and the full number.
+Official heading wording, including an explicit anniversary or calendar year,
+is retained only in the numbered alias: no year/edition attribute is inferred.
+Only `set_number` is asserted. Repeated headings remain distinct printed sets;
+existing intake and offer eligibility rules are unchanged. The catalogue totals
+27,872 products and 8,241 LEGO identities; all 50 previous seed JSON files remain
+byte-identical, including the earlier Creator and Star Wars batches.

@@ -1,0 +1,3532 @@
+{
+  "products": [
+    {
+      "id": "lego-75215",
+      "brand": "LEGO",
+      "model": "75215",
+      "name": "LEGO 75215",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75215",
+        "LEGO 75215 Cloud-Rider Swoop Bikes™",
+        "LEGO Set 75215"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75215"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75216",
+      "brand": "LEGO",
+      "model": "75216",
+      "name": "LEGO 75216",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75216",
+        "LEGO 75216 Snoke's Throne Room",
+        "LEGO Set 75216"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75216"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75217",
+      "brand": "LEGO",
+      "model": "75217",
+      "name": "LEGO 75217",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75217",
+        "LEGO 75217 Imperial Conveyex Transport™",
+        "LEGO Set 75217"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75217"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75218",
+      "brand": "LEGO",
+      "model": "75218",
+      "name": "LEGO 75218",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75218",
+        "LEGO 75218 X-Wing Starfighter™",
+        "LEGO Set 75218"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75218"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75219",
+      "brand": "LEGO",
+      "model": "75219",
+      "name": "LEGO 75219",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75219",
+        "LEGO 75219 Imperial AT-Hauler™",
+        "LEGO Set 75219"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75219"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75220",
+      "brand": "LEGO",
+      "model": "75220",
+      "name": "LEGO 75220",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75220",
+        "LEGO 75220 Sandcrawler™",
+        "LEGO Set 75220"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75220"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75221",
+      "brand": "LEGO",
+      "model": "75221",
+      "name": "LEGO 75221",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75221",
+        "LEGO 75221 Imperial Landing Craft",
+        "LEGO Set 75221"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75221"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75222",
+      "brand": "LEGO",
+      "model": "75222",
+      "name": "LEGO 75222",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75222",
+        "LEGO 75222 Betrayal at Cloud City™",
+        "LEGO Set 75222"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75222"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75223",
+      "brand": "LEGO",
+      "model": "75223",
+      "name": "LEGO 75223",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75223",
+        "LEGO 75223 Naboo Starfighter™ Microfighter",
+        "LEGO Set 75223"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75223"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75224",
+      "brand": "LEGO",
+      "model": "75224",
+      "name": "LEGO 75224",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75224",
+        "LEGO 75224 Sith Infiltrator™ Microfighter",
+        "LEGO Set 75224"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75224"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75225",
+      "brand": "LEGO",
+      "model": "75225",
+      "name": "LEGO 75225",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75225",
+        "LEGO 75225 Elite Praetorian Guard™ Battle Pack",
+        "LEGO Set 75225"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75225"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75226",
+      "brand": "LEGO",
+      "model": "75226",
+      "name": "LEGO 75226",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75226",
+        "LEGO 75226 Inferno Squad™ Battle Pack",
+        "LEGO Set 75226"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75226"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75227",
+      "brand": "LEGO",
+      "model": "75227",
+      "name": "LEGO 75227",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75227",
+        "LEGO 75227 Darth Vader™ Bust",
+        "LEGO Set 75227"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75227"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75228",
+      "brand": "LEGO",
+      "model": "75228",
+      "name": "LEGO 75228",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75228",
+        "LEGO 75228 Escape Pod vs. Dewback™ Microfighters",
+        "LEGO Set 75228"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75228"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75229",
+      "brand": "LEGO",
+      "model": "75229",
+      "name": "LEGO 75229",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75229",
+        "LEGO 75229 Death Star™ Escape",
+        "LEGO Set 75229"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75229"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75230",
+      "brand": "LEGO",
+      "model": "75230",
+      "name": "LEGO 75230",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75230",
+        "LEGO 75230 Porg™",
+        "LEGO Set 75230"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75230"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75232",
+      "brand": "LEGO",
+      "model": "75232",
+      "name": "LEGO 75232",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75232",
+        "LEGO 75232 Kylo Ren™ & Sith Trooper™",
+        "LEGO Set 75232"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75232"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75233",
+      "brand": "LEGO",
+      "model": "75233",
+      "name": "LEGO 75233",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75233",
+        "LEGO 75233 Droid Gunship™",
+        "LEGO Set 75233"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75233"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75234",
+      "brand": "LEGO",
+      "model": "75234",
+      "name": "LEGO 75234",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75234",
+        "LEGO 75234 AT-AP™ Walker",
+        "LEGO Set 75234"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75234"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75235",
+      "brand": "LEGO",
+      "model": "75235",
+      "name": "LEGO 75235",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75235",
+        "LEGO 75235 X-Wing Starfighter™ Trench Run",
+        "LEGO Set 75235"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75235"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75236",
+      "brand": "LEGO",
+      "model": "75236",
+      "name": "LEGO 75236",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75236",
+        "LEGO 75236 Duel on Starkiller Base™",
+        "LEGO Set 75236"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75236"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75237",
+      "brand": "LEGO",
+      "model": "75237",
+      "name": "LEGO 75237",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75237",
+        "LEGO 75237 TIE Fighter™ Attack",
+        "LEGO Set 75237"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75237"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75238",
+      "brand": "LEGO",
+      "model": "75238",
+      "name": "LEGO 75238",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75238",
+        "LEGO 75238 Action Battle Endor™ Assault",
+        "LEGO Set 75238"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75238"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75239",
+      "brand": "LEGO",
+      "model": "75239",
+      "name": "LEGO 75239",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75239",
+        "LEGO 75239 Action Battle Hoth™ Generator Attack",
+        "LEGO Set 75239"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75239"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75240",
+      "brand": "LEGO",
+      "model": "75240",
+      "name": "LEGO 75240",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75240",
+        "LEGO 75240 Major Vonreg’s TIE Fighter™",
+        "LEGO Set 75240"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75240"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75241",
+      "brand": "LEGO",
+      "model": "75241",
+      "name": "LEGO 75241",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75241",
+        "LEGO 75241 Action Battle Echo Base™ Defense",
+        "LEGO Set 75241"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75241"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75242",
+      "brand": "LEGO",
+      "model": "75242",
+      "name": "LEGO 75242",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75242",
+        "LEGO 75242 Black Ace TIE Interceptor™",
+        "LEGO Set 75242"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75242"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75243",
+      "brand": "LEGO",
+      "model": "75243",
+      "name": "LEGO 75243",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75243",
+        "LEGO 75243 Slave I™ – 20th Anniversary Edition",
+        "LEGO Set 75243"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75243"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75244",
+      "brand": "LEGO",
+      "model": "75244",
+      "name": "LEGO 75244",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75244",
+        "LEGO 75244 Tantive IV™",
+        "LEGO Set 75244"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75244"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75245",
+      "brand": "LEGO",
+      "model": "75245",
+      "name": "LEGO 75245",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75245",
+        "LEGO 75245 LEGO® Star Wars™ Advent Calendar",
+        "LEGO Set 75245"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75245"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75246",
+      "brand": "LEGO",
+      "model": "75246",
+      "name": "LEGO 75246",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75246",
+        "LEGO 75246 Death Star Cannon",
+        "LEGO Set 75246"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75246"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75247",
+      "brand": "LEGO",
+      "model": "75247",
+      "name": "LEGO 75247",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75247",
+        "LEGO 75247 Rebel A-Wing Starfighter™",
+        "LEGO Set 75247"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75247"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75248",
+      "brand": "LEGO",
+      "model": "75248",
+      "name": "LEGO 75248",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75248",
+        "LEGO 75248 Resistance A-Wing Starfighter™",
+        "LEGO Set 75248"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75248"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75249",
+      "brand": "LEGO",
+      "model": "75249",
+      "name": "LEGO 75249",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75249",
+        "LEGO 75249 Resistance Y-Wing Starfighter™",
+        "LEGO Set 75249"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75249"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75250",
+      "brand": "LEGO",
+      "model": "75250",
+      "name": "LEGO 75250",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75250",
+        "LEGO 75250 Pasaana Speeder Chase",
+        "LEGO Set 75250"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75250"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75251",
+      "brand": "LEGO",
+      "model": "75251",
+      "name": "LEGO 75251",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75251",
+        "LEGO 75251 Darth Vader's Castle",
+        "LEGO Set 75251"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75251"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75252",
+      "brand": "LEGO",
+      "model": "75252",
+      "name": "LEGO 75252",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75252",
+        "LEGO 75252 Imperial Star Destroyer™",
+        "LEGO Set 75252"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75252"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75253",
+      "brand": "LEGO",
+      "model": "75253",
+      "name": "LEGO 75253",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75253",
+        "LEGO 75253 Droid Commander",
+        "LEGO Set 75253"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75253"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75254",
+      "brand": "LEGO",
+      "model": "75254",
+      "name": "LEGO 75254",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75254",
+        "LEGO 75254 AT-ST™ Raider",
+        "LEGO Set 75254"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75254"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75255",
+      "brand": "LEGO",
+      "model": "75255",
+      "name": "LEGO 75255",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75255",
+        "LEGO 75255 Yoda™",
+        "LEGO Set 75255"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75255"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75256",
+      "brand": "LEGO",
+      "model": "75256",
+      "name": "LEGO 75256",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75256",
+        "LEGO 75256 Kylo Ren’s Shuttle™",
+        "LEGO Set 75256"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75256"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75257",
+      "brand": "LEGO",
+      "model": "75257",
+      "name": "LEGO 75257",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75257",
+        "LEGO 75257 Millennium Falcon™",
+        "LEGO Set 75257"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75257"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75258",
+      "brand": "LEGO",
+      "model": "75258",
+      "name": "LEGO 75258",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75258",
+        "LEGO 75258 Anakin’s Podracer™ – 20th Anniversary Edition",
+        "LEGO Set 75258"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75258"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75259",
+      "brand": "LEGO",
+      "model": "75259",
+      "name": "LEGO 75259",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75259",
+        "LEGO 75259 Snowspeeder™ – 20th Anniversary Edition",
+        "LEGO Set 75259"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75259"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75261",
+      "brand": "LEGO",
+      "model": "75261",
+      "name": "LEGO 75261",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75261",
+        "LEGO 75261 Clone Scout Walker™ – 20th Anniversary Edition",
+        "LEGO Set 75261"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75261"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75262",
+      "brand": "LEGO",
+      "model": "75262",
+      "name": "LEGO 75262",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75262",
+        "LEGO 75262 Imperial Dropship™ – 20th Anniversary Edition",
+        "LEGO Set 75262"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75262"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75263",
+      "brand": "LEGO",
+      "model": "75263",
+      "name": "LEGO 75263",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75263",
+        "LEGO 75263 Resistance Y-wing™ Microfighter",
+        "LEGO Set 75263"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75263"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75264",
+      "brand": "LEGO",
+      "model": "75264",
+      "name": "LEGO 75264",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75264",
+        "LEGO 75264 Kylo Ren's Shuttle™ Microfighter",
+        "LEGO Set 75264"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75264"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75265",
+      "brand": "LEGO",
+      "model": "75265",
+      "name": "LEGO 75265",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75265",
+        "LEGO 75265 T-16 Skyhopper™ vs Bantha™ Microfighters",
+        "LEGO Set 75265"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75265"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75266",
+      "brand": "LEGO",
+      "model": "75266",
+      "name": "LEGO 75266",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75266",
+        "LEGO 75266 Sith Troopers™ Battle Pack",
+        "LEGO Set 75266"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75266"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75267",
+      "brand": "LEGO",
+      "model": "75267",
+      "name": "LEGO 75267",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75267",
+        "LEGO 75267 Mandalorian™ Battle Pack",
+        "LEGO Set 75267"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75267"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75268",
+      "brand": "LEGO",
+      "model": "75268",
+      "name": "LEGO 75268",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75268",
+        "LEGO 75268 Snowspeeder™",
+        "LEGO Set 75268"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75268"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75269",
+      "brand": "LEGO",
+      "model": "75269",
+      "name": "LEGO 75269",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75269",
+        "LEGO 75269 Duel on Mustafar™",
+        "LEGO Set 75269"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75269"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75270",
+      "brand": "LEGO",
+      "model": "75270",
+      "name": "LEGO 75270",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75270",
+        "LEGO 75270 Obi-Wan's Hut",
+        "LEGO Set 75270"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75270"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75271",
+      "brand": "LEGO",
+      "model": "75271",
+      "name": "LEGO 75271",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75271",
+        "LEGO 75271 Luke Skywalker's Landspeeder™",
+        "LEGO Set 75271"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75271"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75272",
+      "brand": "LEGO",
+      "model": "75272",
+      "name": "LEGO 75272",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75272",
+        "LEGO 75272 Sith TIE Fighter™",
+        "LEGO Set 75272"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75272"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75273",
+      "brand": "LEGO",
+      "model": "75273",
+      "name": "LEGO 75273",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75273",
+        "LEGO 75273 Poe Dameron's X-wing Fighter™",
+        "LEGO Set 75273"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75273"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75274",
+      "brand": "LEGO",
+      "model": "75274",
+      "name": "LEGO 75274",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75274",
+        "LEGO 75274 TIE Fighter Pilot™ Helmet",
+        "LEGO Set 75274"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75274"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75275",
+      "brand": "LEGO",
+      "model": "75275",
+      "name": "LEGO 75275",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75275",
+        "LEGO 75275 A-wing Starfighter™",
+        "LEGO Set 75275"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75275"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75276",
+      "brand": "LEGO",
+      "model": "75276",
+      "name": "LEGO 75276",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75276",
+        "LEGO 75276 Stormtrooper™ Helmet",
+        "LEGO Set 75276"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75276"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75277",
+      "brand": "LEGO",
+      "model": "75277",
+      "name": "LEGO 75277",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75277",
+        "LEGO 75277 Boba Fett™ Helmet",
+        "LEGO Set 75277"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75277"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75278",
+      "brand": "LEGO",
+      "model": "75278",
+      "name": "LEGO 75278",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75278",
+        "LEGO 75278 D-O™",
+        "LEGO Set 75278"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75278"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75279",
+      "brand": "LEGO",
+      "model": "75279",
+      "name": "LEGO 75279",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75279",
+        "LEGO 75279 LEGO® Star Wars™ Advent Calendar",
+        "LEGO Set 75279"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75279"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75280",
+      "brand": "LEGO",
+      "model": "75280",
+      "name": "LEGO 75280",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75280",
+        "LEGO 75280 501st Legion™ Clone Troopers",
+        "LEGO Set 75280"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75280"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75281",
+      "brand": "LEGO",
+      "model": "75281",
+      "name": "LEGO 75281",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75281",
+        "LEGO 75281 Anakin's Jedi™ Interceptor",
+        "LEGO Set 75281"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75281"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75283",
+      "brand": "LEGO",
+      "model": "75283",
+      "name": "LEGO 75283",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75283",
+        "LEGO 75283 Armored Assault Tank (AAT™)",
+        "LEGO Set 75283"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75283"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75284",
+      "brand": "LEGO",
+      "model": "75284",
+      "name": "LEGO 75284",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75284",
+        "LEGO 75284 Knights of Ren™ Transport Ship",
+        "LEGO Set 75284"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75284"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75286",
+      "brand": "LEGO",
+      "model": "75286",
+      "name": "LEGO 75286",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75286",
+        "LEGO 75286 General Grievous's Starfighter™",
+        "LEGO Set 75286"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75286"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75288",
+      "brand": "LEGO",
+      "model": "75288",
+      "name": "LEGO 75288",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75288",
+        "LEGO 75288 AT-AT™",
+        "LEGO Set 75288"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75288"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75290",
+      "brand": "LEGO",
+      "model": "75290",
+      "name": "LEGO 75290",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75290",
+        "LEGO 75290 Mos Eisley Cantina™",
+        "LEGO Set 75290"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75290"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75291",
+      "brand": "LEGO",
+      "model": "75291",
+      "name": "LEGO 75291",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75291",
+        "LEGO 75291 Death Star™ Final Duel",
+        "LEGO Set 75291"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75291"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75292",
+      "brand": "LEGO",
+      "model": "75292",
+      "name": "LEGO 75292",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75292",
+        "LEGO 75292 The Razor Crest™",
+        "LEGO Set 75292"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75292"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75293",
+      "brand": "LEGO",
+      "model": "75293",
+      "name": "LEGO 75293",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75293",
+        "LEGO 75293 Resistance I-TS Transport",
+        "LEGO Set 75293"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75293"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75294",
+      "brand": "LEGO",
+      "model": "75294",
+      "name": "LEGO 75294",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75294",
+        "LEGO 75294 Bespin™ Duel",
+        "LEGO Set 75294"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75294"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75295",
+      "brand": "LEGO",
+      "model": "75295",
+      "name": "LEGO 75295",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75295",
+        "LEGO 75295 Millennium Falcon™ Microfighter",
+        "LEGO Set 75295"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75295"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75296",
+      "brand": "LEGO",
+      "model": "75296",
+      "name": "LEGO 75296",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75296",
+        "LEGO 75296 Darth Vader™ Meditation Chamber",
+        "LEGO Set 75296"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75296"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75297",
+      "brand": "LEGO",
+      "model": "75297",
+      "name": "LEGO 75297",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75297",
+        "LEGO 75297 Resistance X-Wing™",
+        "LEGO Set 75297"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75297"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75298",
+      "brand": "LEGO",
+      "model": "75298",
+      "name": "LEGO 75298",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75298",
+        "LEGO 75298 AT-AT™ vs. Tauntaun™ Microfighters",
+        "LEGO Set 75298"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75298"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75299",
+      "brand": "LEGO",
+      "model": "75299",
+      "name": "LEGO 75299",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75299",
+        "LEGO 75299 Trouble on Tatooine™",
+        "LEGO Set 75299"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75299"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75300",
+      "brand": "LEGO",
+      "model": "75300",
+      "name": "LEGO 75300",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75300",
+        "LEGO 75300 Imperial TIE Fighter™",
+        "LEGO Set 75300"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75300"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75301",
+      "brand": "LEGO",
+      "model": "75301",
+      "name": "LEGO 75301",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75301",
+        "LEGO 75301 Luke Skywalker's X-Wing Fighter™",
+        "LEGO Set 75301"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75301"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75302",
+      "brand": "LEGO",
+      "model": "75302",
+      "name": "LEGO 75302",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75302",
+        "LEGO 75302 Imperial Shuttle™",
+        "LEGO Set 75302"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75302"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75306",
+      "brand": "LEGO",
+      "model": "75306",
+      "name": "LEGO 75306",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75306",
+        "LEGO 75306 Imperial Probe Droid™",
+        "LEGO Set 75306"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75306"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75307",
+      "brand": "LEGO",
+      "model": "75307",
+      "name": "LEGO 75307",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75307",
+        "LEGO 75307 LEGO® Star Wars™ Advent Calendar",
+        "LEGO Set 75307"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75307"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75308",
+      "brand": "LEGO",
+      "model": "75308",
+      "name": "LEGO 75308",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75308",
+        "LEGO 75308 R2-D2™",
+        "LEGO Set 75308"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75308"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75309",
+      "brand": "LEGO",
+      "model": "75309",
+      "name": "LEGO 75309",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75309",
+        "LEGO 75309 Republic Gunship™",
+        "LEGO Set 75309"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75309"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75310",
+      "brand": "LEGO",
+      "model": "75310",
+      "name": "LEGO 75310",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75310",
+        "LEGO 75310 Duel on Mandalore™",
+        "LEGO Set 75310"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75310"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75311",
+      "brand": "LEGO",
+      "model": "75311",
+      "name": "LEGO 75311",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75311",
+        "LEGO 75311 Imperial Armored Marauder",
+        "LEGO Set 75311"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75311"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75312",
+      "brand": "LEGO",
+      "model": "75312",
+      "name": "LEGO 75312",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75312",
+        "LEGO 75312 Boba Fett’s Starship™",
+        "LEGO Set 75312"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75312"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75313",
+      "brand": "LEGO",
+      "model": "75313",
+      "name": "LEGO 75313",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75313",
+        "LEGO 75313 AT-AT™",
+        "LEGO Set 75313"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75313"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75314",
+      "brand": "LEGO",
+      "model": "75314",
+      "name": "LEGO 75314",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75314",
+        "LEGO 75314 The Bad Batch™ Attack Shuttle",
+        "LEGO Set 75314"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75314"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75315",
+      "brand": "LEGO",
+      "model": "75315",
+      "name": "LEGO 75315",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75315",
+        "LEGO 75315 Imperial Light Cruiser™",
+        "LEGO Set 75315"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75315"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75316",
+      "brand": "LEGO",
+      "model": "75316",
+      "name": "LEGO 75316",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75316",
+        "LEGO 75316 Mandalorian Starfighter™",
+        "LEGO Set 75316"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75316"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75317",
+      "brand": "LEGO",
+      "model": "75317",
+      "name": "LEGO 75317",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75317",
+        "LEGO 75317 The Mandalorian™ & the Child",
+        "LEGO Set 75317"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75317"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75318",
+      "brand": "LEGO",
+      "model": "75318",
+      "name": "LEGO 75318",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75318",
+        "LEGO 75318 The Child",
+        "LEGO Set 75318"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75318"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75319",
+      "brand": "LEGO",
+      "model": "75319",
+      "name": "LEGO 75319",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75319",
+        "LEGO 75319 The Armorer’s Mandalorian™ Forge",
+        "LEGO Set 75319"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75319"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75320",
+      "brand": "LEGO",
+      "model": "75320",
+      "name": "LEGO 75320",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75320",
+        "LEGO 75320 Snowtrooper™ Battle Pack",
+        "LEGO Set 75320"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75320"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75321",
+      "brand": "LEGO",
+      "model": "75321",
+      "name": "LEGO 75321",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75321",
+        "LEGO 75321 The Razor Crest™ Microfighter",
+        "LEGO Set 75321"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75321"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75322",
+      "brand": "LEGO",
+      "model": "75322",
+      "name": "LEGO 75322",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75322",
+        "LEGO 75322 Hoth™ AT-ST™",
+        "LEGO Set 75322"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75322"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75323",
+      "brand": "LEGO",
+      "model": "75323",
+      "name": "LEGO 75323",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75323",
+        "LEGO 75323 The Justifier™",
+        "LEGO Set 75323"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75323"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75324",
+      "brand": "LEGO",
+      "model": "75324",
+      "name": "LEGO 75324",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75324",
+        "LEGO 75324 Dark Trooper™ Attack",
+        "LEGO Set 75324"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75324"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75326",
+      "brand": "LEGO",
+      "model": "75326",
+      "name": "LEGO 75326",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75326",
+        "LEGO 75326 Boba Fett's Throne Room",
+        "LEGO Set 75326"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75326"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75327",
+      "brand": "LEGO",
+      "model": "75327",
+      "name": "LEGO 75327",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75327",
+        "LEGO 75327 Luke Skywalker™ (Red Five) Helmet",
+        "LEGO Set 75327"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75327"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75329",
+      "brand": "LEGO",
+      "model": "75329",
+      "name": "LEGO 75329",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75329",
+        "LEGO 75329 Death Star™ Trench Run Diorama",
+        "LEGO Set 75329"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75329"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75330",
+      "brand": "LEGO",
+      "model": "75330",
+      "name": "LEGO 75330",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75330",
+        "LEGO 75330 Dagobah™ Jedi™ Training Diorama",
+        "LEGO Set 75330"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75330"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75331",
+      "brand": "LEGO",
+      "model": "75331",
+      "name": "LEGO 75331",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75331",
+        "LEGO 75331 The Razor Crest™",
+        "LEGO Set 75331"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75331"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75332",
+      "brand": "LEGO",
+      "model": "75332",
+      "name": "LEGO 75332",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75332",
+        "LEGO 75332 AT-ST™",
+        "LEGO Set 75332"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75332"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75334",
+      "brand": "LEGO",
+      "model": "75334",
+      "name": "LEGO 75334",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75334",
+        "LEGO 75334 Obi-Wan Kenobi™ vs. Darth Vader™",
+        "LEGO Set 75334"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75334"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75335",
+      "brand": "LEGO",
+      "model": "75335",
+      "name": "LEGO 75335",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75335",
+        "LEGO 75335 BD-1™",
+        "LEGO Set 75335"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75335"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75336",
+      "brand": "LEGO",
+      "model": "75336",
+      "name": "LEGO 75336",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75336",
+        "LEGO 75336 Inquisitor Transport Scythe™",
+        "LEGO Set 75336"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75336"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75338",
+      "brand": "LEGO",
+      "model": "75338",
+      "name": "LEGO 75338",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75338",
+        "LEGO 75338 Ambush on Ferrix™",
+        "LEGO Set 75338"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75338"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75339",
+      "brand": "LEGO",
+      "model": "75339",
+      "name": "LEGO 75339",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75339",
+        "LEGO 75339 Death Star™ Trash Compactor Diorama",
+        "LEGO Set 75339"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75339"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75340",
+      "brand": "LEGO",
+      "model": "75340",
+      "name": "LEGO 75340",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75340",
+        "LEGO 75340 LEGO® Star Wars™ Advent Calendar",
+        "LEGO Set 75340"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75340"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75341",
+      "brand": "LEGO",
+      "model": "75341",
+      "name": "LEGO 75341",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75341",
+        "LEGO 75341 Luke Skywalker’s Landspeeder™",
+        "LEGO Set 75341"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75341"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75342",
+      "brand": "LEGO",
+      "model": "75342",
+      "name": "LEGO 75342",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75342",
+        "LEGO 75342 Republic Fighter Tank™",
+        "LEGO Set 75342"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75342"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75343",
+      "brand": "LEGO",
+      "model": "75343",
+      "name": "LEGO 75343",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75343",
+        "LEGO 75343 Dark Trooper™ Helmet",
+        "LEGO Set 75343"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75343"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75344",
+      "brand": "LEGO",
+      "model": "75344",
+      "name": "LEGO 75344",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75344",
+        "LEGO 75344 Boba Fett's Starship™ Microfighter",
+        "LEGO Set 75344"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75344"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75345",
+      "brand": "LEGO",
+      "model": "75345",
+      "name": "LEGO 75345",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75345",
+        "LEGO 75345 501st Clone Troopers™ Battle Pack",
+        "LEGO Set 75345"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75345"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75348",
+      "brand": "LEGO",
+      "model": "75348",
+      "name": "LEGO 75348",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75348",
+        "LEGO 75348 Mandalorian Fang Fighter vs. TIE Interceptor™",
+        "LEGO Set 75348"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75348"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75349",
+      "brand": "LEGO",
+      "model": "75349",
+      "name": "LEGO 75349",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75349",
+        "LEGO 75349 Captain Rex™ Helmet",
+        "LEGO Set 75349"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75349"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75350",
+      "brand": "LEGO",
+      "model": "75350",
+      "name": "LEGO 75350",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75350",
+        "LEGO 75350 Clone Commander Cody™ Helmet",
+        "LEGO Set 75350"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75350"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75351",
+      "brand": "LEGO",
+      "model": "75351",
+      "name": "LEGO 75351",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75351",
+        "LEGO 75351 Princess Leia™ (Boushh™) Helmet",
+        "LEGO Set 75351"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75351"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75352",
+      "brand": "LEGO",
+      "model": "75352",
+      "name": "LEGO 75352",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75352",
+        "LEGO 75352 Emperor's Throne Room™ Diorama",
+        "LEGO Set 75352"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75352"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75354",
+      "brand": "LEGO",
+      "model": "75354",
+      "name": "LEGO 75354",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75354",
+        "LEGO 75354 Coruscant Guard Gunship™",
+        "LEGO Set 75354"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75354"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75355",
+      "brand": "LEGO",
+      "model": "75355",
+      "name": "LEGO 75355",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75355",
+        "LEGO 75355 X-Wing Starfighter™",
+        "LEGO Set 75355"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75355"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75358",
+      "brand": "LEGO",
+      "model": "75358",
+      "name": "LEGO 75358",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75358",
+        "LEGO 75358 Tenoo Jedi Temple™",
+        "LEGO Set 75358"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75358"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75359",
+      "brand": "LEGO",
+      "model": "75359",
+      "name": "LEGO 75359",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75359",
+        "LEGO 75359 332nd Ahsoka's Clone Trooper™ Battle Pack",
+        "LEGO Set 75359"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75359"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75360",
+      "brand": "LEGO",
+      "model": "75360",
+      "name": "LEGO 75360",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75360",
+        "LEGO 75360 Yoda's Jedi Starfighter™",
+        "LEGO Set 75360"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75360"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75361",
+      "brand": "LEGO",
+      "model": "75361",
+      "name": "LEGO 75361",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75361",
+        "LEGO 75361 Spider Tank",
+        "LEGO Set 75361"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75361"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75363",
+      "brand": "LEGO",
+      "model": "75363",
+      "name": "LEGO 75363",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75363",
+        "LEGO 75363 The Mandalorian N-1 Starfighter™ Microfighter",
+        "LEGO Set 75363"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75363"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75364",
+      "brand": "LEGO",
+      "model": "75364",
+      "name": "LEGO 75364",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75364",
+        "LEGO 75364 New Republic E-Wing™ vs. Shin Hati’s Starfighter™",
+        "LEGO Set 75364"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75364"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75365",
+      "brand": "LEGO",
+      "model": "75365",
+      "name": "LEGO 75365",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75365",
+        "LEGO 75365 Yavin 4 Rebel Base",
+        "LEGO Set 75365"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75365"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75366",
+      "brand": "LEGO",
+      "model": "75366",
+      "name": "LEGO 75366",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75366",
+        "LEGO 75366 Advent Calendar 2023",
+        "LEGO Set 75366"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75366"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75368",
+      "brand": "LEGO",
+      "model": "75368",
+      "name": "LEGO 75368",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75368",
+        "LEGO 75368 Darth Vader™ Mech",
+        "LEGO Set 75368"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75368"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75370",
+      "brand": "LEGO",
+      "model": "75370",
+      "name": "LEGO 75370",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75370",
+        "LEGO 75370 Stormtrooper™ Mech",
+        "LEGO Set 75370"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75370"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75371",
+      "brand": "LEGO",
+      "model": "75371",
+      "name": "LEGO 75371",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75371",
+        "LEGO 75371 Chewbacca™",
+        "LEGO Set 75371"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75371"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75376",
+      "brand": "LEGO",
+      "model": "75376",
+      "name": "LEGO 75376",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75376",
+        "LEGO 75376 Tantive IV™",
+        "LEGO Set 75376"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75376"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75378",
+      "brand": "LEGO",
+      "model": "75378",
+      "name": "LEGO 75378",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75378",
+        "LEGO 75378 BARC Speeder™ Escape",
+        "LEGO Set 75378"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75378"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75381",
+      "brand": "LEGO",
+      "model": "75381",
+      "name": "LEGO 75381",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75381",
+        "LEGO 75381 Droideka™",
+        "LEGO Set 75381"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75381"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75384",
+      "brand": "LEGO",
+      "model": "75384",
+      "name": "LEGO 75384",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75384",
+        "LEGO 75384 The Crimson Firehawk™",
+        "LEGO Set 75384"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75384"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75388",
+      "brand": "LEGO",
+      "model": "75388",
+      "name": "LEGO 75388",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75388",
+        "LEGO 75388 Jedi Bob's Starfighter",
+        "LEGO Set 75388"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75388"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75390",
+      "brand": "LEGO",
+      "model": "75390",
+      "name": "LEGO 75390",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75390",
+        "LEGO 75390 Luke Skywalker™ X-Wing™ Mech",
+        "LEGO Set 75390"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75390"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75395",
+      "brand": "LEGO",
+      "model": "75395",
+      "name": "LEGO 75395",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75395",
+        "LEGO 75395 Advent Calendar 2024",
+        "LEGO Set 75395"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75395"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75396",
+      "brand": "LEGO",
+      "model": "75396",
+      "name": "LEGO 75396",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75396",
+        "LEGO 75396 Desert Skiff & Sarlacc Pit",
+        "LEGO Set 75396"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75396"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75401",
+      "brand": "LEGO",
+      "model": "75401",
+      "name": "LEGO 75401",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75401",
+        "LEGO 75401 Ahsoka's Jedi Interceptor™",
+        "LEGO Set 75401"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75401"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75404",
+      "brand": "LEGO",
+      "model": "75404",
+      "name": "LEGO 75404",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75404",
+        "LEGO 75404 Acclamator-Class Assault Ship™",
+        "LEGO Set 75404"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75404"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-75405",
+      "brand": "LEGO",
+      "model": "75405",
+      "name": "LEGO 75405",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 75405",
+        "LEGO 75405 Home One Starcruiser",
+        "LEGO Set 75405"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "75405"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-star-wars-additional-instructions-2026-11-05"
+    }
+  ]
+}

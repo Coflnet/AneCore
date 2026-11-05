@@ -1,0 +1,1917 @@
+{
+  "reviewed_on": "2026-11-05",
+  "source_policy": "Official LEGO instruction H1 plus exact printed-number panel; each extracted panel is bound to the matching source URL. Theme/panel/instruction_year are provenance only, not inferred attributes. No PDF/image/model downloads. Held CSV is discovery/veto only.",
+  "facts": [
+    {
+      "number": "75215",
+      "name": "Cloud-Rider Swoop Bikes™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75215",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Cloud-Rider Swoop Bikes™",
+        "printed_number": "#75215",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8-14 | #75215 | 355 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75216",
+      "name": "Snoke's Throne Room",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75216",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Snoke's Throne Room",
+        "printed_number": "#75216",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8-14 | #75216 | 492 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75217",
+      "name": "Imperial Conveyex Transport™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75217",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Conveyex Transport™",
+        "printed_number": "#75217",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8-14 | #75217 | 622 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75218",
+      "name": "X-Wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75218",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "X-Wing Starfighter™",
+        "printed_number": "#75218",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8-14 | #75218 | 730 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75219",
+      "name": "Imperial AT-Hauler™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75219",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial AT-Hauler™",
+        "printed_number": "#75219",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9-14 | #75219 | 829 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75220",
+      "name": "Sandcrawler™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75220",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sandcrawler™",
+        "printed_number": "#75220",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9-14 | #75220 | 1239 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75221",
+      "name": "Imperial Landing Craft",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75221",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Landing Craft",
+        "printed_number": "#75221",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9-14 | #75221 | 636 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75222",
+      "name": "Betrayal at Cloud City™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75222",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Betrayal at Cloud City™",
+        "printed_number": "#75222",
+        "theme": "LEGO® Star Wars™",
+        "panel": "14+ | #75222 | 2812 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75223",
+      "name": "Naboo Starfighter™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75223",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Naboo Starfighter™ Microfighter",
+        "printed_number": "#75223",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75223 | 62 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75224",
+      "name": "Sith Infiltrator™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75224",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sith Infiltrator™ Microfighter",
+        "printed_number": "#75224",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75224 | 92 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75225",
+      "name": "Elite Praetorian Guard™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75225",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Elite Praetorian Guard™ Battle Pack",
+        "printed_number": "#75225",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75225 | 109 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75226",
+      "name": "Inferno Squad™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75226",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Inferno Squad™ Battle Pack",
+        "printed_number": "#75226",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75226 | 118 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75227",
+      "name": "Darth Vader™ Bust",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75227",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Darth Vader™ Bust",
+        "printed_number": "#75227",
+        "theme": "LEGO® Star Wars™",
+        "panel": "14+ | #75227 | 327 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75228",
+      "name": "Escape Pod vs. Dewback™ Microfighters",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75228",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Escape Pod vs. Dewback™ Microfighters",
+        "printed_number": "#75228",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75228 | 177 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75229",
+      "name": "Death Star™ Escape",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75229",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Death Star™ Escape",
+        "printed_number": "#75229",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75229 | 329 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75230",
+      "name": "Porg™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75230",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Porg™",
+        "printed_number": "#75230",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9-14 | #75230 | 811 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75232",
+      "name": "Kylo Ren™ & Sith Trooper™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75232",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Kylo Ren™ & Sith Trooper™",
+        "printed_number": "#75232",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75232 | 240 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75233",
+      "name": "Droid Gunship™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75233",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Droid Gunship™",
+        "printed_number": "#75233",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75233 | 389 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75234",
+      "name": "AT-AP™ Walker",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75234",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-AP™ Walker",
+        "printed_number": "#75234",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75234 | 689 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75235",
+      "name": "X-Wing Starfighter™ Trench Run",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75235",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "X-Wing Starfighter™ Trench Run",
+        "printed_number": "#75235",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75235 | 132 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75236",
+      "name": "Duel on Starkiller Base™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75236",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Duel on Starkiller Base™",
+        "printed_number": "#75236",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75236 | 191 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75237",
+      "name": "TIE Fighter™ Attack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75237",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "TIE Fighter™ Attack",
+        "printed_number": "#75237",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75237 | 77 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75238",
+      "name": "Action Battle Endor™ Assault",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75238",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Action Battle Endor™ Assault",
+        "printed_number": "#75238",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75238 | 193 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75239",
+      "name": "Action Battle Hoth™ Generator Attack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75239",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Action Battle Hoth™ Generator Attack",
+        "printed_number": "#75239",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75239 | 235 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75240",
+      "name": "Major Vonreg’s TIE Fighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75240",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Major Vonreg’s TIE Fighter™",
+        "printed_number": "#75240",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75240 | 496 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75241",
+      "name": "Action Battle Echo Base™ Defense",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75241",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Action Battle Echo Base™ Defense",
+        "printed_number": "#75241",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75241 | 504 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75242",
+      "name": "Black Ace TIE Interceptor™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75242",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Black Ace TIE Interceptor™",
+        "printed_number": "#75242",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75242 | 396 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75243",
+      "name": "Slave I™ – 20th Anniversary Edition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75243",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Slave I™ – 20th Anniversary Edition",
+        "printed_number": "#75243",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75243 | 1007 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75244",
+      "name": "Tantive IV™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75244",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Tantive IV™",
+        "printed_number": "#75244",
+        "theme": "LEGO® Star Wars™",
+        "panel": "12+ | #75244 | 1768 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75245",
+      "name": "LEGO® Star Wars™ Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75245",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Star Wars™ Advent Calendar",
+        "printed_number": "#75245",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75245 | 280 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75246",
+      "name": "Death Star Cannon",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75246",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Death Star Cannon",
+        "printed_number": "#75246",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75246 | 159 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75247",
+      "name": "Rebel A-Wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75247",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Rebel A-Wing Starfighter™",
+        "printed_number": "#75247",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75247 | 62 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75248",
+      "name": "Resistance A-Wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75248",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Resistance A-Wing Starfighter™",
+        "printed_number": "#75248",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75248 | 269 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75249",
+      "name": "Resistance Y-Wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75249",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Resistance Y-Wing Starfighter™",
+        "printed_number": "#75249",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75249 | 578 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75250",
+      "name": "Pasaana Speeder Chase",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75250",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Pasaana Speeder Chase",
+        "printed_number": "#75250",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75250 | 373 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75251",
+      "name": "Darth Vader's Castle",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75251",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Darth Vader's Castle",
+        "printed_number": "#75251",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75251 | 1060 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "75252",
+      "name": "Imperial Star Destroyer™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75252",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Star Destroyer™",
+        "printed_number": "#75252",
+        "theme": "LEGO® Star Wars™",
+        "panel": "16+ | #75252 | 4784 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75253",
+      "name": "Droid Commander",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75253",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Droid Commander",
+        "printed_number": "#75253",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75253 | 1177 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75254",
+      "name": "AT-ST™ Raider",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75254",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-ST™ Raider",
+        "printed_number": "#75254",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75254 | 540 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75255",
+      "name": "Yoda™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75255",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Yoda™",
+        "printed_number": "#75255",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75255 | 1771 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75256",
+      "name": "Kylo Ren’s Shuttle™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75256",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Kylo Ren’s Shuttle™",
+        "printed_number": "#75256",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75256 | 1005 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75257",
+      "name": "Millennium Falcon™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75257",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Millennium Falcon™",
+        "printed_number": "#75257",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75257 | 1353 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75258",
+      "name": "Anakin’s Podracer™ – 20th Anniversary Edition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75258",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Anakin’s Podracer™ – 20th Anniversary Edition",
+        "printed_number": "#75258",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75258 | 279 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75259",
+      "name": "Snowspeeder™ – 20th Anniversary Edition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75259",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Snowspeeder™ – 20th Anniversary Edition",
+        "printed_number": "#75259",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75259 | 309 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75261",
+      "name": "Clone Scout Walker™ – 20th Anniversary Edition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75261",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Clone Scout Walker™ – 20th Anniversary Edition",
+        "printed_number": "#75261",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75261 | 250 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75262",
+      "name": "Imperial Dropship™ – 20th Anniversary Edition",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75262",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Dropship™ – 20th Anniversary Edition",
+        "printed_number": "#75262",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75262 | 125 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "75263",
+      "name": "Resistance Y-wing™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75263",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Resistance Y-wing™ Microfighter",
+        "printed_number": "#75263",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75263 | 86 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75264",
+      "name": "Kylo Ren's Shuttle™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75264",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Kylo Ren's Shuttle™ Microfighter",
+        "printed_number": "#75264",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75264 | 72 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75265",
+      "name": "T-16 Skyhopper™ vs Bantha™ Microfighters",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75265",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "T-16 Skyhopper™ vs Bantha™ Microfighters",
+        "printed_number": "#75265",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75265 | 198 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75266",
+      "name": "Sith Troopers™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75266",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sith Troopers™ Battle Pack",
+        "printed_number": "#75266",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75266 | 105 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75267",
+      "name": "Mandalorian™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75267",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mandalorian™ Battle Pack",
+        "printed_number": "#75267",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75267 | 102 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75268",
+      "name": "Snowspeeder™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75268",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Snowspeeder™",
+        "printed_number": "#75268",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75268 | 91 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75269",
+      "name": "Duel on Mustafar™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75269",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Duel on Mustafar™",
+        "printed_number": "#75269",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75269 | 208 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75270",
+      "name": "Obi-Wan's Hut",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75270",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Obi-Wan's Hut",
+        "printed_number": "#75270",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75270 | 200 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75271",
+      "name": "Luke Skywalker's Landspeeder™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75271",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Luke Skywalker's Landspeeder™",
+        "printed_number": "#75271",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75271 | 236 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75272",
+      "name": "Sith TIE Fighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75272",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sith TIE Fighter™",
+        "printed_number": "#75272",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75272 | 470 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75273",
+      "name": "Poe Dameron's X-wing Fighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75273",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Poe Dameron's X-wing Fighter™",
+        "printed_number": "#75273",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75273 | 761 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75274",
+      "name": "TIE Fighter Pilot™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75274",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "TIE Fighter Pilot™ Helmet",
+        "printed_number": "#75274",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75274 | 724 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75275",
+      "name": "A-wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75275",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "A-wing Starfighter™",
+        "printed_number": "#75275",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75275 | 1673 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75276",
+      "name": "Stormtrooper™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75276",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stormtrooper™ Helmet",
+        "printed_number": "#75276",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75276 | 647 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75277",
+      "name": "Boba Fett™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75277",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Boba Fett™ Helmet",
+        "printed_number": "#75277",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75277 | 625 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75278",
+      "name": "D-O™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75278",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "D-O™",
+        "printed_number": "#75278",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75278 | 519 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75279",
+      "name": "LEGO® Star Wars™ Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75279",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Star Wars™ Advent Calendar",
+        "printed_number": "#75279",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75279 | 311 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75280",
+      "name": "501st Legion™ Clone Troopers",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75280",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "501st Legion™ Clone Troopers",
+        "printed_number": "#75280",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75280 | 285 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75281",
+      "name": "Anakin's Jedi™ Interceptor",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75281",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Anakin's Jedi™ Interceptor",
+        "printed_number": "#75281",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75281 | 248 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75283",
+      "name": "Armored Assault Tank (AAT™)",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75283",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Armored Assault Tank (AAT™)",
+        "printed_number": "#75283",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75283 | 286 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75284",
+      "name": "Knights of Ren™ Transport Ship",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75284",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Knights of Ren™ Transport Ship",
+        "printed_number": "#75284",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75284 | 595 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75286",
+      "name": "General Grievous's Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75286",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "General Grievous's Starfighter™",
+        "printed_number": "#75286",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75286 | 487 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75288",
+      "name": "AT-AT™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75288",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-AT™",
+        "printed_number": "#75288",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75288 | 1267 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75290",
+      "name": "Mos Eisley Cantina™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75290",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mos Eisley Cantina™",
+        "printed_number": "#75290",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75290 | 3187 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75291",
+      "name": "Death Star™ Final Duel",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75291",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Death Star™ Final Duel",
+        "printed_number": "#75291",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75291 | 775 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75292",
+      "name": "The Razor Crest™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75292",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Razor Crest™",
+        "printed_number": "#75292",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75292 | 1023 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75293",
+      "name": "Resistance I-TS Transport",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75293",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Resistance I-TS Transport",
+        "printed_number": "#75293",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75293 | 932 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75294",
+      "name": "Bespin™ Duel",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75294",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Bespin™ Duel",
+        "printed_number": "#75294",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75294 | 295 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75295",
+      "name": "Millennium Falcon™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75295",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Millennium Falcon™ Microfighter",
+        "printed_number": "#75295",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75295 | 101 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75296",
+      "name": "Darth Vader™ Meditation Chamber",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75296",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Darth Vader™ Meditation Chamber",
+        "printed_number": "#75296",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75296 | 663 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75297",
+      "name": "Resistance X-Wing™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75297",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Resistance X-Wing™",
+        "printed_number": "#75297",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75297 | 60 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75298",
+      "name": "AT-AT™ vs. Tauntaun™ Microfighters",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75298",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-AT™ vs. Tauntaun™ Microfighters",
+        "printed_number": "#75298",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75298 | 205 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75299",
+      "name": "Trouble on Tatooine™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75299",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Trouble on Tatooine™",
+        "printed_number": "#75299",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75299 | 276 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75300",
+      "name": "Imperial TIE Fighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75300",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial TIE Fighter™",
+        "printed_number": "#75300",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75300 | 432 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75301",
+      "name": "Luke Skywalker's X-Wing Fighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75301",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Luke Skywalker's X-Wing Fighter™",
+        "printed_number": "#75301",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75301 | 474 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75302",
+      "name": "Imperial Shuttle™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75302",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Shuttle™",
+        "printed_number": "#75302",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75302 | 660 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75306",
+      "name": "Imperial Probe Droid™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75306",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Probe Droid™",
+        "printed_number": "#75306",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75306 | 683 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75307",
+      "name": "LEGO® Star Wars™ Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75307",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Star Wars™ Advent Calendar",
+        "printed_number": "#75307",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75307 | 335 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75308",
+      "name": "R2-D2™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75308",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "R2-D2™",
+        "printed_number": "#75308",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75308 | 2314 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75309",
+      "name": "Republic Gunship™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75309",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Republic Gunship™",
+        "printed_number": "#75309",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75309 | 3292 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75310",
+      "name": "Duel on Mandalore™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75310",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Duel on Mandalore™",
+        "printed_number": "#75310",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75310 | 147 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75311",
+      "name": "Imperial Armored Marauder",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75311",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Armored Marauder",
+        "printed_number": "#75311",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75311 | 478 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75312",
+      "name": "Boba Fett’s Starship™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75312",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Boba Fett’s Starship™",
+        "printed_number": "#75312",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75312 | 593 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75313",
+      "name": "AT-AT™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75313",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-AT™",
+        "printed_number": "#75313",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75313 | 6785 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75314",
+      "name": "The Bad Batch™ Attack Shuttle",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75314",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Bad Batch™ Attack Shuttle",
+        "printed_number": "#75314",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75314 | 969 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75315",
+      "name": "Imperial Light Cruiser™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75315",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Imperial Light Cruiser™",
+        "printed_number": "#75315",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75315 | 1336 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75316",
+      "name": "Mandalorian Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75316",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mandalorian Starfighter™",
+        "printed_number": "#75316",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75316 | 544 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75317",
+      "name": "The Mandalorian™ & the Child",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75317",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Mandalorian™ & the Child",
+        "printed_number": "#75317",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75317 | 295 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75318",
+      "name": "The Child",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75318",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Child",
+        "printed_number": "#75318",
+        "theme": "LEGO® Star Wars™",
+        "panel": "10+ | #75318 | 1075 pieces",
+        "instruction_year": "2020"
+      }
+    },
+    {
+      "number": "75319",
+      "name": "The Armorer’s Mandalorian™ Forge",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75319",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Armorer’s Mandalorian™ Forge",
+        "printed_number": "#75319",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75319 | 258 pieces",
+        "instruction_year": "2021"
+      }
+    },
+    {
+      "number": "75320",
+      "name": "Snowtrooper™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75320",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Snowtrooper™ Battle Pack",
+        "printed_number": "#75320",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75320 | 105 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75321",
+      "name": "The Razor Crest™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75321",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Razor Crest™ Microfighter",
+        "printed_number": "#75321",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75321 | 98 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75322",
+      "name": "Hoth™ AT-ST™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75322",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Hoth™ AT-ST™",
+        "printed_number": "#75322",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75322 | 586 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75323",
+      "name": "The Justifier™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75323",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Justifier™",
+        "printed_number": "#75323",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75323 | 1022 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75324",
+      "name": "Dark Trooper™ Attack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75324",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Dark Trooper™ Attack",
+        "printed_number": "#75324",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75324 | 166 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75326",
+      "name": "Boba Fett's Throne Room",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75326",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Boba Fett's Throne Room",
+        "printed_number": "#75326",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75326 | 732 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75327",
+      "name": "Luke Skywalker™ (Red Five) Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75327",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Luke Skywalker™ (Red Five) Helmet",
+        "printed_number": "#75327",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75327 | 675 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75329",
+      "name": "Death Star™ Trench Run Diorama",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75329",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Death Star™ Trench Run Diorama",
+        "printed_number": "#75329",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75329 | 665 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75330",
+      "name": "Dagobah™ Jedi™ Training Diorama",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75330",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Dagobah™ Jedi™ Training Diorama",
+        "printed_number": "#75330",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75330 | 1000 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75331",
+      "name": "The Razor Crest™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75331",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Razor Crest™",
+        "printed_number": "#75331",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75331 | 6187 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75332",
+      "name": "AT-ST™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75332",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "AT-ST™",
+        "printed_number": "#75332",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75332 | 87 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75334",
+      "name": "Obi-Wan Kenobi™ vs. Darth Vader™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75334",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Obi-Wan Kenobi™ vs. Darth Vader™",
+        "printed_number": "#75334",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75334 | 408 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75335",
+      "name": "BD-1™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75335",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "BD-1™",
+        "printed_number": "#75335",
+        "theme": "LEGO® Star Wars™",
+        "panel": "14+ | #75335 | 1062 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75336",
+      "name": "Inquisitor Transport Scythe™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75336",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Inquisitor Transport Scythe™",
+        "printed_number": "#75336",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75336 | 924 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75338",
+      "name": "Ambush on Ferrix™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75338",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Ambush on Ferrix™",
+        "printed_number": "#75338",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75338 | 679 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75339",
+      "name": "Death Star™ Trash Compactor Diorama",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75339",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Death Star™ Trash Compactor Diorama",
+        "printed_number": "#75339",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75339 | 802 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75340",
+      "name": "LEGO® Star Wars™ Advent Calendar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75340",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "LEGO® Star Wars™ Advent Calendar",
+        "printed_number": "#75340",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75340 | 329 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75341",
+      "name": "Luke Skywalker’s Landspeeder™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75341",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Luke Skywalker’s Landspeeder™",
+        "printed_number": "#75341",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75341 | 1890 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75342",
+      "name": "Republic Fighter Tank™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75342",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Republic Fighter Tank™",
+        "printed_number": "#75342",
+        "theme": "LEGO® Star Wars™",
+        "panel": "7+ | #75342 | 262 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75343",
+      "name": "Dark Trooper™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75343",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Dark Trooper™ Helmet",
+        "printed_number": "#75343",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75343 | 693 pieces",
+        "instruction_year": "2022"
+      }
+    },
+    {
+      "number": "75344",
+      "name": "Boba Fett's Starship™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75344",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Boba Fett's Starship™ Microfighter",
+        "printed_number": "#75344",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75344 | 85 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75345",
+      "name": "501st Clone Troopers™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75345",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "501st Clone Troopers™ Battle Pack",
+        "printed_number": "#75345",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75345 | 119 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75348",
+      "name": "Mandalorian Fang Fighter vs. TIE Interceptor™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75348",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mandalorian Fang Fighter vs. TIE Interceptor™",
+        "printed_number": "#75348",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75348 | 957 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75349",
+      "name": "Captain Rex™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75349",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Captain Rex™ Helmet",
+        "printed_number": "#75349",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75349 | 854 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75350",
+      "name": "Clone Commander Cody™ Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75350",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Clone Commander Cody™ Helmet",
+        "printed_number": "#75350",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75350 | 766 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75351",
+      "name": "Princess Leia™ (Boushh™) Helmet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75351",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Princess Leia™ (Boushh™) Helmet",
+        "printed_number": "#75351",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75351 | 670 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75352",
+      "name": "Emperor's Throne Room™ Diorama",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75352",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Emperor's Throne Room™ Diorama",
+        "printed_number": "#75352",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75352 | 807 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75354",
+      "name": "Coruscant Guard Gunship™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75354",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Coruscant Guard Gunship™",
+        "printed_number": "#75354",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75354 | 1083 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75355",
+      "name": "X-Wing Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75355",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "X-Wing Starfighter™",
+        "printed_number": "#75355",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75355 | 1953 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75358",
+      "name": "Tenoo Jedi Temple™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75358",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Tenoo Jedi Temple™",
+        "printed_number": "#75358",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75358 | 124 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75359",
+      "name": "332nd Ahsoka's Clone Trooper™ Battle Pack",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75359",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "332nd Ahsoka's Clone Trooper™ Battle Pack",
+        "printed_number": "#75359",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75359 | 108 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75360",
+      "name": "Yoda's Jedi Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75360",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Yoda's Jedi Starfighter™",
+        "printed_number": "#75360",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75360 | 253 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75361",
+      "name": "Spider Tank",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75361",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Spider Tank",
+        "printed_number": "#75361",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75361 | 526 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75363",
+      "name": "The Mandalorian N-1 Starfighter™ Microfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75363",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Mandalorian N-1 Starfighter™ Microfighter",
+        "printed_number": "#75363",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75363 | 88 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75364",
+      "name": "New Republic E-Wing™ vs. Shin Hati’s Starfighter™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75364",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "New Republic E-Wing™ vs. Shin Hati’s Starfighter™",
+        "printed_number": "#75364",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75364 | 1056 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75365",
+      "name": "Yavin 4 Rebel Base",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75365",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Yavin 4 Rebel Base",
+        "printed_number": "#75365",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75365 | 1066 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75366",
+      "name": "Advent Calendar 2023",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75366",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Advent Calendar 2023",
+        "printed_number": "#75366",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75366 | 320 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75368",
+      "name": "Darth Vader™ Mech",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75368",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Darth Vader™ Mech",
+        "printed_number": "#75368",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75368 | 139 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75370",
+      "name": "Stormtrooper™ Mech",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75370",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Stormtrooper™ Mech",
+        "printed_number": "#75370",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75370 | 138 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75371",
+      "name": "Chewbacca™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75371",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Chewbacca™",
+        "printed_number": "#75371",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75371 | 2319 pieces",
+        "instruction_year": "2023"
+      }
+    },
+    {
+      "number": "75376",
+      "name": "Tantive IV™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75376",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Tantive IV™",
+        "printed_number": "#75376",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75376 | 654 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75378",
+      "name": "BARC Speeder™ Escape",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75378",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "BARC Speeder™ Escape",
+        "printed_number": "#75378",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75378 | 221 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75381",
+      "name": "Droideka™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75381",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Droideka™",
+        "printed_number": "#75381",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75381 | 583 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75384",
+      "name": "The Crimson Firehawk™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75384",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "The Crimson Firehawk™",
+        "printed_number": "#75384",
+        "theme": "LEGO® Star Wars™",
+        "panel": "4+ | #75384 | 136 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75388",
+      "name": "Jedi Bob's Starfighter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75388",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Jedi Bob's Starfighter",
+        "printed_number": "#75388",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75388 | 305 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75390",
+      "name": "Luke Skywalker™ X-Wing™ Mech",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75390",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Luke Skywalker™ X-Wing™ Mech",
+        "printed_number": "#75390",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75390 | 195 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75395",
+      "name": "Advent Calendar 2024",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75395",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Advent Calendar 2024",
+        "printed_number": "#75395",
+        "theme": "LEGO® Star Wars™",
+        "panel": "6+ | #75395 | 368 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75396",
+      "name": "Desert Skiff & Sarlacc Pit",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75396",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Desert Skiff & Sarlacc Pit",
+        "printed_number": "#75396",
+        "theme": "LEGO® Star Wars™",
+        "panel": "9+ | #75396 | 558 pieces",
+        "instruction_year": "2024"
+      }
+    },
+    {
+      "number": "75401",
+      "name": "Ahsoka's Jedi Interceptor™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75401",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Ahsoka's Jedi Interceptor™",
+        "printed_number": "#75401",
+        "theme": "LEGO® Star Wars™",
+        "panel": "8+ | #75401 | 290 pieces",
+        "instruction_year": "2025"
+      }
+    },
+    {
+      "number": "75404",
+      "name": "Acclamator-Class Assault Ship™",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75404",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Acclamator-Class Assault Ship™",
+        "printed_number": "#75404",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75404 | 450 pieces",
+        "instruction_year": "2025"
+      }
+    },
+    {
+      "number": "75405",
+      "name": "Home One Starcruiser",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/75405",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Home One Starcruiser",
+        "printed_number": "#75405",
+        "theme": "LEGO® Star Wars™",
+        "panel": "18+ | #75405 | 559 pieces",
+        "instruction_year": "2025"
+      }
+    }
+  ]
+}

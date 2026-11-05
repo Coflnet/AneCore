@@ -590,3 +590,24 @@ condition, completeness or availability is inferred. Panel years, ages and piece
 are evidence only. No description bodies, instruction PDFs, images or artwork
 are copied. The offline importer reuses existing catalogue helpers; all 49 prior
 seed JSON files remain unchanged.
+
+
+## Additional LEGO Star Wars official instruction headers (2026-11-05)
+
+`lego-star-wars-additional-instructions.json` adds 147 previously absent exact
+printed identities. Reviewed official LEGO H1 and printed-number panels are
+pinned in `tools/catalog-import/proofs/lego-star-wars-additional-instructions-2026-11-05.json`,
+including [75215 Cloud-Rider Swoop Bikes](https://www.lego.com/en-us/service/building-instructions/75215),
+[75292 The Razor Crest](https://www.lego.com/en-us/service/building-instructions/75292),
+[75331 The Razor Crest](https://www.lego.com/en-us/service/building-instructions/75331)
+and [75405 Home One Starcruiser](https://www.lego.com/en-us/service/building-instructions/75405).
+Public index/cache retrieval is not a fresh origin HTTP200 guarantee. A held CSV
+selects or vetoes discovery numbers only; no accepted heading or year comes from it.
+
+Every alias contains LEGO and the complete printed number; a shared heading never
+merges products. Explicit official heading edition/calendar wording is retained
+only in a numbered alias. No bare title alias, guessed year/edition, alternative
+instruction build, offer condition/completeness or availability is inferred.
+Only `set_number` is asserted; instruction years, ages and piece counts remain
+source evidence. No description bodies, PDFs, photos or artwork are imported.
+The offline importer reuses existing helpers. All 50 previous seeds stay unchanged.
