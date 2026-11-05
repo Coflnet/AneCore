@@ -29,7 +29,7 @@ public static class ImageHostMapping
     {
         if (string.IsNullOrWhiteSpace(host))
             return null;
-        host = host.Trim().ToLowerInvariant();
+        host = host.Trim().TrimEnd('.').ToLowerInvariant();
         var known = KnownHosts.FirstOrDefault(e => e.ImageHost == host);
         if (known != null)
             return known;
@@ -45,6 +45,8 @@ public static class ImageHostMapping
         if (string.IsNullOrWhiteSpace(imageUrl))
             return null;
         var url = imageUrl.StartsWith("//") ? "https:" + imageUrl : imageUrl;
-        return Uri.TryCreate(url, UriKind.Absolute, out var uri) ? uri.Host.ToLowerInvariant() : null;
+        if (!Uri.TryCreate(url, UriKind.Absolute, out var uri)) return null;
+        try { return uri.IdnHost.TrimEnd('.').ToLowerInvariant(); }
+        catch (UriFormatException) { return null; }
     }
 }

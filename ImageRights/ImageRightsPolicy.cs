@@ -24,7 +24,7 @@ public sealed class ImageRightsOptions
         return new ImageRightsOptions
         {
             DenyPlatforms = platforms,
-            DenyHosts = new HashSet<string>(Split(denyHosts).Select(h => h.ToLowerInvariant()), StringComparer.OrdinalIgnoreCase)
+            DenyHosts = new HashSet<string>(Split(denyHosts).Select(h => ImageHostMapping.HostOf("https://" + h) ?? h.ToLowerInvariant()), StringComparer.OrdinalIgnoreCase)
         };
     }
 
@@ -51,6 +51,7 @@ public static class ImageRightsPolicy
     /// <summary>Configuration denial for a host, or null. Evidence starts with "denied by configuration".</summary>
     public static string? DenialEvidence(string host, ImageRightsOptions options)
     {
+        host = ImageHostMapping.HostOf("https://" + host) ?? host;
         var mapping = ImageHostMapping.TryGet(host);
         if (options.DenyHosts.Contains(host))
             return $"denied by configuration: host {host} is in IMAGE_RIGHTS:DENY_HOSTS";

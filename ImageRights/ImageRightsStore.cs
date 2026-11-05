@@ -96,14 +96,14 @@ public class CassandraImageRightsStore : IImageRightsStore
     public async Task UpsertAsync(ImageRightsRecord record)
     {
         await InitializeAsync();
-        record.Host = record.Host.ToLowerInvariant();
+        record.Host = ImageHostMapping.HostOf("https://" + record.Host) ?? record.Host.ToLowerInvariant();
         await table.Insert(record).ExecuteAsync();
     }
 
     public async Task<ImageRightsRecord?> GetAsync(string host)
     {
         await InitializeAsync();
-        var lower = host.ToLowerInvariant();
+        var lower = ImageHostMapping.HostOf("https://" + host) ?? host.ToLowerInvariant();
         return (await table.Where(r => r.Host == lower).ExecuteAsync()).FirstOrDefault();
     }
 
@@ -120,11 +120,12 @@ public class InMemoryImageRightsStore : IImageRightsStore
     public Task InitializeAsync() => Task.CompletedTask;
     public Task UpsertAsync(ImageRightsRecord record)
     {
-        rows[record.Host.ToLowerInvariant()] = record;
+        record.Host = ImageHostMapping.HostOf("https://" + record.Host) ?? record.Host.ToLowerInvariant();
+        rows[record.Host] = record;
         return Task.CompletedTask;
     }
     public Task<ImageRightsRecord?> GetAsync(string host) =>
-        Task.FromResult(rows.TryGetValue(host.ToLowerInvariant(), out var r) ? r : null);
+        Task.FromResult(rows.TryGetValue(ImageHostMapping.HostOf("https://" + host) ?? host.ToLowerInvariant(), out var r) ? r : null);
     public Task<IReadOnlyList<ImageRightsRecord>> GetAllAsync() =>
         Task.FromResult<IReadOnlyList<ImageRightsRecord>>(rows.Values.ToList());
 }
