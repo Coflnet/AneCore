@@ -121,18 +121,20 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         return _client;
     }
 
-    private async Task<OpenSearchClient> Initialize(CancellationToken stoppingToken = default)
+    /// <summary>Builds the usual authenticated/TLS client without creating or changing server objects.</summary>
+    public OpenSearchClient ClientWithoutSetup()
     {
-        // setup the inital connection settings
         var settings = openSearch.CreateConnectionSettings()
             .DefaultIndex(IndexName())
             .BasicAuthentication(openSearch.OpenSearchUsername(), openSearch.OpenSearchPassword());
-        settings = openSearch.ConfigureTls(settings);
+        return OpenSearch.NewClient(openSearch.ConfigureTls(settings));
+    }
+
+    private async Task<OpenSearchClient> Initialize(CancellationToken stoppingToken = default)
+    {
+        var client = ClientWithoutSetup();
         logger.LogInformation(
             $"creating a new opensearch client for index {IndexName()} at {openSearch.OpenSearchUrl()}");
-
-
-        var client = OpenSearch.NewClient(settings);
         _client = client;
 
         // send a test ping to ensure we can connect

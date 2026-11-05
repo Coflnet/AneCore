@@ -7,10 +7,11 @@ namespace Coflnet.Ane.Opensearch;
 
 /// <summary>
 /// OpenSearch-backed <see cref="IVisualReferenceStore"/> on top of <see cref="ClothingVisualIndex"/>.
+/// Existing-index-only mode permits listing deletion without setup; initialization and other operations stay inactive.
 /// </summary>
 public class OpenSearchVisualReferenceStore(
     ClothingVisualIndex index,
-    ILogger<OpenSearchVisualReferenceStore> logger) : IVisualReferenceStore
+    ILogger<OpenSearchVisualReferenceStore> logger, bool existingIndexOnly = false) : IVisualReferenceStore
 {
     private volatile bool available;
 
@@ -24,6 +25,7 @@ public class OpenSearchVisualReferenceStore(
     /// </summary>
     public async Task InitializeAsync(CancellationToken ct = default)
     {
+        if (existingIndexOnly) return;
         try
         {
             var client = await index.Client(ct);
@@ -61,10 +63,11 @@ public class OpenSearchVisualReferenceStore(
 
     public async Task DeleteByListingAsync(string listingId, string platform, CancellationToken ct = default)
     {
-        if (!available)
+        if (!available && !existingIndexOnly)
             return;
-        var client = await index.Client(ct);
+        var client = existingIndexOnly ? index.ClientWithoutSetup() : await index.Client(ct);
         var refresh = await client.Indices.RefreshAsync(index.IndexName(), ct: ct);
+        if (existingIndexOnly && MissingIndex(refresh)) return;
         if (!refresh.IsValid || refresh.Shards?.Failed > 0)
             throw new InvalidOperationException(
                 $"Failed to refresh clothing visual index before deleting listing {listingId}: {refresh.DebugInformation}");
@@ -76,10 +79,14 @@ public class OpenSearchVisualReferenceStore(
                 f => f.Term(t => t.Field(x => x.ListingId).Value(listingId)),
                 f => f.Term(t => t.Field(x => x.Platform).Value(platform))))),
             ct);
+        if (existingIndexOnly && MissingIndex(response)) return;
         if (!response.IsValid || !response.ApiCall.Success || response.TimedOut || response.VersionConflicts > 0)
             throw new InvalidOperationException(
                 $"Failed to delete clothing visual documents for listing {listingId} ({response.VersionConflicts} version conflicts, timed out: {response.TimedOut}): {response.DebugInformation}");
     }
+
+    private static bool MissingIndex(IResponse response) => response.ApiCall?.HttpStatusCode == 404
+        && response.ServerError?.Error?.Type == "index_not_found_exception";
 
     public async Task<IReadOnlyList<VisualSearchHit>> SearchAsync(
         float[] queryVector, int k, string groupKey, string modelId, string excludeListingId,

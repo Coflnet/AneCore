@@ -19,7 +19,7 @@ namespace AneCore.Tests;
 public class ClothingVisualIndexMappingTests
 {
     private static (ClothingVisualIndex Index, OpenSearchVisualReferenceStore Store, RecordingConnection Connection) Build(
-        Func<string, string, (int Status, byte[] Body)>? respond = null)
+        Func<string, string, (int Status, byte[] Body)>? respond = null, bool existingIndexOnly = false)
     {
         var connection = new RecordingConnection(respond);
         var config = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
@@ -31,7 +31,7 @@ public class ClothingVisualIndexMappingTests
 
         var openSearch = new FakeOpenSearch(config, NullLogger<Coflnet.Ane.Opensearch.OpenSearch>.Instance, connection);
         var index = new ClothingVisualIndex(NullLogger<ClothingVisualIndex>.Instance, openSearch);
-        var store = new OpenSearchVisualReferenceStore(index, NullLogger<OpenSearchVisualReferenceStore>.Instance);
+        var store = new OpenSearchVisualReferenceStore(index, NullLogger<OpenSearchVisualReferenceStore>.Instance, existingIndexOnly);
         return (index, store, connection);
     }
 
@@ -215,6 +215,64 @@ public class ClothingVisualIndexMappingTests
                 ("POST", "/ane_clothing_visual_v1/_delete_by_query"),
             }));
         Assert.That(connection.Calls.Last().Query, Does.Contain("refresh=true"));
+    }
+
+    [Test]
+    public async Task DeleteExisting_UsesExactListingAndPlatformWithoutAnySetupOrInitialization()
+    {
+        var (_, store, connection) = Build(existingIndexOnly: true);
+        await store.InitializeAsync();
+        Assert.That(connection.Calls, Is.Empty, "delete-only initialization must not create or change any server object");
+        await store.DeleteByListingAsync("native:listing/42", "Kleinanzeigen");
+        Assert.That(connection.Calls.Select(call => (call.Method, call.Path)), Is.EqualTo(new[]
+        {
+            ("POST", "/ane_clothing_visual_v1/_refresh"),
+            ("POST", "/ane_clothing_visual_v1/_delete_by_query")
+        }));
+        using var body = JsonDocument.Parse(connection.Calls.Last().Body!);
+        var filters = body.RootElement.GetProperty("query").GetProperty("bool").GetProperty("filter");
+        Assert.That(filters.GetArrayLength(), Is.EqualTo(2));
+        Assert.That(filters[0].GetProperty("term").GetProperty("listingId").GetProperty("value").GetString(), Is.EqualTo("native:listing/42"));
+        Assert.That(filters[1].GetProperty("term").GetProperty("platform").GetProperty("value").GetString(), Is.EqualTo("Kleinanzeigen"));
+        Assert.That(connection.Calls.Last().Query, Does.Contain("refresh=true"));
+    }
+
+    [TestCase(false)]
+    [TestCase(true)]
+    public async Task DeleteExisting_MissingIndexAtRefreshOrDeleteIsAnIdempotentNoOp(bool duringDelete)
+    {
+        var (_, store, connection) = Build((method, path) => path.EndsWith(duringDelete ? "_delete_by_query" : "_refresh")
+            ? (404, Encoding.UTF8.GetBytes("""{"error":{"type":"index_not_found_exception","reason":"no such index"},"status":404}"""))
+            : DefaultResponse(method, path), existingIndexOnly: true);
+        await store.DeleteByListingAsync("withdrawn", "Ebay");
+        Assert.That(connection.Calls.Count, Is.EqualTo(duringDelete ? 2 : 1));
+        Assert.That(connection.Calls.All(call => call.Method == "POST" && (call.Path.EndsWith("_refresh") || call.Path.EndsWith("_delete_by_query"))), Is.True);
+    }
+
+    [TestCase(503, 0)]
+    [TestCase(200, 1)]
+    [TestCase(404, 0)]
+    public void DeleteExisting_RefreshErrorsDoNotClaimSuccessfulCleanup(int status, int failedShards)
+    {
+        var (_, store, connection) = Build((method, path) => path.EndsWith("_refresh")
+            ? (status, Encoding.UTF8.GetBytes(status == 200
+                ? $"{{\"_shards\":{{\"total\":1,\"successful\":0,\"failed\":{failedShards}}}}}"
+                : $"{{\"error\":{{\"type\":\"unexpected_endpoint_error\",\"reason\":\"unavailable\"}},\"status\":{status}}}"))
+            : DefaultResponse(method, path), existingIndexOnly: true);
+        Assert.ThrowsAsync<InvalidOperationException>(() => store.DeleteByListingAsync("withdrawn", "Ebay"));
+        Assert.That(connection.Calls.All(call => call.Method == "POST" && call.Path.EndsWith("_refresh")), Is.True);
+    }
+
+    [TestCase(503, 0, false)]
+    [TestCase(200, 2, false)]
+    [TestCase(200, 0, true)]
+    public void DeleteExisting_FailedConflictingOrTimedOutQueryPropagates(int status, int conflicts, bool timedOut)
+    {
+        var (_, store, connection) = Build((method, path) => path.EndsWith("_delete_by_query")
+            ? (status, Encoding.UTF8.GetBytes($"{{\"version_conflicts\":{conflicts},\"timed_out\":{JsonSerializer.Serialize(timedOut)},\"total\":2,\"deleted\":0,\"failures\":[]}}"))
+            : DefaultResponse(method, path), existingIndexOnly: true);
+        Assert.ThrowsAsync<InvalidOperationException>(() => store.DeleteByListingAsync("withdrawn", "Ebay"));
+        Assert.That(connection.Calls.All(call => call.Method == "POST" && (call.Path.EndsWith("_refresh") || call.Path.EndsWith("_delete_by_query"))), Is.True);
     }
 
     [TestCase(503, 0)]

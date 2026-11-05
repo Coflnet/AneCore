@@ -1,13 +1,14 @@
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace Coflnet.Ane.ImageRights;
 
-/// <summary>Whether photos of a host may be used for training. Stored as text (the name) in Cassandra.</summary>
+/// <summary>Recorded image policy, resolved separately for comparison and training. Stored as text in Cassandra.</summary>
 public enum ImageRightsStatus
 {
-    /// <summary>Nothing known (or the knowledge is stale): treated like <see cref="Revoked"/> by every consumer.</summary>
+    /// <summary>No verdict; a successful policy lookup may default include, an unavailable store is held separately.</summary>
     Unknown,
-    /// <summary>Both hosts were read and no reservation was found.</summary>
+    /// <summary>No applicable reservation is known for the requested purpose.</summary>
     Allowed,
     /// <summary>A reservation (or a manual denial) exists.</summary>
     Revoked
@@ -18,9 +19,9 @@ public enum FetchState
 {
     /// <summary>2xx, body available (may be empty).</summary>
     Ok,
-    /// <summary>The file does not exist or is not accessible (404, 403, other 4xx): counts as "no signal".</summary>
+    /// <summary>The file does not exist (404 or 410): no reservation was published at this path.</summary>
     NotFound,
-    /// <summary>Network error, timeout, 5xx or rate limiting: the answer is unknown.</summary>
+    /// <summary>Denied access, network error, timeout, 5xx or rate limiting: the answer is unknown.</summary>
     Failed
 }
 
@@ -31,14 +32,12 @@ public sealed record FetchedFile(FetchState State, string? Text)
     public static FetchedFile NotFound { get; } = new(FetchState.NotFound, null);
     public static FetchedFile Failed { get; } = new(FetchState.Failed, null);
 
-    /// <summary>Maps an HTTP status to a result. 5xx, 429 and 408 are failures, every other non-2xx is "no file".</summary>
+    /// <summary>Only 404/410 establish absence; denied, rate-limited and failed reads remain unavailable.</summary>
     public static FetchedFile FromHttp(int statusCode, string? body)
     {
         if (statusCode is >= 200 and < 300)
             return Ok(body);
-        if (statusCode >= 500 || statusCode == 429 || statusCode == 408)
-            return Failed;
-        return NotFound;
+        return statusCode is 404 or 410 ? NotFound : Failed;
     }
 }
 
@@ -51,17 +50,19 @@ public sealed record ImageRightsInput(
     string? ImageTdmrep = null,
     string? SiteTdmrep = null,
     string ImagePath = "/",
-    IReadOnlyDictionary<string, string>? ImageHeaders = null);
+    IReadOnlyDictionary<string, string>? ImageHeaders = null,
+    string UserAgent = ImageRightsEvaluator.UserAgent);
 
 public sealed record ImageRightsResult(ImageRightsStatus Status, IReadOnlyList<string> Evidence);
 
 /// <summary>
-/// Pure, conservative decision whether photos of a host may be used to train a model. A reservation
-/// anywhere wins; only when both hosts were read completely and nothing fired the result is Allowed.
+/// Collects applicable host/header reservations. ImageRightsPolicy.Resolve selects their purpose;
+/// fetch uncertainty never invents a reservation.
 /// </summary>
 public static class ImageRightsEvaluator
 {
-    /// <summary>Crawler names of AI training bots. A group naming one of them with <c>Disallow: /</c> is a reservation.</summary>
+    public const string UserAgent = "ane.deals crawler/1.0";
+    /// <summary>Legacy names retained for compatibility; their groups do not apply to the ANE crawler.</summary>
     public static readonly string[] AiTrainingCrawlers =
     [
         "GPTBot", "CCBot", "Google-Extended", "ClaudeBot", "anthropic-ai", "Applebot-Extended",
@@ -73,13 +74,13 @@ public static class ImageRightsEvaluator
         var revoked = new List<string>();
         var unknown = new List<string>();
 
-        CheckRobots(input.ImageHost, input.ImageRobots, revoked, unknown);
+        CheckRobots(input.ImageHost, input.ImageRobots, input.ImagePath, input.UserAgent, revoked, unknown);
         if (!string.Equals(input.SiteHost, input.ImageHost, StringComparison.OrdinalIgnoreCase))
-            CheckRobots(input.SiteHost, input.SiteRobots, revoked, unknown);
+            CheckRobots(input.SiteHost, input.SiteRobots, "/", input.UserAgent, revoked, unknown);
 
         CheckTdmrep(input.ImageHost, input.ImageTdmrep, input.ImagePath, revoked);
         CheckTdmrep(input.SiteHost, input.SiteTdmrep, "/", revoked);
-        CheckHeaders(input.ImageHeaders, revoked);
+        CheckHeaders(input.ImageHeaders, input.UserAgent, revoked);
 
         if (revoked.Count > 0)
             return new ImageRightsResult(ImageRightsStatus.Revoked, revoked);
@@ -89,7 +90,7 @@ public static class ImageRightsEvaluator
             [$"no reservation found in robots.txt of {input.ImageHost} and {input.SiteHost}"]);
     }
 
-    private static void CheckRobots(string host, FetchedFile file, List<string> revoked, List<string> unknown)
+    private static void CheckRobots(string host, FetchedFile file, string path, string userAgent, List<string> revoked, List<string> unknown)
     {
         if (file.State == FetchState.Failed)
         {
@@ -100,37 +101,34 @@ public static class ImageRightsEvaluator
             return;
 
         var robots = RobotsTxt.Parse(file.Text);
-        foreach (var line in robots.DirectiveLines)
+        var groups = robots.Groups.Select(group => (Group: group, Specificity: group.Agents
+            .Where(a => a != "*" && userAgent.Contains(a, StringComparison.OrdinalIgnoreCase))
+            .Select(a => a.Length).DefaultIfEmpty(0).Max())).ToList();
+        var specificity = groups.Select(g => g.Specificity).DefaultIfEmpty(0).Max();
+        var applicable = groups.Where(g => specificity > 0 ? g.Specificity == specificity : g.Group.Agents.Contains("*")).Select(g => g.Group).ToList();
+        foreach (var line in robots.DirectiveLines.Concat(applicable.SelectMany(g => g.Directives)))
         {
             if (line.Name.Equals("content-signal", StringComparison.OrdinalIgnoreCase)
                 && SplitTokens(line.Value).Any(t => t.Equals("ai-train=no", StringComparison.OrdinalIgnoreCase)))
                 revoked.Add($"robots.txt of {host}: Content-Signal ai-train=no - \"{line.Raw}\"");
-            else if (line.Name.Equals("content-usage", StringComparison.OrdinalIgnoreCase)
+            if (line.Name.Equals("content-signal", StringComparison.OrdinalIgnoreCase))
+                foreach (var token in new[] { "ai-input=no", "use=immediate" })
+                    if (SplitTokens(line.Value).Any(t => t.Equals(token, StringComparison.OrdinalIgnoreCase)))
+                        revoked.Add($"robots.txt of {host}: Content-Signal {token} - \"{line.Raw}\"");
+            if (line.Name.Equals("content-usage", StringComparison.OrdinalIgnoreCase)
                 && SplitTokens(line.Value).Any(t => t.Equals("train-ai=n", StringComparison.OrdinalIgnoreCase)))
                 revoked.Add($"robots.txt of {host}: Content-Usage train-ai=n - \"{line.Raw}\"");
         }
 
-        foreach (var group in robots.Groups)
-        {
-            var named = group.Agents.FirstOrDefault(a =>
-                AiTrainingCrawlers.Any(c => c.Equals(a, StringComparison.OrdinalIgnoreCase)));
-            if (named == null)
-                continue;
-            var disallowRoot = group.Rules.FirstOrDefault(r => r.Name == "disallow" && IsRoot(r.Value));
-            if (disallowRoot == null)
-                continue;
-            // An explicit root Allow ties with the root Disallow and the more permissive rule wins (RFC 9309).
-            if (group.Rules.Any(r => r.Name == "allow" && IsRoot(r.Value)))
-                continue;
-            revoked.Add($"robots.txt of {host}: AI crawler group ({string.Join(", ", group.Agents)}) has Disallow: / - \"{disallowRoot.Raw}\"");
-        }
+        var rules = applicable.SelectMany(g => g.Rules).Where(r => r.Value.Length > 0 && LocationMatches(r.Value, path)).ToList();
+        var longest = rules.Select(r => r.Value.Replace("*", "").TrimEnd('$').Length).DefaultIfEmpty(-1).Max();
+        var strongest = rules.Where(r => r.Value.Replace("*", "").TrimEnd('$').Length == longest).ToList();
+        if (strongest.Any(r => r.Name == "disallow") && !strongest.Any(r => r.Name == "allow"))
+            revoked.Add($"robots.txt of {host}: crawler {userAgent} is disallowed for {path}");
     }
 
-    private static bool IsRoot(string value) => value is "/" or "/*";
-
     private static IEnumerable<string> SplitTokens(string value) =>
-        value.Split([',', ' ', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(t => t.Replace(" ", ""));
+        Regex.Replace(value, @"\s*=\s*", "=").Split([',', ' ', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
     private static void CheckTdmrep(string host, string? json, string path, List<string> revoked)
     {
@@ -191,30 +189,63 @@ public static class ImageRightsEvaluator
         return System.Text.RegularExpressions.Regex.IsMatch(path, regex);
     }
 
-    private static void CheckHeaders(IReadOnlyDictionary<string, string>? headers, List<string> revoked)
+    /// <summary>Applicable response-header restrictions; newline-joined physical fields reset crawler scope.</summary>
+    public static bool HeaderReserves(string name, string value, ImageRightsPurpose purpose, string userAgent = UserAgent)
     {
-        if (headers == null)
-            return;
+        if (name.Equals("tdm-reservation", StringComparison.OrdinalIgnoreCase)) return Regex.Split(value.Trim(), @"[,\s]+").Any(part => part == "1");
+        if (name.Equals("content-signal", StringComparison.OrdinalIgnoreCase))
+            return Regex.IsMatch(value, purpose == ImageRightsPurpose.Comparison
+                ? @"(?:^|[,\s;])(?:ai-input\s*=\s*no|use\s*=\s*immediate)(?=$|[,\s;])"
+                : @"(?:^|[,\s;])(?:ai-train\s*=\s*no|use\s*=\s*immediate)(?=$|[,\s;])", RegexOptions.IgnoreCase);
+        if (!name.Equals("x-robots-tag", StringComparison.OrdinalIgnoreCase)) return false;
+        foreach (var field in value.Split('\n'))
+        {
+            var agent = "*";
+            foreach (var token in field.Split(','))
+            {
+                var directive = token.Trim();
+                var colon = directive.IndexOf(':');
+                if (colon >= 0)
+                {
+                    agent = directive[..colon].Trim();
+                    directive = directive[(colon + 1)..].Trim();
+                }
+                var applicable = agent == "*" || agent.Equals("ane.deals", StringComparison.OrdinalIgnoreCase)
+                    || agent.Equals(userAgent, StringComparison.OrdinalIgnoreCase)
+                    || !Regex.IsMatch(agent, @"^[a-z0-9_.*/-]+$", RegexOptions.IgnoreCase);
+                if (applicable && directive.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries)
+                    .Any(t => t.Equals("noai", StringComparison.OrdinalIgnoreCase) || t.Equals("noimageai", StringComparison.OrdinalIgnoreCase)))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    private static void CheckHeaders(IReadOnlyDictionary<string, string>? headers, string userAgent, List<string> revoked)
+    {
+        if (headers == null) return;
         foreach (var (name, value) in headers)
         {
-            if (name.Equals("tdm-reservation", StringComparison.OrdinalIgnoreCase) && value.Trim() == "1")
-                revoked.Add($"image response header tdm-reservation: {value}");
-            else if (name.Equals("x-robots-tag", StringComparison.OrdinalIgnoreCase)
-                && (value.Contains("noai", StringComparison.OrdinalIgnoreCase)
-                    || value.Contains("noimageai", StringComparison.OrdinalIgnoreCase)))
-                revoked.Add($"image response header X-Robots-Tag: {value}");
+            if (!HeaderReserves(name, value, ImageRightsPurpose.Training, userAgent) && !HeaderReserves(name, value, ImageRightsPurpose.Comparison, userAgent)) continue;
+            var canonical = name.Equals("tdm-reservation", StringComparison.OrdinalIgnoreCase) ? "tdm-reservation"
+                : name.Equals("x-robots-tag", StringComparison.OrdinalIgnoreCase) ? "X-Robots-Tag" : "Content-Signal";
+            revoked.Add($"image response header {canonical}: {value}");
         }
     }
+
 }
 
 /// <summary>Minimal robots.txt reader: groups of user agents with rules plus every other directive line.</summary>
 public sealed class RobotsTxt
 {
     public sealed record Line(string Name, string Value, string Raw);
-    public sealed record Group(List<string> Agents, List<Line> Rules);
+    public sealed record Group(List<string> Agents, List<Line> Rules)
+    {
+        public List<Line> Directives { get; } = [];
+    }
 
     public List<Group> Groups { get; } = [];
-    /// <summary>Content-Signal, Content-Usage and other non-group directives anywhere in the file.</summary>
+    /// <summary>Ungrouped directives; user-agent-specific directives remain on their group.</summary>
     public List<Line> DirectiveLines { get; } = [];
 
     public static RobotsTxt Parse(string text)
@@ -236,7 +267,7 @@ public sealed class RobotsTxt
             {
                 case "user-agent":
                     // consecutive user-agent lines share one group; a user-agent after a rule starts a new one
-                    if (current == null || current.Rules.Count > 0)
+                    if (current == null || current.Rules.Count > 0 || current.Directives.Count > 0)
                     {
                         current = new Group([], []);
                         result.Groups.Add(current);
@@ -248,7 +279,8 @@ public sealed class RobotsTxt
                     current?.Rules.Add(parsed);
                     break;
                 default:
-                    result.DirectiveLines.Add(parsed);
+                    if (current == null) result.DirectiveLines.Add(parsed);
+                    else current.Directives.Add(parsed);
                     break;
             }
         }

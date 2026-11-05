@@ -21,18 +21,18 @@ public class ImageRightsEvaluatorTests
         var result = Eval("images1.vinted.net", "www.vinted.de", Fixture("images1.vinted.net"), Fixture("www.vinted.de"));
 
         Assert.That(result.Status, Is.EqualTo(ImageRightsStatus.Revoked));
-        Assert.That(result.Evidence, Has.Some.Contains("Content-Signal: ai-train=no, search=yes, ai-input=no"));
+        Assert.That(result.Evidence, Has.Some.Contains("Content-Signal: ai-train=no, search=yes, ai-input=yes"));
         Assert.That(result.Evidence, Has.Some.Contains("Content-Usage: train-ai=n"));
-        Assert.That(result.Evidence, Has.Some.Contains("AI crawler group").And.Contains("GPTBot"));
+        Assert.That(result.Evidence, Has.None.Contains("AI crawler group"));
     }
 
     [Test]
-    public void Ebay_AiCrawlerGroupWithDisallowRoot_IsRevokedEvenWithFollowingAllowLines()
+    public void Ebay_OtherBotGroupsDoNotReserveForOurCrawler()
     {
         var result = Eval("i.ebayimg.com", "www.ebay.de", FetchedFile.Ok(""), Fixture("www.ebay.de"));
 
-        Assert.That(result.Status, Is.EqualTo(ImageRightsStatus.Revoked));
-        Assert.That(result.Evidence, Has.Some.Contains("Applebot-Extended"));
+        Assert.That(result.Status, Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(result.Evidence, Has.None.Contains("Applebot-Extended"));
     }
 
     [Test]
@@ -48,7 +48,7 @@ public class ImageRightsEvaluatorTests
     public void EmptyAndMissingRobots_CountAsNoSignal()
     {
         Assert.That(Eval("a", "b", FetchedFile.Ok(""), FetchedFile.NotFound).Status, Is.EqualTo(ImageRightsStatus.Allowed));
-        Assert.That(Eval("a", "b", FetchedFile.FromHttp(404, "Not Found"), FetchedFile.FromHttp(403, "no")).Status,
+        Assert.That(Eval("a", "b", FetchedFile.FromHttp(404, "Not Found"), FetchedFile.FromHttp(410, "Gone")).Status,
             Is.EqualTo(ImageRightsStatus.Allowed));
     }
 
@@ -72,15 +72,15 @@ public class ImageRightsEvaluatorTests
         Assert.That(Eval("a", "b", FetchedFile.Ok("Content-Usage: train-ai=n"), FetchedFile.Failed).Status,
             Is.EqualTo(ImageRightsStatus.Revoked));
 
-    [TestCase("User-agent: GPTBot\nDisallow: /", true)]
-    [TestCase("User-agent: gptbot\nDisallow: /", true)]
+    [TestCase("User-agent: GPTBot\nDisallow: /", false)]
+    [TestCase("User-agent: gptbot\nDisallow: /", false)]
     [TestCase("User-agent: GPTBot\nAllow: /\nDisallow: /account", false)]
     [TestCase("User-agent: GPTBot\nAllow: /\nDisallow: /", false)]
     [TestCase("User-agent: GPTBot\nDisallow: /private", false)]
-    [TestCase("User-agent: *\nDisallow: /", false)]
+    [TestCase("User-agent: *\nDisallow: /", true)]
     [TestCase("User-agent: SomeBot\nDisallow: /", false)]
-    [TestCase("User-agent: SomeBot\nUser-agent: CCBot\nDisallow: /", true)]
-    [TestCase("User-agent: CCBot\nAllow: /\n\nUser-agent: ClaudeBot\nDisallow: /", true)]
+    [TestCase("User-agent: SomeBot\nUser-agent: CCBot\nDisallow: /", false)]
+    [TestCase("User-agent: CCBot\nAllow: /\n\nUser-agent: ClaudeBot\nDisallow: /", false)]
     [TestCase("Content-Signal: ai-train=yes, search=yes", false)]
     [TestCase("Content-Signal: search=yes, ai-train=no", true)]
     [TestCase("Content-Usage: train-ai=y", false)]
@@ -118,7 +118,7 @@ public class ImageRightsEvaluatorTests
     {
         Assert.That(FetchedFile.FromHttp(200, "x").State, Is.EqualTo(FetchState.Ok));
         Assert.That(FetchedFile.FromHttp(404, null).State, Is.EqualTo(FetchState.NotFound));
-        Assert.That(FetchedFile.FromHttp(403, null).State, Is.EqualTo(FetchState.NotFound));
+        Assert.That(FetchedFile.FromHttp(403, null).State, Is.EqualTo(FetchState.Failed));
         Assert.That(FetchedFile.FromHttp(502, null).State, Is.EqualTo(FetchState.Failed));
     }
 }

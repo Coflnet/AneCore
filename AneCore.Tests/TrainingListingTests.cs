@@ -208,13 +208,13 @@ public class TrainingListingBuilderTests
     }
 
     [Test]
-    public void GumtreeAndEbayPhotoHostsAreNeverAllowedByTheImageRightsPolicy()
+    public void PhotoEligibilityIsIndependentOfTextRetentionPlatformBans()
     {
-        // not in the mapping: no rights row can exist, so the status is Unknown, never Allowed
+        // Absence from the host mapping is not an image-use opt-out.
         Assert.That(Coflnet.Ane.ImageRights.ImageHostMapping.TryGet("img.gumtree.com"), Is.Null);
         var decision = Coflnet.Ane.ImageRights.ImageRightsPolicy.Resolve("img.gumtree.com", null, DateTime.UtcNow, new Coflnet.Ane.ImageRights.ImageRightsOptions());
-        Assert.That(decision.Status, Is.Not.EqualTo(Coflnet.Ane.ImageRights.ImageRightsStatus.Allowed));
-        // i.ebayimg.com serves eBay UK too and maps to the forbidden Ebay platform
+        Assert.That(decision.Status, Is.EqualTo(Coflnet.Ane.ImageRights.ImageRightsStatus.Allowed));
+        // Text-retention restrictions remain independent of image eligibility.
         Assert.That(Coflnet.Ane.ImageRights.ImageHostMapping.TryGet("i.ebayimg.com")!.Platform, Is.EqualTo(Platform.Ebay));
         Assert.That(TrainingListingPolicy.IsForbidden(Platform.Ebay), Is.True);
     }

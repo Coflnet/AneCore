@@ -16,19 +16,19 @@ public class ImageRightsPolicyTests
 
     [TestCase(47, ImageRightsStatus.Allowed, ImageRightsStatus.Allowed)]
     [TestCase(49, ImageRightsStatus.Allowed, ImageRightsStatus.Unknown)]
-    [TestCase(49, ImageRightsStatus.Revoked, ImageRightsStatus.Unknown)]
+    [TestCase(49, ImageRightsStatus.Revoked, ImageRightsStatus.Revoked)]
     [TestCase(1, ImageRightsStatus.Revoked, ImageRightsStatus.Revoked)]
     public void EffectiveStatus_StaleAfter48Hours(int hours, ImageRightsStatus stored, ImageRightsStatus expected) =>
         Assert.That(ImageRightsPolicy.EffectiveStatus(stored, Now.AddHours(-hours), Now), Is.EqualTo(expected));
 
     [Test]
-    public void Resolve_StaleRow_IsUnknownWithReason()
+    public void Resolve_StaleNonOptedOutRow_RemainsEligible()
     {
         var decision = ImageRightsPolicy.Resolve("images1.vinted.net", Row("images1.vinted.net", ImageRightsStatus.Allowed, TimeSpan.FromHours(50)),
             Now, ImageRightsOptions.Parse("", null));
 
-        Assert.That(decision.Status, Is.EqualTo(ImageRightsStatus.Unknown));
-        Assert.That(decision.Evidence[0], Does.Contain("older than 48 hours"));
+        Assert.That(decision.Status, Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(decision.CheckedAt, Is.EqualTo(Now.AddHours(-50)));
     }
 
     [Test]
@@ -37,19 +37,19 @@ public class ImageRightsPolicyTests
             Now, ImageRightsOptions.Parse("", null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
 
     [Test]
-    public void Resolve_MissingRowOrUnmappedHost_IsUnknown()
+    public void Resolve_MissingRowOrUnmappedHost_DefaultsEligible()
     {
         var options = ImageRightsOptions.Parse("", null);
-        Assert.That(ImageRightsPolicy.Resolve("i.ebayimg.com", null, Now, options).Status, Is.EqualTo(ImageRightsStatus.Unknown));
+        Assert.That(ImageRightsPolicy.Resolve("i.ebayimg.com", null, Now, options).Status, Is.EqualTo(ImageRightsStatus.Allowed));
         Assert.That(ImageRightsPolicy.Resolve("cdn.example.org", Row("cdn.example.org", ImageRightsStatus.Allowed, TimeSpan.Zero), Now, options).Status,
-            Is.EqualTo(ImageRightsStatus.Unknown));
+            Is.EqualTo(ImageRightsStatus.Allowed));
         Assert.That(ImageRightsPolicy.Resolve(null, null, Now, options).Status, Is.EqualTo(ImageRightsStatus.Unknown));
     }
 
     [Test]
-    public void Options_DefaultDeniesWillhaben_EmptyListDeniesNothing()
+    public void Options_DefaultDeniesNothing_ExplicitListsStillApply()
     {
-        Assert.That(ImageRightsOptions.Parse(null, null).DenyPlatforms, Is.EquivalentTo(new[] { Platform.Willhaben }));
+        Assert.That(ImageRightsOptions.Parse(null, null).DenyPlatforms, Is.Empty);
         Assert.That(ImageRightsOptions.Parse("", null).DenyPlatforms, Is.Empty);
         Assert.That(ImageRightsOptions.Parse("vinted, Ebay,nonsense", null).DenyPlatforms,
             Is.EquivalentTo(new[] { Platform.Vinted, Platform.Ebay }));
@@ -59,7 +59,7 @@ public class ImageRightsPolicyTests
     public void Override_DeniesPlatformEvenWhenStoredAllowed()
     {
         var decision = ImageRightsPolicy.Resolve("cache.willhaben.at", Row("cache.willhaben.at", ImageRightsStatus.Allowed, TimeSpan.Zero),
-            Now, ImageRightsOptions.Parse(null, null));
+            Now, ImageRightsOptions.Parse("Willhaben", null));
 
         Assert.That(decision.Status, Is.EqualTo(ImageRightsStatus.Revoked));
         Assert.That(decision.Evidence[0], Does.StartWith("denied by configuration"));
@@ -114,7 +114,7 @@ public class ImageRightsPolicyTests
             _ => (404, "")
         });
         var store = new InMemoryImageRightsStore();
-        var refresher = new ImageRightsRefresher(store, ImageRightsOptions.Parse(null, null), NullLogger<ImageRightsRefresher>.Instance,
+        var refresher = new ImageRightsRefresher(store, ImageRightsOptions.Parse("Willhaben", null), NullLogger<ImageRightsRefresher>.Instance,
             new HttpClient(handler));
 
         await refresher.RefreshAllAsync(CancellationToken.None);

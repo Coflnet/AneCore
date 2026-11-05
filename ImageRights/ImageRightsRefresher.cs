@@ -11,7 +11,7 @@ namespace Coflnet.Ane.ImageRights;
 /// </summary>
 public class ImageRightsRefresher : BackgroundService
 {
-    public const string UserAgent = "ane.deals crawler/1.0";
+    public const string UserAgent = ImageRightsEvaluator.UserAgent;
     public static readonly TimeSpan Interval = TimeSpan.FromHours(24);
 
     private readonly IImageRightsStore store;
@@ -54,8 +54,15 @@ public class ImageRightsRefresher : BackgroundService
         {
             try
             {
+                var previous = await store.GetAsync(entry.ImageHost);
                 var record = await BuildRecordAsync(entry, cache, token);
-                record.StatusSince = ResolveStatusSince(await store.GetAsync(entry.ImageHost), record.Status, record.CheckedAt);
+                if (previous != null && ImageRightsPolicy.IsObsoleteConfigurationDenial(previous, options)) previous = null;
+                if (previous?.StatusValue == ImageRightsStatus.Revoked)
+                {
+                    if (record.StatusValue != ImageRightsStatus.Revoked || previous.Evidence is not { Count: > 0 }) continue;
+                    record.Evidence = previous.Evidence.Concat(record.Evidence).Distinct().ToList();
+                }
+                record.StatusSince = ResolveStatusSince(previous, record.Status, record.CheckedAt);
                 await store.UpsertAsync(record);
             }
             catch (OperationCanceledException) when (token.IsCancellationRequested) { throw; }
@@ -81,7 +88,10 @@ public class ImageRightsRefresher : BackgroundService
         var imageTdm = await FetchCachedAsync(entry.ImageHost, "/.well-known/tdmrep.json", cache, token);
         var siteTdm = await FetchCachedAsync(entry.SiteHost, "/.well-known/tdmrep.json", cache, token);
         var result = ImageRightsEvaluator.Evaluate(new ImageRightsInput(
-            entry.ImageHost, entry.SiteHost, imageRobots, siteRobots, imageTdm.Text, siteTdm.Text));
+            entry.ImageHost, entry.SiteHost, imageRobots, siteRobots, imageTdm.Text, siteTdm.Text,
+            UserAgent: http.DefaultRequestHeaders.UserAgent.ToString()));
+        if (result.Status != ImageRightsStatus.Revoked && (imageTdm.State == FetchState.Failed || siteTdm.State == FetchState.Failed))
+            result = new ImageRightsResult(ImageRightsStatus.Unknown, ["tdmrep.json could not be fetched completely"]);
         return new ImageRightsRecord
         {
             Host = entry.ImageHost,
