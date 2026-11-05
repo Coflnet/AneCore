@@ -196,7 +196,7 @@ public class Product
                 return ("battery", v.Replace("akku", "").ToUpperInvariant().Replace("MAH", "mAh"));
                 
             // Storage or RAM
-            if (v.EndsWith("gb") || v.EndsWith("tb") || (System.Linq.Enumerable.All(v, char.IsDigit) && v.Length <= 4))
+            if (v.EndsWith("gb") || v.EndsWith("tb"))
             {
                 var numStr = new string(System.Linq.Enumerable.ToArray(System.Linq.Enumerable.TakeWhile(v, char.IsDigit)));
                 if (int.TryParse(numStr, out int num))
