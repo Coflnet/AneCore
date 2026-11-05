@@ -1,0 +1,194 @@
+{
+  "checked_at": "2026-11-05",
+  "base_commit": "58ee29227b41c97af16b8d7d2a30fd8102840675",
+  "method": "Bounded review of official LEGO instruction pages through the web tool, including exact heading, printed number panel and product-section Technic theme. Indexed/cached retrieval may be used; no fresh origin HTTP200 or exhaustive theme coverage is claimed. No PDF/image download, bypass or third-party evidence.",
+  "scope": "13 previously absent numbered identities. Only set_number becomes an attribute; year, age, piece count, edition, offer condition and completeness are not inferred or added. Names are number-anchored aliases only.",
+  "omitted": [
+    {
+      "number": "42012",
+      "reason": "official page unavailable through tool"
+    },
+    {
+      "number": "42013",
+      "reason": "official page unavailable through tool"
+    },
+    {
+      "number": "42085",
+      "reason": "official page unavailable through tool"
+    },
+    {
+      "number": "8298",
+      "reason": "official page unavailable through tool"
+    },
+    {
+      "number": "9396",
+      "reason": "heading and number visible, but product-section theme absent; omitted rather than inferred"
+    },
+    {
+      "number": "8455",
+      "reason": "already seeded at base"
+    },
+    {
+      "number": "8288",
+      "reason": "already seeded at base"
+    }
+  ],
+  "facts": [
+    {
+      "number": "8043",
+      "name": "Motorized Excavator",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8043",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Motorized Excavator",
+        "printed_number": "#8043",
+        "theme": "LEGO® Technic",
+        "panel": "12-16 | #8043 | 1127 pieces"
+      }
+    },
+    {
+      "number": "8047",
+      "name": "Compact Excavator",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8047",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Compact Excavator",
+        "printed_number": "#8047",
+        "theme": "LEGO® Technic",
+        "panel": "8-14 | #8047 | 252 pieces"
+      }
+    },
+    {
+      "number": "8069",
+      "name": "Backhoe Loader",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8069",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Backhoe Loader",
+        "printed_number": "#8069",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #8069 | 609 pieces"
+      }
+    },
+    {
+      "number": "8070",
+      "name": "Supercar",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8070",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Supercar",
+        "printed_number": "#8070",
+        "theme": "LEGO® Technic",
+        "panel": "11-16 | #8070 | 1281 pieces"
+      }
+    },
+    {
+      "number": "8109",
+      "name": "Flatbed Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8109",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Flatbed Truck",
+        "printed_number": "#8109",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #8109 | 1115 pieces"
+      }
+    },
+    {
+      "number": "8258",
+      "name": "Crane Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8258",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Crane Truck",
+        "printed_number": "#8258",
+        "theme": "LEGO® Technic",
+        "panel": "11-16 | #8258 | 2075 pieces"
+      }
+    },
+    {
+      "number": "8264",
+      "name": "Hauler",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8264",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Hauler",
+        "printed_number": "#8264",
+        "theme": "LEGO® Technic",
+        "panel": "9-16 | #8264 | 575 pieces"
+      }
+    },
+    {
+      "number": "8284",
+      "name": "Dune Buggy",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/8284",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Dune Buggy",
+        "printed_number": "#8284",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #8284 | 872 pieces"
+      }
+    },
+    {
+      "number": "9395",
+      "name": "Pick-up Tow Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/9395",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Pick-up Tow Truck",
+        "printed_number": "#9395",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #9395 | 958 pieces"
+      }
+    },
+    {
+      "number": "9397",
+      "name": "Logging Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/9397",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Logging Truck",
+        "printed_number": "#9397",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #9397 | 1308 pieces"
+      }
+    },
+    {
+      "number": "9398",
+      "name": "4X4 Crawler",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/9398",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "4X4 Crawler",
+        "printed_number": "#9398",
+        "theme": "LEGO® Technic",
+        "panel": "11-16 | #9398 | 1327 pieces"
+      }
+    },
+    {
+      "number": "42041",
+      "name": "Race Truck",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42041",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Race Truck",
+        "printed_number": "#42041",
+        "theme": "LEGO® Technic",
+        "panel": "10-16 | #42041 | 608 pieces"
+      }
+    },
+    {
+      "number": "42048",
+      "name": "Race Kart",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/42048",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Race Kart",
+        "printed_number": "#42048",
+        "theme": "LEGO® Technic",
+        "panel": "9-16 | #42048 | 345 pieces"
+      }
+    }
+  ]
+}

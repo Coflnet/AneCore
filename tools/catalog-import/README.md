@@ -684,3 +684,11 @@ Only `set_number` is asserted. Repeated headings remain distinct printed sets;
 existing intake and offer eligibility rules are unchanged. The catalogue totals
 27,872 products and 8,241 LEGO identities; all 50 previous seed JSON files remain
 byte-identical, including the earlier Creator and Star Wars batches.
+
+### Additional LEGO Technic instruction identities (2026-11-05)
+
+13 identities absent from all seeds at `58ee292` are backed by exact official LEGO
+instruction panels in `proofs/lego-technic-additional-instructions-2026-11-05.json`.
+Run `python3 tools/catalog-import/expand_lego_technic_additional_instructions.py --check`
+to verify regeneration and reject existing numbers/models or normalized alias collisions.
+Only `set_number` is imported; inaccessible or theme-ambiguous panels are omitted.

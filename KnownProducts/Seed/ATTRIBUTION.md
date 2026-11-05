@@ -611,3 +611,13 @@ instruction build, offer condition/completeness or availability is inferred.
 Only `set_number` is asserted; instruction years, ages and piece counts remain
 source evidence. No description bodies, PDFs, photos or artwork are imported.
 The offline importer reuses existing helpers. All 50 previous seeds stay unchanged.
+
+## Additional LEGO Technic instruction panels (2026-11-05)
+
+`lego-technic-additional-instructions.json` adds 13 previously absent numbered identities
+from official LEGO building-instruction headings and printed-number panels. Exact
+URLs and reviewed Technic panels are pinned in
+`tools/catalog-import/proofs/lego-technic-additional-instructions-2026-11-05.json`.
+Only set numbers become attributes; names remain number-anchored aliases. No year,
+edition, age, piece count or offer completeness is imported. Indexed/cached web
+retrieval is possible; no fresh-origin or exhaustive theme coverage is claimed.

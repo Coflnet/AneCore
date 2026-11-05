@@ -1,0 +1,316 @@
+{
+  "products": [
+    {
+      "id": "lego-42041",
+      "brand": "LEGO",
+      "model": "42041",
+      "name": "LEGO 42041",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42041",
+        "LEGO 42041 Race Truck",
+        "LEGO Set 42041"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42041"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-42048",
+      "brand": "LEGO",
+      "model": "42048",
+      "name": "LEGO 42048",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 42048",
+        "LEGO 42048 Race Kart",
+        "LEGO Set 42048"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "42048"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8043",
+      "brand": "LEGO",
+      "model": "8043",
+      "name": "LEGO 8043",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8043",
+        "LEGO 8043 Motorized Excavator",
+        "LEGO Set 8043"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8043"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8047",
+      "brand": "LEGO",
+      "model": "8047",
+      "name": "LEGO 8047",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8047",
+        "LEGO 8047 Compact Excavator",
+        "LEGO Set 8047"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8047"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8069",
+      "brand": "LEGO",
+      "model": "8069",
+      "name": "LEGO 8069",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8069",
+        "LEGO 8069 Backhoe Loader",
+        "LEGO Set 8069"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8069"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8070",
+      "brand": "LEGO",
+      "model": "8070",
+      "name": "LEGO 8070",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8070",
+        "LEGO 8070 Supercar",
+        "LEGO Set 8070"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8070"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8109",
+      "brand": "LEGO",
+      "model": "8109",
+      "name": "LEGO 8109",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8109",
+        "LEGO 8109 Flatbed Truck",
+        "LEGO Set 8109"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8109"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8258",
+      "brand": "LEGO",
+      "model": "8258",
+      "name": "LEGO 8258",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8258",
+        "LEGO 8258 Crane Truck",
+        "LEGO Set 8258"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8258"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8264",
+      "brand": "LEGO",
+      "model": "8264",
+      "name": "LEGO 8264",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8264",
+        "LEGO 8264 Hauler",
+        "LEGO Set 8264"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8264"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-8284",
+      "brand": "LEGO",
+      "model": "8284",
+      "name": "LEGO 8284",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 8284",
+        "LEGO 8284 Dune Buggy",
+        "LEGO Set 8284"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "8284"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-9395",
+      "brand": "LEGO",
+      "model": "9395",
+      "name": "LEGO 9395",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 9395",
+        "LEGO 9395 Pick-up Tow Truck",
+        "LEGO Set 9395"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "9395"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-9397",
+      "brand": "LEGO",
+      "model": "9397",
+      "name": "LEGO 9397",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 9397",
+        "LEGO 9397 Logging Truck",
+        "LEGO Set 9397"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "9397"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-9398",
+      "brand": "LEGO",
+      "model": "9398",
+      "name": "LEGO 9398",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 9398",
+        "LEGO 9398 4X4 Crawler",
+        "LEGO Set 9398"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "9398"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-technic-additional-instructions-2026-11-05"
+    }
+  ]
+}
