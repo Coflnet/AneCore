@@ -636,3 +636,27 @@ or condition is inferred. Identical official headings, such as Propeller Plane
 31047 and 31099, remain different numbered identities. Existing intake and offer
 eligibility policies are unchanged. The catalogue now has 27,586 products,
 including 7,955 LEGO identities; all 48 previous seed JSON files remain unchanged.
+
+
+### LEGO Star Wars instruction identities (2026-11-05, R61)
+
+`expand_lego_star_wars_instructions.py` adds 139 missing 75000–75299 printed set
+identities from official LEGO instruction headers pinned in
+`proofs/lego-star-wars-instructions-2026-11-05-r61.json`. Eleven unresolved public
+retrievals are omitted; this is not a complete theme inventory or a fresh origin
+HTTP200 guarantee. Repeat offline with:
+
+```sh
+python3 tools/catalog-import/expand_lego_star_wars_instructions.py
+python3 tools/catalog-import/expand_lego_star_wars_instructions.py --check
+```
+
+The existing helper and official-instructions importer pattern checks all other
+seeds for set numbers, LEGO models, IDs and normalized alias collisions. Only its
+own output is excluded on rerun. Canonical names remain `LEGO <number>` and all
+three aliases contain LEGO plus the complete number; repeated official headings
+remain distinct numbered products. Only `set_number` is asserted: instruction
+years, ages and piece counts remain proof rather than release/edition/completeness
+metadata. Existing intake and offer eligibility stay unchanged. The combined
+catalogue contains 27,725 products, including 8,094 LEGO identities; all 49 previous
+seed JSON files, including R57 Creator, remain byte-identical.

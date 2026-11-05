@@ -571,3 +571,22 @@ asserted. Panel years, ages and pieces remain evidence, with no inferred release
 year, inventory, condition, offer completeness, price or availability. All 48 prior
 seed JSON files remain byte-identical. No marketplace photos, instruction PDFs,
 manufacturer artwork or product-description bodies are imported.
+
+
+## LEGO Star Wars official instruction headers (2026-11-05, R61)
+
+`lego-star-wars-instructions.json` adds 139 previously absent exact printed sets
+from official LEGO instruction H1 and printed-number panels. The reviewed proof
+is `tools/catalog-import/proofs/lego-star-wars-instructions-2026-11-05-r61.json`,
+including [75052 Mos Eisley Cantina](https://www.lego.com/en-us/service/building-instructions/75052),
+[75149 Resistance X-Wing Fighter](https://www.lego.com/en-us/service/building-instructions/75149)
+and [75150 Vader's TIE Advanced vs. A-Wing Starfighter](https://www.lego.com/en-us/service/building-instructions/75150).
+Public index/cache verification does not guarantee fresh origin HTTP200; eleven
+unresolved requests were excluded without asserting those products do not exist.
+
+Only exact numbered identity and number-anchored official headings enter the
+seed. No bare title alias, guessed edition/year, instruction alternative build,
+condition, completeness or availability is inferred. Panel years, ages and pieces
+are evidence only. No description bodies, instruction PDFs, images or artwork
+are copied. The offline importer reuses existing catalogue helpers; all 49 prior
+seed JSON files remain unchanged.
