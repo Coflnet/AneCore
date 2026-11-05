@@ -1,0 +1,803 @@
+{
+  "checked_at": "2026-11-05",
+  "method": "Official LEGO English instruction identity panels retrieved via public web-tool index/cache access. Exact H1, theme, printed number and panel/year recorded; no fresh originHTTP200 or complete range/theme enumeration claimed. Held third-party CSV selected request numbers only, never supplied accepted names/years.",
+  "scope": "Creator310xx family: one identity per exact printed set number; set_number only as product attribute. Instruction years/ages/pieces are evidence only, not inferred release dates or completeness/condition. No alternative-build/manual/part/accessory rows or locale editions created.",
+  "omitted_unverified": [
+    "31030",
+    "31043",
+    "31053",
+    "31056",
+    "31062",
+    "31065",
+    "31067",
+    "31079",
+    "31084",
+    "31085",
+    "31086",
+    "31093",
+    "31094"
+  ],
+  "omission_limit": "Missing/partial indexed panel retrieval is not a claim a set does not exist. No name inferred from a third-party table or URL slug.",
+  "facts": [
+    {
+      "number": "31023",
+      "name": "Yellow Racers",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31023",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Yellow Racers",
+        "printed_number": "#31023",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31023 | 328 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31024",
+      "name": "Roaring Power",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31024",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Roaring Power",
+        "printed_number": "#31024",
+        "theme": "LEGO® Creator",
+        "panel": "8-12 | #31024 | 374 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31026",
+      "name": "Bike Shop & Café",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31026",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Bike Shop & Café",
+        "printed_number": "#31026",
+        "theme": "3in1",
+        "panel": "9-14 | #31026 | 1023 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31027",
+      "name": "Blue Racer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31027",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Blue Racer",
+        "printed_number": "#31027",
+        "theme": "3in1",
+        "panel": "6-12 | #31027 | 67 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31028",
+      "name": "Sea Plane",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31028",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sea Plane",
+        "printed_number": "#31028",
+        "theme": "3in1",
+        "panel": "6-12 | #31028 | 53 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31029",
+      "name": "Cargo Heli",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31029",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Cargo Heli",
+        "printed_number": "#31029",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31029 | 132 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31031",
+      "name": "Rainforest Animals",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31031",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Rainforest Animals",
+        "printed_number": "#31031",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31031 | 215 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31032",
+      "name": "Red Creatures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31032",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Red Creatures",
+        "printed_number": "#31032",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31032 | 221 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31033",
+      "name": "Vehicle Transporter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31033",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Vehicle Transporter",
+        "printed_number": "#31033",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31033 | 264 pieces",
+        "instruction_year": "2014"
+      }
+    },
+    {
+      "number": "31034",
+      "name": "Future flyers",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31034",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Future flyers",
+        "printed_number": "#31034",
+        "theme": "3in1",
+        "panel": "7-12 | #31034 | 237 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31035",
+      "name": "Beach Hut",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31035",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Beach Hut",
+        "printed_number": "#31035",
+        "theme": "3in1",
+        "panel": "7-12 | #31035 | 286 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31036",
+      "name": "Toy & Grocery Shop",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31036",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Toy & Grocery Shop",
+        "printed_number": "#31036",
+        "theme": "3in1",
+        "panel": "8-12 | #31036 | 466 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31037",
+      "name": "Adventure Vehicles",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31037",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Adventure Vehicles",
+        "printed_number": "#31037",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31037 | 282 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31038",
+      "name": "Changing Seasons",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31038",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Changing Seasons",
+        "printed_number": "#31038",
+        "theme": "3in1",
+        "panel": "8-12 | #31038 | 536 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31039",
+      "name": "Blue Power Jet",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31039",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Blue Power Jet",
+        "printed_number": "#31039",
+        "theme": "LEGO® Creator",
+        "panel": "9-14 | #31039 | 608 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31040",
+      "name": "Desert Racers",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31040",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Desert Racers",
+        "printed_number": "#31040",
+        "theme": "3in1",
+        "panel": "6-12 | #31040 | 65 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31041",
+      "name": "Construction Vehicles",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31041",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Construction Vehicles",
+        "printed_number": "#31041",
+        "theme": "3in1",
+        "panel": "6-12 | #31041 | 64 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31042",
+      "name": "Super Soarer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31042",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Super Soarer",
+        "printed_number": "#31042",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31042 | 100 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31044",
+      "name": "Park Animals",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31044",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Park Animals",
+        "printed_number": "#31044",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31044 | 202 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31045",
+      "name": "Ocean Explorer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31045",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Ocean Explorer",
+        "printed_number": "#31045",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31045 | 213 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31046",
+      "name": "Fast Car",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31046",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Fast Car",
+        "printed_number": "#31046",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31046 | 222 pieces",
+        "instruction_year": "2015"
+      }
+    },
+    {
+      "number": "31047",
+      "name": "Propeller Plane",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31047",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Propeller Plane",
+        "printed_number": "#31047",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31047 | 230 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31048",
+      "name": "Lakeside Lodge",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31048",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Lakeside Lodge",
+        "printed_number": "#31048",
+        "theme": "3in1",
+        "panel": "7-12 | #31048 | 368 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31049",
+      "name": "Twin Spin Helicopter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31049",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Twin Spin Helicopter",
+        "printed_number": "#31049",
+        "theme": "LEGO® Creator",
+        "panel": "8-12 | #31049 | 326 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31050",
+      "name": "Corner Deli",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31050",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Corner Deli",
+        "printed_number": "#31050",
+        "theme": "3in1",
+        "panel": "8-12 | #31050 | 467 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31051",
+      "name": "Lighthouse Point",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31051",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Lighthouse Point",
+        "printed_number": "#31051",
+        "theme": "LEGO® Creator",
+        "panel": "8-12 | #31051 | 528 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31052",
+      "name": "Vacation Getaways",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31052",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Vacation Getaways",
+        "printed_number": "#31052",
+        "theme": "LEGO® Creator",
+        "panel": "9-14 | #31052 | 792 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31054",
+      "name": "Blue Express",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31054",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Blue Express",
+        "printed_number": "#31054",
+        "theme": "3in1",
+        "panel": "6-12 | #31054 | 71 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31055",
+      "name": "Red racer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31055",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Red racer",
+        "printed_number": "#31055",
+        "theme": "3in1",
+        "panel": "6-12 | #31055 | 72 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31057",
+      "name": "Air Blazer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31057",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Air Blazer",
+        "printed_number": "#31057",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31057 | 102 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31059",
+      "name": "Sunset Street Bike",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31059",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sunset Street Bike",
+        "printed_number": "#31059",
+        "theme": "LEGO® Creator",
+        "panel": "8-12 | #31059 | 194 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31060",
+      "name": "Airshow Aces",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31060",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Airshow Aces",
+        "printed_number": "#31060",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31060 | 246 pieces",
+        "instruction_year": "2016"
+      }
+    },
+    {
+      "number": "31063",
+      "name": "Beachside Vacation",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31063",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Beachside Vacation",
+        "printed_number": "#31063",
+        "theme": "3in1",
+        "panel": "7-12 | #31063 | 275 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31064",
+      "name": "Island Adventures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31064",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Island Adventures",
+        "printed_number": "#31064",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31064 | 359 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31066",
+      "name": "Space Shuttle Explorer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31066",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Space Shuttle Explorer",
+        "printed_number": "#31066",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31066 | 285 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31068",
+      "name": "Modular Modern Home",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31068",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Modular Modern Home",
+        "printed_number": "#31068",
+        "theme": "3in1",
+        "panel": "8-12 | #31068 | 386 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31069",
+      "name": "Modular Family Villa",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31069",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Modular Family Villa",
+        "printed_number": "#31069",
+        "theme": "3in1",
+        "panel": "8-12 | #31069 | 728 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31070",
+      "name": "Turbo Track Racer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31070",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Turbo Track Racer",
+        "printed_number": "#31070",
+        "theme": "LEGO® Creator",
+        "panel": "9-12 | #31070 | 670 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31071",
+      "name": "Drone Explorer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31071",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Drone Explorer",
+        "printed_number": "#31071",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31071 | 109 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31072",
+      "name": "Extreme Engines",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31072",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Extreme Engines",
+        "printed_number": "#31072",
+        "theme": "LEGO® Creator",
+        "panel": "6-12 | #31072 | 109 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31073",
+      "name": "Mythical Creatures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31073",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Mythical Creatures",
+        "printed_number": "#31073",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31073 | 223 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31074",
+      "name": "Rocket Rally Car",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31074",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Rocket Rally Car",
+        "printed_number": "#31074",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31074 | 241 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31075",
+      "name": "Outback Adventures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31075",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Outback Adventures",
+        "printed_number": "#31075",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31075 | 225 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31076",
+      "name": "Daredevil Stunt Plane",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31076",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Daredevil Stunt Plane",
+        "printed_number": "#31076",
+        "theme": "LEGO® Creator",
+        "panel": "7-12 | #31076 | 200 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31077",
+      "name": "Modular Sweet Surprises",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31077",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Modular Sweet Surprises",
+        "printed_number": "#31077",
+        "theme": "3in1",
+        "panel": "8-12 | #31077 | 396 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31078",
+      "name": "Treehouse Treasures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31078",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Treehouse Treasures",
+        "printed_number": "#31078",
+        "theme": "3in1",
+        "panel": "7-12 | #31078 | 260 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31080",
+      "name": "Modular Winter Vacation",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31080",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Modular Winter Vacation",
+        "printed_number": "#31080",
+        "theme": "3in1",
+        "panel": "7-12 | #31080 | 374 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31081",
+      "name": "Modular Skate House",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31081",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Modular Skate House",
+        "printed_number": "#31081",
+        "theme": "3in1",
+        "panel": "8-12 | #31081 | 422 pieces",
+        "instruction_year": "2017"
+      }
+    },
+    {
+      "number": "31083",
+      "name": "Cruising Adventures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31083",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Cruising Adventures",
+        "printed_number": "#31083",
+        "theme": "LEGO® Creator",
+        "panel": "9-14 | #31083 | 597 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31087",
+      "name": "Dune Buggy",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31087",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Dune Buggy",
+        "printed_number": "#31087",
+        "theme": "LEGO® Creator",
+        "panel": "6+ | #31087 | 147 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31088",
+      "name": "Deep Sea Creatures",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31088",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Deep Sea Creatures",
+        "printed_number": "#31088",
+        "theme": "LEGO® Creator",
+        "panel": "7+ | #31088 | 230 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31089",
+      "name": "Sunset Track Racer",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31089",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Sunset Track Racer",
+        "printed_number": "#31089",
+        "theme": "LEGO® Creator",
+        "panel": "7+ | #31089 | 221 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31090",
+      "name": "Underwater Robot",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31090",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Underwater Robot",
+        "printed_number": "#31090",
+        "theme": "3in1",
+        "panel": "7+ | #31090 | 207 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31091",
+      "name": "Shuttle Transporter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31091",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Shuttle Transporter",
+        "printed_number": "#31091",
+        "theme": "3in1",
+        "panel": "7+ | #31091 | 341 pieces",
+        "instruction_year": "2018"
+      }
+    },
+    {
+      "number": "31092",
+      "name": "Helicopter Adventure",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31092",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Helicopter Adventure",
+        "printed_number": "#31092",
+        "theme": "LEGO® Creator",
+        "panel": "6+ | #31092 | 114 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "31095",
+      "name": "Fairground Carousel",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31095",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Fairground Carousel",
+        "printed_number": "#31095",
+        "theme": "LEGO® Creator",
+        "panel": "8+ | #31095 | 595 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "31096",
+      "name": "Twin-Rotor Helicopter",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31096",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Twin-Rotor Helicopter",
+        "printed_number": "#31096",
+        "theme": "LEGO® Creator",
+        "panel": "9+ | #31096 | 569 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "31097",
+      "name": "Townhouse Pet Shop & Café",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31097",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Townhouse Pet Shop & Café",
+        "printed_number": "#31097",
+        "theme": "LEGO® Creator",
+        "panel": "9+ | #31097 | 969 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "31098",
+      "name": "Outback Cabin",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31098",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Outback Cabin",
+        "printed_number": "#31098",
+        "theme": "LEGO® Creator",
+        "panel": "7+ | #31098 | 305 pieces",
+        "instruction_year": "2019"
+      }
+    },
+    {
+      "number": "31099",
+      "name": "Propeller Plane",
+      "source_url": "https://www.lego.com/en-us/service/building-instructions/31099",
+      "evidence_type": "instruction_panel",
+      "metadata": {
+        "h1": "Propeller Plane",
+        "printed_number": "#31099",
+        "theme": "LEGO® Creator",
+        "panel": "6+ | #31099 | 128 pieces",
+        "instruction_year": "2020"
+      }
+    }
+  ]
+}

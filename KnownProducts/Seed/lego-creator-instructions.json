@@ -1,0 +1,1444 @@
+{
+  "products": [
+    {
+      "id": "lego-31023",
+      "brand": "LEGO",
+      "model": "31023",
+      "name": "LEGO 31023",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31023",
+        "LEGO 31023 Yellow Racers",
+        "LEGO Set 31023"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31023"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31024",
+      "brand": "LEGO",
+      "model": "31024",
+      "name": "LEGO 31024",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31024",
+        "LEGO 31024 Roaring Power",
+        "LEGO Set 31024"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31024"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31026",
+      "brand": "LEGO",
+      "model": "31026",
+      "name": "LEGO 31026",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31026",
+        "LEGO 31026 Bike Shop & Café",
+        "LEGO Set 31026"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31026"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31027",
+      "brand": "LEGO",
+      "model": "31027",
+      "name": "LEGO 31027",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31027",
+        "LEGO 31027 Blue Racer",
+        "LEGO Set 31027"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31027"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31028",
+      "brand": "LEGO",
+      "model": "31028",
+      "name": "LEGO 31028",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31028",
+        "LEGO 31028 Sea Plane",
+        "LEGO Set 31028"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31028"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31029",
+      "brand": "LEGO",
+      "model": "31029",
+      "name": "LEGO 31029",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31029",
+        "LEGO 31029 Cargo Heli",
+        "LEGO Set 31029"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31029"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31031",
+      "brand": "LEGO",
+      "model": "31031",
+      "name": "LEGO 31031",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31031",
+        "LEGO 31031 Rainforest Animals",
+        "LEGO Set 31031"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31031"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31032",
+      "brand": "LEGO",
+      "model": "31032",
+      "name": "LEGO 31032",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31032",
+        "LEGO 31032 Red Creatures",
+        "LEGO Set 31032"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31032"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31033",
+      "brand": "LEGO",
+      "model": "31033",
+      "name": "LEGO 31033",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31033",
+        "LEGO 31033 Vehicle Transporter",
+        "LEGO Set 31033"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31033"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31034",
+      "brand": "LEGO",
+      "model": "31034",
+      "name": "LEGO 31034",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31034",
+        "LEGO 31034 Future flyers",
+        "LEGO Set 31034"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31034"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31035",
+      "brand": "LEGO",
+      "model": "31035",
+      "name": "LEGO 31035",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31035",
+        "LEGO 31035 Beach Hut",
+        "LEGO Set 31035"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31035"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31036",
+      "brand": "LEGO",
+      "model": "31036",
+      "name": "LEGO 31036",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31036",
+        "LEGO 31036 Toy & Grocery Shop",
+        "LEGO Set 31036"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31036"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31037",
+      "brand": "LEGO",
+      "model": "31037",
+      "name": "LEGO 31037",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31037",
+        "LEGO 31037 Adventure Vehicles",
+        "LEGO Set 31037"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31037"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31038",
+      "brand": "LEGO",
+      "model": "31038",
+      "name": "LEGO 31038",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31038",
+        "LEGO 31038 Changing Seasons",
+        "LEGO Set 31038"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31038"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31039",
+      "brand": "LEGO",
+      "model": "31039",
+      "name": "LEGO 31039",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31039",
+        "LEGO 31039 Blue Power Jet",
+        "LEGO Set 31039"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31039"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31040",
+      "brand": "LEGO",
+      "model": "31040",
+      "name": "LEGO 31040",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31040",
+        "LEGO 31040 Desert Racers",
+        "LEGO Set 31040"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31040"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31041",
+      "brand": "LEGO",
+      "model": "31041",
+      "name": "LEGO 31041",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31041",
+        "LEGO 31041 Construction Vehicles",
+        "LEGO Set 31041"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31041"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31042",
+      "brand": "LEGO",
+      "model": "31042",
+      "name": "LEGO 31042",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31042",
+        "LEGO 31042 Super Soarer",
+        "LEGO Set 31042"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31042"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31044",
+      "brand": "LEGO",
+      "model": "31044",
+      "name": "LEGO 31044",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31044",
+        "LEGO 31044 Park Animals",
+        "LEGO Set 31044"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31044"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31045",
+      "brand": "LEGO",
+      "model": "31045",
+      "name": "LEGO 31045",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31045",
+        "LEGO 31045 Ocean Explorer",
+        "LEGO Set 31045"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31045"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31046",
+      "brand": "LEGO",
+      "model": "31046",
+      "name": "LEGO 31046",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31046",
+        "LEGO 31046 Fast Car",
+        "LEGO Set 31046"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31046"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31047",
+      "brand": "LEGO",
+      "model": "31047",
+      "name": "LEGO 31047",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31047",
+        "LEGO 31047 Propeller Plane",
+        "LEGO Set 31047"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31047"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31048",
+      "brand": "LEGO",
+      "model": "31048",
+      "name": "LEGO 31048",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31048",
+        "LEGO 31048 Lakeside Lodge",
+        "LEGO Set 31048"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31048"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31049",
+      "brand": "LEGO",
+      "model": "31049",
+      "name": "LEGO 31049",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31049",
+        "LEGO 31049 Twin Spin Helicopter",
+        "LEGO Set 31049"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31049"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31050",
+      "brand": "LEGO",
+      "model": "31050",
+      "name": "LEGO 31050",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31050",
+        "LEGO 31050 Corner Deli",
+        "LEGO Set 31050"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31050"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31051",
+      "brand": "LEGO",
+      "model": "31051",
+      "name": "LEGO 31051",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31051",
+        "LEGO 31051 Lighthouse Point",
+        "LEGO Set 31051"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31051"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31052",
+      "brand": "LEGO",
+      "model": "31052",
+      "name": "LEGO 31052",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31052",
+        "LEGO 31052 Vacation Getaways",
+        "LEGO Set 31052"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31052"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31054",
+      "brand": "LEGO",
+      "model": "31054",
+      "name": "LEGO 31054",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31054",
+        "LEGO 31054 Blue Express",
+        "LEGO Set 31054"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31054"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31055",
+      "brand": "LEGO",
+      "model": "31055",
+      "name": "LEGO 31055",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31055",
+        "LEGO 31055 Red racer",
+        "LEGO Set 31055"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31055"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31057",
+      "brand": "LEGO",
+      "model": "31057",
+      "name": "LEGO 31057",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31057",
+        "LEGO 31057 Air Blazer",
+        "LEGO Set 31057"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31057"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31059",
+      "brand": "LEGO",
+      "model": "31059",
+      "name": "LEGO 31059",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31059",
+        "LEGO 31059 Sunset Street Bike",
+        "LEGO Set 31059"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31059"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31060",
+      "brand": "LEGO",
+      "model": "31060",
+      "name": "LEGO 31060",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31060",
+        "LEGO 31060 Airshow Aces",
+        "LEGO Set 31060"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31060"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31063",
+      "brand": "LEGO",
+      "model": "31063",
+      "name": "LEGO 31063",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31063",
+        "LEGO 31063 Beachside Vacation",
+        "LEGO Set 31063"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31063"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31064",
+      "brand": "LEGO",
+      "model": "31064",
+      "name": "LEGO 31064",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31064",
+        "LEGO 31064 Island Adventures",
+        "LEGO Set 31064"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31064"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31066",
+      "brand": "LEGO",
+      "model": "31066",
+      "name": "LEGO 31066",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31066",
+        "LEGO 31066 Space Shuttle Explorer",
+        "LEGO Set 31066"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31066"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31068",
+      "brand": "LEGO",
+      "model": "31068",
+      "name": "LEGO 31068",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31068",
+        "LEGO 31068 Modular Modern Home",
+        "LEGO Set 31068"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31068"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31069",
+      "brand": "LEGO",
+      "model": "31069",
+      "name": "LEGO 31069",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31069",
+        "LEGO 31069 Modular Family Villa",
+        "LEGO Set 31069"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31069"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31070",
+      "brand": "LEGO",
+      "model": "31070",
+      "name": "LEGO 31070",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31070",
+        "LEGO 31070 Turbo Track Racer",
+        "LEGO Set 31070"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31070"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31071",
+      "brand": "LEGO",
+      "model": "31071",
+      "name": "LEGO 31071",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31071",
+        "LEGO 31071 Drone Explorer",
+        "LEGO Set 31071"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31071"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31072",
+      "brand": "LEGO",
+      "model": "31072",
+      "name": "LEGO 31072",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31072",
+        "LEGO 31072 Extreme Engines",
+        "LEGO Set 31072"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31072"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31073",
+      "brand": "LEGO",
+      "model": "31073",
+      "name": "LEGO 31073",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31073",
+        "LEGO 31073 Mythical Creatures",
+        "LEGO Set 31073"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31073"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31074",
+      "brand": "LEGO",
+      "model": "31074",
+      "name": "LEGO 31074",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31074",
+        "LEGO 31074 Rocket Rally Car",
+        "LEGO Set 31074"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31074"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31075",
+      "brand": "LEGO",
+      "model": "31075",
+      "name": "LEGO 31075",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31075",
+        "LEGO 31075 Outback Adventures",
+        "LEGO Set 31075"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31075"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31076",
+      "brand": "LEGO",
+      "model": "31076",
+      "name": "LEGO 31076",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31076",
+        "LEGO 31076 Daredevil Stunt Plane",
+        "LEGO Set 31076"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31076"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31077",
+      "brand": "LEGO",
+      "model": "31077",
+      "name": "LEGO 31077",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31077",
+        "LEGO 31077 Modular Sweet Surprises",
+        "LEGO Set 31077"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31077"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31078",
+      "brand": "LEGO",
+      "model": "31078",
+      "name": "LEGO 31078",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31078",
+        "LEGO 31078 Treehouse Treasures",
+        "LEGO Set 31078"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31078"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31080",
+      "brand": "LEGO",
+      "model": "31080",
+      "name": "LEGO 31080",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31080",
+        "LEGO 31080 Modular Winter Vacation",
+        "LEGO Set 31080"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31080"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31081",
+      "brand": "LEGO",
+      "model": "31081",
+      "name": "LEGO 31081",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31081",
+        "LEGO 31081 Modular Skate House",
+        "LEGO Set 31081"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31081"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31083",
+      "brand": "LEGO",
+      "model": "31083",
+      "name": "LEGO 31083",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31083",
+        "LEGO 31083 Cruising Adventures",
+        "LEGO Set 31083"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31083"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31087",
+      "brand": "LEGO",
+      "model": "31087",
+      "name": "LEGO 31087",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31087",
+        "LEGO 31087 Dune Buggy",
+        "LEGO Set 31087"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31087"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31088",
+      "brand": "LEGO",
+      "model": "31088",
+      "name": "LEGO 31088",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31088",
+        "LEGO 31088 Deep Sea Creatures",
+        "LEGO Set 31088"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31088"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31089",
+      "brand": "LEGO",
+      "model": "31089",
+      "name": "LEGO 31089",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31089",
+        "LEGO 31089 Sunset Track Racer",
+        "LEGO Set 31089"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31089"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31090",
+      "brand": "LEGO",
+      "model": "31090",
+      "name": "LEGO 31090",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31090",
+        "LEGO 31090 Underwater Robot",
+        "LEGO Set 31090"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31090"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31091",
+      "brand": "LEGO",
+      "model": "31091",
+      "name": "LEGO 31091",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31091",
+        "LEGO 31091 Shuttle Transporter",
+        "LEGO Set 31091"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31091"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31092",
+      "brand": "LEGO",
+      "model": "31092",
+      "name": "LEGO 31092",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31092",
+        "LEGO 31092 Helicopter Adventure",
+        "LEGO Set 31092"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31092"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31095",
+      "brand": "LEGO",
+      "model": "31095",
+      "name": "LEGO 31095",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31095",
+        "LEGO 31095 Fairground Carousel",
+        "LEGO Set 31095"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31095"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31096",
+      "brand": "LEGO",
+      "model": "31096",
+      "name": "LEGO 31096",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31096",
+        "LEGO 31096 Twin-Rotor Helicopter",
+        "LEGO Set 31096"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31096"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31097",
+      "brand": "LEGO",
+      "model": "31097",
+      "name": "LEGO 31097",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31097",
+        "LEGO 31097 Townhouse Pet Shop & Café",
+        "LEGO Set 31097"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31097"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31098",
+      "brand": "LEGO",
+      "model": "31098",
+      "name": "LEGO 31098",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31098",
+        "LEGO 31098 Outback Cabin",
+        "LEGO Set 31098"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31098"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    },
+    {
+      "id": "lego-31099",
+      "brand": "LEGO",
+      "model": "31099",
+      "name": "LEGO 31099",
+      "categories": [
+        "Spielzeuge & Spiele",
+        "Spielzeuge",
+        "Bausteine & Bauspielzeug"
+      ],
+      "vertical": "lego",
+      "aliases": [
+        "LEGO 31099",
+        "LEGO 31099 Propeller Plane",
+        "LEGO Set 31099"
+      ],
+      "possibleAttributes": {
+        "set_number": [
+          "31099"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:lego-official-creator-instructions-2026-11-05"
+    }
+  ]
+}

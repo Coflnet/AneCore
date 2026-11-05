@@ -549,3 +549,25 @@ Evidence uses normal public web-tool indexed/cached official pages. No fresh ori
 HTTP200, complete range/theme coverage or absence inference from unavailable pages is
 claimed. No descriptions, images, artwork or inventories are copied. Reproduction is
 offline with `tools/catalog-import/expand_lego_friends_retired.py` and its `--check` mode.
+
+
+## LEGO Creator official instruction headers (2026-11-05, R57)
+
+`lego-creator-instructions.json` adds 60 previously absent printed Creator 310xx
+identities. The pinned proof in
+`tools/catalog-import/proofs/lego-creator-instructions-2026-11-05-r57.json` records
+exact official headings, themes and printed-number panels, including
+[31023 Yellow Racers](https://www.lego.com/en-us/service/building-instructions/31023),
+[31026 Bike Shop & Café](https://www.lego.com/en-us/service/building-instructions/31026),
+[31047 Propeller Plane](https://www.lego.com/en-us/service/building-instructions/31047)
+and [31099 Propeller Plane](https://www.lego.com/en-us/service/building-instructions/31099).
+Public web index/cache retrieval is not a fresh origin HTTP200 guarantee; 13
+unverified requests are omitted without asserting nonexistence.
+
+Every alias includes LEGO and the complete printed number. Headings supply only
+number-anchored name forms; no standalone name, guessed theme alias, edition or
+alternative instruction build becomes another product. Only `set_number` is
+asserted. Panel years, ages and pieces remain evidence, with no inferred release
+year, inventory, condition, offer completeness, price or availability. All 48 prior
+seed JSON files remain byte-identical. No marketplace photos, instruction PDFs,
+manufacturer artwork or product-description bodies are imported.

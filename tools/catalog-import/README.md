@@ -612,3 +612,27 @@ Canonical names stay `LEGO <number>`; no unnumbered identity, locale-edition clo
 GTIN, age, year, fit, inventory or offer completeness is inferred. Body descriptions
 and cross-product recommendations are not identity sources. The existing LEGO intake,
 catalogue loader and offer boundaries apply; no new vertical is introduced.
+
+
+### LEGO Creator instruction identities (2026-11-05, R57)
+
+`expand_lego_creator_instructions.py` adds 60 missing Creator 310xx printed set
+identities from reviewed official instruction headers. The pinned proof is
+`proofs/lego-creator-instructions-2026-11-05-r57.json`; 13 incomplete public
+retrievals are omitted, with no claim those sets do not exist. Indexed/cached
+web evidence does not establish a fresh origin HTTP200 or complete theme coverage.
+
+```sh
+python3 tools/catalog-import/expand_lego_creator_instructions.py
+python3 tools/catalog-import/expand_lego_creator_instructions.py --check
+```
+
+The importer uses the existing catalogue helpers and rejects existing set numbers,
+LEGO models, duplicate IDs and cross-file normalized alias collisions. Re-running
+excludes only its own output file. Canonical names remain `LEGO <number>`; all
+three aliases include LEGO and the complete number. Only `set_number` is an
+attribute: no instruction year, age, piece count, edition, availability, completeness
+or condition is inferred. Identical official headings, such as Propeller Plane
+31047 and 31099, remain different numbered identities. Existing intake and offer
+eligibility policies are unchanged. The catalogue now has 27,586 products,
+including 7,955 LEGO identities; all 48 previous seed JSON files remain unchanged.
