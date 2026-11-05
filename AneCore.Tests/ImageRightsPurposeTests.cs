@@ -57,7 +57,7 @@ public class ImageRightsPurposeTests
     }
 
     [TestCase("img.kleinanzeigen.de")]
-    [TestCase("cache.willhaben.at")]
+    [TestCase("i.ebayimg.com")]
     [TestCase("unmapped.example.test")]
     public void ValidHostWithoutRecordedOptOutDefaultsEligible(string host) =>
         Assert.That(ImageRightsPolicy.Resolve(host, null, Now, ImageRightsOptions.Parse(null, null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
@@ -99,10 +99,10 @@ public class ImageRightsPurposeTests
         row.Host = "cache.willhaben.at";
         var current = ImageRightsOptions.Parse("Willhaben", null);
         Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, current).Status, Is.EqualTo(ImageRightsStatus.Revoked));
-        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, ImageRightsOptions.Parse(null, null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, ImageRightsOptions.Parse("", null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
         Assert.That(row.Status, Is.EqualTo("Revoked"), "resolution does not rewrite stored data");
         row.Evidence.Add("image response header X-Robots-Tag: noai");
-        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, ImageRightsOptions.Parse(null, null)).Status, Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, ImageRightsOptions.Parse("", null)).Status, Is.EqualTo(ImageRightsStatus.Revoked));
     }
 
     [Test]
@@ -112,12 +112,12 @@ public class ImageRightsPurposeTests
         var row = Row("denied by configuration: platform Willhaben is in IMAGE_RIGHTS:DENY_PLATFORMS");
         row.Host = "cache.willhaben.at";
         await store.UpsertAsync(row);
-        var refresher = new ImageRightsRefresher(store, ImageRightsOptions.Parse(null, null), NullLogger<ImageRightsRefresher>.Instance,
+        var refresher = new ImageRightsRefresher(store, ImageRightsOptions.Parse("", null), NullLogger<ImageRightsRefresher>.Instance,
             new HttpClient(new PolicyHandler(403)));
         await refresher.RefreshAllAsync(CancellationToken.None);
         var current = await store.GetAsync(row.Host);
         Assert.That(current!.Status, Is.EqualTo("Unknown"), "an unreadable new policy is not a new explicit opt-out");
-        Assert.That(ImageRightsPolicy.Resolve(row.Host, current, Now, ImageRightsOptions.Parse(null, null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, current, Now, ImageRightsOptions.Parse("", null)).Status, Is.EqualTo(ImageRightsStatus.Allowed));
     }
 
     [TestCase(404)]

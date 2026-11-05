@@ -7,12 +7,14 @@ public enum ImageRightsPurpose { Training, Comparison }
 /// <summary>Manual overrides, applied before any stored status. Keys <c>IMAGE_RIGHTS:DENY_PLATFORMS</c> and <c>IMAGE_RIGHTS:DENY_HOSTS</c>.</summary>
 public sealed class ImageRightsOptions
 {
-    public const string DefaultDenyPlatforms = "";
+    // Verified owner reservations (2026-11-05): willhaben.at/robots.txt introductory automated-access prohibition;
+    // vinted.de/robots.txt introductory prohibition includes embedding, not only model training.
+    public const string DefaultDenyPlatforms = "Willhaben,Vinted";
 
     public HashSet<Platform> DenyPlatforms { get; init; } = [];
     public HashSet<string> DenyHosts { get; init; } = new(StringComparer.OrdinalIgnoreCase);
 
-    /// <summary>Parses the comma lists. A null platform list means the default (none), an empty one means none.</summary>
+    /// <summary>Parses the comma lists. A null platform list retains the known Willhaben and Vinted owner reservations; an empty one explicitly means none.</summary>
     public static ImageRightsOptions Parse(string? denyPlatforms, string? denyHosts)
     {
         var platforms = new HashSet<Platform>();

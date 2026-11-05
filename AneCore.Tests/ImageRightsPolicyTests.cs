@@ -47,12 +47,27 @@ public class ImageRightsPolicyTests
     }
 
     [Test]
-    public void Options_DefaultDeniesNothing_ExplicitListsStillApply()
+    public void Options_DefaultRetainsKnownOwnerReservations_ExplicitListsStillApply()
     {
-        Assert.That(ImageRightsOptions.Parse(null, null).DenyPlatforms, Is.Empty);
+        Assert.That(ImageRightsOptions.Parse(null, null).DenyPlatforms, Is.EquivalentTo(new[] { Platform.Willhaben, Platform.Vinted }));
         Assert.That(ImageRightsOptions.Parse("", null).DenyPlatforms, Is.Empty);
         Assert.That(ImageRightsOptions.Parse("vinted, Ebay,nonsense", null).DenyPlatforms,
             Is.EquivalentTo(new[] { Platform.Vinted, Platform.Ebay }));
+    }
+
+    [TestCase("cache.willhaben.at", Platform.Willhaben, ImageRightsPurpose.Training)]
+    [TestCase("cache.willhaben.at", Platform.Willhaben, ImageRightsPurpose.Comparison)]
+    [TestCase("images1.vinted.net", Platform.Vinted, ImageRightsPurpose.Training)]
+    [TestCase("images1.vinted.net", Platform.Vinted, ImageRightsPurpose.Comparison)]
+    public void DefaultOwnerReservationWinsUnlessExplicitlyOverridden(string host, Platform platform, ImageRightsPurpose purpose)
+    {
+        var row = new ImageRightsRecord { Host = host, Status = "Revoked",
+            Evidence = [$"denied by configuration: platform {platform} is in IMAGE_RIGHTS:DENY_PLATFORMS"], CheckedAt = Now };
+        var defaults = ImageRightsOptions.Parse(null, null);
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, null, Now, defaults, purpose).Status, Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, defaults, purpose).Status, Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(ImageRightsPolicy.Resolve(row.Host, row, Now, ImageRightsOptions.Parse("", null), purpose).Status, Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(ImageRightsPolicy.Resolve("i.ebayimg.com", null, Now, defaults, purpose).Status, Is.EqualTo(ImageRightsStatus.Allowed));
     }
 
     [Test]
