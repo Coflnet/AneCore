@@ -87,6 +87,7 @@ public class KnownProductSeedIntegrityTests
     /// </summary>
     private static readonly HashSet<string> AllowedCategoryPaths = new(StringComparer.Ordinal)
     {
+        "Fahrzeuge & Teile>Fahrzeugersatzteile & -zubehör>Kfz-Teile",
         "Bekleidung & Accessoires>Schmuck>Armbanduhren & Taschenuhren",
         "Elektronik>Audio>Audiokomponenten>Kopfhörer & Headsets>Kopfhörer",
         "Elektronik>Computer>Datenbrillen",

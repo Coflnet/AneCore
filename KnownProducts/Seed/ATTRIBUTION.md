@@ -621,3 +621,16 @@ URLs and reviewed Technic panels are pinned in
 Only set numbers become attributes; names remain number-anchored aliases. No year,
 edition, age, piece count or offer completeness is imported. Indexed/cached web
 retrieval is possible; no fresh-origin or exhaustive theme coverage is claimed.
+
+
+## Bosch rear wiper short codes (2026-11-06)
+
+`bosch-rear-wipers.json` contains 20 exact H-series rear-wiper identities from
+[Bosch Japan's rear-wiper model chart](https://www.bosch.co.jp/aa/products/model-charts/?id=RearWiperImport)
+(updated 2024-08-06). Only the manufacturer short code, Bosch article number and
+length in millimetres are imported. The reviewed field-only evidence is in
+`tools/catalog-import/proofs/bosch-rear-wipers-2026-11-06.json`.
+No GTIN, vehicle fit, seller condition, quantity, contents or availability is
+inferred. Brand plus exact model aliases reuse catalogue admission and grouping;
+other named parts and media are excluded through existing scoped seed guards.
+The existing `Kfz-Teile` taxonomy is used; no new category or broad scope is added.

@@ -1,0 +1,117 @@
+{
+  "sourceUrl": "https://www.bosch.co.jp/aa/products/model-charts/?id=RearWiperImport",
+  "retrievedUtc": "2026-11-06",
+  "sourceOwner": "Bosch Corporation",
+  "sourceUpdated": "2024-08-06",
+  "identityFields": "Rear wiper chart: package short code, Bosch part number, length in mm. Vehicle examples deliberately omitted.",
+  "rows": [
+    {
+      "model": "H 301",
+      "article_number": "3397004629",
+      "length_mm": 300
+    },
+    {
+      "model": "H 304",
+      "article_number": "3397004990",
+      "length_mm": 300
+    },
+    {
+      "model": "H 305",
+      "article_number": "3397011239",
+      "length_mm": 305
+    },
+    {
+      "model": "H 306",
+      "article_number": "3397011432",
+      "length_mm": 300
+    },
+    {
+      "model": "H 307",
+      "article_number": "3397011429",
+      "length_mm": 300
+    },
+    {
+      "model": "H 308",
+      "article_number": "3397011628",
+      "length_mm": 300
+    },
+    {
+      "model": "H 309",
+      "article_number": "3397011630",
+      "length_mm": 300
+    },
+    {
+      "model": "H 330",
+      "article_number": "3397011306",
+      "length_mm": 330
+    },
+    {
+      "model": "H 341",
+      "article_number": "3397004755",
+      "length_mm": 340
+    },
+    {
+      "model": "H 351",
+      "article_number": "3397004559",
+      "length_mm": 350
+    },
+    {
+      "model": "H 352",
+      "article_number": "3397011430",
+      "length_mm": 350
+    },
+    {
+      "model": "H 353",
+      "article_number": "3397004631",
+      "length_mm": 350
+    },
+    {
+      "model": "H 355",
+      "article_number": "3397011435",
+      "length_mm": 350
+    },
+    {
+      "model": "H 370",
+      "article_number": "3397011022",
+      "length_mm": 370
+    },
+    {
+      "model": "H 380",
+      "article_number": "3397004756",
+      "length_mm": 380
+    },
+    {
+      "model": "H 382",
+      "article_number": "3397011412",
+      "length_mm": 380
+    },
+    {
+      "model": "H 383",
+      "article_number": "3397011551",
+      "length_mm": 380
+    },
+    {
+      "model": "H 384",
+      "article_number": "3397015045",
+      "length_mm": 380
+    },
+    {
+      "model": "H 400",
+      "article_number": "3397004757",
+      "length_mm": 400
+    },
+    {
+      "model": "H 402",
+      "article_number": "3397004632",
+      "length_mm": 400
+    }
+  ],
+  "notAsserted": [
+    "GTIN",
+    "vehicle compatibility",
+    "condition",
+    "quantity",
+    "package contents",
+    "availability"
+  ]
+}

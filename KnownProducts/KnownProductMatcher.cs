@@ -327,6 +327,10 @@ public class KnownProductMatcher
                 && Regex.IsMatch(title, @"(?<!\d)" + string.Join(@"[^a-z0-9]*", Normalize(entry.Product.Model).Split(' ').Select(Regex.Escape))
                     + @"(?:[.,]\d|/\w|(?!(?:mm)\b)\p{L})", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
                 continue;
+            if (entry.Product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("automotive_part") == true
+                && Regex.IsMatch(title, @"(?<![\p{L}\d])" + string.Join(@"[^a-z0-9]*", Normalize(entry.Product.Model).Split(' ').Select(Regex.Escape))
+                    + @"(?:[-_.,/]?[\p{L}\d])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+                continue;
             if (!IsCategoryCompatible(entry.Product, categoryPath))
                 continue;
             // A set number can also name a manual, empty box, partial set or custom build.
@@ -475,12 +479,13 @@ public class KnownProductMatcher
         return false;
     }
 
-    /// <summary>Reject excluded model suffixes; scoped tool/turntable parts may occur anywhere unless included with the device.</summary>
+    /// <summary>Reject excluded model suffixes; scoped tool/turntable/automotive parts may occur anywhere unless included with the device.</summary>
     private static bool IsExcluded(KnownProduct product, string[] titleTokens, int aliasStart, int aliasLength)
     {
         if (product.ExcludeTerms.Count == 0)
             return false;
-        if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true
+        if (product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("automotive_part") == true
+            || product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("power_tool") == true
             || product.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
             || product.PossibleAttributes.GetValueOrDefault("device_type")?.Contains("turntable") == true)
         {
