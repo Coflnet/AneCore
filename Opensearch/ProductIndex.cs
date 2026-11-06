@@ -15,6 +15,7 @@ public class ProductIndex(
 
     public const int MarketplaceSourcesPresenceVersion = 1;
     public const int MarketplaceSourcesVersion = 2;
+    public const int NativeEurMinVersion = 1;
 
     protected override string RetentionPolicyId() => "ane_products_retention_policy";
 
@@ -73,6 +74,8 @@ public class ProductIndex(
             .Keyword(k => k.Name(n => n.ImageUrl))
             .GeoPoint(g => g.Name(n => n.Locations))
             .Keyword(k => k.Name(n => n.Countries))
+            .Number(k => k.Name(n => n.NativeEurMin).Type(NumberType.Double).Index(false).DocValues(true))
+            .Number(k => k.Name(n => n.NativeEurMinVersion).Type(NumberType.Integer).DocValues(true))
             .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
             .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
                 .Properties(fields => fields.Keyword(field => field.Name(n => n.Platform))
@@ -115,20 +118,19 @@ public class ProductIndex(
         CancellationToken stoppingToken)
     {
         var mappings = await client.Indices.GetMappingAsync<ProductDocument>(m => m.Index(IndexPattern()), stoppingToken);
-        if (!mappings.IsValid)
-        {
-            if (IsPermissionDenied(mappings))
-            {
-                WarnMissingPermissionOnce("get mapping", mappings.ServerError?.Error?.Reason);
-                return;
-            }
+        if (!mappings.IsValid || mappings.Indices.Count == 0)
             throw new InvalidOperationException(
-                $"Failed to read product index mappings: {mappings.DebugInformation}");
-        }
+                $"Failed to read required product index mappings: {mappings.DebugInformation}");
 
         foreach (var (index, state) in mappings.Indices)
         {
-            if (new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources" }
+            foreach (var (field, type) in new[] { ("nativeEurMin", "double"), ("nativeEurMinVersion", "integer") })
+                if (state.Mappings?.Properties?.TryGetValue(field, out var property) == true
+                    && (property is not INumberProperty number
+                        || !string.Equals(number.Type.ToString(), type, StringComparison.OrdinalIgnoreCase)
+                        || number.DocValues == false || (field == "nativeEurMin" && number.Index != false)))
+                    throw new InvalidOperationException($"Incompatible product price projection mapping for {index.Name}.{field}");
+            if (new[] { "offersFound", "marketplaceSourcesVersion", "marketplaceSources", "nativeEurMin", "nativeEurMinVersion" }
                 .All(field => state.Mappings?.Properties?.ContainsKey(field) == true)
                 && state.Mappings?.Properties?["marketplaceSources"] is INestedProperty sources
                 && new[] { "sourceCurrency", "minPrice", "maxPrice" }.All(field => sources.Properties?.ContainsKey(field) == true)
@@ -141,6 +143,8 @@ public class ProductIndex(
                 .Index(index)
                 .Properties(p => p
                     .Number(k => k.Name(n => n.OffersFound).Type(NumberType.Integer))
+                    .Number(k => k.Name(n => n.NativeEurMin).Type(NumberType.Double).Index(false).DocValues(true))
+                    .Number(k => k.Name(n => n.NativeEurMinVersion).Type(NumberType.Integer).DocValues(true))
                     .Nested<ProductStoreReference>(nested => nested.Name(n => n.StoreReferences).Properties(StoreReferenceFields))
                     .Number(k => k.Name(n => n.MarketplaceSourcesVersion).Type(NumberType.Integer))
                     .Nested<ProductMarketplaceSource>(nested => nested.Name(n => n.MarketplaceSources)
@@ -150,15 +154,20 @@ public class ProductIndex(
                             .Number(field => field.Name(n => n.MinPrice).Type(NumberType.Double))
                             .Number(field => field.Name(n => n.MaxPrice).Type(NumberType.Double))))),
                 stoppingToken);
-            if (response.IsValid)
-                continue;
-            if (IsPermissionDenied(response))
-            {
-                WarnMissingPermissionOnce("put mapping", response.ServerError?.Error?.Reason);
-                return;
-            }
-            throw new InvalidOperationException(
-                $"Failed to add product search mappings to index {index.Name}: {response.DebugInformation}");
+            if (!response.IsValid || !response.Acknowledged)
+                throw new InvalidOperationException(
+                    $"Failed to add required product search mappings to index {index.Name}: {response.DebugInformation}");
+            var verified = await client.Indices.GetMappingAsync<ProductDocument>(m => m.Index(index), stoppingToken);
+            if (!verified.IsValid || !verified.Indices.TryGetValue(index, out var updated)
+                || updated.Mappings?.Properties?.TryGetValue("nativeEurMin", out var minProperty) != true
+                || minProperty is not INumberProperty minimum
+                || !string.Equals(minimum.Type.ToString(), "double", StringComparison.OrdinalIgnoreCase)
+                || minimum.Index != false || minimum.DocValues == false
+                || !updated.Mappings.Properties.TryGetValue("nativeEurMinVersion", out var versionProperty)
+                || versionProperty is not INumberProperty version
+                || !string.Equals(version.Type.ToString(), "integer", StringComparison.OrdinalIgnoreCase)
+                || version.DocValues == false)
+                throw new InvalidOperationException($"Failed to verify required product price mappings for {index.Name}");
         }
     }
 
@@ -245,7 +254,9 @@ public record ProductDocument(
     List<ProductMarketplaceSource>? MarketplaceSources = null,
     double? ScopedMinPrice = null,
     string? ScopedPriceCurrency = null,
-    List<ProductStoreReference>? StoreReferences = null
+    List<ProductStoreReference>? StoreReferences = null,
+    double? NativeEurMin = null,
+    int? NativeEurMinVersion = null
 );
 
 public record ProductMarketplaceSource(string Platform, string? Country, string? SourceCurrency = null,

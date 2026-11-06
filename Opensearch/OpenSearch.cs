@@ -135,41 +135,29 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         var client = ClientWithoutSetup();
         logger.LogInformation(
             $"creating a new opensearch client for index {IndexName()} at {openSearch.OpenSearchUrl()}");
-        _client = client;
 
         // send a test ping to ensure we can connect
         logger.LogInformation($"Sending first ping to OpenSearch at {openSearch.OpenSearchUrl()}");
         var pingResp = await client.PingAsync(ct: stoppingToken);
         if (!pingResp.IsValid)
-        {
-            _client = null;
             throw new InvalidOperationException($"Failed to connect to OpenSearch: {pingResp.DebugInformation}");
-        }
 
         logger.LogInformation("Received valid ping response from OpenSearch");
 
         // create the retention policy, index template, and bootstrap index if they don't exist
-        try
+        if (IsRolloverIndex())
         {
-            if (IsRolloverIndex())
-            {
-                // ISM policy, template and settings are housekeeping: they must never block index reads/writes.
-                await RunOptionalSetupStep("create retention policy", CreateRetentionPolicy, stoppingToken);
-                await RunOptionalSetupStep("create index template", CreateIndexTemplateIfNotExists, stoppingToken);
-                await CreateBootstrapIndexIfNotExistsAsync(stoppingToken);
-                await UpdateExistingIndexMappings(client, stoppingToken);
-                await RunOptionalSetupStep("update index settings",
-                    ct => UpdateExistingIndexSettings(client, ct), stoppingToken);
-            }
-            else
-            {
-                await CreateRegularIndexIfNotExists(stoppingToken);
-            }
+            // ISM policy, template and settings are housekeeping: they must never block index reads/writes.
+            await RunOptionalSetupStep("create retention policy", ct => CreateRetentionPolicy(client, ct), stoppingToken);
+            await RunOptionalSetupStep("create index template", ct => CreateIndexTemplateIfNotExists(client, ct), stoppingToken);
+            await CreateBootstrapIndexIfNotExistsAsync(client, stoppingToken);
+            await UpdateExistingIndexMappings(client, stoppingToken);
+            await RunOptionalSetupStep("update index settings",
+                ct => UpdateExistingIndexSettings(client, ct), stoppingToken);
         }
-        catch
+        else
         {
-            _client = null;
-            throw;
+            await CreateRegularIndexIfNotExists(client, stoppingToken);
         }
 
         return client;
@@ -343,9 +331,8 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
         return string.Join('-', parts[..^1]) + "-*";
     }
 
-    private async Task CreateRetentionPolicy(CancellationToken stoppingToken = default)
+    private async Task CreateRetentionPolicy(OpenSearchClient client, CancellationToken stoppingToken = default)
     {
-        var client = await Client(stoppingToken);
 
         // check if the policy already exists
         var policyExists =
@@ -407,10 +394,9 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
 
 
     private async Task CreateIndexTemplateIfNotExists(
-        CancellationToken stoppingToken = default
+        OpenSearchClient client, CancellationToken stoppingToken = default
     )
     {
-        var client = await Client(stoppingToken);
 
         var templateResponse =
             await client.Indices.PutTemplateAsync(IndexTemplateName(), IndexTemplateFunc(), stoppingToken);
@@ -437,9 +423,8 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
             $"Index template '{IndexTemplateName()}' creation was not acknowledged: {templateResponse.DebugInformation}");
     }
 
-    private async Task CreateRegularIndexIfNotExists(CancellationToken stoppingToken)
+    private async Task CreateRegularIndexIfNotExists(OpenSearchClient client, CancellationToken stoppingToken)
     {
-        var client = await Client(stoppingToken);
         var indexExistsResponse = await client.Indices.ExistsAsync(IndexName(), ct: stoppingToken);
         if (indexExistsResponse.Exists)
         {
@@ -449,7 +434,8 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
 
         logger.LogInformation($"Index '{IndexName()}' does not exist. Creating index...");
         var createIndexResponse = await client.Indices.CreateAsync(IndexName(), IndexFunc(), stoppingToken);
-        if (!createIndexResponse.IsValid)
+        if (!createIndexResponse.IsValid &&
+            createIndexResponse.ServerError?.Error?.Type != "resource_already_exists_exception")
         {
             throw new InvalidOperationException(
                 $"Failed to create index: {createIndexResponse.DebugInformation}");
@@ -460,9 +446,8 @@ public abstract class OpenSearchIndexBase(OpenSearch openSearch, ILogger<OpenSea
 
 
     private async Task CreateBootstrapIndexIfNotExistsAsync(
-        CancellationToken stoppingToken = default)
+        OpenSearchClient client, CancellationToken stoppingToken = default)
     {
-        var client = await Client(stoppingToken);
 
         // We check for the ALIAS, not the index. This is the key to idempotency.
         var aliasExistsResponse = await client.Indices.AliasExistsAsync(IndexName(), ct: stoppingToken);
