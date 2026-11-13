@@ -1,0 +1,188 @@
+{
+  "products": [
+    {
+      "id": "knipex-7803125esd",
+      "brand": "KNIPEX",
+      "model": "78 03 125 ESD",
+      "name": "KNIPEX Electronic Super Knips 78 03 125 ESD",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 03 125 ESD",
+        "KNIPEX 7803125ESD",
+        "KNIPEX Electronic Super Knips 78 03 125 ESD"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 03 125 ESD"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-esd"
+    },
+    {
+      "id": "knipex-7813125esd",
+      "brand": "KNIPEX",
+      "model": "78 13 125 ESD",
+      "name": "KNIPEX Electronic Super Knips 78 13 125 ESD",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 13 125 ESD",
+        "KNIPEX 7813125ESD",
+        "KNIPEX Electronic Super Knips 78 13 125 ESD"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 13 125 ESD"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-esd"
+    },
+    {
+      "id": "knipex-7861125esd",
+      "brand": "KNIPEX",
+      "model": "78 61 125 ESD",
+      "name": "KNIPEX Electronic Super Knips 78 61 125 ESD",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 61 125 ESD",
+        "KNIPEX 7861125ESD",
+        "KNIPEX Electronic Super Knips 78 61 125 ESD"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 61 125 ESD"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-esd"
+    },
+    {
+      "id": "knipex-7871125esd",
+      "brand": "KNIPEX",
+      "model": "78 71 125 ESD",
+      "name": "KNIPEX Electronic Super Knips 78 71 125 ESD",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 71 125 ESD",
+        "KNIPEX 7871125ESD",
+        "KNIPEX Electronic Super Knips 78 71 125 ESD"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 71 125 ESD"
+        ],
+        "length_mm": [
+          "125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "set",
+        "spare",
+        "spares",
+        "spring"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-esd"
+    }
+  ]
+}

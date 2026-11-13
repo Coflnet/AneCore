@@ -1,0 +1,100 @@
+{
+  "retrievedUtc": "2026-11-13",
+  "sourceOwner": "KNIPEX Tools",
+  "scope": "Finite targeted manufacturer lookup; exact article/name facts only. No broad site crawl.",
+  "sources": [
+    {
+      "url": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "document": "Electronics Pliers Catalog,16pages",
+      "location": "PDF pages10-11 (zero-based9-10); Electronic Super Knips family heading and exact product table; non-ESD handle rows distinct from ESD rows.",
+      "access": "Opened directly via web tool; not a fresh-origin HTTP200 or current availability claim."
+    },
+    {
+      "url": "https://www.knipex-tools.com/sites/default/files/Super%20Knips%20VDE%20Data%20Sheet%20High%20Res.pdf",
+      "document": "Electronic Super Knips VDE data sheet,2pages",
+      "location": "PDF page2 (zero-based1), Part Number row78 06 125."
+    }
+  ],
+  "rows": [
+    {
+      "article_number": "78 03 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 06 125",
+      "family": "Electronic Super Knips VDE",
+      "source": "https://www.knipex-tools.com/sites/default/files/Super%20Knips%20VDE%20Data%20Sheet%20High%20Res.pdf",
+      "pdfPage": 2
+    },
+    {
+      "article_number": "78 13 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 23 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 31 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 41 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 61 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 71 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 81 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    },
+    {
+      "article_number": "78 91 125",
+      "family": "Electronic Super Knips",
+      "source": "https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf",
+      "pdfPage": 11
+    }
+  ],
+  "fieldsImported": [
+    "complete article number",
+    "manufacturer family name",
+    "existing hand_tool classification"
+  ],
+  "fieldsNotImported": [
+    "length_mm (catalogue table is inch-based; article suffix is not dimensional proof)",
+    "GTIN/EAN/UPC",
+    "fitment",
+    "availability",
+    "stock",
+    "price",
+    "condition",
+    "seller contents",
+    "material or performance specs",
+    "manufacturer descriptions",
+    "images/artwork"
+  ],
+  "variantPolicy": "New base articles remain separate from integrated ESD articles; model-specific ESD/ESDSB/VDE/packaging exclusions preserve full identities. No generic family-only or bare numeric aliases.",
+  "loaderIntegration": "KnownProductSeed.LoadAll(true) and ResaleCatalog.LoadNamed include knipex-electronic-super-knips.json."
+}

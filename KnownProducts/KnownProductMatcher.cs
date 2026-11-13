@@ -107,7 +107,7 @@ public class KnownProductMatcher
 
     private readonly IReadOnlyList<KnownProduct> products;
     private readonly Dictionary<(string First, string? Second, string? Third), List<AliasEntry>> aliasIndex;
-    private readonly List<(KnownProduct Product, string Brand, Regex Pattern)> handToolArticles;
+    private readonly Dictionary<string, List<(KnownProduct Product, Regex Pattern)>> handToolArticles;
     private readonly string[] knownBrands;
 
     private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
@@ -165,8 +165,10 @@ public class KnownProductMatcher
                 && p.PossibleAttributes.GetValueOrDefault("article_number") is { Count: 1 } articles && articles.Single().Any(char.IsDigit))
             .GroupBy(p => (Normalize(p.Brand), Regex.Replace(p.PossibleAttributes["article_number"].Single(), @"\s+", "").ToLowerInvariant()))
             .Where(g => g.Select(p => p.Id).Distinct().Count() == 1)
-            .Select(g => (g.First(), g.Key.Item1, new Regex(@"(?<![\p{L}\d])" + Regex.Escape(g.First().PossibleAttributes["article_number"].Single()).Replace(@"\ ", @"\s*")
-                + @"(?!(?:[-_.,/]\s*)?[\p{L}\d])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))).ToList();
+            .Select(g => (Product: g.First(), Brand: g.Key.Item1, Pattern: new Regex(@"(?<![\p{L}\d])" + Regex.Escape(g.First().PossibleAttributes["article_number"].Single()).Replace(@"\ ", @"\s*")
+                + @"(?!(?:[-_.,/]\s*)?[\p{L}\d])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)))
+            .GroupBy(article => article.Brand)
+            .ToDictionary(group => group.Key, group => group.Select(article => (article.Product, article.Pattern)).ToList());
     }
 
     /// <summary>
@@ -236,15 +238,18 @@ public class KnownProductMatcher
     private IEnumerable<(AliasEntry Entry, int Start)> FindHandToolArticles(string title, string normalizedTitle)
     {
         var padded = " " + normalizedTitle + " ";
-        foreach (var article in handToolArticles)
+        foreach (var (brand, articles) in handToolArticles)
         {
-            if (!padded.Contains(" " + article.Brand + " ", StringComparison.Ordinal)) continue;
-            var match = article.Pattern.Match(title);
-            if (!match.Success) continue;
-            if (knownBrands.Any(b => b != article.Brand && padded.Contains(" " + b + " ", StringComparison.Ordinal))) yield break;
-            var tokens = Normalize(match.Value).Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            var start = Normalize(title[..match.Index]).Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
-            yield return (new AliasEntry(article.Product, tokens), start);
+            if (!padded.Contains(" " + brand + " ", StringComparison.Ordinal)) continue;
+            foreach (var article in articles)
+            {
+                var match = article.Pattern.Match(title);
+                if (!match.Success) continue;
+                if (knownBrands.Any(b => b != brand && padded.Contains(" " + b + " ", StringComparison.Ordinal))) yield break;
+                var tokens = Normalize(match.Value).Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var start = Normalize(title[..match.Index]).Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
+                yield return (new AliasEntry(article.Product, tokens), start);
+            }
         }
     }
 
@@ -535,7 +540,7 @@ public class KnownProductMatcher
         var primary = PrimaryHandTool.Match(normalizedTitle);
         var kind = primary.Groups["kind"];
         // A recognized tool maker's primary Swedish cable cutter is not a cable accessory.
-        if (kind.Value == "kabelsax" && handToolArticles.Any(article => article.Brand == primary.Groups["brand"].Value))
+        if (kind.Value == "kabelsax" && handToolArticles.ContainsKey(primary.Groups["brand"].Value))
             normalizedTitle = normalizedTitle[..kind.Index] + "werkzeug" + normalizedTitle[(kind.Index + kind.Length)..];
         // These whole-machine nouns do not offer a replacement battery.
         normalizedTitle = CordlessToolName.Replace(normalizedTitle, "werkzeug");

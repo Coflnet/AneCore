@@ -634,3 +634,35 @@ No GTIN, vehicle fit, seller condition, quantity, contents or availability is
 inferred. Brand plus exact model aliases reuse catalogue admission and grouping;
 other named parts and media are excluded through existing scoped seed guards.
 The existing `Kfz-Teile` taxonomy is used; no new category or broad scope is added.
+
+
+## KNIPEX Electronic Super Knips ESD (2026-11-13)
+
+`knipex-electronic-super-knips-esd.json` adds four previously absent complete ESD
+articles from the manufacturer-hosted [US catalogue table, printed page 116](https://www.knipex-tools.com/sites/default/files/USCAT19_78_Electronic%20Super%20Knips%20ESD.pdf).
+Only exact article identities (including ESD), the family name and explicit 125 mm
+length enter the seed. The table distinguishes the four articles; base non-ESD
+models, packaging suffixes, other lengths, parts and sets are not aliases.
+Field-only evidence is in
+`tools/catalog-import/proofs/knipex-electronic-super-knips-esd-2026-11-13.json`.
+The catalogue is historical primary evidence, not current availability evidence.
+No GTIN, fitment, price, condition or offer contents are inferred; no images,
+artwork or description bodies are imported. Existing taxonomy and admission
+restrictions remain unchanged.
+
+
+## KNIPEX Electronic Super Knips base/VDE continuation (2026-11-13)
+
+`knipex-electronic-super-knips.json` adds ten previously absent complete articles.
+Nine base identities come from the manufacturer-hosted [Electronics Pliers
+Catalog table, PDF page 11](https://www.knipex-tools.com/sites/default/files/2021-02/Electronics%20Pliers%20Catalog_smallversion.pdf);
+78 06 125 is explicit in the [VDE data sheet, PDF page 2](https://www.knipex-tools.com/sites/default/files/Super%20Knips%20VDE%20Data%20Sheet%20High%20Res.pdf).
+Exact field-only evidence is pinned in
+`tools/catalog-import/proofs/knipex-electronic-super-knips-2026-11-13.json`.
+These are historical manufacturer records, not stock or availability evidence.
+Only complete article identities and family names enter the seed, using existing
+hand-tool taxonomy. Length is deliberately omitted rather than inferred from an
+article suffix or rounded inch measurement. No GTIN, fitment, condition, seller
+contents, pricing, descriptions or artwork is imported. Base, ESD, VDE and
+packaging/spare variants retain separate boundaries; aliases require the brand
+and complete article number.

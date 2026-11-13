@@ -1,0 +1,51 @@
+{
+  "sourceUrl": "https://www.knipex-tools.com/sites/default/files/USCAT19_78_Electronic%20Super%20Knips%20ESD.pdf",
+  "retrievedUtc": "2026-11-13",
+  "sourceOwner": "KNIPEX Tools",
+  "sourceDocument": "US catalogue 2019, printed page 116, one-page extract",
+  "verification": "Opened manufacturer-hosted PDF through web tool. Official product origin pages returned HTTP403; the PDF supplies the exact article table. No current stocking/availability claim.",
+  "fieldsImported": [
+    "complete article number including ESD suffix",
+    "manufacturer family name",
+    "explicit length_mm"
+  ],
+  "rows": [
+    {
+      "article_number": "78 03 125 ESD",
+      "length_mm": 125,
+      "materialEvidence": "INOX stainless steel",
+      "leadCatcherEvidence": false
+    },
+    {
+      "article_number": "78 13 125 ESD",
+      "length_mm": 125,
+      "materialEvidence": "INOX stainless steel",
+      "leadCatcherEvidence": true
+    },
+    {
+      "article_number": "78 61 125 ESD",
+      "length_mm": 125,
+      "materialEvidence": "special tool steel, burnished",
+      "leadCatcherEvidence": false
+    },
+    {
+      "article_number": "78 71 125 ESD",
+      "length_mm": 125,
+      "materialEvidence": "special tool steel, burnished",
+      "leadCatcherEvidence": true
+    }
+  ],
+  "variantBoundary": "Base non-ESD, ESDSB/package suffixes, VDE, other lengths, spare parts and sets are not aliases of these four articles.",
+  "omitted": [
+    "GTIN/EAN",
+    "fitment",
+    "availability",
+    "price",
+    "condition",
+    "seller contents",
+    "description bodies",
+    "images",
+    "artwork"
+  ],
+  "integration": "KnownProductSeed.LoadAll(true) and ResaleCatalog.LoadNamed include knipex-electronic-super-knips-esd.json."
+}

@@ -1,0 +1,493 @@
+{
+  "products": [
+    {
+      "id": "knipex-7803125",
+      "brand": "KNIPEX",
+      "model": "78 03 125",
+      "name": "KNIPEX Electronic Super Knips 78 03 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 03 125",
+        "KNIPEX 7803125",
+        "KNIPEX Electronic Super Knips 78 03 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 03 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7806125",
+      "brand": "KNIPEX",
+      "model": "78 06 125",
+      "name": "KNIPEX Electronic Super Knips VDE 78 06 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 06 125",
+        "KNIPEX 7806125",
+        "KNIPEX Electronic Super Knips VDE 78 06 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 06 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7813125",
+      "brand": "KNIPEX",
+      "model": "78 13 125",
+      "name": "KNIPEX Electronic Super Knips 78 13 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 13 125",
+        "KNIPEX 7813125",
+        "KNIPEX Electronic Super Knips 78 13 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 13 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7823125",
+      "brand": "KNIPEX",
+      "model": "78 23 125",
+      "name": "KNIPEX Electronic Super Knips 78 23 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 23 125",
+        "KNIPEX 7823125",
+        "KNIPEX Electronic Super Knips 78 23 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 23 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7831125",
+      "brand": "KNIPEX",
+      "model": "78 31 125",
+      "name": "KNIPEX Electronic Super Knips 78 31 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 31 125",
+        "KNIPEX 7831125",
+        "KNIPEX Electronic Super Knips 78 31 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 31 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7841125",
+      "brand": "KNIPEX",
+      "model": "78 41 125",
+      "name": "KNIPEX Electronic Super Knips 78 41 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 41 125",
+        "KNIPEX 7841125",
+        "KNIPEX Electronic Super Knips 78 41 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 41 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7861125",
+      "brand": "KNIPEX",
+      "model": "78 61 125",
+      "name": "KNIPEX Electronic Super Knips 78 61 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 61 125",
+        "KNIPEX 7861125",
+        "KNIPEX Electronic Super Knips 78 61 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 61 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7871125",
+      "brand": "KNIPEX",
+      "model": "78 71 125",
+      "name": "KNIPEX Electronic Super Knips 78 71 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 71 125",
+        "KNIPEX 7871125",
+        "KNIPEX Electronic Super Knips 78 71 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 71 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7881125",
+      "brand": "KNIPEX",
+      "model": "78 81 125",
+      "name": "KNIPEX Electronic Super Knips 78 81 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 81 125",
+        "KNIPEX 7881125",
+        "KNIPEX Electronic Super Knips 78 81 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 81 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    },
+    {
+      "id": "knipex-7891125",
+      "brand": "KNIPEX",
+      "model": "78 91 125",
+      "name": "KNIPEX Electronic Super Knips 78 91 125",
+      "categories": [
+        "Heimwerkerbedarf",
+        "Werkzeuge",
+        "Zangen"
+      ],
+      "vertical": "catalogued_goods",
+      "aliases": [
+        "KNIPEX 78 91 125",
+        "KNIPEX 7891125",
+        "KNIPEX Electronic Super Knips 78 91 125"
+      ],
+      "possibleAttributes": {
+        "product_kind": [
+          "hand_tool"
+        ],
+        "article_number": [
+          "78 91 125"
+        ]
+      },
+      "excludeTerms": [
+        "bundle",
+        "coffret",
+        "ersatzfeder",
+        "ersatzteil",
+        "ersatzteile",
+        "esd",
+        "esdsb",
+        "kit",
+        "koffer",
+        "repair",
+        "reparatursatz",
+        "satz",
+        "sb",
+        "sba",
+        "set",
+        "spare",
+        "spares",
+        "spring",
+        "t",
+        "tc",
+        "vde"
+      ],
+      "source": "seed:manufacturer-verified-2026-11-13-knipex-super-knips-base"
+    }
+  ]
+}

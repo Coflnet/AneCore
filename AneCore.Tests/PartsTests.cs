@@ -38,6 +38,38 @@ public class PartClassRegistryTests
         Assert.That(PartTextExtractors.Extract(title, "Zahnrad Bluetooth tooth spare transparent"), Is.Null, "the description never decides");
     }
 
+    [TestCase("Kettenrad 24 Zähne Bohrung 8 mm", "sprocket")]
+    [TestCase("Riemenscheibe 24 Zähne Bohrung 8 mm", "pulley")]
+    public void ExistingRotaryExtractors_ReadExactStatedMeasures(string title, string partClass)
+    {
+        var facts = PartTextExtractors.Extract(title, null)!;
+        Assert.That(facts.Class.Name, Is.EqualTo(partClass));
+        Assert.That(facts.Teeth?.Value, Is.EqualTo(24));
+        Assert.That(facts.BoreMm?.Value, Is.EqualTo(8));
+        Assert.That(facts.LabelledPartNumber, Is.Null);
+        Assert.That(facts.Fits, Is.Empty);
+    }
+
+    [TestCase("Kettenrad 24 Zähne Reparaturservice")]
+    [TestCase("Riemenscheibe 24 Zähne Handbuch")]
+    [TestCase("Kettenrad 24 Zähne Konvolut")]
+    [TestCase("Riemenscheibe 24 Zähne Werkzeug")]
+    [TestCase("Riemenscheibe 24 Zähne manual")]
+    [TestCase("Kettenrad 24 Zähne PDF download")]
+    [TestCase("Riemenscheibe 24 Zähne digital")]
+    [TestCase("Riemenscheibe 24 Zähne download")]
+    [TestCase("2 Stück Kettenrad 24 Zähne")]
+    [TestCase("10 Stück Riemenscheibe 24 Zähne")]
+    [TestCase("Motor with sprockets 24 teeth")]
+    [TestCase("Waschmaschine mit Riemenscheiben 24 Zähne")]
+    [TestCase("Waschmaschine mit einer Riemenscheibe 24 Zähne")]
+    [TestCase("Waschmaschine mit Riemenscheibe 24 Zähne")]
+    [TestCase("Motor with sprocket 24 teeth")]
+    [TestCase("Auto Kettenrad 24 Zähne")]
+    [TestCase("Samsung Galaxy Riemenscheibe 24 Zähne")]
+    public void RotaryNonOffers_DoNotReachTheSharedExtractor(string title) =>
+        Assert.That(PartTextExtractors.Extract(title, null), Is.Null);
+
     [Test]
     public void Description_NeverMakesAPart()
     {

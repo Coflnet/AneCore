@@ -150,6 +150,11 @@ public static class PartClassRegistry
             return null;
         if (Shaft.NounRegex.IsMatch(folded) && (CarburetorNonPart.IsMatch(folded) || ShaftTool.IsMatch(folded)))
             return null;
+        if ((Sprocket.NounRegex.IsMatch(folded) || Pulley.NounRegex.IsMatch(folded))
+            && (CarburetorNonPart.IsMatch(folded) || ShaftTool.IsMatch(folded)
+                || Regex.IsMatch(folded, @"\b(?:manual|pdf|download|digital|(?:[2-9]|[1-9]\d+)\s*(?:stuck|pieces))\b", Opts)
+                || Regex.IsMatch(folded, @"\b(?:mit|with|inkl(?:usive)?\.?)\s+(?:(?:ein(?:e[rmns]?)?|an?|the)\s+)?(?:" + Sprocket.NounRegex + "|" + Pulley.NounRegex + ")", Opts)))
+            return null;
         foreach (var cls in All)
         {
             if (cls == Carburetor) continue; // handled above with the loose-part guards
