@@ -1,4 +1,6 @@
 using System.Text.RegularExpressions;
+using System.Collections.Concurrent;
+using System.Runtime.CompilerServices;
 
 namespace Coflnet.Ane.ImageRights;
 
@@ -41,6 +43,13 @@ public sealed record ImageRightsDecision(ImageRightsStatus Status, IReadOnlyList
 /// <summary>Pure rules that turn a stored status row (or its absence) into the status readers must use.</summary>
 public static class ImageRightsPolicy
 {
+    // Keep parsed contexts private and tied to the exact immutable JSON object, not a mutable row or verdict.
+    private static readonly ConditionalWeakTable<string, ConcurrentDictionary<string, ImageRightsContext?>> Contexts = new();
+
+    private static ImageRightsContext? ReadContext(string? json, string host) => json == null ? null
+        : Contexts.GetValue(json, static _ => new(StringComparer.Ordinal))
+            .GetOrAdd(host, host => ImageRightsContext.Read(json, host));
+
     /// <summary>Age bound for non-revoked diagnostic statuses; recorded reservations never expire by age.</summary>
     public static readonly TimeSpan MaxAge = TimeSpan.FromHours(48);
 
@@ -86,7 +95,7 @@ public static class ImageRightsPolicy
         if (purpose == ImageRightsPurpose.Training && summary.Status == ImageRightsStatus.Revoked) return summary;
         if (host == null || stored == null || DenialEvidence(host, options) != null
             || !Uri.TryCreate(imageUrl?.StartsWith("//", StringComparison.Ordinal) == true ? "https:" + imageUrl : imageUrl, UriKind.Absolute, out var uri)
-            || ImageRightsContext.Read(stored.PolicyContext, host) is not { } context) return summary;
+            || ReadContext(stored.PolicyContext, host) is not { } context) return summary;
 
         var preserved = summary;
         if (purpose == ImageRightsPurpose.Comparison)

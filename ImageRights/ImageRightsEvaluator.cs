@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
 
 namespace Coflnet.Ane.ImageRights;
 
@@ -61,6 +62,9 @@ public sealed record ImageRightsResult(ImageRightsStatus Status, IReadOnlyList<s
 /// </summary>
 public static class ImageRightsEvaluator
 {
+    private static readonly ConditionalWeakTable<string, RobotsTxt> ParsedRobots = new();
+    private static readonly ConditionalWeakTable<string, Regex> LocationPatterns = new();
+
     public const string UserAgent = "ane.deals crawler/1.0";
     /// <summary>Legacy names retained for compatibility; their groups do not apply to the ANE crawler.</summary>
     public static readonly string[] AiTrainingCrawlers =
@@ -100,7 +104,7 @@ public static class ImageRightsEvaluator
         if (file.State == FetchState.NotFound || string.IsNullOrWhiteSpace(file.Text))
             return;
 
-        var robots = RobotsTxt.Parse(file.Text);
+        var robots = ParsedRobots.GetValue(file.Text, static text => RobotsTxt.Parse(text));
         var groups = robots.Groups.Select(group => (Group: group, Specificity: group.Agents
             .Where(a => a != "*" && userAgent.Contains(a, StringComparison.OrdinalIgnoreCase))
             .Select(a => a.Length).DefaultIfEmpty(0).Max())).ToList();
@@ -182,11 +186,13 @@ public static class ImageRightsEvaluator
     {
         if (string.IsNullOrEmpty(pattern) || pattern == "/")
             return true;
-        var anchored = pattern.EndsWith('$');
-        if (anchored)
-            pattern = pattern[..^1];
-        var regex = "^" + System.Text.RegularExpressions.Regex.Escape(pattern).Replace("\\*", ".*") + (anchored ? "$" : "");
-        return System.Text.RegularExpressions.Regex.IsMatch(path, regex);
+        return LocationPatterns.GetValue(pattern, static pattern =>
+        {
+            var anchored = pattern.EndsWith('$');
+            if (anchored)
+                pattern = pattern[..^1];
+            return new Regex("^" + Regex.Escape(pattern).Replace("\\*", ".*") + (anchored ? "$" : ""));
+        }).IsMatch(path);
     }
 
     /// <summary>Applicable response-header restrictions; newline-joined physical fields reset crawler scope.</summary>

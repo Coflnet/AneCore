@@ -113,6 +113,18 @@ public class ImageRightsEvaluatorTests
         Assert.That(Eval("a", "b", headers: new() { [name] = value }).Status,
             Is.EqualTo(revoked ? ImageRightsStatus.Revoked : ImageRightsStatus.Allowed));
 
+    [TestCase("/a*$", "/a\nb", false)]
+    [TestCase("/a$", "/a\n", true)]
+    [TestCase("/a.", "/ab", false)]
+    [TestCase("/a.", "/a.jpg", true)]
+    [TestCase("/a*$", "/a.jpg?download=1", true)]
+    [TestCase("/a*$", "/b.jpg", false)]
+    public void ReusedLocationPatternsKeepWildcardEscapingAnchorsAndNewlines(string pattern, string path, bool expected)
+    {
+        Assert.That(ImageRightsEvaluator.LocationMatches(pattern, path), Is.EqualTo(expected));
+        Assert.That(ImageRightsEvaluator.LocationMatches(pattern, path), Is.EqualTo(expected));
+    }
+
     [Test]
     public void FetchedFile_FromHttp_Mapping()
     {

@@ -42,6 +42,65 @@ public class ImageRightsPathContextTests
         Assert.That(row.StatusValue, Is.EqualTo(ImageRightsStatus.Revoked), "URL resolution never rewrites host summary");
     }
 
+    [Test]
+    public void ReusedContextStillEvaluatesEachPathAndPurpose()
+    {
+        var row = Row(Snapshot("User-agent: *\nDisallow: /\nAllow: /public/\nContent-Signal: ai-train=no"));
+        for (var attempt = 0; attempt < 2; attempt++)
+        {
+            Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Allowed));
+            Assert.That(At(row, "/private/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+            Assert.That(At(row, "/public/a.jpg", ImageRightsPurpose.Training), Is.EqualTo(ImageRightsStatus.Revoked));
+        }
+    }
+
+    [Test]
+    public void ChangedJsonAndManualOrConfiguredDenialsAreNotCachedAsVerdicts()
+    {
+        var row = Row(Snapshot("User-agent: *\nDisallow: /private/"));
+        Assert.That(At(row, "/private/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+        row.PolicyContext = Context(Snapshot("User-agent: *\nDisallow: /other/"));
+        Assert.That(At(row, "/private/a.jpg"), Is.EqualTo(ImageRightsStatus.Allowed));
+        Assert.That(At(row, "/other/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+        row.Status = "Revoked";
+        row.Evidence = ["owner opted out"];
+        Assert.That(At(row, "/private/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+        row.Status = "Allowed";
+        var options = ImageRightsOptions.Parse("", "");
+        var url = "https://" + Host + "/private/a.jpg";
+        Assert.That(ImageRightsPolicy.ResolveImage(url, row, Now, options, ImageRightsPurpose.Comparison).Status,
+            Is.EqualTo(ImageRightsStatus.Allowed));
+        options.DenyHosts.Add(Host);
+        Assert.That(ImageRightsPolicy.ResolveImage(url, row, Now, options, ImageRightsPurpose.Comparison).Status,
+            Is.EqualTo(ImageRightsStatus.Revoked));
+    }
+
+    [TestCase("{")]
+    [TestCase("{\"Version\":2,\"Snapshots\":[]}")]
+    public void InvalidReplacementContextCannotReusePreviouslyValidatedProof(string json)
+    {
+        var row = Row(Snapshot("User-agent: *\nDisallow: /\nAllow: /public/"));
+        Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Allowed));
+        row.PolicyContext = json;
+        Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+    }
+
+    [Test]
+    public void PublicParsedObjectsCannotMutatePrivatePolicyCaches()
+    {
+        const string robots = "User-agent: *\nDisallow: /\nAllow: /public/";
+        var snapshot = Snapshot(robots);
+        var row = Row(snapshot);
+        Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Allowed));
+        ImageRightsContext.Read(row.PolicyContext, Host)!.Snapshots.Clear();
+        RobotsTxt.Parse(robots).Groups.Clear();
+        Assert.That(ImageRightsContext.Read(row.PolicyContext, Host)!.Snapshots, Has.Count.EqualTo(1));
+        Assert.That(snapshot.Evaluate("/private/a.jpg").Status, Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(At(row, "/private/a.jpg"), Is.EqualTo(ImageRightsStatus.Revoked));
+        Assert.That(At(row, "/public/a.jpg"), Is.EqualTo(ImageRightsStatus.Allowed));
+    }
+
     [TestCase("/a%20b.jpg?download=1", ImageRightsStatus.Revoked)]
     [TestCase("/a%20b.jpg?download=0", ImageRightsStatus.Allowed)]
     public void UsesEscapedPathAndQuery(string path, ImageRightsStatus expected) =>
