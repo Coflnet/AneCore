@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using OpenSearch.Client;
 using OpenSearch.Net;
@@ -36,7 +37,7 @@ public class ListingIndex(
 
         List<Func<QueryContainerDescriptor<ListingDocument>, QueryContainer>> matchQuery =
         [
-            m => m.Match(t => t.Field(f => f.Title).Query(query).Operator(Operator.And))
+            _ => BuildTitleQuery(query)
         ];
 
         minPrice ??= 0;
@@ -70,6 +71,21 @@ public class ListingIndex(
             cancellationToken);
 
         return searchResponse.Documents;
+    }
+
+    /// <summary>SearchTerm alternatives are OR clauses; words within each clause must all match.</summary>
+    public static QueryContainer BuildTitleQuery(string query)
+    {
+        var alternatives = Regex.Split(query.Replace("\"", string.Empty), @"\s+OR\s+|\|", RegexOptions.IgnoreCase)
+            .Select(part => part.Trim()).Where(part => part.Length > 0).Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+        if (alternatives.Length > 16)
+            throw new ArgumentException("At most 16 search alternatives are supported", nameof(query));
+        var descriptor = new QueryContainerDescriptor<ListingDocument>();
+        if (alternatives.Length == 0) return descriptor.MatchNone();
+        QueryContainer Match(string text) => new QueryContainerDescriptor<ListingDocument>()
+            .Match(t => t.Field(f => f.Title).Query(text).Operator(Operator.And));
+        if (alternatives.Length == 1) return Match(alternatives[0]);
+        return descriptor.Bool(b => b.Should(alternatives.Select(Match).ToArray()).MinimumShouldMatch(1));
     }
 
     /// <summary>
