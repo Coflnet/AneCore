@@ -174,7 +174,10 @@
           "512GB",
           "1TB"
         ],
-        "color": []
+        "color": [
+          "Black",
+          "White"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
@@ -198,7 +201,10 @@
           "1TB",
           "2TB"
         ],
-        "color": []
+        "color": [
+          "Black",
+          "White"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
@@ -244,16 +250,6 @@
         "Switch V1",
         "Nintendo Switch HAC-001",
         "Switch HAC-001",
-        "Nintendo Switch Pokemon Edition",
-        "Nintendo Switch Pokemon Let's Go",
-        "Nintendo Switch Pokemon Lets Go",
-        "Nintendo Switch Let's Go Pikachu",
-        "Nintendo Switch Let's Go Evoli",
-        "Nintendo Switch Let's Go Eevee",
-        "Nintendo Switch Let's Go Edition",
-        "Nintendo Switch Lets Go Edition",
-        "Switch Let's Go Edition",
-        "Switch Lets Go Edition",
         "Nintendo Switch 1. Gen",
         "Nintendo Switch 1 Gen",
         "Nintendo Switch 1. Generation",
@@ -322,34 +318,18 @@
         "Nintendo Switch nieuwe versie",
         "Nintendo Switch verbesserter Akku",
         "Nintendo Switch improved battery",
-        "Nintendo Switch Edition Animal Crossing",
-        "Nintendo Switch Animal Crossing Edition",
-        "Nintendo Switch Edition Fortnite",
-        "Nintendo Switch Fortnite Edition",
-        "Nintendo Switch Fortnite Special Edition",
-        "Nintendo Switch Fortnite Wildcat Edition",
-        "Nintendo Switch Special Edition Fortnite",
-        "Nintendo Switch Wildcat Edition Fortnite",
-        "Nintendo Switch Mario Red Blue",
-        "Nintendo Switch Mario Red & Blue",
-        "Nintendo Switch Mario Rot Blau",
         "Nintendo Switch 1 V2",
         "Nintendo Switch zweite Version",
         "Nintendo Switch 1 zweite Version",
         "Nintendo Switch 2. Version",
         "Nintendo Switch XKW",
         "Nintendo Switch XKJ",
-        "Nintendo Switch Monster Hunter Rise Edition",
         "Switch 1 V2",
         "Switch zweite Version",
         "Switch 1 zweite Version",
         "Switch 2. Version",
         "Switch XKW",
-        "Switch XKJ",
-        "Switch Monster Hunter Rise Edition",
-        "Switch Fortnite Edition",
-        "Switch Fortnite Special Edition",
-        "Switch Fortnite Wildcat Edition"
+        "Switch XKJ"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -426,13 +406,7 @@
         "Nintendo Switch 1 OLED",
         "Switch 1 OLED",
         "Nintendo Switch 1 OLED Model",
-        "Switch 1 OLED Model",
-        "Nintendo Switch Karmesin Edition",
-        "Nintendo Switch Purpur Edition",
-        "Nintendo Switch Karmesin & Purpur Edition",
-        "Switch Karmesin Edition",
-        "Switch Purpur Edition",
-        "Switch Karmesin & Purpur Edition"
+        "Switch 1 OLED Model"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -658,6 +632,34 @@
       "source": "seed:wikidata+hand-curated-2026-09"
     },
     {
+      "id": "sony-playstation-5-slim-digital-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Slim Digital Edition",
+      "name": "Sony PlayStation 5 Slim Digital Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Slim Digital",
+        "PS5 Slim Digital Edition",
+        "PS5 Digital Slim Edition",
+        "PlayStation 5 Digital Slim Edition",
+        "Sony PlayStation 5 Digital Slim Edition",
+        "PlayStation 5 Slim Digital Edition",
+        "Sony PlayStation 5 Slim Digital Edition"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "1TB"
+        ],
+        "color": []
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
       "id": "valve-steam-deck-lcd",
       "brand": "Valve",
       "model": "Valve Steam Deck LCD",
@@ -678,8 +680,7 @@
           "64GB",
           "256GB",
           "512GB"
-        ],
-        "color": []
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
@@ -702,11 +703,815 @@
         "storage_size": [
           "512GB",
           "1TB"
-        ],
-        "color": []
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
+    },
+    {
+      "id": "valve-steam-deck-oled-limited-edition",
+      "brand": "Valve",
+      "model": "Valve Steam Deck OLED Limited Edition",
+      "name": "Valve Steam Deck OLED Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Steam Deck OLED Limited Edition",
+        "Valve Steam Deck OLED Limited Edition",
+        "Steam Deck OLED Limitierte Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "valve-steam-deck-oled"
+        ],
+        "edition_terms": [
+          "limited|limitiert|limitierte|limitierter|ltd|smoke|smoked|translucent|transluzent|transparent 1 tb|1 tb transparent|durchsichtig 1 tb|1 tb durchsichtig"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "valve-steam-deck-oled-limited-edition-white",
+      "brand": "Valve",
+      "model": "Valve Steam Deck OLED Limited Edition White",
+      "name": "Valve Steam Deck OLED Limited Edition White",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Steam Deck OLED Limited Edition White",
+        "Valve Steam Deck OLED Limited Edition White",
+        "Steam Deck OLED White Limited Edition",
+        "Steam Deck OLED Limited Edition Weiss",
+        "Steam Deck OLED Weiss Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "valve-steam-deck-oled"
+        ],
+        "edition_terms": [
+          "white|weiss|weis|weisse|weisses|weisser|weissen|blanc|blanche|bianco|bianca|wit|witte",
+          "limited|limitiert|limitierte|limitierter|ltd|edition|special|1 tb|1000 gb"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-oled-zelda-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch OLED Zelda Edition",
+      "name": "Nintendo Switch OLED Zelda Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch OLED Zelda Edition",
+        "Switch OLED Zelda Edition",
+        "Nintendo Switch OLED Zelda Tears of the Kingdom Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-oled"
+        ],
+        "edition_terms": [
+          "zelda|tears of the kingdom|totk",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-oled-mario-red-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch OLED Mario Red Edition",
+      "name": "Nintendo Switch OLED Mario Red Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch OLED Mario Red Edition",
+        "Switch OLED Mario Red Edition",
+        "Nintendo Switch OLED Mario Edition",
+        "Switch OLED Mario Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-oled"
+        ],
+        "edition_terms": [
+          "mario red|mario rot|mario rote|mario rosso|mario rouge|mario rood|red mario|rote mario|mario edition|mario sonderedition|mario special|mario limited"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-oled-splatoon-3-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch OLED Splatoon 3 Edition",
+      "name": "Nintendo Switch OLED Splatoon 3 Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch OLED Splatoon 3 Edition",
+        "Switch OLED Splatoon 3 Edition",
+        "Nintendo Switch OLED Splatoon Edition",
+        "Switch OLED Splatoon Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-oled"
+        ],
+        "edition_terms": [
+          "splatoon",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-oled-pokemon-scarlet-violet-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch OLED Pokemon Scarlet Violet Edition",
+      "name": "Nintendo Switch OLED Pokemon Scarlet Violet Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch OLED Pokemon Scarlet Violet Edition",
+        "Nintendo Switch OLED Pokemon Karmesin Purpur Edition",
+        "Nintendo Switch Karmesin Edition",
+        "Nintendo Switch Purpur Edition",
+        "Nintendo Switch Karmesin & Purpur Edition",
+        "Switch Karmesin Edition",
+        "Switch Purpur Edition",
+        "Switch Karmesin & Purpur Edition",
+        "Nintendo Switch Scarlet & Violet Edition",
+        "Switch Scarlet & Violet Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-oled"
+        ],
+        "edition_terms": [
+          "karmesin|purpur|scarlet|violet|scarlatto|ecarlate|pokemon",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-pokemon-lets-go-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Pokemon Lets Go Edition",
+      "name": "Nintendo Switch Pokemon Lets Go Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Pokemon Let's Go",
+        "Nintendo Switch Pokemon Lets Go",
+        "Nintendo Switch Let's Go Pikachu",
+        "Nintendo Switch Let's Go Evoli",
+        "Nintendo Switch Let's Go Eevee",
+        "Nintendo Switch Let's Go Edition",
+        "Nintendo Switch Lets Go Edition",
+        "Switch Let's Go Edition",
+        "Switch Lets Go Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch",
+          "nintendo-switch-v1",
+          "nintendo-switch-v2"
+        ],
+        "edition_terms": [
+          "lets go|let s go|pikachu|evoli|eevee",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-animal-crossing-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Animal Crossing Edition",
+      "name": "Nintendo Switch Animal Crossing Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Edition Animal Crossing",
+        "Nintendo Switch Animal Crossing Edition",
+        "Switch Animal Crossing Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch",
+          "nintendo-switch-v1",
+          "nintendo-switch-v2"
+        ],
+        "edition_terms": [
+          "animal crossing",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-fortnite-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Fortnite Edition",
+      "name": "Nintendo Switch Fortnite Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Edition Fortnite",
+        "Nintendo Switch Fortnite Edition",
+        "Nintendo Switch Fortnite Special Edition",
+        "Nintendo Switch Special Edition Fortnite",
+        "Switch Fortnite Edition",
+        "Switch Fortnite Special Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch",
+          "nintendo-switch-v1",
+          "nintendo-switch-v2"
+        ],
+        "edition_terms": [
+          "fortnite",
+          "{edition}",
+          "!wildcat"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-monster-hunter-rise-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Monster Hunter Rise Edition",
+      "name": "Nintendo Switch Monster Hunter Rise Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Monster Hunter Rise Edition",
+        "Switch Monster Hunter Rise Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch",
+          "nintendo-switch-v1",
+          "nintendo-switch-v2"
+        ],
+        "edition_terms": [
+          "monster hunter",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-mario-red-blue-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Mario Red Blue Edition",
+      "name": "Nintendo Switch Mario Red Blue Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Mario Red Blue",
+        "Nintendo Switch Mario Red & Blue",
+        "Nintendo Switch Mario Rot Blau",
+        "Nintendo Switch Mario Red & Blue Edition",
+        "Switch Mario Red & Blue Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch",
+          "nintendo-switch-v1",
+          "nintendo-switch-v2"
+        ],
+        "edition_terms": [
+          "mario red blue|mario rot blau|mario red and blue|mario rot und blau|mario rosso blu|mario rouge bleu|mario red plus blue|mario rot plus blau"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-lite-zacian-zamazenta-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite Zacian Zamazenta Edition",
+      "name": "Nintendo Switch Lite Zacian Zamazenta Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite Zacian & Zamazenta Edition",
+        "Switch Lite Zacian & Zamazenta Edition",
+        "Nintendo Switch Lite Zacian Zamazenta"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-lite"
+        ],
+        "edition_terms": [
+          "zacian|zamazenta",
+          "zacian zamazenta|zacian und zamazenta|zacian and zamazenta|zacian plus zamazenta|zacian e zamazenta|zacian et zamazenta|zamazenta zacian|zamazenta und zacian|zamazenta and zacian|{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-lite-dialga-palkia-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite Dialga Palkia Edition",
+      "name": "Nintendo Switch Lite Dialga Palkia Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite Dialga & Palkia Edition",
+        "Switch Lite Dialga & Palkia Edition",
+        "Nintendo Switch Lite Dialga Palkia"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-lite"
+        ],
+        "edition_terms": [
+          "dialga|palkia",
+          "dialga palkia|dialga und palkia|dialga and palkia|dialga plus palkia|dialga e palkia|dialga et palkia|palkia dialga|palkia und dialga|palkia and dialga|{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-lite-hyrule-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite Hyrule Edition",
+      "name": "Nintendo Switch Lite Hyrule Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite Hyrule Edition",
+        "Switch Lite Hyrule Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-lite"
+        ],
+        "edition_terms": [
+          "hyrule",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-lite-isabelle-aloha-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite Isabelle Aloha Edition",
+      "name": "Nintendo Switch Lite Isabelle Aloha Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite Isabelle Aloha Edition",
+        "Switch Lite Isabelle Aloha Edition",
+        "Nintendo Switch Lite Melinda Aloha Edition",
+        "Switch Lite Melinda Aloha Edition",
+        "Nintendo Switch Lite Animal Crossing Isabelle Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-lite"
+        ],
+        "edition_terms": [
+          "isabelle|melinda"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "nintendo-switch-lite-timmy-tommy-aloha-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch Lite Timmy Tommy Aloha Edition",
+      "name": "Nintendo Switch Lite Timmy Tommy Aloha Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch Lite Timmy & Tommy Aloha Edition",
+        "Switch Lite Timmy & Tommy Aloha Edition",
+        "Nintendo Switch Lite Animal Crossing Timmy & Tommy Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-lite"
+        ],
+        "edition_terms": [
+          "timmy|tommy|nepomuk"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-5-slim-digital-edition-30th-anniversary",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Slim Digital Edition 30th Anniversary",
+      "name": "Sony PlayStation 5 Slim Digital Edition 30th Anniversary",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "30th Anniversary PS5 Digital Edition",
+        "30th Anniversary PlayStation 5 Digital Edition",
+        "30th Anniversary PS5",
+        "30th Anniversary PlayStation 5"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5",
+          "sony-playstation-5-slim",
+          "sony-playstation-5-digital-edition",
+          "sony-playstation-5-slim-digital-edition"
+        ],
+        "edition_terms": [
+          "30th anniversary|30 anniversary|30th|30 jahre|30 jahrige|30 jahriges|30 jahrigen|30 jubilaum|30 jahrestag|anniversary"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-5-pro-30th-anniversary",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Pro 30th Anniversary",
+      "name": "Sony PlayStation 5 Pro 30th Anniversary",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "30th Anniversary PS5 Pro",
+        "30th Anniversary PlayStation 5 Pro"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5-pro"
+        ],
+        "edition_terms": [
+          "30th anniversary|30 anniversary|30th|30 jahre|30 jahrige|30 jahriges|30 jahrigen|30 jubilaum|30 jahrestag|anniversary"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-5-spider-man-2-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Spider-Man 2 Limited Edition",
+      "name": "Sony PlayStation 5 Spider-Man 2 Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Spider-Man 2 Limited Edition",
+        "PlayStation 5 Spider-Man 2 Limited Edition",
+        "PS5 Marvel's Spider-Man 2 Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5"
+        ],
+        "edition_terms": [
+          "spider man 2|spiderman 2",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-4-pro-500-million-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 Pro 500 Million Limited Edition",
+      "name": "Sony PlayStation 4 Pro 500 Million Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "500 Million Limited Edition PS4 Pro",
+        "500 Million Limited Edition PlayStation 4 Pro",
+        "500 Million Limited Edition PS4"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-4-pro",
+          "sony-playstation-4"
+        ],
+        "edition_terms": [
+          "500 million|500 millionen|500 mio|500 m"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-4-pro-spider-man-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 Pro Spider-Man Limited Edition",
+      "name": "Sony PlayStation 4 Pro Spider-Man Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS4 Pro Spider-Man Limited Edition",
+        "PlayStation 4 Pro Spider-Man Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-4-pro"
+        ],
+        "edition_terms": [
+          "spider man|spiderman",
+          "{limited}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-4-pro-god-of-war-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 Pro God of War Limited Edition",
+      "name": "Sony PlayStation 4 Pro God of War Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS4 Pro God of War Limited Edition",
+        "PlayStation 4 Pro God of War Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-4-pro"
+        ],
+        "edition_terms": [
+          "god of war",
+          "{limited}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-4-20th-anniversary-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 4 20th Anniversary Edition",
+      "name": "Sony PlayStation 4 20th Anniversary Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "20th Anniversary Edition PS4",
+        "20th Anniversary Edition PlayStation 4",
+        "20th Anniversary PS4"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-4"
+        ],
+        "edition_terms": [
+          "20th anniversary|20 anniversary|20th|20 jahre|20 jahrige|20 jahriges|20 jahrigen|20 jubilaum|20 jahrestag|anniversary"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-series-x-galaxy-black-special-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox Series X Galaxy Black Special Edition",
+      "name": "Microsoft Xbox Series X Galaxy Black Special Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox Series X Galaxy Black Special Edition",
+        "Xbox Series X Galaxy Black",
+        "Xbox Series X Galaxy Edition",
+        "Xbox Series X Galaxy Black Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-series-x"
+        ],
+        "edition_terms": [
+          "galaxy"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-one-x-project-scorpio-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One X Project Scorpio Edition",
+      "name": "Microsoft Xbox One X Project Scorpio Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox One X Project Scorpio Edition",
+        "Xbox One X Scorpio Edition",
+        "Xbox One X Project Scorpio"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-one-x"
+        ],
+        "edition_terms": [
+          "scorpio"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-one-x-cyberpunk-2077-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One X Cyberpunk 2077 Limited Edition",
+      "name": "Microsoft Xbox One X Cyberpunk 2077 Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox One X Cyberpunk 2077 Limited Edition",
+        "Xbox One X Cyberpunk Limited Edition",
+        "Xbox One X Cyberpunk Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-one-x"
+        ],
+        "edition_terms": [
+          "cyberpunk",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-one-x-gears-5-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One X Gears 5 Limited Edition",
+      "name": "Microsoft Xbox One X Gears 5 Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox One X Gears 5 Limited Edition",
+        "Xbox One X Gears of War 5 Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-one-x"
+        ],
+        "edition_terms": [
+          "gears",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-one-s-gears-of-war-4-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One S Gears of War 4 Limited Edition",
+      "name": "Microsoft Xbox One S Gears of War 4 Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox One S Gears of War 4 Limited Edition",
+        "Xbox One S Gears of War Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-one-s"
+        ],
+        "edition_terms": [
+          "gears",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "microsoft-xbox-one-s-minecraft-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox One S Minecraft Limited Edition",
+      "name": "Microsoft Xbox One S Minecraft Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox One S Minecraft Limited Edition",
+        "Xbox One S Minecraft Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-one-s"
+        ],
+        "edition_terms": [
+          "minecraft",
+          "{edition}"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-editions"
     }
   ]
 }

@@ -40,6 +40,14 @@ public class KnownProductMatcher
     private static readonly Regex PrimaryHandTool = new(@"^(?:(?:[1-9]\d*\s*(?:x|stuck|stueck|stk)|(?:werkzeugset|toolset|set|satz)(?:\s+mit)?)\s+)*(?<brand>[a-z]+)\s+(?<kind>seitenschneider|schraubendreher|rollgabelschlussel|pinces?|tanger|kabelsax)\b", Opts);
     private static readonly Regex CordlessToolName = new(@"\bakku\s*(?:bohrschrauber|staubsauger)\b", Opts);
     private static readonly Regex DjiPackage = new(@"\b(?:combo|fly\s+more)\b", Opts);
+    /// <summary>
+    /// A free-standing "+" in front of an extras word ("Switch OLED + Zubehör", "Steam Deck + Tasche"): the extras come with the device, like after "mit". Only with
+    /// whitespace before the sign: a glued "+" names a model ("Galaxy S21+ Hülle" is a case), and the plain word "Plus" ("iPhone 8 Plus Hülle") is never touched.
+    /// </summary>
+    private static readonly Regex SpacedPlusBeforeExtras = new(
+        @"(?<=\s)\+(?=\s*(?:zubeh(?:ö|oe|o)r\w*|ovp|tasche\w*|h(?:ü|ue|u)lle\w*|schutzh(?:ü|ue|u)lle\w*|case|cover|controller\w*|kabel\w*|ladekabel\w*|netzteil\w*|dock\w*|ladestation|panzerglas\w*|folie|karton|rechnung|garantie|headset)\b)",
+        Opts | RegexOptions.IgnoreCase);
+
     private static readonly Regex DjiAccessory = new(@"\b(?:batter(?:y|ies)|propellers?|gimbal|filters?|remote(?:\s+controller)?|controller|bedienungsanleitung|manuals?)\b", Opts);
 
     /// <summary>Words/phrases that unconditionally mark a listing as an accessory/part rather than the device itself.</summary>
@@ -109,6 +117,7 @@ public class KnownProductMatcher
     private readonly Dictionary<(string First, string? Second, string? Third), List<AliasEntry>> aliasIndex;
     private readonly Dictionary<string, List<(KnownProduct Product, Regex Pattern)>> handToolArticles;
     private readonly string[] knownBrands;
+    private readonly KnownProductEditions editions;
 
     private readonly record struct AliasEntry(KnownProduct Product, string[] Tokens);
 
@@ -160,6 +169,7 @@ public class KnownProductMatcher
         this.products = products;
         aliasIndex = BuildIndex(products);
         knownBrands = products.Select(p => p.Brand).Distinct().Where(b => !string.IsNullOrWhiteSpace(b)).Select(Normalize).Distinct().ToArray();
+        editions = new KnownProductEditions(products);
         handToolArticles = products.Where(p => p.PossibleAttributes.GetValueOrDefault("product_kind")?.Contains("hand_tool") == true
                 && !string.IsNullOrWhiteSpace(p.Brand)
                 && p.PossibleAttributes.GetValueOrDefault("article_number") is { Count: 1 } articles && articles.Single().Any(char.IsDigit))
@@ -302,7 +312,7 @@ public class KnownProductMatcher
             return null;
 
         var titleTokens = normalizedTitle.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        var accessory = IsAccessory(normalizedTitle);
+        var accessory = IsAccessory(AccessoryText(title, normalizedTitle));
         if (accessory && !titleTokens.Contains("lego", StringComparer.Ordinal))
             return null;
 
@@ -365,6 +375,17 @@ public class KnownProductMatcher
         if (matches.Count == 0)
             return null;
 
+        return ChooseBest(matches, brand, title, titleTokens);
+    }
+
+    /// <summary>
+    /// The most specific match, refined to the collector edition the title names (see <see cref="KnownProductEditions"/>). An edition's own alias whose words do not count in
+    /// this title ("Xbox Series X Galaxy Black Controller" names the controller's design) gives way to the best match among the devices without editions.
+    /// </summary>
+    private KnownProduct? ChooseBest(List<(KnownProduct Product, int TokenCount, int StartIndex)> matches, string? brand, string title, string[] titleTokens)
+    {
+        if (matches.Count == 0)
+            return null;
         var best = matches.MaxBy(m => m.TokenCount);
         if (matches.Any(m => m.TokenCount == best.TokenCount && m.Product.Id != best.Product.Id))
             return null; // ambiguous: two different products matched with equally-specific aliases
@@ -377,7 +398,8 @@ public class KnownProductMatcher
             return null; // extracted brand contradicts the candidate's brand
         }
 
-        return candidate;
+        var refined = editions.Refine(candidate, title, titleTokens, best.StartIndex + best.TokenCount);
+        return refined ?? ChooseBest(matches.Where(m => !KnownProductEditions.IsEdition(m.Product)).ToList(), brand, title, titleTokens);
     }
 
     private static bool HasOtherLegoNumber(string[] tokens, int start, int length, string model, string title)
@@ -534,6 +556,22 @@ public class KnownProductMatcher
     {
         "dabei", "included", "inklusive", "inkl", "gratis", "inbegrepen", "inclus", "incluso", "inclusa",
     };
+
+    private static readonly Regex SpacedPlus = new(@"(?<=\s)\+", Opts);
+
+    /// <summary>
+    /// The normalised title the accessory check reads: when the title's "+" list opens with extras ("... Edition + Zubehör + OVP"), each spaced "+" before extras reads as "mit"
+    /// (see <see cref="SpacedPlusBeforeExtras"/>). A list that opens with something else ("Nintendo Switch + Konsole + OLED-Modell + Case") keeps the veto: its device words are
+    /// spread over the list, which the rule extraction reads better than an alias.
+    /// </summary>
+    private static string AccessoryText(string title, string normalizedTitle)
+    {
+        if (!title.Contains('+') || SpacedPlus.Match(title) is not { Success: true } first)
+            return normalizedTitle;
+        if (SpacedPlusBeforeExtras.Match(title) is not { Success: true } extras || extras.Index != first.Index)
+            return normalizedTitle;
+        return Normalize(SpacedPlusBeforeExtras.Replace(title, " mit "));
+    }
 
     private bool IsAccessory(string normalizedTitle)
     {

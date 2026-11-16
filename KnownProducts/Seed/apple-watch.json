@@ -562,7 +562,10 @@
         "os": [
           "watchos"
         ],
-        "color": []
+        "color": [
+          "Black",
+          "Grey"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:ios-device-list+apple-specs-2026-09"
