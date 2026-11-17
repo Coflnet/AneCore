@@ -765,15 +765,10 @@ public class ReferenceListingPreviewService
             return string.Empty;
 
         var query = WebUtility.HtmlDecode(value);
-        query = query.Split('|', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? query;
         query = SearchNoiseRegex.Replace(query, string.Empty);
         query = SearchPriceNoiseRegex.Replace(query, string.Empty);
         query = NormalizeText(query).Trim('-', '|', ':', ',', '.', ' ');
-
-        if (query.Length > 140)
-            query = query[..140].Trim();
-
-        return query;
+        return ReferenceProductQuery.FromTitle(query);
     }
 
     private static List<string> ExtractImages(HtmlDocument document, Uri pageUri)
