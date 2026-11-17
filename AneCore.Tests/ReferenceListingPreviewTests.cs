@@ -70,6 +70,42 @@ public class ReferenceListingPreviewTests
         Assert.That(service.BuildFromRender(Url, render, "//*[@id='node79']", null).SelectedReference?.Price, Is.EqualTo(80));
     }
 
+    [Test]
+    public void ListingPageCandidatesIgnoreRecommendationsShippingAndContainers()
+    {
+        var html = File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Fixtures", "kleinanzeigen-ad-with-recommendations.html"));
+        var result = service.Build(new Uri("https://www.kleinanzeigen.de/s-anzeige/phone-example/1-173-1"), html, null);
+
+        var candidates = result.PriceCandidates;
+        Assert.That(candidates.Select(c => c.Price).Distinct().ToArray(), Is.EqualTo(new[] { 30d }), "only the main listing price may remain");
+        Assert.That(candidates.Any(c => c.Text.Contains("Versand")), Is.False);
+        Assert.That(candidates.All(c => c.Text.Count(ch => ch == '€') <= 1), Is.True);
+        Assert.That(candidates.Select(c => (c.Price, c.Currency, c.Text)).Distinct().Count(), Is.EqualTo(candidates.Count));
+        Assert.That(candidates.Any(c => c.Selector.Contains("viewad-price")), Is.True);
+        Assert.That(result.RequiresReferencePriceSelection, Is.False);
+        Assert.That(result.SelectedReference?.Price, Is.EqualTo(30));
+    }
+
+    [Test]
+    public void ImagesSkipSiteChromeAndRenditionDuplicates()
+    {
+        const string html = "<html><head><meta property='og:image' content='https://img.example.com/a/photo1?rule=$_59.JPG'/></head><body>" +
+            "<img src='https://static.example.com/static/img/common/logo.svg'/>" +
+            "<img src='https://static.example.com/icons/categories/all.png'/>" +
+            "<img src='https://img.example.com/a/photo1?rule=$_2.AUTO'/>" +
+            "<img src='https://img.example.com/a/photo2?rule=$_2.AUTO'/></body></html>";
+        var images = service.Build(Url, html, null).Listing.ImageUrls;
+        Assert.That(images, Is.EqualTo(new[] { "https://img.example.com/a/photo1?rule=$_59.JPG", "https://img.example.com/a/photo2?rule=$_2.AUTO" }));
+    }
+
+    [Test]
+    public void DescriptionDropsAppendedTitleAndCity()
+    {
+        const string html = "<html><head><meta property='og:title' content='Phone X 16 GB'/>" +
+            "<meta property='og:description' content='Selling my phone, works...,Phone X 16 GB in Berlin - Mitte'/></head><body></body></html>";
+        Assert.That(service.Build(Url, html, null).Listing.Description, Is.EqualTo("Selling my phone, works..."));
+    }
+
     [TestCase("https://user:password@example.com/item")]
     [TestCase("https://example.com:8443/item")]
     [TestCase("file:///etc/passwd")]

@@ -13,11 +13,9 @@ public class ReferenceListingPreviewService
     private static readonly Regex SearchPriceNoiseRegex = new(
         @"(?:(?:€|EUR|CHF|US\$|\$|£|GBP)\s*\d{1,3}(?:[.\s]\d{3})*(?:[,\.]\d{1,2})?|\d{1,3}(?:[.\s]\d{3})*(?:[,\.]\d{1,2})?\s*(?:€|EUR|CHF|US\$|\$|£|GBP))",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
-    private const string CurrencyPattern = @"€|EUR|CHF|US\$|\$|£|GBP|USD|PLN|zł|CZK|Kč|DKK|SEK|HUF|RON|BGN|NOK";
-    private static readonly Regex CurrencyRegex = new(CurrencyPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
-    private static readonly Regex PriceRegex = new(
-        @"(?:(?<currency>" + CurrencyPattern + @")\s*)?(?<amount>\d{1,3}(?:[.,\s ]\d{3})+(?:[,\.]\d{1,2})?|\d+(?:[,\.]\d{1,2})?)(?:\s*(?<currency2>" + CurrencyPattern + @"))?",
-        RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex CurrencyRegex = new(ReferencePriceText.CurrencyPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex PriceRegex = ReferencePriceText.PriceRegex;
+    private static readonly string[] MainPriceIdHints = ["viewad-price"];
 
     public ReferenceListingPreviewResponse Build(Uri uri, string html, string? selectedSelector, List<string>? additionalSelectors = null)
         => BuildFromRender(uri, new RenderedReferenceListing { Html = html }, selectedSelector, additionalSelectors);
@@ -30,28 +28,7 @@ public class ReferenceListingPreviewService
         var marketplace = ReferenceListingUrlPolicy.DetectMarketplace(uri.Host);
         var htmlCandidates = ExtractRankedPriceCandidates(document);
 
-        // Merge in rendered-node candidates (XPath is the canonical selector key).
-        var merged = new List<ReferencePriceCandidate>(htmlCandidates);
-        var seenSelectors = new HashSet<string>(htmlCandidates.Select(c => c.Selector), StringComparer.Ordinal);
-        foreach (var node in render.Nodes)
-        {
-            if (node.Price == null)
-                continue;
-            var key = node.XPath;
-            if (string.IsNullOrWhiteSpace(key))
-                continue;
-            if (!seenSelectors.Add(key))
-                continue;
-            merged.Add(new ReferencePriceCandidate
-            {
-                Selector = key,
-                Text = node.Text,
-                Price = node.Price.Value,
-                Currency = string.IsNullOrWhiteSpace(node.Currency) ? "EUR" : node.Currency!,
-                Confidence = (int)Math.Round(node.Confidence),
-                Source = "render",
-            });
-        }
+        var merged = MergeRenderedCandidates(document, htmlCandidates, render.Nodes);
 
         merged = merged
             .OrderByDescending(c => c.Confidence)
@@ -133,6 +110,83 @@ public class ReferenceListingPreviewService
             RenderedNodes = render.Nodes,
             PrimarySelectorXPath = primaryXPath,
         };
+    }
+
+    private static List<ReferencePriceCandidate> MergeRenderedCandidates(HtmlDocument document,
+        List<ReferencePriceCandidate> htmlCandidates, List<RenderedNode> nodes)
+    {
+        // Rendered-node candidates are keyed by XPath and must pass the same filters as markup candidates.
+        var merged = new List<ReferencePriceCandidate>(htmlCandidates);
+        if (nodes.Count == 0)
+            return merged;
+
+        var regions = new ListingRegionFilter(document);
+        var known = htmlCandidates
+            .Select(c => (Node: ResolveCssNode(document, c.Selector), Candidate: c))
+            .Where(k => k.Node != null)
+            .ToList();
+        var seenSelectors = new HashSet<string>(htmlCandidates.Select(c => c.Selector), StringComparer.Ordinal);
+        foreach (var node in nodes)
+        {
+            var candidate = TryBuildRenderedCandidate(document, node, regions, known!);
+            if (candidate != null && seenSelectors.Add(candidate.Selector))
+                merged.Add(candidate);
+        }
+        return merged;
+    }
+
+    private static ReferencePriceCandidate? TryBuildRenderedCandidate(HtmlDocument document, RenderedNode node,
+        ListingRegionFilter regions, List<(HtmlNode Node, ReferencePriceCandidate Candidate)> known)
+    {
+        if (node.Price == null || string.IsNullOrWhiteSpace(node.XPath))
+            return null;
+
+        var text = ReferencePriceText.Clean(NormalizeText(node.Text));
+        if (!string.IsNullOrWhiteSpace(node.Text) && !IsSingleItemPrice(text))
+            return null;
+
+        var (price, currency) = ReparseRenderedPrice(text, node);
+        var mapped = ResolveSingleXPathNode(document, node.XPath);
+        if (mapped != null && IsNonListingOrDuplicate(mapped, price, currency, regions, known))
+            return null;
+
+        return new ReferencePriceCandidate
+        {
+            Selector = node.XPath,
+            Text = text,
+            Price = price,
+            Currency = currency,
+            Confidence = (int)Math.Round(node.Confidence),
+            Source = "render",
+        };
+    }
+
+    // The scraper's JS parser mis-reads some layouts ("1,299.00"), so the cleaned text is parsed again here.
+    private static (double Price, string Currency) ReparseRenderedPrice(string cleanedText, RenderedNode node)
+    {
+        var fallbackCurrency = string.IsNullOrWhiteSpace(node.Currency) ? "EUR" : node.Currency!;
+        if (!TryParsePrice(cleanedText, true, out var parsed))
+            return (node.Price!.Value, fallbackCurrency);
+        return (parsed.Amount, ContainsCurrency(cleanedText) ? parsed.Currency : fallbackCurrency);
+    }
+
+    private static bool IsNonListingOrDuplicate(HtmlNode mapped, double price, string currency, ListingRegionFilter regions,
+        List<(HtmlNode Node, ReferencePriceCandidate Candidate)> known)
+    {
+        if (regions.IsExcluded(mapped) || regions.WrapsExcluded(mapped))
+            return true;
+        return known.Any(k => k.Candidate.Currency == currency && Math.Abs(k.Candidate.Price - price) < 0.005
+            && (k.Node == mapped || mapped.Ancestors().Contains(k.Node) || k.Node.Ancestors().Contains(mapped)));
+    }
+
+    private static HtmlNode? ResolveSingleXPathNode(HtmlDocument document, string xpath)
+    {
+        try
+        {
+            var matches = document.DocumentNode.SelectNodes(xpath);
+            return matches is { Count: 1 } && matches[0].NodeType == HtmlNodeType.Element ? matches[0] : null;
+        }
+        catch (System.Xml.XPath.XPathException) { return null; }
     }
 
     private static string? BuildSandboxHtml(Uri uri, string html)
@@ -221,6 +275,7 @@ public class ReferenceListingPreviewService
             GetMetaContent(document, "description"),
             NormalizeText(document.DocumentNode.SelectSingleNode("//meta[@name='description']")?.GetAttributeValue("content", string.Empty)));
 
+        description = StripAppendedTitle(description, title);
         var productSearchQuery = BuildProductSearchQuery(title);
         if (string.IsNullOrWhiteSpace(productSearchQuery))
             productSearchQuery = BuildProductSearchQuery(description);
@@ -234,14 +289,32 @@ public class ReferenceListingPreviewService
         };
     }
 
+    private const int MaxHtmlPriceCandidates = 8;
+
+    /// <summary>
+    /// Some sites append ",&lt;title&gt; in &lt;place&gt;" to the meta description. Only that exact trailing form is removed;
+    /// a bare trailing ",&lt;title&gt;" is only removed after an ellipsis (truncated description).
+    /// </summary>
+    private static string StripAppendedTitle(string description, string title)
+    {
+        if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(description))
+            return description;
+        var match = Regex.Match(description, @",\s*" + Regex.Escape(title) + @"(?<place>\s+in\s+[^,]{1,60})?$", RegexOptions.IgnoreCase);
+        if (!match.Success || match.Index == 0)
+            return description;
+        var rest = description[..match.Index].TrimEnd();
+        var truncated = rest.EndsWith("...") || rest.EndsWith('…');
+        return match.Groups["place"].Success || truncated ? rest : description;
+    }
+
     private static List<ReferencePriceCandidate> ExtractRankedPriceCandidates(HtmlDocument document)
     {
         return ExtractPriceCandidates(document)
-            .GroupBy(c => $"{c.Selector}|{c.Price.ToString(CultureInfo.InvariantCulture)}|{c.Text}")
+            .GroupBy(c => $"{c.Price.ToString(CultureInfo.InvariantCulture)}|{c.Currency}|{c.Text.ToLowerInvariant()}")
             .Select(g => g.OrderByDescending(c => c.Confidence).First())
             .OrderByDescending(c => c.Confidence)
             .ThenBy(c => c.Price)
-            .Take(18)
+            .Take(MaxHtmlPriceCandidates)
             .ToList();
     }
 
@@ -249,29 +322,77 @@ public class ReferenceListingPreviewService
         List<ReferencePriceCandidate> candidates, string selector)
     {
         if (selector.Length > 2048) return null;
-        if (selector.StartsWith('/'))
-        {
-            try
-            {
-                var matches = document.DocumentNode.SelectNodes(selector);
-                if (matches != null)
-                {
-                    if (matches.Count != 1 || matches[0].NodeType != HtmlNodeType.Element) return null;
-                    var node = matches[0];
-                    var text = NormalizeText(node.GetAttributeValue("content", node.InnerText));
-                    if (text.Length > 180 || !TryParsePrice(text, LooksLikePriceNode(node), out var parsed)) return null;
-                    return new ReferencePriceCandidate { Selector = selector, Text = text, Price = parsed.Amount,
-                        Currency = parsed.Currency, Source = "markup" };
-                }
-            }
-            catch (System.Xml.XPath.XPathException) { return null; }
-        }
+        var isXPath = selector.StartsWith('/');
+        if (isXPath && TryResolveXPath(document, selector, out var fromXPath))
+            return fromXPath;
+
         var candidate = candidates.FirstOrDefault(c => c.Selector == selector);
         if (candidate != null) return candidate;
         var rendered = nodes.FirstOrDefault(n => n.XPath == selector || n.Css == selector);
-        return rendered?.Price == null ? null : new ReferencePriceCandidate { Selector = selector, Text = rendered.Text,
-            Price = rendered.Price.Value, Currency = rendered.Currency ?? "EUR", Source = "render" };
+        if (rendered != null)
+            return rendered.Price == null ? null : new ReferencePriceCandidate { Selector = selector, Text = rendered.Text,
+                Price = rendered.Price.Value, Currency = rendered.Currency ?? "EUR", Source = "render" };
+
+        // Saved selectors must keep resolving after ranking changes: BuildSelector's CSS maps 1:1 to a document node.
+        var node = isXPath ? null : ResolveCssNode(document, selector);
+        return node == null ? null : CandidateFromNode(selector, node);
     }
+
+    private static bool TryResolveXPath(HtmlDocument document, string selector, out ReferencePriceCandidate? result)
+    {
+        result = null;
+        try
+        {
+            var matches = document.DocumentNode.SelectNodes(selector);
+            if (matches == null)
+                return false;
+            if (matches.Count == 1)
+                result = CandidateFromNode(selector, matches[0]);
+            return true;
+        }
+        catch (System.Xml.XPath.XPathException) { return true; }
+    }
+
+    private static ReferencePriceCandidate? CandidateFromNode(string selector, HtmlNode node)
+    {
+        if (node.NodeType != HtmlNodeType.Element) return null;
+        var text = NormalizeText(node.GetAttributeValue("content", node.InnerText));
+        if (text.Length > 180 || !TryParsePrice(text, LooksLikePriceNode(node), out var parsed)) return null;
+        return new ReferencePriceCandidate { Selector = selector, Text = text, Price = parsed.Amount,
+            Currency = parsed.Currency, Source = "markup" };
+    }
+
+    private static readonly Regex CssIdPartRegex = new(@"^(?<tag>[a-z][a-z0-9-]*)#(?<id>[A-Za-z0-9_-]+)$", RegexOptions.Compiled);
+    private static readonly Regex CssNthPartRegex = new(@"^(?<tag>[a-z][a-z0-9-]*):nth-of-type\((?<n>\d+)\)$", RegexOptions.Compiled);
+
+    /// <summary>Resolves the "tag#id > tag:nth-of-type(n)" selectors produced by <see cref="BuildSelector"/>.</summary>
+    private static HtmlNode? ResolveCssNode(HtmlDocument document, string selector)
+    {
+        HtmlNode? current = document.DocumentNode;
+        var parts = selector.Split(" > ");
+        for (var i = 0; i < parts.Length && current != null; i++)
+            current = ResolveCssPart(document, current, parts[i], i == 0);
+        return current == document.DocumentNode ? null : current;
+    }
+
+    private static HtmlNode? ResolveCssPart(HtmlDocument document, HtmlNode parent, string part, bool isFirst)
+    {
+        if (part == "html")
+            return ElementChildren(parent, "html").FirstOrDefault();
+        var idMatch = CssIdPartRegex.Match(part);
+        if (idMatch.Success)
+            return isFirst ? FindById(document, idMatch.Groups["tag"].Value, idMatch.Groups["id"].Value) : null;
+        var nth = CssNthPartRegex.Match(part);
+        if (!nth.Success || !int.TryParse(nth.Groups["n"].Value, out var index) || index < 1)
+            return null;
+        return ElementChildren(parent, nth.Groups["tag"].Value).ElementAtOrDefault(index - 1);
+    }
+
+    private static IEnumerable<HtmlNode> ElementChildren(HtmlNode parent, string tag)
+        => parent.ChildNodes.Where(c => c.NodeType == HtmlNodeType.Element && c.Name.Equals(tag, StringComparison.OrdinalIgnoreCase));
+
+    private static HtmlNode? FindById(HtmlDocument document, string tag, string id)
+        => document.DocumentNode.Descendants(tag).FirstOrDefault(n => CssIdentifier(n.GetAttributeValue("id", string.Empty)) == id);
 
     private static ReferenceListingSuggestedFilter BuildSuggestedFilter(Uri uri, string marketplace, ReferenceListingSummary listing, ReferencePriceCandidate? selected)
     {
@@ -344,6 +465,7 @@ public class ReferenceListingPreviewService
             Confidence = string.IsNullOrWhiteSpace(description) ? 0 : 3,
         });
 
+        // Selectors can repeat (duplicate ids); the first candidate wins.
         var candidateSelectors = new Dictionary<string, ReferencePriceCandidate>(StringComparer.OrdinalIgnoreCase);
         foreach (var c in candidates)
             candidateSelectors.TryAdd(c.Selector, c);
@@ -414,39 +536,75 @@ public class ReferenceListingPreviewService
         var candidates = new List<ReferencePriceCandidate>();
         AddMetaPriceCandidates(document, candidates);
 
-        foreach (var node in FindPriceCandidateNodes(document))
-        {
-            var text = NormalizeText(node.InnerText);
-            if (string.IsNullOrWhiteSpace(text) || text.Length > 180)
-                continue;
-
-            var looksLikePriceField = LooksLikePriceNode(node);
-            if (!looksLikePriceField && !ContainsCurrency(text))
-                continue;
-
-            if (node.ChildNodes.Count(n => n.NodeType == HtmlNodeType.Element) > 5 && !looksLikePriceField)
-                continue;
-
-            if (!TryParsePrice(text, looksLikePriceField, out var parsed))
-                continue;
-
-            var confidence = ScorePriceCandidate(node, text, parsed.Currency, looksLikePriceField);
-            if (confidence <= 0)
-                continue;
-
-            candidates.Add(new ReferencePriceCandidate
-            {
-                Selector = BuildSelector(node),
-                Text = text,
-                Price = parsed.Amount,
-                Currency = parsed.Currency,
-                Confidence = confidence,
-                Source = "markup",
-            });
-        }
-
+        var regions = new ListingRegionFilter(document);
+        var nodeCandidates = FindPriceCandidateNodes(document)
+            .Select(n => TryBuildNodeCandidate(n, regions))
+            .OfType<NodeCandidate>()
+            .ToList();
+        candidates.AddRange(CollapseNestedDuplicates(nodeCandidates).Select(c => c.Candidate));
         return candidates;
     }
+
+    private static NodeCandidate? TryBuildNodeCandidate(HtmlNode node, ListingRegionFilter regions)
+    {
+        var rawText = NormalizeText(node.InnerText);
+        if (string.IsNullOrWhiteSpace(rawText) || rawText.Length > 180)
+            return null;
+
+        var looksLikePriceField = LooksLikePriceNode(node);
+        if (!looksLikePriceField && !ContainsCurrency(rawText))
+            return null;
+
+        if (node.ChildNodes.Count(n => n.NodeType == HtmlNodeType.Element) > 5 && !looksLikePriceField)
+            return null;
+
+        var text = ReferencePriceText.Clean(rawText);
+        if (!IsSingleItemPrice(text) || regions.IsExcluded(node) || regions.WrapsExcluded(node))
+            return null;
+
+        if (!TryParsePrice(text, looksLikePriceField, out var parsed))
+            return null;
+
+        var confidence = ScorePriceCandidate(node, text, parsed.Currency, looksLikePriceField);
+        if (confidence <= 0)
+            return null;
+
+        return new NodeCandidate(node, new ReferencePriceCandidate
+        {
+            Selector = BuildSelector(node),
+            Text = text,
+            Price = parsed.Amount,
+            Currency = parsed.Currency,
+            Confidence = confidence,
+            Source = "markup",
+        });
+    }
+
+    /// <summary>Cleaned text (no shipping/unit prices) must hold an amount and at most one currency price.</summary>
+    private static bool IsSingleItemPrice(string cleanedText)
+        => cleanedText.Any(char.IsDigit) && ReferencePriceText.CountPriceTokens(cleanedText) <= 1;
+
+    /// <summary>
+    /// Within a chain of nested nodes with the same price keeps the highest confidence node;
+    /// on equal confidence the outermost wins.
+    /// </summary>
+    private static List<NodeCandidate> CollapseNestedDuplicates(List<NodeCandidate> candidates)
+    {
+        var byNode = candidates.ToDictionary(c => c.Node);
+        var losers = new HashSet<HtmlNode>();
+        foreach (var inner in candidates)
+        {
+            foreach (var ancestor in inner.Node.Ancestors())
+            {
+                if (byNode.TryGetValue(ancestor, out var outer) && SamePrice(outer.Candidate, inner.Candidate))
+                    losers.Add(outer.Candidate.Confidence < inner.Candidate.Confidence ? outer.Node : inner.Node);
+            }
+        }
+        return candidates.Where(c => !losers.Contains(c.Node)).ToList();
+    }
+
+    private static bool SamePrice(ReferencePriceCandidate a, ReferencePriceCandidate b)
+        => a.Currency == b.Currency && Math.Abs(a.Price - b.Price) < 0.005;
 
     private static IEnumerable<HtmlNode> FindPriceCandidateNodes(HtmlDocument document)
     {
@@ -499,6 +657,10 @@ public class ReferenceListingPreviewService
 
         if (node.GetAttributeValue("itemprop", string.Empty).Contains("price", StringComparison.OrdinalIgnoreCase))
             score += 3;
+
+        var id = node.GetAttributeValue("id", string.Empty);
+        if (MainPriceIdHints.Any(h => id.Equals(h, StringComparison.OrdinalIgnoreCase)))
+            score += 2;
 
         return score;
     }
@@ -620,11 +782,11 @@ public class ReferenceListingPreviewService
         AddImage(urls, ResolveUrl(pageUri, GetMetaContent(document, "og:image")));
         AddImage(urls, ResolveUrl(pageUri, GetMetaContent(document, "twitter:image")));
 
-        var imageNodes = document.DocumentNode.SelectNodes("//img[@src or @data-src]") ?? Enumerable.Empty<HtmlNode>();
+        var imageNodes = document.DocumentNode.SelectNodes("//img[@src or @data-src or @srcset or @data-srcset]") ?? Enumerable.Empty<HtmlNode>();
         foreach (var node in imageNodes)
         {
-            var raw = FirstNonEmpty(node.GetAttributeValue("src", string.Empty), node.GetAttributeValue("data-src", string.Empty));
-            AddImage(urls, ResolveUrl(pageUri, raw));
+            var url = ImageSources(node).Select(raw => ResolveUrl(pageUri, raw)).FirstOrDefault(u => u.Length > 0 && !ReferenceImageRules.IsSiteChrome(u));
+            AddImage(urls, url);
             if (urls.Count >= 6)
                 break;
         }
@@ -632,9 +794,28 @@ public class ReferenceListingPreviewService
         return urls;
     }
 
-    private static void AddImage(List<string> urls, string url)
+    // src may be a lazy-load placeholder, so data-src and srcset serve as fallbacks.
+    private static IEnumerable<string> ImageSources(HtmlNode node)
     {
-        if (!string.IsNullOrWhiteSpace(url) && !urls.Contains(url, StringComparer.OrdinalIgnoreCase))
+        yield return node.GetAttributeValue("src", string.Empty);
+        yield return node.GetAttributeValue("data-src", string.Empty);
+        yield return FirstSrcSetUrl(node.GetAttributeValue("srcset", string.Empty));
+        yield return FirstSrcSetUrl(node.GetAttributeValue("data-srcset", string.Empty));
+    }
+
+    private static string FirstSrcSetUrl(string srcset)
+        => srcset.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+            .Select(entry => entry.Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? string.Empty)
+            .FirstOrDefault() ?? string.Empty;
+
+    private static void AddImage(List<string> urls, string? url)
+    {
+        if (string.IsNullOrWhiteSpace(url) || ReferenceImageRules.IsSiteChrome(url))
+            return;
+
+        // Rendition variants (?rule=$_59.JPG vs .AUTO, ?w=640) are the same photo.
+        var key = ReferenceImageRules.Identity(url);
+        if (!urls.Any(u => ReferenceImageRules.Identity(u) == key))
             urls.Add(url);
     }
 
@@ -713,6 +894,7 @@ public class ReferenceListingPreviewService
     }
 
     private readonly record struct ParsedPrice(double Amount, string Currency);
+    private sealed record NodeCandidate(HtmlNode Node, ReferencePriceCandidate Candidate);
 }
 
 public static class ReferenceListingUrlPolicy
