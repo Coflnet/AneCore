@@ -344,7 +344,9 @@ public class ReferenceListingPreviewService
             Confidence = string.IsNullOrWhiteSpace(description) ? 0 : 3,
         });
 
-        var candidateSelectors = candidates.ToDictionary(c => c.Selector, StringComparer.OrdinalIgnoreCase);
+        var candidateSelectors = new Dictionary<string, ReferencePriceCandidate>(StringComparer.OrdinalIgnoreCase);
+        foreach (var c in candidates)
+            candidateSelectors.TryAdd(c.Selector, c);
         foreach (var candidate in candidates)
         {
             AddPreviewElement(elements, seen, new ReferencePreviewElement
