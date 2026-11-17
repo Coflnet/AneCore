@@ -1,3 +1,4 @@
+using Coflnet.Ane.Text;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
@@ -70,6 +71,8 @@ public class ListingIndex(
                     .Sort(s => s.Descending(d => d.FoundAt)),
             cancellationToken);
 
+        if (!searchResponse.IsValid)
+            logger.LogWarning("Listing title search for {Query} failed: {Error}", query, searchResponse.ServerError?.ToString() ?? searchResponse.OriginalException?.Message);
         return searchResponse.Documents;
     }
 
@@ -82,10 +85,41 @@ public class ListingIndex(
             throw new ArgumentException("At most 16 search alternatives are supported", nameof(query));
         var descriptor = new QueryContainerDescriptor<ListingDocument>();
         if (alternatives.Length == 0) return descriptor.MatchNone();
-        QueryContainer Match(string text) => new QueryContainerDescriptor<ListingDocument>()
-            .Match(t => t.Field(f => f.Title).Query(text).Operator(Operator.And));
-        if (alternatives.Length == 1) return Match(alternatives[0]);
-        return descriptor.Bool(b => b.Should(alternatives.Select(Match).ToArray()).MinimumShouldMatch(1));
+        var clauses = alternatives.Select(a => BuildAlternative(ModelTokens.JoinModelSuffix(a))).ToArray();
+        if (clauses.Length == 1) return clauses[0];
+        return descriptor.Bool(b => b.Should(clauses).MinimumShouldMatch(1));
+    }
+
+    private static readonly Regex QuerySpace = new(@"[\p{Zs}\t]+", RegexOptions.Compiled);
+    private static readonly char[] QueryTokenPunctuation = [',', ';', ':', '!', '.', '(', ')'];
+
+    private static QueryContainer BuildAlternative(string text)
+    {
+        var words = QuerySpace.Split(text).Where(w => w.Any(char.IsLetterOrDigit)).ToList();
+        var modelTokens = words.Select(w => w.Trim(QueryTokenPunctuation)).Where(ModelTokens.IsModelSuffixToken).ToList();
+        if (modelTokens.Count == 0)
+            return new QueryContainerDescriptor<ListingDocument>()
+                .Match(t => t.Field(f => f.Title).Query(text).Operator(Operator.And));
+        var rest = string.Join(' ', words.Where(w => !ModelTokens.IsModelSuffixToken(w.Trim(QueryTokenPunctuation))));
+        var clauses = modelTokens.Select(BuildModelClause).ToList();
+        if (rest.Length > 0)
+            clauses.Insert(0, new QueryContainerDescriptor<ListingDocument>()
+                .Match(t => t.Field(f => f.Title).Query(rest).Operator(Operator.And)));
+        return new QueryContainerDescriptor<ListingDocument>().Bool(b => b.Must(clauses.ToArray()));
+    }
+
+    /// <summary>
+    /// "14t" is written "14t" or "14 t" in titles. The title has no positions indexed (Freqs only), so the
+    /// spaced spelling is a positionless AND of both parts, which also covers "14-T".
+    /// </summary>
+    private static QueryContainer BuildModelClause(string token)
+    {
+        var spaced = ModelTokens.SplitModelSuffix(token).Split(' ');
+        return new QueryContainerDescriptor<ListingDocument>().Bool(b => b.MinimumShouldMatch(1).Should(
+            s => s.Match(t => t.Field(f => f.Title).Query(token)),
+            s => s.Bool(and => and.Must(
+                m => m.Match(t => t.Field(f => f.Title).Query(spaced[0])),
+                m => m.Match(t => t.Field(f => f.Title).Query(spaced[1]))))));
     }
 
     /// <summary>

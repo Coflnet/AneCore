@@ -54,4 +54,50 @@ public sealed class ListingTitleQueryTests
         Assert.That(body.RootElement.GetProperty("match").GetProperty("title").GetProperty("query").GetString(),
             Is.EqualTo("title:* AND price:[0 TO 1]"));
     }
+
+    [TestCase("xiaomi 14 t pro")]
+    [TestCase("xiaomi 14t pro")]
+    [TestCase("xiaomi 14\u00A0t pro")]
+    public void ModelSuffixAcceptsJoinedTokenOrBothPartsWithoutPositionQueries(string query)
+    {
+        using var body = Serialize(query);
+        Assert.That(body.RootElement.GetRawText(), Does.Not.Contain("match_phrase"), "title has no positions indexed");
+        var must = body.RootElement.GetProperty("bool").GetProperty("must").EnumerateArray().ToArray();
+        var rest = must[0].GetProperty("match").GetProperty("title");
+        Assert.That(rest.GetProperty("query").GetString(), Is.EqualTo("xiaomi pro"));
+        Assert.That(rest.GetProperty("operator").GetString(), Is.EqualTo("and"));
+        var model = must[1].GetProperty("bool");
+        var should = model.GetProperty("should").EnumerateArray().ToArray();
+        Assert.That(should[0].GetProperty("match").GetProperty("title").GetProperty("query").GetString(), Is.EqualTo("14t"));
+        var parts = should[1].GetProperty("bool").GetProperty("must").EnumerateArray()
+            .Select(c => c.GetProperty("match").GetProperty("title").GetProperty("query").GetString());
+        Assert.That(parts, Is.EqualTo(new[] { "14", "t" }));
+        Assert.That(model.GetProperty("minimum_should_match").ToString(), Is.EqualTo("1"));
+    }
+
+    [Test]
+    public void ModelSuffixKeepsDecimalNumbersInTheTextClause()
+    {
+        using var body = Serialize("kabel 1.5 4k");
+        var rest = body.RootElement.GetProperty("bool").GetProperty("must")[0].GetProperty("match").GetProperty("title");
+        Assert.That(rest.GetProperty("query").GetString(), Is.EqualTo("kabel 1.5"));
+    }
+
+    [Test]
+    public void SymbolOnlyWordsDoNotProduceAnEmptyTextClause()
+    {
+        using var body = Serialize("5g / 4g");
+        var must = body.RootElement.GetProperty("bool").GetProperty("must").EnumerateArray().ToArray();
+        Assert.That(must.Length, Is.EqualTo(2));
+        Assert.That(must.All(c => c.TryGetProperty("bool", out _)), Is.True, "only the two model clauses, no match for '/'");
+    }
+
+    [Test]
+    public void ModelSuffixWorksInsideAlternatives()
+    {
+        using var body = Serialize("xiaomi 14 t OR redmi 13");
+        var should = body.RootElement.GetProperty("bool").GetProperty("should").EnumerateArray().ToArray();
+        Assert.That(should[0].TryGetProperty("bool", out _), Is.True);
+        Assert.That(should[1].GetProperty("match").GetProperty("title").GetProperty("query").GetString(), Is.EqualTo("redmi 13"));
+    }
 }
