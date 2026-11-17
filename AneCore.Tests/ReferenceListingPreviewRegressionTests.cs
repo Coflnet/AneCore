@@ -339,4 +339,35 @@ public class ReferenceListingPreviewRegressionTests
     [TestCase("Case, Phone X 16 GB in Berlin, works well")]
     public void DescriptionLegitimatelyMentioningTheTitleIsNotTruncated(string input)
         => Assert.That(Description(input), Is.EqualTo(input));
+
+    private static string[] Images(string body) => Preview(body).Listing.ImageUrls.ToArray();
+
+    [Test]
+    public void ImagesExcludeRecommendationCards()
+    {
+        var html = File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Fixtures", "kleinanzeigen-ad-with-recommendations.html"));
+        var images = Service.Build(new Uri("https://www.kleinanzeigen.de/s-anzeige/x/1"), html, null).Listing.ImageUrls;
+        Assert.That(images, Has.Count.EqualTo(1));
+        Assert.That(images[0], Does.Contain("own-1"));
+    }
+
+    [Test]
+    public void ImagesKeepOwnGalleryCarouselIncludingLazyImages()
+        => Assert.That(Images("<meta itemprop='price' content='30'/><div class='gallery-carousel swiper'><img src='https://img.example.com/own/a.jpg'/><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='https://img.example.com/own/b.jpg'/></div><div class='buybox'><span class='price'>30 €</span></div>"),
+            Is.EqualTo(new[] { "https://img.example.com/own/a.jpg", "https://img.example.com/own/b.jpg" }));
+
+    [Test]
+    public void ImagesExcludeSimilarSectionCarouselWithPrices()
+        => Assert.That(Images("<div class='gallery'><img src='https://img.example.com/own/a.jpg'/></div><div class='product-carousel'><div><img src='https://img.example.com/o/1.jpg'/><span>10 €</span></div><div><img src='https://img.example.com/o/2.jpg'/><span>20 €</span></div></div>"),
+            Is.EqualTo(new[] { "https://img.example.com/own/a.jpg" }));
+
+    [Test]
+    public void ImagesExcludeNavAndFooter()
+        => Assert.That(Images("<nav><img src='https://img.example.com/nav/n.jpg'/></nav><div class='gallery'><img src='https://img.example.com/own/a.jpg'/></div><footer><img src='https://img.example.com/foot/f.jpg'/></footer>"),
+            Is.EqualTo(new[] { "https://img.example.com/own/a.jpg" }));
+
+    [Test]
+    public void ImagesWithoutRegionMarkersAreAllKept()
+        => Assert.That(Images("<div><img src='https://img.example.com/a.jpg'/></div><section><img src='https://img.example.com/b.jpg'/></section>"),
+            Is.EqualTo(new[] { "https://img.example.com/a.jpg", "https://img.example.com/b.jpg" }));
 }

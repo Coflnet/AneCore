@@ -782,9 +782,13 @@ public class ReferenceListingPreviewService
         AddImage(urls, ResolveUrl(pageUri, GetMetaContent(document, "og:image")));
         AddImage(urls, ResolveUrl(pageUri, GetMetaContent(document, "twitter:image")));
 
+        // Photos in recommendation sections, navigation and footers belong to other listings.
+        var regions = new ListingRegionFilter(document);
         var imageNodes = document.DocumentNode.SelectNodes("//img[@src or @data-src or @srcset or @data-srcset]") ?? Enumerable.Empty<HtmlNode>();
         foreach (var node in imageNodes)
         {
+            if (regions.IsExcluded(node))
+                continue;
             var url = ImageSources(node).Select(raw => ResolveUrl(pageUri, raw)).FirstOrDefault(u => u.Length > 0 && !ReferenceImageRules.IsSiteChrome(u));
             AddImage(urls, url);
             if (urls.Count >= 6)
