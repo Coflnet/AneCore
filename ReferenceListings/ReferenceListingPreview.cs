@@ -16,7 +16,7 @@ public class ReferenceListingPreviewService
     private const string CurrencyPattern = @"€|EUR|CHF|US\$|\$|£|GBP|USD|PLN|zł|CZK|Kč|DKK|SEK|HUF|RON|BGN|NOK";
     private static readonly Regex CurrencyRegex = new(CurrencyPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex PriceRegex = new(
-        @"(?:(?<currency>" + CurrencyPattern + @")\s*)?(?<amount>\d{1,3}(?:[.\s]\d{3})+(?:[,\.]\d{1,2})?|\d+(?:[,\.]\d{1,2})?)(?:\s*(?<currency2>" + CurrencyPattern + @"))?",
+        @"(?:(?<currency>" + CurrencyPattern + @")\s*)?(?<amount>\d{1,3}(?:[.,\s ]\d{3})+(?:[,\.]\d{1,2})?|\d+(?:[,\.]\d{1,2})?)(?:\s*(?<currency2>" + CurrencyPattern + @"))?",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     public ReferenceListingPreviewResponse Build(Uri uri, string html, string? selectedSelector, List<string>? additionalSelectors = null)
@@ -558,23 +558,28 @@ public class ReferenceListingPreviewService
         var commaIndex = normalized.LastIndexOf(',');
         var dotIndex = normalized.LastIndexOf('.');
 
-        if (commaIndex > dotIndex)
-        {
-            normalized = normalized.Replace(".", string.Empty).Replace(',', '.');
-        }
-        else if (dotIndex > commaIndex)
-        {
-            normalized = normalized.Replace(",", string.Empty);
-            if (normalized.Length - dotIndex - 1 == 3)
-                normalized = normalized.Replace(".", string.Empty);
-        }
+        if (commaIndex >= 0 && dotIndex >= 0)
+            normalized = commaIndex > dotIndex
+                ? normalized.Replace(".", string.Empty).Replace(',', '.')
+                : normalized.Replace(",", string.Empty);
         else if (commaIndex >= 0)
-        {
-            var decimals = normalized.Length - commaIndex - 1;
-            normalized = decimals is > 0 and <= 2 ? normalized.Replace(',', '.') : normalized.Replace(",", string.Empty);
-        }
+            normalized = IsDecimalSeparator(normalized, ',') ? normalized.Replace(',', '.') : normalized.Replace(",", string.Empty);
+        else if (dotIndex >= 0 && IsThousandsDot(normalized))
+            normalized = normalized.Replace(".", string.Empty);
 
         return double.TryParse(normalized, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out amount);
+    }
+
+    private static bool IsThousandsDot(string value)
+        => value.Count(c => c == '.') > 1 || value.Length - value.IndexOf('.') - 1 == 3;
+
+    // A lone comma is decimal unless it has several occurrences or exactly three digits after it ("1.299", "1,299").
+    private static bool IsDecimalSeparator(string value, char separator)
+    {
+        if (value.Count(c => c == separator) != 1)
+            return false;
+        var decimals = value.Length - value.IndexOf(separator) - 1;
+        return decimals is > 0 and <= 2;
     }
 
     private static string NormalizeCurrency(string currency)
