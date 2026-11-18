@@ -811,7 +811,7 @@
           "nintendo-switch-oled"
         ],
         "edition_terms": [
-          "mario red|mario rot|mario rote|mario rosso|mario rouge|mario rood|red mario|rote mario|mario edition|mario sonderedition|mario special|mario limited"
+          "mario red|mario rot|mario rote|mario rosso|mario rouge|mario rood|red mario|rote mario|mario edition|mario sonderedition|mario special|mario limited|limited edition super mario|super mario limited|super mario edition|mario limited edition"
         ]
       },
       "excludeTerms": [],
@@ -1512,6 +1512,224 @@
       },
       "excludeTerms": [],
       "source": "seed:hand-curated-2026-11-editions"
+    },
+    {
+      "id": "sony-playstation-portal",
+      "brand": "Sony",
+      "model": "Sony PlayStation Portal",
+      "name": "Sony PlayStation Portal",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PlayStation Portal",
+        "PS Portal",
+        "Sony PlayStation Portal"
+      ],
+      "possibleAttributes": {
+        "color": [],
+        "companion_of": [
+          "sony-playstation-5",
+          "sony-playstation-5-slim",
+          "sony-playstation-5-pro",
+          "sony-playstation-5-digital-edition",
+          "sony-playstation-5-slim-digital-edition"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "sony-playstation-portal-30th-anniversary",
+      "brand": "Sony",
+      "model": "Sony PlayStation Portal 30th Anniversary",
+      "name": "Sony PlayStation Portal 30th Anniversary",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PlayStation Portal 30th Anniversary",
+        "PS Portal 30th Anniversary"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-portal"
+        ],
+        "edition_terms": [
+          "30 th|30 anniversary|30 ans|30 jahre|30 jahriges|30 anni|30 jaar"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "microsoft-xbox-series-x-x25-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox Series X X25 Limited Edition",
+      "name": "Microsoft Xbox Series X X25 Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox Series X25 Limited Edition",
+        "Xbox Series X25"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-series-x"
+        ],
+        "edition_terms": [
+          "x 25|25 th|25 jahre|25 jahriges|25 ans|25 anni|25 jaar",
+          "{edition}|anniversary"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "microsoft-xbox-series-x-halo-infinite-limited-edition",
+      "brand": "Microsoft",
+      "model": "Microsoft Xbox Series X Halo Infinite Limited Edition",
+      "name": "Microsoft Xbox Series X Halo Infinite Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Xbox Series X Halo Infinite Limited Edition",
+        "Xbox Series X Halo Infinite Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "microsoft-xbox-series-x"
+        ],
+        "edition_terms": [
+          "halo",
+          "{edition}",
+          "!steelbook|elite controller|elite wireless controller|elite series|master chief|collection|mcc"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "nintendo-switch-2-zelda-40th-anniversary-edition",
+      "brand": "Nintendo",
+      "model": "Nintendo Switch 2 Zelda 40th Anniversary Edition",
+      "name": "Nintendo Switch 2 Zelda 40th Anniversary Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Nintendo Switch 2 Zelda 40th Anniversary Edition",
+        "Switch 2 Zelda 40th Anniversary Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "nintendo-switch-2"
+        ],
+        "edition_terms": [
+          "zelda|hyrule|triforce",
+          "40 th|40 anniversary|40 ans|40 jahre|40 jahriges|40 anni|40 jaar|anniversary"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "sony-playstation-5-digital-edition-wolverine-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Digital Edition Wolverine Limited Edition",
+      "name": "Sony PlayStation 5 Digital Edition Wolverine Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Digital Edition Wolverine Limited Edition",
+        "PlayStation 5 Wolverine Limited Edition",
+        "PS5 Wolverine Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5",
+          "sony-playstation-5-slim",
+          "sony-playstation-5-digital-edition",
+          "sony-playstation-5-slim-digital-edition"
+        ],
+        "edition_terms": [
+          "wolverine",
+          "{edition}|battle yellow"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "sony-playstation-5-slim-ghost-yotei-black-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Slim Ghost of Yotei Black Limited Edition",
+      "name": "Sony PlayStation 5 Slim Ghost of Yotei Black Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Ghost of Yotei Black Limited Edition",
+        "PS5 Ghost of Yotei Limited Edition",
+        "PlayStation 5 Ghost of Yotei Limited Edition"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5",
+          "sony-playstation-5-slim"
+        ],
+        "edition_terms": [
+          "yotei",
+          "{limited}|black|schwarz|schwarze|noir|noire|nero|negro|zwart|czarna"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
+    },
+    {
+      "id": "sony-playstation-5-slim-ghost-yotei-gold-limited-edition",
+      "brand": "Sony",
+      "model": "Sony PlayStation 5 Slim Ghost of Yotei Gold Limited Edition",
+      "name": "Sony PlayStation 5 Slim Ghost of Yotei Gold Limited Edition",
+      "categories": [
+        "Elektronik",
+        "Videospielkonsolen"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "PS5 Ghost of Yotei Gold Limited Edition",
+        "PlayStation 5 Ghost of Yotei Gold Limited Edition",
+        "PS5 Ghost of Yotei Gold"
+      ],
+      "possibleAttributes": {
+        "edition_of": [
+          "sony-playstation-5",
+          "sony-playstation-5-slim"
+        ],
+        "edition_terms": [
+          "yotei",
+          "gold|golden|dore|oro|goud"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11-grouping-review"
     }
   ]
 }

@@ -74,6 +74,13 @@ public sealed class KnownProductEditions
     public static bool IsEdition(KnownProduct? product) => product?.PossibleAttributes.ContainsKey(EditionOfKey) == true;
 
     /// <summary>
+    /// The title names a limited, special or anniversary design of the console itself where it counts (see <see cref="LimitedDesignTitle"/>: in the console's own part of the
+    /// title, not negated, not a game's edition, not a peripheral's design, an anniversary only after a number): "Xbox Series X Diablo Limited Edition", "PS5 30th Anniversary".
+    /// The caller decides what a console offer whose edition the catalogue does not know becomes.
+    /// </summary>
+    public static bool NamesLimitedDesign(string? title) => LimitedDesignTitle.Names(title);
+
+    /// <summary>
     /// The title names a theme word of a seeded game-themed edition ("minecraft", "spider man", "fortnite"): for title-only rules (the scope gate) that decide before the catalogue
     /// match whether "Xbox One S Minecraft Limited" is a console in its edition design or "Nintendo Switch Xenoblade Chronicles 2 Limited" a game. Reads the embedded seed only.
     /// </summary>

@@ -15,7 +15,7 @@ public class KnownProductSeedIntegrityTests
 {
     private static readonly HashSet<string> AllowedAttributeKeys = new(StringComparer.OrdinalIgnoreCase)
     {
-        "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year", "edition_of", "edition_terms",
+        "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year", "edition_of", "edition_terms", "companion_of",
         "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
         "tool_type", "article_number", "length_mm", "wrench_size_mm", "socket_size_mm", "square_drive_inches", "socket_profile", "package_scope",
         "channels", "microphone_inputs", "delay_time_ms", "program_count", "min_players", "max_players", "min_age",

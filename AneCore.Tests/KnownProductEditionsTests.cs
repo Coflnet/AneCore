@@ -111,6 +111,50 @@ public class KnownProductEditionsTests
     public void APeripheralInAnEditionDesignIsNoEdition(string title, string expected)
         => Assert.That(Real.Match(title)?.Id, Is.EqualTo(expected));
 
+    // grouping review 2026-11-18 (second pass): the unidentified-edition guard hid ordinary offers. Birthday wording, a peripheral's or a game's edition, shop wording
+    // and an anniversary word without a number in front are no limited console design.
+    [TestCase("PS5 Slim cadeau d'anniversaire jamais utilisée")]
+    [TestCase("Nintendo Switch OLED reçue pour mon anniversaire")]
+    [TestCase("PS5 Slim regalo anniversario mai usata")]
+    [TestCase("Nintendo Switch OLED Jubileum actie")]
+    [TestCase("PS5 Slim mit 2 Controllern (einer davon Limited Edition)")]
+    [TestCase("PS5 Slim 1TB + 2 Controller (1x Limited Edition)")]
+    [TestCase("PS5 Slim 1TB, DualSense Cobalt Limited Edition, 3 Spiele")]
+    [TestCase("PS5 Slim inkl. Controller Grey Camo Limited Edition")]
+    [TestCase("PS5 Slim Limited Edition Controller dabei")]
+    [TestCase("PS4 Pro 1TB mit 2 Controllern und Spielen: Street Fighter 30th Anniversary Collection")]
+    [TestCase("Xbox One S 1TB, 2 Controller, Halo Anniversary, FIFA")]
+    [TestCase("PS4 Slim 1TB 2 Controller Spiele: Tomb Raider Anniversary, GTA V")]
+    [TestCase("Nintendo Switch Super Mario Bros 35 Anniversary Bundle")]
+    [TestCase("PS5 Slim Angebot – limitierte Stückzahl")]
+    [TestCase("PS5 Slim ltd")]
+    [TestCase("PS5 Slim keine Limited Edition, normale Konsole")]
+    [TestCase("Xbox Series X, Halo Infinite Limited Edition Steelbook")]
+    // verification round: a shop's stock, offer or time limit
+    [TestCase("PS5 Slim 1TB – limited stock!")]
+    [TestCase("PS5 Pro LIMITED OFFER")]
+    [TestCase("Xbox Series X - limited time deal")]
+    [TestCase("PS5 Pro limited availability")]
+    [TestCase("PS5 Slim Angebot limitiert")]
+    [TestCase("PS5 Slim zeitlich limitiert")]
+    [TestCase("PS5 Slim Weihnachtsangebot limitiert")]
+    public void OrdinaryOffersNameNoLimitedDesign(string title)
+        => Assert.That(KnownProductEditions.NamesLimitedDesign(title), Is.False);
+
+    [TestCase("Nintendo Switch OLED Limited Edition")]
+    [TestCase("PS5 Limited Edition")]
+    [TestCase("Game Boy Advance SP Zelda Limited Edition")]
+    [TestCase("Xbox Series X 25th Anniversary Limited Edition Konsole")]
+    [TestCase("Xbox series X versione Diablo (limited edition)")]
+    [TestCase("PlayStation 5 Pro Spider Edition Limited")]
+    [TestCase("PS4 Pro 20th Anniversary")]
+    [TestCase("PlayStation 30e anniversaire")]
+    [TestCase("Xbox 20. Jubiläum")]
+    [TestCase("Xbox Series X 25 ans anniversaire")]
+    [TestCase("Nintendo Switch OLED Limited Edition mit Controller")]
+    public void ConsoleDesignsNameALimitedDesign(string title)
+        => Assert.That(KnownProductEditions.NamesLimitedDesign(title), Is.True);
+
     [TestCase("minecraft limited", true)]
     [TestCase("spiderman limited", true)]
     [TestCase("fortnite special", true)]

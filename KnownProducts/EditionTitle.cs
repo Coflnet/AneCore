@@ -83,7 +83,7 @@ internal sealed class EditionTitle
         {
             if (!tokens.AsSpan(start, words.Length).SequenceEqual(words))
                 continue;
-            if (IsNegated(start) || isMarker && NamesAGameEdition(start))
+            if (!CountsAt(start, isMarker))
                 continue;
             if (isThemeWord && (IsInclusionObject(start) || NamesAPeripheral(start + words.Length)))
                 continue;
@@ -91,6 +91,9 @@ internal sealed class EditionTitle
         }
         return false;
     }
+
+    /// <summary>The edition word at <paramref name="start"/> counts: it is not negated and, for a marker word, not the edition of a game ("Deluxe Edition", "Digital Edition").</summary>
+    internal bool CountsAt(int start, bool isMarker) => !IsNegated(start) && !(isMarker && NamesAGameEdition(start));
 
     /// <summary>
     /// A peripheral word right behind the words, or behind one more word that is no inclusion or edition word ("Galaxy Black Controller", "30th Anniversary DualSense"):

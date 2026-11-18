@@ -33,6 +33,53 @@ public class KnownProductMatcherRealCatalogTests
         Assert.That(matcher.Match("Sony PlayStation 5 825GB")!.Id, Is.EqualTo("sony-playstation-5"));
     }
 
+    // grouping review 2026-11-18: the family named before the abbreviated variant ("Sony PlayStation 5 PS5 Pro") tied two aliases of three tokens and matched nothing,
+    // so the catalogued editions were lost and the Digital Edition fell onto the disc page
+    [TestCase("Sony Playstation 5 PS5 Pro", "sony-playstation-5-pro")]
+    [TestCase("Sony PlayStation 5 PS5 Slim", "sony-playstation-5-slim")]
+    [TestCase("Sony PlayStation 5 (PS5) Digital Edition", "sony-playstation-5-digital-edition")]
+    [TestCase("Sony PlayStation 5 PS5 Digital Edition", "sony-playstation-5-digital-edition")]
+    [TestCase("(NEU) Sony Playstation 5 PS5 Pro 30th Anniversary Limited Edition", "sony-playstation-5-pro-30th-anniversary")]
+    [TestCase("Sony Playstation 5 PS5 Digital Edition 30th Anniversary Edition - NEU & OVP", "sony-playstation-5-slim-digital-edition-30th-anniversary")]
+    public void Console_FamilyNamedBeforeTheVariant_MatchesTheVariant(string title, string expected) =>
+        Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expected));
+
+    // grouping review 2026-11-18 (second pass): the PlayStation Portal is catalogued as a companion of the PS5; tied with the console, the device named first is the offer
+    [TestCase("PS5 + PlayStation Portal bundle", "sony-playstation-5")]
+    [TestCase("PlayStation Portal für PS5", "sony-playstation-portal")]
+    public void Console_PortalNamedWithItsConsole_TheFirstNamedDeviceWins(string title, string expected) =>
+        Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expected));
+
+    // grouping review 2026-11-18 (second pass): catalogue terms too greedy. A game bundle, a steelbook or an Elite controller in the edition's design and the Ghost of Yotei
+    // game bundle (standard console, sellers say "Edition") are no console edition; the two real Ghost of Yotei designs are Gold and Black.
+    [TestCase("Nintendo Switch OLED édition Super Mario Wonder", "nintendo-switch-oled")]
+    [TestCase("Nintendo switch oled - limited edition super Mario", "nintendo-switch-oled-mario-red-edition")]
+    [TestCase("Xbox Series X, Halo Infinite Limited Edition Steelbook", "microsoft-xbox-series-x")]
+    [TestCase("Xbox Series X mit OVP und Halo Infinite Limited Edition Elite Controller", "microsoft-xbox-series-x")]
+    [TestCase("Xbox Series X Halo Infinite Limited Edition Console", "microsoft-xbox-series-x-halo-infinite-limited-edition")]
+    [TestCase("PS5 Slim Ghost of Yotei Edition Bundle mit Spiel", "sony-playstation-5-slim")]
+    [TestCase("PS5 Slim Ghost of Yotei Edition", "sony-playstation-5-slim")]
+    [TestCase("PS5 Slim Ghost of Yotei Limited Edition", "sony-playstation-5-slim-ghost-yotei-black-limited-edition")]
+    [TestCase("PS5 Slim Ghost of Yotei Black Edition", "sony-playstation-5-slim-ghost-yotei-black-limited-edition")]
+    [TestCase("PS5 Slim Ghost of Yotei Gold Limited Edition", "sony-playstation-5-slim-ghost-yotei-gold-limited-edition")]
+    // verification round: the X25 needs its number ("25th", "X25"), a bare "Anniversary" or "Jubiläum" is a game or a gift; the Halo MCC is a game;
+    // the PlayStation Portal 30th Anniversary is an edition of the Portal
+    [TestCase("Xbox Series X Halo Anniversary Bundle", "microsoft-xbox-series-x")]
+    [TestCase("Xbox Series X 1TB Halo Anniversary", "microsoft-xbox-series-x")]
+    [TestCase("Xbox Series X anniversary gift", "microsoft-xbox-series-x")]
+    [TestCase("Xbox Series X Jubiläum Edition", "microsoft-xbox-series-x")]
+    [TestCase("Microsoft Xbox Series X 25th Anniversary Limited Edition", "microsoft-xbox-series-x-x25-limited-edition")]
+    [TestCase("Xbox Series X Halo Master Chief Collection Edition", "microsoft-xbox-series-x")]
+    [TestCase("PS Portal 30th Anniversary", "sony-playstation-portal-30th-anniversary")]
+    [TestCase("PlayStation Portal 30th Anniversary Limited Edition", "sony-playstation-portal-30th-anniversary")]
+    [TestCase("PlayStation Portal Remote Player", "sony-playstation-portal")]
+    public void Console_EditionTermsNeedTheConsoleDesign(string title, string expected) =>
+        Assert.That(matcher.Match(title)?.Id, Is.EqualTo(expected));
+
+    [TestCase("Nintendo Switch und Switch Lite")]
+    public void Console_TwoDevicesNamedApart_StayAmbiguous(string title) =>
+        Assert.That(matcher.Match(title), Is.Null);
+
     [Test]
     public void Console_XboxSeriesS_DoesNotMatchSeriesX()
     {

@@ -29,6 +29,9 @@ namespace Coflnet.Ane.KnownProducts;
 /// </remarks>
 public class KnownProductMatcher
 {
+    /// <summary>Possible-attributes key naming the devices a companion device is made for (the PlayStation Portal streams from a PS5), see <c>WithoutLaterCompanions</c>.</summary>
+    public const string CompanionOfKey = "companion_of";
+
     private static readonly RegexOptions Opts = RegexOptions.Compiled | RegexOptions.CultureInvariant;
 
     // Fixed LEGO rules must survive the listing pipeline's shared Regex-cache churn.
@@ -387,8 +390,10 @@ public class KnownProductMatcher
         if (matches.Count == 0)
             return null;
         var best = matches.MaxBy(m => m.TokenCount);
-        if (matches.Any(m => m.TokenCount == best.TokenCount && m.Product.Id != best.Product.Id))
+        var tied = WithoutLaterCompanions(WithoutNamedBases(matches.Where(m => m.TokenCount == best.TokenCount).ToList()));
+        if (tied.Select(m => m.Product.Id).Distinct(StringComparer.Ordinal).Skip(1).Any())
             return null; // ambiguous: two different products matched with equally-specific aliases
+        best = tied[0];
 
         var candidate = best.Product;
 
@@ -401,6 +406,36 @@ public class KnownProductMatcher
         var refined = editions.Refine(candidate, title, titleTokens, best.StartIndex + best.TokenCount);
         return refined ?? ChooseBest(matches.Where(m => !KnownProductEditions.IsEdition(m.Product)).ToList(), brand, title, titleTokens);
     }
+
+    /// <summary>
+    /// "Sony PlayStation 5 PS5 Pro", "Sony PlayStation 5 (PS5) Digital Edition": the title names the family ("sony playstation 5") and, right after it, the variant
+    /// ("ps 5 pro"), two aliases of the same length. A tied match whose product a tied variant extends (<see cref="IsVariantOf"/>) gives way when the variant's alias starts
+    /// inside or right after the base's alias; two devices named apart ("Nintendo Switch und Switch Lite") stay ambiguous.
+    /// </summary>
+    private static List<(KnownProduct Product, int TokenCount, int StartIndex)> WithoutNamedBases(List<(KnownProduct Product, int TokenCount, int StartIndex)> tied) =>
+        tied.Where(match => !tied.Any(variant => ExtendsRightAfter(variant, match))).ToList();
+
+    private static bool ExtendsRightAfter((KnownProduct Product, int TokenCount, int StartIndex) variant, (KnownProduct Product, int TokenCount, int StartIndex) baseMatch) =>
+        IsVariantOf(variant.Product, baseMatch.Product)
+        && variant.StartIndex >= baseMatch.StartIndex
+        && variant.StartIndex <= baseMatch.StartIndex + baseMatch.TokenCount;
+
+    /// <summary>
+    /// "PS5 + PlayStation Portal bundle", "PlayStation Portal für PS5": a companion device (<see cref="CompanionOfKey"/>, the Portal streams from a PS5) and its console tie with
+    /// aliases of the same length. The device the title names first is the offer, the later one is sold with it or names what it is for. Other ties stay ambiguous.
+    /// </summary>
+    private static List<(KnownProduct Product, int TokenCount, int StartIndex)> WithoutLaterCompanions(List<(KnownProduct Product, int TokenCount, int StartIndex)> tied) =>
+        tied.Where(match => !tied.Any(other => other.StartIndex < match.StartIndex && AreCompanions(match.Product, other.Product))).ToList();
+
+    private static bool AreCompanions(KnownProduct first, KnownProduct second) => IsCompanionOf(first, second) || IsCompanionOf(second, first);
+
+    private static bool IsCompanionOf(KnownProduct companion, KnownProduct device) =>
+        companion.PossibleAttributes.GetValueOrDefault(CompanionOfKey)?.Contains(device.Id) == true;
+
+    /// <summary>The variant's id extends the base's ("sony-playstation-5" and "sony-playstation-5-pro"), or the variant is a catalogued edition of the base.</summary>
+    private static bool IsVariantOf(KnownProduct variant, KnownProduct baseProduct) =>
+        variant.Id.StartsWith(baseProduct.Id + "-", StringComparison.Ordinal)
+        || variant.PossibleAttributes.GetValueOrDefault(KnownProductEditions.EditionOfKey)?.Contains(baseProduct.Id) == true;
 
     private static bool HasOtherLegoNumber(string[] tokens, int start, int length, string model, string title)
     {
