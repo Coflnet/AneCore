@@ -14,6 +14,17 @@ public class ListingUrlTests
         Assert.That(url, Is.EqualTo("https://www.vinted.de/items/10146770085"));
     }
 
+    [TestCase("de-DE")]
+    [TestCase("en-GB")]
+    [TestCase("fr_FR")]
+    [TestCase("")]
+    public void GetUrlForListing_Shpock_AlwaysUsesTheGermanPath(string locale)
+    {
+        // Regression: the caller's locale was put into the path, but Shpock only exists under de-de (other locales are dead links)
+        var url = Listing.GetUrlForListing(locale, Platform.Shpock, "5f3a9c");
+        Assert.That(url, Is.EqualTo("https://www.shpock.com/de-de/i/5f3a9c"));
+    }
+
     [TestCase("m2447703109")]
     [TestCase("a1517165634")]
     public void GetUrlForListing_MarktplaatsIdOnly_KeepsTheRequiredSlug(string id)

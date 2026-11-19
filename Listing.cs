@@ -176,7 +176,7 @@ public class Listing
         if (platform == Platform.Gumtree)
             return $"https://www.gumtree.com/p/redirect/redirect/{id}";
         if (platform == Platform.Shpock)
-            return $"https://www.shpock.com/{locale}/i/{id}";
+            return $"https://www.shpock.com/de-de/i/{id}"; // Shpock only exists under de-de, any other locale is a dead link
         if (platform == Platform.Vinted)
             return $"https://www.vinted.de/items/{id}"; // only vinted.de is crawled
         if (platform == Platform.Marktplaats)
