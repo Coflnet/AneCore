@@ -136,8 +136,9 @@ def used_part_words(parts, categories, words, colour_words):
 
 
 def colour_words(colors_glossary, ambiguous):
+    """English one-word colour phrases ("red", "gray", "light"); a word of a longer phrase ("brick" of "brick yellow") stays."""
     phrases = [p for _, terms in colors_glossary.values() for p in terms.get("en", [])] + ambiguous
-    return {t.lower() for p in phrases for t in WORD.findall(p)}
+    return {p.lower() for p in phrases if WORD.fullmatch(p)}
 
 
 def build(parts_rows, color_rows, element_rows, category_rows, set_rows, glossary=GLOSSARY):

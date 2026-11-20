@@ -92,6 +92,10 @@ class PartWordTests(unittest.TestCase):
         self.assertEqual(parts.used_part_words(known, {"14": "Plates"}, words, {"red"}),
                          {"brick": {"de": ["Stein"]}, "plates": {"de": ["Platten"]}})
 
+    def test_a_word_of_a_longer_colour_phrase_is_no_colour_word(self):
+        colour_words = parts.colour_words({"19": ("Tan", {"en": ["tan", "brick yellow"]})}, ["light gray", "braun"])
+        self.assertEqual(colour_words, {"tan", "braun"})
+
 
 if __name__ == "__main__":
     unittest.main()

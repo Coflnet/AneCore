@@ -13,7 +13,7 @@
 #           - "Brown"/"braun": old Brown (6) and Reddish Brown (70). "Pink"/"rosa", "lila", "silber", "gold", "hellblau", "hellgrün"
 #             each cover several colours.
 #           Base words (rot, blau, gelb, grün, schwarz, weiß, orange, beige) name the basic colour of the same BrickLink name.
-# [ambiguous] One phrase per line. A title that contains one of these (or a colour modifier such as trans, metallic, pearl) outside a
+# [ambiguous] One phrase per line. A title that contains one of these (or a shade or finish word such as dunkel, trans, metallic) outside a
 #           recognised colour phrase gets no colour: the listing goes to the colour-less page instead of a guessed one.
 # [part words] English part-name word<TAB>de<TAB>fr<TAB>nl<TAB>it<TAB>es<TAB>pl: search words for part pages. They extend the [words]
 #           of lego_title_glossary.tsv for part names (this file wins on a shared key). Search words only, never matching aliases.
@@ -194,6 +194,24 @@ marmoriert
 bunt
 farbig
 multicolor
+light
+dark
+bright
+medium
+hell
+dunkel
+mittel
+licht
+donker
+clair
+foncé
+chiaro
+scuro
+claro
+oscuro
+jasny
+ciemny
+pastel
 [part words]
 brick	Stein|Baustein	brique	steen	mattoncino	ladrillo	klocek
 plate	Platte	plaque	plaat	piastra	placa	płytka
