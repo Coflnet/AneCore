@@ -677,3 +677,22 @@ article suffix or rounded inch measurement. No GTIN, fitment, condition, seller
 contents, pricing, descriptions or artwork is imported. Base, ESD, VDE and
 packaging/spare variants retain separate boundaries; aliases require the brand
 and complete article number.
+
+
+## Amazon Fire TV streamers and implied storage (2026-11-20)
+
+`amazon-fire-tv.json` is hand-authored from Amazon's published device specifications
+and retailer spec sheets (Fire TV Stick, Stick Lite, Stick HD, Stick 4K, Stick 4K Plus
+and Stick 4K Select: 8 GB; Fire TV Cube: 16 GB in every generation). The Fire TV Stick
+4K Max is deliberately absent: it exists with 8 GB (1st generation) and 16 GB (2nd
+generation). Generation numbers behind an alias are exclude terms, so generation pages
+keep their extractor identity.
+
+`implied_attributes` (see `KnownProductImpliedAttributes`) marks a key whose single
+verified value every unit has, so a listing that omits it is filled. It is set only on
+entries whose storage was checked to be the only one sold (Xbox One X 1 TB, PS5 Pro 2 TB,
+Meta Quest Pro 256 GB, Pixel 4a/5/5a/6a/7a 128 GB, Galaxy A10/A10e/A20 32 GB, A41 64 GB,
+A70/A71/S20/Note 10 Lite 128 GB, Note 10 256 GB, Xiaomi Mi 10T 128 GB, Xiaomi 13T 256 GB,
+OnePlus Nord N10 128 GB); other single-valued storage or RAM lists are imports that may be
+incomplete and are not filled. The PS5 Slim Digital Edition gained 825 GB (CFI-2116,
+Europe, September 2025) next to 1 TB.

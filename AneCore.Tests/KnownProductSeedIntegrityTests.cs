@@ -15,7 +15,7 @@ public class KnownProductSeedIntegrityTests
 {
     private static readonly HashSet<string> AllowedAttributeKeys = new(StringComparer.OrdinalIgnoreCase)
     {
-        "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year", "edition_of", "edition_terms", "companion_of",
+        "storage_size", "ram_size", "screen_size", "color", "size", "platform", "registration_year", "edition_of", "edition_terms", "companion_of", "implied_attributes",
         "gender", "fashion_type", "material", "condition", "os", "os_version", "set_number", "device_type", "capacity_l", "product_kind", "wheel_size", "model_generation", "specificity", "megapixels", "optical_zoom",
         "tool_type", "article_number", "length_mm", "wrench_size_mm", "socket_size_mm", "square_drive_inches", "socket_profile", "package_scope",
         "channels", "microphone_inputs", "delay_time_ms", "program_count", "min_players", "max_players", "min_age",
@@ -104,6 +104,7 @@ public class KnownProductSeedIntegrityTests
         "Elektronik>Elektronisches Zubehör>Speicher>RAM",
         "Elektronik>Kommunikationsgeräte>Telefone>Mobiltelefone",
         "Elektronik>Video>Computermonitore",
+        "Elektronik>Video>Videoabspielgeräte & -rekorder>Netzwerk-Mediaplayer",
         "Elektronik>Videospielkonsolen",
         "Kameras & Optik",
         "Kameras & Optik>Kameras>Videokameras",
@@ -213,6 +214,21 @@ public class KnownProductSeedIntegrityTests
             {
                 Assert.That(AllowedAttributeKeys.Contains(key), Is.True,
                     $"{product.Id} declares unrecognized attribute key '{key}'");
+            }
+        }
+    }
+
+    [Test]
+    public void ImpliedAttributes_NameASingleValuedVariantKey()
+    {
+        var variantKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "storage_size", "ram_size" };
+        foreach (var product in seed)
+        {
+            foreach (var key in KnownProductImpliedAttributes.ImpliedKeys(product))
+            {
+                Assert.That(variantKeys.Contains(key), Is.True, $"{product.Id} implies '{key}', which is no capacity variant");
+                Assert.That(KnownProductImpliedAttributes.ImpliedValue(product, key), Is.Not.Null,
+                    $"{product.Id} implies '{key}' without exactly one verified value");
             }
         }
     }

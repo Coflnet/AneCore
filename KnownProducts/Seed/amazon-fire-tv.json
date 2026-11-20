@@ -1,0 +1,236 @@
+{
+  "products": [
+    {
+      "id": "amazon-fire-tv-stick",
+      "brand": "Amazon",
+      "model": "Fire TV Stick",
+      "name": "Amazon Fire TV Stick",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick",
+        "Fire TV Stick",
+        "FireTV Stick"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "lite",
+        "hd",
+        "max",
+        "plus",
+        "select",
+        "cube"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-lite",
+      "brand": "Amazon",
+      "model": "Fire TV Stick Lite",
+      "name": "Amazon Fire TV Stick Lite",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick Lite",
+        "Fire TV Stick Lite",
+        "FireTV Stick Lite"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-hd",
+      "brand": "Amazon",
+      "model": "Fire TV Stick HD",
+      "name": "Amazon Fire TV Stick HD",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick HD",
+        "Fire TV Stick HD",
+        "FireTV Stick HD"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-4k",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 4K",
+      "name": "Amazon Fire TV Stick 4K",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 4K",
+        "Fire TV Stick 4K",
+        "FireTV Stick 4K"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "2",
+        "max",
+        "plus",
+        "select",
+        "ultra"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-4k-plus",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 4K Plus",
+      "name": "Amazon Fire TV Stick 4K Plus",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 4K Plus",
+        "Fire TV Stick 4K Plus",
+        "FireTV Stick 4K Plus"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "2"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-4k-select",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 4K Select",
+      "name": "Amazon Fire TV Stick 4K Select",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 4K Select",
+        "Fire TV Stick 4K Select",
+        "FireTV Stick 4K Select"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "2"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-cube",
+      "brand": "Amazon",
+      "model": "Fire TV Cube",
+      "name": "Amazon Fire TV Cube",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Cube",
+        "Fire TV Cube",
+        "FireTV Cube"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "seed:hand-curated-2026-11"
+    }
+  ]
+}

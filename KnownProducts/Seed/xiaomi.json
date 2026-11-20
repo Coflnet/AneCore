@@ -234,7 +234,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "lite",
@@ -1085,7 +1088,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "pro"

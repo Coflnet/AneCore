@@ -94,7 +94,10 @@
         "storage_size": [
           "256GB"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:hand-curated-2026-09"

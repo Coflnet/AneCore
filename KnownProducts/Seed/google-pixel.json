@@ -291,7 +291,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -322,7 +325,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "a"
@@ -355,7 +361,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -454,7 +463,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -553,7 +565,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"

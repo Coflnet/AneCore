@@ -549,7 +549,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "e",
@@ -585,7 +588,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -968,7 +974,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "e",
@@ -1672,7 +1681,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -2142,7 +2154,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "s"
@@ -2210,7 +2225,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -2310,7 +2328,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "lite"
@@ -2345,7 +2366,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:techapi-2026-09"
@@ -2572,7 +2596,10 @@
         "os": [
           "android"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [
         "fe",

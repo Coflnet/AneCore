@@ -150,7 +150,10 @@
         "storage_size": [
           "1TB"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
@@ -601,7 +604,10 @@
         "storage_size": [
           "2TB"
         ],
-        "color": []
+        "color": [],
+        "implied_attributes": [
+          "storage_size"
+        ]
       },
       "excludeTerms": [],
       "source": "seed:wikidata+hand-curated-2026-09"
@@ -652,6 +658,7 @@
       ],
       "possibleAttributes": {
         "storage_size": [
+          "825GB",
           "1TB"
         ],
         "color": []
