@@ -31,9 +31,9 @@
 6	Brown	old brown	altbraun
 71	Light Bluish Gray	light bluish gray|light bluish grey|medium stone gray|medium stone grey|new light gray|new light grey|lbg	neuhellgrau|hellblaugrau|mittelsteingrau|mittleres steingrau	gris pierre moyen|gris bleuté clair	medium steengrijs|lichtblauwgrijs	grigio pietra medio	gris piedra medio
 72	Dark Bluish Gray	dark bluish gray|dark bluish grey|dark stone gray|dark stone grey|new dark gray|new dark grey|dbg	neudunkelgrau|dunkelblaugrau|dunkelsteingrau|dunkles steingrau	gris pierre foncé|gris bleuté foncé	donker steengrijs|donkerblauwgrijs	grigio pietra scuro	gris piedra oscuro
-7	Light Gray	old light gray|old light grey|old gray|old grey	althellgrau|alt hellgrau
+7	Light Gray	old light gray|old light grey	althellgrau|alt hellgrau
 8	Dark Gray	old dark gray|old dark grey	altdunkelgrau|alt dunkelgrau
-272	Dark Blue	dark blue|earth blue	dunkelblau	bleu foncé	donkerblauw	blu scuro	azul oscuro	ciemnoniebieski|granatowy
+272	Dark Blue	dark blue|earth blue|navy|navy blue	dunkelblau|navyblau|navy blau	bleu foncé	donkerblauw	blu scuro	azul oscuro	ciemnoniebieski|granatowy
 320	Dark Red	dark red|new dark red	dunkelrot	rouge foncé	donkerrood	rosso scuro	rojo oscuro	ciemnoczerwony
 288	Dark Green	earth green
 10	Bright Green	bright green
@@ -84,6 +84,9 @@
 45	Trans-Dark Pink	trans dark pink
 [ambiguous]
 grau
+old gray
+old grey
+altgrau
 grey
 gray
 grijs

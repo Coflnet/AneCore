@@ -63,4 +63,21 @@ public class KnownLegoPartsTests
         Assert.That(text, Does.Contain("Brick 2 x 4").And.Contain("Bricks").And.Contain("Stein").And.Contain("Red").And.Contain("rot"));
         Assert.That(KnownLegoParts.SearchText(KnownLegoParts.ForPartNumber("3023")!, null), Does.Contain("Platte").And.Not.Contain("rot"));
     }
+
+    [TestCase("navy")]
+    [TestCase("navy blue")]
+    [TestCase("navyblau")]
+    [TestCase("navy blau")]
+    public void NavyIsDarkBlue(string phrase) =>
+        Assert.That(KnownLegoParts.Color(272)!.AllTerms, Does.Contain(phrase));
+
+    [TestCase("old gray")]
+    [TestCase("old grey")]
+    [TestCase("altgrau")]
+    public void UndecidedOldGreyNamesNoColourButIsAmbiguous(string phrase)
+    {
+        // "old gray" is old Light Gray (7) or old Dark Gray (8): a seller's plain word does not say which
+        Assert.That(KnownLegoParts.Colors.Values.SelectMany(c => c.AllTerms), Does.Not.Contain(phrase));
+        Assert.That(KnownLegoParts.AmbiguousColorWords, Does.Contain(phrase));
+    }
 }
