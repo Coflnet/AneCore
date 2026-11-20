@@ -1,0 +1,230 @@
+# Reviewed glossary for single LEGO part pages (consumed by import_lego_parts.py). Fix a term here and re-run the importer.
+# Matching folds case and accents and treats "-", "/" and "_" as spaces, so "Trans-Clear" and "trans clear" are one phrase.
+#
+# [colors]  Rebrickable colour id<TAB>exact Rebrickable name (checked by the importer)<TAB>en<TAB>de<TAB>fr<TAB>nl<TAB>it<TAB>es<TAB>pl
+#           Several phrases per cell are separated by "|"; an empty cell means "no reviewed term". The English cell holds the
+#           Rebrickable/BrickLink name and the official LEGO name when they name the SAME colour. A name that two naming systems use
+#           for different colours is never listed here but under [ambiguous]:
+#           - "Dark Green": LEGO's official Dark Green is Rebrickable/BrickLink Green (2); BrickLink Dark Green is Rebrickable 288.
+#           - "Light Gray"/"Dark Gray"/"hellgrau"/"dunkelgrau": the old greys (7, 8) and the 2004+ bluish greys (71, 72) are different
+#             colours, and casual sellers use the plain words for both. Only explicit forms count: "light bluish gray", "medium stone
+#             grey", "neuhellgrau" -> 71; "old light gray", "althellgrau" -> 7. "neu hellgrau" (two words) is not listed because
+#             "neu" is also the condition word.
+#           - "Brown"/"braun": old Brown (6) and Reddish Brown (70). "Pink"/"rosa", "lila", "silber", "gold", "hellblau", "hellgrün"
+#             each cover several colours.
+#           Base words (rot, blau, gelb, grün, schwarz, weiß, orange, beige) name the basic colour of the same BrickLink name.
+# [ambiguous] One phrase per line. A title that contains one of these (or a colour modifier such as trans, metallic, pearl) outside a
+#           recognised colour phrase gets no colour: the listing goes to the colour-less page instead of a guessed one.
+# [part words] English part-name word<TAB>de<TAB>fr<TAB>nl<TAB>it<TAB>es<TAB>pl: search words for part pages. They extend the [words]
+#           of lego_title_glossary.tsv for part names (this file wins on a shared key). Search words only, never matching aliases.
+[colors]
+0	Black	black	schwarz|schwarze|schwarzer|schwarzes|schwarzen	noir|noire|noirs|noires	zwart|zwarte	nero|nera|neri|nere	negro|negra|negros|negras	czarny|czarna|czarne|czarnych
+15	White	white	weiß|weiss|weiße|weisse|weißer|weisser|weißes|weisses|weißen|weissen	blanc|blanche|blancs|blanches	wit|witte	bianco|bianca|bianchi|bianche	blanco|blanca|blancos|blancas	biały|biała|białe|białych
+4	Red	red|bright red	rot|rote|roter|rotes|roten	rouge|rouges	rood|rode	rosso|rossa|rossi|rosse	rojo|roja|rojos|rojas	czerwony|czerwona|czerwone|czerwonych
+1	Blue	blue|bright blue	blau|blaue|blauer|blaues|blauen	bleu|bleue|bleus|bleues	blauw|blauwe	blu	azul|azules	niebieski|niebieska|niebieskie|niebieskich
+14	Yellow	yellow|bright yellow	gelb|gelbe|gelber|gelbes|gelben	jaune|jaunes	geel|gele	giallo|gialla|gialli|gialle	amarillo|amarilla|amarillos|amarillas	żółty|żółta|żółte|żółtych
+2	Green	green	grün|gruen|grüne|gruene|grüner|gruener|grünes|gruenes|grünen|gruenen	vert|verte|verts|vertes	groen|groene	verde|verdi	verde|verdes	zielony|zielona|zielone|zielonych
+25	Orange	orange|bright orange	orange|orangene|orangener|orangenes|orangefarben	orange|oranges	oranje	arancione|arancioni	naranja|naranjas	pomarańczowy|pomarańczowa|pomarańczowe
+19	Tan	tan|brick yellow	beige	beige	beige	beige	beige	beżowy|beżowa|beżowe
+28	Dark Tan	dark tan|sand yellow	dunkelbeige	beige foncé	donkerbeige	beige scuro	beige oscuro	ciemnobeżowy
+70	Reddish Brown	reddish brown	rotbraun|rotbraune|rotbrauner|rotbraunes	brun rougeâtre	roodbruin	marrone rossastro	marrón rojizo	czerwonobrązowy
+6	Brown	old brown	altbraun
+71	Light Bluish Gray	light bluish gray|light bluish grey|medium stone gray|medium stone grey|new light gray|new light grey|lbg	neuhellgrau|hellblaugrau|mittelsteingrau|mittleres steingrau	gris pierre moyen|gris bleuté clair	medium steengrijs|lichtblauwgrijs	grigio pietra medio	gris piedra medio
+72	Dark Bluish Gray	dark bluish gray|dark bluish grey|dark stone gray|dark stone grey|new dark gray|new dark grey|dbg	neudunkelgrau|dunkelblaugrau|dunkelsteingrau|dunkles steingrau	gris pierre foncé|gris bleuté foncé	donker steengrijs|donkerblauwgrijs	grigio pietra scuro	gris piedra oscuro
+7	Light Gray	old light gray|old light grey|old gray|old grey	althellgrau|alt hellgrau
+8	Dark Gray	old dark gray|old dark grey	altdunkelgrau|alt dunkelgrau
+272	Dark Blue	dark blue|earth blue	dunkelblau	bleu foncé	donkerblauw	blu scuro	azul oscuro	ciemnoniebieski|granatowy
+320	Dark Red	dark red|new dark red	dunkelrot	rouge foncé	donkerrood	rosso scuro	rojo oscuro	ciemnoczerwony
+288	Dark Green	earth green
+10	Bright Green	bright green
+27	Lime	lime|bright yellowish green	limette|limettengrün|limegrün	vert citron	limoen|limoengroen	verde lime	verde lima	limonkowy
+26	Magenta	magenta|bright reddish violet
+3	Dark Turquoise	dark turquoise|bright bluish green	dunkeltürkis	turquoise foncé	donkerturquoise	turchese scuro	turquesa oscuro	ciemnoturkusowy
+322	Medium Azure	medium azure
+321	Dark Azure	dark azure
+212	Bright Light Blue	bright light blue|light royal blue
+73	Medium Blue	medium blue	mittelblau
+378	Sand Green	sand green	sandgrün	vert sable	zandgroen	verde sabbia	verde arena
+379	Sand Blue	sand blue	sandblau	bleu sable	zandblauw	blu sabbia	azul arena
+326	Olive Green	olive green	olivgrün	vert olive	olijfgroen	verde oliva	verde oliva	oliwkowy
+484	Dark Orange	dark orange	dunkelorange	orange foncé	donkeroranje	arancione scuro	naranja oscuro	ciemnopomarańczowy
+191	Bright Light Orange	bright light orange|flame yellowish orange
+226	Bright Light Yellow	bright light yellow|cool yellow
+308	Dark Brown	dark brown	dunkelbraun	brun foncé	donkerbruin	marrone scuro	marrón oscuro	ciemnobrązowy
+92	Nougat	nougat
+84	Medium Nougat	medium nougat
+78	Light Nougat	light nougat
+29	Bright Pink	bright pink
+5	Dark Pink	dark pink
+85	Dark Purple	dark purple|medium lilac
+30	Medium Lavender	medium lavender
+31	Lavender	lavender
+297	Pearl Gold	pearl gold|warm gold
+179	Flat Silver	flat silver
+80	Metallic Silver	metallic silver
+82	Metallic Gold	metallic gold
+135	Pearl Light Gray	pearl light gray|pearl light grey
+148	Pearl Dark Gray	pearl dark gray|pearl dark grey
+151	Very Light Bluish Gray	very light bluish gray|very light bluish grey
+323	Light Aqua	light aqua
+158	Yellowish Green	yellowish green|spring yellowish green
+1050	Coral	coral	koralle	corail	koraal	corallo	coral	koralowy
+1136	Reddish Orange	reddish orange
+47	Trans-Clear	trans clear|transparent clear|clear transparent	transparent klar|klar transparent|trans klar
+36	Trans-Red	trans red|transparent red	trans rot|transparent rot
+33	Trans-Dark Blue	trans dark blue|transparent dark blue	trans dunkelblau|transparent dunkelblau
+41	Trans-Light Blue	trans light blue|transparent light blue	trans hellblau|transparent hellblau
+46	Trans-Yellow	trans yellow|transparent yellow	trans gelb|transparent gelb
+182	Trans-Orange	trans orange|transparent orange	trans orange|transparent orange
+34	Trans-Green	trans green|transparent green	trans grün|transparent grün
+35	Trans-Bright Green	trans bright green
+42	Trans-Neon Green	trans neon green
+57	Trans-Neon Orange	trans neon orange
+52	Trans-Purple	trans purple
+45	Trans-Dark Pink	trans dark pink
+[ambiguous]
+grau
+grey
+gray
+grijs
+gris
+grigio
+szary
+szara
+szare
+hellgrau
+dunkelgrau
+mittelgrau
+light gray
+light grey
+dark gray
+dark grey
+lichtgrijs
+donkergrijs
+gris clair
+gris foncé
+grigio chiaro
+grigio scuro
+gris claro
+gris oscuro
+jasnoszary
+ciemnoszary
+braun
+brown
+bruin
+brun
+marrone
+marrón
+brązowy
+rosa
+pink
+roze
+rose
+lila
+purple
+violet
+violett
+paars
+viola
+morado
+fioletowy
+silber
+silver
+zilver
+argent
+argento
+plata
+srebrny
+gold
+goud
+oro
+złoty
+dorado
+doré
+türkis
+turquoise
+turkoois
+turchese
+turquesa
+hellblau
+light blue
+lichtblauw
+bleu clair
+azzurro
+celeste
+błękitny
+hellgrün
+light green
+dark green
+dunkelgrün
+donkergroen
+vert foncé
+verde scuro
+verde oscuro
+ciemnozielony
+hellorange
+hellrot
+hellgelb
+sand
+trans
+transparent
+transparant
+trasparente
+transparente
+przezroczysty
+klar
+clear
+glitter
+metallic
+metall
+metal
+chrome
+chrom
+pearl
+perl
+perlmutt
+glow
+nachtleuchtend
+neon
+satin
+opal
+speckle
+marbled
+marmoriert
+bunt
+farbig
+multicolor
+[part words]
+brick	Stein|Baustein	brique	steen	mattoncino	ladrillo	klocek
+plate	Platte	plaque	plaat	piastra	placa	płytka
+tile	Fliese		tegel	piastrella	baldosa
+sloped	Dachstein|Schräge	pente	dakpan
+round	rund	rond	rond	tondo	redondo	okrągły
+axle	Achse	axe	as	asse	eje	oś
+beam	Liftarm|Lochbalken	poutre	balk	trave	viga	belka
+gear	Zahnrad	engrenage	tandwiel	ingranaggio	engranaje	koło zębate
+wheel	Rad|Felge	roue	wiel	ruota	rueda	koło
+tyre	Reifen	pneu	band	pneumatico	neumático	opona
+door	Tür	porte	deur	porta	puerta	drzwi
+window	Fenster	fenêtre	raam	finestra	ventana	okno
+baseplate	Grundplatte	plaque de base	grondplaat	base	placa base	płyta
+hinge	Scharnier	charnière	scharnier	cerniera	bisagra	zawias
+connector	Verbinder	connecteur	verbinder	connettore	conector	łącznik
+panel	Paneel|Wand	panneau	paneel	pannello	panel	panel
+cone	Kegel	cône	kegel	cono	cono	stożek
+arch	Bogen	arche	boog	arco	arco	łuk
+bar	Stange	barre	staaf	barra	barra	drążek
+fence	Zaun	clôture	hek	recinzione	valla	płot
+ladder	Leiter	échelle	ladder	scala	escalera	drabina
+motor	Motor	moteur	motor	motore	motor	silnik
+flag	Flagge|Fahne	drapeau	vlag	bandiera	bandera	flaga
+plant	Pflanze	plante	plant	pianta	planta	roślina
+flower	Blume	fleur	bloem	fiore	flor	kwiat
+cylinder	Zylinder	cylindre	cilinder	cilindro	cilindro	cylinder
+string	Schnur	ficelle	touw	corda	cuerda	sznurek
+chain	Kette	chaîne	ketting	catena	cadena	łańcuch
+rail	Schiene	rail	rail	rotaia	raíl	szyna
+track	Gleis|Schiene	rail	rails	binario	vía	tor
+magnet	Magnet	aimant	magneet	magnete	imán	magnes
+roof	Dach	toit	dak	tetto	techo	dach
+battery	Batterie	batterie	batterij	batteria	batería	bateria

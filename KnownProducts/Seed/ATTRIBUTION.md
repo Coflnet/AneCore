@@ -271,6 +271,19 @@ is idempotent and the file can be dropped without any other change. The translat
 glossary `tools/catalog-import/lego_title_glossary.tsv` (authored in this repository). They are search words only and
 are never matcher aliases.
 
+### LEGO parts, colours and element ids (2026-11)
+
+`KnownProducts/LegoPartInfo.json` (not a seed file; no seed row is modified) holds plain LEGO part numbers with their Rebrickable
+name and category, the Rebrickable colour list (name, RGB, transparency) and the element id -> part and colour table, built by
+`tools/catalog-import/import_lego_parts.py` from the public [Rebrickable downloads](https://rebrickable.com/downloads/)
+`parts.csv.gz`, `colors.csv.gz`, `elements.csv.gz`, `part_categories.csv.gz` and `sets.csv.gz` (sets only flag part numbers
+that are also set numbers; retrieved 2026-11-20). **Licence not verified:** as for the set titles above, rebrickable.com/downloads
+returned a Cloudflare challenge (HTTP 403) to automated fetching, so its current terms/attribution requirements could not be read.
+Review them before shipping; the importer is idempotent and the file can be dropped without any other change (single-part pages then
+fall back to independent offers). The localized colour names, the ambiguous colour words and the part-name search words come from the
+reviewed glossary `tools/catalog-import/lego_part_glossary.tsv` (authored in this repository). They are search and title-reading
+words only and are never matcher aliases. LEGO is a trademark of the LEGO Group, which does not sponsor or endorse this project.
+
 ## Reviewed repeated-brand names (2026-10-26)
 
 Four exact docyx spellings are retained as aliases of their existing canonical rows:

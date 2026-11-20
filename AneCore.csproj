@@ -21,6 +21,7 @@
     <EmbeddedResource Include="KnownProducts/Seed/*.json" />
     <EmbeddedResource Include="KnownProducts/RetiredSeeds.json" LogicalName="Coflnet.Ane.KnownProducts.RetiredSeeds.json" />
     <EmbeddedResource Include="KnownProducts/LegoSetInfo.json" LogicalName="Coflnet.Ane.KnownProducts.LegoSetInfo.json" />
+    <EmbeddedResource Include="KnownProducts/LegoPartInfo.json" LogicalName="Coflnet.Ane.KnownProducts.LegoPartInfo.json" />
     <EmbeddedResource Include="Parts/skf-bearings.json" LogicalName="Coflnet.Ane.Parts.skf-bearings.json" />
     <EmbeddedResource Include="Phones/PhoneSpecs.tsv" LogicalName="Coflnet.Ane.Phones.PhoneSpecs.tsv" />
   </ItemGroup>

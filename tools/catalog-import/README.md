@@ -692,3 +692,26 @@ instruction panels in `proofs/lego-technic-additional-instructions-2026-11-05.js
 Run `python3 tools/catalog-import/expand_lego_technic_additional_instructions.py --check`
 to verify regeneration and reject existing numbers/models or normalized alias collisions.
 Only `set_number` is imported; inaccessible or theme-ambiguous panels are omitted.
+
+### LEGO parts, colours and element ids (2026-11-20)
+
+`import_lego_parts.py` builds `KnownProducts/LegoPartInfo.json` (read by `KnownLegoParts`) for single-part pages. Like
+`LegoSetInfo.json` it is not a seed file and never feeds catalogue ids, aliases or matching.
+
+```sh
+for f in parts colors elements part_categories sets; do
+  curl -L --fail https://cdn.rebrickable.com/media/downloads/$f.csv.gz -o "$RAW/$f.csv.gz"
+done
+python3 -I tools/catalog-import/import_lego_parts.py --parts "$RAW/parts.csv.gz" --colors "$RAW/colors.csv.gz" \
+  --elements "$RAW/elements.csv.gz" --categories "$RAW/part_categories.csv.gz" --sets "$RAW/sets.csv.gz"
+python3 -m unittest discover -s tools/catalog-import -p 'test_import_lego_parts.py'
+```
+
+Only plain moulds are imported (`3001`, `3069b`: digits, optional letter, digits; at least four characters, no leading zero,
+no `x`), never prints or patterns (`pr`, `pat` suffixes): a print is its own item. Sticker sheets, whole "Minifigs" bodies and
+cardboard/paper are dropped. A part number that is also the base number of any Rebrickable set is flagged (2,597 of 11,933, e.g.
+3001 and 3023); the Notifier then needs a part word or the part's size in the title. Element ids (6-7 digits) map to part and
+colour; ids shared with a set or part number are dropped (70,156 kept). Colour phrases in seven languages, the ambiguous colour
+words (plain grey/brown/pink words, "dark green", modifiers such as trans or metallic) and the part-name search words are reviewed
+in `lego_part_glossary.tsv`; the importer refuses a glossary colour whose Rebrickable name differs. Output 2.37 MB raw, 0.64 MB
+gzipped (2026-11-20 snapshot).
