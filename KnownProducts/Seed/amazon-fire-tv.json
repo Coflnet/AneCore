@@ -35,7 +35,12 @@
         "max",
         "plus",
         "select",
-        "cube"
+        "cube",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -68,7 +73,12 @@
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -101,7 +111,12 @@
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -135,7 +150,11 @@
         "max",
         "plus",
         "select",
-        "ultra"
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -165,7 +184,12 @@
         ]
       },
       "excludeTerms": [
-        "2"
+        "2",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -195,7 +219,12 @@
         ]
       },
       "excludeTerms": [
-        "2"
+        "2",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
       "source": "seed:hand-curated-2026-11"
     },
@@ -228,8 +257,187 @@
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "gen",
+        "generation",
+        "generatie",
+        "generazione",
+        "generacion"
       ],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-1",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 1",
+      "name": "Amazon Fire TV Stick 1",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 1",
+        "Fire TV Stick 1",
+        "Fire TV Stick Gen 1",
+        "Fire TV Stick Generation 1"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-2",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 2",
+      "name": "Amazon Fire TV Stick 2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 2",
+        "Fire TV Stick 2",
+        "Fire TV Stick Gen 2",
+        "Fire TV Stick Generation 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-3",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 3",
+      "name": "Amazon Fire TV Stick 3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 3",
+        "Fire TV Stick 3",
+        "Fire TV Stick Gen 3",
+        "Fire TV Stick Generation 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-stick-4k-2",
+      "brand": "Amazon",
+      "model": "Fire TV Stick 4K 2",
+      "name": "Amazon Fire TV Stick 4K 2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Stick 4K 2",
+        "Fire TV Stick 4K 2",
+        "Fire TV Stick 4K Gen 2",
+        "Fire TV Stick 4K Generation 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "8GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-cube-2",
+      "brand": "Amazon",
+      "model": "Fire TV Cube 2",
+      "name": "Amazon Fire TV Cube 2",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Cube 2",
+        "Fire TV Cube 2",
+        "Fire TV Cube Gen 2",
+        "Fire TV Cube Generation 2"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
+      "source": "seed:hand-curated-2026-11"
+    },
+    {
+      "id": "amazon-fire-tv-cube-3",
+      "brand": "Amazon",
+      "model": "Fire TV Cube 3",
+      "name": "Amazon Fire TV Cube 3",
+      "categories": [
+        "Elektronik",
+        "Video",
+        "Videoabspielgeräte & -rekorder",
+        "Netzwerk-Mediaplayer"
+      ],
+      "vertical": "electronics",
+      "aliases": [
+        "Amazon Fire TV Cube 3",
+        "Fire TV Cube 3",
+        "Fire TV Cube Gen 3",
+        "Fire TV Cube Generation 3"
+      ],
+      "possibleAttributes": {
+        "storage_size": [
+          "16GB"
+        ],
+        "implied_attributes": [
+          "storage_size"
+        ]
+      },
+      "excludeTerms": [],
       "source": "seed:hand-curated-2026-11"
     }
   ]

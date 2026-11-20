@@ -685,8 +685,10 @@ and complete article number.
 and retailer spec sheets (Fire TV Stick, Stick Lite, Stick HD, Stick 4K, Stick 4K Plus
 and Stick 4K Select: 8 GB; Fire TV Cube: 16 GB in every generation). The Fire TV Stick
 4K Max is deliberately absent: it exists with 8 GB (1st generation) and 16 GB (2nd
-generation). Generation numbers behind an alias are exclude terms, so generation pages
-keep their extractor identity.
+generation). Generations are entries of their own (Stick 1/2/3, Stick 4K 2, Cube 2/3, same
+storage as their line) with every wording as an alias ("3. Gen", "Gen 3", "Generation 3",
+"3rd Gen"); generation words behind a line's alias are exclude terms of the line, so a
+generation never lands on the line's page. "4K Ultra HD" is the 4K (no "4K Ultra" exists).
 
 `implied_attributes` (see `KnownProductImpliedAttributes`) marks a key whose single
 verified value every unit has, so a listing that omits it is filled. It is set only on
@@ -695,4 +697,6 @@ Meta Quest Pro 256 GB, Pixel 4a/5/5a/6a/7a 128 GB, Galaxy A10/A10e/A20 32 GB, A4
 A70/A71/S20/Note 10 Lite 128 GB, Note 10 256 GB, Xiaomi Mi 10T 128 GB, Xiaomi 13T 256 GB,
 OnePlus Nord N10 128 GB); other single-valued storage or RAM lists are imports that may be
 incomplete and are not filled. The PS5 Slim Digital Edition gained 825 GB (CFI-2116,
-Europe, September 2025) next to 1 TB.
+Europe, September 2025) next to 1 TB. A stated size off the verified list is dropped and not
+replaced. Review fixes: "Galaxy S20 Fan Edition" is the S20 FE (alias, "fan" excluded from the
+S20), "Xiaomi 13T" and "Xiaomi 13T Pro" are aliases of the Mi 13T entries.

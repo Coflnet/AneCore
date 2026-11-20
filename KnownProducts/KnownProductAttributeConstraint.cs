@@ -131,6 +131,9 @@ public static class KnownProductAttributeConstraint
         return allowed.Any(a => string.Equals(NormalizeForComparison(a), NormalizeForComparison(value), StringComparison.Ordinal));
     }
 
+    /// <summary>The raw plain-number twin of a canonical key ("storage_gb" for "storage_size"), or null when it has none.</summary>
+    internal static string? TwinKeyOf(string canonicalKey) => TwinKeys.TryGetValue(canonicalKey, out var twin) ? twin.TwinKey : null;
+
     private static void DropTwin(string canonicalKey, IDictionary<string, string> attributes, List<(string Key, string Value)> dropped)
     {
         if (!TwinKeys.TryGetValue(canonicalKey, out var twin))

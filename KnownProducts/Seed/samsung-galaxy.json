@@ -2603,7 +2603,8 @@
       },
       "excludeTerms": [
         "fe",
-        "ultra"
+        "ultra",
+        "fan"
       ],
       "source": "seed:techapi-2026-09"
     },
@@ -2629,7 +2630,9 @@
         "SM-G781U",
         "SM-G781U1",
         "SM-G781W",
-        "Samsung Galaxy S20 FE"
+        "Samsung Galaxy S20 FE",
+        "Galaxy S20 Fan Edition",
+        "Samsung Galaxy S20 Fan Edition"
       ],
       "possibleAttributes": {
         "storage_size": [

@@ -1075,7 +1075,8 @@
       "vertical": "electronics",
       "aliases": [
         "Mi 13T",
-        "Xiaomi Mi 13T"
+        "Xiaomi Mi 13T",
+        "Xiaomi 13T"
       ],
       "possibleAttributes": {
         "storage_size": [
@@ -1112,7 +1113,8 @@
       "vertical": "electronics",
       "aliases": [
         "Mi 13T Pro",
-        "Xiaomi Mi 13T Pro"
+        "Xiaomi Mi 13T Pro",
+        "Xiaomi 13T Pro"
       ],
       "possibleAttributes": {
         "storage_size": [
