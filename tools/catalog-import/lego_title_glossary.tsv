@@ -1,0 +1,307 @@
+# Reviewed glossary for localized LEGO search terms (consumed by enrich_lego_titles.py). One English word per line.
+# Columns: en<TAB>de<TAB>fr<TAB>nl<TAB>it<TAB>es<TAB>pl . Several variants per cell are separated by "|"; an empty cell means
+# "no translation / keep English". Keys are lowercase; a plural "s" is stripped as fallback. Fix a wrong term here and re-run
+# `python3 -I enrich_lego_titles.py` - nothing else needs touching. Proper names (Star Wars, Ninjago, Harry Potter...) are not listed.
+# Sections: "[words]" single words (must stay context-free-safe: no mapping that is wrong in another title context),
+# "[phrases]" two-word phrases (checked in addition to single words), "[themes]" exact Rebrickable theme names
+# (Duplo, City, Technic, ... stay English by omission).
+[words]
+truck	Lastwagen|LKW|Laster	camion	vrachtwagen	camion	camión	ciężarówka
+car	Auto|Wagen	voiture	auto	auto|macchina	coche	samochód
+fire	Feuerwehr|Feuer	pompier|incendie	brandweer|brand	pompieri|fuoco	bomberos|fuego	straż pożarna|pożar
+firefighter	Feuerwehrmann	pompier	brandweerman	pompiere	bombero	strażak
+police	Polizei	police	politie	polizia	policía	policja
+train	Zug|Eisenbahn	train	trein	treno	tren	pociąg
+locomotive	Lokomotive	locomotive	locomotief	locomotiva	locomotora	lokomotywa
+railway	Eisenbahn	chemin de fer	spoorweg	ferrovia	ferrocarril	kolej
+steam	Dampf	vapeur	stoom	vapore	vapor	parowy
+express	Express	express	express	express	exprés	ekspres
+cargo	Fracht|Güter	cargo|fret	vracht|lading	merci|carico	carga	towarowy
+passenger	Personen|Passagier	passagers	passagiers	passeggeri	pasajeros	pasażerski
+station	Station	station	station	stazione	estación	stacja
+house	Haus	maison	huis	casa	casa	dom
+castle	Burg|Schloss	château	kasteel	castello	castillo	zamek
+fortress	Festung	forteresse	vesting	fortezza	fortaleza	forteca
+palace	Palast	palais	paleis	palazzo	palacio	pałac
+tower	Turm	tour	toren	torre	torre	wieża
+knight	Ritter	chevalier	ridder	cavaliere	caballero	rycerz
+dragon	Drache	dragon	draak	drago	dragón	smok
+pirate	Pirat	pirate	piraat	pirata	pirata	pirat
+treasure	Schatz	trésor	schat	tesoro	tesoro	skarb
+ship	Schiff	bateau|navire	schip	nave	barco|nave	statek
+boat	Boot	bateau	boot	barca	barco	łódź
+sea	Meer	mer	zee	mare	mar	morze
+island	Insel	île	eiland	isola	isla	wyspa
+beach	Strand	plage	strand	spiaggia	playa	plaża
+helicopter	Hubschrauber	hélicoptère	helikopter	elicottero	helicóptero	helikopter
+plane	Flugzeug	avion	vliegtuig	aereo	avión	samolot
+airplane	Flugzeug	avion	vliegtuig	aereo	avión	samolot
+aircraft	Flugzeug	avion	vliegtuig	aereo	avión	samolot
+airport	Flughafen	aéroport	luchthaven	aeroporto	aeropuerto	lotnisko
+jet	Düsenjet|Jet	jet	jet	jet	jet	odrzutowiec
+rocket	Rakete	fusée	raket	razzo	cohete	rakieta
+space	Weltraum|Raumfahrt	espace	ruimte	spazio	espacio	kosmos
+spaceship	Raumschiff	vaisseau spatial	ruimteschip	astronave	nave espacial	statek kosmiczny
+shuttle	Shuttle|Raumfähre	navette	shuttle	navetta	transbordador|lanzadera	prom kosmiczny
+starfighter	Sternenjäger	chasseur stellaire	sterrenjager	caccia stellare	caza estelar	myśliwiec gwiezdny
+fighter	Jäger	chasseur	jager	caccia	caza	myśliwiec
+robot	Roboter	robot	robot	robot	robot	robot
+droid	Droide	droïde	droid	droide	droide	droid
+mech	Mech|Roboter	mécha|robot	mecha|robot	mech|robot	mecha|robot	mech|robot
+alien	Außerirdischer	extraterrestre	buitenaards	alieno	extraterrestre	kosmita
+moon	Mond	lune	maan	luna	luna	księżyc
+planet	Planet	planète	planeet	pianeta	planeta	planeta
+race	Rennen	course	race	corsa	carrera	wyścig
+racer	Rennwagen|Rennfahrer	voiture de course|pilote	racewagen|coureur	auto da corsa|pilota	coche de carreras|piloto	samochód wyścigowy|kierowca wyścigowy
+racers	Rennwagen	voitures de course	racewagens	auto da corsa	coches de carreras	samochody wyścigowe
+racing	Rennsport|Rennen	course	racen	corse	carreras	wyścigowy
+rally	Rallye	rallye	rally	rally	rally	rajd
+buggy	Buggy	buggy	buggy	buggy	buggy	buggy
+bike	Fahrrad|Rad	vélo	fiets	bicicletta	bicicleta	rower
+motorcycle	Motorrad	moto	motor	moto	moto	motocykl
+motor	Motor	moteur	motor	motore	motor	silnik
+scooter	Roller	scooter|trottinette	scooter|step	scooter|monopattino	scooter|patinete	skuter|hulajnoga
+tractor	Traktor	tracteur	tractor	trattore	tractor	traktor
+crane	Kran	grue	kraan	gru	grúa	dźwig
+excavator	Bagger	pelleteuse	graafmachine	escavatore	excavadora	koparka
+digger	Bagger	pelleteuse	graafmachine	scavatore	excavadora	koparka
+loader	Lader|Radlader	chargeuse	lader	pala caricatrice	cargadora	ładowarka
+bulldozer	Bulldozer|Planierraupe	bulldozer	bulldozer	bulldozer	bulldozer	buldożer
+crawler	Raupe|Kettenfahrzeug	chenillard	rupsvoertuig	cingolato	oruga	gąsienicowy
+trailer	Anhänger	remorque	aanhanger	rimorchio	remolque	przyczepa
+tow	Abschlepp	dépanneuse	sleep	soccorso stradale|rimorchio	grúa remolque	holownicza
+van	Transporter|Lieferwagen	camionnette|fourgon	bestelwagen	furgone	furgoneta	furgonetka
+bus	Bus	bus|autobus	bus	autobus	autobús	autobus
+taxi	Taxi	taxi	taxi	taxi	taxi	taksówka
+ambulance	Krankenwagen|Rettungswagen	ambulance	ambulance	ambulanza	ambulancia	karetka
+rescue	Rettung	secours|sauvetage	redding	soccorso|salvataggio	rescate	ratunkowy
+patrol	Streife|Patrouille	patrouille	patrouille	pattuglia	patrulla	patrol
+transporter	Transporter	transporteur	transporter	trasportatore	transportador	transporter
+transport	Transport	transport	transport	trasporto	transporte	transport
+vehicle	Fahrzeug	véhicule	voertuig	veicolo	vehículo	pojazd
+vehicles	Fahrzeuge	véhicules	voertuigen	veicoli	vehículos	pojazdy
+tank	Panzer|Tank	char|tank	tank	carro armato	tanque	czołg
+submarine	U-Boot	sous-marin	onderzeeër	sottomarino	submarino	łódź podwodna
+sub	U-Boot	sous-marin	onderzeeër	sommergibile	submarino	łódź podwodna
+glider	Segelflugzeug	planeur	zweefvliegtuig	aliante	planeador	szybowiec
+wagon	Wagen|Waggon	wagon	wagen	vagone	vagón	wagon
+cart	Wagen|Karren	chariot	kar	carretto	carro	wózek
+trolley	Wagen	chariot	kar	carrello	carrito	wózek
+animal	Tier	animal	dier	animale	animal	zwierzę
+animals	Tiere	animaux	dieren	animali	animales	zwierzęta
+horse	Pferd	cheval	paard	cavallo	caballo	koń
+dog	Hund	chien	hond	cane	perro	pies
+puppy	Welpe	chiot	puppy	cucciolo	cachorro	szczeniak
+cat	Katze	chat	kat	gatto	gato	kot
+bunny	Hase|Häschen	lapin	konijn	coniglio	conejo	królik
+shark	Hai	requin	haai	squalo	tiburón	rekin
+lion	Löwe	lion	leeuw	leone	león	lew
+dinosaur	Dinosaurier	dinosaure	dinosaurus	dinosauro	dinosaurio	dinozaur
+dino	Dino|Dinosaurier	dino|dinosaure	dino|dinosaurus	dino|dinosauro	dino|dinosaurio	dinozaur
+duck	Ente	canard	eend	anatra	pato	kaczka
+bird	Vogel	oiseau	vogel	uccello	pájaro	ptak
+flower	Blume	fleur	bloem	fiore	flor	kwiat
+flowers	Blumen	fleurs	bloemen	fiori	flores	kwiaty
+tree	Baum	arbre	boom	albero	árbol	drzewo
+garden	Garten	jardin	tuin	giardino	jardín	ogród
+forest	Wald	forêt	bos	foresta	bosque	las
+jungle	Dschungel	jungle	jungle	giungla	selva|jungla	dżungla
+desert	Wüste	désert	woestijn	deserto	desierto	pustynia
+ice	Eis	glace	ijs	ghiaccio	hielo	lód
+snow	Schnee	neige	sneeuw	neve	nieve	śnieg
+winter	Winter	hiver	winter	inverno	invierno	zima
+summer	Sommer	été	zomer	estate	verano	lato
+river	Fluss	rivière	rivier	fiume	río	rzeka
+water	Wasser	eau	water	acqua	agua	woda
+deep	Tiefsee|tief	profondeur|profond	diepzee|diep	profondo	profundo	głębinowy
+coast	Küste	côte	kust	costa	costa	wybrzeże
+park	Park	parc	park	parco	parque	park
+playground	Spielplatz	aire de jeux	speeltuin	parco giochi	parque infantil	plac zabaw
+farm	Bauernhof	ferme	boerderij	fattoria	granja	farma
+zoo	Zoo	zoo	dierentuin	zoo	zoo	zoo
+school	Schule	école	school	scuola	escuela	szkoła
+shop	Laden|Geschäft	magasin|boutique	winkel	negozio	tienda	sklep
+store	Laden|Geschäft	magasin	winkel	negozio	tienda	sklep
+village	Dorf	village	dorp	villaggio	pueblo|aldea	wioska
+town	Stadt	ville	stad	città	ciudad|pueblo	miasto
+street	Straße	rue	straat	strada	calle	ulica
+road	Straße	route	weg	strada	carretera	droga
+bridge	Brücke	pont	brug	ponte	puente	most
+garage	Garage	garage	garage	garage|autorimessa	garaje	garaż
+temple	Tempel	temple	tempel	tempio	templo	świątynia
+swamp	Sumpf	marais	moeras	palude	pantano	bagno
+lab	Labor	laboratoire	lab|laboratorium	laboratorio	laboratorio	laboratorium
+room	Zimmer|Raum	chambre|salle	kamer	stanza	habitación	pokój
+battle	Schlacht|Kampf	bataille|combat	gevecht|strijd	battaglia	batalla	bitwa
+attack	Angriff	attaque	aanval	attacco	ataque	atak
+assault	Angriff|Sturm	assaut	aanval	assalto	asalto	szturm
+ambush	Hinterhalt	embuscade	hinderlaag	imboscata	emboscada	zasadzka
+duel	Duell	duel	duel	duello	duelo	pojedynek
+showdown	Showdown|Duell	affrontement	showdown	resa dei conti	enfrentamiento	pojedynek
+escape	Flucht	évasion|fuite	ontsnapping	fuga	escape|huida	ucieczka
+chase	Verfolgung|Verfolgungsjagd	poursuite	achtervolging	inseguimento	persecución	pościg
+pursuit	Verfolgung	poursuite	achtervolging	inseguimento	persecución	pościg
+defense	Verteidigung	défense	verdediging	difesa	defensa	obrona
+defender	Verteidiger	défenseur	verdediger	difensore	defensor	obrońca
+guard	Wache|Wächter	garde	bewaker|wacht	guardia	guardia	strażnik
+warrior	Krieger	guerrier	krijger	guerriero	guerrero	wojownik
+soldier	Soldat	soldat	soldaat	soldato	soldado	żołnierz
+trooper	Soldat|Trooper	soldat|trooper	soldaat|trooper	soldato|trooper	soldado|trooper	żołnierz
+troopers	Soldaten	soldats	soldaten	soldati	soldados	żołnierze
+clone	Klon	clone	kloon	clone	clon	klon
+walker	Läufer|Walker	marcheur|walker	loper|walker	camminatore|walker	caminante|andador	chodzący|walker
+speeder	Speeder	speeder	speeder	speeder	speeder	speeder
+destroyer	Zerstörer	destroyer	vernietiger	distruttore	destructor	niszczyciel
+cruiser	Kreuzer	croiseur	kruiser	incrociatore	crucero	krążownik
+gunship	Kanonenboot|Gunship	canonnière	gunship	cannoniera	nave de combate	kanonierka
+catapult	Katapult	catapulte	katapult	catapulta	catapulta	katapulta
+sword	Schwert	épée	zwaard	spada	espada	miecz
+shield	Schild	bouclier	schild	scudo	escudo	tarcza
+helmet	Helm	casque	helm	casco	casco	hełm
+blaster	Blaster	blaster	blaster	blaster	blaster	blaster
+hero	Held	héros	held	eroe	héroe	bohater
+heroes	Helden	héros	helden	eroi	héroes	bohaterowie
+villains	Bösewichte	méchants	schurken	cattivi	villanos	złoczyńcy
+princess	Prinzessin	princesse	prinses	principessa	princesa	księżniczka
+magic	Magie|Zauber	magie	magie	magia	magia	magia
+magical	Magisch|Zauber	magique	magisch	magico	mágico	magiczny
+wizard	Zauberer	sorcier	tovenaar	mago	mago	czarodziej
+ghost	Geist	fantôme	spook	fantasma	fantasma	duch
+monster	Monster	monstre	monster	mostro	monstruo	potwór
+skeleton	Skelett	squelette	skelet	scheletro	esqueleto	szkielet
+gold	Gold	or	goud	oro	oro	złoto
+golden	Golden|Gold	doré|or	gouden|goud	dorato|oro	dorado|oro	złoty
+red	Rot	rouge	rood	rosso	rojo	czerwony
+blue	Blau	bleu	blauw	blu	azul	niebieski
+green	Grün	vert	groen	verde	verde	zielony
+yellow	Gelb	jaune	geel	giallo	amarillo	żółty
+black	Schwarz	noir	zwart	nero	negro	czarny
+white	Weiß	blanc	wit	bianco	blanco	biały
+gray	Grau	gris	grijs	grigio	gris	szary
+grey	Grau	gris	grijs	grigio	gris	szary
+pink	Rosa	rose	roze	rosa	rosa	różowy
+purple	Lila	violet	paars	viola	morado	fioletowy
+orange	Orange	orange	oranje	arancione	naranja	pomarańczowy
+brick	Stein|Baustein	brique	steen	mattoncino	ladrillo	klocek
+bricks	Steine|Bausteine	briques	stenen	mattoncini	ladrillos	klocki
+plate	Platte	plaque	plaat	piastra	placa	płytka
+plates	Platten	plaques	platen	piastre	placas	płytki
+tiles	Fliesen	tuiles	tegels	piastrelle	baldosas	płytki
+beams	Balken	poutres	balken	travi	vigas	belki
+wheel	Rad	roue	wiel	ruota	rueda	koło
+wheels	Räder	roues	wielen	ruote	ruedas	koła
+tires	Reifen	pneus	banden	pneumatici	neumáticos	opony
+axles	Achsen	essieux	assen	assi	ejes	osie
+gear	Zahnrad|Getriebe	engrenage	tandwiel	ingranaggio	engranaje	koło zębate
+engine	Motor	moteur	motor	motore	motor	silnik
+battery	Batterie|Akku	batterie	batterij|accu	batteria	batería	bateria
+electric	Elektro|Elektrisch	électrique	elektrisch	elettrico	eléctrico	elektryczny
+pneumatic	Pneumatik|Pneumatisch	pneumatique	pneumatisch	pneumatico	neumático	pneumatyczny
+sensor	Sensor	capteur	sensor	sensore	sensor	czujnik
+light	Licht|Leuchte	lumière|lampe	licht|lamp	luce|lampada	luz|lámpara	światło|lampa
+box	Kiste|Box|Schachtel	boîte	doos	scatola	caja	pudełko
+bucket	Eimer	seau	emmer	secchio	cubo	wiaderko
+container	Behälter|Container	conteneur	container	contenitore	contenedor	kontener
+storage	Aufbewahrung	rangement	opberg	contenitore|archiviazione	almacenamiento	przechowywanie
+bag	Tasche|Beutel|Tüte	sac	tas|zak	borsa|sacchetto	bolsa	torba|torebka
+backpack	Rucksack	sac à dos	rugzak	zaino	mochila	plecak
+book	Buch	livre	boek	libro	libro	książka
+calendar	Kalender	calendrier	kalender	calendario	calendario	kalendarz
+advent	Advent	avent	advent	avvento	adviento	adwentowy
+christmas	Weihnachten	noël	kerst|kerstmis	natale	navidad	boże narodzenie|świąteczny
+santa	Weihnachtsmann|Nikolaus	père noël	kerstman|sinterklaas	babbo natale	papá noel	święty mikołaj
+easter	Ostern	pâques	pasen	pasqua	pascua	wielkanoc
+halloween	Halloween	halloween	halloween	halloween	halloween	halloween
+birthday	Geburtstag	anniversaire	verjaardag	compleanno	cumpleaños	urodziny
+anniversary	Jubiläum	anniversaire	jubileum	anniversario	aniversario	rocznica
+holiday	Feiertag|Urlaub|Ferien	vacances|fête	vakantie	vacanza|festa	vacaciones|fiesta	wakacje|święto
+baby	Baby	bébé	baby	bebè	bebé	niemowlę|baby
+toy	Spielzeug	jouet	speelgoed	giocattolo	juguete	zabawka
+kit	Bausatz	kit	bouwpakket	kit	kit	zestaw
+construction	Baustelle|Bau	chantier|construction	bouw|bouwplaats	cantiere|costruzione	construcción|obras	budowa
+adventure	Abenteuer	aventure	avontuur	avventura	aventura	przygoda
+adventures	Abenteuer	aventures	avonturen	avventure	aventuras	przygody
+explorer	Entdecker|Forscher	explorateur	ontdekker|verkenner	esploratore	explorador	odkrywca
+crew	Besatzung|Crew	équipage	bemanning|crew	equipaggio	tripulación	załoga
+soccer	Fußball	football	voetbal	calcio	fútbol	piłka nożna
+basketball	Basketball	basket	basketbal	basket	baloncesto	koszykówka
+formula	Formel	formule	formule	formula	fórmula	formuła
+stunt	Stunt	cascade	stunt	acrobazia	acrobacia	akrobacje
+monster	Monster	monstre	monster	mostro	monstruo	potwór
+ninja	Ninja	ninja	ninja	ninja	ninja	ninja
+figure	Figur	figurine	figuur	personaggio	figura	figurka
+figures	Figuren	figurines	figuren	personaggi	figuras	figurki
+minifigure	Minifigur	minifigurine	minifiguur	minifigure	minifigura	minifigurka
+minifigures	Minifiguren	minifigurines	minifiguren	minifigure	minifiguras	minifigurki
+promotional	Werbe|Promo	promotionnel	promotie	promozionale	promocional	promocyjny
+tow	Abschlepp	dépanneuse	sleep	soccorso stradale	grúa	holownicza
+roof	Dach	toit	dak	tetto	techo	dach
+moon	Mond	lune	maan	luna	luna	księżyc
+coaster	Achterbahn	montagnes russes	achtbaan	montagne russe	montaña rusa	kolejka górska
+carousel	Karussell	carrousel	draaimolen	giostra	tiovivo	karuzela
+fair	Jahrmarkt	fête foraine	kermis	luna park	feria	wesołe miasteczko
+circus	Zirkus	cirque	circus	circo	circo	cyrk
+camping	Camping	camping	kamperen	campeggio	camping	camping
+camper	Wohnmobil	camping-car	camper	camper	autocaravana	kamper
+caravan	Wohnwagen	caravane	caravan	roulotte	caravana	przyczepa kempingowa
+[phrases]
+fire station	Feuerwehrstation|Feuerwache	caserne de pompiers	brandweerkazerne	caserma dei pompieri	parque de bomberos|estación de bomberos	remiza strażacka
+police station	Polizeistation|Polizeiwache	commissariat|poste de police	politiebureau	stazione di polizia|commissariato	comisaría	posterunek policji
+train station	Bahnhof	gare	treinstation|station	stazione ferroviaria	estación de tren	dworzec kolejowy
+railway station	Bahnhof	gare	treinstation|station	stazione ferroviaria	estación de tren	dworzec kolejowy
+space station	Raumstation	station spatiale	ruimtestation	stazione spaziale	estación espacial	stacja kosmiczna
+[themes]
+Train	Eisenbahn|Zug	train	trein	treno	tren	pociąg
+Trains	Eisenbahn|Zug	trains	treinen	treni	trenes	pociągi
+Town	Stadt	ville	stad	città	ciudad	miasto
+Classic Town	Stadt	ville classique	stad	città	ciudad	miasto
+Space	Weltraum	espace	ruimte	spazio	espacio	kosmos
+Classic Space	Weltraum	espace	ruimte	spazio	espacio	kosmos
+Castle	Burg|Ritter	château	kasteel|ridders	castello	castillo	zamek
+Pirates	Piraten	pirates	piraten	pirati	piratas	piraci
+Pirates I	Piraten	pirates	piraten	pirati	piratas	piraci
+Police	Polizei	police	politie	polizia	policía	policja
+Fire	Feuerwehr	pompiers	brandweer	pompieri	bomberos	straż pożarna
+Airport	Flughafen	aéroport	luchthaven	aeroporto	aeropuerto	lotnisko
+Coast Guard	Küstenwache	garde-côtes	kustwacht	guardia costiera	guardacostas	straż przybrzeżna
+Traffic	Verkehr	circulation	verkeer	traffico	tráfico	ruch drogowy
+Construction	Baustelle	chantier	bouw	cantiere	construcción	budowa
+Sports	Sport	sport	sport	sport	deportes	sport
+Soccer	Fußball	football	voetbal	calcio	fútbol	piłka nożna
+Basketball	Basketball	basket	basketbal	basket	baloncesto	koszykówka
+Christmas	Weihnachten	noël	kerst	natale	navidad	boże narodzenie
+Easter	Ostern	pâques	pasen	pasqua	pascua	wielkanoc
+Halloween	Halloween	halloween	halloween	halloween	halloween	halloween
+Seasonal	Saisonal|Weihnachten	saisonnier	seizoen	stagionale	temporada	sezonowe
+Racers	Rennwagen	voitures de course	racewagens	auto da corsa	coches de carreras	samochody wyścigowe
+Speed Champions	Rennwagen	voitures de course	racewagens	auto da corsa	coches de carreras	samochody wyścigowe
+Cars	Autos	voitures	auto's	auto	coches	samochody
+Pirates of the Caribbean	Piraten	pirates	piraten	pirati	piratas	piraci
+Super Heroes Marvel	Superhelden	super-héros	superhelden	supereroi	superhéroes	superbohaterowie
+Super Heroes DC	Superhelden	super-héros	superhelden	supereroi	superhéroes	superbohaterowie
+Super Heroes	Superhelden	super-héros	superhelden	supereroi	superhéroes	superbohaterowie
+Heroes	Helden	héros	helden	eroi	héroes	bohaterowie
+Knights Kingdom I	Ritter	chevaliers	ridders	cavalieri	caballeros	rycerze
+Knights Kingdom II	Ritter	chevaliers	ridders	cavalieri	caballeros	rycerze
+Lion Knights	Löwenritter	chevaliers du lion	leeuwenridders	cavalieri del leone	caballeros del león	rycerze lwa
+Fabuland	Fabuland	fabuland	fabuland	fabuland	fabuland	fabuland
+Belville	Belville	belville	belville	belville	belville	belville
+Adventurers	Abenteurer	aventuriers	avonturiers	avventurieri	aventureros	poszukiwacze przygód
+Western	Western	western	western	western	oeste	western
+Desert	Wüste	désert	woestijn	deserto	desierto	pustynia
+Jungle	Dschungel	jungle	jungle	giungla	selva|jungla	dżungla
+Atlantis	Atlantis	atlantide	atlantis	atlantide	atlántida	atlantyda
+Dinosaurs	Dinosaurier	dinosaures	dinosaurussen	dinosauri	dinosaurios	dinozaury
+Jurassic World	Jurassic World	jurassic world	jurassic world	jurassic world	jurassic world	jurassic world
+Princess	Prinzessin	princesse	prinses	principessa	princesa	księżniczka
+Disney Princess	Prinzessin	princesse	prinses	principessa	princesa	księżniczka
+Architecture	Architektur	architecture	architectuur	architettura	arquitectura	architektura
+Botanicals	Blumen|Botanik	fleurs|botanique	bloemen|botanisch	fiori|botanica	flores|botánica	kwiaty|botaniczny
+Games	Spiele	jeux	spellen	giochi	juegos	gry
+Educational and Dacta	Bildung|Lernspielzeug	éducatif	educatief	educativo	educativo	edukacyjne
+Service Packs	Ergänzungspackungen	packs de service	servicepakketten	pacchetti di servizio	paquetes de servicio	zestawy serwisowe
+Universal Building Set	Universal Bauset	boîte de construction	bouwset	set di costruzione	set de construcción	zestaw konstrukcyjny
+Bulk Bricks	Bausteine Sammlung|Steine	briques en vrac	losse stenen	mattoncini sfusi	ladrillos a granel	klocki luzem
+Basic	Basis	de base	basis	base	básico	podstawowy
+Freestyle	Freestyle|Kreativ	freestyle|créatif	freestyle|creatief	freestyle|creativo	freestyle|creativo	freestyle|kreatywny
+Make & Create	Kreativ	créatif	creatief	creativo	creativo	kreatywny

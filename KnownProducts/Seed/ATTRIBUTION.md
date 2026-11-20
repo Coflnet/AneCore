@@ -260,6 +260,17 @@ names and exact number aliases; no merchandising descriptions, artwork, or URL-d
 are copied. The previous pinned Rebrickable list is used only to reject unverified or reused
 printed numbers. `tools/catalog-import/expand_lego_official.py` records both input hashes.
 
+### LEGO set titles, themes and localized search words (2026-11)
+
+`KnownProducts/LegoSetInfo.json` (not a seed file; no seed row is modified) holds the Rebrickable set title, theme,
+parent theme, release year and piece count of LEGO sets by set number, built by `tools/catalog-import/enrich_lego_titles.py`
+from the public [Rebrickable downloads](https://rebrickable.com/downloads/) `sets.csv.gz` and `themes.csv.gz` (retrieved
+2026-11-20). **Licence not verified:** rebrickable.com/downloads returned a Cloudflare challenge (HTTP 403) to automated
+fetching, so its current terms/attribution requirements could not be read. Review them before shipping; the importer
+is idempotent and the file can be dropped without any other change. The translated words come from the reviewed
+glossary `tools/catalog-import/lego_title_glossary.tsv` (authored in this repository). They are search words only and
+are never matcher aliases.
+
 ## Reviewed repeated-brand names (2026-10-26)
 
 Four exact docyx spellings are retained as aliases of their existing canonical rows:
