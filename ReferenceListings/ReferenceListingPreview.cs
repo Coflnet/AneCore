@@ -16,6 +16,15 @@ public class ReferenceListingPreviewService
     private static readonly Regex CurrencyRegex = new(ReferencePriceText.CurrencyPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex PriceRegex = ReferencePriceText.PriceRegex;
     private static readonly string[] MainPriceIdHints = ["viewad-price"];
+    private static readonly Regex CardmarketPokemonPrinting = new(@"^(?<name>.+?)\s+\([\w-]+\s+(?<number>\d[\w/-]*)\)", RegexOptions.Compiled);
+    private static readonly (string Key, int Confidence, string[] Labels)[] CardmarketPriceMetrics =
+    [
+        ("trend", 16, ["Price Trend", "Preis-Trend", "Tendance des prix", "Tendencia de precio", "Tendenza di prezzo"]),
+        ("avg30", 14, ["30-days average price", "30-Tages-Durchschnitt", "Prix moyen 30 jours", "Precio medio 30 dias", "Prezzo medio 30 giorni"]),
+        ("avg7", 12, ["7-days average price", "7-Tages-Durchschnitt", "Prix moyen 7 jours", "Precio medio 7 dias", "Prezzo medio 7 giorni"]),
+        ("avg1", 10, ["1-day average price", "1-Tages-Durchschnitt", "Prix moyen 1 jour", "Precio medio 1 dia", "Prezzo medio 1 giorno"]),
+        ("from", 6, ["From", "Ab", "De", "Da"]),
+    ];
 
     public ReferenceListingPreviewResponse Build(Uri uri, string html, string? selectedSelector, List<string>? additionalSelectors = null)
         => BuildFromRender(uri, new RenderedReferenceListing { Html = html }, selectedSelector, additionalSelectors);
@@ -24,11 +33,29 @@ public class ReferenceListingPreviewService
     {
         var html = render.Html ?? string.Empty;
         var document = LoadDocument(html);
-        var listing = ExtractListingSummary(document, uri);
         var marketplace = ReferenceListingUrlPolicy.DetectMarketplace(uri.Host);
-        var htmlCandidates = ExtractRankedPriceCandidates(document);
-
-        var merged = MergeRenderedCandidates(document, htmlCandidates, render.Nodes);
+        var isCardmarket = marketplace == "Cardmarket";
+        var merged = isCardmarket
+            ? ExtractCardmarketPrices(document, uri)
+            : MergeRenderedCandidates(document, ExtractRankedPriceCandidates(document), render.Nodes);
+        // Cardmarket can return a challenge page in place of the product.
+        var listing = isCardmarket && merged.Count == 0 && !GetMetaContent(document, "og:title").EndsWith("| Cardmarket", StringComparison.OrdinalIgnoreCase)
+            ? new ReferenceListingSummary()
+            : ExtractListingSummary(document, uri);
+        if (isCardmarket && listing.Title.Length > 0 && document.DocumentNode.SelectSingleNode("//h1") is { } heading)
+        {
+            // Cardmarket appends the set, alternate title and product type in a muted subtitle.
+            var name = NormalizeText(string.Concat(heading.ChildNodes.TakeWhile(node => !node.HasClass("text-muted")).Select(node => node.InnerText)));
+            var isPokemon = uri.AbsolutePath.Contains("/Pokemon/Products/Singles/", StringComparison.OrdinalIgnoreCase);
+            var printing = isPokemon ? CardmarketPokemonPrinting.Match(name) : Match.Empty;
+            if (printing.Success)
+            {
+                listing.Title = printing.Value;
+                name = $"{printing.Groups["name"].Value} {printing.Groups["number"].Value}";
+            }
+            if (name.Length > 0)
+                listing.ProductSearchQuery = BuildProductSearchQuery(name);
+        }
 
         merged = merged
             .OrderByDescending(c => c.Confidence)
@@ -50,8 +77,9 @@ public class ReferenceListingPreviewService
         {
             var extras = additionalSelectors.Where(s => s != selected.Selector).Distinct(StringComparer.Ordinal)
                 .Select(s => ResolveSelection(document, render.Nodes, merged, s)).ToList();
-            // A partial or mixed-currency sum must never change a saved threshold.
-            if (extras.Any(c => c == null || c.Currency != selected.Currency))
+            // A sum needs every part in the same currency. Cardmarket metrics are alternative prices.
+            if (extras.Any(c => c == null || c.Currency != selected.Currency
+                || (isCardmarket && (selected.Source == "cardmarket" || c.Source == "cardmarket"))))
                 selected = null;
             else
             {
@@ -291,6 +319,38 @@ public class ReferenceListingPreviewService
 
     private const int MaxHtmlPriceCandidates = 8;
 
+    private static List<ReferencePriceCandidate> ExtractCardmarketPrices(HtmlDocument document, Uri uri)
+    {
+        if (!uri.AbsolutePath.Contains("/Products/", StringComparison.OrdinalIgnoreCase))
+            return [];
+
+        var rows = document.DocumentNode.Descendants("dl").Where(list => list.HasClass("labeled"))
+            .SelectMany(list => ElementChildren(list, "dt"))
+            .Select(label => (Label: NormalizeText(label.InnerText),
+                Text: NormalizeText(label.SelectSingleNode("following-sibling::*[1][self::dd]")?.InnerText)))
+            .Where(row => ReferencePriceText.CountPriceTokens(row.Text) == 1)
+            .Distinct()
+            .ToList();
+        var candidates = new List<ReferencePriceCandidate>();
+        foreach (var metric in CardmarketPriceMetrics)
+        {
+            var matches = rows.Where(row => metric.Labels.Contains(row.Label, StringComparer.OrdinalIgnoreCase)).ToList();
+            if (matches.Count != 1 || !TryParsePrice(matches[0].Text, false, out var price))
+                continue;
+
+            candidates.Add(new ReferencePriceCandidate
+            {
+                Selector = "cardmarket:" + metric.Key,
+                Text = matches[0].Label,
+                Price = price.Amount,
+                Currency = price.Currency,
+                Confidence = metric.Confidence,
+                Source = "cardmarket",
+            });
+        }
+        return candidates;
+    }
+
     /// <summary>
     /// Some sites append ",&lt;title&gt; in &lt;place&gt;" to the meta description. Only that exact trailing form is removed;
     /// a bare trailing ",&lt;title&gt;" is only removed after an ellipsis (truncated description).
@@ -327,7 +387,7 @@ public class ReferenceListingPreviewService
             return fromXPath;
 
         var candidate = candidates.FirstOrDefault(c => c.Selector == selector);
-        if (candidate != null) return candidate;
+        if (candidate != null || selector.StartsWith("cardmarket:", StringComparison.Ordinal)) return candidate;
         var rendered = nodes.FirstOrDefault(n => n.XPath == selector || n.Css == selector);
         if (rendered != null)
             return rendered.Price == null ? null : new ReferencePriceCandidate { Selector = selector, Text = rendered.Text,

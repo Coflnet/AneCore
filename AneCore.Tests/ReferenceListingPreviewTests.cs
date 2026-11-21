@@ -7,6 +7,73 @@ public class ReferenceListingPreviewTests
     private readonly ReferenceListingPreviewService service = new();
     private static readonly Uri Url = new("https://example.com/item");
     private const string Html = "<html><head><title>Camera</title></head><body><span id='price'>100,00 €</span><span id='shipping'>5,00 €</span><span id='foreign'>£8.00</span></body></html>";
+    private static readonly Uri CardmarketUrl = new("https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charizard-ex-V3-MEW199");
+
+    [Test]
+    public void CardmarketUsesProductMetricsAndSuggestsTheCardNumber()
+    {
+        const string html = """
+            <html><head><meta property="og:title" content="Charizard ex | Cardmarket"></head><body>
+              <h1>Charizard ex (MEW 199)<span class="h4 text-muted"> 151 - Singles</span></h1>
+              <dl class="labeled row mx-auto g-0">
+                <dt>From</dt><dd>220,00 €</dd>
+                <dt>Price Trend</dt><dd><span>377,84 €</span></dd>
+                <dt>30-days average price</dt><dd>356,40 €</dd>
+                <dt>7-days average price</dt><dd>356,40 €</dd>
+                <dt>1-day average price</dt><dd>–</dd>
+              </dl>
+              <dl><dt>Price Trend</dt><dd>10 €</dd></dl>
+              <span id="shipping">5,00 €</span><span id="seller-price">199,00 €</span>
+            </body></html>
+            """;
+        var result = service.Build(CardmarketUrl, html, null);
+
+        Assert.That(result.PriceCandidates.Select(c => c.Selector), Is.EqualTo(new[]
+            { "cardmarket:trend", "cardmarket:avg30", "cardmarket:avg7", "cardmarket:from" }));
+        Assert.That(result.SelectedReference?.Price, Is.EqualTo(377.84));
+        Assert.That(result.SelectedReference?.IsAutoSelected, Is.True);
+        Assert.That(result.Listing.Title, Is.EqualTo("Charizard ex (MEW 199)"));
+        Assert.That(result.SuggestedFilter.SearchTerm, Is.EqualTo("Charizard ex 199"));
+        Assert.That(result.SuggestedFilter.ReferenceCurrency, Is.EqualTo("EUR"));
+        Assert.That(service.Build(CardmarketUrl, html, "//*[@id='seller-price']").SelectedReference?.Price, Is.EqualTo(199));
+        Assert.That(service.Build(CardmarketUrl, html, "cardmarket:trend", ["cardmarket:avg30"]).SelectedReference, Is.Null);
+    }
+
+    [TestCase("Preis-Trend", "30-Tages-Durchschnitt")]
+    [TestCase("Tendance des prix", "Prix moyen 30 jours")]
+    [TestCase("Tendencia de precio", "Precio medio 30 dias")]
+    [TestCase("Tendenza di prezzo", "Prezzo medio 30 giorni")]
+    public void SavedCardmarketMetricResolvesAcrossLocalesAndRowChanges(string trend, string avg30)
+    {
+        var html = $"<dl class='labeled'><dt>{avg30}</dt><dd>1.356,40&nbsp;€</dd><dt>{trend}</dt><dd>377,84 €</dd></dl>";
+        var result = service.Build(CardmarketUrl, html, "cardmarket:avg30");
+
+        Assert.That(result.SelectedReference?.Price, Is.EqualTo(1356.4));
+        Assert.That(result.SelectedReference?.Text, Does.StartWith(avg30));
+        Assert.That(service.Build(CardmarketUrl, html, "cardmarket:avg7").SelectedReference, Is.Null);
+        Assert.That(service.Build(CardmarketUrl, html, "cardmarket:manual").SelectedReference, Is.Null);
+    }
+
+    [Test]
+    public void NoCardmarketTrendDoesNotAutoSelectTheLowestAskingPrice()
+    {
+        const string html = "<dl class='labeled'><dt>From</dt><dd>£80.00</dd><dt>Price Trend</dt><dd>–</dd></dl>";
+        var result = service.Build(CardmarketUrl, html, null);
+
+        Assert.That(result.SelectedReference, Is.Null);
+        Assert.That(result.RequiresReferencePriceSelection, Is.True);
+        Assert.That(result.PriceCandidates.Single().Currency, Is.EqualTo("GBP"));
+        Assert.That(service.Build(CardmarketUrl, "<span class='price'>80 €</span>", null).PriceCandidates, Is.Empty);
+        Assert.That(service.Build(new Uri("https://www.cardmarket.com/en/Pokemon/Cards/Charizard-ex"), html, null).PriceCandidates, Is.Empty);
+    }
+
+    [Test]
+    public void CardmarketChallengeDoesNotBecomeASuggestedSearch()
+    {
+        var result = service.Build(CardmarketUrl, "<html><head><title>Just a moment...</title></head></html>", null);
+        Assert.That(result.PriceCandidates, Is.Empty);
+        Assert.That(result.SuggestedFilter.SearchTerm, Is.Empty);
+    }
 
     [Test]
     public void ExplicitXPathReadsTheSelectedPublicElement()
